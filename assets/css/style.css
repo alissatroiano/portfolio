@@ -1,4 +1,28 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@200;300&display=swap');
+
+body, html {
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+#subtitle {
+    text-align: center;
+    padding: 16px 16px;
+    font-size: 1.5rem;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+span, 
+span.w3-center.w3-padding-large.w3-black.w3-xlarge.w3-wide.w3-animate-opacity {
+    font-family: 'Poppins', sans-serif;
+}
+
 body, html { 
   height: 100%;
   color: #000;
