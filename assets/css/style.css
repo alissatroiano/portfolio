@@ -1,11 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@200;300&display=swap');
 
-body, html {
-    font-size: 16px;
+/*--------------------------------Main Page Content */
+body,
+html {
+  height: 100%;
+  color: #000;
+  line-height: 1.8;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+/*-------------------------------- Headers and text */
+h1,h2,h3 {
     font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+h4, h5, h6 {
+  font-size: 1.2rem;
+}
+
+
+h6 {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 #subtitle {
@@ -23,12 +43,6 @@ span.w3-center.w3-padding-large.w3-black.w3-xlarge.w3-wide.w3-animate-opacity {
     font-family: 'Poppins', sans-serif;
 }
 
-body, html { 
-  height: 100%;
-  color: #000;
-  line-height: 1.8;
-}
-
 #subtitle {
   margin-top: 10px;
   font-size: 1.3rem;
@@ -36,7 +50,17 @@ body, html {
   letter-spacing: 4px;
 }
 
-/* Create a Parallax Effect */
+/*-------------------------------- Hero */
+#name {
+  font-size: 5.5rem;
+    font-family: 'Poppins',
+    sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+/*-------------------------------- Background Images */
+/* Create a Parallax Effect - copied from w3schools.com */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
@@ -44,7 +68,7 @@ body, html {
   background-size: cover;
 }
 
-/* First image (Logo. Full height) */
+/* First image (Logo. Full height) - copied from w3schools.com */
 .bgimg-1 {
   background-image: url('../images/deskspace.jpg');
   min-height: 100%;
@@ -65,6 +89,25 @@ body, html {
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
+/*-------------------------------- ABOUT */
+
+p.w3-wide {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+#skill-icons {
+    font-size: 1.3rem;
+    color: #000;
+    text-shadow: 3px 1px 3px darkgray;
+}
+
+/*--------------------------------  Dividers */
+
+
+/*--------------------------------  Media Queries */
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
