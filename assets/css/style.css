@@ -10,6 +10,19 @@ html {
   font-family: 'Poppins',sans-serif;
 }
 
+/*----------------------------------Navabar */
+.fas.fa-at {
+  color: #030303;
+  text-shadow: 1px 2px 2px #777;
+  font-size: 2rem;
+}
+
+.fas.fa-at:hover {
+  color: #777474;
+  text-shadow: 1px 1px 2px #000;
+}
+
+
 /*-------------------------------- Headers and text */
 h1,h2,h3 {
     font-family: 'Poppins', sans-serif;
