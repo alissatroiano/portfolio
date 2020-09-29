@@ -64,6 +64,10 @@ span.w3-center.w3-padding-large.w3-black.w3-xlarge.w3-wide.w3-animate-opacity {
 }
 
 /*-------------------------------- Hero */
+#home {
+  height: 100vh;
+}
+
 #name {
   font-size: 5.5rem;
     font-family: 'Poppins',
