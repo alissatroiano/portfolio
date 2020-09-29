@@ -124,6 +124,13 @@ p.w3-wide {
 /*--------------------------------  Dividers */
 
 
+/*--------------------------------  Portfolio */
+span#caption {
+  text-align: center;
+  margin-left: 60px;
+  font-size: 14px;
+}
+
 /*--------------------------------  Media Queries */
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
