@@ -84,7 +84,7 @@ span.w3-center.w3-padding-large.w3-black.w3-xlarge.w3-wide.w3-animate-opacity {
 /* First image (Logo. Full height) - copied from w3schools.com */
 .bgimg-1 {
   background-image: url('../images/deskspace.jpg');
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 /* Second image (Portfolio) */
