@@ -180,8 +180,7 @@ span#name {
   cursor: pointer;
 }
 
-/*-------------------------------- ABOUT */
-
+/*-------------------------------- About Section */
 p.w3-wide {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
@@ -196,25 +195,33 @@ p.w3-wide {
   text-shadow: 3px 1px 3px darkgray;
 }
 
-/*--------------------------------  Dividers */
-
-
-/*--------------------------------  Portfolio */
-span#caption {
+/*-------------------------------- Portfolio Section */
+figcaption {
   text-align: center;
   font-size: 13px;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 20px;
-    font-family: 'Montserrat',
+  font-family: 'Montserrat',
     sans-serif;
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 img {
   margin: 0 auto;
   padding-top: 20px;
 }
+
+/*-------------------------------- Contact Section */
+span {
+  font-family: 'Playfair Display',
+    serif;
+  text-transform: uppercase;
+}
+
+img {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+
 /*--------------------------------  Media Queries */
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
