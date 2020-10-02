@@ -7,6 +7,16 @@ body {
   max-width: 100%;
   font-size: 16px;
   margin: 0px auto;
+  overflow: hidden;
+}
+
+em {
+  font-family: 'Montserrat',
+  sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-style: normal;
+  letter-spacing: .8;
 }
 
 /*----------------------------------Navabar */
@@ -25,7 +35,7 @@ a.w3-bar-item.w3-button {
  font-size: 1.1rem;
  font-weight: 400;
  margin-top: 5px;
- color: #2f2f2f;
+color: #030303;
  font-family: 'Playfair Display',
   serif;
   text-transform: uppercase;
@@ -48,7 +58,7 @@ a.w3-bar-item.w3-button:hover {
 }
 
 #myNavbar {
-  background-color: rgba(227, 227, 223, 0.58);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /*-------------------------------- Headers and text */
@@ -56,14 +66,17 @@ h1,
 h2,
 h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   letter-spacing: 2px;
+  text-transform: uppercase;
+
 }
 
 h4,
 h5,
 h6 {
   font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
   font-size: 1.2rem;
 }
 
@@ -86,22 +99,34 @@ p {
 
 span#name {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 5px;
+  letter-spacing: 3;
 }
 
 .w3-black {
-  padding: 10px 15px;
+  padding: 10px 20px;
+  margin: 0 20px;
 }
 
 #subtitle {
   margin-top: 10px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #000;
-  letter-spacing: 4px;
+  letter-spacing: 2.5;
+  font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+}
+
+.w3-text-white.w3-wide {
+   font-family: 'Montserrat',
+     sans-serif;
+   text-transform: uppercase;
+    letter-spacing: 2;
+    text-shadow: 1px 3px 6px #777474;
+    font-size: 2.8rem;
+
 }
 
 /*-------------------------------- Hero */
@@ -177,10 +202,19 @@ p.w3-wide {
 /*--------------------------------  Portfolio */
 span#caption {
   text-align: center;
-  margin-left: 60px;
-  font-size: 14px;
+  font-size: 13px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+    font-family: 'Montserrat',
+    sans-serif;
+    text-transform: uppercase;
 }
 
+img {
+  margin: 0 auto;
+  padding-top: 20px;
+}
 /*--------------------------------  Media Queries */
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
