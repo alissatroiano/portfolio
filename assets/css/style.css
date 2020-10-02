@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@200;300&display=swap');
-
 /*--------------------------------Main Page Content */
-body,
 html {
-  height: 100%;
-  color: #000;
-  line-height: 1.8;
+  overflow: auto;
+}
+
+body {
+  max-width: 100%;
   font-size: 16px;
-  font-family: 'Poppins',sans-serif;
+  margin: 0px auto;
 }
 
 /*----------------------------------Navabar */
 .fas.fa-at {
   color: #030303;
   text-shadow: 1px 2px 2px #777;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .fas.fa-at:hover {
@@ -22,38 +21,78 @@ html {
   text-shadow: 1px 1px 2px #000;
 }
 
-
-/*-------------------------------- Headers and text */
-h1,h2,h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+a.w3-bar-item.w3-button {
+ font-size: 1.1rem;
+ font-weight: 400;
+ margin-top: 5px;
+ color: #2f2f2f;
+ font-family: 'Playfair Display',
+  serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px #777;
 }
 
-h4, h5, h6 {
+a.w3-bar-item.w3-button:hover {
+  text-decoration: overline;
+  background-color: transparent;
+}
+
+.w3-bar-item {
+   background-color: transparent;
+}
+
+.fa.fa-bars {
+  font-size: 2rem;
+  background-color: transparent;
+}
+
+#myNavbar {
+  background-color: rgba(227, 227, 223, 0.58);
+}
+
+/*-------------------------------- Headers and text */
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
 }
 
 
 h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Playfair Display', serif;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 #subtitle {
-    text-align: center;
-    padding: 16px 16px;
-    font-size: 1.5rem;
+  text-align: center;
+  padding: 16px 16px;
+  font-size: 1.5rem;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
-span, 
-span.w3-center.w3-padding-large.w3-black.w3-xlarge.w3-wide.w3-animate-opacity {
-    font-family: 'Poppins', sans-serif;
+span#name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.w3-black {
+  padding: 10px 15px;
 }
 
 #subtitle {
@@ -61,6 +100,8 @@ span.w3-center.w3-padding-large.w3-black.w3-xlarge.w3-wide.w3-animate-opacity {
   font-size: 1.3rem;
   color: #000;
   letter-spacing: 4px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 /*-------------------------------- Hero */
@@ -70,15 +111,17 @@ span.w3-center.w3-padding-large.w3-black.w3-xlarge.w3-wide.w3-animate-opacity {
 
 #name {
   font-size: 5.5rem;
-    font-family: 'Poppins',
+  font-family: 'Montserrat',
     sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 10px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
 }
 
 /*-------------------------------- Background Images */
 /* Create a Parallax Effect - copied from w3schools.com */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,38 +130,45 @@ span.w3-center.w3-padding-large.w3-black.w3-xlarge.w3-wide.w3-animate-opacity {
 
 /* First image (Logo. Full height) - copied from w3schools.com */
 .bgimg-1 {
-  background-image: url('../images/deskspace.jpg');
+  background: url('../images/deskspace.jpg') no-repeat center fixed;
+  background-size: cover;
   min-height: 100vh;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url('../images/wireframes.jpg');
-    min-height: 400px;
+  background-image: url('../images/wireframes.jpg');
+  min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("../images/keyboard.jpg");
-    min-height: 400px;
+  background-image: url("../images/keyboard.jpg");
+  min-height: 400px;
 }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+.w3-wide {
+  letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+  cursor: pointer;
+}
 
 /*-------------------------------- ABOUT */
 
 p.w3-wide {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 5px;
+  margin: 10px 0px;
 }
 
 #skill-icons {
-    font-size: 1.3rem;
-    color: #000;
-    text-shadow: 3px 1px 3px darkgray;
+  font-size: 1.3rem;
+  color: #000;
+  text-shadow: 3px 1px 3px darkgray;
 }
 
 /*--------------------------------  Dividers */
@@ -134,7 +184,10 @@ span#caption {
 /*--------------------------------  Media Queries */
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
   }
