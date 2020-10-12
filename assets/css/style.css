@@ -89,8 +89,13 @@ h6 {
 
 #subtitle {
   text-align: center;
-  padding: 16px 16px;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 8px;
+  font-family: 'Montserrat',
+     sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px auto;
 }
 
 p {
@@ -99,24 +104,18 @@ p {
 
 span#name {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  letter-spacing: 3;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin: 0px auto;
+  text-align: center;
 }
 
 .w3-black {
-  padding: 10px 20px;
-  margin: 0 20px;
-}
-
-#subtitle {
-  margin-top: 10px;
-  font-size: 1.1rem;
-  color: #000;
-  letter-spacing: 2.5;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
+  padding: 10px 30px;
+  margin: 0px auto;
 }
 
 .w3-text-white.w3-wide {
@@ -132,14 +131,6 @@ span#name {
 /*-------------------------------- Hero */
 #home {
   height: 100vh;
-}
-
-#name {
-  font-size: 5.5rem;
-  font-family: 'Montserrat',
-    sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 10px;
 }
 
 /*-------------------------------- Background Images */
