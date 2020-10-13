@@ -68,18 +68,18 @@
     <p class="w3-center"><em></em></p>
     <p>
     <div class="w3-row">
-      <div class="w3-col w3-center w3-padding-16">
+      <div class="w3-col w3-center w3-padding-32">
         <img class="w3-image w3-opacity w3-hover-opacity-off" id="portrait2" alt="portrait" src="assets/images/portrait2.jpg" alt="Photo of Me"
           width="200" height="50">
       </div>
 
       <!-- Hide this text on small devices -->
-      <div class="w3-col w3-center w3-padding-64" style="text-align: center;">
+      <div class="w3-col w3-center w3-padding-32" style="text-align: center;">
         <p id="about-me">I am a skilled Full Stack Developer with diverse experience. When developing projects, I understand that the aesthetics of effective design combined with application speed,
         security and reliability create the most optimal client and user experience.
       </div>
     </div>
-    <h3 class="w3-center" id="skills-section">SKILLS</h3>
+    <h3 class="w3-center w3-padding-32" id="skills-section">SKILLS</h3>
     <p class="w3-wide"><i class="fab fa-html5" id="skill-icons"></i>HTML</p>
     <div class="w3-light-grey">
       <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%" data-aos="fade-right"
@@ -132,8 +132,11 @@
   <!-- Container (Portfolio Section) -->
   <div class="w3-content w3-container w3-padding-64" id="portfolio">
     <h3 class="w3-center">MY WORK</h3>
-    <p class="w3-center"><em>Here are some of my latest development projects.<br> Click on the images to view
-        projects.</em></p><br>
+    <div class="w3-col w3-center w3-padding-32" style="text-align: center;">
+        <p class="w3-center" id="portfolio-text">Here are some of my latest development projects.<br> Click on the images to
+          view
+          projects.</p>
+    </div>
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding" data-aos="fade-up" data-aos-duration="1000">
@@ -189,20 +192,25 @@
   <!-- Container (Contact Section) -->
   <div class="w3-content w3-container w3-padding-64" id="contact">
     <h3 class="w3-center">Contact Me</h3>
-    <p class="w3-center"><em>I'd love to hear from you!</em></p>
+    <p class="w3-center" id="contact-me">I'd love to hear from you!</p>
 
     <div class="w3-row w3-section">
       <div class="w3-col m2 w3-container">
 
       </div>
-      <div class="w3-col m8 w3-panel">
-        <div class="w3-large w3-margin-bottom">
-          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-          <span>New York, New York,US</span>
+      <div class="w3-col m8 w3-panel" id="contact-details">
+        <div class="w3-margin-bottom">
+          <i class="fas fa-map-marker w3-large"></i>
+          <span id="address">New York, New York,US</span>
           <br>
-          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 914-562-0119<br>
-          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> troianoali@gmail.com<br>
+          <i class="fas fa-phone w3-large"></i> 
+          <span id="phone"></span>
+          <br>
+          <i class="fas fa-envelope w3-large"></i>
+          <span id="email">btech373@gmail.com</span>
+          <br>
         </div>
+        <div class="w3-row w3-padding-16">
         <p>Contact me via phone, email... or drop a line here <i class="fa fa-arrow-down"></i> </p>
         <form action="/action_page.php" target="_blank">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
@@ -218,21 +226,22 @@
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
           </button>
         </form>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <a id="top" href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     <div class="w3-xlarge w3-section">
-      <i class="fab fa-facebook-official w3-hover-opacity"></i>√
+      <i class="fab fa-facebook-official w3-hover-opacity"></i>
       <a target="_blank" href="https://www.instagram.com/alissaexplainsitall/"><i class="fab fa-instagram w3-hover-opacity"></i></a>
       <i class="fab fa-twitter w3-hover-opacity"></i>
       <a target="_blank" href="https://www.linkedin.com/in/alissat/"><i class="fab fa-linkedin w3-hover-opacity"></a></i>
     </div>
-    <p>2020 <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-        class="w3-hover-text-green">Alissa Troiano</a></p>
+    <p id="footer-text">2020 <a id="footer-link" href="https://www.github.com/alissatroiano" title="github.com/alissatroiano" target="_blank"
+        class="w3-hover-text-grey">Alissa Troiano</a></p>
   </footer>
 
   <script>

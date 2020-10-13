@@ -13,10 +13,14 @@ body {
 em {
   font-family: 'Montserrat',
   sans-serif;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: 1.1rem;
   font-style: normal;
   letter-spacing: .8;
+}
+
+a {
+  text-decoration-line: line-through;
 }
 
 /*----------------------------------Navabar */
@@ -44,7 +48,7 @@ color: #030303;
 }
 
 a.w3-bar-item.w3-button:hover {
-  text-decoration: overline;
+  text-decoration-line: line-through;
   background-color: transparent;
 }
 
@@ -177,7 +181,7 @@ span#name {
 p.w3-wide {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 5px;
   margin: 10px 0px;
 }
@@ -197,7 +201,7 @@ p.w3-wide {
 #about-me {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: .2px;
   margin: 5px 30px;
 }
@@ -214,12 +218,22 @@ p.w3-wide {
 }
 
 /*-------------------------------- Portfolio Section */
+#portfolio-text {
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 1rem;
+    text-transform: lowercase;
+    letter-spacing: .2px;
+    margin: 5px 30px;
+}
+
 figcaption {
   text-align: center;
   font-size: 13px;
   font-family: 'Montserrat',
     sans-serif;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  margin-top: 10px;
 }
 
 img {
@@ -233,12 +247,25 @@ img {
 }
 
 /*-------------------------------- Contact Section */
+#contact-details {
+  margin-bottom: 50px;
+}
+
+#contact-me {
+      font-family: 'Montserrat',
+      sans-serif;
+      font-size: 1rem;
+      text-transform: lowercase;
+      letter-spacing: .2px;
+      margin: 5px 30px;
+}
+
 .w3-col.m8.w3-panel {
    font-family: 'Montserrat',
    sans-serif;
    font-size: 1rem;
    letter-spacing: 1px;
-   text-transform: uppercase;
+   text-transform: lowercase;
    font-weight: 300;
 }
 
@@ -247,14 +274,53 @@ img {
   padding-top: 20px;
 }
 
+a:hover {
+  color: #ccc !important;
+}
+
+.fas.fa-map-marker.w3-large,
+.fas.fa-phone.w3-large,
+.fas.fa-envelope.w3-large {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+span#email, span#address, span#phone {
+  text-transform: lowercase;
+}
+
+/*------------------------- Footer */
 footer {
   position: relative;
   width: 100vw;
   overflow: hidden;
 }
 
-a:hover {
-  color: #ccc !important;
+#footer-text {
+    font-family: 'Playfair Display',
+    serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+}
+
+.w3-button.w3-light-grey {
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    font-weight: 300;
+}
+
+a#footer-link:hover {
+  text-decoration-line: line-through;
+}
+
+a#top:hover {
+    text-decoration-line: line-through;
+
 }
 
 /*--------------------------------  Media Queries */
