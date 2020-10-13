@@ -69,7 +69,8 @@ h3 {
   font-size: 1.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-
+  text-shadow: 1px 1px 2px #777;
+  color: #000;
 }
 
 h4,
@@ -198,7 +199,18 @@ p.w3-wide {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: .2px;
-  margin: 10px 20px;
+  margin: 5px 30px;
+}
+
+#skills-section {
+  font-family: 'Playfair Display',
+  serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #777;
+  margin-bottom: 30px;
 }
 
 /*-------------------------------- Portfolio Section */
