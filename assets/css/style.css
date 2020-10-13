@@ -187,6 +187,20 @@ p.w3-wide {
   text-shadow: 3px 1px 3px darkgray;
 }
 
+#portrait2 {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+#about-me {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .2px;
+  margin: 10px 20px;
+}
+
 /*-------------------------------- Portfolio Section */
 figcaption {
   text-align: center;
