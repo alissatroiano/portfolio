@@ -26,8 +26,8 @@ em {
   font-size: 2.2rem;
 }
 
-.fas.fa-at:hover {
-  color: #777474;
+.fas.fa-at: {
+  color: #777;
   text-shadow: 1px 1px 2px #000;
 }
 
@@ -146,7 +146,8 @@ span#name {
 
 /* First image (Logo. Full height) - copied from w3schools.com */
 .bgimg-1 {
-  background: url('../images/deskspace.jpg') no-repeat center fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)),
+  url('../images/deskspace.jpg') no-repeat center fixed;
   background-size: cover;
   min-height: 100vh;
 }
@@ -197,7 +198,12 @@ figcaption {
 
 img {
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.w3-button:hover {
+   padding-bottom: 5px;
 }
 
 /*-------------------------------- Contact Section */
@@ -221,6 +227,9 @@ footer {
   overflow: hidden;
 }
 
+a:hover {
+  color: #ccc !important;
+}
 
 /*--------------------------------  Media Queries */
 /* Turn off parallax scrolling for tablets and phones */
