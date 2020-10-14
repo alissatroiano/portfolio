@@ -314,6 +314,9 @@ footer {
     font-weight: 300;
 }
 
+a#footer-link {
+  text-decoration-line: none;
+}
 a#footer-link:hover {
   text-decoration-line: line-through;
 }
