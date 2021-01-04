@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 /*--------------------------------Main Page Content */
 html {
   overflow: auto;
@@ -11,7 +13,7 @@ body {
 }
 
 em {
-  font-family: 'Montserrat',
+  font-family: 'Roboto',
   sans-serif;
   font-size: 1.1rem;
   font-style: normal;
@@ -43,7 +45,7 @@ color: #030303;
   serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 1px 1px 2px #777;
+  text-shadow: 1px 1px 1px #777;
 }
 
 a.w3-bar-item.w3-button:hover {
@@ -93,17 +95,17 @@ h6 {
 
 #subtitle {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 8px;
-  font-family: 'Montserrat',
+  font-family: 'Roboto',
      sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   text-align: center;
   margin: 15px auto;
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 span#name {
@@ -123,7 +125,7 @@ span#name {
 }
 
 .w3-text-white.w3-wide {
-   font-family: 'Montserrat',
+   font-family: 'Roboto',
      sans-serif;
    text-transform: uppercase;
     letter-spacing: 2;
@@ -178,7 +180,7 @@ span#name {
 
 /*-------------------------------- About Section */
 p.w3-wide {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   letter-spacing: 5px;
   margin: 10px 0px;
@@ -197,7 +199,7 @@ p.w3-wide {
 }
 
 #about-me {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   letter-spacing: .2px;
   margin: 5px 30px;
@@ -216,7 +218,7 @@ p.w3-wide {
 
 /*-------------------------------- Portfolio Section */
 #portfolio-text {
-    font-family: 'Montserrat',
+    font-family: 'Roboto',
     sans-serif;
     font-size: 1rem;
     letter-spacing: .2px;
@@ -225,10 +227,10 @@ p.w3-wide {
 
 figcaption {
   text-align: center;
-  font-size: 13px;
-  font-family: 'Montserrat',
+  font-size: 1rem;
+  font-family: 'Roboto',
     sans-serif;
-  margin-top: 10px;
+    margin: 10px 10px;
 }
 
 img {
@@ -247,7 +249,7 @@ img {
 }
 
 #contact-me {
-      font-family: 'Montserrat',
+      font-family: 'Roboto',
       sans-serif;
       font-size: 1rem;
       letter-spacing: .2px;
@@ -255,7 +257,7 @@ img {
 }
 
 .w3-col.m8.w3-panel {
-   font-family: 'Montserrat',
+   font-family: 'Roboto',
    sans-serif;
    font-size: 1rem;
    letter-spacing: 1px;
@@ -295,7 +297,7 @@ footer {
 }
 
 .w3-button.w3-light-grey {
-    font-family: 'Montserrat',
+    font-family: 'Roboto',
     sans-serif;
     font-size: 1rem;
     letter-spacing: 1px;
