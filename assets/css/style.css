@@ -13,7 +13,6 @@ body {
 em {
   font-family: 'Montserrat',
   sans-serif;
-  text-transform: lowercase;
   font-size: 1.1rem;
   font-style: normal;
   letter-spacing: .8;
@@ -181,7 +180,6 @@ span#name {
 p.w3-wide {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
-  text-transform: lowercase;
   letter-spacing: 5px;
   margin: 10px 0px;
 }
@@ -201,7 +199,6 @@ p.w3-wide {
 #about-me {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  text-transform: lowercase;
   letter-spacing: .2px;
   margin: 5px 30px;
 }
@@ -222,7 +219,6 @@ p.w3-wide {
     font-family: 'Montserrat',
     sans-serif;
     font-size: 1rem;
-    text-transform: lowercase;
     letter-spacing: .2px;
     margin: 5px 30px;
 }
@@ -232,7 +228,6 @@ figcaption {
   font-size: 13px;
   font-family: 'Montserrat',
     sans-serif;
-  text-transform: lowercase;
   margin-top: 10px;
 }
 
@@ -255,7 +250,6 @@ img {
       font-family: 'Montserrat',
       sans-serif;
       font-size: 1rem;
-      text-transform: lowercase;
       letter-spacing: .2px;
       margin: 5px 30px;
 }
@@ -265,7 +259,6 @@ img {
    sans-serif;
    font-size: 1rem;
    letter-spacing: 1px;
-   text-transform: lowercase;
    font-weight: 300;
 }
 
@@ -283,10 +276,6 @@ a:hover {
 .fas.fa-envelope.w3-large {
   margin-right: 10px;
   margin-left: 20px;
-}
-
-span#email, span#address, span#phone {
-  text-transform: lowercase;
 }
 
 /*------------------------- Footer */
@@ -310,7 +299,6 @@ footer {
     sans-serif;
     font-size: 1rem;
     letter-spacing: 1px;
-    text-transform: lowercase;
     font-weight: 300;
 }
 
