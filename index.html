@@ -21,12 +21,15 @@
   </script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-  <style>
-  </style>
+  <script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+  emailjs.init('user_zf3vBJuHYSbtEgwwo7YWb')
+</script>
+  <script src="assets/js/script.js"></script>
 </head>
 
 <body>
-
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar" id="myNavbar">
@@ -48,11 +51,7 @@
       <a href="#" class="w3-bar-item w3-button">SEARCH</a>
     </div>
   </div>
-
-  <!-- First Parallax Image with Logo Text -->
-  <!-- <img class="img-thumbnail w3-center" src="assets/images/at.png" style="width:50px;height:50px;margin: 0 auto;;">
--->
-
+ <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1" data-aos="zoom-out" data-aos-duration="2000" id="home">
   <div class="w3-container w3-content w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-black" id="name">ALISSA <span class="w3-hide-small"></span> TROIANO</span>
@@ -60,7 +59,6 @@
       data-aos-duration="1500" id="subtitle">SOFTWARE DEVELOPER</h6>
   </div>
 </div>
-
   <!-- Container (About Section) -->
   <div class="w3-content w3-container w3-padding-64" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
@@ -83,25 +81,25 @@
     <p class="w3-wide"><i class="fab fa-html5" id="skill-icons"></i>HTML</p>
     <div class="w3-light-grey">
       <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%" data-aos="fade-right"
-        data-aos-duration="2000">70%</div>
+        data-aos-duration="2000">80%</div>
     </div>
     <p class="w3-wide"><i class="fab fa-css3" id="skill-icons"></i>CSS</p>
     <div class="w3-light-grey">
       <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%" data-aos="fade-right"
-        data-aos-duration="2000">75%</div>
+        data-aos-duration="2000">85%</div>
     </div>
     <p class="w3-wide"><i class="fab fa-js-square" id="skill-icons"></i>JavaScript</p>
     <div class="w3-light-grey">
       <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%" data-aos="fade-right"
-        data-aos-duration="2000">70%</div>
+        data-aos-duration="2000">75%</div>
     </div>
     <p class="w3-wide"><i class="fab fa-python" id="skill-icons"></i>Python</p>
     <div class="w3-light-grey">
       <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%" data-aos="fade-right"
-        data-aos-duration="2000">85%</div>
+        data-aos-duration="2000">90%</div>
     </div>
   </div>
-
+  <!-- Container (Portfolio Section) -->
   <div class="w3-row w3-center w3-dark-grey w3-padding-16">
     <div class="w3-quarter w3-section">
       <i class="fas fa-sitemap" style="font-size:2rem;"></i><br>
@@ -121,14 +119,12 @@
     </div>
 
   </div>
-
   <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2" data-aos="zoom-out" data-aos-duration="2000">
     <div class="w3-display-middle">
         <span class="w3-text-white w3-wide">PORTFOLIO</span>
     </div>
 </div>
-
   <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
     <h3 class="w3-center">MY WORK</h3>
@@ -141,6 +137,19 @@
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding" data-aos="fade-up" data-aos-duration="1000">
+      <div class="w3-col w3-half">
+           <a class="w3-button" href="https://hue-alissa.herokuapp.com" target="_blank">
+            <img src="assets/images/glitchart.jpg" style="max-width:100%; min-height: 350px;" alt="hue"/></a>
+        <figcaption><strong>Hue</strong><br>Python, PostgreSQL, Django, JavaScript. jQuery, Bootstrap 5, CSS, HTML5</figcaption>
+    </div>
+GHC GH
+    <div class="w3-col w3-half">
+          <a class="w3-button" href="http://boutique-ado-alissa.herokuapp.com/" target="_blank">
+            <img src="assets/images/boutique-ado.jpg" style="max-width:100%; min-height: 350px;" /></a>
+        <figcaption><strong>Boutique Ado</strong><br>HTML, CSS, JavaScript, jQuery</figcaption>
+</div>
+  </div>
+    <div class="w3-row-padding" data-aos="fade-up" data-aos-duration="1000">
           <div class="w3-col w3-half">
                <a class="w3-button" href="https://dash-ms3.herokuapp.com" target="_blank">
                 <img src="assets/images/ingredients.jpg" style="width:100%" /></a>
@@ -152,7 +161,7 @@
                 <img src="assets/images/gameoffacts.jpg" style="width:100%" /></a>
             <figcaption><strong>Game Of Facts</strong><br>HTML, CSS, JavaScript, jQuery</figcaption>
 </div>
-          </div>
+      </div>
         <div class="w3-row-padding" data-aos="fade-up" data-aos-duration="1000">
            <div class="w3-col w3-half">
             <a class="w3-button" href="https://alissatroiano.github.io/MS-1/" target="_blank">
@@ -180,14 +189,12 @@
         </div>
     </div>
 </div>
-
   <!-- Third Parallax Image with Portfolio Text -->
   <div class="bgimg-3" data-aos="zoom-out" data-aos-duration="2000">
     <div class="w3-display-middle">
       <span class="w3-text-white w3-wide">CONTACT</span>
     </div>
   </div>
-
   <!-- Container (Contact Section) -->
   <div class="w3-content w3-container w3-padding-64" id="contact">
     <h3 class="w3-center">Contact Me</h3>
@@ -211,25 +218,31 @@
         </div>
         <div class="w3-row w3-padding-16">
         <p>Contact me via phone, email... or drop a line here <i class="fa fa-arrow-down"></i> </p>
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
+        <form method=POST" id="contact-form">
+          <div class="field">
+            <label for="from_name">from_name</label>
+            <input type="text" name="from_name" id="from_name">
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-right w3-section" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
+          <div class="field">
+            <label for="to_name">to_name</label>
+            <input type="text" name="to_name" id="to_name">
+          </div>
+          <div class="field">
+            <label for="message">message</label>
+            <input type="text" name="message" id="message">
+          </div>
+          <div class="field">
+            <label for="reply_to">reply_to</label>
+            <input type="text" name="reply_to" id="reply_to">
+          </div>
+        <button>
+          <input type="submit" id="button" value="Send Email" >
+        </button>
         </form>
         </div>
       </div>
     </div>
   </div>
-
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
     <a id="top" href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
@@ -279,5 +292,4 @@
   </script>
 
 </body>
-
 </html>
