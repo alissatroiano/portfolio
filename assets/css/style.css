@@ -307,6 +307,9 @@ input[type="submit"] {
   border: none
 }
 
+#button {
+  background-color: #000;
+}
 /*------------------------- Footer */
 footer {
   position: relative;
