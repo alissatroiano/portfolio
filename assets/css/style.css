@@ -248,12 +248,12 @@ img {
   margin-bottom: 50px;
 }
 
-#contact-me {
-      font-family: 'Roboto',
-      sans-serif;
-      font-size: 1rem;
-      letter-spacing: .2px;
-      margin: 5px 30px;
+#contact-form {
+    font-family: 'Roboto',
+    sans-serif;
+    font-size: 1rem;
+    letter-spacing: .2px;
+    margin: 5px 30px;
 }
 
 .w3-col.m8.w3-panel {
@@ -299,16 +299,12 @@ a:hover {
 }
 
 input[type="submit"] {
+  background-color: #000;
   display: block;
   padding: 6px 30px;
   font-size: 14px;
-  background-color: #4460AA;
   color: #fff;
-  border: none
-}
-
-#button {
-  background-color: #000;
+  border: none;
 }
 /*------------------------- Footer */
 footer {
