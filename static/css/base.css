@@ -2,6 +2,10 @@ body {
 	font-family: 'Futura-PT', sans-serif;
 }
 
-#jumbbotron {
+#header {
+	font-family: 'Futura-PT', sans-serif;
+}
 
+#jumbotron {
+	background-color: orange;
 }
