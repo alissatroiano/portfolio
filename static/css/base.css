@@ -16,6 +16,10 @@ body {
 	font-size: 50px;
 }
 
+h1#title {
+	letter-spacing: 5px;
+}
+
 /* https://css-tricks.com/perfect-full-page-background-image/ */
 #jumbotron {
 	background: url('../images/deskspace.jpg') no-repeat center center;
@@ -36,7 +40,7 @@ body {
 }
 
 .display-1{
-  font-size: 160px;
+  font-size: 100px;
   font-weight: 1000;
 }
 
@@ -75,3 +79,160 @@ body {
     top: 30px;
    }
 }
+
+
+/********************************* Homepage project Cards */
+div.card-image-overlay {
+    width: 100%;
+    padding-top: 10rem;
+}
+
+h3.py-3.mt-5.mb-4.lh-1.fw-bold {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    background-color: rgb(121 93 130 / 88%);
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    margin: 0px auto;
+}
+
+img.card-img-overlay {
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+}
+
+
+/* grayscale effect copied from https://codepen.io/mhhasan320/pen/BwqvLL */
+div#project-card1 {
+    background-image: url('../../media/glitchart.jpg');
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 20rem;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+    box-shadow: 1px 4px 14px 1px #2f1b31;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div#project-card1:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+div#project-card2 {
+    background-image: url('../../media/mixedmedia.jpg');
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 20rem;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+    box-shadow: 1px 4px 14px 1px #2f1b31;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div#project-card2:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+div#project-card3 {
+    background-image: url('../../media/conceptualart.jpg');
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 20rem;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+    box-shadow: 1px 4px 14px 1px #2f1b31;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div#project-card3:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+div#project-card4 {
+    background-image: url('../../media/digitalpainting.jpg');
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 20rem;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+    box-shadow: 1px 4px 14px 1px #2f1b31;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div#project-card4:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+div#project-card5 {
+    background-image: url('https://cdn.pixabay.com/photo/2017/02/18/18/31/fractal-2077883_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 20rem;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+    box-shadow: 1px 4px 14px 1px #2f1b31;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div#project-card5:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+div#project-card6 {
+    background-image: url('https://cdn.pixabay.com/photo/2018/03/14/18/20/girl-3225923_1280.png');
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 20rem;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+    box-shadow: 1px 4px 14px 1px #2f1b31;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div#project-card6:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+/* ***************************./end-homepage */
