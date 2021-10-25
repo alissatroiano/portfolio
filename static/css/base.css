@@ -21,9 +21,14 @@ h1#title {
 	letter-spacing: 5px;
 }
 
+
 h2.section-title {
-  font-family: 'Source Code Pro', monospace;
-  color:rgb(13, 109, 119);
+  font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  color:rgb(0, 0, 0);
+  text-shadow: 0.05em 0.05em 0.2em rgba(75, 75, 75, 0.9);
   text-align: center;
 }
 
