@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
 	font-family: 'Futura-PT', sans-serif;
 }
@@ -20,6 +21,12 @@ h1#title {
 	letter-spacing: 5px;
 }
 
+h2.section-title {
+  font-family: 'Source Code Pro', monospace;
+  color:rgb(13, 109, 119);
+  text-align: center;
+}
+
 /* https://css-tricks.com/perfect-full-page-background-image/ */
 #jumbotron {
 	background: url('../images/deskspace.jpg') no-repeat center center;
@@ -34,23 +41,44 @@ h1#title {
 }
 
 /*===================== Jumbotron ======================*/
-.about-img{
- margin-left: -100px;
- right: -60px;
+.typewriter h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:  typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
 
-.display-1{
-  font-size: 100px;
-  font-weight: 1000;
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-.position-absolute{
-  font-weight: 700;
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #6de1e3; }
 }
 
-.typed-cursor {
-  font-size: 45px;
-  color: #fafafa;
+#typed {
+  font-family: 'Source Code Pro', monospace;
+  color: #53e44c;
+  text-shadow: 1px 1px 3px rgb(40, 39, 39);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+#typed-small-screens {
+    font-family: 'Source Code Pro', monospace;
+
+  color: #53e44c;
+  text-shadow: 1px 1px 3px rgb(40, 39, 39);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 30px;
 }
 
 .blue{
@@ -87,13 +115,16 @@ div.card-image-overlay {
     padding-top: 10rem;
 }
 
-h3.py-3.mt-5.mb-4.lh-1.fw-bold {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    background-color: rgb(121 93 130 / 88%);
+.py-3.my-3.fw-bold {
+    font-family: 'Futura-PT', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    background-color: rgb(6 6 6 / 80%);
     font-weight: 300;
     letter-spacing: 1.5px;
     margin: 0px auto;
+    text-align: center;
 }
 
 img.card-img-overlay {
@@ -111,7 +142,7 @@ img.card-img-overlay {
 
 /* grayscale effect copied from https://codepen.io/mhhasan320/pen/BwqvLL */
 div#project-card1 {
-    background-image: url('../../media/glitchart.jpg');
+    background-image: url('../images/popart.png');
     background-position: center;
     background-size: cover;
     min-width: 100%;
@@ -132,7 +163,7 @@ div#project-card1:hover {
 }
 
 div#project-card2 {
-    background-image: url('../../media/mixedmedia.jpg');
+    background-image: url('../images/dash.jpg');
     background-position: center;
     background-size: cover;
     min-width: 100%;
@@ -153,7 +184,7 @@ div#project-card2:hover {
 }
 
 div#project-card3 {
-    background-image: url('../../media/conceptualart.jpg');
+    background-image: url('../images/gameoffacts.jpg');
     background-position: center;
     background-size: cover;
     min-width: 100%;
@@ -174,7 +205,7 @@ div#project-card3:hover {
 }
 
 div#project-card4 {
-    background-image: url('../../media/digitalpainting.jpg');
+    background-image: url('../images/infinity.jpg');
     background-position: center;
     background-size: cover;
     min-width: 100%;
