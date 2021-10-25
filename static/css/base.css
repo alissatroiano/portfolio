@@ -27,20 +27,38 @@ h2.section-title {
   text-align: center;
 }
 
-/* https://css-tricks.com/perfect-full-page-background-image/ */
-#jumbotron {
-	background: url('../images/deskspace.jpg') no-repeat center center;
-	min-height: 100vh;
-	max-width: 100%;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	position: fixed;
-	overflow: hidden;
+.text-small {
+  font-family: 'Source Sans Pro', monospace;
+  font-size: 12px;
+  color:rgb(201, 188, 48);
+  font-weight: lighter;
 }
 
 /*===================== Jumbotron ======================*/
+
+/* https://css-tricks.com/perfect-full-page-background-image/ */
+#home {
+  font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/keyboard.jpg') no-repeat center center;
+  background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.btn-white:hover {
+  background-color: rgb(201, 188, 48);
+  padding: 10px 20px;
+  border: none;
+}
+
 .typewriter h2 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
@@ -226,7 +244,7 @@ div#project-card4:hover {
 }
 
 div#project-card5 {
-    background-image: url('https://cdn.pixabay.com/photo/2017/02/18/18/31/fractal-2077883_1280.jpg');
+    background-image: url('../images/jammming.jpg');
     background-position: center;
     background-size: cover;
     min-width: 100%;
@@ -247,7 +265,7 @@ div#project-card5:hover {
 }
 
 div#project-card6 {
-    background-image: url('https://cdn.pixabay.com/photo/2018/03/14/18/20/girl-3225923_1280.png');
+    background-image: url('../images/music.jpg');
     background-position: center;
     background-size: cover;
     min-width: 100%;
