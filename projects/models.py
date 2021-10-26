@@ -1,17 +1,6 @@
 from django.db import models
-
-TECHSTACK = (
-        ('1','HTML'),
-        ('2', 'CSS'),
-        ('3', 'JavaScript'),
-        ('4','Python'),
-        ('5', 'CSS'),
-        ('6', 'JavaScript'),
-        ('7','Python'),
-        ('8', 'CSS'),
-        ('9', 'JavaScript'),
-        
-)
+from django.utils import timezone
+now = timezone.now
 
 # Create your models here.
 class Project(models.Model):
@@ -20,10 +9,12 @@ class Project(models.Model):
     description = models.TextField()
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True, )
-    # link = models.
+    link = models.URLField(max_length=1024, null=True, blank=True)
     technologies = models.CharField(max_length=254, null=True, blank=True)
-    techstack = models.CharField(max_length=254, choices=TECHSTACK, default='1')
-    
+    # https://stackoverflow.com/questions/1737017/django-auto-now-and-auto-now-add
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    deleted_at = models.DateTimeField(auto_now=True)
 
     
     def __str__(self):

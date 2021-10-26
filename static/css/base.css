@@ -39,15 +39,20 @@ h2.section-title {
   font-weight: lighter;
 }
 
+#header {
+  margin-bottom: 20px;
+}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fafafa;
   background-color: #000;
+  font-size: 12px;
 }
 
 .nav-link {
   color: rgb(33, 33, 33);
   text-transform: uppercase;
-  letter-spacing: .5px;
+  letter-spacing: .3px;
 }
 
 .nav-link:hover {
@@ -58,19 +63,37 @@ h2.section-title {
 /*===================== Jumbotron ======================*/
 /* https://css-tricks.com/perfect-full-page-background-image/ */
 #home {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../images/code-background.jpeg') no-repeat center center;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.jumbotron-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+#home-text {
   font-family: 'Futura-PT', sans-serif;
   text-transform: uppercase;
   font-size: 1.2rem;
   letter-spacing: 3px;
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/keyboard.jpg') no-repeat center center;
-  background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-  font-weight: 300;
-  letter-spacing: 1.5px;
-  margin: 0px auto;
-  text-align: center;
 }
 
 .btn-white:hover {
@@ -80,24 +103,24 @@ h2.section-title {
 }
 
 .typewriter h2 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
+    width: auto;
+    border-right: .15em solid white; /* The typwriter cursor */
+    display: inline-block;
+    overflow: hidden;
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    animation:  typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    animation:  typing 3.5s steps(100, end), blink-caret .75s step-end infinite;
+    }
+
+@keyframes typing{
+  from {max-width: 0}
+  to {max-width: 100%}
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #6de1e3; }
+@keyframes blink-caret{
+  from, to {border-color: transparent}
+  50% {border-color: #2da427}
 }
 
 #typed {
