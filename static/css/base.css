@@ -175,22 +175,10 @@ h2.section-title {
 }
 
 
-/********************************* Homepage project Cards */
+/********************************* Project Cards */
 div.card-image-overlay {
     width: 100%;
     padding-top: 10rem;
-}
-
-.py-3.my-3.fw-bold {
-    font-family: 'Futura-PT', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    letter-spacing: 3px;
-    background-color: rgb(6 6 6 / 80%);
-    font-weight: 300;
-    letter-spacing: 1.5px;
-    margin: 0px auto;
-    text-align: center;
 }
 
 img.card-img-overlay {
@@ -204,8 +192,6 @@ img.card-img-overlay {
     border: none;
     margin: 0px auto;
 }
-
-
 /* grayscale effect copied from https://codepen.io/mhhasan320/pen/BwqvLL */
 div#project-card1 {
     background-image: url('../images/popart.png');
@@ -337,4 +323,64 @@ div#project-card6:hover {
   padding: 10px 20px;
 }
 
+.py-3.my-3.fw-bold, #info {
+  height: fit-content;
+  font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  background-color: rgb(6 6 6 / 80%);
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.card .py-3.my-3.fw-bold {
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  height: 500px;
+}
+
+.card:hover .py-3.my-3.fw-bold {
+  min-height: 15vh;
+}
+
+.card:hover .py-3.my-3.fw-bold {
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height:40px;
+}
+/********************./end-projects-section */
+
+
 /* ***************************./end-homepage */
+
+@media only screen and (min-width: 768px) {
+  #typed-small-screens {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+  #typed-small-screens {
+    font-size: 1.5rem;
+  }
+}
