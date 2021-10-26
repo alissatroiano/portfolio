@@ -10,7 +10,7 @@ class ProjectAdmin(admin.ModelAdmin):
      	'updated_at', 
       	'technologies', 
         'link', 
-        'image',
+        'picture',
 	]
     
     search_fields = [
@@ -25,7 +25,7 @@ class ProjectAdmin(admin.ModelAdmin):
      	'updated_at',
       	'technologies',
         'link', 
-        'image',
+        'picture',
 	]
     
     list_per_page = 50
@@ -35,7 +35,7 @@ class ProjectAdmin(admin.ModelAdmin):
         'description', 
         'technologies', 
         'link', 
-        'image',
+        'picture',
 	]
     
     readonly_fields = ['created_at', 'updated_at', 'deleted_at']
