@@ -35,12 +35,27 @@ h2.section-title {
 .text-small {
   font-family: 'Source Sans Pro', monospace;
   font-size: 12px;
-  color:rgb(201, 188, 48);
+  color: #EAAA00;
   font-weight: lighter;
 }
 
-/*===================== Jumbotron ======================*/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fafafa;
+  background-color: #000;
+}
 
+.nav-link {
+  color: rgb(33, 33, 33);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.nav-link:hover {
+  background-color: rgb(0, 0, 0);
+  color: #fafafa;
+}
+
+/*===================== Jumbotron ======================*/
 /* https://css-tricks.com/perfect-full-page-background-image/ */
 #home {
   font-family: 'Futura-PT', sans-serif;
@@ -59,7 +74,7 @@ h2.section-title {
 }
 
 .btn-white:hover {
-  background-color: rgb(201, 188, 48);
+  background-color: rgb(234, 170, 0);
   padding: 10px 20px;
   border: none;
 }
@@ -109,10 +124,15 @@ h2.section-title {
   color: #fafafa;
 }
 
-.btn{
-  border: 2px solid rgb(13, 109, 119);
+.btn {
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 1px 4px 14px 1px #666;
 } 
 
+.btn:hover {
+  background-color: #000;
+  color: #fafafa
+}
 .btn-white{
   background-color: #fafafa;
   border:2px solid #fafafa;
@@ -289,4 +309,9 @@ div#project-card6:hover {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
 }
+
+#view-projects {
+  padding: 10px 20px;
+}
+
 /* ***************************./end-homepage */
