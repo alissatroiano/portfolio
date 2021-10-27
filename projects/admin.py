@@ -36,8 +36,10 @@ class ProjectAdmin(admin.ModelAdmin):
         'technologies', 
         'link', 
         'picture',
+        'image',
+        'image_url',
 	]
     
     readonly_fields = ['created_at', 'updated_at', 'deleted_at']
     
-    ordering = ('name',)
+    ordering = ('title',)

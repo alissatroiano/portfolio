@@ -1,14 +1,58 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block content %}
 <h1>Projects</h1>
-<div class="row">
+<div class="row g-4 text-center p-3">
 {% for project in projects %}
-    <div class="col-md-4">
-        <div class="card mb-2">
-            <img class="card-img-top" src="{% static project.image.url %}">
+    <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card h-100 mb-2">
+            <div class="card h-100 border-0" id=project-card>
+                {% if project.picture %}
+                <a href="{% url 'project_detail' project.id %}">
+                    <img class="card-img-top h-100 img-fluid" src="/media/{{ project.picture }}" alt="{{ project.picture }}">
+                </a>
+                {% else %}
+                <a href="{% url 'project_detail' project.id %}">
+                    <img class="card-img-top img-fluid h-100" src="{{ MEDIA_URL }}matrix-code_copy.jpg" alt="{{ project.title }}">
+                </a>
+                {% endif %}
+                <div class="card-body pb-0">
+                    <h4 class="mb-2 display-font heading-sm">{{ project.title }}</h4>
+                     <p class="body-small my-2 text-muted">{{ project.medium }}</p>
+                </div>
+                <div class="card-footer bg-white pt-0 border-0 text-left">
+                    <div class="row">
+                        <div class="col">
+                              <h6 class="p-price text-main body-sm mb-0 text-left fw-bold ms-2 my-2">
+                                ${{ project.price }}
+                            </h6>
+
+                            {% if project.category %}
+                            <p class="body-small body-font mt-1 mb-0">
+                                <a class="text-muted" href="{% url 'project' %}?category={{ project.category.title }}">
+                                    <i class="fas fa-tag mr-1"></i>{{ project.category.friendly_name }}
+                                </a>
+                            </p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                 {% if project.label == 'SL' %}
+                  <div class="ribbon-wrapper">
+                           <div class="ribbon-S body-sm fw-bold">SALE!</div>
+                  </div>
+                  {% endif %}     
+                {% if project.label == 'CL' %}
+                <div class="ribbon-wrapper">
+                    <div class="ribbon-C body-sm fw-bold bg-primary">75% OFF!</div>
+                </div>
+                {% endif %}
+            </div>
+
             <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>
+
                 <p class="card-text">{{ project.description }}</p>
                 <a href="{% url 'project_detail' project.pk %}"
                    class="btn btn-primary">
