@@ -16,7 +16,7 @@
                         <h2 id="typed-small-screens" class="d-xs-block text-center">Full Stack Software Developer</h2>
                     </div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-center pt-5 mx-3">
-                        <a href="#projects" class="btn btn-white mr-4 btn-border-1">Projects</a>
+                        <a href="{% url 'project_index' %}" class="btn btn-white mr-4 btn-border-1">Projects</a>
                         <a href="#" class="btn btn-white d-sm-block mx-4">Resume</a>
                     </div>
                 </div>
@@ -25,11 +25,28 @@
     </div>
     </section>
 
+    <section class="about py-3 py-lg-5 my-5" id="about">
+        <div class="row d-flex text-center align-items center justify-content-center">
+            <div class="col-12">
+                <h2 class="section-title mb-5">ABOUT ME</h2>
+                <div class="col-12">
+                    <img class="img-fluid" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                      data-aos-duration="2000" id="portrait2" alt="portrait" src="static/images/portrait2.jpg" alt="Photo of Me"
+                      width="200" height="50">
+                  </div>
+                <div class="col-8 offset-2 align-items-center justify-content-center text-center mt-5" style="text-align: center;">
+                    <p id="about-me mx-3 mx-lg-5 px-3 px-lg-5">I am a full stack software developer with a wealth of knowledge. Competent in Frontend and Backend development, with seasoned JavaScript, HTML, CSS and Python skills. Keen on learning new products and technologies to build innovative solutions that solve customer needs.
+
+                  </div>
+            </div>
+        </div>
+    </section>
+
     <!--Project Display https://codepen.io/mhhasan320/pen/BwqvLL -->
-    <section class="project-cta container-fluid text-light py-5 my-5" id="projects">
+    <section class="project-cta container-fluid text-light py-5 my-5 bg-dark" id="projects">
         <div class="row d-flex text-dark g-4 p-5">
             <div class="col-12">
-                <h2 class="section-title">My Dev Projects</h2>
+                <h2 class="section-title text-light">My Dev Projects</h2>
             </div>
         </div>
         <div class="row d-flex text-white g-4 p-5">
@@ -77,24 +94,6 @@
                             <h6>Yoga Studio</h6>
                             <p class="text-small my-2">Front End Website</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-8 col-sm-4">
-                <div class="card h-100 overflow-hidden rounded-5 img-fluid" id="project-card5">
-                    <div class="card-image-overlay">
-                        <div class="py-3 my-3 fw-bold">
-                            <h3>Jammming</h3>
-                            <h6>Playlist Making App</h6>
-                            <p class="text-small my-2"> React JS Application</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-8 col-sm-4">
-                <div class="card h-100 overflow-hidden rounded-5 img-fluid" id="project-card6">
-                    <div class="card-image-overlay">
-                        <h3 class="py-3 mt-5 mb-4 lh-1 fw-bold"> Musicon</h3>
                     </div>
                 </div>
             </div>

@@ -36,7 +36,6 @@ class ProjectAdmin(admin.ModelAdmin):
         'technologies', 
         'link', 
         'picture',
-        'image',
         'image_url',
 	]
     

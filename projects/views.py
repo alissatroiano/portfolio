@@ -11,6 +11,7 @@ def project_index(request):
     context = {
         'projects': projects
     }
+    
     return render(request, 'projects.html', context)
 
 def project_detail(request, pk):

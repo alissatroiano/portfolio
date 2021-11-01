@@ -26,6 +26,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
 		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!--AOS-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 	<!--Custom CSS-->
 	<link rel="stylesheet" href="{% static 'css/base.css' %}">
 	<title>Alissa Troiano</title>
@@ -34,14 +38,14 @@
 <body>
 	<div class="container-fluid" id="header">
 		<header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
-			<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+			<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none ">
 				<span class="fs-4">Alissa Troiano</span>
 			</a>
 
 			<ul class="nav nav-pills">
 				<li class="nav-item"><a href="#home" class="nav-link" aria-current="page">Home</a></li>
 				<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-				<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+				<li class="nav-item"><a href="{% url 'project_index' %}" class="nav-link">Projects</a></li>
 				<li class="nav-item"><a href="#" class="nav-link">Resume</a></li>
 				<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
 			</ul>
@@ -69,6 +73,9 @@
 		  </ul>
 		</footer>
 	  </div>
+	  <script>
+		AOS.init();
+	  </script>
 	{% endblock %}
 </body>
 </html>

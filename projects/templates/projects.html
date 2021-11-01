@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<h1>Projects</h1>
+<h2 class="section-title">My Dev Projects</h1>
 <div class="row g-4 text-center p-3 m-5">
 {% for project in projects %}
     <div class="col-sm-6 col-lg-4 mb-4">
@@ -19,15 +19,11 @@
                 {% endif %}
                 <div class="card-body pb-0">
                     <h4 class="mb-2 display-font heading-sm">{{ project.title }}</h4>
-                     <p class="body-small my-2 text-muted">{{ project.medium }}</p>
+                     <p class="body-small my-2 text-muted">{{ project.technologies }}</p>
                 </div>
                 <div class="card-footer bg-white pt-0 border-0 text-left">
                     <div class="row">
                         <div class="col">
-                              <h6 class="p-price text-main body-sm mb-0 text-left fw-bold ms-2 my-2">
-                                ${{ project.price }}
-                            </h6>
-
                             {% if project.category %}
                             <p class="body-small body-font mt-1 mb-0">
                                 <a class="text-muted" href="{% url 'project' %}?category={{ project.category.title }}">
@@ -38,26 +34,12 @@
                         </div>
                     </div>
                 </div>
-                 {% if project.label == 'SL' %}
-                  <div class="ribbon-wrapper">
-                           <div class="ribbon-S body-sm fw-bold">SALE!</div>
-                  </div>
-                  {% endif %}     
-                {% if project.label == 'CL' %}
-                <div class="ribbon-wrapper">
-                    <div class="ribbon-C body-sm fw-bold bg-primary">75% OFF!</div>
-                </div>
-                {% endif %}
             </div>
 
             <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>
 
                 <p class="card-text">{{ project.description }}</p>
-                <a href="{% url 'project_detail' project.pk %}"
-                   class="btn btn-primary">
-                    Read More
-                </a>
             </div>
         </div>
     </div>
