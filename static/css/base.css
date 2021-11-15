@@ -26,8 +26,12 @@ hr {
 
 h1#title {
 	letter-spacing: 5px;
+  font-family: 'Futura-PT', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Futura-PT', sans-serif;
+}
 
 h2.section-title {
   font-family: 'Futura-PT', sans-serif;
