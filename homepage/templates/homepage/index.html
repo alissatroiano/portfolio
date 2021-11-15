@@ -25,11 +25,11 @@
         </div>
     </section>
 
-    <section class="about py-3 py-lg-5 my-5" id="about">
+    <section class="about py-3 py-lg-5 my-3 my-lg-5" id="about">
         <div class="row d-flex text-center align-items center justify-content-center">
             <div class="col-12">
-                <h2 class="section-title my-3 my-lg-5">ABOUT ME</h2>
-                <hr class="text-center">
+                <h2 class="section-title">ABOUT ME</h2>
+                <hr>
             </div>
             <div class="col-12 my-3 my-lg-5">
                 <img class="img-fluid mt-3" data-aos="flip-left" data-aos-easing="ease-out-cubic"
@@ -134,16 +134,15 @@
         </div>
         </div>
     </section>
-
-    <!--Contact-->
-    <section class="container-fluid bg-dark text-light my-5 py-3 py-lg-5" id="contact">
+    <!--./-------------------Contact -->
+    <section class="container-fluid bg-dark text-light py-3 py-lg-5" id="contact">
         <div class="row d-flex text-center align-items-center justify-content-center">
             <div class="col-12">
-                <h2 class="section-title text-light my-3 my-lg-5">Contact Me</h2>
+                <h2 class="section-title text-light">Contact Me</h2>
             </div>
-            <div class="row text-center my-3 my-lg-5">
+            <div class="row text-center my-3 my-lg-4 py-3py-lg-5">
                 <div class="col-8 offset-2" id="contact-details">
-                    <div class="my-3" id="contact-details">
+                    <div class="my-3 my-lg-4" id="contact-details">
                         <i class="fas fa-map-marker" data-aos="zoom-in" data-aos-duration="2000"></i>
                         <span id="address" data-aos="zoom-in" data-aos-duration="2000">New York, New York,US</span>
                         <br>
@@ -159,20 +158,20 @@
                             Got a project in mind? Tell me all about it in the message area below. Don't forget your
                             name & your email, so I can get back to you at my earliest convenience.
                         </p>
-                        <strong class="my-3">Drop me a line </strong>
-                        <span><i class="fa fa-arrow-down"></i></span>
+                        <strong class="my-3 my-lg-4">Drop me a line </strong>
+                        <span><i class="fa fa-arrow-down" data-aos="zoom-in" data-aos-duration="2000"></i></span>
                     </div>
-                    <div class="row">
-                        <form method=POST" id="contact-form" action="submit">
-                            <div class="form-group">
+                    <div class="row text-start">
+                        <form method=POST" id="contact-form" action="submit" class="mb-5">
+                            <div class="form-group my-3">
                                 <label for="from_name">Your Name</label>
                                 <input type="text" name="from_name" id="from_name" class="w3-input">
                             </div>
-                            <div class="form-group my-2">
+                            <div class="form-group my-3">
                                 <label for="message">Your Message</label>
                                 <textarea type="text" name="message" id="message" class="w3-input"></textarea>
                             </div>
-                            <div class="form-group my-2">
+                            <div class="form-group my-3">
                                 <label for="reply_to">Your Email</label>
                                 <input type="text" name="reply_to" id="reply_to" class="w3-input">
                             </div>
@@ -186,5 +185,9 @@
                 </div>
             </div>
     </section>
+    <script type="text/javascript">
+        emailjs.init('user_zf3vBJuHYSbtEgwwo7YWb')
+    </script>
+    <script src="static/js/script.js"></script>
 </body>
 {% endblock %}

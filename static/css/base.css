@@ -5,8 +5,8 @@ body {
 }
 
 hr {
-  border: 2px solid rgb(0, 0, 0);
-  width: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  width: 20px;
   margin: 0px auto;
 }
 
@@ -37,6 +37,8 @@ h2.section-title {
   color:rgb(0, 0, 0);
   text-shadow: 0.05em 0.05em 0.2em rgba(75, 75, 75, 0.9);
   text-align: center;
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 
 .text-small {
@@ -384,18 +386,33 @@ div#project-card6:hover {
   display: inline-block;
   position: relative;
   overflow: hidden;
+  padding: 60px 20px;
+  margin: 60px 0px;
 }
 
 #contact-details {
   letter-spacing: 1px;
+  /* padding: 10px 0px; */
 }
+
+div#contact-details {}
+
+div#contact-details {}
+
+div#contact-details {}
 
 #resume, #projects, #about {
   max-width: 100%; 
   overflow: hidden;
 }
 
+i.fas.fa-map-marker.aos-init.aos-animate {
+  margin: 10px 0px;
+}
 
+i.fas.fa-phone.aos-init.aos-animate {
+  margin: 10px 0px;
+}
 
 
 /* ***************************./end-homepage */
