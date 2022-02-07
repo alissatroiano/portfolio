@@ -110,12 +110,6 @@ h2.section-title {
   letter-spacing: 3px;
 }
 
-.btn-white:hover {
-  background-color: rgb(234, 170, 0);
-  padding: 10px 20px;
-  border: none;
-}
-
 .typewriter h2 {
     width: auto;
     border-right: .15em solid white; /* The typwriter cursor */
@@ -167,12 +161,19 @@ h2.section-title {
 } 
 
 .btn:hover {
-  background-color: #000;
-  color: #fafafa
+  background-color: #dab600;
 }
+
 .btn-white{
   background-color: #fafafa;
+  padding: 10px 20px;
   border:2px solid #fafafa;
+}
+
+.btn-white:hover {
+  background-color: rgb(234, 170, 0);
+  padding: 10px 20px;
+  border: none;
 }
 
 .btn-blue{
@@ -203,7 +204,7 @@ div#project-card1 {
     background-position: center;
     background-size: cover;
     min-width: 100%;
-    min-height: 20rem;
+    min-height: 18vh;
     justify-content: center;
     display: flex;
     overflow: hidden;
@@ -224,7 +225,7 @@ div#project-card2 {
     background-position: center;
     background-size: cover;
     min-width: 100%;
-    min-height: 20rem;
+    min-height: 18vh;
     justify-content: center;
     display: flex;
     overflow: hidden;
@@ -245,7 +246,7 @@ div#project-card3 {
     background-position: center;
     background-size: cover;
     min-width: 100%;
-    min-height: 20rem;
+    min-height: 18vh;
     justify-content: center;
     display: flex;
     overflow: hidden;
@@ -266,7 +267,7 @@ div#project-card4 {
     background-position: center;
     background-size: cover;
     min-width: 100%;
-    min-height: 20rem;
+    min-height: 18vh;
     justify-content: center;
     display: flex;
     overflow: hidden;
@@ -287,7 +288,7 @@ div#project-card5 {
     background-position: center;
     background-size: cover;
     min-width: 100%;
-    min-height: 20rem;
+    min-height: 18vh;
     justify-content: center;
     display: flex;
     overflow: hidden;
@@ -308,7 +309,7 @@ div#project-card6 {
     background-position: center;
     background-size: cover;
     min-width: 100%;
-    min-height: 20rem;
+    min-height: 18vh;
     justify-content: center;
     display: flex;
     overflow: hidden;
@@ -341,7 +342,7 @@ div#project-card6:hover {
   text-align: center;
 }
 
-.card .py-3.my-3.fw-bold {
+.py-3.my-3.fw-bold {
   width: 100%;
   height: fit-content;
   margin: 0 auto;
@@ -354,20 +355,20 @@ div#project-card6:hover {
   opacity: 0;
   max-height: 0;
   transition: all 0.3s ease;
-}
-
-.card:hover {
-  height: 500px;
-}
-
-.card:hover .py-3.my-3.fw-bold {
-  min-height: 15vh;
+  min-height: 20vh;
 }
 
 .card:hover .py-3.my-3.fw-bold {
   transition: all 0.3s ease;
   opacity: 1;
-  max-height:40px;
+  min-height: 20vh;
+}
+
+a, button,
+a.view-projects.text-dark
+a.view-projects {
+  font-family: 'Futura-PT', sans-serif;
+  text-decoration: none;
 }
 /********************./end-projects-section */
 
@@ -379,8 +380,17 @@ div#project-card6:hover {
 
 #skills-section {
   font-family: 'Futura-PT', sans-serif;
-  font-size: 30px;
   letter-spacing: 1px;
+}
+
+i {
+  font-size: 1.5rem;
+  color: rgb(6 6 6 / 80%);
+}
+
+i:hover {
+  /* color: rgb(221, 184, 20); */
+  color: #dab600
 }
 
 /******************** Contact-section */
