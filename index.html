@@ -8,7 +8,8 @@
   <!--Load Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
+<!--Import Futura from Adobe Fonts-->
+<link rel="stylesheet" href="https://use.typekit.net/hdw8ydb.css">
   <!-- W3 Schools Starter Stylesheet -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!--Load Font Awesome -->
@@ -57,8 +58,8 @@
           data-aos-duration="1500" id="subtitle">SOFTWARE DEVELOPER</h6>
       </div>
       <div class="row">
-        <dic class="col-12 text-center">
-          <a href="#about" class="w3-button w3-black w3-padding-large w3-large w3-margin-top aos-init aos-animate"
+        <dic class="col-12 text-center" id="hero-buttons">
+          <a href="#about" class="w3-button w3-black w3-padding-large w3-margin-top aos-init aos-animate"
             data-aos="fade-up" data-aos-duration="1500">RESUME</a>
           <a href="#about" class="w3-button w3-black w3-padding-large w3-large w3-margin-top aos-init aos-animate"
             data-aos="fade-up" data-aos-duration="1500">PROJECTS</a>
@@ -85,13 +86,16 @@
           security and reliability create the most optimal client and user experience.
       </div>
       <div class="row">
-        <div class="col-12  text-center">
+        <div class="col-12 text-center">
           <a href="assets/resume.pdf" target="_blank"
-            class="w3-button w3-black w3-padding-large w3-large w3-margin-top aos-init aos-animate" data-aos="fade-up"
-            data-aos-duration="1500">RESUME</a>
+            class="btn w3-padding-large w3-large w3-margin-top aos-init aos-animate" data-aos="fade-up"
+            data-aos-duration="1500" id="resumeBtn"><span class="button-text">RESUME</span></a>
         </div>
       </div>
     </div>
+
+    <hr>
+
     <div class="w3-row">
       <div class="col-12">
         <h3 class="w3-center w3-padding-32" id="skills-section">SKILLS</h3>

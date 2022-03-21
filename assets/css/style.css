@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
 
 /*--------------------------------Main Page Content */
 html {
@@ -13,7 +13,7 @@ body {
 }
 
 em {
-  font-family: 'Roboto',
+  font-family: 'Futura-PT',
   sans-serif;
   font-size: 1.1rem;
   font-style: normal;
@@ -22,6 +22,14 @@ em {
 
 a {
   text-decoration-line: line-through;
+}
+
+hr {
+  border: 1px solid #5c9caf;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin: 50px 0px;
+  padding: 1px 0px;
 }
 
 /*----------------------------------Navabar */
@@ -66,6 +74,27 @@ a.w3-bar-item.w3-button:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+#resumeBtn {
+  background-color: #000;
+  color: #fafafa;
+  box-shadow: 3px 1px 3px #666;
+}
+
+#resumeBtn:hover {
+  background-color: rgba(119, 119, 119, 0.411);
+}
+
+span.button-text {
+  font-family: "Futura-PT", serif;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+span.button-text:hover {
+  color: #000;
+}
+
 /*-------------------------------- Headers and text */
 h1,
 h2,
@@ -97,7 +126,7 @@ h6 {
   text-align: center;
   font-size: 1.2rem;
   letter-spacing: 8px;
-  font-family: 'Roboto',
+  font-family: 'Futura-PT',
      sans-serif;
   font-weight: 400;
   text-align: center;
@@ -105,7 +134,7 @@ h6 {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Futura-PT', sans-serif;
 }
 
 span#name {
@@ -125,7 +154,7 @@ span#name {
 }
 
 .w3-text-white.w3-wide {
-   font-family: 'Roboto',
+   font-family: 'Futura-PT',
      sans-serif;
    text-transform: uppercase;
     letter-spacing: 2;
@@ -137,6 +166,13 @@ span#name {
 /*-------------------------------- Hero */
 #home {
   height: 100vh;
+}
+
+#hero-buttons {
+  font-family: 'Futura-PT', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+
 }
 
 /*-------------------------------- Background Images */
@@ -180,8 +216,8 @@ span#name {
 
 /*-------------------------------- About Section */
 p.w3-wide {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
+  font-family: 'Futura-PT', sans-serif;
+  font-size: 1.3rem;
   letter-spacing: 5px;
   margin: 10px 0px;
 }
@@ -199,10 +235,11 @@ p.w3-wide {
 }
 
 #about-me {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
+  font-family: 'Futura-PT', sans-serif;
+  font-size: 1.2rem;
   letter-spacing: .2px;
   margin: 5px 30px;
+  padding: 10px;
 }
 
 #skills-section {
@@ -223,19 +260,24 @@ p.w3-wide {
 
 h4.skills-header {
   margin-bottom: 40px;
+  font-family: 'Futura-PT', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #555;
+  letter-spacing: 2px;
 }
 
 i#python:hover, i#javascript:hover,
 i#html:hover, i#css:hover,
 i#sql:hover, i#git:hover  {
-  color: #555555;
+  color: #5c9caf;
   font-size: 3.5rem;
 }
 
 
 /*-------------------------------- Portfolio Section */
 #portfolio-text {
-    font-family: 'Roboto',
+    font-family: 'Futura-PT',
     sans-serif;
     font-size: 1rem;
     letter-spacing: .2px;
@@ -245,7 +287,7 @@ i#sql:hover, i#git:hover  {
 figcaption {
   text-align: center;
   font-size: 1rem;
-  font-family: 'Roboto',
+  font-family: 'Futura-PT',
     sans-serif;
     margin: 10px 10px;
 }
@@ -266,7 +308,7 @@ img {
 }
 
 #contact-form {
-    font-family: 'Roboto',
+    font-family: 'Futura-PT',
     sans-serif;
     font-size: 1rem;
     letter-spacing: .2px;
@@ -274,7 +316,7 @@ img {
 }
 
 .w3-col.m8.w3-panel {
-   font-family: 'Roboto',
+   font-family: 'Futura-PT',
    sans-serif;
    font-size: 1rem;
    letter-spacing: 1px;
@@ -340,7 +382,7 @@ footer {
 }
 
 .w3-button.w3-light-grey {
-    font-family: 'Roboto',
+    font-family: 'Futura-PT',
     sans-serif;
     font-size: 1rem;
     letter-spacing: 1px;
