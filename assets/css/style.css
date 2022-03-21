@@ -110,11 +110,11 @@ p {
 
 span#name {
   font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 3rem;
+  font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 2px;
   margin: 0px auto;
   text-align: center;
 }
@@ -215,6 +215,23 @@ p.w3-wide {
   text-shadow: 1px 1px 2px #777;
   margin-bottom: 30px;
 }
+
+#skills-row {
+  margin: 0px auto;
+  padding: 10px 20px;
+}
+
+h4.skills-header {
+  margin-bottom: 40px;
+}
+
+i#python:hover, i#javascript:hover,
+i#html:hover, i#css:hover,
+i#sql:hover, i#git:hover  {
+  color: #555555;
+  font-size: 3.5rem;
+}
+
 
 /*-------------------------------- Portfolio Section */
 #portfolio-text {
