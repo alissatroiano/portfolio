@@ -21,6 +21,8 @@ em {
 }
 
 strong {
+  font-family: 'Futura-PT',
+  sans-serif;
   font-weight: 800;
 }
 
@@ -331,6 +333,11 @@ img {
 /*-------------------------------- Contact Section */
 #contact-details {
   margin-bottom: 50px;
+  font-family: 'Futura-PT',
+  sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 #contact-form {
