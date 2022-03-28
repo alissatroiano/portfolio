@@ -20,6 +20,10 @@ em {
   letter-spacing: .8;
 }
 
+strong {
+  font-weight: 800;
+}
+
 a {
   text-decoration-line: line-through;
 }
@@ -317,6 +321,11 @@ img {
 
 .w3-button:hover {
    padding-bottom: 5px;
+}
+
+.portfolio-image {
+  max-width: 100%;
+  min-height: 200px;
 }
 
 /*-------------------------------- Contact Section */

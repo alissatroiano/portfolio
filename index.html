@@ -231,21 +231,51 @@
   </div>
   <!-- Container (Portfolio Section) -->
   <div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center">MY WORK</h3>
-    <div class="w3-col w3-center w3-padding-32" style="text-align: center;">
-      <p class="w3-center" id="portfolio-text">Here are some of my latest development projects.<br> Click on the
+    <div class="row">
+      <div class="col-12">
+    <h3 class="w3-center mt-3 mt-lg-5">MY WORK</h3>
+      <p class="w3-center my-5" id="portfolio-text">Here are some of my latest development projects.<br> Click on the
         images to
         view
         projects.</p>
-    </div>
+        
+      </div>
+      </div>
+      <!--./end-heading-row-->
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding" data-aos="fade-up" data-aos-duration="1000">
-      <div class="w3-col w3-half">
-        <a class="w3-button" href="https://hue-alissa.herokuapp.com" target="_blank">
-          <img src="assets/images/glitchart.jpg" style="max-width:100%;" alt="hue" /></a>
-        <figcaption><strong>Hue</strong><br>Python, PostgreSQL, Django, JavaScript. jQuery, Bootstrap 5, CSS, HTML5
-        </figcaption>
+      <div class="d-block d-md-flex justify-content-between my-2">
+        <div class="col-12 col-md-6 mx-3 mt-lg-3">
+          <h2>Smitten</h2>
+          <h4 class="text-muted">Valentine's Day Wordle Game </h4>
+          <p class="my-3"> As the 1st Place winner in Code Institute’s 2022 “Love is in The Air” Hackathon, "Smitten" is 
+            a Valentine's Day & love themed "Wordle" game. Smitten was built during a 5•Day Coding Challenge with JavaScript, HTML5, CSS3 & Bootstrap 5.
+          </p>
+          <p class="text-muted">JavaScript, HTML, CSS, Bootstrap 5
+          </p>
+        </div>
+      <div class="col-12 col-md-6">
+        <a class="w3-button" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">
+          <img src="assets/images/smitten.png" class="img-fluid" style="max-width:100%;" alt="smitten" /></a>
       </div>
+      </div>
+
+      <div class="d-block d-md-flex justify-content-between my-2">
+        <div class="col-12 col-md-6">
+          <a class="w3-button" href="https://hue-alissa.herokuapp.com" target="_blank">
+            <img src="assets/images/glitchart.jpg" style="max-width:100%;" alt="hue" /></a>
+        </div>
+        <div class="col-12 col-md-6 mx-3 mt-lg-5">
+          <h2>Hue</h2>
+          <h4 class="text-muted">Full Stack E-Commerce Application</h4>
+          <p class="my-3"> Hue is a digital art store with custom database models, data store, secure user authentication, and shopping cart checkout via Stripe API integration. Special admin users can create, edit, and delete products, orders and users.
+          </p>
+          <p class="text-muted">Python, Django, JavaScript, HTML, CSS, Bootstrap 5, AWS S3, Heroku</p>
+  
+        </div>
+        </div>
+  
+
       <div class="w3-col w3-half">
         <a class="w3-button" href="http://boutique-ado-alissa.herokuapp.com/" target="_blank">
           <img src="assets/images/boutique-ado.jpg" style="max-width:100%; min-height: 200px;" /></a>
