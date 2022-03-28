@@ -8,8 +8,8 @@
   <!--Load Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-<!--Import Futura from Adobe Fonts-->
-<link rel="stylesheet" href="https://use.typekit.net/hdw8ydb.css">
+  <!--Import Futura from Adobe Fonts-->
+  <link rel="stylesheet" href="https://use.typekit.net/hdw8ydb.css">
   <!-- W3 Schools Starter Stylesheet -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!--Load Font Awesome -->
@@ -37,6 +37,8 @@
       </a>
       <a href="#home" class="w3-bar-item"><i class="fas fa-at"></i> </a>
       <a id="about-li" href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="assets/resume.pdf" target="_blank" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-briefcase"></i> RESUME</a>
+      <a href="#skills" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-lightbulb"></i> SKILLS</a>
       <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
       <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
@@ -45,10 +47,12 @@
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
       <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
       <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="assets/resume.pdf" target="_blank" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+      <a href="#skills" class="w3-bar-item w3-button" onclick="toggleFunction()">SKILLS</a>
       <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
     </div>
   </div>
+  
   <!-- First Parallax Image with Logo Text -->
   <div class="bgimg-1" data-aos="zoom-out" data-aos-duration="2000" id="home">
     <div class="w3-container w3-content w3-display-middle" style="white-space:nowrap;">
@@ -68,105 +72,137 @@
     </div>
   </div>
   <!-- Container (About Section) -->
-  <div class="w3-content w3-container w3-padding-64" id="about">
+  <div class="w3-content w3-container w3-padding-64 mt-3 mt-lg-5" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
-    <p class="w3-center"><em></em></p>
-    <p>
     <div class="w3-row">
       <div class="w3-col w3-center w3-padding-32">
         <img class="w3-image w3-opacity w3-hover-opacity-off" data-aos="flip-left" data-aos-easing="ease-out-cubic"
           data-aos-duration="2000" id="portrait2" alt="portrait" src="assets/images/portrait2.jpg" alt="Photo of Me"
           width="200" height="50">
       </div>
-
       <!-- Hide this text on small devices -->
-      <div class="w3-col w3-center w3-padding-32" style="text-align: center;">
+      <div class="w3-col w3-center w3-padding-16" style="text-align: center;">
         <p id="about-me">I am a skilled Full Stack Developer with diverse experience. When developing projects, I
           understand that the aesthetics of effective design combined with application speed,
           security and reliability create the most optimal client and user experience.
       </div>
-      <div class="row">
+      <!--resume link here-->
+      <div class="w3-col w3-center w3-padding-16">
         <div class="col-12 text-center">
           <a href="assets/resume.pdf" target="_blank"
             class="btn w3-padding-large w3-large w3-margin-top aos-init aos-animate" data-aos="fade-up"
             data-aos-duration="1500" id="resumeBtn"><span class="button-text">RESUME</span></a>
         </div>
       </div>
+      <!--./end-resume-link-->
     </div>
-
+    <!--hr-->
+    <div class="d-flex justify-content-center text-center">
     <hr>
-
-    <div class="w3-row">
-      <div class="col-12">
-        <h3 class="w3-center w3-padding-32" id="skills-section">SKILLS</h3>
-        <div class="row w3-center" id="skills-row">
-          <div class="col-xs-8 col-sm-4">
-            <div class="about">
-              <i class="mx-1 mx-md-2 mx-lg-3 fab fa-python fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-                data-aos-easing="100" data-aos-delay="50" id="python"></i>
-              <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-                data-aos-anchor-placement="center-bottom">
-                Python
-              </h4>
-            </div>
-          </div>
-          <div class="col-xs-8 col-sm-4">
-            <div class="about">
-              <i class="mx-1 mx-md-2 mx-lg-3 fab fa-js-square fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-                data-aos-easing="100" data-aos-delay="200" id="javascript"></i>
-              <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-                data-aos-anchor-placement="center-bottom">
-                JavaScript
-              </h4>
-            </div>
-
-          </div>
-          <div class="col-xs-8 col-sm-4">
-            <div class="about">
-              <i class="mx-1 mx-md-3 mx-lg-5 fab fa-html5 fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-                data-aos-easing="100" data-aos-delay="50" id="html"></i>
-              <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-                data-aos-anchor-placement="center-bottom">
-                HTML
-              </h4>
-            </div>
-          </div>
-          <div class="col-xs-8 col-sm-4">
-            <div class="about">
-              <i class="mx-1 mx-md-3 mx-lg-5 fab fa-css3 fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-                data-aos-easing="100" data-aos-delay="50" id="css"></i>
-              <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-                data-aos-anchor-placement="center-bottom">
-                CSS
-              </h4>
-            </div>
-          </div>
-          <div class="col-xs-8 col-sm-4">
-            <div class="about">
-              <i class="mx-1 mx-md-3 mx-lg-5 fas fa-database fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-                data-aos-easing="100" data-aos-delay="50" id="sql"></i>
-              <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-                data-aos-anchor-placement="center-bottom">
-                SQL
-              </h4>
-            </div>
-          </div>
-          <div class="col-xs-8 col-sm-4">
-            <div class="about">
-              <i class="mx-1 mx-md-3 mx-lg-5 fas fa-code-branch fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-                data-aos-easing="100" data-aos-delay="50" id="git"></i>
-              <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-                data-aos-anchor-placement="center-bottom">
-                Git
-              </h4>
-            </div>
-          </div>
-
-        </div>
+  </div>
+  <!--./end-hr-->
+  <div class="row mt-5 pt-5" id="skills">
+    <div class="col-12">
+  <h3 class="text-center mt-5" id="skillsHeader">MY SKILLS</h3>
+  </div>
+  </div>
+  <div class="row w3-center g-5 w3-padding-32" id="skills-row">
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-2 mx-lg-3 fab fa-python fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="python"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          Python
+        </h4>
       </div>
     </div>
-    </p>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-2 mx-lg-3 fab fa-js-square fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="200" id="javascript"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          JavaScript
+        </h4>
+      </div>
+
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fab fa-html5 fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="html"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          HTML
+        </h4>
+      </div>
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fab fa-css3 fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="css"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          CSS
+        </h4>
+      </div>
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fas fa-database fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="sql"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+         SQL/NOSQL
+        </h4>
+      </div>
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fas fa-code-branch fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="git"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          Git
+        </h4>
+      </div>
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fab fa-react fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="git"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          React
+        </h4>
+      </div>
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fab fa-aws fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="git"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          AWS
+        </h4>
+      </div>
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fab fa-google fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="git"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          Google Cloud
+        </h4>
+      </div>
+    </div>
+
   </div>
+  <!--./end-skills-row-->
+  </div>
+  <!--end-about-container-->
 
   <!-- Container (Portfolio Section) -->
   <div class="w3-row w3-center w3-dark-grey w3-padding-16">
@@ -278,7 +314,7 @@
           <span id="phone" data-aos="zoom-in" data-aos-duration="2000">914.562.0119</span>
           <br>
           <i class="fas fa-envelope w3-large" data-aos="zoom-in" data-aos-duration="2000"></i>
-          <span id="email" data-aos="zoom-in" data-aos-duration="2000">alissatroianonyc@gmail.com</span>
+          <span id="email" data-aos="zoom-in" data-aos-duration="2000">alissatroiano@alissatroiano.com</span>
           <br>
         </div>
         <div class="w3-row w3-padding-16 text-center">

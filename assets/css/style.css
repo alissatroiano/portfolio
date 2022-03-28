@@ -25,11 +25,16 @@ a {
 }
 
 hr {
-  border: 1px solid #5c9caf;
-  width: 100%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  border: 1px solid #666;
+  width: 50px;
   margin: 50px 0px;
   padding: 1px 0px;
+  background-color: #666;
+  opacity: 1;
+}
+
+a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
+  font-family: 'Futura-PT', sans-serif;
 }
 
 /*----------------------------------Navabar */
@@ -243,6 +248,15 @@ p.w3-wide {
 }
 
 #skills-section {
+}
+
+#skills-row {
+  margin: 0px auto;
+  padding: 10px 20px;
+}
+
+#skillsHeader {
+  margin: 30px 0px;
   font-family: 'Playfair Display',
   serif;
   text-transform: uppercase;
@@ -250,12 +264,15 @@ p.w3-wide {
   letter-spacing: 4px;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #777;
-  margin-bottom: 30px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #777;
+  margin-top: 30px;
 }
 
-#skills-row {
-  margin: 0px auto;
-  padding: 10px 20px;
+#my-skills {
+  font-family: 'Futura-PT', sans-serif;
+  font-size: 1rem;
 }
 
 h4.skills-header {
