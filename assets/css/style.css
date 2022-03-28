@@ -33,7 +33,6 @@ a {
 hr {
   border: 1px solid #666;
   width: 50px;
-  margin: 50px 0px;
   padding: 1px 0px;
   background-color: #666;
   opacity: 1;
@@ -150,7 +149,7 @@ p {
 
 span#name {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -247,10 +246,9 @@ p.w3-wide {
 
 #about-me {
   font-family: 'Futura-PT', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: .2px;
-  margin: 5px 30px;
-  padding: 10px;
+  margin: 0px 30px;
 }
 
 #skills-section {
