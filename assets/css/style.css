@@ -224,6 +224,14 @@ span#name {
   cursor: pointer;
 }
 
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+hr.project-divider {
+  border-top: 1px solid #666;
+}
 /*-------------------------------- About Section */
 p.w3-wide {
   font-family: 'Futura-PT', sans-serif;

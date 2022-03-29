@@ -76,22 +76,21 @@
   <div class="w3-content w3-container w3-padding-64 mt-3 mt-lg-5" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
     <div class="w3-row">
-      <div class="w3-col w3-center w3-padding-32">
+      <div class="col-12 w3-center w3-padding-32">
         <img class="w3-image w3-opacity w3-hover-opacity-off" data-aos="flip-left" data-aos-easing="ease-out-cubic"
           data-aos-duration="2000" id="portrait2" alt="portrait" src="assets/images/portrait2.jpg" alt="Photo of Me"
           width="200" height="50">
       </div>
       <!-- Hide this text on small devices -->
-      <div class="w3-col w3-center w3-padding-16" style="text-align: center;">
-        <p id="about-me">I am a skilled Full Stack Developer with diverse experience. When developing projects, I
-          understand that the aesthetics of effective design combined with application speed,
-          security and reliability create the most optimal client and user experience.
+      <div class="col-12 px-3 mx-auto w3-center w3-padding-16" style="text-align: center;">
+        <p id="about-me mx-3 px-3">
+          I'm a creative, results-driven full-stack software developer with experience participating in the full software development life-cycle, from planning to launch. Comfortable in Frontend and Backend development, I'm passionate about developing robust, full-stack applications that solve business needs.
       </div>
       <!--resume link here-->
-      <div class="w3-col w3-center w3-padding-16">
+      <div class="w3-col w3-center w3-padding-16 my-3">
         <div class="col-12 text-center">
           <a href="assets/resume.pdf" target="_blank"
-            class="btn w3-padding-large w3-large w3-margin-top aos-init aos-animate" data-aos="fade-up"
+            class="btn w3-padding-large w3-large w3-margin-top aos-init aos-animate mb-3" data-aos="fade-up"
             data-aos-duration="1500" id="resumeBtn"><span class="button-text">RESUME</span></a>
         </div>
       </div>
@@ -244,45 +243,59 @@
       </div>
       <!--./end-heading-row-->
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-    <div class="w3-row-padding" data-aos="fade-up" data-aos-duration="1000">
-      <div class="d-block d-md-flex justify-content-between my-2">
+    <div class="project-container p-3" data-aos="fade-up" data-aos-duration="1000">
+      <div class="d-block d-md-flex justify-content-between mt-2">
         <div class="col-12 col-md-6 mx-3 mt-lg-3">
           <h2>Smitten</h2>
           <h4 class="text-muted">Valentine's Day Wordle Game </h4>
           <p class="my-3"> As the 1st Place winner in Code Institute’s 2022 “Love is in The Air” Hackathon, "Smitten" is 
-            a Valentine's Day & love themed "Wordle" game. Smitten was built during a 5•Day Coding Challenge with JavaScript, HTML5, CSS3 & Bootstrap 5.
+            a Valentine's Day & love themed "Wordle" game. 
           </p>
-          <p class="text-muted">JavaScript, HTML, CSS, Bootstrap 5
+          <p class="text-muted">Tech Stack: JavaScript, HTML, CSS, Bootstrap 5, GitHub Paages
           </p>
         </div>
-      <div class="col-12 col-md-6">
-        <a class="w3-button" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">
+      <div class="col-12 col-md-6 mx-auto mt-lg-3 img-wrapper">
+        <a class="" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">
           <img src="assets/images/smitten.png" class="img-fluid" style="max-width:100%;" alt="smitten" /></a>
       </div>
       </div>
 
-      <div class="d-block d-md-flex justify-content-between my-2">
+      <div class="d-flex justify-content-center mt-3">
+      <hr>
+      </div>
+  
+      <!--Hue-->
+       <div class="d-block d-md-flex justify-content-between mt-4">
+        <div class="col-12 col-md-6 mx-3 mt-lg-5">
+          <h2>Hue</h2>
+          <h4 class="text-muted">Full Stack E-Commerce Application</h4>
+          <p class="my-3"> Hue is a digital art store with custom database models, data store, secure user authentication, and shopping cart checkout via Stripe API integration. Special admin users can create, edit, and delete products, orders and users.</p>
+            <p class="text-muted">Tech Stack: Python, Django, JavaScript, HTML, CSS, Bootstrap 5, AWS S3, Heroku, Stripe API, Git</p>
+        </div>
         <div class="col-12 col-md-6">
           <a class="w3-button" href="https://hue-alissa.herokuapp.com" target="_blank">
             <img src="assets/images/glitchart.jpg" style="max-width:100%;" alt="hue" /></a>
         </div>
-        <div class="col-12 col-md-6 mx-3 mt-lg-5">
-          <h2>Hue</h2>
-          <h4 class="text-muted">Full Stack E-Commerce Application</h4>
-          <p class="my-3"> Hue is a digital art store with custom database models, data store, secure user authentication, and shopping cart checkout via Stripe API integration. Special admin users can create, edit, and delete products, orders and users.
-          </p>
-          <p class="text-muted">Python, Django, JavaScript, HTML, CSS, Bootstrap 5, AWS S3, Heroku</p>
-  
-        </div>
-        </div>
-  
+       </div>
+    <!--./end-hue-->
 
-      <div class="w3-col w3-half">
-        <a class="w3-button" href="http://boutique-ado-alissa.herokuapp.com/" target="_blank">
-          <img src="assets/images/boutique-ado.jpg" style="max-width:100%; min-height: 200px;" /></a>
-        <figcaption><strong>Boutique Ado</strong><br>HTML, CSS, JavaScript, jQuery</figcaption>
+    <!--dash-->
+    <div class="d-block d-md-flex justify-content-between mt-4">
+      <div class="col-12 col-md-6 mx-3 mt-lg-5">
+        <h2>Dash</h2>
+        <h4 class="text-muted">Full Stack Recipe Sharing</h4>
+        <p class="my-3"> Hue is a digital art store with custom database models, data store, secure user authentication, and shopping cart checkout via Stripe API integration. Special admin users can create, edit, and delete products, orders and users.</p>
+          <p class="text-muted">Tech Stack: Python, MongoDB, Flask, JavaScript, Git, Heroku, AWS S3</p>
       </div>
-    </div>
+      <div class="col-12 col-md-6">
+        <a class="w3-button" href="https://hue-alissa.herokuapp.com" target="_blank">
+          <img src="assets/images/glitchart.jpg" style="max-width:100%;" alt="hue" /></a>
+      </div>
+     </div>
+
+
+
+
     <div class="w3-row-padding" data-aos="fade-up" data-aos-duration="1000">
       <div class="w3-col w3-half">
         <a class="w3-button" href="https://dash-ms3.herokuapp.com" target="_blank">
