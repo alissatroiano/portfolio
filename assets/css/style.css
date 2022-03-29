@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
 
+.img-wrapper {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
 /*--------------------------------Main Page Content */
 html {
   overflow: auto;
@@ -41,6 +48,27 @@ hr {
 a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
   font-family: 'Futura-PT', sans-serif;
 }
+
+.nav-top {
+  top:0
+}
+
+.w3-bar{
+  width:100%;
+  overflow:hidden
+}
+
+.nav-bar {
+  width:100%;
+  overflow:hidden;
+}
+
+.w3-center 
+.w3-bar{
+  display:inline-block;
+  width:auto
+}
+
 
 /*----------------------------------Navabar */
 .fas.fa-at {
@@ -225,12 +253,63 @@ span#name {
 }
 
 .project-container {
+
+}
+
+.project-details, .img-wrapper {
   display: flex;
   flex-direction: column;
 }
 
 hr.project-divider {
   border-top: 1px solid #666;
+}
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1em; 
+  margin-left: -3.5em; 
+  align-items: center;
+}
+
+.layout:not(:first-of-type) {
+  margin-top: 3em;
+}
+
+.layout:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.layout__item {
+}
+
+.layout__item--body {
+  margin-left: 0;
+  flex-grow: 9999;
+  flex-basis: 15rem;
+}
+
+.layout__item--figure {
+  margin-right: auto;
+  flex-grow: 1;
+  max-width: max-content;
+  min-width: 15rem;
+  flex-basis: 15rem;
+  height: auto;
+  flex-grow: 99999;
+}
+/* 
+.img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+} */
+
+.layout__item--figure {
+  margin-right: auto;
+  flex-grow: 1;
 }
 /*-------------------------------- About Section */
 p.w3-wide {
@@ -451,3 +530,4 @@ a#top:hover {
     min-height: 400px;
   }
 }
+
