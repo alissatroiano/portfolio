@@ -3,7 +3,7 @@
 {% block content %}
 
 <body>
-    <section id="home" class="jumbotron-container">
+    <!-- <section id="home" class="jumbotron-container">
         <div class="container-fluid d-flex align-items-center bg-dark mb-5 py-5" id="home">
             <div class="container">
                 <div class="row align-items-center">
@@ -23,9 +23,304 @@
             </div>
         </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="about py-3 py-lg-5 my-3 my-lg-5" id="about">
+
+  <!-- First Parallax Image with Logo Text -->
+  <section class="bgimg-1" data-aos="zoom-out" data-aos-duration="2000" id="home">
+    <div class="container-fluid jumbotron-container" style="white-space:nowrap;">
+      <div class="row">
+        <div class="col-12 text-center">
+        <span class="w3-center text-black" id="name">ALISSA <span class="w3-hide-small"></span> TROIANO</span>
+        <h6 class="subtitle w3-center w3-wide w3-padding-large aos-init aos-animate" data-aos="fade-up"
+          data-aos-duration="1500" id="subtitle">SOFTWARE DEVELOPER</h6>
+      </div>
+    </div>
+      <div class="row">
+        <dic class="col-12 text-center" id="hero-buttons">
+          <a href="#about" class="w3-button w3-black w3-padding-large w3-margin-top aos-init aos-animate"
+            data-aos="fade-up" data-aos-duration="1500">RESUME</a>
+          <a href="#about" class="w3-button w3-black w3-padding-large w3-large w3-margin-top aos-init aos-animate"
+            data-aos="fade-up" data-aos-duration="1500">PROJECTS</a>
+        </dic>
+      </div>
+    </div>
+  </section>
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64 mt-3 mt-lg-5" id="about">
+    <h3 class="w3-center">ABOUT ME</h3>
+    <div class="w3-row">
+      <div class="col-12 w3-center w3-padding-32">
+        <img class="w3-image w3-opacity w3-hover-opacity-off" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" id="portrait2" alt="portrait" src="assets/images/portrait2.jpg" alt="Photo of Me"
+          width="200" height="50">
+      </div>
+      <!-- Hide this text on small devices -->
+      <div class="col-12 px-3 mx-auto w3-center w3-padding-16" style="text-align: center;">
+        <p id="about-me mx-3 px-3">
+          I'm a creative, results-driven full-stack software developer with experience participating in the full software development life-cycle, from planning to launch. Comfortable in Frontend and Backend development, I'm passionate about developing robust, full-stack applications that solve business needs.
+      </div>
+      <!--resume link here-->
+      <div class="w3-col w3-center w3-padding-16 my-3">
+        <div class="col-12 text-center">
+          <a href="assets/resume.pdf" target="_blank"
+            class="btn w3-padding-large w3-large w3-margin-top aos-init aos-animate mb-3" data-aos="fade-up"
+            data-aos-duration="1500" id="resumeBtn"><span class="button-text">RESUME</span></a>
+        </div>
+      </div>
+      <!--./end-resume-link-->
+    </div>
+    <!--hr-->
+    <div class="d-flex justify-content-center text-center">
+    <hr>
+  </div>
+  <!--./end-hr-->
+  <div class="row mt-5 pt-5" id="skills">
+    <div class="col-12">
+  <h3 class="text-center mt-5" id="skillsHeader">MY SKILLS</h3>
+  </div>
+  </div>
+  <div class="row text-center g-5 p-5" id="skills-row">
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-2 mx-lg-3 fab fa-python fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="python"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          Python
+        </h4>
+      </div>
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-2 mx-lg-3 fab fa-js-square fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="200" id="javascript"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          JavaScript
+        </h4>
+      </div>
+
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fab fa-html5 fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="html"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          HTML
+        </h4>
+      </div>
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fab fa-css3 fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="css"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          CSS
+        </h4>
+      </div>
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fas fa-database fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="sql"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+         SQL/NOSQL
+        </h4>
+      </div>
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fas fa-code-branch fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="git"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          Git
+        </h4>
+      </div>
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fab fa-react fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="git"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          React
+        </h4>
+      </div>
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fab fa-aws fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="git"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          AWS
+        </h4>
+      </div>
+    </div>
+    <div class="col-xs-8 col-sm-4">
+      <div class="about">
+        <i class="mx-1 mx-md-3 mx-lg-5 fab fa-google fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+          data-aos-easing="100" data-aos-delay="50" id="git"></i>
+        <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom">
+          Google Cloud
+        </h4>
+      </div>
+    </div>
+
+  </div>
+  <!--./end-skills-row-->
+  </div>
+  <!--end-about-container-->
+
+  <!-- Container (Portfolio Section) -->
+  <div class="row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+      <i class="fas fa-sitemap" style="font-size:2rem;"></i><br>
+      <h6>Design</h6>
+    </div>
+    <div class="w3-quarter w3-section">
+      <i class="fas fa-code" style="font-size:2rem;"></i><br>
+      <h6>Develop</h6>
+    </div>
+    <div class="w3-quarter w3-section">
+      <i class="fas fa-bug" style="font-size:2rem;"></i><br>
+      <h6>Defend</h6>
+    </div>
+    <div class="w3-quarter w3-section">
+      <i class="fas fa-laptop" style="font-size:2rem;"></i><br>
+      <h6>Deploy</h6>
+    </div>
+  </div>
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2" data-aos="zoom-out" data-aos-duration="2000">
+    <div class="w3-display-middle">
+      <span class="w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64 mbb-3" id="portfolio">
+    <div class="row">
+      <div class="col-12">
+    <h3 class="w3-center mt-3 mt-lg-5">MY WORK</h3>
+      <p class="w3-center my-5" id="portfolio-text">Here are some of my latest development projects.<br> Click on the
+        images to
+        view
+        projects.</p>
+        
+      </div>
+      </div>
+      <!--./end-heading-row-->
+    
+    <div class="row project-row justify-content-between p-3" data-aos="fade-up" data-aos-duration="1000">
+      
+      <!--Smitten-->
+      <div class="d-block d-md-flex my-4 project-item">
+        <div class="col-12 col-md-6 mx-3 mt-lg-3 project-details">
+          <h2>Smitten</h2>
+          <h4 class="text-muted">Valentine's Day Wordle Game </h4>
+          <p class="my-3"> As the 1st Place winner in Code Institute’s 2022 “Love is in The Air” Hackathon, "Smitten" is 
+            a Valentine's Day & love themed "Wordle" game. 
+          </p>
+          <p class="text-muted">JavaScript, HTML, CSS, Bootstrap 5, GitHub Paages
+          </p>
+          <div class="btn-row">
+            <button class="project-link"><a class="btn-text" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">View Project</a></button>
+            <button class="project-link"><a class="btn-text" href="https://github.com/alissatroiano/8-your-heart-out/" target="_blank">Source Code</a></button>
+          </div>
+        </div>
+      <div class="col-12 col-md-6 mx-auto mt-lg-3 img-wrapper">
+        <a class="" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">
+          <img src="assets/images/smitten.png" class="img-fluid" style="max-width:100%;" alt="smitten" /></a>
+      </div>
+      </div>
+  
+      <!--Hue-->
+       <div class="d-block d-md-flex justify-content-between no-wrap my-4 project-item">
+        <div class="col-12 col-md-6 mx-3 mt-lg-5">
+          <h2>Hue</h2>
+          <h4 class="text-muted">Full Stack E-Commerce Application</h4>
+          <p class="my-3"> Hue is a digital art store with custom database models, data store, secure user authentication, and shopping cart checkout via Stripe API integration. Special admin users can create, edit, and delete products, orders and users.</p>
+            <p class="text-muted">Python, Django, JavaScript, HTML, CSS, Bootstrap 5, AWS S3, Heroku, Stripe API, Git</p>
+            <div class="btn-row">
+              <button class="project-link"><a class="btn-text" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">View Project</a></button>
+              <button class="project-link"><a class="btn-text" href="https://github.com/alissatroiano/8-your-heart-out/" target="_blank">Source Code</a></button>
+            </div>
+          </div>
+        <div class="col-12 col-md-6">
+          <a class="w3-button" href="https://hue-alissa.herokuapp.com" target="_blank">
+            <img src="assets/images/hue.png" style="max-width:100%;" alt="hue" /></a>
+        </div>
+       </div>
+    <!--./end-hue-->
+
+      <!--Dash-->
+      <div class="d-block d-md-flex justify-content-between  my-4 project-item">
+        <div class="col-12 col-md-6 mx-3 mt-lg-5">
+          <h2>Dash</h2>
+          <h4 class="text-muted">Full Stack Recipe Sharing Website</h4>
+          <p class="my-3">Dash is a recipe sharing application with full CRUD functionality, giving users the ability to create, read, update and delete recipes</p>
+            <p class="text-muted">Python, Flask, MongoDB, JavaScript, HTML, CSS, Materialize, AWS S3, Heroku, Git</p>
+            <div class="btn-row">
+              <button class="project-link"><a class="btn-text" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">View Project</a></button>
+              <button class="project-link"><a class="btn-text" href="https://github.com/alissatroiano/Milestone-2" target="_blank">Source Code</a></button>
+            </div>
+          </div>
+        <div class="col-12 col-md-6">
+          <a class="w3-button" href="https://dash-ms3.herokuapp.com" target="_blank">
+            <img src="assets/images/dash.png" style="max-width:100%;" alt="hue" /></a>
+        </div>
+       </div>
+    <!--./end-hue-->
+
+    <!--game-of-facts-->
+    <div class="d-block d-md-flex justify-content-between  my-4 project-item">
+      <div class="col-12 col-md-6 mx-3 mt-lg-5">
+        <h2>Game of Facts</h2>
+        <h4 class="text-muted">Game of Thrones Trivia Game</h4>
+        <p class="my-3">Dash is a recipe sharing application with full CRUD functionality, giving users the ability to create, read, update and delete recipes</p>
+          <p class="text-muted"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
+          <div class="btn-row">
+            <button class="project-link"><a class="btn-text" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">View Project</a></button>
+            <button class="project-link"><a class="btn-text" href="https://github.com/alissatroiano/Milestone-2" target="_blank">Source Code</a></button>
+          </div>
+        </div>
+      <div class="col-12 col-md-6">
+        <a class="w3-button" href="https://dash-ms3.herokuapp.com" target="_blank">
+          <img src="assets/images/gameoffacts-responsive.png" style="max-width:100%;" alt="hue" /></a>
+      </div>
+     </div>
+     <!--./end-game-of-facts-->
+
+    <!--infinity-->
+    <div class="d-block d-md-flex justify-content-between my-4 project-item">
+      <div class="col-12 col-md-6 mx-3 mt-lg-5">
+        <h2>Infinity</h2>
+        <h4 class="text-muted">Yoga Website</h4>
+        <p class="my-3">Dash is a recipe sharing application with full CRUD functionality, giving users the ability to create, read, update and delete recipes</p>
+          <p class="text-muted"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
+          <div class="btn-row">
+            <button class="project-link"><a class="btn-text" href="https://alissatroiano.github.io/MS-1/" target="_blank">View Project</a></button>
+            <button class="project-link"><a class="btn-text" href="https://github.com/alissatroiano/MS-1" target="_blank">Source Code</a></button>
+          </div>
+        </div>
+      <div class="col-12 col-md-6">
+        <a class="w3-button" href="https://dash-ms3.herokuapp.com" target="_blank">
+          <img src="assets/images/infinity-responsive.png" style="max-width:100%;" alt="hue" /></a>
+      </div>
+     </div>
+     <!--./end-game-of-facts-->
+
+  </div>
+  </div>
+
+    <!-- <section class="about py-3 py-lg-5 my-3 my-lg-5" id="about">
         <div class="row d-flex text-center align-items center justify-content-center">
             <div class="col-12">
                 <h2 class="section-title">ABOUT ME</h2>
@@ -67,7 +362,7 @@
         </div>
         </div>
         </div>
-    </section>
+    </section> -->
 
     <!--Project Display https://codepen.io/mhhasan320/pen/BwqvLL -->
     <section class="project-cta container-fluid text-light p-5 my-5 bg-dark" id="projects">

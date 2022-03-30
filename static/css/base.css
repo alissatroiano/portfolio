@@ -76,7 +76,7 @@ h2.section-title {
 /*===================== Jumbotron ======================*/
 /* https://css-tricks.com/perfect-full-page-background-image/ */
 #home {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../images/code-background.jpeg') no-repeat center center;
+	background: linear-gradient(0deg, rgba(165, 165, 165, 0.8), rgba(179, 174, 174, 0.534)), url('../images/deskspace.jpg') no-repeat center center;
   background-size: cover;
   overflow: hidden;
   max-width: 100%;
