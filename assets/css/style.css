@@ -7,6 +7,31 @@
   overflow: hidden;
 }
 
+/* .navbar-brand {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 5px;
+  color: #030303;
+  font-family: 'Playfair Display',
+   serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px #777;
+} */
+
+nav {
+  font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
+}
+
+.bg-blur {
+  --bs-bg-opacity: 1;
+  background-color: #fafafa29;
+  opacity: 1;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
+}
+
 /*--------------------------------Main Page Content */
 html {
   overflow: auto;
@@ -63,6 +88,18 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
 .w3-bar{
   display:inline-block;
   width:auto
+}
+
+.navbar-text .fab .fas {
+  font-size: 1.3rem;
+}
+
+.fab.fa-github:hover,
+.fab.fa-linkedin:hover,
+.fab.fa-twitter:hover,
+.fas.fa-envelope:hover {
+  font-size: 1.5rem;
+  color: #5c9caf;
 }
 
 
