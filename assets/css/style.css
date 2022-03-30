@@ -33,10 +33,6 @@ strong {
   font-weight: 800;
 }
 
-a {
-  text-decoration-line: line-through;
-}
-
 hr {
   border: 1px solid #666;
   width: 50px;
@@ -112,14 +108,23 @@ a.w3-bar-item.w3-button:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-#resumeBtn {
+#resumeBtn, .project-button {
   background-color: #000;
   color: #fafafa;
   box-shadow: 3px 1px 3px #666;
+  padding: 10px 20px;
+  border: none;
 }
 
-#resumeBtn:hover {
-  background-color: rgba(119, 119, 119, 0.411);
+#resumeBtn:hover, .project-button:hover {
+  background-color: rgba(0, 0, 0, 0.575);
+  border: none;
+}
+
+a.btn-text {
+  font-family: "Futura-PT", serif;
+  color: #fafafa;
+  text-decoration: none;
 }
 
 span.button-text {
@@ -415,6 +420,35 @@ img {
   min-height: 200px;
 }
 
+.project-item {
+  vertical-align: middle;
+}
+
+.img-wrapper {
+  max-width: 100%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-wrapper:hover {
+  transform: scale(1.2);
+  transform: matrix3d(0.94, 0, 0.34, -0.0002, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(-10px);
+  transition: all 0.5s ease-in-out;
+}
+
+/* .folio-img {
+  transform: matrix3d(0.94, 0, 0.34, -0.00025, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(30px);
+}
+
+.folio-img:hover {
+  transform: matrix3d(0.94, 0, 0.34, -0.00025, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(-30px);
+
+} */
+
 /*-------------------------------- Contact Section */
 #contact-details {
   margin-bottom: 50px;
@@ -444,10 +478,6 @@ img {
 img {
   margin: 0 auto;
   padding-top: 20px;
-}
-
-a:hover {
-  color: #ccc !important;
 }
 
 .fas.fa-map-marker.w3-large,
