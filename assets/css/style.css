@@ -26,9 +26,9 @@ nav {
 
 .bg-blur {
   --bs-bg-opacity: 1;
-  background-color: #fafafa29;
+  background-color: #fafafab4;
   opacity: 1;
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(3px);
 }
 
@@ -90,8 +90,25 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
   width:auto
 }
 
+/*----------------------------------Navabar */
+.navbar-light .navbar-brand {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: #000;
+  text-shadow: 1px 3px 5px rgba(119, 119, 119, 0.605);
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #5c9caf;
+}
+
 .navbar-text .fab .fas {
   font-size: 1.3rem;
+  color: red;
+}
+
+.navbar-light {
+  color: red;
 }
 
 .fab.fa-github:hover,
@@ -102,24 +119,23 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
   color: #5c9caf;
 }
 
-
-/*----------------------------------Navabar */
-.fas.fa-at {
-  color: #030303;
-  text-shadow: 1px 2px 2px #777;
-  font-size: 2.2rem;
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(16, 12, 12);
+  letter-spacing: 1px;
 }
 
-.fas.fa-at: {
-  color: #777;
-  text-shadow: 1px 1px 2px #000;
+.navbar-light .navbar-nav .nav-link:hover,
+li.nav-item:hover,
+a.nav-link:hover {
+  color: #5c9caf;
+  /* text-shadow: 1px 1px 3px #666; */
 }
 
-a.w3-bar-item.w3-button {
+a.w3-bar-item.w3-button { 
  font-size: 1.1rem;
  font-weight: 400;
  margin-top: 5px;
-color: #030303;
+/* color: #030303; */
  font-family: 'Playfair Display',
   serif;
   text-transform: uppercase;
@@ -361,6 +377,10 @@ p.w3-wide {
   margin: 10px 0px;
 }
 
+p#about-me\ mx-3\ px-3 {
+  margin: 10px 30px;
+}
+
 #skill-icons {
   font-size: 1.3rem;
   color: #000;
@@ -454,8 +474,16 @@ img {
 
 .portfolio-image {
   max-width: 100%;
-  min-height: 200px;
+  height: auto;
 }
+
+.portfolio-image:hover {
+  max-width: 100%;
+  height: auto;
+  transform: scale(1.2);
+
+}
+
 
 .project-item {
   vertical-align: middle;
@@ -463,7 +491,7 @@ img {
 
 .img-wrapper {
   max-width: 100%;
-  min-height: fit-content;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -472,8 +500,9 @@ img {
 }
 
 .img-wrapper:hover {
+  margin-top: 30px;
   transform: scale(1.2);
-  /* transform: matrix3d(0.94, 0, 0.34, -0.0002, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(-10px); */
+  
   transition: all 0.5s ease-in-out;
 }
 

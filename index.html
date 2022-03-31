@@ -29,9 +29,9 @@
 
 <body>
   <!-- Navbar (sit on top) -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-blur fixed-top shadow-lg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-blur fixed-top shadow-lg" id="navBar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#home">Alissa Troiano</a>
+      <a class="navbar-brand" href="#home"><i class="fas fa-code"></i> Alissa Troiano</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,10 +44,16 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="assets/resume.pdf" target="_blank">Resume</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
         <span class="navbar-text">
@@ -63,7 +69,6 @@
       </div>
     </div>
   </nav>
-
   <!-- First Parallax Image with Logo Text -->
   <div class="bgimg-1" data-aos="zoom-out" data-aos-duration="2000" id="home">
     <div class="container-fluid w3-content w3-display-middle" style="white-space:nowrap;">
@@ -215,7 +220,6 @@
   <!--./end-skills-row-->
   </div>
   <!--end-about-container-->
-
   <!-- Container (Portfolio Section) -->
   <div class="row w3-center w3-dark-grey w3-padding-16">
     <div class="w3-quarter w3-section">
@@ -242,7 +246,7 @@
     </div>
   </div>
   <!-- Container (Portfolio Section) -->
-  <div class="container w3-padding-16 mb-3" id="portfolio">
+  <div class="container-fluid p-2 p-md-5 g-3 mb-3" id="portfolio">
     <div class="row">
       <div class="col-12">
     <h3 class="w3-center mt-3 mt-lg-5">MY WORK</h3>
@@ -250,19 +254,18 @@
         images to
         view
         projects.</p>
-        
       </div>
       </div>
       <!--./end-heading-row-->
-    
-    <div class="row project-row justify-content-between px-3" data-aos="fade-up" data-aos-duration="1000">
-      
+    </div>
+    <div class="container-fluid d-block d-md-flex ">
+    <div class="row d-block d-md-flex project-row justify-content-center px-3 px-md-5" data-aos="fade-up" data-aos-duration="1000">   
       <!--Smitten-->
-      <div class="d-block d-md-flex my-4 project-item">
-        <div class="col-12 col-md-6 mx-3 mt-lg-3 project-details">
+      <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item">
+        <div class="col-12 col-md-6 mt-lg-3 project-details">
           <h2>Smitten</h2>
           <h4 class="text-muted">Valentine's Day Wordle Game </h4>
-          <p class="my-3"> As the 1st Place winner in Code Institute’s 2022 “Love is in The Air” Hackathon, "Smitten" is 
+          <p class="my-3 me-3 me-md-5"> As the 1st Place winner in Code Institute’s 2022 “Love is in The Air” Hackathon, "Smitten" is 
             a Valentine's Day & love themed "Wordle" game. 
           </p>
           <p class="text-muted">JavaScript, HTML, CSS, Bootstrap 5, GitHub Paages
@@ -273,18 +276,17 @@
             <button class="project-button"><a class="btn-text" href="https://github.com/alissatroiano/8-your-heart-out/" target="_blank">Source Code</a></button>
           </div>
         </div>
-      <div class="col-12 col-md-6 mx-auto mt-lg-3 img-wrapper">
+      <div class="col-12 col-md-6 my-0 mx-auto">
         <a class="stretched-link" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">
           <img src="assets/images/smitten.png" class="img-fluid" style="max-width:100%;" alt="smitten" /></a>
       </div>
       </div>
-  
       <!--Hue-->
-       <div class="d-block d-md-flex justify-content-between no-wrap my-4 project-item">
-        <div class="col-12 col-md-6 mx-3 mt-lg-5">
+       <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item">
+        <div class="col-12 col-md-6 mt-lg-3 project-details">
           <h2>Hue</h2>
           <h4 class="text-muted">Full Stack E-Commerce Application</h4>
-          <p class="my-3"> Hue is a digital art store with custom database models, data store, secure user authentication, and shopping cart checkout via Stripe API integration. Special admin users can create, edit, and delete products, orders and users.</p>
+          <p class="my-3 me-3 me-md-5"> Hue is a digital art store with custom database models, data store, secure user authentication, and shopping cart checkout via Stripe API integration. Special admin users can create, edit, and delete products, orders and users.</p>
             <p class="text-muted">Python, Django, JavaScript, HTML, CSS, Bootstrap 5, AWS S3, Heroku, Stripe API, Git</p>
             <div class="btn-row">
               <button class="project-button"><a class="btn-text" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">View Project</a></button>
@@ -292,18 +294,18 @@
             </div>
           </div>
         <div class="col-12 col-md-6 img-wrapper">
-          <a class="w3-button" href="https://hue-alissa.herokuapp.com" target="_blank">
+          <a class="stretched-link" href="https://hue-alissa.herokuapp.com" target="_blank">
             <img src="assets/images/hue.png" class="folio-img" style="max-width:100%;" alt="hue" /></a>
         </div>
        </div>
     <!--./end-hue-->
 
       <!--Dash-->
-      <div class="d-block d-md-flex justify-content-between  my-4 project-item">
+      <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item">
         <div class="col-12 col-md-6 mx-3 mt-lg-5">
           <h2>Dash</h2>
           <h4 class="text-muted">Full Stack Recipe Sharing Website</h4>
-          <p class="my-3">Dash is a recipe sharing application with full CRUD functionality, giving users the ability to create, read, update and delete recipes</p>
+          <p class="my-3 me-3 me-md-5">Dash is a recipe sharing application with full CRUD functionality, giving users the ability to create, read, update and delete recipes</p>
             <p class="text-muted">Python, Flask, MongoDB, JavaScript, HTML, CSS, Materialize, AWS S3, Heroku, Git</p>
             <div class="btn-row">
               <button class="project-button"><a class="btn-text" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">View Project</a></button>
@@ -311,18 +313,18 @@
             </div>
           </div>
         <div class="col-12 col-md-6">
-          <a class="w3-button" href="https://dash-ms3.herokuapp.com" target="_blank">
+          <a class="stretched-link" href="https://dash-ms3.herokuapp.com" target="_blank">
             <img src="assets/images/dash.png" style="max-width:100%;" alt="hue" /></a>
         </div>
        </div>
     <!--./end-hue-->
 
     <!--game-of-facts-->
-    <div class="d-block d-md-flex justify-content-between  my-4 project-item">
+    <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item">
       <div class="col-12 col-md-6 mx-3 mt-lg-5">
         <h2>Game of Facts</h2>
         <h4 class="text-muted">Game of Thrones Trivia Game</h4>
-        <p class="my-3">Dash is a recipe sharing application with full CRUD functionality, giving users the ability to create, read, update and delete recipes</p>
+        <p class="my-3 me-3 me-md-5">Dash is a recipe sharing application with full CRUD functionality, giving users the ability to create, read, update and delete recipes</p>
           <p class="text-muted"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
           <div class="btn-row">
             <button class="project-button"><a class="btn-text" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">View Project</a></button>
@@ -330,18 +332,18 @@
           </div>
         </div>
       <div class="col-12 col-md-6">
-        <a class="w3-button" href="https://dash-ms3.herokuapp.com" target="_blank">
+        <a class="stretched-link" href="https://dash-ms3.herokuapp.com" target="_blank">
           <img src="assets/images/gameoffacts-responsive.png" style="max-width:100%;" alt="hue" /></a>
       </div>
      </div>
      <!--./end-game-of-facts-->
 
     <!--infinity-->
-    <div class="d-block d-md-flex justify-content-between my-4 project-item">
+    <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item">
       <div class="col-12 col-md-6 mx-3 mt-lg-5">
         <h2>Infinity</h2>
         <h4 class="text-muted">Yoga Website</h4>
-        <p class="my-3">Dash is a recipe sharing application with full CRUD functionality, giving users the ability to create, read, update and delete recipes</p>
+        <p class="my-3 me-3 me-md-5">Dash is a recipe sharing application with full CRUD functionality, giving users the ability to create, read, update and delete recipes</p>
           <p class="text-muted"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
           <div class="btn-row">
             <button class="project-button"><a class="btn-text" href="https://alissatroiano.github.io/MS-1/" target="_blank">View Project</a></button>
@@ -349,12 +351,11 @@
           </div>
         </div>
       <div class="col-12 col-md-6">
-        <a class="w3-button" href="https://dash-ms3.herokuapp.com" target="_blank">
+        <a class="stretched-link" href="https://dash-ms3.herokuapp.com" target="_blank">
           <img src="assets/images/infinity-responsive.png" style="max-width:100%;" alt="hue" /></a>
       </div>
      </div>
-     <!--./end-game-of-facts-->
-
+     <!--./end-infinity-->
   </div>
   </div>
   <!-- Third Parallax Image with Portfolio Text -->
@@ -441,14 +442,15 @@
     AOS.init();
   </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <!--load-bootstrap-scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-  <script>
+<script>
     // Change style of navbar on scroll
     window.onscroll = function () { myFunction() };
     function myFunction() {
-      var navbar = document.getElementById("myNavbar");
+      var navbar = document.getElementById("");
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "nav-bar" + " w3-card" + " w3-animate-top";
       } else {
