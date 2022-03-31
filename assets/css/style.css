@@ -32,6 +32,10 @@ nav {
   backdrop-filter: blur(3px);
 }
 
+.bg-custom {
+  background-color: rgba(102, 102, 102, 0.537);
+}
+
 /*--------------------------------Main Page Content */
 html {
   overflow: auto;
@@ -167,11 +171,15 @@ a.w3-bar-item.w3-button:hover {
   box-shadow: 3px 1px 3px #666;
   padding: 10px 20px;
   border: none;
+  text-decoration: none;
 }
 
 #resumeBtn:hover, .project-button:hover {
-  background-color: rgba(0, 0, 0, 0.575);
+  background-color: #5c9caf;
   border: none;
+  text-decoration: none;
+  color: #fafafa;
+  padding: 15px 25px;
 }
 
 a.btn-text {

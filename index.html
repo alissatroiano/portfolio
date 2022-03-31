@@ -80,7 +80,7 @@
       </div>
     </div>
       <div class="row">
-        <dic class="col-12 text-center" id="hero-buttons">
+        <di class="col-12 text-center" id="hero-buttons">
           <a href="#about" class="w3-button w3-black w3-padding-large w3-margin-top aos-init aos-animate"
             data-aos="fade-up" data-aos-duration="1500">RESUME</a>
           <a href="#about" class="w3-button w3-black w3-padding-large w3-large w3-margin-top aos-init aos-animate"
@@ -100,7 +100,7 @@
       </div>
       <!-- Hide this text on small devices -->
       <div class="col-12 px-3 mx-auto w3-center w3-padding-16" style="text-align: center;">
-        <p id="about-me mx-3 px-3">
+        <p class="about-me mx-3 px-3">
           I'm a creative, results-driven full-stack software developer with experience participating in the full software development life-cycle, from planning to launch. Comfortable in Frontend and Backend development, I'm passionate about developing robust, full-stack applications that solve business needs.
       </div>
       <!--resume link here-->
@@ -198,7 +198,7 @@
     <div class="col-xs-8 col-sm-4">
       <div class="about">
         <i class="mx-1 mx-md-3 mx-lg-5 fab fa-aws fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-          data-aos-easing="100" data-aos-delay="50" id="git"></i>
+          data-aos-easing="100" data-aos-delay="50" id="aws"></i>
         <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom">
           AWS
@@ -208,7 +208,7 @@
     <div class="col-xs-8 col-sm-4">
       <div class="about">
         <i class="mx-1 mx-md-3 mx-lg-5 fab fa-google fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-          data-aos-easing="100" data-aos-delay="50" id="git"></i>
+          data-aos-easing="100" data-aos-delay="50" id="google"></i>
         <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom">
           Google Cloud
@@ -221,7 +221,7 @@
   </div>
   <!--end-about-container-->
   <!-- Container (Portfolio Section) -->
-  <div class="row w3-center w3-dark-grey w3-padding-16">
+  <div class="row w3-center bg-custom w3-padding-16">
     <div class="w3-quarter w3-section">
       <i class="fas fa-sitemap" style="font-size:2rem;"></i><br>
       <h6>Design</h6>
@@ -259,7 +259,7 @@
       <!--./end-heading-row-->
     </div>
     <div class="container-fluid d-block d-md-flex ">
-    <div class="row d-block d-md-flex project-row justify-content-center px-3 px-md-5" data-aos="fade-up" data-aos-duration="1000">   
+    <div class="row d-block d-md-flex project-row justify-content-space-around px-3 px-md-5" data-aos="fade-up" data-aos-duration="1000">   
       <!--Smitten-->
       <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item">
         <div class="col-12 col-md-6 mt-lg-3 project-details">
@@ -271,14 +271,12 @@
           <p class="text-muted">JavaScript, HTML, CSS, Bootstrap 5, GitHub Paages
           </p>
           <div class="btn-row">
-            <button class="project-button">
-              <a class="btn-text" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">View Project</a></button>
-            <button class="project-button"><a class="btn-text" href="https://github.com/alissatroiano/8-your-heart-out/" target="_blank">Source Code</a></button>
+            <a class="project-button"  href="https://alissatroiano.github.io/8-your-heart-out/" target="_blank">View Project</a>
+            <a class="project-button" href="https://github.com/alissatroiano/8-your-heart-out" target="_blank">Source Code</a>
           </div>
         </div>
       <div class="col-12 col-md-6 my-0 mx-auto">
-        <a class="stretched-link" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">
-          <img src="assets/images/smitten.png" class="img-fluid" style="max-width:100%;" alt="smitten" /></a>
+          <img src="assets/images/smitten.png" class="img-fluid" style="max-width:100%;" alt="smitten" />
       </div>
       </div>
       <!--Hue-->
@@ -289,12 +287,12 @@
           <p class="my-3 me-3 me-md-5"> Hue is a digital art store with custom database models, data store, secure user authentication, and shopping cart checkout via Stripe API integration. Special admin users can create, edit, and delete products, orders and users.</p>
             <p class="text-muted">Python, Django, JavaScript, HTML, CSS, Bootstrap 5, AWS S3, Heroku, Stripe API, Git</p>
             <div class="btn-row">
-              <button class="project-button"><a class="btn-text" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">View Project</a></button>
-              <button class="project-button"><a class="btn-text" href="https://github.com/alissatroiano/8-your-heart-out/" target="_blank">Source Code</a></button>
+              <a class="project-button"  href="https://hue-alissa.herokuapp.com" target="_blank">View Project</a>
+              <a class="project-button" href="https://github.com/alissatroiano/Hue" target="_blank">Source Code</a>
             </div>
           </div>
         <div class="col-12 col-md-6 img-wrapper">
-          <a class="stretched-link" href="https://hue-alissa.herokuapp.com" target="_blank">
+          <a href="https://hue-alissa.herokuapp.com" target="_blank">
             <img src="assets/images/hue.png" class="folio-img" style="max-width:100%;" alt="hue" /></a>
         </div>
        </div>
@@ -308,13 +306,12 @@
           <p class="my-3 me-3 me-md-5">Dash is a recipe sharing application with full CRUD functionality, giving users the ability to create, read, update and delete recipes</p>
             <p class="text-muted">Python, Flask, MongoDB, JavaScript, HTML, CSS, Materialize, AWS S3, Heroku, Git</p>
             <div class="btn-row">
-              <button class="project-button"><a class="btn-text" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">View Project</a></button>
-              <button class="project-button"><a class="btn-text" href="https://github.com/alissatroiano/Milestone-2" target="_blank">Source Code</a></button>
+              <a class="project-button" href="https://dash-ms3.herokuapp.com" target="_blank">View Project</a>
+              <a class="project-button" href="https://github.com/alissatroiano/Dash" target="_blank">Source Code</a>
             </div>
           </div>
-        <div class="col-12 col-md-6">
-          <a class="stretched-link" href="https://dash-ms3.herokuapp.com" target="_blank">
-            <img src="assets/images/dash.png" style="max-width:100%;" alt="hue" /></a>
+        <div class="col-12 col-md-6 img-wrapper">
+            <img src="assets/images/dash.png" style="max-width:100%;" alt="hue" />
         </div>
        </div>
     <!--./end-hue-->
@@ -327,13 +324,12 @@
         <p class="my-3 me-3 me-md-5">Dash is a recipe sharing application with full CRUD functionality, giving users the ability to create, read, update and delete recipes</p>
           <p class="text-muted"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
           <div class="btn-row">
-            <button class="project-button"><a class="btn-text" href="https://alissatroiano.github.io/8-your-heart-out/index.html" target="_blank">View Project</a></button>
-            <button class="project-button"><a class="btn-text" href="https://github.com/alissatroiano/Milestone-2" target="_blank">Source Code</a></button>
+           <a class="project-button" href="https://alissatroiano.github.io/Milestone-2/" target="_blank">View Project</a>
+           <a class="project-button" href="https://github.com/alissatroiano/Milestone-2" target="_blank">Source Code</a>
           </div>
         </div>
       <div class="col-12 col-md-6">
-        <a class="stretched-link" href="https://dash-ms3.herokuapp.com" target="_blank">
-          <img src="assets/images/gameoffacts-responsive.png" style="max-width:100%;" alt="hue" /></a>
+          <img src="assets/images/gameoffacts-responsive.png" style="max-width:100%;" alt="gameoffacts" />
       </div>
      </div>
      <!--./end-game-of-facts-->
@@ -346,13 +342,12 @@
         <p class="my-3 me-3 me-md-5">Dash is a recipe sharing application with full CRUD functionality, giving users the ability to create, read, update and delete recipes</p>
           <p class="text-muted"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
           <div class="btn-row">
-            <button class="project-button"><a class="btn-text" href="https://alissatroiano.github.io/MS-1/" target="_blank">View Project</a></button>
-            <button class="project-button"><a class="btn-text" href="https://github.com/alissatroiano/MS-1" target="_blank">Source Code</a></button>
+            <a class="project-button" href="https://alissatroiano.github.io/MS-1/" target="_blank">View Project</a>
+           <a class="project-button" href="https://github.com/alissatroiano/MS-1" target="_blank">Source Code</a>
           </div>
         </div>
       <div class="col-12 col-md-6">
-        <a class="stretched-link" href="https://dash-ms3.herokuapp.com" target="_blank">
-          <img src="assets/images/infinity-responsive.png" style="max-width:100%;" alt="hue" /></a>
+          <img src="assets/images/infinity-responsive.png" style="max-width:100%;" alt="hue" />
       </div>
      </div>
      <!--./end-infinity-->
@@ -446,7 +441,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   <script src="assets/js/nav.js"></script>
-  
+
 <script>
     // Change style of navbar on scroll
     window.onscroll = function () { myFunction() };
