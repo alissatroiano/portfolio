@@ -166,6 +166,8 @@ a.w3-bar-item.w3-button:hover {
   font-family: 'Futura-PT', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
+  width: fit-content;
+  margin: 0 5px;
 }
 
 #resumeBtn:hover, .project-button:hover {
@@ -194,7 +196,12 @@ span.button-text:hover {
 }
 
 .btn-row {
-  margin: 20px 0;
+  margin: 30px 0;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*-------------------------------- Headers and text */
@@ -456,27 +463,15 @@ i#google:hover, i#react:hover  {
 #portfolio-text {
     font-family: 'Futura-PT',
     sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: .2px;
     margin: 5px 20px;
 }
 
-figcaption {
-  text-align: center;
-  font-size: 1rem;
-  font-family: 'Futura-PT',
-    sans-serif;
-    margin: 10px 10px;
-}
-
 img {
   margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.w3-button:hover {
-   padding-bottom: 5px;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
 }
 
 .portfolio-image {
@@ -487,8 +482,7 @@ img {
 .portfolio-image:hover {
   max-width: 100%;
   height: auto;
-  transform: scale(1.2);
-
+  animation: forwards .5s;
 }
 
 .project-description {
@@ -500,7 +494,7 @@ img {
 .awards {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 10px;
   font-weight: 500;
   color: #416e7c;
@@ -523,13 +517,13 @@ p.text-muted {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  filter:  drop-shadow(0px 0px 10px #666) grayscale(100%);
 }
 
 .img-wrapper:hover {
-  margin-top: 30px;
-  transform: scale(1.2);
-  
+  transform: scale(1.1);
   transition: all 0.5s ease-in-out;
+  filter: drop-shadow(5px 5px 15px #000);
 }
 
 /* .folio-img {
