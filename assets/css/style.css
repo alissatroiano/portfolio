@@ -33,7 +33,8 @@ nav {
 }
 
 .bg-custom {
-  background-color: rgba(102, 102, 102, 0.537);
+  background-color: rgb(58, 58, 58);
+  color: #fafafa;
 }
 
 /*--------------------------------Main Page Content */
@@ -94,7 +95,7 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
   width:auto
 }
 
-/*----------------------------------Navabar */
+/*----------------------------------Navbar */
 .navbar-light .navbar-brand {
   font-size: 1.4rem;
   letter-spacing: 1px;
@@ -156,43 +157,39 @@ a.w3-bar-item.w3-button:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-#resumeBtn, .project-button {
-  background-color: #000;
+
+a.cta-btn,
+a#resumeBtn, .project-button {
+  background-color: rgba(4, 6, 7, 0.891);
   color: #fafafa;
-  box-shadow: 3px 1px 3px #666;
+  box-shadow: 3px 3px 6px #666;
   padding: 12px;
   border: none;
+  border-radius: 5px;
   text-decoration: none;
   font-family: 'Futura-PT', sans-serif;
   text-transform: uppercase;
   letter-spacing: .5px;
   width: fit-content;
   margin: 0 auto;
+  margin: 20px 10px;
 }
 
-#resumeBtn:hover, .project-button:hover {
+a.cta-btn:hover,
+a#resumeBtn:hover, .project-button:hover {
   background-color: #5c9caf;
   border: none;
   text-decoration: none;
   color: #fafafa;
-  padding: 15px;
+  padding: 13px;
 }
 
-a.btn-text {
-  font-family: "Futura-PT", serif;
-  color: #fafafa;
-  text-decoration: none;
-}
 
 span.button-text {
   font-family: "Futura-PT", serif;
   letter-spacing: 2px;
   font-size: 1.2rem;
   font-weight: 400;
-}
-
-span.button-text:hover {
-  color: #000;
 }
 
 .btn-row {
@@ -245,7 +242,6 @@ h6 {
      sans-serif;
   font-weight: 400;
   text-align: center;
-  margin: 15px auto;
 }
 
 p {
@@ -287,7 +283,8 @@ span#name {
   font-family: 'Futura-PT', sans-serif;
   letter-spacing: 1px;
   font-size: 1.3rem;
-
+  text-decoration: none;
+  padding: 0 10px;
 }
 
 /*-------------------------------- Background Images */
