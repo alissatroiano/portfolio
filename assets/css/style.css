@@ -172,7 +172,6 @@ a#resumeBtn, .project-button {
   letter-spacing: .5px;
   width: fit-content;
   margin: 0 auto;
-  margin: 20px 10px;
 }
 
 a.cta-btn:hover,
@@ -193,7 +192,7 @@ span.button-text {
 }
 
 .btn-row {
-  margin-bottom: 30px;
+  
 }
 
 .project-img {
