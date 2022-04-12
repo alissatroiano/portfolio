@@ -481,6 +481,13 @@ img {
   height: auto;
 }
 
+.project-item {
+  max-width: 100vw;
+  background-color: #b2d0d855;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .portfolio-image:hover {
   max-width: 100%;
   height: auto;
@@ -490,7 +497,7 @@ img {
 .project-description {
   font-family: 'Futura-PT', sans-serif;
   margin: 10px 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .awards {
