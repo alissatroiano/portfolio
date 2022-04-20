@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
 
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 .img-wrapper {
   max-width: 100%;
   height: auto;
@@ -107,11 +113,18 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
   color: #5c9caf;
 }
 
+.fab.fa-github ,
+.fab.fa-linkedin ,
+.fab.fa-twitter ,
+.fas.fa-envelope  {
+  padding: 10px 5px;
+  font-size: 1.36rem;
+}
+
 .fab.fa-github:hover,
 .fab.fa-linkedin:hover,
 .fab.fa-twitter:hover,
 .fas.fa-envelope:hover {
-  font-size: 1.5rem;
   color: #5c9caf;
 }
 
@@ -639,9 +652,24 @@ a#footer-link:hover {
   text-decoration-line: line-through;
 }
 
-a#top:hover {
-    text-decoration-line: line-through;
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  box-shadow: 1px 4px 8px rgb(47, 47, 47);
+}
 
+.btn-custom {
+  margin: 10px;
+  background-color: #5c9caf;
+  color: #fafafa;
+}
+
+.btn-custom:hover {
+  background-color: rgb(55, 55, 55);
+  color: #fafafa;
+  z-index: 1;
 }
 
 /*--------------------------------  Media Queries */
