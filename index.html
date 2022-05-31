@@ -82,7 +82,7 @@
         <div class="col-12 text-center mt-3 mt-md-4" id="hero-buttons">
           <a href="#about" class="cta-btn aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">RESUME</a>
           <a href="#portfolio" class="cta-btn  aos-init aos-animate" data-aos="fade-up"
-            data-aos-duration="1500">PROJECTS</a>
+            data-aos-duration="1500">portfolio</a>
         </div>
       </div>
     </div>
@@ -219,7 +219,8 @@
     <!--./end-skills-row-->
   </div>
   <!--end-about-container-->
-  <!-- Container (Portfolio Section) -->
+
+  <!-- Parallex (Portfolio Section) -->
   <div class="row w3-center bg-custom w3-padding-16">
     <div class="w3-quarter w3-section">
       <i class="fas fa-sitemap" style="font-size:2rem;"></i><br>
@@ -238,20 +239,23 @@
       <h6>Deploy</h6>
     </div>
   </div>
+
   <!-- Second Parallax Image with Portfolio Text -->
   <div class="bgimg-2" data-aos="zoom-out" data-aos-duration="2000">
     <div class="w3-display-middle">
       <span class="w3-text-white w3-wide">PORTFOLIO</span>
     </div>
   </div>
+
   <!-- Container (Portfolio Section) -->
-  <div class="container-fluid" id="portfolio">
-    <div class="row">
-      <div class="col-12">
-        <h3 class="w3-center mt-5 pt-5">MY WORK</h3>
-        <p class="w3-center px-3 px-md-5 mt-5 mx-5" id="portfolio-text">Here are some of my latest development projects. To view the
+  <section class="container-fluid p-3 p-md-5 my-0 mx-auto align-items-center justify-content-center d-block" id="portfolio">
+    <div class="row text-center px-3 px-md-5">
+      <div class="col-12 col-md-8 offset-md-2">
+        <h3 class="w3-center my-5 pt-5">MY WORK</h3>
+        <p class="text-center" id="portfolio-text">Here are some of my latest development projects! Hover over the images for a fun effect.          To view the
           live deployed project, click "View Project." To checkout the repository for the project click, "View Source
-          Code" To see all of my development projects, check me out on GitHub</p>
+          Code".</p>
+        <p id="portfolioText"> To see the rest of my development work, check out my GitHub</p>
           <p class="text-center">
           <a href="https://github.com/alissatroiano/" target="_blank">
             <i class="fab fa-github text-center fa-3x">
@@ -260,23 +264,40 @@
           </p>
       </div>
       </div>
-        <div class="d-flex justify-content-center align-items-center text-center">
-          <hr>
+        <div class="row d-block my-0 mx-auto align-items-center justify-content-center g-2">
+        <!--Electrillo-->
+        <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col-12 col-md-5 justify-content-start">
+            <h2>Electrillo</h2>
+            <h4 class="text-muted">EV-Fuel Calculator</h4>
+            <strong class="awards">1st Place - Code Institute Hackathon, 04/22</strong>
+            <p class="my-3 me-3 me-md-5 project-description">Electrillo is a web application that allows users to
+              calculate
+              the amount of money they could be saving by switching from fuel to EV powered vehicles. The Electrillo project received first prize in the April 2022 Code Institute Earth Day Hackathon competition. </p>
+            <p class="text-muted">HTML, CSS, Bootstrap, JavaScript, JSON 
+            </p>
+            <div class="btn-row mb-3">
+              <a class="project-button" href="https://alissatroiano.github.io/team-4-april-2022/" target="_blank">View
+                Project</a>
+              <a class="project-button" href="https://github.com/alissatroiano/team-4-april-2022" target="_blank">Source
+                Code</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-7 my-0 mx-auto justify-content-end">
+            <img src="assets/images/electrillo.png" class="img-wrapper img-fluid project-img" alt="smitten" />
+          </div>
         </div>
-
-    <!--./end-heading-row-->
-    <div class="row d-flex row-cols-1 row-cols-lg-1 mt-3 mt-md-5" >
       <!--Smitten-->
       <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
         <div class="col-12 col-md-5 project-details">
           <h2>Smitten</h2>
-          <h4 class="text-muted">Valentine's Day Wordle Game </h4>
+          <h4 class="text-muted">Valentine's Day Wordle</h4>
           <strong class="awards">1st Place - Code Institute Hackathon, 02/22</strong>
           <p class="my-3 me-3 me-md-5 project-description"> As the 1st Place winner in Code Institute’s 2022 “Love is in
             The Air” Hackathon, "Smitten" is
             a Valentine's Day & love themed "Wordle" game.
           </p>
-          <p class="text-muted">JavaScript, HTML, CSS, Bootstrap 5, GitHub Paages
+          <p class="text-muted">JavaScript, HTML, CSS, Bootstrap, JSON
           </p>
           <div class="btn-row mb-3">
             <a class="project-button" href="https://alissatroiano.github.io/8-your-heart-out/" target="_blank">View
@@ -285,15 +306,15 @@
               Code</a>
           </div>
         </div>
-        <div class="col-12 col-md-7 my-0 mx-auto img-wrapper">
-          <img src="assets/images/smitten.png" class="img-fluid bi project-img" alt="smitten" />
+        <div class="col-12 col-md-7 my-0 mx-auto">
+          <img src="assets/images/smitten.png" class="img-wrapper img-fluid project-img" alt="smitten" />
         </div>
       </div>
       <!--Hue-->
       <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item"  data-aos="fade-up" data-aos-duration="1000">
         <div class="col-12 col-md-5 project-details">
           <h2>Hue</h2>
-          <h4 class="text-muted">Full Stack E-Commerce Application</h4>
+          <h4 class="text-muted">Full Stack E-Commerce</h4>
           <p class="my-3 me-3 me-md-5 project-description pe-md-3"> Hue is a digital art store with custom database
             models, data store, secure user authentication, and shopping cart checkout via Stripe API integration.
             Special admin users can create, edit, and delete products, orders and users.</p>
@@ -304,14 +325,15 @@
             <a class="project-button" href="https://github.com/alissatroiano/Hue" target="_blank">Source Code</a>
           </div>
         </div>
-        <div class="col-12 col-md-7 my-0 mx-auto img-wrapper">
-          <img src="assets/images/hue.png" class="img-fluid project-img" alt="hue" />
+        <div class="col-12 col-md-7 my-0 mx-auto ">
+          <img src="assets/images/hue.png" class="img-wrapper img-fluid project-img" alt="hue" />
         </div>
       </div>
       <!--./end-hue-->
       <div class="my-0 mx-auto">
         <!-- <hr class="folio-hr"> -->
       </div>
+
       <!--Dash-->
       <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item"  data-aos="fade-up" data-aos-duration="1000">
         <div class="col-12 col-md-5 project-details">
@@ -326,8 +348,8 @@
             <a class="project-button" href="https://github.com/alissatroiano/Dash" target="_blank">Source Code</a>
           </div>
         </div>
-        <div class="col-12 col-md-7 img-wrapper">
-          <img src="assets/images/dash.png" class="img-fluid project-img" alt="hue" />
+        <div class="col-12 col-md-7">
+          <img src="assets/images/dash.png" class="img-fluid img-wrapper project-img" alt="dash" />
         </div>
       </div>
       <!--./end-dash-->
@@ -338,7 +360,7 @@
           <h2>Game of Facts</h2>
           <h4 class="text-muted">Game of Thrones Trivia Game</h4>
           <strong class="awards">Awards: Code Institute Merit Award</strong>
-          <p class="my-3 me-3 me-md-5 project-description pe-md-3 me-3">Game Of Facts is a web-based trivia game built
+          <p class="my-3 me-3 me-md-5 project-description">Game Of Facts is a web-based trivia game built
             for Game of Thrones fans and educators of global history.</p>
           <p class="text-muted pb-3 pe-5"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
           <div class="btn-row mb-3">
@@ -348,8 +370,8 @@
               Code</a>
           </div>
         </div>
-        <div class="col-12 col-md-7 img-wrapper">
-          <img src="assets/images/gameoffacts-responsive.png" class="img-fluid project-img" alt="gameoffacts" />
+        <div class="col-12 col-md-7">
+          <img src="assets/images/gameoffacts-responsive.png" class="img-fluid img-wrapper project-img" alt="gameoffacts" />
         </div>
       </div>
       <!--./end-game-of-facts-->
@@ -360,22 +382,24 @@
           <h2>Infinity</h2>
           <h4 class="text-muted">Yoga Website</h4>
           <strong class="awards">Awards: Code Institute Distinction Award</strong>
-          <p class="my-3 me-3 me-md-5 project-description pe-md-3">This responsive website was created for Infinity, a
+          <p class="my-3 me-5 pe-5 project-description">This responsive website was created for Infinity, a
             fictional Yoga & Meditation studio in New York, New York</strong>
           </p>
-          <p class="text-muted pb-3 pe-5"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
+          <p class="text-muted pb-3"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
           <div class="btn-row mb-3">
             <a class="project-button me-2" href="https://alissatroiano.github.io/MS-1/" target="_blank">View Project</a>
             <a class="project-button" href="https://github.com/alissatroiano/MS-1" target="_blank">Source Code</a>
           </div>
         </div>
-        <div class="col-12 col-md-7 img-wrapper">
-          <img src="assets/images/infinity-responsive.png" class="img-fluid project-img" alt="hue" />
+        <div class="col-12 col-md-7">
+          <img src="assets/images/infinity-responsive.png" class="img-fluid img-wrapper project-img" alt="hue" />
         </div>
       </div>
       <!--./end-infinity-->
     </div>
-  </div>
+  </section>
+<!--./end-projects-->
+
   <!-- Third Parallax Image with Portfolio Text -->
   <div class="bgimg-3" data-aos="zoom-out" data-aos-duration="2000">
     <div class="w3-display-middle">

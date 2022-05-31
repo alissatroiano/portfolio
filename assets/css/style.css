@@ -6,13 +6,6 @@ body {
   scroll-behavior: smooth;
 }
 
-.img-wrapper {
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  overflow: hidden;
-}
-
 /* .navbar-brand {
   font-size: 1.1rem;
   font-weight: 400;
@@ -342,11 +335,6 @@ span#name {
 
 }
 
-.project-details, .img-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 hr.project-divider {
   border-top: 1px solid #666;
 }
@@ -475,12 +463,13 @@ i#google:hover, i#react:hover  {
 
 
 /*-------------------------------- Portfolio Section */
-#portfolio-text {
+#portfolio-text, #portfolioText {
     font-family: 'Futura-PT',
     sans-serif;
-    font-size: 1rem;
-    letter-spacing: .2px;
-    margin: 5px 20px;
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+    line-height: 2;
+    margin: 10px 0;
 }
 
 img {
@@ -509,18 +498,17 @@ img {
 
 .project-description {
   font-family: 'Futura-PT', sans-serif;
-  margin: 10px 0;
+  margin: 10px 10px 90px 0px;
+  text-align: justify;
   font-size: 1rem;
 }
 
 .awards {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
+  font-family: 'Futura-PT', sans-serif;
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin: 6.5px 0;
   font-weight: 500;
   color: #416e7c;
-  letter-spacing: .5px;
 }
 
 .project-item {
@@ -535,15 +523,16 @@ p.text-muted {
 }
 
 .img-wrapper {
+  width: 600px;
   max-width: 100%;
   position: relative;
   height: auto;
   overflow: hidden;
-  filter:  drop-shadow(0px 0px 10px #666) grayscale(100%);
+  filter:  drop-shadow(5px 5px 10px rgba(84, 84, 84, 0.641)) opacity(.6) blur(.25px);
 }
 
 .img-wrapper:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all 0.5s ease-in-out;
   filter: drop-shadow(5px 5px 15px #000);
 }
@@ -674,7 +663,7 @@ a#footer-link:hover {
 
 /*--------------------------------  Media Queries */
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
+@media only screen and (max-width: 1600px) {
 
   .bgimg-1,
   .bgimg-2,
@@ -683,4 +672,26 @@ a#footer-link:hover {
     min-height: 400px;
   }
 }
+
+@media (min-width: 992px)  {
+ 
+.img-wrapper {
+  width: 800px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  filter:  drop-shadow(0px 0px 5px rgba(84, 84, 84, 0.641)) opacity(.6) blur(.25px);
+}
+
+.img-wrapper:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  filter: drop-shadow(0px 0px 15px rgba(84, 84, 84, 0.641));
+}
+
+  }
 
