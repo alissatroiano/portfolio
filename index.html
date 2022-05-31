@@ -32,47 +32,34 @@
 
 <body>
   <!-- Navbar (sit on top) -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-blur fixed-top shadow-lg" id="navBar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#home"><i class="fas fa-code"></i> Alissa Troiano</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="assets/resume.pdf" target="_blank">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          <a target="_blank" href="https://www.github.com/alissatroiano/"><i class="fab fa-github mx-1"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/alissat/"><i class="fab fa-linkedin mx-1"></i></a>
-          <a target="_blank" href="https://www.twittter.com/in/alissamtroiano/">
-            <i class="fab fa-twitter mx-1"></i></a>
-          <a target="_blank" href="mailto:alissa@alissatroiano.com">
-            <i class="fas fa-envelope mx-1"></i></a>
-        </span>
-      </div>
+  <header class="fixed-top">
+    <div class="row d-flex my-0 mx-auto">
+        <div class="hamburger-nav">
+            <label>
+                <input type="checkbox">
+                <span class="menu">
+                    <span class="hamburger"></span>
+                </span>
+                <ul class="list-group text-center mt-5 hamburger-nav">
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#skills">Skills</a> </li>
+                    <li> <a href="#portfolio">Portfolio</a> </li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li> <a href="#contact">Contact</a> </li>
+                </ul>
+            </label>
+        </div>
     </div>
-  </nav>
+    <nav class="navbar navnar-nav bg-nav shadow-lg py-3">
+        <a class="navbar-brand my-0 mx-auto" href="#home">
+            <i class="fas fa-code text-dark"></i>
+             ALISSA TROIANO</a>
+    </nav>
+</header>
+
   <!-- First Parallax Image with Logo Text -->
-  <div class="bgimg-1" data-aos="zoom-out" data-aos-duration="2000" id="home">
+  <div class="bgimg-1" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="600" id="home">
     <div class="container-fluid w3-content w3-display-middle" style="white-space:nowrap;">
       <div class="row">
         <div class="col-12 text-center">
