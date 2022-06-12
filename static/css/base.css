@@ -1,0 +1,456 @@
+/* Global Styles */
+body {
+	font-family: 'Futura-PT', sans-serif;
+  width: 100%;
+}
+
+hr {
+  border: 1px solid rgb(0, 0, 0);
+  width: 20px;
+  margin: 0px auto;
+}
+
+#header {
+	font-family: 'Futura-PT', sans-serif;
+}
+
+.header {
+	font-family: 'Futura-PT', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #fafafa;
+	background-color: #000;
+	text-shadow: 1px 2px 3px #666;
+	font-size: 50px;
+}
+
+h1#title {
+	letter-spacing: 5px;
+  font-family: 'Futura-PT', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Futura-PT', sans-serif;
+}
+
+h2.section-title {
+  font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  color:rgb(0, 0, 0);
+  text-shadow: 0.05em 0.05em 0.2em rgba(75, 75, 75, 0.9);
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.text-small {
+  font-family: 'Source Sans Pro', monospace;
+  font-size: 12px;
+  color: #EAAA00;
+  font-weight: lighter;
+}
+
+#header {
+  margin-bottom: 20px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fafafa;
+  background-color: #000;
+  font-size: 12px;
+}
+
+.nav-link {
+  color: rgb(33, 33, 33);
+  text-transform: uppercase;
+  letter-spacing: .3px;
+}
+
+.nav-link:hover {
+  background-color: rgb(0, 0, 0);
+  color: #fafafa;
+}
+
+/*===================== Jumbotron ======================*/
+/* https://css-tricks.com/perfect-full-page-background-image/ */
+#home {
+	background: linear-gradient(0deg, rgba(165, 165, 165, 0.8), rgba(179, 174, 174, 0.534)), url('../images/deskspace.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  max-width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.jumbotron-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+#home-text {
+  font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+}
+
+.typewriter h2 {
+    width: auto;
+    border-right: .15em solid white; /* The typwriter cursor */
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:  typing 3.5s steps(100, end), blink-caret .75s step-end infinite;
+    }
+
+@keyframes typing{
+  from {max-width: 0}
+  to {max-width: 100%}
+}
+
+@keyframes blink-caret{
+  from, to {border-color: transparent}
+  50% {border-color: #2da427}
+}
+
+#typed {
+  font-family: 'Source Code Pro', monospace;
+  color: #53e44c;
+  text-shadow: 1px 1px 3px rgb(40, 39, 39);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+#typed-small-screens {
+    font-family: 'Source Code Pro', monospace;
+
+  color: #53e44c;
+  text-shadow: 1px 1px 3px rgb(40, 39, 39);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.blue{
+  background-color: #3a9596;
+  color: #fafafa;
+}
+
+.btn {
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 1px 4px 14px 1px #666;
+} 
+
+.btn:hover {
+  background-color: #dab600;
+}
+
+.btn-white{
+  background-color: #fafafa;
+  padding: 10px 20px;
+  border:2px solid #fafafa;
+}
+
+.btn-white:hover {
+  background-color: rgb(234, 170, 0);
+  padding: 10px 20px;
+  border: none;
+}
+
+.btn-blue{
+  border: 2.4px solid #fafafa;
+  color: #fafafa;
+}
+
+/********************************* Project Cards */
+div.card-image-overlay {
+    width: 100%;
+    padding-top: 10rem;
+}
+
+img.card-img-overlay {
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+}
+/* grayscale effect copied from https://codepen.io/mhhasan320/pen/BwqvLL */
+div#project-card1 {
+    background-image: url('../images/popart.png');
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 18vh;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+    box-shadow: 1px 4px 14px 1px #2f1b31;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div#project-card1:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+div#project-card2 {
+    background-image: url('../images/dash.jpg');
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 18vh;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+    box-shadow: 1px 4px 14px 1px #2f1b31;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div#project-card2:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+div#project-card3 {
+    background-image: url('../images/gameoffacts.jpg');
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 18vh;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+    box-shadow: 1px 4px 14px 1px #2f1b31;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div#project-card3:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+div#project-card4 {
+    background-image: url('../images/infinity.jpg');
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 18vh;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+    box-shadow: 1px 4px 14px 1px #2f1b31;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div#project-card4:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+div#project-card5 {
+    background-image: url('../images/jammming.jpg');
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 18vh;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+    box-shadow: 1px 4px 14px 1px #2f1b31;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div#project-card5:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+div#project-card6 {
+    background-image: url('../images/music.jpg');
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 18vh;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: none;
+    margin: 0px auto;
+    box-shadow: 1px 4px 14px 1px #2f1b31;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div#project-card6:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+#view-projects {
+  padding: 10px 20px;
+}
+
+.py-3.my-3.fw-bold, #info {
+  height: fit-content;
+  font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  background-color: rgb(6 6 6 / 80%);
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.py-3.my-3.fw-bold {
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+  min-height: 20vh;
+}
+
+.card:hover .py-3.my-3.fw-bold {
+  transition: all 0.3s ease;
+  opacity: 1;
+  min-height: 20vh;
+}
+
+a, button,
+a.view-projects.text-dark
+a.view-projects {
+  font-family: 'Futura-PT', sans-serif;
+  text-decoration: none;
+}
+/********************./end-projects-section */
+
+#about-me {
+  font-family: 'Futura-PT', sans-serif;
+  font-size: 18px;
+  letter-spacing: .5px;
+}
+
+#skills-section {
+  font-family: 'Futura-PT', sans-serif;
+  letter-spacing: 1px;
+}
+
+i {
+  font-size: 1.5rem;
+  color: rgb(6 6 6 / 80%);
+}
+
+i:hover {
+  /* color: rgb(221, 184, 20); */
+  color: #dab600
+}
+
+/******************** Contact-section */
+#contact {
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 100%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 20px;
+  margin: 60px 0px;
+}
+
+#contact-details {
+  letter-spacing: 1px;
+  /* padding: 10px 0px; */
+}
+
+div#contact-details {}
+
+div#contact-details {}
+
+div#contact-details {}
+
+#resume, #projects, #about {
+  max-width: 100%; 
+  overflow: hidden;
+}
+
+i.fas.fa-map-marker.aos-init.aos-animate {
+  margin: 10px 0px;
+}
+
+i.fas.fa-phone.aos-init.aos-animate {
+  margin: 10px 0px;
+}
+
+
+/* ***************************./end-homepage */
+
+@media (max-width: 700px) {
+  .about-img{
+    margin-left: 20px;
+    right: 0px;
+    top: 30px;
+   }
+}
+
+@media only screen and (min-width: 768px) {
+  #typed-small-screens {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+  #typed-small-screens {
+    font-size: 1.5rem;
+  }
+}
