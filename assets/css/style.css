@@ -543,127 +543,141 @@ p.text-muted {
 } */
 
 /*-------------------------------- Portfolio New Section */
-@media (min-width: 40em) {
-  :root {
-    --box-y-padding: 4rem;
-  }
-}
-@media (min-width: 60em) {
-  :root {
-    --box-x-padding: 3rem;
-    --box-y-padding: 6rem;
-  }
-}
-@media (min-width: 40em) {
-  .project-row {
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: 4fr 4fr 5fr;
-    grid-template-areas: '. . title' 'img img content' 'img img .';
-    max-width: 1000px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .project-row::after {
-    content: '';
-    grid-column: 2/-1;
-    grid-row: 1/3;
-    position: relative;
-    z-index: -1;
-    background-color: #7ea1a66f;
-    /* box-shadow: 1px 3px 6px rgba(47, 47, 47, 0.38); */
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(60, 59, 59, 0.932) 0px 3px 28px;
-    /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
-  }
-    h2.project-heading {
-    grid-area: title;
-    font-size: 3em;
-    padding-top: var(--box-y-padding);
-    padding-left: var(--box-x-padding);
-  }
-  .content {
-    grid-area: content;
-    padding-bottom: var(--box-y-padding);
-    padding-left: var(--box-x-padding);
-    padding-right: var(--box-x-padding);
-  }
-  .img {
-    grid-area: img;
-  }
-}
-h2.project-heading {
-  margin: 0 0 1rem;
-  font-family: serif;
+
+* {
   position: relative;
+  box-sizing: border-box;
 }
 
-.project-heading {
-  font-size: 2rem;
-}
-
-h1::after {
-  content: '';
-  position: absolute;
-  width: 6rem;
-  background-color: #ccc;
-  height: 2px;
+.iframely-embed {
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background: white;
 }
-@media (min-width: 40em) {
-  h1::after {
-    left: var(--box-x-padding);
-    top: var(--box-y-padding);
+
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding-bottom: 4vmin;
+  height: 90vh;
+  width: 100%;
+  background: #ede8e2;
+  color: #3a3535;
+}
+
+
+.title {
+  padding-left: 1em;
+  grid-column: 1 / -1;
+  grid-row: 1;
+
+  font-family: "Prata", serif;
+  font-size: 8vw;
+  width: 100%;
+  z-index: 2;
+}
+
+.title-inner {
+    display: inline-block;
+  }
+
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
-.content {
-  color: #4d4d4d;
-  margin-bottom: var(--box-y-padding);
-}
-@media (min-width: 40em) {
-  .content {
-    margin-bottom: 0;
+
+@keyframes outer-left {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: none;
   }
 }
-p {
-  margin-top: 0;
-  margin-bottom: var(--box-y-padding);
-  line-height: 1.5;
+
+@keyframes inner-left {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
 }
-.content a {
-  text-decoration: none;
-  border: 1px solid #b3b3b3;
-  border-radius: 1em;
-  padding: 1em 2em;
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: inherit;
+
+.project,
+.subtitle {
+  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+  outline: 1px solid red;
+}
+
+[class*='inner'] {
+outline: 1px solid blue;
+}
+
+.title-inner {
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.417)
+  animation: inner-left 1s 1s ease both;
 }
-.img {
-  position: relative;
+
+.project-inner {
+  display: inline-block;
+  animation: inner-left 1s 1s ease both,
+    text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
-.img a {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+
+.subtitle-inner {
+  animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
-img .folio-img {
-  max-width: 100%;
-  height: fit-content;
-  vertical-align: middle;
-  box-shadow: 0 0.2em 1.2em rgba(61,48,41,0.1);
+
+.title {
+  animation: outer-left 1s 1s ease both;
 }
-.attribution {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: #ea4c89;
-  color: #fff;
-  padding: 0.5em 1em;
+
+.project, .title-inner {
+    display: inline-block;
+  }
+
+
+.subtitle {
+  display: inline-block;
+}
+
+.image {
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: -2rem;
+  opacity: 0.7;
+
+  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+
+  @keyframes image-in {
+    from {
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+body:active * {
+  animation: none !important;
 }
 
 
