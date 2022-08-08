@@ -91,9 +91,9 @@
     </div>
   </div>
   <!-- Container (About Section) -->
-  <div class="w3-content w3-container w3-padding-64 mt-3 mt-lg-5" id="about">
-    <h3 class="title mt-3 mt-lg-5" data-aos="fade-right" data-aos-delay="200">ABOUT ME</h3>
-    <div class="w3-row">
+  <section class="container-fluid py-3 py-md-5" id="about">
+    <h3 class="title mt-5 pt-5" data-aos="fade-right" data-aos-delay="200">ABOUT ME</h3>
+    <div class="row">
       <div class="col-12 w3-center w3-padding-32">
         <img class="w3-image w3-opacity w3-hover-opacity-off" data-aos="flip-left" data-aos-easing="ease-out-cubic"
           data-aos-duration="2000" id="portrait2" alt="portrait" src="assets/images/portrait2.jpg" alt="Photo of Me"
@@ -120,6 +120,7 @@
       <hr>
     </div>
     <!--./end-hr-->
+    <div class="skills-wrapper bg-dark text-light">
     <div class="row mt-5 pt-5" id="skills">
       <div class="col-12">
         <h2 class="title-smaller mt-3 mt-lg-5" data-aos="fade-left" data-aos-delay="200">MY SKILLS</h2>
@@ -221,35 +222,9 @@
     </div>
     <!--./end-skills-row-->
   </div>
+</section>
   <!--end-about-container-->
-
-  <!-- Parallex (Portfolio Section) -->
-  <div class="row w3-center bg-custom w3-padding-16">
-    <div class="w3-quarter w3-section">
-      <i class="fas fa-sitemap" style="font-size:2rem;"></i><br>
-      <h6>Design</h6>
-    </div>
-    <div class="w3-quarter w3-section">
-      <i class="fas fa-code" style="font-size:2rem;"></i><br>
-      <h6>Develop</h6>
-    </div>
-    <div class="w3-quarter w3-section">
-      <i class="fas fa-bug" style="font-size:2rem;"></i><br>
-      <h6>Defend</h6>
-    </div>
-    <div class="w3-quarter w3-section">
-      <i class="fas fa-laptop" style="font-size:2rem;"></i><br>
-      <h6>Deploy</h6>
-    </div>
-  </div>
-
-  <!-- Second Parallax Image with Portfolio Text -->
-  <div class="bgimg-2" data-aos="zoom-out" data-aos-duration="2000">
-    <div class="w3-display-middle">
-      <span class="w3-text-white w3-wide">PORTFOLIO</span>
-    </div>
-  </div>
-
+`
   <!-- Container (Portfolio Section) -->
   <section class="container-fluid p-3 p-md-5 my-0 mx-auto align-items-center justify-content-center d-block" id="portfolio">
     <div class="row text-center px-3 px-md-5">
@@ -271,17 +246,15 @@
         <!--project 1-->
         <div class="row flex-lg-row-reverse align-items-center g-5 mx-auto px-3 py-5 shadow-lg">
           <div class="col-12 col-lg-6">
-            <img src="assets/images/angles.jpg" class="d-block mx-lg-auto img-fluid shadow-lg" alt="" width="700"
-              height="500" loading="lazy">
+            <img src="assets/images/electrillo.png" class="d-block mx-lg-auto img-fluid my-0 mx-auto" alt="Electrillo" loading="lazy">
           </div>
           <div class="col-12 col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
-            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-              popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
-              prebuilt components, and powerful JavaScript plugins.</p>
+            <h3 class="display-5 fw-bold lh-1 mb-3 project-name">Electrillo</h3>
+            <p class="lead project-description">Electrillo is a web application that allows users to
+              calculate the amount of money they could be saving by switching from fuel to EV powered vehicles. The Electrillo project received first prize in the April 2022 Code Institute Earth Day Hackathon competition.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+              <a href="https://alissatroiano.github.io/team-4-april-2022/" target="_blank" type="button" class="btn btn-primary btn-lg px-4 me-md-2">View Project</a>
+              <a href="https://github.com/alissatroiano/team-4-april-2022" target="_blank" type="button" class="btn btn-outline-secondary btn-lg px-4">Source Code</a>
             </div>
           </div>
         </div>

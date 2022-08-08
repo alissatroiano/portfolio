@@ -221,7 +221,6 @@ h3 {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #777;
-  color: #000;
 }
 
 h4,
@@ -520,7 +519,8 @@ img {
   font-family: 'Futura-PT', sans-serif;
   margin: 10px 10px 90px 0px;
   text-align: justify;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .awards {
@@ -557,14 +557,11 @@ p.text-muted {
   filter: drop-shadow(5px 5px 15px #000);
 }
 
-/* .folio-img {
-  transform: matrix3d(0.94, 0, 0.34, -0.00025, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(30px);
+.project-name {
+  font-family: "Futura-PT", sans-serif;
+  letter-spacing: 5px;
 }
 
-.folio-img:hover {
-  transform: matrix3d(0.94, 0, 0.34, -0.00025, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(-30px);
-
-} */
 
 /*-------------------------------- Contact Section */
 #contact-details {
