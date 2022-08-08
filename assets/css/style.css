@@ -255,13 +255,23 @@ p {
 
 span#name {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0px auto;
   text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: 'Futura-PT', sans-serif;
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .w3-black {
@@ -664,7 +674,6 @@ a#footer-link:hover {
 /*--------------------------------  Media Queries */
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-width: 1600px) {
-
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
@@ -673,8 +682,19 @@ a#footer-link:hover {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 4.5rem;
+    font-family: 'Futura-PT', sans-serif;
+    letter-spacing: 10px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 600;
+  }  
+}
+
 @media (min-width: 992px)  {
- 
 .img-wrapper {
   width: 800px;
   background-color: transparent;
