@@ -128,12 +128,9 @@ h2.section-title {
 
 @keyframes blink-caret{
   from, to {border-color: transparent}
-  50% {border-color: #2da427}
 }
 
 #typed {
-  font-family: 'Source Code Pro', monospace;
-  color: #53e44c;
   text-shadow: 1px 1px 3px rgb(40, 39, 39);
   font-weight: 500;
   font-size: 1.2rem;
@@ -141,12 +138,11 @@ h2.section-title {
 }
 
 #typed-small-screens {
-    font-family: 'Source Code Pro', monospace;
-
-  color: #53e44c;
+  color: #bb72e9;
   text-shadow: 1px 1px 3px rgb(40, 39, 39);
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 650;
+  font-size: 1.5rem;
+  text-transform: uppercase;
   margin-top: 30px;
 }
 
