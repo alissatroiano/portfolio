@@ -23,6 +23,7 @@ class Project(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     deleted_at = models.DateTimeField(auto_now=True)
     photo = models.ImageField(null=True, blank=True, upload_to='projects')
+    repository = models.URLField(max_length=1024, null=True, blank=True)
 
     def __str__(self):
         return self.name

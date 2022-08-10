@@ -195,12 +195,10 @@ img.card-img-overlay {
     margin: 0px auto;
 }
 /* grayscale effect copied from https://codepen.io/mhhasan320/pen/BwqvLL */
-div#project-card1 {
-    background-image: url('../images/popart.png');
+div#project-card {
     background-position: center;
     background-size: cover;
-    min-width: 100%;
-    min-height: 18vh;
+    max-width: 100%;
     justify-content: center;
     display: flex;
     overflow: hidden;
@@ -211,7 +209,7 @@ div#project-card1 {
     -webkit-filter: grayscale(100%);
 }
 
-div#project-card1:hover {
+div#project-card:hover {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
 }
