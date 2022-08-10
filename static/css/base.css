@@ -209,6 +209,14 @@ div#project-card {
     -webkit-filter: grayscale(100%);
 }
 
+.card-img {
+  min-height: 50vh;
+}
+
+.card-image-overlay {
+  height: fit-content;
+}
+
 div#project-card:hover {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
