@@ -3,23 +3,32 @@
 
 {% block content %}
 <h2 class="section-title">My Dev Projects</h1>
-    <div class="container-fluid text-light py-5 my-5 bg-dark" id="projects">
-        <div class="row d-flex g-4 text-center p-3 m-5">
+    <div class="row g-4 text-center p-3 m-5">
         {% for project in projects %}
-            <div class="col-xs-6 col-sm-6">
-                <div class="card overflow-hidden rounded-5 img-fluid" id="project-card">
-                    <img class="card-img" src="/media/{{ project.picture }}" alt="{{ project.title }}">
-                    <div class="card-image-overlay">
-                        <div class="py-3 my-3 fw-bold">
-                            <h3>{{ project.title }}</h3>
-                            <p class="text-small my-2">{{ project.description }}</p>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-lg">
+                        {% if project.picture %}
+                        <a class="stretched-link" href="{{ project.link }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="/media/{{ project.picture }}" alt="{{ project.picture }}">
+                        </a>
+                        {% else %}
+                        <a href="{% url 'project_detail' project.id %}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}matrix-code_copy.jpg" alt="{{ project.title }}">
+                        </a>
+                        {% endif %}
+                        <div class="card-body pb-0">
+                            <h4 class="mb-2 display-font heading-sm">{{ project.title }}</h4>
+                            <p>{{ project.description }} </p>
+                             <p class="body-small my-2 text-muted">{{ project.technologies }}</p>
+                        </div>
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row d-flex">
                                 <div class="mb-3">
-                                    <button type="button" class="btn btn-white btn-sm mb-3">
+                                    <button type="button" class="btn btn-white btn-sm mb-3 mx-2">
                                         <a class="view-projects text-dark" href="{{ project.url }}">View Project</a>
                                         </a>
                                     </button>
-                                    <button type="button" class="btn btn-white btn-sm mb-3">
+                                    <button type="button" class="btn btn-white btn-sm mb-3 mx-2">
                                         <a class="view-projects text-dark" href="{{ project.repository }}">Source
                                             Code</a>
                                         </a>
@@ -29,8 +38,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            {% endfor %}
+        {% endfor %}
         </div>
-    </div>
-    {% endblock %}
+        {% endblock %}
+        
