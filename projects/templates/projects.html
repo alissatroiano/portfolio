@@ -2,8 +2,12 @@
 {% load static %}
 
 {% block content %}
-<h2 class="section-title">My Dev Projects</h1>
-    <div class="row g-4 text-center p-3 m-5">
+<div class="container">
+    <div class="row d-flex">
+        <div class="col-12">
+            <h2 class="section-title">My Dev Projects</h1>
+    </div>
+    <div class="row g-4 text-center p-3 my-0 mx-auto">
         {% for project in projects %}
             <div class="col-sm-6 col-lg-4 mb-4">
                     <div class="card h-100 shadow-lg">
@@ -40,5 +44,6 @@
                 </div>
         {% endfor %}
         </div>
+    </div>
         {% endblock %}
         
