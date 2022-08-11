@@ -2,48 +2,40 @@
 {% load static %}
 
 {% block content %}
+
 <div class="container">
-    <div class="row d-flex">
+    <div class="row text-center pt-5">
         <div class="col-12">
-            <h2 class="section-title">My Dev Projects</h1>
-    </div>
-    <div class="row g-4 text-center p-3 my-0 mx-auto">
-        {% for project in projects %}
-            <div class="col-sm-6 col-lg-4 mb-4">
-                    <div class="card h-100 shadow-lg">
-                        {% if project.picture %}
-                        <a class="stretched-link" href="{{ project.link }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="/media/{{ project.picture }}" alt="{{ project.picture }}">
-                        </a>
-                        {% else %}
-                        <a href="{% url 'project_detail' project.id %}">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}matrix-code_copy.jpg" alt="{{ project.title }}">
-                        </a>
-                        {% endif %}
-                        <div class="card-body pb-0">
-                            <h4 class="mb-2 display-font heading-sm">{{ project.title }}</h4>
-                            <p>{{ project.description }} </p>
-                             <p class="body-small my-2 text-muted">{{ project.technologies }}</p>
-                        </div>
-                        <div class="card-footer bg-white pt-0 border-0 text-left">
-                            <div class="row d-flex">
-                                <div class="mb-3">
-                                    <button type="button" class="btn btn-white btn-sm mb-3 mx-2">
-                                        <a class="view-projects text-dark" href="{{ project.url }}">View Project</a>
-                                        </a>
-                                    </button>
-                                    <button type="button" class="btn btn-white btn-sm mb-3 mx-2">
-                                        <a class="view-projects text-dark" href="{{ project.repository }}">Source
-                                            Code</a>
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        {% endfor %}
+            <h2 class="section-title mt-5 pt-5">My Projects</h2>
         </div>
     </div>
-        {% endblock %}
-        
+<div class="row g-4 my-0 mx-auto" data-masonry='{"percentPosition": true }'>
+{% for project in projects %}
+<div class="col-xs-8 col-sm-4">
+    <div class="card h-100 rounded-5 img-fluid shadow-lg" id="project-card">
+        <img src="/media/{{ project.picture }}" class="card-img project-pic" alt="project.title">
+        <a href="{% url 'project_detail' project.id %}" class="stretched-link"></a>
+        <!-- <div class="card-img-overlay">
+            <div class="py-3 my-3 fw-bold">
+                <h3>{{ project.title }}</h3>
+                <p class="text-small ">{{ project.description }}</p>
+                <div class="row d-flex">
+                    <div class="mb-1">
+                        <button type="button" class="btn btn-white btn-sm mb-3">
+                            <a class="view-projects text-dark" href="{{ project.url }}">View Project</a>
+                            </a>
+                        </button>
+                        <button type="button" class="btn btn-white btn-sm mb-3">
+                            <a class="view-projects text-dark" href="{{ project.repository }}">Source Code</a>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>
+{% endfor %}
+</div>
+</div>
+{% endblock %}

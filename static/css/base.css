@@ -178,27 +178,19 @@ h2.section-title {
 }
 
 /********************************* Project Cards */
-div.card-image-overlay {
+div.card-image-overlay, .card-img-overlay {
     width: 100%;
     padding-top: 10rem;
 }
 
-img.card-img-overlay {
-    background-position: center;
-    background-size: cover;
-    max-width: 100%;
-    min-height: 100vh;
-    justify-content: center;
-    display: flex;
-    overflow: hidden;
-    border: none;
-    margin: 0px auto;
-}
+
 /* grayscale effect copied from https://codepen.io/mhhasan320/pen/BwqvLL */
-div#project-card {
+div#project-card1 {
+    background-image: url('../images/popart.png');
     background-position: center;
     background-size: cover;
-    max-width: 100%;
+    min-width: 100%;
+    min-height: 18vh;
     justify-content: center;
     display: flex;
     overflow: hidden;
@@ -209,15 +201,26 @@ div#project-card {
     -webkit-filter: grayscale(100%);
 }
 
-.card-img {
-  min-height: 50vh;
+div#project-card {
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  border: none;
+  margin: 0px auto;
+  box-shadow: 1px 4px 14px 1px #2f1b31;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 
-.card-image-overlay {
-  height: fit-content;
+#project-card:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 
-div#project-card:hover {
+div#project-card1:hover {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
 }
@@ -358,6 +361,11 @@ div#project-card6:hover {
   max-height: 0;
   transition: all 0.3s ease;
   min-height: 20vh;
+}
+
+img.project-pic {
+  max-width: 100%;
+  height: auto;
 }
 
 .card:hover .py-3.my-3.fw-bold {
