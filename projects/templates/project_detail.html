@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<div class="container py-5 my-0 mx-auto">
+<!-- <div class="container py-5 my-0 mx-auto">
     <div class="row mt-5">
         <div class="col-12">
             <h1 class="title text-center display-1">{{ project.title }}</h1>
@@ -35,5 +35,34 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+<section class="container py-5 my-1 my-md-4 my-lg-5">
+    <div class="row mt-5">
+        <div class="col-12">
+            <h1 class="title text-center display-1 fw-bold">{{ project.title }}</h1>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+          <h2 class="h1 mb-4">About</h2>
+          <p class="fs-lg mb-0">Lacinia pulvinar at diam, urna, non blandit. Cras id enim tortor nascetur. Cursus ante eu nam ut non vestibulum sem. Ullamcorper quis varius eu, vel. Sagittis ut suspendisse et, nec. Parturient eu iaculis sit dolor, erat mauris. Leo at egestas aliquet duis pellentesque amet. Proin mattis ac ornare malesuada sed. Diam libero tortor suspendisse molestie non duis enim. Lectus pulvinar euismod et risus egestas. Cursus porttitor id faucibus eu vestibulum. Eu blandit faucibus nulla adipiscing amet ullamcorper.</p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+        <div class="ps-lg-4 ms-lg-3">
+          <h3 class="h5 d-flex align-items-center">
+            <i class="fas fa-info-circle me-2"></i>
+            Problem
+          </h3>
+          <p class="pb-4 mb-0 mb-lg-3">Ultricies massa iaculis vestibulum egestas vestibulum, cursus. Leo non arcu ultricies senectus a purus sed.</p>
+          <h3 class="h5 d-flex align-items-center">
+            <i class="fas fa-lightbulb me-2"></i>
+            Solution
+          </h3>
+          <p class="mb-0">Sit tellus id proin viverra iaculis pellentesque ornare. Diam augue sit feugiat porttitor leo, fusce vel ac. Placerat vulputate quisque.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}
