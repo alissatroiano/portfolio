@@ -37,6 +37,8 @@ class ProjectAdmin(admin.ModelAdmin):
         'link', 
         'picture',
         'image_url',
+        'repository',
+        'photo',
 	]
     
     readonly_fields = ['created_at', 'updated_at', 'deleted_at']
