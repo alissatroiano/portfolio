@@ -15,24 +15,6 @@
     <div class="card h-100 rounded-5 img-fluid shadow-lg" id="project-card">
         <img src="/media/{{ project.picture }}" class="card-img project-pic" alt="project.title">
         <a href="{% url 'project_detail' project.id %}" class="stretched-link"></a>
-        <!-- <div class="card-img-overlay">
-            <div class="py-3 my-3 fw-bold">
-                <h3>{{ project.title }}</h3>
-                <p class="text-small ">{{ project.description }}</p>
-                <div class="row d-flex">
-                    <div class="mb-1">
-                        <button type="button" class="btn btn-white btn-sm mb-3">
-                            <a class="view-projects text-dark" href="{{ project.url }}">View Project</a>
-                            </a>
-                        </button>
-                        <button type="button" class="btn btn-white btn-sm mb-3">
-                            <a class="view-projects text-dark" href="{{ project.repository }}">Source Code</a>
-                            </a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 </div>
 {% endfor %}
