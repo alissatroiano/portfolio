@@ -102,23 +102,30 @@ h2.section-title {
 
 .btn-white{
   background-color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 520;
   padding: 15px 25px;
   border: none;
   color: var(--light);
 }
 
 .btn-white:hover {
-  background-color: var(--salmon);
+  background-color: var(--dark-salmon);
+  color: var(--light);
   border: none;
 }
 
 /* -------------------------------------- Jumbotron -------------------------------------- */
 
 /* https://css-tricks.com/perfect-full-page-background-image/ */
-#home {
+.jumbotron-container {
 	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75), rgba(255, 255, 255, 0.5)), url('../images/bg4.jpg') no-repeat center center fixed;
-
+  animation: fadein 5s;
+  -webkit-animation: fadein 5s;
+  -moz-animation: fadein 5s;
+  -o-animation: fadein 5s;
   /* background-color:  rgb(227, 71, 57); */
   background-size: cover;
   background-attachment: fixed;
@@ -138,6 +145,26 @@ h2.section-title {
   align-items: center;
   position: relative;
 }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 
 .jumbotron-overlay {
   position: absolute;
@@ -167,7 +194,8 @@ h2.section-title {
     white-space: nowrap; Keeps the content on a single line
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    animation:  typing 3.5s steps(100, end), blink-caret .75s step-end infinite;
+    /* animation:  typing 3.5s steps(100, end), blink-caret .75s step-end infinite; */
+    animation: typing 4.5s steps(100,end), blink-caret .75s step-end infinite;
     }
 
 @keyframes typing{

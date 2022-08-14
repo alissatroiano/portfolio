@@ -14,10 +14,33 @@
 <div class="col-xs-8 col-sm-4">
     <div class="card h-100 rounded-5 img-fluid shadow-lg" id="project-card">
         <img src="/media/{{ project.picture }}" class="card-img project-pic" alt="project.title">
-        <a href="{% url 'project_detail' project.id %}" class="stretched-link"></a>
+        <a href="{% url 'project_detail' project.id %}" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
     </div>
 </div>
 {% endfor %}
 </div>
 </div>
+
+<!-- Modal -->
+<!-- {% for project in projects %}
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="title text-center text-dark display-1 fw-bold">{{ project.title }}</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %} -->
+
+
 {% endblock %}
