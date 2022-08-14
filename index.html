@@ -54,7 +54,7 @@
             <a class="nav-link" href="assets/resume.pdf" target="_blank">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -71,25 +71,27 @@
       </div>
     </div>
   </nav>
-  <!-- First Parallax Image with Logo Text -->
-  <div class="bgimg-1" data-aos="zoom-out" data-aos-duration="2000" id="home">
-    <div class="container-fluid w3-content w3-display-middle" style="white-space:nowrap;">
-      <div class="row">
-        <div class="col-12 text-center">
-          <span id="name">ALISSA <span class="w3-hide-small"></span> TROIANO</span>
-          <h6 class="subtitle my-3 my-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500"
-            id="subtitle">SOFTWARE DEVELOPER</h6>
+  <!-- Jumbotron -->
+  <section class="jumbotron" id="home">
+    <div class="container-fluid jumbotron-container d-flex align-items-center my-0 mx-auto py-5">
+            <div class="row d-flex justify-content-center align-items-center text-center">
+                <div class="col-12 text-center" id="home-text">
+                    <!-- <h3 class="font-weight-normal mb-3">Hello, my name</h3> -->
+                    <h1 class="display-1 text-uppercase my-2 my-md-3" id="title">
+                        Alissa Troiano</h1>
+                </div>
+                <div class="typewriter text-center my-3 my-md-4 pb-3">
+                    <span class="lead text-center" id="typed-small-screens" >Software Developer</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <a href="#projects" class="btn btn-white mx-2 mx-md-4">Projects</a>
+                    <a href="#resume" target="_blank" class="btn btn-white d-sm-block mx-2 mx-md-4">Resume</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12 text-center mt-3 mt-md-4" id="hero-buttons">
-          <a href="#about" class="cta-btn aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">RESUME</a>
-          <a href="#portfolio" class="cta-btn  aos-init aos-animate" data-aos="fade-up"
-            data-aos-duration="1500">PORTFOLIO</a>
-        </div>
-      </div>
     </div>
-  </div>
+    </div>
+</section>
   <!-- Container (About Section) -->
   <div class="w3-content w3-container w3-padding-64 mt-3 mt-lg-5" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
@@ -251,7 +253,7 @@
   </div>
 
   <!-- Container (Portfolio Section) -->
-  <section class="container-fluid p-3 p-md-5 my-0 mx-auto align-items-center justify-content-center d-block" id="portfolio">
+  <section class="container-fluid p-3 p-md-5 my-0 mx-auto align-items-center justify-content-center d-block" id="projects">
     <div class="row text-center px-3 px-md-5">
       <div class="col-12 col-md-8 offset-md-2">
         <h3 class="w3-center my-5 pt-5">MY WORK</h3>
@@ -454,7 +456,7 @@
           <input type="text" name="reply_to" id="reply_to" class="w3-input">
         </div>
         <div class="form-group text-center my-2 pt-3">
-          <button class="w3-button">
+          <button class="btn">
             <input type="submit" id="button" value="Send Email">
           </button>
         </div>
