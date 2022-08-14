@@ -336,7 +336,7 @@ span#name {
 /* https://css-tricks.com/perfect-full-page-background-image/ */
 .jumbotron-container {
 	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75), rgba(255, 255, 255, 0.5)), url('../images/bg.jpg') no-repeat center center fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75)), url('../images/bg.jpg'), no-repeat center center fixed;
   animation: fadein 5s;
   -webkit-animation: fadein 5s;
   -moz-animation: fadein 5s;
