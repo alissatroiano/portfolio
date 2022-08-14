@@ -336,30 +336,16 @@ span#name {
 /* https://css-tricks.com/perfect-full-page-background-image/ */
 .jumbotron-container {
 	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75)), url('../images/bg.jpg'), no-repeat center center fixed;
-  animation: fadein 5s;
-  -webkit-animation: fadein 5s;
-  -moz-animation: fadein 5s;
-  -o-animation: fadein 5s;
-  /* background-color:  rgb(227, 71, 57); */
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75)), url('../images/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  backdrop-filter: blur(10px);
-  overflow: hidden;
-  max-width: 100%;
   height: 100vh;
   min-height: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
+
 
 @keyframes fadein {
   from {
@@ -798,7 +784,7 @@ a#footer-link:hover {
   bottom: 20px;
   right: 20px;
   display: none;
-  background-color: var(--salmon);
+  background-color: var(--black);
   box-shadow: 1px 3px 6.5px rgba(105, 105, 105, 0.399);
 }
 
