@@ -25,6 +25,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+   <!--Favicon Link-->
+   <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
 </head>
 
 <body>
@@ -51,7 +53,7 @@
             <a class="nav-link" href="assets/resume.pdf" target="_blank">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -62,31 +64,33 @@
           <a target="_blank" href="https://www.linkedin.com/in/alissat/"><i class="fab fa-linkedin mx-1"></i></a>
           <a target="_blank" href="https://www.twittter.com/in/alissamtroiano/">
             <i class="fab fa-twitter mx-1"></i></a>
-          <a target="_blank" href="mailto:alissa@alissatroiano.com">
+          <a target="_blank" href="mailto:alissatroiano@alissatroiano.com">
             <i class="fas fa-envelope mx-1"></i></a>
         </span>
       </div>
     </div>
   </nav>
-  <!-- First Parallax Image with Logo Text -->
-  <div class="bgimg-1" data-aos="zoom-out" data-aos-duration="2000" id="home">
-    <div class="container-fluid w3-content w3-display-middle" style="white-space:nowrap;">
-      <div class="row">
-        <div class="col-12 text-center">
-          <span id="name">ALISSA <span class="w3-hide-small"></span> TROIANO</span>
-          <h6 class="subtitle my-3 my-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500"
-            id="subtitle">SOFTWARE DEVELOPER</h6>
+  <!-- Jumbotron -->
+  <section class="jumbotron" id="home">
+    <div class="container-fluid jumbotron-container d-flex align-items-center my-0 mx-auto py-5">
+            <div class="row d-flex justify-content-center align-items-center text-center">
+                <div class="col-12 text-center" id="home-text">
+                    <!-- <h3 class="font-weight-normal mb-3">Hello, my name</h3> -->
+                    <h1 class="display-1 text-uppercase my-2 my-md-3" id="title">
+                        Alissa Troiano</h1>
+                </div>
+                <div class="typewriter text-center my-3 my-md-4 pb-3">
+                    <span class="lead text-center" id="typed-small-screens" >Software Developer</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <a href="#projects" class="btn btn-white mx-2 mx-md-4">Projects</a>
+                    <a href="#about" class="btn btn-white d-sm-block mx-2 mx-md-4">Resume</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12 text-center mt-3 mt-md-4" id="hero-buttons">
-          <a href="#about" class="cta-btn aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">RESUME</a>
-          <a href="#portfolio" class="cta-btn  aos-init aos-animate" data-aos="fade-up"
-            data-aos-duration="1500">PORTFOLIO</a>
-        </div>
-      </div>
     </div>
-  </div>
+    </div>
+</section>
   <!-- Container (About Section) -->
   <div class="w3-content w3-container w3-padding-64 mt-3 mt-lg-5" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
@@ -248,8 +252,8 @@
   </div>
 
   <!-- Container (Portfolio Section) -->
-  <section class="container-fluid p-3 p-md-5 my-0 mx-auto align-items-center justify-content-center d-block"
-    id="portfolio">
+
+  <section class="container-fluid p-3 p-md-5 my-0 mx-auto align-items-center justify-content-center d-block" id="projects">
     <div class="row text-center px-3 px-md-5">
       <div class="col-12 col-md-8 offset-md-2">
         <h3 class="w3-center my-5 pt-5">MY WORK</h3>
@@ -271,7 +275,7 @@
            <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
             <div class="col-12 col-md-5 justify-content-start">
               <h2>Emojourney</h2>
-              <h4 class="text-muted">Emoji Guidebook for World Travelers </h4>
+              <h4 class="text-muted">Emoji Travel Guide</h4>
               <strong class="awards">1st Place - Code Institute Hackathon, 07/16/22</strong>
               <p class="my-3 me-3 me-md-5 project-description">Emojourney is a clever traveler's guide for using (and not accidentally abusing) Emojis around the world. The website features a homepage, a travel guide with a travel-tip compass, and a team page.</p>
               <p class="text-muted">HTML-5, CSS-3, Bootstrap-5, JavaScript
@@ -291,7 +295,7 @@
       <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
         <div class="col-12 col-md-5 justify-content-start">
           <h2>Inklusion</h2>
-          <h4 class="text-muted">Virtual LGBTQIA+ Art History Gallery </h4>
+          <h4 class="text-muted">LGBTQIA+ Art Gallery </h4>
           <strong class="awards">1st Place - Code Institute Hackathon, 06/17/22</strong>
           <p class="my-3 me-3 me-md-5 project-description">Inklusion is a virtual tour of LGBTQIA+ art throughout history. The project includes a gallery, team page, and a "Get Involved" modal, where users can find and hire local artists to show their support. </p>
           <p class="text-muted">HTML-5, CSS-3, Bootstrap-5, JavaScript
@@ -307,6 +311,7 @@
           <img src="assets/images/inklusion.png" class="img-wrapper img-fluid project-img" alt="inklusion" />
         </div>
       </div>
+
       <!--Electrillo-->
       <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
         <div class="col-12 col-md-5 justify-content-start">
@@ -494,7 +499,7 @@
           <input type="text" name="reply_to" id="reply_to" class="w3-input">
         </div>
         <div class="form-group text-center my-2 pt-3">
-          <button class="w3-button">
+          <button class="btn">
             <input type="submit" id="button" value="Send Email">
           </button>
         </div>
@@ -513,7 +518,7 @@
       <a target="_blank" href="https://www.linkedin.com/in/alissat/"><i class="fab fa-linkedin mx-1"></i></a>
       <a target="_blank" href="https://www.twittter.com/in/alissamtroiano/">
         <i class="fab fa-twitter mx-1"></i></a>
-      <a target="_blank" href="mailto:alissa@alissatroiano.com">
+      <a target="_blank" href="mailto:alissatroiano@alissatroiano.com">
         <i class="fas fa-envelope mx-1"></i></a>
 
     </div>
