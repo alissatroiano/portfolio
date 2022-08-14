@@ -759,6 +759,7 @@ input[type="submit"] {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--light);
+  background-color: transparent;
   border: none;
 }
 /*------------------------- Footer */
