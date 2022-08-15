@@ -33,6 +33,10 @@ nav {
   text-transform: uppercase;
 }
 
+.text-salmon {
+  color: var(--salmon);
+}
+
 .bg-blur {
   --bs-bg-opacity: 1;
   background-color: #fafafab4;
