@@ -1,6 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
 
 
+:root {
+  --primary: #5c9caf;
+  --salmon: rgb(255 124 95);
+  --dark-salmon: rgb(255 88 73);
+  --light-salmon: rgb(255 160 122);
+  --light: #fafafa;
+  --lighter: #f5f5f5;
+  --dark: #2C2C2C;
+  --grey: #979797;
+  --light-grey: #e6e6e6;
+  --dark-grey: #4d4d4d;
+  --darker: #080808;
+  --black: #000000;
+  --blue: #7DA2A9;
+  --light-blue: #B3E5F1;
+  --yellow-1: #FDD935;
+  --yellow-2: #E9BD43;
+  --yellow-3: #F5B935;
+  --violet: #9E7AE6;
+  --red: #E83939;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -197,8 +219,14 @@ span.button-text {
   font-weight: 400;
 }
 
-.btn-row {
-  
+.btn-dark {
+  padding: 12px 15px;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #5c9caf;
+  color: #fafafa;
 }
 
 .project-img {
@@ -220,7 +248,7 @@ h3 {
   font-size: 1.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px #777;
+  text-shadow: 1px 1px 3px rgba(121, 121, 121, 0.495);
   color: #000;
 }
 
@@ -230,6 +258,14 @@ h6 {
   font-family: 'Playfair Display', serif;
   text-transform: uppercase;
   font-size: 1.2rem;
+}
+
+h1#title {
+  /* background-color: var(--black); */
+  /* padding: 20px 5px; */
+  margin: 0 auto;
+  /* width: fit-content; */
+  color: var(--dark);
 }
 
 
@@ -282,6 +318,7 @@ span#name {
 /*-------------------------------- Hero */
 #home {
   height: 100vh;
+   margin: 0 auto;
 }
 
 #hero-buttons {
@@ -290,6 +327,109 @@ span#name {
   font-size: 1.3rem;
   text-decoration: none;
   padding: 0 10px;
+}
+
+
+
+/* -------------------------------------- Jumbotron -------------------------------------- */
+
+/* https://css-tricks.com/perfect-full-page-background-image/ */
+.jumbotron-container {
+	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)), 
+  url('../images/deskspace.jpg') no-repeat center center fixed;
+  /* background-color:  rgb(227, 71, 57); */
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  max-width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.jumbotron-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+#home-text {
+  font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  /* color: var(--light); */
+  color: var(--black);
+  font-weight: 900;
+  /* text-shadow: 1px 1px 6px var(--light-grey); */
+}
+
+.typewriter {
+    width: auto;
+    border-right: .15em solid var(--red); /* The typwriter cursor */
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap; Keeps the content on a single line
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    /* animation:  typing 3.5s steps(100, end), blink-caret .75s step-end infinite; */
+    animation: typing 4.5s steps(100,end), blink-caret .75s step-end infinite;
+    }
+
+@keyframes typing{
+  from {max-width: 0}
+  to {max-width: 100%}
+}
+
+@keyframes blink-caret{
+  from, to {border-color: transparent}
+}
+
+#typed {
+  text-shadow: 1px 1px 3px rgb(40, 39, 39);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#typed-small-screens {
+  font-family: 'Futura-PT', sans-serif;
+  color: var(--darker);
+  text-shadow: 1px 1px 3px var(--grey);
+  font-weight: 600;
+  font-size: 1.65rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /*-------------------------------- Background Images */
