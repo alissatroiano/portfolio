@@ -2,6 +2,7 @@
 
 /* Global Styles */
 :root {
+  --primary: #5c9caf;
   --salmon: rgb(255 124 95);
   --dark-salmon: rgb(255 88 73);
   --light-salmon: rgb(255 160 122);
@@ -112,7 +113,7 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
 }
 
 .navbar-light .navbar-brand:hover {
-  color: var(--dark-salmon);
+  color: var(--primary);
 }
 
 .fab.fa-github ,
@@ -127,7 +128,7 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
 .fab.fa-linkedin:hover,
 .fab.fa-twitter:hover,
 .fas.fa-envelope:hover {
-  color: var(--dark-salmon);
+  color: var(--primary);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -138,7 +139,7 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
 .navbar-light .navbar-nav .nav-link:hover,
 li.nav-item:hover,
 a.nav-link:hover {
-  color: var(--dark-salmon);
+  color: var(--primary);
   /* text-shadow: 1px 1px 3px #666; */
 }
 
@@ -191,7 +192,7 @@ a#resumeBtn, .project-button {
 
 a.cta-btn:hover,
 a#resumeBtn:hover, .project-button:hover {
-  background-color: var(--dark-salmon);
+  background-color: var(--primary);
   border: none;
   text-decoration: none;
   color: #fafafa;
@@ -206,8 +207,14 @@ span.button-text {
   font-weight: 400;
 }
 
-.btn-row {
-  
+.btn-dark {
+  padding: 12px 15px;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #5c9caf;
+  color: #fafafa;
 }
 
 .project-img {
@@ -234,7 +241,7 @@ hr.folio-hr {
 }
 
 .btn:hover {
-  background-color: var(--dark-salmon);
+  background-color: var(--primary);
   color: var(--light);
   border: none;
 }
@@ -245,7 +252,7 @@ h1#title, .title {
   text-align: center;
   margin-top: 50px;
   font-weight: 500;
-  font-family: 'Futura-PT', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 /* 
 h1, h2, h3, h4, h5, h6 {
@@ -271,6 +278,8 @@ h3 {
   font-size: 1.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(121, 121, 121, 0.495);
+
   /* text-shadow: 1px 1px 2px #777; */
   color: #000;
 }
@@ -281,6 +290,14 @@ h6 {
   font-family: 'Playfair Display', serif;
   text-transform: uppercase;
   font-size: 1.2rem;
+}
+
+h1#title {
+  /* background-color: var(--black); */
+  /* padding: 20px 5px; */
+  margin: 0 auto;
+  /* width: fit-content; */
+  color: var(--dark);
 }
 
 
@@ -330,36 +347,16 @@ span#name {
 
 }
 
-
 /* -------------------------------------- Jumbotron -------------------------------------- */
 
 /* https://css-tricks.com/perfect-full-page-background-image/ */
-.jumbotron-container {
-	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75), rgba(255, 255, 255, 0.5)), url('../images/bg.jpg') no-repeat center center fixed;
-  animation: fadein 5s;
-  -webkit-animation: fadein 5s;
-  -moz-animation: fadein 5s;
-  -o-animation: fadein 5s;
-  /* background-color:  rgb(227, 71, 57); */
+.jumbotron {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)),
+  url('../images/deskspace.jpg') no-repeat center fixed;
   background-size: cover;
-  background-attachment: fixed;
-  backdrop-filter: blur(10px);
-  overflow: hidden;
-  max-width: 100%;
-  height: 100vh;
-  min-height: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
+  min-height: 100vh;
 }
+
 
 @keyframes fadein {
   from {
@@ -426,14 +423,54 @@ span#name {
   font-size: 1.2rem;
 }
 
+
+/* -------------------------------------- Jumbotron -------------------------------------- */
+#home-text {
+  font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  /* color: var(--light); */
+  color: var(--black);
+  font-weight: 900;
+  /* text-shadow: 1px 1px 6px var(--light-grey); */
+}
+
+.typewriter {
+    width: auto;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap; Keeps the content on a single line
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    /* animation:  typing 3.5s steps(100, end), blink-caret .75s step-end infinite; */
+    animation: typing 4.5s steps(100,end), blink-caret .75s step-end infinite;
+    }
+
+@keyframes typing{
+  from {max-width: 0}
+  to {max-width: 100%}
+}
+
+@keyframes blink-caret{
+  from, to {border-color: transparent}
+}
+
+#typed {
+  text-shadow: 1px 1px 3px rgb(40, 39, 39);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
 #typed-small-screens {
   font-family: 'Futura-PT', sans-serif;
-  color: var(--dark-salmon);
   font-weight: 600;
+  color: var(--dark-grey);
   font-size: 1.65rem;
   text-transform: uppercase;
 letter-spacing: 2px;
 }
+
 /*-------------------------------- Background Images */
 /* Create a Parallax Effect - copied from w3schools.com */
 .bgimg-1,
@@ -601,7 +638,7 @@ i#python:hover, i#javascript:hover,
 i#html:hover, i#css:hover,
 i#sql:hover, i#git:hover, i#aws:hover,
 i#google:hover, i#react:hover  {
-  color: var(--dark-salmon);
+  color: var(--primary);
   font-size: 3.5rem;
 }
 
@@ -759,6 +796,7 @@ input[type="submit"] {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--light);
+  background-color: transparent;
   border: none;
 }
 /*------------------------- Footer */
@@ -821,13 +859,13 @@ a#footer-link:hover {
 }
 
 i.fas.fa-chevron-up.fa-2x {
-  color: var(--salmon);
+  color: var(--dark-salmon);
   text-shadow: 1px 1px 5px var(--grey);
   margin: 10px 15px;
 }
 
 i.fas.fa-chevron-up.fa-2x:hover {
-  color: var(--dark-salmon);
+  color: var(--salmon);
 }
 
 /*--------------------------------  Media Queries */
