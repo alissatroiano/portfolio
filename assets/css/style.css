@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
 
-
+/* Global Styles */
 :root {
   --primary: #5c9caf;
   --salmon: rgb(255 124 95);
@@ -27,18 +27,6 @@ html,
 body {
   scroll-behavior: smooth;
 }
-
-/* .navbar-brand {
-  font-size: 1.1rem;
-  font-weight: 400;
-  margin-top: 5px;
-  color: #030303;
-  font-family: 'Playfair Display',
-   serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 1px #777;
-} */
 
 nav {
   font-family: 'Futura-PT', sans-serif;
@@ -125,7 +113,7 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
 }
 
 .navbar-light .navbar-brand:hover {
-  color: #5c9caf;
+  color: var(--primary);
 }
 
 .fab.fa-github ,
@@ -140,7 +128,7 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
 .fab.fa-linkedin:hover,
 .fab.fa-twitter:hover,
 .fas.fa-envelope:hover {
-  color: #5c9caf;
+  color: var(--primary);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -151,7 +139,7 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
 .navbar-light .navbar-nav .nav-link:hover,
 li.nav-item:hover,
 a.nav-link:hover {
-  color: #5c9caf;
+  color: var(--primary);
   /* text-shadow: 1px 1px 3px #666; */
 }
 
@@ -204,7 +192,7 @@ a#resumeBtn, .project-button {
 
 a.cta-btn:hover,
 a#resumeBtn:hover, .project-button:hover {
-  background-color: #5c9caf;
+  background-color: var(--primary);
   border: none;
   text-decoration: none;
   color: #fafafa;
@@ -240,7 +228,49 @@ hr.folio-hr {
   background-color: #777;
 }
 
+.btn {
+  font-family: 'Futura-PT', sans-serif;
+  background-color: var(--black);
+  text-transform: uppercase;
+  box-shadow: 1px 4px 14px 1px rgba(46, 46, 46, 0.818);
+  letter-spacing: 2px;
+  font-weight: 520;
+  padding: 15px 25px;
+  border: none;
+  color: var(--light);
+}
+
+.btn:hover {
+  background-color: var(--primary);
+  color: var(--light);
+  border: none;
+}
+
 /*-------------------------------- Headers and text */
+h1#title, .title {
+	letter-spacing: 3px;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+}
+/* 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Futura-PT', sans-serif;
+}
+
+h2.section-title {
+  font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5.3px;
+  font-size: 2.5rem;
+  color: rgb(23, 4, 31);
+  text-shadow: 0.05em 0.05em 0.2em rgba(75, 75, 75, 0.9);
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 20px;
+} */
+
 h1,
 h2,
 h3 {
@@ -249,6 +279,8 @@ h3 {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-shadow: 1px 1px 3px rgba(121, 121, 121, 0.495);
+
+  /* text-shadow: 1px 1px 2px #777; */
   color: #000;
 }
 
@@ -321,41 +353,16 @@ span#name {
    margin: 0 auto;
 }
 
-#hero-buttons {
-  font-family: 'Futura-PT', sans-serif;
-  letter-spacing: 1px;
-  font-size: 1.3rem;
-  text-decoration: none;
-  padding: 0 10px;
-}
-
-
-
 /* -------------------------------------- Jumbotron -------------------------------------- */
 
 /* https://css-tricks.com/perfect-full-page-background-image/ */
-.jumbotron-container {
-	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)), 
-  url('../images/deskspace.jpg') no-repeat center center fixed;
-  /* background-color:  rgb(227, 71, 57); */
+.jumbotron {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)),
+  url('../images/deskspace.jpg') no-repeat center fixed;
   background-size: cover;
-  backdrop-filter: blur(10px);
-  overflow: hidden;
-  max-width: 100%;
-  height: 100vh;
-  min-height: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
+  min-height: 100vh;
 }
+
 
 @keyframes fadein {
   from {
@@ -422,14 +429,52 @@ span#name {
   font-size: 1.2rem;
 }
 
+
+/* -------------------------------------- Jumbotron -------------------------------------- */
+#home-text {
+  font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  /* color: var(--light); */
+  color: var(--black);
+  font-weight: 900;
+  /* text-shadow: 1px 1px 6px var(--light-grey); */
+}
+
+.typewriter {
+    width: auto;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap; Keeps the content on a single line
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    /* animation:  typing 3.5s steps(100, end), blink-caret .75s step-end infinite; */
+    animation: typing 4.5s steps(100,end), blink-caret .75s step-end infinite;
+    }
+
+@keyframes typing{
+  from {max-width: 0}
+  to {max-width: 100%}
+}
+
+@keyframes blink-caret{
+  from, to {border-color: transparent}
+}
+
+#typed {
+  text-shadow: 1px 1px 3px rgb(40, 39, 39);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
 #typed-small-screens {
   font-family: 'Futura-PT', sans-serif;
-  color: var(--darker);
-  text-shadow: 1px 1px 3px var(--grey);
   font-weight: 600;
+  color: var(--dark-grey);
   font-size: 1.65rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+letter-spacing: 2px;
 }
 
 /*-------------------------------- Background Images */
@@ -587,17 +632,19 @@ p#about-me\ mx-3\ px-3 {
 h4.skills-header {
   margin-bottom: 40px;
   font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 400;
   color: #555;
-  letter-spacing: 2px;
+  letter-spacing: 2.2px;
+  margin-top: 25px;
 }
 
 i#python:hover, i#javascript:hover,
 i#html:hover, i#css:hover,
 i#sql:hover, i#git:hover, i#aws:hover,
 i#google:hover, i#react:hover  {
-  color: #5c9caf;
+  color: var(--primary);
   font-size: 3.5rem;
 }
 
@@ -747,11 +794,15 @@ img {
 }
 
 input[type="submit"] {
-  background-color: #000;
   display: block;
   padding: 6px 30px;
-  font-size: 14px;
-  color: #fff;
+  font-size: 1rem;
+  font-family: 'Futura-PT', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--light);
+  background-color: transparent;
   border: none;
 }
 /*------------------------- Footer */
@@ -790,12 +841,16 @@ a#footer-link:hover {
   bottom: 20px;
   right: 20px;
   display: none;
-  box-shadow: 1px 4px 8px rgb(47, 47, 47);
+  background-color: var(--black);
+}
+
+#btn-back-to-top:hover {
+  background-color: var(--primary);
 }
 
 .btn-custom {
   margin: 10px;
-  background-color: #5c9caf;
+  background-color: var(--salmon);
   color: #fafafa;
 }
 
