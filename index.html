@@ -93,7 +93,7 @@
 
   <!-- Container (About Section) -->
   <div class="w3-content w3-container w3-padding-64 mt-3 mt-lg-5" id="about">
-    <h3 class="w3-center">ABOUT ME</h3>
+    <h3 class="text-center section-title display-5">ABOUT ME</h3>
     <div class="w3-row">
       <div class="col-12 w3-center w3-padding-32">
         <img class="w3-image w3-opacity w3-hover-opacity-off" data-aos="flip-left" data-aos-easing="ease-out-cubic"
@@ -247,205 +247,92 @@
   <!-- Second Parallax Image with Portfolio Text -->
   <div class="bgimg-2" data-aos="zoom-out" data-aos-duration="2000">
     <div class="w3-display-middle">
-      <span class="w3-text-white w3-wide">PORTFOLIO</span>
+      <span class="w3-text-white w3-wide">PROJECTS</span>
     </div>
   </div>
 
   <!-- Container (Portfolio Section) -->
-  <section class="container-fluid p-3 p-md-5 my-0 mx-auto align-items-center justify-content-center d-block" id="projects">
-    <div class="row text-center px-3 px-md-5">
-      <div class="col-12 col-md-8 offset-md-2">
-        <h3 class="w3-center my-5 pt-5">MY WORK</h3>
-        <p class="text-center" id="portfolio-text">Here are some of my latest development projects! Hover over the
-          images for a fun effect. To view the
-          live deployed project, click "View Project." To checkout the repository for the project click, "View Source
-          Code".</p>
-        <p id="portfolioText"> To see the rest of my development work, check out my GitHub</p>
-        <p class="text-center">
-          <a href="https://github.com/alissatroiano/" target="_blank">
-            <i class="fab fa-github text-center fa-3x">
-            </i>
-          </a>
-        </p>
-      </div>
-    </div>
-    <div class="row d-block my-0 mx-auto align-items-center justify-content-center g-2">
-           <!--Emojourney-->
-           <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
-            <div class="col-12 col-md-5 justify-content-start">
-              <h2>Emojourney</h2>
-              <h4 class="text-muted">Emoji Travel Guide</h4>
-              <strong class="awards">1st Place - Code Institute Hackathon, 07/16/22</strong>
-              <p class="my-3 me-3 me-md-5 project-description">Emojourney is a clever traveler's guide for using (and not accidentally abusing) Emojis around the world. The website features a homepage, a travel guide with a travel-tip compass, and a team page.</p>
-              <p class="text-muted">HTML-5, CSS-3, Bootstrap-5, JavaScript
-              </p>
-              <div class="btn-row mb-3">
-                <a class="project-button" href="https://alissatroiano.github.io/team-8/" target="_blank">View
-                  Project</a>
-                <a class="project-button" href="https://github.com/alissatroiano/team-8" target="_blank">Source
-                  Code</a>
-              </div>
+      <!--Project Display https://codepen.io/mhhasan320/pen/BwqvLL -->
+      <section class="project-cta container-fluid text-dark mb-5 pb-5 bg-light" id="projects">
+        <div class="row d-flex g-4 p-5">
+            <div class="col-12">
+                <h2 class="section-title text-center text-light display-5">Projects</h2>
             </div>
-            <div class="col-12 col-md-7 my-0 mx-auto justify-content-end">
-              <img src="assets/images/emojourney.png" class="img-wrapper img-fluid project-img" alt="emojourney" />
+        </div>
+        <div class="row d-flex text-white g-4 p-5">
+            <div class="col-xs-8 col-sm-4">
+                <div class="card h-100 overflow-hidden rounded-5 img-fluid" id="project-card1">
+                    <div class="card-image-overlay">
+                        <div class="py-3 my-3 fw-bold">
+                            <h3>Hue</h3>
+                            <h6>Digital Art Store</h6>
+                            <p class="text-small my-2">E-Commerce Application</p>
+                            <div class="row d-flex">
+                                <div class="mb-3">
+                                    <button type="button" class="btn btn-white btn-sm mb-3">
+                                        <a class="view-projects text-dark" href="https://hue-alissa.herokuapp.com/"
+                                            target="_blank">
+                                            View Project
+                                        </a>
+                                    </button>
+                                    <button type="button" class="btn btn-white btn-sm mb-3">
+                                        View Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-      <!--Inklusion-->
-      <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
-        <div class="col-12 col-md-5 justify-content-start">
-          <h2>Inklusion</h2>
-          <h4 class="text-muted">LGBTQIA+ Art Gallery </h4>
-          <strong class="awards">1st Place - Code Institute Hackathon, 06/17/22</strong>
-          <p class="my-3 me-3 me-md-5 project-description">Inklusion is a virtual tour of LGBTQIA+ art throughout history. The project includes a gallery, team page, and a "Get Involved" modal, where users can find and hire local artists to show their support. </p>
-          <p class="text-muted">HTML-5, CSS-3, Bootstrap-5, JavaScript
-          </p>
-          <div class="btn-row mb-3">
-            <a class="project-button" href="https://alissatroiano.github.io/team-6/" target="_blank">View
-              Project</a>
-            <a class="project-button" href="https://github.com/alissatroiano/team-6" target="_blank">Source
-              Code</a>
-          </div>
+            <div class="col-xs-8 col-sm-4">
+              <div class="card h-100 overflow-hidden rounded-5 img-fluid" id="project-card2">
+                    <div class="card-image-overlay">
+                        <a class="stretched-link" href="https://dash-ms3.herokuapp.com/" target="_blank"></a>
+                        <div class="py-3 my-3 fw-bold" id="info">
+                            <h3>Dash</h3>
+                            <h6>Recipe Sharing</h6>
+                            <p class="text-small my-2">Full Stack Application</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+              <div class="card h-100 overflow-hidden rounded-5 img-fluid" id="project-card3">
+                    <div class="card-image-overlay">
+                        <a class="stretched-link" href="https://dash-ms3.herokuapp.com/" target="_blank"></a>
+                        <div class="py-3 my-3 fw-bold">
+                            <h3>Game of Facts</h3>
+                            <h6>Game of Thrones Trivia</h6>
+                            <p class="text-small my-2">JavaScript Game</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+              <div class="card h-100 overflow-hidden rounded-5" id="project-card4">
+                    <div class="card-image-overlay">
+                        <div class="py-3 my-3 fw-bold">
+                            <h3>Infinity</h3>
+                            <h6>Yoga Studio</h6>
+                            <p class="text-small my-2">Front End Website</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-md-7 my-0 mx-auto justify-content-end">
-          <img src="assets/images/inklusion.png" class="img-wrapper img-fluid project-img" alt="inklusion" />
-        </div>
-      </div>
-
-      <!--Electrillo-->
-      <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
-        <div class="col-12 col-md-5 justify-content-start">
-          <h2>Electrillo</h2>
-          <h4 class="text-muted">EV-Fuel Calculator</h4>
-          <strong class="awards">1st Place - Code Institute Hackathon, 04/10/22</strong>
-          <p class="my-3 me-3 me-md-5 project-description">Electrillo is a web application that allows users to
-            calculate
-            the amount of money they could be saving by switching from fuel to EV powered vehicles. The Electrillo
-            project received first prize in the April 2022 Code Institute Earth Day Hackathon competition. </p>
-          <p class="text-muted">HTML, CSS, Bootstrap, JavaScript, JSON
-          </p>
-          <div class="btn-row mb-3">
-            <a class="project-button" href="https://alissatroiano.github.io/team-4-april-2022/" target="_blank">View
-              Project</a>
-            <a class="project-button" href="https://github.com/alissatroiano/team-4-april-2022" target="_blank">Source
-              Code</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-7 my-0 mx-auto justify-content-end">
-          <img src="assets/images/electrillo.png" class="img-wrapper img-fluid project-img" alt="smitten" />
-        </div>
-      </div>
-      <!--Smitten-->
-      <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
-        <div class="col-12 col-md-5 project-details">
-          <h2>Smitten</h2>
-          <h4 class="text-muted">Valentine's Day Wordle</h4>
-          <strong class="awards">1st Place - Code Institute Hackathon, 02/22</strong>
-          <p class="my-3 me-3 me-md-5 project-description"> As the 1st Place winner in Code Institute’s 2022 “Love is in
-            The Air” Hackathon, "Smitten" is
-            a Valentine's Day & love themed "Wordle" game.
-          </p>
-          <p class="text-muted">JavaScript, HTML, CSS, Bootstrap, JSON
-          </p>
-          <div class="btn-row mb-3">
-            <a class="project-button" href="https://alissatroiano.github.io/8-your-heart-out/" target="_blank">View
-              Project</a>
-            <a class="project-button" href="https://github.com/alissatroiano/8-your-heart-out" target="_blank">Source
-              Code</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-7 my-0 mx-auto">
-          <img src="assets/images/smitten.png" class="img-wrapper img-fluid project-img" alt="smitten" />
-        </div>
-      </div>
-      <!--Hue-->
-      <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
-        <div class="col-12 col-md-5 project-details">
-          <h2>Hue</h2>
-          <h4 class="text-muted">Full Stack E-Commerce</h4>
-          <p class="my-3 me-3 me-md-5 project-description pe-md-3"> Hue is a digital art store with custom database
-            models, data store, secure user authentication, and shopping cart checkout via Stripe API integration.
-            Special admin users can create, edit, and delete products, orders and users.</p>
-          <p class="text-muted pe-5">Python, Django, JavaScript, HTML, CSS, Bootstrap 5, AWS S3, Heroku, Stripe API, Git
-          </p>
-          <div class="btn-row mb-3">
-            <a class="project-button me-2" href="https://hue-alissa.herokuapp.com" target="_blank">View Project</a>
-            <a class="project-button" href="https://github.com/alissatroiano/Hue" target="_blank">Source Code</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-7 my-0 mx-auto ">
-          <img src="assets/images/hue.png" class="img-wrapper img-fluid project-img" alt="hue" />
-        </div>
-      </div>
-      <!--./end-hue-->
-      <div class="my-0 mx-auto">
-        <!-- <hr class="folio-hr"> -->
-      </div>
-    
-      <!--Dash-->
-      <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
-        <div class="col-12 col-md-5 project-details">
-          <h2>Dash</h2>
-          <h4 class="text-muted">Full Stack Recipe Sharing </h4>
-          <p class="my-3 me-3 me-md-5 project-description pe-md-3">Dash is a recipe sharing application with full CRUD
-            functionality, giving users the ability to create, read, update and delete recipes</p>
-          <p class="text-muted pb-3 pe-5">Python, Flask, MongoDB, JavaScript, HTML, CSS, Materialize, AWS S3, Heroku,
-            Git</p>
-          <div class="btn-row mb-3 mb-3">
-            <a class="project-button me-2" href="https://dash-ms3.herokuapp.com" target="_blank">View Project</a>
-            <a class="project-button" href="https://github.com/alissatroiano/Dash" target="_blank">Source Code</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-7">
-          <img src="assets/images/dash.png" class="img-fluid img-wrapper project-img" alt="dash" />
-        </div>
-      </div>
-      <!--./end-dash-->
-    
-      <!--game-of-facts-->
-      <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
-        <div class="col-12 col-md-5 project-details">
-          <h2>Game of Facts</h2>
-          <h4 class="text-muted">Game of Thrones Trivia Game</h4>
-          <strong class="awards">Awards: Code Institute Merit Award</strong>
-          <p class="my-3 me-3 me-md-5 project-description">Game Of Facts is a web-based trivia game built
-            for Game of Thrones fans and educators of global history.</p>
-          <p class="text-muted pb-3 pe-5"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
-          <div class="btn-row mb-3">
-            <a class="project-button me-2" href="https://alissatroiano.github.io/Milestone-2/" target="_blank">View
-              Project</a>
-            <a class="project-button" href="https://github.com/alissatroiano/Milestone-2" target="_blank">Source
-              Code</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-7">
-          <img src="assets/images/gameoffacts-responsive.png" class="img-fluid img-wrapper project-img" alt="gameoffacts" />
-        </div>
-      </div>
-      <!--./end-game-of-facts-->
-    
-      <!--infinity-->
-      <div class="d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
-        <div class="col-12 col-md-5 mt-lg-3 project-details">
-          <h2>Infinity</h2>
-          <h4 class="text-muted">Yoga Website</h4>
-          <strong class="awards">Awards: Code Institute Distinction Award</strong>
-          <p class="my-3 me-5 pe-5 project-description">This responsive website was created for Infinity, a
-            fictional Yoga & Meditation studio in New York, New York</strong>
-          </p>
-          <p class="text-muted pb-3"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
-          <div class="btn-row mb-3">
-            <a class="project-button me-2" href="https://alissatroiano.github.io/MS-1/" target="_blank">View Project</a>
-            <a class="project-button" href="https://github.com/alissatroiano/MS-1" target="_blank">Source Code</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-7">
-          <img src="assets/images/infinity-responsive.png" class="img-fluid img-wrapper project-img" alt="hue" />
-        </div>
-      </div>
-      <!--./end-infinity-->
-    </div>
-  </section>
-  <!--./end-projects-->
+        
+        <div class="row d-flex text-center">
+            <div class="col-12">
+                <div class="text-center">
+                    <a href="{% url 'project_index' %}" class="btn btn-large" id="view-projects">
+                        View More
+                        <span>
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+    </section>
 
   <!-- Third Parallax Image with Portfolio Text -->
   <div class="bgimg-3" data-aos="zoom-out" data-aos-duration="2000">
@@ -509,12 +396,11 @@
   <button type="button" class="btn-trans" id="btn-back-to-top">
     <i class="fas fa-chevron-up fa-2x"></i>
   </button> 
+
   
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-
     <div class="w3-xlarge w3-section">
-
       <a target="_blank" href="https://www.github.com/alissatroiano/"><i class="fab fa-github mx-1"></i></a>
       <a target="_blank" href="https://www.linkedin.com/in/alissatroiano/"><i class="fab fa-linkedin mx-1"></i></a>
       <a target="_blank" href="https://www.twittter.com/in/alissamtroiano/">
@@ -526,6 +412,25 @@
     <p id="footer-text">2022 <a id="footer-link" href="https://www.github.com/alissatroiano"
         title="github.com/alissatroiano" target="_blank" class="w3-hover-text-grey">Alissa Troiano</a></p>
   </footer>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="title text-center text-dark display-1 fw-bold">{{ project.title }}</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script type="text/javascript">
     emailjs.init('user_zf3vBJuHYSbtEgwwo7YWb')
@@ -546,6 +451,8 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
   <script src="assets/js/nav.js"></script>
+  <!--Masonry Plugin-->
+	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 
   <script>
     // Used to toggle the menu on small screens when clicking on the menu button

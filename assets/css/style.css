@@ -523,7 +523,7 @@ span#name {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url('../images/wireframes.jpg');
+  background-image: linear-gradient(#0a0a0a74,#0a0a0aa8), url('../images/wireframes.jpg');
   min-height: 400px;
 }
 
@@ -761,6 +761,215 @@ p.text-muted {
   transform: matrix3d(0.94, 0, 0.34, -0.00025, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(-30px);
 
 } */
+
+
+
+
+/********************************* Project Cards */
+div.card-image-overlay, .card-img-overlay {
+  width: 100%;
+  padding-top: 10rem;
+}
+
+
+/* grayscale effect copied from https://codepen.io/mhhasan320/pen/BwqvLL */
+div#project-card1 {
+  background-image: url('../images/popart.png');
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 18vh;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  border: none;
+  margin: 0px auto;
+  box-shadow: 1px 4px 14px 1px #2f1b31;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+div#project-card {
+background-position: center;
+background-size: cover;
+max-width: 100%;
+height: auto;
+justify-content: center;
+display: flex;
+overflow: hidden;
+border: none;
+margin: 0px auto;
+box-shadow: 1px 4px 14px 1px #2f1b31;
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+}
+
+#project-card:hover {
+filter: grayscale(0);
+-webkit-filter: grayscale(0);
+}
+
+div#project-card1:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+div#project-card2 {
+  background-image: url('../images/dash.jpg');
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 18vh;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  border: none;
+  margin: 0px auto;
+  box-shadow: 1px 4px 14px 1px #2f1b31;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+div#project-card2:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+div#project-card3 {
+  background-image: url('../images/gameoffacts.jpg');
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 18vh;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  border: none;
+  margin: 0px auto;
+  box-shadow: 1px 4px 14px 1px #2f1b31;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+div#project-card3:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+div#project-card4 {
+  background-image: url('../images/infinity.jpg');
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 18vh;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  border: none;
+  margin: 0px auto;
+  box-shadow: 1px 4px 14px 1px #2f1b31;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+div#project-card4:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+div#project-card5 {
+  background-image: url('../images/jammming.jpg');
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 18vh;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  border: none;
+  margin: 0px auto;
+  box-shadow: 1px 4px 14px 1px #2f1b31;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+div#project-card5:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+div#project-card6 {
+  background-image: url('../images/music.jpg');
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 18vh;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  border: none;
+  margin: 0px auto;
+  box-shadow: 1px 4px 14px 1px #2f1b31;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+div#project-card6:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+#view-projects {
+padding: 10px 20px;
+}
+
+.py-3.my-3.fw-bold, #info {
+height: fit-content;
+font-family: 'Futura-PT', sans-serif;
+text-transform: uppercase;
+font-size: 1.2rem;
+letter-spacing: 3px;
+background-color: rgb(6 6 6 / 80%);
+font-weight: 300;
+letter-spacing: 1.5px;
+margin: 0px auto;
+text-align: center;
+}
+
+.py-3.my-3.fw-bold {
+width: 100%;
+height: fit-content;
+margin: 0 auto;
+font-size: 13px;
+text-align: center;
+margin-top: 20px;
+color: white;
+font-weight: 200;
+letter-spacing: 2px;
+opacity: 0;
+max-height: 0;
+transition: all 0.3s ease;
+min-height: 20vh;
+}
+
+img.project-pic {
+max-width: 100%;
+height: auto;
+}
+
+.card:hover .py-3.my-3.fw-bold {
+transition: all 0.3s ease;
+opacity: 1;
+min-height: 20vh;
+}
+
+a, button,
+a.view-projects.text-dark
+a.view-projects {
+font-family: 'Futura-PT', sans-serif;
+text-decoration: none;
+}
+/********************./end-projects-section */
 
 /*-------------------------------- Contact Section */
 #contact-details {

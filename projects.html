@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Alissa Troiano | Web & Software Development</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Load Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <!--Import Futura from Adobe Fonts-->
+        <link rel="stylesheet" href="https://use.typekit.net/hdw8ydb.css">
+        <!-- W3 Schools Starter Stylesheet -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!--Load Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+          integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+        <!--Load Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+        <!--AOS Animations -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+        </script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+         <!--Favicon Link-->
+         <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
+      </head>
+<body>
+
+    <section class="container p-3 portfolio" id="projects">
+  <div class="row g-4 my-0 mx-auto" data-masonry='{"percentPosition": true }'>
+    <div class="col-xs-8 col-sm-4">
+      <div class="card h-100 rounded-5 img-fluid shadow-lg">
+          <img src="assets/images/hue.png" class="card-img project-pic" alt="hue">
+          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1"></a>
+      </div>
+  </div>
+  <div class="col-xs-8 col-sm-4">
+    <div class="card h-100 rounded-5 img-fluid shadow-lg" id="project-card">
+        <img src="assets/images/code.png" class="card-img project-pic" alt="project.title">
+        <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal2"></a>
+    </div>
+</div>
+<div class="col-xs-8 col-sm-4">
+  <div class="card h-100 rounded-5 img-fluid shadow-lg" id="project-card">
+      <img src="assets/images/electrillo.png" class="card-img project-pic" alt="project.title">
+      <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal3"></a>
+  </div>
+</div>
+</div>
+
+</section>
+
+
+<div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="title text-center text-dark display-3 fw-bold">Hue</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Live Project</button>
+          <button type="button" class="btn btn-primary">Source Code</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <!--load-bootstrap-scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/nav.js"></script>
+  <!--Masonry Plugin-->
+	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+</body>
+</html>
