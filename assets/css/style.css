@@ -113,7 +113,7 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
 }
 
 .navbar-light .navbar-brand:hover {
-  color: var(--primary);
+  color: var(--dark-salmon);
 }
 
 .fab.fa-github ,
@@ -128,7 +128,7 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
 .fab.fa-linkedin:hover,
 .fab.fa-twitter:hover,
 .fas.fa-envelope:hover {
-  color: var(--primary);
+  color: var(--dark-salmon);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -139,7 +139,7 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
 .navbar-light .navbar-nav .nav-link:hover,
 li.nav-item:hover,
 a.nav-link:hover {
-  color: var(--primary);
+  color: var(--dark-salmon);
   /* text-shadow: 1px 1px 3px #666; */
 }
 
@@ -192,7 +192,7 @@ a#resumeBtn, .project-button {
 
 a.cta-btn:hover,
 a#resumeBtn:hover, .project-button:hover {
-  background-color: var(--primary);
+  background-color: var(--dark-salmon);
   border: none;
   text-decoration: none;
   color: #fafafa;
@@ -241,7 +241,7 @@ hr.folio-hr {
 }
 
 .btn:hover {
-  background-color: var(--primary);
+  background-color: var(--dark-salmon);
   color: var(--light);
   border: none;
 }
@@ -279,9 +279,7 @@ h3 {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-shadow: 1px 1px 3px rgba(121, 121, 121, 0.495);
-
   /* text-shadow: 1px 1px 2px #777; */
-  color: #000;
 }
 
 h4,
@@ -350,13 +348,37 @@ span#name {
 /* -------------------------------------- Jumbotron -------------------------------------- */
 
 /* https://css-tricks.com/perfect-full-page-background-image/ */
-.jumbotron {
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)),
-  url('../images/deskspace.jpg') no-repeat center fixed;
-  background-size: cover;
-  min-height: 100vh;
-}
 
+
+/* -------------------------------------- Jumbotron -------------------------------------- */
+
+/* https://css-tricks.com/perfect-full-page-background-image/ */
+.jumbotron-container {
+	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75), rgba(255, 255, 255, 0.5)), url('../images/bg.jpg') no-repeat center center fixed;
+  animation: fadein 5s;
+  -webkit-animation: fadein 5s;
+  -moz-animation: fadein 5s;
+  -o-animation: fadein 5s;
+  /* background-color:  rgb(227, 71, 57); */
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  max-width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
 
 @keyframes fadein {
   from {
@@ -374,6 +396,15 @@ span#name {
   to {
     opacity: 1;
   }
+}
+
+.jumbotron-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
 }
 
 .jumbotron-overlay {
@@ -465,10 +496,10 @@ span#name {
 #typed-small-screens {
   font-family: 'Futura-PT', sans-serif;
   font-weight: 600;
-  color: var(--dark-grey);
+  color: var(--dark-salmon);
   font-size: 1.65rem;
   text-transform: uppercase;
-letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 /*-------------------------------- Background Images */
@@ -638,7 +669,7 @@ i#python:hover, i#javascript:hover,
 i#html:hover, i#css:hover,
 i#sql:hover, i#git:hover, i#aws:hover,
 i#google:hover, i#react:hover  {
-  color: var(--primary);
+  color: var(--dark-salmon);
   font-size: 3.5rem;
 }
 
