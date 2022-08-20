@@ -116,6 +116,13 @@ h2.section-title {
   border: none;
 }
 
+.item-desc {
+  font-size: 1.1rem;
+  color: var(--salmon);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 /* -------------------------------------- Jumbotron -------------------------------------- */
 
 /* https://css-tricks.com/perfect-full-page-background-image/ */
