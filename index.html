@@ -25,12 +25,12 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-   <!--Favicon Link-->
-   <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
+  <!--Favicon Link-->
+  <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
 </head>
 
 <body>
-  <!-- Navbar (sit on top) -->
+  <!-- Navbar (Fixed top) -->
   <nav class="navbar navbar-expand-lg navbar-light bg-blur fixed-top shadow-lg" id="navBar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#home"><i class="fas fa-code"></i> Alissa Troiano</a>
@@ -55,6 +55,12 @@
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
@@ -72,24 +78,25 @@
   </nav>
 
   <!-- Jumbotron -->
-  <section class="jumbotron" id="home" >
-    <div class="container-fluid jumbotron-container d-flex align-items-center my-0 mx-auto py-5"  data-aos="zoom-out" data-aos-duration="2000" id="home">
-            <div class="row d-flex justify-content-center align-items-center text-center">
-                <div class="col-12 text-center" id="home-text">
-                    <!-- <h3 class="font-weight-normal mb-3">Hello, my name</h3> -->
-                    <h1 class="display-2 text-uppercase my-2 my-md-3" id="title">
-                        Alissa Troiano</h1>
-                </div>
-                <div class="typewriter text-center my-3 my-md-4 pb-3">
-                    <span class="lead text-center" id="typed-small-screens" >Software Developer</span>
-                </div>
-                <div class="d-flex align-items-center justify-content-center">
-                    <a href="#projects" class="btn btn-dark mx-2 mx-md-4">Projects</a>
-                    <a href="assets/resume.pdf" target="_blank" class="btn btn-dark mx-2 mx-md-4">Resume</a>
-                </div>
-            </div>
+  <section class="jumbotron" id="home">
+    <div class="container-fluid jumbotron-container d-flex align-items-center my-0 mx-auto py-5" data-aos="zoom-out"
+      data-aos-duration="2000" id="home">
+      <div class="row d-flex justify-content-center align-items-center text-center">
+        <div class="col-12 text-center" id="home-text">
+          <!-- <h3 class="font-weight-normal mb-3">Hello, my name</h3> -->
+          <h1 class="display-2 text-uppercase my-2 my-md-3" id="title">
+            Alissa Troiano</h1>
         </div>
-</section>
+        <div class="typewriter text-center my-3 my-md-4 pb-3">
+          <span class="lead text-center" id="typed-small-screens">Software Developer</span>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <a href="#projects" class="btn btn-dark mx-2 mx-md-4">Projects</a>
+          <a href="assets/resume.pdf" target="_blank" class="btn btn-dark mx-2 mx-md-4">Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Container (About Section) -->
   <div class="w3-content w3-container w3-padding-64 mt-3 mt-lg-5" id="about">
@@ -252,14 +259,14 @@
   </div>
 
   <!-- Container (Portfolio Section) -->
-  <section class="container-fluid p-3 p-md-5 my-0 mx-auto align-items-center justify-content-center d-block" id="projects">
+  <section class="container-fluid p-3 p-md-5 my-0 mx-auto align-items-center justify-content-center d-block"
+    id="projects">
     <div class="row text-center g-3 px-3 px-md-5">
       <div class="col-12 col-md-8 offset-md-2">
         <h3 class="w3-center my-5 pt-5">MY WORK</h3>
-        <p class="text-center" id="portfolio-text">Here are some of my latest development projects! Hover over the
-          images for a fun effect. To view the
-          live deployed project, click "<button class="project-button">Live Project</button>." To checkout the repository for the project click, "View Source
-          Code".</p>
+        <p class="text-center" id="portfolio-text">Here are some of my latest development projects! To view the
+          live deployed project, click "Live Project" To checkout the
+          repository, "Source Code".</p>
         <p id="portfolioText"> To see the rest of my development work, check out my GitHub</p>
         <p class="text-center">
           <a href="https://github.com/alissatroiano/" target="_blank">
@@ -270,41 +277,27 @@
       </div>
     </div>
     <div class="row d-block my-0 mx-auto align-items-center justify-content-center g-2">
-           <!--Emojourney-->
-           <div class="row align-items-center d-blockjustify-content-center d-md-flex my-0 mx-auto py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
-            <div class="col-12 col-md-4 project-text">
-              <h2>Emojourney</h2>
-              <h4 class="text-muted">Emoji Travel Guide</h4>
-              <strong class="awards">1st Place - Code Institute Hackathon, 07/16/22</strong>
-              <p class="my-3 me-3 me-md-5 project-description">Emojourney is a clever traveler's guide for using (and not accidentally abusing) Emojis around the world. The website features a homepage, a travel guide with a travel-tip compass, and a team page.</p>
-              <p class="text-muted">HTML-5, CSS-3, Bootstrap-5, JavaScript
-              </p>
-              <div class="btn-row mb-3">
-                <a  href="https://alissatroiano.github.io/team-8/" target="_blank"><button class="project-button">Live Project</button></a>
-                <a  href="https://github.com/alissatroiano/team-8" target="_blank"><button class="project-button">Source Code</button></a>
-              </div>
-            </div>
-            <div class="col-12 col-md-8 my-0 mx-auto">
-              <img src="assets/images/emojourney.png" class="img-wrapper img-fluid project-img" alt="emojourney" />
-            </div>
-          </div>
+
       <!--Inklusion-->
-      <div class="row align-items-center justify-content-center d-block d-md-flex project-item" data-aos="fade-up" data-aos-duration="1000">
+      <div class="row align-items-center justify-content-center d-block d-md-flex project-item" data-aos="fade-up"
+        data-aos-duration="1000">
         <div class="col-12 col-md-4 justify-content-start">
           <h2>Inklusion</h2>
           <h4 class="text-muted">LGBTQIA+ Art Gallery </h4>
           <strong class="awards">1st Place - Code Institute Hackathon, 06/17/22</strong>
-          <p class="my-3 me-3 me-md-5 project-description">Inklusion is a virtual tour of LGBTQIA+ art throughout history. The project includes a gallery, team page, and a "Get Involved" modal, where users can find and hire local artists to show their support. </p>
-          <p class="text-muted">HTML-5, CSS-3, Bootstrap-5, JavaScript
+          <p class="my-3 me-3 me-md-5 project-description">Inklusion is a virtual tour of LGBTQIA+ art throughout
+            history. The project includes a gallery, team page, and a "Get Involved" modal, where users can find and
+            hire local artists to show their support. </p>
+          <p class="text-mark">HTML-5, CSS-3, Bootstrap-5, JavaScript
           </p>
           <div class="btn-row mb-3">
-            <a class="" href="https://alissatroiano.github.io/team-6/" target="_blank">
+            <a chref="https://alissatroiano.github.io/team-6/" target="_blank">
               <button class="project-button">Live
-              Project</button>
+                Project</button>
             </a>
             <a href="https://github.com/alissatroiano/team-6" target="_blank">
               <button class="project-button">Source
-              Code</button></a></a>
+                Code</button></a></a>
           </div>
         </div>
         <div class="col-12 col-md-8 my-0 mx-auto justify-content-end">
@@ -312,8 +305,9 @@
         </div>
       </div>
 
-      <!--Electrillo-->
-      <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
+      <!--Electrillo -->
+      <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up"
+        data-aos-duration="1000">
         <div class="col-12 col-md-4 justify-content-start">
           <h2>Electrillo</h2>
           <h4 class="text-muted">EV-Fuel Calculator</h4>
@@ -322,22 +316,49 @@
             calculate
             the amount of money they could be saving by switching from fuel to EV powered vehicles. The Electrillo
             project received first prize in the April 2022 Code Institute Earth Day Hackathon competition. </p>
-          <p class="text-muted">HTML, CSS, Bootstrap, JavaScript, JSON
+          <p class="text-mark">HTML, CSS, Bootstrap, JavaScript, JSON
           </p>
           <div class="btn-row mb-3">
-            <a  href="https://alissatroiano.github.io/team-4-april-2022/" target="_blank">
+            <a href="https://alissatroiano.github.io/team-4-april-2022/" target="_blank">
               <button class="project-button">Live
-              Project</button>
-            <a  href="https://github.com/alissatroiano/team-4-april-2022" target="_blank">
-              <button class="project-button">Source Code</button></a>
+                Project</button>
+              <a href="https://github.com/alissatroiano/team-4-april-2022" target="_blank">
+                <button class="project-button">Source Code</button></a>
           </div>
-        </div>
+          </div>
         <div class="col-12 col-md-8 my-0 mx-auto justify-content-end">
           <img src="assets/images/electrillo.png" class="img-wrapper img-fluid project-img" alt="smitten" />
         </div>
       </div>
+</div>
+
+   <!--Emojourney-->
+      <div class="row align-items-center d-blockjustify-content-center d-md-flex my-0 mx-auto py-2 py-md-4 project-item"
+        data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-12 col-md-4 project-text">
+          <h2>Emojourney</h2>
+          <h4 class="text-muted">Emoji Travel Guide</h4>
+          <strong class="awards">1st Place - Code Institute Hackathon, 07/16/22</strong>
+          <p class="my-3 me-3 me-md-5 project-description">Emojourney is a clever traveler's guide for using (and not
+            accidentally abusing) Emojis around the world. The website features a homepage, a travel guide with a
+            travel-tip compass, and a team page.</p>
+          <p class="text-muted">HTML-5, CSS-3, Bootstrap-5, JavaScript
+          </p>
+          <div class="btn-row mb-3">
+            <a href="https://alissatroiano.github.io/team-8/" target="_blank"><button class="project-button">Live
+                Project</button></a>
+            <a href="https://github.com/alissatroiano/team-8" target="_blank"><button class="project-button">Source
+                Code</button></a>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 my-0 mx-auto">
+          <img src="assets/images/emojourney.png" class="img-wrapper img-fluid project-img" alt="emojourney" />
+        </div>
+      </div>
+
       <!--Smitten-->
-      <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
+      <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up"
+        data-aos-duration="1000">
         <div class="col-12 col-md-4 project-details">
           <h2>Smitten</h2>
           <h4 class="text-muted">Valentine's Day Wordle</h4>
@@ -346,14 +367,15 @@
             The Air” Hackathon, "Smitten" is
             a Valentine's Day & love themed "Wordle" game.
           </p>
-          <p class="text-muted">JavaScript, HTML, CSS, Bootstrap, JSON
+          <p class="text-mark">JavaScript, HTML, CSS, Bootstrap, JSON
           </p>
           <div class="btn-row mb-3">
             <a href="https://alissatroiano.github.io/8-your-heart-out/" target="_blank">
               <button class="project-button">Live
-              Project</button>
-            <a href="https://github.com/alissatroiano/8-your-heart-out" target="_blank"><button class="project-button">Source
-              Code</button></a>
+                Project</button>
+              <a href="https://github.com/alissatroiano/8-your-heart-out" target="_blank"><button
+                  class="project-button">Source
+                  Code</button></a>
           </div>
         </div>
         <div class="col-12 col-md-8 my-0 mx-auto">
@@ -362,37 +384,43 @@
       </div>
 
       <!--Hue-->
-      <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
+      <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up"
+        data-aos-duration="1000">
         <div class="col-12 col-md-4 project-details">
           <h2>Hue</h2>
           <h4 class="text-muted">Full Stack E-Commerce</h4>
           <p class="my-3 me-3 me-md-5 project-description pe-md-3"> Hue is a digital art store with custom database
             models, data store, secure user authentication, and shopping cart checkout via Stripe API integration.
             Special admin users can create, edit, and delete products, orders and users.</p>
-          <p class="text-muted pe-5">Python, Django, JavaScript, HTML, CSS, Bootstrap 5, AWS S3, Heroku, Stripe API, Git
+          <p class="text-mark pe-5">Python, Django, JavaScript, HTML, CSS, Bootstrap 5, AWS S3, Heroku, Stripe API, Git
           </p>
           <div class="btn-row mb-3">
-            <a href="https://hue-alissa.herokuapp.com" target="_blank"><button class="project-button">Live Project</button></a>
-            <a href="https://github.com/alissatroiano/Hue" target="_blank"><button class="project-button">Source Code</button></a>
+            <a href="https://hue-alissa.herokuapp.com" target="_blank"><button class="project-button">Live
+                Project</button></a>
+            <a href="https://github.com/alissatroiano/Hue" target="_blank"><button class="project-button">Source
+                Code</button></a>
           </div>
         </div>
         <div class="col-12 col-md-8">
           <img src="assets/images/hue.png" class="img-wrapper img-fluid project-img" alt="hue" />
         </div>
       </div>
-    
+
       <!--Dash-->
-      <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
+      <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up"
+        data-aos-duration="1000">
         <div class="col-12 col-md-4 project-details">
           <h2>Dash</h2>
           <h4 class="text-muted">Full Stack Recipe Sharing </h4>
           <p class="my-3 me-3 me-md-5 project-description pe-md-3">Dash is a recipe sharing application with full CRUD
             functionality, giving users the ability to create, read, update and delete recipes</p>
-          <p class="text-muted pb-3 pe-5">Python, Flask, MongoDB, JavaScript, HTML, CSS, Materialize, AWS S3, Heroku,
+          <p class="text-mark pb-3 pe-5">Python, Flask, MongoDB, JavaScript, HTML, CSS, Materialize, AWS S3, Heroku,
             Git</p>
           <div class="btn-row mb-3 mb-3">
-            <a href="https://dash-ms3.herokuapp.com" target="_blank"><button class="project-button">Live Project</button></a>
-            <a href="https://github.com/alissatroiano/Dash" target="_blank"><button class="project-button">Source Code</button></a>
+            <a href="https://dash-ms3.herokuapp.com" target="_blank"><button class="project-button">Live
+                Project</button></a>
+            <a href="https://github.com/alissatroiano/Dash" target="_blank"><button class="project-button">Source
+                Code</button></a>
           </div>
         </div>
         <div class="col-12 col-md-8">
@@ -400,31 +428,35 @@
         </div>
       </div>
       <!--./end-dash-->
-    
+
       <!--game-of-facts-->
-      <div class="row align-items-center row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
+      <div class="row align-items-center row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item"
+        data-aos="fade-up" data-aos-duration="1000">
         <div class="col-12 col-md-4 project-details">
           <h2>Game of Facts</h2>
           <h4 class="text-muted">Game of Thrones Trivia Game</h4>
           <strong class="awards">Awards: Code Institute Merit Award</strong>
           <p class="my-3 me-3 me-md-5 project-description">Game Of Facts is a web-based trivia game built
             for Game of Thrones fans and educators of global history.</p>
-          <p class="text-muted pb-3 pe-5"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
+          <p class="text-mark pb-3 pe-5"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
           <div class="btn-row mb-3">
             <a href="https://alissatroiano.github.io/Milestone-2/" target="_blank">
               <button class="project-button">Live
-              Project</button>
-            <a href="https://github.com/alissatroiano/Milestone-2" target="_blank"><button class="project-button">Source Code</button></a>
+                Project</button>
+              <a href="https://github.com/alissatroiano/Milestone-2" target="_blank"><button
+                  class="project-button">Source Code</button></a>
           </div>
         </div>
         <div class="col-12 col-md-8">
-          <img src="assets/images/gameoffacts-responsive.png" class="img-fluid img-wrapper project-img" alt="gameoffacts" />
+          <img src="assets/images/gameoffacts-responsive.png" class="img-fluid img-wrapper project-img"
+            alt="gameoffacts" />
         </div>
       </div>
       <!--./end-game-of-facts-->
-    
+
       <!--infinity-->
-      <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up" data-aos-duration="1000">
+      <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up"
+        data-aos-duration="1000">
         <div class="col-12 col-md-4 project-details">
           <h2>Infinity</h2>
           <h4 class="text-muted">Yoga Website</h4>
@@ -432,10 +464,12 @@
           <p class="my-3 me-5 pe-5 project-description">This responsive website was created for Infinity, a
             fictional Yoga & Meditation studio in New York, New York</strong>
           </p>
-          <p class="text-muted pb-3"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
+          <p class="text-mark pb-3"> JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
           <div class="btn-row mb-3">
-            <a href="https://alissatroiano.github.io/MS-1/" target="_blank"><button class="project-button">Live Project</button></a>
-            <a href="https://github.com/alissatroiano/MS-1" target="_blank"><button class="project-button">Source Code</button></a>
+            <a href="https://alissatroiano.github.io/MS-1/" target="_blank"><button class="project-button">Live
+                Project</button></a>
+            <a href="https://github.com/alissatroiano/MS-1" target="_blank"><button class="project-button">Source
+                Code</button></a>
           </div>
         </div>
         <div class="col-12 col-md-8">
@@ -453,7 +487,7 @@
       <span class="w3-text-white w3-wide">CONTACT</span>
     </div>
   </div>
-  
+
   <!-- Container (Contact Section) -->
   <div class="w3-content w3-container w3-padding-64" id="contact">
     <div class="w3-row w3-section pb-5 my-3">
@@ -509,8 +543,8 @@
   <!-- Back to top button -->
   <button type="button" class="btn-trans" id="btn-back-to-top">
     <i class="fas fa-chevron-up fa-2x"></i>
-  </button> 
-  
+  </button>
+
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
 

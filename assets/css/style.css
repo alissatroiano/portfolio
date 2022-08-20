@@ -23,9 +23,18 @@
   --red: #E83939;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 html,
 body {
   scroll-behavior: smooth;
+}
+
+.text-mark {
+  color: var(--dark-salmon);
 }
 
 nav {
