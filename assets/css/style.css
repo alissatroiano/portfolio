@@ -566,6 +566,8 @@ hr.project-divider {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  border-bottom: 2px dotted var(--grey);
+
 }
 
 .project-item:nth-child(odd) {
@@ -575,17 +577,11 @@ hr.project-divider {
 backdrop-filter: blur( 5px );
 -webkit-backdrop-filter: blur( 5px );
 border-radius: 10px;
-border-bottom: 3px dotted rgba(53, 53, 53, 0.482);
 }
 
-.project-item {
-  border-bottom: 3px dotted rgba(53, 53, 53, 0.482);
-  justify-content: center;
-}
 
 .project-item:nth-child(even) {
   flex-direction: row-reverse;
-  border-bottom: 3px dotted rgba(53, 53, 53, 0.482);
   /* background: rgba( 255, 255, 255, 0.5 ); */
   /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
   backdrop-filter: blur( 10px );
@@ -594,8 +590,6 @@ border-bottom: 3px dotted rgba(53, 53, 53, 0.482);
   justify-items: center;
 }
 
-.layout__item {
-}
 
 .layout__item--body {
   margin-left: 0;
