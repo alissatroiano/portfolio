@@ -26,6 +26,9 @@ class ProjectAdmin(admin.ModelAdmin):
       	'technologies',
         'link', 
         'picture',
+        'photo',
+        'problem',
+        'solution'
 	]
     
     list_per_page = 50
@@ -39,6 +42,8 @@ class ProjectAdmin(admin.ModelAdmin):
         'image_url',
         'repository',
         'photo',
+            'problem',
+        'solution'
 	]
     
     readonly_fields = ['created_at', 'updated_at', 'deleted_at']

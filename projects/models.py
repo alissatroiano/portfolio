@@ -24,6 +24,8 @@ class Project(models.Model):
     deleted_at = models.DateTimeField(auto_now=True)
     photo = models.ImageField(null=True, blank=True, upload_to='projects')
     repository = models.URLField(max_length=1024, null=True, blank=True)
+    problem = models.CharField(max_length=254, null=True, blank=True)
+    solution = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
         return self.name
