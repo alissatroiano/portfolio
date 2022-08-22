@@ -37,6 +37,18 @@ nav {
   color: var(--salmon);
 }
 
+.text-tech {
+  color: var(--yellow-3);
+}
+
+.text-link  {
+  color: var(--light-blue);
+}
+
+.text-link:hover  {
+  color: var(--blue);
+}
+
 .bg-blur {
   --bs-bg-opacity: 1;
   background-color: #fafafab4;
@@ -252,19 +264,20 @@ hr.folio-hr {
 
 /*-------------------------------- Headers and text */
 h1#title, .title {
-	letter-spacing: 3px;
+	letter-spacing: 2px;
   text-align: center;
   margin-top: 50px;
   font-weight: 500;
   font-family: 'Playfair Display', serif;
 }
-/* 
+
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Futura-PT', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 h2.section-title {
-  font-family: 'Futura-PT', sans-serif;
+  font-family: 'Playfair Display', serif;
   text-transform: uppercase;
   letter-spacing: 5.3px;
   font-size: 2.5rem;
@@ -273,7 +286,7 @@ h2.section-title {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 20px;
-} */
+} 
 
 h1,
 h2,

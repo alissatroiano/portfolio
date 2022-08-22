@@ -29,14 +29,90 @@
       </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-blur fixed-top shadow-lg" id="navBar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home"><i class="fas fa-code"></i> Alissa Troiano</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assets/resume.pdf" target="_blank">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <a target="_blank" href="https://www.github.com/alissatroiano/"><i class="fab fa-github mx-1"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/alissatroiano/"><i class="fab fa-linkedin mx-1"></i></a>
+              <a target="_blank" href="https://www.twittter.com/in/alissamtroiano/">
+                <i class="fab fa-twitter mx-1"></i></a>
+              <a target="_blank" href="mailto:alissatroiano@alissatroiano.com">
+                <i class="fas fa-envelope mx-1"></i></a>
+            </span>
+          </div>
+        </div>
+      </nav>
+
+      
+<div class="container-fluid text-center">
+    <div class="row">
+    <div class="col-12 my-5 pt-3">
+        <h2 class="section-title">My Projects</h2>
+    </div>
+</div>
+<div class="row d-flex justify-content-center">
+    <div class="col-12 align-items-center text-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#fullstack">Full Stack</a></li>
+            <li class="breadcrumb-item"><a href="#static">Static</a></li>
+            <li class="breadcrumb-item"><a href="#dynamic">Dynamic</a></li>
+          </ol>
+        </nav>
+  </div>
+</div>
+</div>
+
 <section class="container-fluid p-3 my-x mx-auto portfolio" id="projects">
 
   <div class="row d-flex justify-content-center g-4 my-0 mx-auto" data-masonry='{"percentPosition": true }'>
     <div class="col-xs-8 col-sm-4">
-      <div class="card h-100 rounded-5 img-fluid border-0">
-          <img src="assets/images/popart.png" class="card-img project-pic" alt="hue">
-          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1"></a>
-      </div>
+        <div class="card h-100 overflow-hidden rounded-5 img-fluid" id="project-card1">
+            <div class="card-image-overlay">
+                <div class="py-3 my-3 fw-bold">
+                    <h3>Hue</h3>
+                    <p class="text-tech">Full Stack E-Commerce App</p>
+                    <!-- <p class="text-light">Python, Django, HTML CSS, JavaScript, AWS</p> -->
+                    <div class="row d-flex">
+                        <div class="mb-3">
+                                <a class="view-projects text-link" href="https://hue-alissa.herokuapp.com/"
+                                    target="_blank">
+                                    Live Project | 
+                                </a>
+                                <a class="view-projects text-link" href="https://hue-alissa.herokuapp.com/">
+                                View Code
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
   </div>
   <div class="col-xs-8 col-sm-4">
     <div class="card h-100 rounded-5 img-fluid  border-0">
