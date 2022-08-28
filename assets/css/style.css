@@ -34,9 +34,10 @@ body {
 }
 
 .text-mark {
-  color: var(--salmon);
-  font-weight: 660;
+  color: var(--dark-salmon);
+  font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 1px;
   font-size: 1rem;
 }
 
@@ -742,18 +743,24 @@ img {
 
 .awards {
   font-family: 'Futura-PT', sans-serif;
+  text-transform: uppercase;
   font-size: 1rem;
-  margin: 6.5px 0;
-  font-weight: 500;
-  color: #416e7c;
+  letter-spacing: 1px;
+  font-weight: 800;
+  background-color: var(--salmon);
+  color: var(--light);
+  padding: 5px 10px;
+  margin: 10px 0;
 }
 
 button.project-button {
   margin: 5px 0;
 }
 
-p.text-muted {
+.text-mute {
   margin-bottom: 20px;
+  color: var(--dark-grey);
+  font-style: italic;
 }
 
 .img-wrapper {
@@ -761,6 +768,7 @@ p.text-muted {
   position: relative;
   height: auto;
   overflow: hidden;
+  filter: grayscale(100);
 }
 
 .img-wrapper:hover {
@@ -925,6 +933,34 @@ i.fas.fa-chevron-up.fa-2x:hover {
   .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-mark {
+    color: var(--dark-salmon);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+  }
+  .awards {
+    font-family: 'Futura-PT', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 800;
+    background-color: var(--salmon);
+    color: var(--light);
+    padding: 5px 0;
+    text-overflow: no;
+    margin: 10px 0;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .text-muted {
+    font-size: 1.5rem;
   }
 }
 
