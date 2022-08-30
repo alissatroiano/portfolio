@@ -567,6 +567,7 @@ hr.project-divider {
   align-items: center;
   justify-content: center;
   border-bottom: 2px dotted var(--grey);
+  padding: 20px 0;
 
 }
 
@@ -649,9 +650,6 @@ p#about-me\ mx-3\ px-3 {
   margin: 0px 30px;
 }
 
-#skills-section {
-}
-
 #skills-row {
   margin: 0px auto;
   padding: 10px 20px;
@@ -691,7 +689,7 @@ h4.skills-header {
 i#python:hover, i#javascript:hover,
 i#html:hover, i#css:hover,
 i#sql:hover, i#git:hover, i#aws:hover,
-i#google:hover, i#react:hover  {
+i#google:hover, i#react:hover {
   color: var(--dark-salmon);
   font-size: 3.5rem;
 }
