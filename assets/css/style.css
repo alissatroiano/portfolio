@@ -357,17 +357,12 @@ span#name {
 
 }
 
-/* -------------------------------------- Jumbotron -------------------------------------- */
-
-/* https://css-tricks.com/perfect-full-page-background-image/ */
-
-
-/* -------------------------------------- Jumbotron -------------------------------------- */
-
+/* -------------------------------------- Jumbotron -------------------------------------- */ 
 /* https://css-tricks.com/perfect-full-page-background-image/ */
 .jumbotron-container {
 	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75), rgba(255, 255, 255, 0.5)), url('../images/bg.jpg') no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.567)), 
+  url('../images/bg4.png') no-repeat center center fixed;
   animation: fadein 5s;
   -webkit-animation: fadein 5s;
   -moz-animation: fadein 5s;
@@ -408,6 +403,15 @@ span#name {
   to {
     opacity: 1;
   }
+}
+
+h1#title {
+  color: var(--lighter);
+  letter-spacing: 8px;
+  font-family: 'Futura-PT', sans-serif;
+  text-shadow: 2px 4px 10px rgba(121, 121, 121, 0.628),
+  0px -5px 10px rgba(255, 255, 255, 0.559);
+  margin: 20px 0;
 }
 
 .jumbotron-overlay {
