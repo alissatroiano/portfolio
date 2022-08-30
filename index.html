@@ -79,10 +79,10 @@
 
   <!-- Jumbotron -->
   <section class="jumbotron" id="home">
-    <div class="container-fluid jumbotron-container d-flex align-items-center my-0 mx-auto py-5" data-aos="zoom-out"
-      data-aos-duration="2000" id="home">
+    <div class="container-fluid jumbotron-container d-flex align-items-center my-0 mx-auto py-5" id="home">
       <div class="row d-flex justify-content-center align-items-center text-center">
-        <div class="col-12 text-center" id="home-text">
+        <div class="col-12 text-center" id="home-text" data-aos="fade-in" data-aos-delay="100"
+      data-aos-duration="2000">
           <!-- <h3 class="font-weight-normal mb-3">Hello, my name</h3> -->
           <h1 class="display-2 text-uppercase my-2 my-md-3" id="title">
             Alissa Troiano</h1>
@@ -90,19 +90,60 @@
         <div class="typewriter text-center my-3 my-md-4 pb-3">
           <span class="lead text-center" id="typed-small-screens">Software Developer</span>
         </div>
-        <div class="d-flex align-items-center justify-content-center">
+        <div class="d-flex align-items-center justify-content-center my-5" data-aos="fade-in" data-aos-delay="300"
+        data-aos-duration="2500">
           <a href="#projects" class="btn btn-dark mx-2 mx-md-4">Projects</a>
           <a href="assets/resume.pdf" target="_blank" class="btn btn-dark mx-2 mx-md-4">Resume</a>
         </div>
+     <div class="text-center mt-5">
+          <i class="fas fa-chevron-down fa-3x"></i>
+        </div>
       </div>
-    </div>
+  </div>
   </section>
 
+      <!--Parallex Starts Here-->
+      <aside class="folio-statement pb-3" id="about">
+        <div class="parallax-section" id="bg">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <div class="text-section-parallex">
+               <span class="parallex-text">ABOUT</span>
+               <div class="row">
+                <div class="col-12 text-center p-3">
+                  <img class="w3-image w3-opacity w3-hover-opacity-off" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" id="portrait2" alt="portrait" src="assets/images/portrait2.jpg" alt="Photo of Me"
+                    width="200" height="50">
+                </div>
+                <!-- Hide this text on small devices -->
+                <div class="col-12 px-3 mx-auto w3-center w3-padding-16" style="text-align: center;">
+                  <p class="about-me mx-3 px-3">
+                    I'm a creative, results-driven full-stack software developer with experience participating in the full
+                    software development life-cycle, from planning to launch. Comfortable in Frontend and Backend development, I'm
+                    passionate about developing robust, full-stack applications that solve business needs.
+                </div>
+                <!--resume link here-->
+                <div class="w3-col w3-center w3-padding-16 mb-3">
+                  <div class="col-12 text-center">
+                    <a href="assets/resume.pdf" target="_blank" class="btn w3-margin-top aos-init aos-animate mb-3"
+                      data-aos="fade-up" data-aos-duration="1500" id="resumeBtn"><span class="button-text">RESUME</span></a>
+                  </div>
+                </div>
+                <!--./end-resume-link-->
+              </div>
+                </div>
+              </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
   <!-- Container (About Section) -->
-  <div class="w3-content w3-container w3-padding-64 mt-3 mt-lg-5" id="about">
+  <div class="container-fluid" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
-    <div class="w3-row">
-      <div class="col-12 w3-center w3-padding-32">
+    <div class="row">
+      <div class="col-12 text-center p-3">
         <img class="w3-image w3-opacity w3-hover-opacity-off" data-aos="flip-left" data-aos-easing="ease-out-cubic"
           data-aos-duration="2000" id="portrait2" alt="portrait" src="assets/images/portrait2.jpg" alt="Photo of Me"
           width="200" height="50">
@@ -128,108 +169,112 @@
       <hr>
     </div>
     <!--./end-hr-->
-    <div class="row mt-5 pt-5" id="skills">
-      <div class="col-12">
-        <h3 class="text-center mt-5" id="skillsHeader">MY SKILLS</h3>
-      </div>
-    </div>
-    <div class="row text-center g-5 p-5" id="skills-row">
-      <div class="col-xs-8 col-sm-4">
-        <div class="about">
-          <i class="mx-1 mx-md-2 mx-lg-3 fab fa-python fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-            data-aos-easing="100" data-aos-delay="50" id="python"></i>
-          <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom">
-            Python
-          </h4>
-        </div>
-      </div>
-      <div class="col-xs-8 col-sm-4">
-        <div class="about">
-          <i class="mx-1 mx-md-2 mx-lg-3 fab fa-js-square fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-            data-aos-easing="100" data-aos-delay="200" id="javascript"></i>
-          <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom">
-            JavaScript
-          </h4>
-        </div>
-
-      </div>
-      <div class="col-xs-8 col-sm-4">
-        <div class="about">
-          <i class="mx-1 mx-md-3 mx-lg-5 fab fa-html5 fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-            data-aos-easing="100" data-aos-delay="50" id="html"></i>
-          <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom">
-            HTML
-          </h4>
-        </div>
-      </div>
-      <div class="col-xs-8 col-sm-4">
-        <div class="about">
-          <i class="mx-1 mx-md-3 mx-lg-5 fab fa-css3 fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-            data-aos-easing="100" data-aos-delay="50" id="css"></i>
-          <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom">
-            CSS
-          </h4>
-        </div>
-      </div>
-      <div class="col-xs-8 col-sm-4">
-        <div class="about">
-          <i class="mx-1 mx-md-3 mx-lg-5 fas fa-database fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-            data-aos-easing="100" data-aos-delay="50" id="sql"></i>
-          <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom">
-            SQL/NOSQL
-          </h4>
-        </div>
-      </div>
-      <div class="col-xs-8 col-sm-4">
-        <div class="about">
-          <i class="mx-1 mx-md-3 mx-lg-5 fas fa-code-branch fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-            data-aos-easing="100" data-aos-delay="50" id="git"></i>
-          <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom">
-            Git
-          </h4>
-        </div>
-      </div>
-      <div class="col-xs-8 col-sm-4">
-        <div class="about">
-          <i class="mx-1 mx-md-3 mx-lg-5 fab fa-react fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-            data-aos-easing="100" data-aos-delay="50" id="git"></i>
-          <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom">
-            React
-          </h4>
-        </div>
-      </div>
-      <div class="col-xs-8 col-sm-4">
-        <div class="about">
-          <i class="mx-1 mx-md-3 mx-lg-5 fab fa-aws fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-            data-aos-easing="100" data-aos-delay="50" id="aws"></i>
-          <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom">
-            AWS
-          </h4>
-        </div>
-      </div>
-      <div class="col-xs-8 col-sm-4">
-        <div class="about">
-          <i class="mx-1 mx-md-3 mx-lg-5 fab fa-google fa-3x" data-aos="zoom-in" data-aos-duration="2000"
-            data-aos-easing="100" data-aos-delay="50" id="google"></i>
-          <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom">
-            Google Cloud
-          </h4>
-        </div>
-      </div>
-
-    </div>
-    <!--./end-skills-row-->
   </div>
+
   <!--end-about-container-->
+  <aside class="folio-statement pb-3">
+    <div class="parallax-section" id="bg">
+          <div class="row mt-5 pt-5 text-light" id="skills">
+            <div class="col-12">
+              <h3 class="text-center mt-5" id="skillsHeader">MY SKILLS</h3>
+            </div>
+          </div>
+          <div class="row text-center" id="skills-row">
+            <div class="col-xs-8 col-sm-4">
+              <div class="about">
+                <i class="mx-1 mx-md-2 mx-lg-3 fab fa-python fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+                  data-aos-easing="100" data-aos-delay="50" id="python"></i>
+                <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+                  data-aos-anchor-placement="center-bottom">
+                  Python
+                </h4>
+              </div>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+              <div class="about">
+                <i class="mx-1 mx-md-2 mx-lg-3 fab fa-js-square fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+                  data-aos-easing="100" data-aos-delay="200" id="javascript"></i>
+                <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+                  data-aos-anchor-placement="center-bottom">
+                  JavaScript
+                </h4>
+              </div>
+      
+            </div>
+            <div class="col-xs-8 col-sm-4">
+              <div class="about">
+                <i class="mx-1 mx-md-3 mx-lg-5 fab fa-html5 fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+                  data-aos-easing="100" data-aos-delay="50" id="html"></i>
+                <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+                  data-aos-anchor-placement="center-bottom">
+                  HTML
+                </h4>
+              </div>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+              <div class="about">
+                <i class="mx-1 mx-md-3 mx-lg-5 fab fa-css3 fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+                  data-aos-easing="100" data-aos-delay="50" id="css"></i>
+                <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+                  data-aos-anchor-placement="center-bottom">
+                  CSS
+                </h4>
+              </div>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+              <div class="about">
+                <i class="mx-1 mx-md-3 mx-lg-5 fas fa-database fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+                  data-aos-easing="100" data-aos-delay="50" id="sql"></i>
+                <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+                  data-aos-anchor-placement="center-bottom">
+                  SQL/NOSQL
+                </h4>
+              </div>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+              <div class="about">
+                <i class="mx-1 mx-md-3 mx-lg-5 fas fa-code-branch fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+                  data-aos-easing="100" data-aos-delay="50" id="git"></i>
+                <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+                  data-aos-anchor-placement="center-bottom">
+                  Git
+                </h4>
+              </div>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+              <div class="about">
+                <i class="mx-1 mx-md-3 mx-lg-5 fab fa-react fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+                  data-aos-easing="100" data-aos-delay="50" id="git"></i>
+                <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+                  data-aos-anchor-placement="center-bottom">
+                  React
+                </h4>
+              </div>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+              <div class="about">
+                <i class="mx-1 mx-md-3 mx-lg-5 fab fa-aws fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+                  data-aos-easing="100" data-aos-delay="50" id="aws"></i>
+                <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+                  data-aos-anchor-placement="center-bottom">
+                  AWS
+                </h4>
+              </div>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+              <div class="about">
+                <i class="mx-1 mx-md-3 mx-lg-5 fab fa-google fa-3x" data-aos="zoom-in" data-aos-duration="2000"
+                  data-aos-easing="100" data-aos-delay="50" id="google"></i>
+                <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+                  data-aos-anchor-placement="center-bottom">
+                  Google Cloud
+                </h4>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+</aside>s
 
   <!-- Parallex (Portfolio Section) -->
   <div class="row w3-center bg-custom w3-padding-16">
@@ -278,6 +323,31 @@
     </div>
     <div class="row d-block my-0 mx-auto align-items-center justify-content-center g-2">
 
+   <!--Emojourney-->
+      <div class="row align-items-center d-blockjustify-content-center d-md-flex my-0 mx-auto py-2 py-md-4 project-item"
+        data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-12 col-md-4 project-text">
+          <h2>Emojourney</h2>
+          <h4 class="text-muted">Emoji Travel Guide</h4>
+          <strong class="awards">1st Place - Code Institute Hackathon, 07/16/22</strong>
+          <p class="my-3 me-3 me-md-5 project-description">Emojourney is a clever traveler's guide for using (and not
+            accidentally abusing) Emojis around the world. The website features a homepage, a travel guide with a
+            travel-tip compass, and a team page.</p>
+          <p class="text-mark">HTML, CSS, Bootstrap, JavaScript</p>
+          <div class="btn-row mb-3">
+            <a href="https://alissatroiano.github.io/team-8/" target="_blank"><button class="project-button">Live
+                Project</button></a>
+            <a href="https://github.com/alissatroiano/team-8" target="_blank"><button class="project-button">Source
+                Code</button></a>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 my-0 mx-auto">
+          <div class="img-wrapper">
+          <img src="assets/images/emojourney.png" class="img-fluid project-img" alt="emojourney" />
+          </div>
+        </div>
+      </div>
+
       <!--Inklusion-->
       <div class="row align-items-center justify-content-center d-block d-md-flex project-item" data-aos="fade-up"
         data-aos-duration="1000">
@@ -301,16 +371,17 @@
           </div>
         </div>
         <div class="col-12 col-md-8 my-0 mx-auto justify-content-end">
-          <img src="assets/images/inklusion.png" class="img-wrapper img-fluid project-img" alt="inklusion" />
+          <div class="img-wrapper">
+          <img src="assets/images/inklusion.png" class="img-fluid project-img" alt="inklusion" />
+          </div>
         </div>
       </div>
-
             <!--Muzak-->
             <div class="row align-items-center justify-content-center d-block d-md-flex project-item" data-aos="fade-up"
             data-aos-duration="1000">
             <div class="col-12 col-md-4 justify-content-start">
               <h2>Muzak</h2>
-              <h4 class="text-muted">Youtube Music Player</h4>
+              <h4 class="text-muted">React Music Player</h4>
               <p class="my-3 me-3 me-md-5 project-description">Muzak is a front-end React application that uses the YouTube Data API to fetch & stream videos by video ID or title </p>
               <p class="text-mark">React, JavaScript, HTML, CSS, JavaScript
               </p>
@@ -325,11 +396,12 @@
               </div>
             </div>
             <div class="col-12 col-md-8 my-0 mx-auto justify-content-end">
-              <img src="assets/images/muzak.png" class="img-wrapper img-fluid project-img" alt="inklusion" />
+              <div class="img-wrapper">
+              <img src="assets/images/muzak.png" class="img-fluid project-img" alt="inklusion" />
+              </div>
             </div>
           </div>
     
-
       <!--Electrillo -->
       <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up"
         data-aos-duration="1000">
@@ -352,34 +424,11 @@
           </div>
           </div>
         <div class="col-12 col-md-8 my-0 mx-auto justify-content-end">
-          <img src="assets/images/electrillo.png" class="img-wrapper img-fluid project-img" alt="smitten" />
-        </div>
-      </div>
-
-   <!--Emojourney-->
-      <div class="row align-items-center d-blockjustify-content-center d-md-flex my-0 mx-auto py-2 py-md-4 project-item"
-        data-aos="fade-up" data-aos-duration="1000">
-        <div class="col-12 col-md-4 project-text">
-          <h2>Emojourney</h2>
-          <h4 class="text-muted">Emoji Travel Guide</h4>
-          <strong class="awards">1st Place - Code Institute Hackathon, 07/16/22</strong>
-          <p class="my-3 me-3 me-md-5 project-description">Emojourney is a clever traveler's guide for using (and not
-            accidentally abusing) Emojis around the world. The website features a homepage, a travel guide with a
-            travel-tip compass, and a team page.</p>
-          <p class="text-mark">HTML, CSS, Bootstrap, JavaScript
-          </p>
-          <div class="btn-row mb-3">
-            <a href="https://alissatroiano.github.io/team-8/" target="_blank"><button class="project-button">Live
-                Project</button></a>
-            <a href="https://github.com/alissatroiano/team-8" target="_blank"><button class="project-button">Source
-                Code</button></a>
+          <div class="img-wrapper">
+          <img src="assets/images/electrillo.png" class="img-fluid project-img" alt="smitten" />
           </div>
         </div>
-        <div class="col-12 col-md-8 my-0 mx-auto">
-          <img src="assets/images/emojourney.png" class="img-wrapper img-fluid project-img" alt="emojourney" />
-        </div>
       </div>
-
       <!--Smitten-->
       <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up"
         data-aos-duration="1000">
@@ -403,7 +452,9 @@
           </div>
         </div>
         <div class="col-12 col-md-8 my-0 mx-auto">
-          <img src="assets/images/smitten.png" class="img-wrapper img-fluid project-img" alt="smitten" />
+          <div class="img-wrapper">
+          <img src="assets/images/smitten.png" class="img-fluid project-img" alt="smitten" />
+          </div>
         </div>
       </div>
 
@@ -426,7 +477,9 @@
           </div>
         </div>
         <div class="col-12 col-md-8">
-          <img src="assets/images/hue.png" class="img-wrapper img-fluid project-img" alt="hue" />
+          <div class="img-wrapper">
+          <img src="assets/images/hue.png" class="img-fluid project-img" alt="hue" />
+          </div>
         </div>
       </div>
 
@@ -448,7 +501,9 @@
           </div>
         </div>
         <div class="col-12 col-md-8">
-          <img src="assets/images/dash.png" class="img-fluid img-wrapper project-img" alt="dash" />
+          <div class="img-wrapper">
+          <img src="assets/images/dash.png" class="img-fluid project-img" alt="dash" />
+          </div>
         </div>
       </div>
       <!--./end-dash-->
@@ -472,11 +527,13 @@
           </div>
         </div>
         <div class="col-12 col-md-8">
-          <img src="assets/images/gameoffacts-responsive.png" class="img-fluid img-wrapper project-img"
+                    <div class="img-wrapper">
+          <img src="assets/images/gameoffacts-responsive.png" class="img-fluid project-img"
             alt="gameoffacts" />
         </div>
       </div>
       <!--./end-game-of-facts-->
+      </div>
 
       <!--infinity-->
       <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up"
@@ -497,10 +554,15 @@
           </div>
         </div>
         <div class="col-12 col-md-8">
-          <img src="assets/images/infinity-responsive.png" class="img-fluid img-wrapper project-img" alt="infinity" />
+              <div class="img-wrapper">
+            <img src="assets/images/infinity-responsive.png" class="img-fluid project-img" alt="infinity" />
+            <div id="ribbon-container">
+              <p class="ribbon">Ribbon</p>
+          </div>
         </div>
       </div>
       <!--./end-infinity-->
+    </div>
     </div>
   </section>
   <!--./end-projects-->

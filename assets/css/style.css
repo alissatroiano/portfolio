@@ -354,25 +354,13 @@ span#name {
     letter-spacing: 2;
     text-shadow: 1px 3px 6px #777474;
     font-size: 2.8rem;
-
 }
 
 /* -------------------------------------- Jumbotron -------------------------------------- */
-
-/* https://css-tricks.com/perfect-full-page-background-image/ */
-
-
-/* -------------------------------------- Jumbotron -------------------------------------- */
-
 /* https://css-tricks.com/perfect-full-page-background-image/ */
 .jumbotron-container {
 	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75), rgba(255, 255, 255, 0.5)), url('../images/bg.jpg') no-repeat center center fixed;
-  animation: fadein 5s;
-  -webkit-animation: fadein 5s;
-  -moz-animation: fadein 5s;
-  -o-animation: fadein 5s;
-  /* background-color:  rgb(227, 71, 57); */
   background-size: cover;
   background-attachment: fixed;
   backdrop-filter: blur(10px);
@@ -582,8 +570,8 @@ border-radius: 10px;
 
 .project-item:nth-child(even) {
   flex-direction: row-reverse;
-  /* background: rgba( 255, 255, 255, 0.5 ); */
-  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+  background: var(--salmon);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 10px );
   -webkit-backdrop-filter: blur( 10px );
   border-radius: 10px;
@@ -618,7 +606,21 @@ border-radius: 10px;
   margin-right: auto;
   flex-grow: 1;
 }
+
 /*-------------------------------- About Section */
+#python, 
+#javascript,
+#html,
+#css,
+#sql,
+#git,
+#react,
+#aws,
+#google {
+  color: var(--dark-salmon);
+  margin: 10px 0;
+}
+
 p.w3-wide {
   font-family: 'Futura-PT', sans-serif;
   font-size: 1.3rem;
@@ -649,9 +651,6 @@ p#about-me\ mx-3\ px-3 {
   margin: 0px 30px;
 }
 
-#skills-section {
-}
-
 #skills-row {
   margin: 0px auto;
   padding: 10px 20px;
@@ -665,10 +664,8 @@ p#about-me\ mx-3\ px-3 {
   font-size: 1.5rem;
   letter-spacing: 4px;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px #777;
   letter-spacing: 4px;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px #777;
   margin-top: 30px;
 }
 
@@ -683,7 +680,7 @@ h4.skills-header {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #555;
+  color: var(--light);
   letter-spacing: 2.2px;
   margin-top: 25px;
 }
@@ -692,8 +689,33 @@ i#python:hover, i#javascript:hover,
 i#html:hover, i#css:hover,
 i#sql:hover, i#git:hover, i#aws:hover,
 i#google:hover, i#react:hover  {
-  color: var(--dark-salmon);
+  color: var(--light-salmon);
   font-size: 3.5rem;
+}
+
+/*------------------------------ Parallex */
+#bg,
+#bg2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(33, 33, 33, 0.946), rgba(26, 25, 25, 0.712), rgba(18, 18, 18, 0.68)), url('../images/bg3.jpeg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-width: 100%;
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-section-parallex {
+  margin-top: 200px;
+}
+
+.parallex-text {
+  font-family: 'Futura-PT', sans-serif;
+  color: var(--dark-grey);
+  font-size: 7rem;
+  letter-spacing: 13px;
 }
 
 
@@ -758,17 +780,102 @@ p.text-muted {
 
 .img-wrapper {
   max-width: 100%;
+  height: auto;
   position: relative;
   height: auto;
   overflow: hidden;
 }
 
-.img-wrapper:hover {
+/* .img-wrapper:hover {
   height: auto;
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
   filter: grayscale(0);
+} */
+#ribbon-container:before {
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  border-top: 29px solid rgba(0, 0, 0, .3);
+  /* These 4 border properties create the first part of our drop-shadow */
+  
+  border-bottom: 29px solid rgba(0, 0, 0, .3);
+  border-right: 29px solid rgba(0, 0, 0, .3);
+  border-left: 29px solid transparent;
 }
+
+#ribbon-container:after {
+  /* This adds the second part of our dropshadow */
+  
+  content: "";
+  height: 3px;
+  background: rgba(0, 0, 0, .3);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 58px;
+  right: 3px;
+}
+
+
+#ribbon-container {
+  position: absolute;
+  top: 15px;
+  overflow: visible;
+  /* so we can see the pseudo-elements we're going to add to the anchor */
+  right: 20px;
+  width: 80px;
+  font-size: 18px;
+  /* font-size and line-height must be equal so we can account for the height of the banner */
+  line-height: 18px;
+}
+
+
+#ribbon-container a:after {
+  /* this creates the "folded" part of our ribbon */
+  
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  border-top: 15px solid #004a70;
+  border-right: 15px solid transparent;
+}
+
+#ribbon-container a:before {
+  /* this creates the "forked" part of our ribbon */
+  
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -29px;
+  border-top: 29px solid #0089d0;
+  border-bottom: 29px solid #0089d0;
+  border-right: 29px solid transparent;
+  border-left: 29px solid transparent;
+}
+
+#ribbon-container a:hover {
+  background: #009ff1;
+}
+
+#ribbon-container a:hover:before {
+  /* this makes sure that the "forked" part of the ribbon changes color with the anchor on :hover */
+  
+  border-top: 29px solid #009ff1;
+  border-bottom: 29px solid #009ff1;
+}
+
 
 /* .folio-img {
   transform: matrix3d(0.94, 0, 0.34, -0.00025, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(30px);
@@ -939,7 +1046,6 @@ i.fas.fa-chevron-up.fa-2x:hover {
   position: relative;
   height: auto;
   overflow: hidden;
-  filter: grayscale(100%);
 }
 
 .img-wrapper:hover {
