@@ -553,33 +553,24 @@ span#name {
   cursor: pointer;
 }
 
-.project-container {
-
-}
-
 hr.project-divider {
   border-top: 1px solid #666;
 }
-
-.layout, .project-item {
+.project-item {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   border-bottom: 2px dotted var(--grey);
   padding: 20px 0;
-
 }
 
 .project-item:nth-child(odd) {
-  /* border: 5px dotted #666; */
   background: rgba( 255, 255, 255, 0.25 );
-/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
-backdrop-filter: blur( 5px );
--webkit-backdrop-filter: blur( 5px );
-border-radius: 10px;
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 10px;
 }
-
 
 .project-item:nth-child(even) {
   flex-direction: row-reverse;
