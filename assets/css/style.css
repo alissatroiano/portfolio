@@ -556,11 +556,12 @@ span#name {
 hr.project-divider {
   border-top: 1px solid #666;
 }
+
 .project-item {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-bottom: 2px dotted var(--grey);
   padding: 20px 0;
 }
