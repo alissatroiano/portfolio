@@ -58,6 +58,20 @@ nav {
   color: #fafafa;
 }
 
+.btn-main {
+  background-color: var(--grey);
+  padding: 10px;
+  border: none;
+}
+
+.btn-main:hover {
+  background-color: var(--dark-salmon);
+}
+
+.btn-text {
+  color: var(--black);
+  font-weight: 750;
+}
 /*--------------------------------Main Page Content */
 html {
   overflow: auto;
@@ -90,6 +104,13 @@ hr {
   padding: 1px 0px;
   background-color: #666;
   opacity: 1;
+}
+
+a.text-link {
+  color: var(--dark-salmon);
+  font-weight: 650;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
@@ -136,12 +157,15 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
   font-size: 1.36rem;
 }
 
+
+.fas:hover,
 .fab.fa-github:hover,
 .fab.fa-linkedin:hover,
 .fab.fa-twitter:hover,
 .fas.fa-envelope:hover {
   color: var(--dark-salmon);
 }
+
 
 .navbar-light .navbar-nav .nav-link {
   color: rgb(16, 12, 12);
@@ -528,29 +552,34 @@ span#name {
 /* First image (Logo. Full height) - copied from w3schools.com */
 .bgimg-1 {
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)),
-  url('../images/deskspace.jpg') no-repeat center fixed;
+  url('../images/bg3.png') no-repeat center fixed;
   background-size: cover;
   min-height: 100vh;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url('../images/wireframes.jpg');
-  min-height: 400px;
+  background-image: url('../images/bg4.png');
+  min-height: 600px;
 }
 
 /* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("../images/keyboard.jpg");
-  min-height: 400px;
+#contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url("../images/bg4.png") no-repeat center fixed;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .w3-wide {
   letter-spacing: 10px;
 }
 
+.parallex-text,
 .w3-hover-opacity {
   cursor: pointer;
+  font-family: 'Futura-PT', sans-serif;
+  color: var(--grey);
+  letter-spacing: 15px;
 }
 
 hr.project-divider {
@@ -771,7 +800,6 @@ p.text-muted {
 
 /*-------------------------------- Contact Section */
 #contact-details {
-  margin-bottom: 50px;
   font-family: 'Futura-PT',
   sans-serif;
   font-size: 1rem;
@@ -800,11 +828,9 @@ img {
   padding-top: 20px;
 }
 
-.fas.fa-map-marker.w3-large,
-.fas.fa-phone.w3-large,
-.fas.fa-envelope.w3-large {
-  margin-right: 10px;
-  margin-left: 20px;
+.text-contact,
+.form-group {
+  color: var(--light-grey);
 }
 
 /*-------------------------------- Contact Form */
