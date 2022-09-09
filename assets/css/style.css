@@ -58,6 +58,13 @@ nav {
   color: #fafafa;
 }
 
+.text-lighter {
+  font-family: 'Futura PT', sans-serif;
+  letter-spacing: 10px;
+  color: var(--light-grey);
+  font-weight: 450;
+  text-shadow: 1px 1px 3px var(--dark-grey);
+}
 /*--------------------------------Main Page Content */
 html {
   overflow: auto;
@@ -535,13 +542,13 @@ span#name {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url('../images/wireframes.jpg');
+  background-image: url("../images/bg4.png");
   min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("../images/keyboard.jpg");
+  background-image: url("../images/bg4.png");
   min-height: 400px;
 }
 
