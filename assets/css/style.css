@@ -782,8 +782,13 @@ p.text-muted {
 } */
 
 /*-------------------------------- Contact Section */
+
+#contact {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 #contact-details {
-  margin-bottom: 50px;
   font-family: 'Futura-PT',
   sans-serif;
   font-size: 1rem;
@@ -817,6 +822,12 @@ img {
 .fas.fa-envelope.w3-large {
   margin-right: 10px;
   margin-left: 20px;
+}
+
+.text-lighter.text-center.display-1 {
+  font-family: 'Futura-PT', sans-serif;
+  letter-spacing: 15px;
+  margin-top: 90px;
 }
 
 /*-------------------------------- Contact Form */
@@ -946,6 +957,12 @@ i.fas.fa-chevron-up.fa-2x:hover {
 .img-wrapper:hover {
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
+}
+
+.text-lighter.text-center.display-1 {
+  font-family: 'Futura-PT', sans-serif;
+  letter-spacing: 30px;
+  margin-top: 120px;
 }
 
   }
