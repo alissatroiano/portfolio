@@ -81,18 +81,18 @@
 
   <!-- Jumbotron -->
   <section class="jumbotron" id="home">
-    <div class="container-fluid jumbotron-container d-flex align-items-center my-0 mx-auto py-5" data-aos="zoom-out"
-      data-aos-duration="2000" id="home">
+    <div class="container-fluid jumbotron-container d-flex align-items-center my-0 mx-auto py-5" id="home">
       <div class="row d-flex justify-content-center align-items-center text-center">
         <div class="col-12 text-center" id="home-text">
           <!-- <h3 class="font-weight-normal mb-3">Hello, my name</h3> -->
-          <h1 class="display-2 text-uppercase my-2 my-md-3" id="title">
+          <h1 class="display-1 text-center text-uppercase my-3 my-md-4" id="title" data-aos="zoom-out"
+          data-aos-duration="2000" >
             Alissa Troiano</h1>
         </div>
         <div class="typewriter text-center my-3 my-md-4 pb-3">
           <span class="lead text-center" id="typed-small-screens">Software Developer</span>
         </div>
-        <div class="d-flex align-items-center justify-content-center">
+        <div class="d-flex align-items-center pt-3 justify-content-center">
           <a href="#projects" class="btn btn-dark mx-2 mx-md-4">Projects</a>
           <a href="assets/resume.pdf" target="_blank" class="btn btn-dark mx-2 mx-md-4">Resume</a>
         </div>
@@ -103,26 +103,28 @@
   <!-- Container (About Section) -->
   <div class="container w3-padding-64 mt-3 mt-lg-5" id="about">
    <div class="row">
-    <h3 class="text-center my-5 pt-5">ABOUT ME</h3>
+    <h2 class="text-center display-2 my-5 pt-5" data-aos="fade-in" data-aos-delay="200"
+    data-aos-duration="1200">ABOUT ME</h2>
    </div>
     <div class="row">
       <div class="col-12 w3-center w3-padding-32">
-        <img class="w3-image w3-opacity w3-hover-opacity-off" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+        <img class="w3-image w3-opacity w3-hover-opacity-off" data-aos="fade-in" data-aos-delay="800"
           data-aos-duration="2000" id="portrait2" alt="portrait" src="assets/images/portrait2.jpg" alt="Photo of Me"
           width="200" height="50">
       </div>
-      <!-- Hide this text on small devices -->
       <div class="col-12 px-3 mx-auto w3-center w3-padding-16" style="text-align: center;">
-        <p class="about-me mx-3 px-3">
+        <p class="about-me mx-3 px-3" data-aos="fade-in" data-aos-delay="1000"
+        data-aos-duration="2500" >
           I'm a creative, results-driven full-stack software developer with experience participating in the full
           software development life-cycle, from planning to launch. Comfortable in Frontend and Backend development, I'm
           passionate about developing robust, full-stack applications that solve business needs.
       </div>
+      </div>
       <!--resume link here-->
-      <div class="w3-col w3-center w3-padding-16 mb-3">
+      <div class="row text-center p-5 mb-3" data-aos="slide-up" data-aos-delay="1500"
+      data-aos-duration="2000">
         <div class="col-12 text-center">
-          <a href="assets/resume.pdf" target="_blank" class="btn w3-margin-top aos-init aos-animate mb-3"
-            data-aos="fade-up" data-aos-duration="1500" id="resumeBtn"><span class="button-text">RESUME</span></a>
+          <a href="assets/resume.pdf" target="_blank" class="btn w3-margin-top aos-init aos-animate mb-3" id="resumeBtn"><span class="button-text">RESUME</span></a>
         </div>
       </div>
       <!--./end-resume-link-->
@@ -134,10 +136,10 @@
     <!--./end-hr-->
     <div class="row mt-5 pt-5" id="skills">
       <div class="col-12">
-        <h3 class="text-center mt-5" id="skillsHeader">MY SKILLS</h3>
-      </div>
+        <h2 class="text-center display-2 my-3 pt-3 pt-md-5" data-aos="fade-in" data-aos-delay="200"
+        data-aos-duration="1200">My Skills</h2>
     </div>
-    <div class="row text-center g-5 p-5" id="skills-row">
+    <div class="row text-center g-4 p-5" id="skills-row">
       <div class="col-xs-8 col-sm-4">
         <div class="about">
           <i class="mx-1 mx-md-2 mx-lg-3 fab fa-python fa-3x" data-aos="zoom-in" data-aos-duration="2000"
@@ -230,7 +232,7 @@
         </div>
       </div>
       <div class="col-xs-8 col-sm-4">
-        <div class="about">
+        <div class="about mt-3">
           <img src="assets/images/django.svg" class="mx-1 mx-md-3 mx-lg-5 img-fluid" width="100" height="100"
             data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="100" data-aos-delay="50" id="django">
           <h4 class="skills-header" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
@@ -296,18 +298,9 @@
     id="projects">
 
     <div class="row text-center g-3 px-3 px-md-5">
-      <div class="col-12 col-md-7 offset-md-2">
-        <h3 class="text-center my-5 pt-5">MY WORK</h3>
-        <p class="text-center" id="portfolio-text">Here are some of my latest development projects! To view the
-          live deployed project, click "Live Project" To checkout the
-          repository, "Source Code".</p>
-        <p id="portfolioText"> To see the rest of my development work, check out my GitHub</p>
-        <p class="text-center">
-          <a href="https://github.com/alissatroiano/" target="_blank">
-            <i class="fab fa-github text-center fa-3x">
-            </i>
-          </a>
-        </p>
+      <div class="col-12 text-center">
+        <h2 class="text-center display-2 my-3 my-md-5" data-aos="fade-in" data-aos-delay="200"
+        data-aos-duration="1200">My Projects</h2>
       </div>
     </div>
 
@@ -535,11 +528,11 @@
   <!--./end-projects-->
 
   <!-- Third Parallax Image with Portfolio Text -->
-  <div class="bgimg-3 aos-init aos-animate" data-aos="zoom-out" data-aos-duration="2000" id="contact">
+  <div class="bgimg-3 aos-init aos-animate" id="contact">
     <div class="container-fluid text-center">
       <div class="row">
-        <div class="col-12">
-          <h1 class="text-center text-lighter display-1">CONTACT</h1>
+        <div class="col-12 my-0 mx-auto">
+          <h1 class="text-center text-lighter display-1" data-aos="zoom-out" data-aos-duration="2000" >CONTACT</h1>
         </div>
       </div>
       <div class="row d-block d-md-flex my-5 text-lighter" id="contact-details">

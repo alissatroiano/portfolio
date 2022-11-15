@@ -3,7 +3,7 @@
 /* Global Styles */
 :root {
   --primary: #5c9caf;
-  --salmon: rgb(255 124 95);
+  --violet: rgb(255 124 95);
   --dark-salmon: rgb(255 88 73);
   --light-salmon: rgb(255 160 122);
   --light: #fafafa;
@@ -20,6 +20,8 @@
   --yellow-2: #E9BD43;
   --yellow-3: #F5B935;
   --violet: #9E7AE6;
+  --violet-2: #7353be;
+  --dark-violet: #3f1d82;
   --red: #E83939;
 }
 
@@ -34,7 +36,7 @@ body {
 }
 
 .text-mark {
-  color: var(--salmon);
+  color: var(--violet);
   font-weight: 660;
   text-transform: uppercase;
   font-size: 1rem;
@@ -132,7 +134,7 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
 }
 
 .navbar-light .navbar-brand:hover {
-  color: var(--dark-salmon);
+  color: var(--violet);
 }
 
 .fab.fa-github ,
@@ -147,7 +149,7 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
 .fab.fa-linkedin:hover,
 .fab.fa-twitter:hover,
 .fas.fa-envelope:hover {
-  color: var(--dark-salmon);
+  color: var(--violet);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -158,7 +160,7 @@ a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
 .navbar-light .navbar-nav .nav-link:hover,
 li.nav-item:hover,
 a.nav-link:hover {
-  color: var(--dark-salmon);
+  color: var(--violet);
   /* text-shadow: 1px 1px 3px #666; */
 }
 
@@ -211,7 +213,7 @@ a#resumeBtn, .project-button {
 
 a.cta-btn:hover,
 a#resumeBtn:hover, .project-button:hover {
-  background-color: var(--dark-salmon);
+  background-color: var(--violet);
   border: none;
   text-decoration: none;
   color: #fafafa;
@@ -260,7 +262,7 @@ hr.folio-hr {
 }
 
 .btn:hover {
-  background-color: var(--dark-salmon);
+  background-color: var(--violet);
   color: var(--light);
   border: none;
 }
@@ -271,7 +273,9 @@ h1#title, .title {
   text-align: center;
   margin-top: 50px;
   font-weight: 500;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Futura-PT', sans-serif;
+  letter-spacing: 18px;
+  text-shadow: 1px 3px 6px #666;
 }
 /* 
 h1, h2, h3, h4, h5, h6 {
@@ -293,18 +297,18 @@ h2.section-title {
 h1,
 h2,
 h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Futura-PT', sans-serif;
   font-size: 1.8rem;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  text-shadow: 1px 1px 3px rgba(121, 121, 121, 0.495);
-  /* text-shadow: 1px 1px 2px #777; */
+  text-shadow: 1px 2px 3px rgba(121, 121, 121, 0.495);
+  font-weight: 500;
 }
 
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Futura-PT', sans-serif;
   text-transform: uppercase;
   font-size: 1.2rem;
 }
@@ -442,7 +446,7 @@ span#name {
   letter-spacing: 3px;
   /* color: var(--light); */
   color: var(--black);
-  font-weight: 900;
+  font-weight: 500;
   /* text-shadow: 1px 1px 6px var(--light-grey); */
 }
 
@@ -515,7 +519,7 @@ span#name {
 #typed-small-screens {
   font-family: 'Futura-PT', sans-serif;
   font-weight: 600;
-  color: var(--dark-salmon);
+  color: var(--violet);
   font-size: 1.65rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -660,7 +664,7 @@ p#about-me\ mx-3\ px-3 {
 }
 
 #skillsHeader {
-  margin: 30px 0px;
+  margin: 10px 0px;
   font-family: 'Playfair Display',
   serif;
   text-transform: uppercase;
@@ -694,7 +698,7 @@ i#python:hover, i#javascript:hover,
 i#html:hover, i#css:hover,
 i#sql:hover, i#git:hover, i#aws:hover,
 i#google:hover, i#react:hover {
-  color: var(--dark-salmon);
+  color: var(--violet);
   font-size: 3.5rem;
 }
 
@@ -909,7 +913,7 @@ a#footer-link:hover {
 
 .btn-custom {
   margin: 10px;
-  background-color: var(--salmon);
+  background-color: var(--violet);
   color: #fafafa;
 }
 
@@ -920,13 +924,13 @@ a#footer-link:hover {
 }
 
 i.fas.fa-chevron-up.fa-2x {
-  color: var(--dark-salmon);
+  color: var(--violet);
   text-shadow: 1px 1px 5px var(--grey);
   margin: 10px 15px;
 }
 
 i.fas.fa-chevron-up.fa-2x:hover {
-  color: var(--salmon);
+  color: var(--violet);
 }
 
 /*--------------------------------  Media Queries */
