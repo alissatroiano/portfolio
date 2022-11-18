@@ -617,13 +617,13 @@ p.w3-wide {
   margin: 10px 0px;
 }
 
-p#about-me\ mx-3\ px-3 {
+p#about-me.mx-.px-3 {
   margin: 10px 30px;
 }
 
 #skill-icons {
   font-size: 1.3rem;
-  color: #000;
+  color: var(--dark-grey);
   text-shadow: 3px 1px 3px darkgray;
 }
 
@@ -771,6 +771,7 @@ p.text-muted {
 
 #contact {
   min-height: 100vh;
+  max-width: 100%;
   overflow: hidden;
 }
 
