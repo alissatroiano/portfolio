@@ -267,12 +267,11 @@ hr.folio-hr {
 
 /*-------------------------------- Headers and text */
 h1#title, .title {
-	letter-spacing: 3px;
+	letter-spacing: 5px;
   text-align: center;
   margin-top: 50px;
   font-weight: 500;
   font-family: 'Futura-PT', sans-serif;
-  letter-spacing: 18px;
   text-shadow: 1px 3px 6px #666;
 }
 
@@ -330,7 +329,6 @@ span#name {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  letter-spacing: 2px;
   margin: 0px auto;
   text-align: center;
 }
@@ -540,7 +538,7 @@ span#name {
 
 .text-lighter.text-center.display-1 {
   font-family: 'Futura-PT', sans-serif;
-  letter-spacing: 30px;
+  letter-spacing: 3px;
 }
 
 .w3-wide {
