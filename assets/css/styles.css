@@ -44,8 +44,10 @@
 	font-family: 'Poppins', sans-serif;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	font-weight: 200;
-	text-shadow: -8px 8px 7.5px var(--grey);
+	font-weight: 250;
+	text-shadow: -3px -3px 6px #858585a5;
+	color: var(--dark);
+	opacity: 0.85;
 }
 
 .btn-outline-purple {
