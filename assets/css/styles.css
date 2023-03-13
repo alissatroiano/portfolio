@@ -155,7 +155,7 @@ a.dropdown-item {
 p.about {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1rem;
-	line-height: 2.5;
+	line-height: 2;
 }
 
 img#portfolio-img {
@@ -163,6 +163,15 @@ img#portfolio-img {
 	height: auto;
 	width: 300px;
 }
+
+section#about {
+	width: 100%;
+	min-height: 50vh;
+}
+
+#aboutCard {
+}
+
 /* --------------- Skills */
 
 #skills {
