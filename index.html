@@ -15,10 +15,12 @@
   <!--Load Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
     integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-  <!--Load Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
+ <!--Google Fonts-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link
+     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+     rel="stylesheet">
   <!--AOS Animations -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
   </script>
@@ -30,55 +32,66 @@
 </head>
 
 <body>
-  <!-- Navbar (Fixed top) -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-blur fixed-top shadow-lg" id="navBar">
+  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-main shadow-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#home"><i class="fas fa-code"></i> Alissa Troiano</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="assets/resume.pdf" target="_blank">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          <a target="_blank" href="https://www.github.com/alissatroiano/"><i class="fab fa-github mx-1"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/alissatroiano/"><i class="fab fa-linkedin mx-1"></i></a>
-          <a target="_blank" href="https://www.twittter.com/in/alissamtroiano/">
-            <i class="fab fa-twitter mx-1"></i></a>
-          <a target="_blank" href="mailto:alissatroiano@alissatroiano.com">
-            <i class="fas fa-envelope mx-1"></i></a>
-        </span>
-      </div>
+        <a class="navbar-brand " href="#"><i class="fas fa-code"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Contact</a>
+                </li>
+                <!-- <li class="nav-item dropup">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                        aria-expanded="false">Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Static</a></li>
+                        <li><a class="dropdown-item" href="#">Full-Stack</a></li>
+                        <li><a class="dropdown-item" href="#">Hackathons</a></li>
+                        <li><a class="dropdown-item" href="#">Open-Source</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+            <ul class="navbar-nav d-flex ms-auto text-light list-group list-group-horizontal">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/alissatroiano" target="_blank">
+                        <i class="fab fa-github mx-3"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://linkedin.com/in/alissatroiano" target="_blank">
+                        <i class="fab fa-linkedin mx-3"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/alissatroiano" target="_blank">
+                        <i class="fab fa-twitter mx-3"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/alissatroiano" target="_blank">
+                        <i class="fas fa-envelope mx-3"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
-
+</nav>
   <!-- Jumbotron -->
   <section class="jumbotron" id="home">
     <div class="container-fluid jumbotron-container d-flex align-items-center my-0 mx-auto py-5" id="home">
@@ -724,22 +737,7 @@
     <i class="fas fa-chevron-up fa-2x"></i>
   </button>
 
-  <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
 
-    <div class="w3-xlarge w3-section">
-
-      <a target="_blank" href="https://www.github.com/alissatroiano/"><i class="fab fa-github mx-1"></i></a>
-      <a target="_blank" href="https://www.linkedin.com/in/alissatroiano/"><i class="fab fa-linkedin mx-1"></i></a>
-      <a target="_blank" href="https://www.twittter.com/in/alissamtroiano/">
-        <i class="fab fa-twitter mx-1"></i></a>
-      <a target="_blank" href="mailto:alissatroiano@alissatroiano.com">
-        <i class="fas fa-envelope mx-1"></i></a>
-
-    </div>
-    <p id="footer-text">2022 <a id="footer-link" href="https://www.github.com/alissatroiano"
-        title="github.com/alissatroiano" target="_blank" class="w3-hover-text-grey">Alissa Troiano</a></p>
-  </footer>
 
   <script type="text/javascript">
     emailjs.init('user_zf3vBJuHYSbtEgwwo7YWb')
