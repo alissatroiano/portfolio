@@ -67,6 +67,12 @@ nav {
   color: #fafafa;
 }
 
+.text-lighter.text-center.display-1 {
+  font-family: 'Futura-PT', sans-serif;
+  letter-spacing: 30px;
+  margin-top: 120px;
+}
+
 .text-lighter {
   font-family: 'Futura PT', sans-serif;
   letter-spacing: 10px;
@@ -74,6 +80,7 @@ nav {
   font-weight: 450;
   text-shadow: 1px 1px 3px var(--dark-grey);
 }
+
 /*--------------------------------Main Page Content */
 html {
   overflow: auto;
@@ -200,7 +207,6 @@ a.w3-bar-item.w3-button:hover {
 #myNavbar {
   background-color: rgba(255, 255, 255, 0.8);
 }
-
 
 a.cta-btn,
 a#resumeBtn, .project-button {
@@ -581,7 +587,6 @@ hr.project-divider {
   justify-items: center;
 }
 
-
 .layout__item--body {
   margin-left: 0;
   flex-grow: 9999;
@@ -823,7 +828,8 @@ p.text-muted {
   margin-bottom: 20px;
 }
 
-.img-wrapper {
+.img-wrapper,
+.img-wrapper--reverse {
   max-width: 100%;
   position: relative;
   display: flex;
@@ -831,18 +837,23 @@ p.text-muted {
   overflow: hidden;
 }
 
+.img-wrapper,
 .img-wrapper--reverse {
-  justify-content: space-between;
+  width: 800px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  height: auto;
+  overflow: hidden;
 }
 
+.img-wrapper:hover,
 .img-wrapper--reverse:hover  {
-  transform: matrix3d(0.94, 0, 0.34, 0.00025, 0, 1, 0, 0, 0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(30px);
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
 }
-
-.img-wrapper:hover {
-  transform: matrix3d(0.94, 0, 0.34, -0.00025, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(-30px);
-}
-
 
 /*-------------------------------- Contact Section */
 
@@ -995,33 +1006,8 @@ i.fas.fa-chevron-up.fa-2x:hover {
 
 /*--------------------------------  Media Queries */
 
-@media only screen and (max-width: 768px)  {
-  .img-wrapper {
-    width: 800px;
-    background-color: transparent;
-    border: none;
-    display: flex;
-    max-width: 100%;
-    position: relative;
-    height: auto;
-    overflow: hidden;
-    filter: grayscale(100%);
-  }
-  
-  .img-wrapper:hover,
-  .img-wrapper--reverse:hover  {
-    transform: scale(1.05);
-    transition: all 0.5s ease-in-out;
-  }
 
-  .text-lighter.text-center.display-1 {
-    font-family: 'Futura-PT', sans-serif;
-    letter-spacing: 30px;
-    margin-top: 120px;
-  }
-    }
-
-  @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  @media only screen and (min-width: 768px) {
       h1.text-center.text-lighter.display-1 {
         padding-top: 50px;
       }
@@ -1037,5 +1023,12 @@ i.fas.fa-chevron-up.fa-2x:hover {
       .bgimg-3 {
         background-attachment: scroll;
         min-height: 450px;
+      }
+      .img-wrapper--reverse:hover  {
+        transform: matrix3d(0.94, 0, 0.34, 0.00025, 0, 1, 0, 0, 0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(30px);
+      }
+      
+      .img-wrapper:hover {
+        transform: matrix3d(0.94, 0, 0.34, -0.00025, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(-30px);
       }
     }
