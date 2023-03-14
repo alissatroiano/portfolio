@@ -65,7 +65,7 @@
 #welcome {
 	overflow: hidden;
 	background-color: rgb(10, 10, 10);
-	height: 100vh;
+	min-height: 100vh;
 }
 
 ul#nav {
@@ -303,4 +303,10 @@ section#about {
 	max-width: 100%;
 	height: auto;
 	width: fit-content;
+  }
+
+  /* *************** Projects Section */
+
+.modal-content {
+	padding: 10px;
   }

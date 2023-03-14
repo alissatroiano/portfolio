@@ -25,7 +25,6 @@
 </head>
 
 <body>
-
     <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-main">
         <div class="container-fluid">
             <a class="navbar-brand " href="#"><i class="fas fa-code"></i></a>
@@ -87,7 +86,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid" id="welcome">
+    <section class="container-fluid" id="welcome">
         <div class="row">
             <div class="col-12">
                 <div id="nav">
@@ -125,8 +124,7 @@
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
 
   <section class="about my-0 mx-auto pb-5" id="about">
     <div class="container-fluid shadow-lg col-xxl-8 px-4 py-5" id="aboutCard">
@@ -375,6 +373,14 @@
 
     </section>
 
+    <script>
+        const navLinks = document.querySelectorAll('.navbar-nav')
+const menuToggle = document.getElementById('navbarText')
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+}
+    </script>
 
     <script src="assets/js/welcome.js" type="text/javascript"></script>
     <!--Bootstrap Scripts Load-->
@@ -383,5 +389,4 @@
         crossorigin="anonymous"></script>
 
 </body>
-
 </html>
