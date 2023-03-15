@@ -32,9 +32,11 @@
 </head>
 
 <body>
+
+  <!--Fixed Bottom Nav-->
   <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-main shadow-lg">
     <div class="container-fluid">
-        <a class="navbar-brand " href="#"><i class="fas fa-code"></i></a>
+        <a class="navbar-brand"><i class="fas fa-code"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,6 +58,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link text-main"  href="assets/resume.pdf" target="_blank" id="resume-nav-link">
+                    <i class="fas fa-download"></i>
+                    </a>
+                 </li>
                 <!-- <li class="nav-item dropup">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                         aria-expanded="false">Projects</a>
@@ -92,6 +99,13 @@
         </div>
     </div>
 </nav>
+  <!-- Back to top button -->
+  <!-- <div class="cta-top">
+  <button type="button" class="btn-trans" id="btn-back-to-top">
+    <a href="" class="cta-link">Resume</a> 
+  </button>
+</div> -->
+<!--./fixed-bottom-nav-->
 
 
   <!-- Jumbotron -->
@@ -137,8 +151,9 @@
   <!-- end-jumbotron -->
 
   <!-- Container (About Section) -->
-  <section class="container-fluid my-0 mx-auto p-3 mt-lg-4" id="about">
-    <div class="row my-3 my-md-4">
+  <section class="container-fluid my-0 mx-auto" id="about">
+    <div class="row">
+    <div class="col-12 p-3 mt-lg-4">
         <div class="card profile-card pb-5">
           <!--Header-->
           <div class="card-body border-0 profile-header">
@@ -176,9 +191,12 @@
   <!--Skills Section-->
   <section class="container-fluid skills" id="skills">
     <div class="row">
-      <div class="col-12 mt-5 pt-3 text-center">
-        <h2 class="display-2 title mt-3 mt-md-5 py-3">SKILLS</h2>
+    <div class="col-12">
+      <h2 class="display-2 my-5 title ms-sm-4 ms-lg-5">My Stack</h2>
+      <div class="ms-sm-4 ms-lg-5 mt-2 mt-md-3">
+        <hr>
       </div>
+    </div> 
     </div>
 
     <div class="wrapper py-3">
@@ -487,7 +505,7 @@
 
       </defs>
     </svg>
-
+  </div>
   </section>
   <!--./end-skills-section-->
 
