@@ -1,7 +1,6 @@
 /* Global Styles */
 :root {
   --primary: #5c9caf;
-  --violet: rgb(255 124 95);
   --dark-salmon: rgb(255 88 73);
   --light-salmon: rgb(255 160 122);
   --light: #fafafa;
@@ -19,7 +18,6 @@
   --yellow-3: #F5B935;
   --purple: rgb(156, 70, 218);
 	--purple2:rgb(197, 148, 235);
-
   --violet: #9E7AE6;
   --violet-2: #7353be;
   --dark-violet: #3f1d82;
@@ -42,7 +40,6 @@ body {
 
 .bg-main {
 	background-color: #05020cd1;
-	/* box-shadow: 1px 1px 10px var(--grey-2); */
 }
 
 .text-mark {
@@ -69,6 +66,10 @@ body {
   font-family: 'Futura-PT', sans-serif;
   letter-spacing: 30px;
   margin-top: 120px;
+}
+
+.text-grey {
+  color: var(--dark-grey);
 }
 
 .text-lighter {
@@ -113,6 +114,10 @@ hr {
   opacity: 1;
 }
 
+.subheading {
+  letter-spacing: 80;
+  font-weight: 400;
+}
 
 /*------------- Fixed Bottom Nav */
 .nav-link,
@@ -221,10 +226,7 @@ h2,
 h3 {
   font-family: 'Futura-PT', sans-serif;
   font-size: 1.8rem;
-  letter-spacing: 4px;
   text-transform: uppercase;
-  text-shadow: 1px 2px 3px rgba(121, 121, 121, 0.495);
-  font-weight: 500;
 }
 
 h4,
@@ -232,7 +234,6 @@ h5,
 h6 {
   font-family: 'Futura-PT', sans-serif;
   text-transform: uppercase;
-  font-size: 1.2rem;
 }
 
 h1#title {
@@ -241,13 +242,6 @@ h1#title {
   margin: 0 auto;
   /* width: fit-content; */
   color: var(--dark);
-}
-
-
-h6 {
-  font-family: 'Playfair Display', serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 #subtitle {
@@ -264,38 +258,12 @@ p {
   font-family: 'Futura-PT', sans-serif;
 }
 
-span#name {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin: 0px auto;
-  text-align: center;
-}
-
-.w3-black {
-  padding: 10px 30px;
-  margin: 0px auto;
-}
-
-.w3-text-white.w3-wide {
-   font-family: 'Futura-PT',
-     sans-serif;
-   text-transform: uppercase;
-    letter-spacing: 2;
-    text-shadow: 1px 3px 6px #777474;
-    font-size: 2.8rem;
-
-}
-
 /* -------------------------------------- Jumbotron -------------------------------------- */
 
 /* https://css-tricks.com/perfect-full-page-background-image/ */
 
 
 /* -------------------------------------- Jumbotron -------------------------------------- */
-
 /* https://css-tricks.com/perfect-full-page-background-image/ */
 .jumbotron-container {
 	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
@@ -304,7 +272,6 @@ span#name {
   -webkit-animation: fadein 5s;
   -moz-animation: fadein 5s;
   -o-animation: fadein 5s;
-  /* background-color:  rgb(227, 71, 57); */
   background-size: cover;
   background-attachment: fixed;
   backdrop-filter: blur(10px);
@@ -540,22 +507,35 @@ hr.project-divider {
   margin-right: auto;
   flex-grow: 1;
 }
+
 /*-------------------------------- About Section */
-p.w3-wide {
-  font-family: 'Futura-PT', sans-serif;
-  font-size: 1.3rem;
-  letter-spacing: 5px;
-  margin: 10px 0px;
+#about {
+	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75), rgba(255, 255, 255, 0.5)), url('../images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  max-width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
 }
 
-p#about-me.mx-.px-3 {
-  margin: 10px 30px;
-}
+h5.role-heading {
+  letter-spacing: 3.5px;
+  color: var(--purple);
 
-#skill-icons {
-  font-size: 1.3rem;
-  color: var(--dark-grey);
-  text-shadow: 3px 1px 3px darkgray;
 }
 
 #portrait2 {
@@ -564,13 +544,67 @@ p#about-me.mx-.px-3 {
   border-radius: 50%;
 }
 
-#about-me {
-  font-family: 'Futura-PT', sans-serif;
-  font-size: 1.1rem;
-  letter-spacing: .2px;
-  margin: 0px 30px;
+.profile-card {
+	/* Box shadow #71 copied from https://getcssscan.com/css-box-shadow-examples */
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+	background-color: #fafafa;
+	max-width: 500px;
+	margin: auto;
+	text-align: center;
 }
 
+.profile-about p {
+	color: #0a0a0a;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 1rem;
+	margin: 30px 50px;
+}
+
+.profile-card .profile-header {
+	text-align: center;
+	position: relative;
+	min-width: 100%;
+    height: auto;
+}
+
+.profile-card .profile-header a > img {
+	width: 150px;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.fab {
+	margin: 0px 10px;
+	color: #0a0a0a;
+}
+
+.fab:hover {
+	color: #2e6066;
+}
+
+.profile-socials {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 50px;
+}
+
+.icons {
+	margin: 0px 40px;
+}
+
+a.resume-link {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+a.resume-link:hover {
+  color: var(--violet);
+}
 
 /* --------------- Skills */
 
