@@ -148,18 +148,19 @@ a.dropdown-item {
 
 a.cta-btn,
 a#resumeBtn, .project-button {
-  background-color: rgba(4, 6, 7, 0.891);
+  background-color: var(--dark-violet);
   color: #fafafa;
-  box-shadow: 3px 3px 6px #666;
+  box-shadow: 2px -2px 5px var(--grey);
   padding: 12px;
   border: none;
   border-radius: 5px;
   text-decoration: none;
   font-family: 'Futura-PT', sans-serif;
   text-transform: uppercase;
-  letter-spacing: .5px;
+  letter-spacing: 1.25px;
   width: fit-content;
   margin: 0 auto;
+  font-size: 1.2rem;
 }
 
 a.cta-btn:hover,
@@ -599,7 +600,6 @@ a.resume-link {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  font-weight: 200;
 }
 
 a.resume-link:hover {
