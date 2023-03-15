@@ -39,7 +39,7 @@ body {
 }
 
 .bg-main {
-	background-color: #05020cd1;
+	background-color: #070213c3;
 }
 
 .text-mark {
@@ -66,6 +66,11 @@ body {
   font-family: 'Futura-PT', sans-serif;
   letter-spacing: 30px;
   margin-top: 120px;
+}
+
+.section-title {
+  letter-spacing: 2.35px;
+  color: var(--dark-grey);
 }
 
 .text-grey {
@@ -107,27 +112,30 @@ strong {
 }
 
 hr {
-  border: 1px solid #666;
-  width: 50px;
-  padding: 1px 0px;
-  background-color: #666;
+  border: 1px solid var(--violet);
+  width: 75%;
   opacity: 1;
 }
 
 .subheading {
-  letter-spacing: 80;
   font-weight: 400;
 }
 
 /*------------- Fixed Bottom Nav */
-.nav-link,
+a.nav-link,
 #navbarCollapse,
 .navbar-dark .navbar-nav .nav-link {
 	color: var(--light);
 }
 
-.nav-link:hover {
-	color: var(--purple);
+a.nav-link, #navbarCollapse, .navbar-dark .navbar-nav .nav-link {
+  color: var(--light);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--violet);
+  /* text-shadow: 1px -1px 12px rgb(134, 37, 203); */
+  text-decoration: line-through;
 }
 
 nav.navbar {
@@ -135,7 +143,6 @@ nav.navbar {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 300;
-  box-shadow: 0px 1px 10px #999;
 }
 
 .dropup .dropdown-menu[data-bs-popper] {
@@ -220,8 +227,6 @@ hr.folio-hr {
 }
 
 /*-------------------------------- Headers and text */
-
-
 h1,
 h2,
 h3 {
@@ -238,10 +243,7 @@ h6 {
 }
 
 h1#title {
-  /* background-color: var(--black); */
-  /* padding: 20px 5px; */
   margin: 0 auto;
-  /* width: fit-content; */
   color: var(--dark);
 }
 
@@ -259,185 +261,74 @@ p {
   font-family: 'Futura-PT', sans-serif;
 }
 
-/* -------------------------------------- Jumbotron -------------------------------------- */
+/* ------------- Welcome */
 
-/* https://css-tricks.com/perfect-full-page-background-image/ */
-
-
-/* -------------------------------------- Jumbotron -------------------------------------- */
-/* https://css-tricks.com/perfect-full-page-background-image/ */
-.jumbotron-container {
-	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75), rgba(255, 255, 255, 0.5)), url('../images/bg.jpg') no-repeat center center fixed;
-  animation: fadein 5s;
-  -webkit-animation: fadein 5s;
-  -moz-animation: fadein 5s;
-  -o-animation: fadein 5s;
-  background-size: cover;
-  background-attachment: fixed;
-  backdrop-filter: blur(10px);
-  overflow: hidden;
-  max-width: 100%;
-  height: 100vh;
-  min-height: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
+/* ---------- Cover Page Navigation */
+#welcome {
+	overflow: auto;
+	background-color: rgb(10, 10, 10);
+	height: 100vh;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+ul#nav {
+	list-style: none;
 }
 
-@-moz-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+#nav {
+	display: flex;
+	flex-direction: column;
+	padding: clamp(2rem, 5vw, 6rem);
+	margin-bottom: 20vh;
+	height: auto;
 }
 
-.jumbotron-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  overflow: visible;
+#nav>li {
+	color: var(--light);
+	opacity: .65;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1.85px;
+	font-size: clamp(3rem, 6vw, 6rem);
+	font-weight: 200;
+	text-decoration: none;
+	position: relative;
+	list-style: none;
 }
 
-.jumbotron-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  overflow: visible;
+#nav>li:hover {
+	color: var(--purple2);
+	opacity: 1;
+	letter-spacing: 3px;
+	font-weight: 600;
 }
 
-#home-text {
-  font-family: 'Futura-PT', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  letter-spacing: 3px;
-  /* color: var(--light); */
-  color: var(--black);
-  font-weight: 500;
-  /* text-shadow: 1px 1px 6px var(--light-grey); */
+#nav>li>span {
+	display: block;
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid transparent;
+	position: relative;
+	z-index: 2;
 }
 
-.typewriter {
-    width: auto;
-    border-right: .15em solid var(--red); /* The typwriter cursor */
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap; Keeps the content on a single line
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    /* animation:  typing 3.5s steps(100, end), blink-caret .75s step-end infinite; */
-    animation: typing 4.5s steps(100,end), blink-caret .75s step-end infinite;
-    }
-
-@keyframes typing{
-  from {max-width: 0}
-  to {max-width: 100%}
+#nav>li:hover>span {
+	border-top-color: var(--purple);
+	border-bottom-color: var(--purple);
 }
 
-@keyframes blink-caret{
-  from, to {border-color: transparent}
+#nav>li>img {
+	position: absolute;
+	opacity: 0;
+	transform: translate(-50%, -50%) scale(0.5);
+	transition: transform 250ms, opacity 250ms;
+	pointer-events: none;
+	width: min(40vw, 500px);
 }
 
-#typed {
-  text-shadow: 1px 1px 3px rgb(40, 39, 39);
-  font-weight: 500;
-  font-size: 1.2rem;
+#nav>li:hover>img {
+	opacity: .35;
+	transform: translate(-50%, -50%) scale(1);
 }
 
-
-/* -------------------------------------- Jumbotron -------------------------------------- */
-#home-text {
-  font-family: 'Futura-PT', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  letter-spacing: 3px;
-  /* color: var(--light); */
-  color: var(--black);
-  font-weight: 900;
-  /* text-shadow: 1px 1px 6px var(--light-grey); */
-}
-
-.typewriter {
-    width: auto;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap; Keeps the content on a single line
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    /* animation:  typing 3.5s steps(100, end), blink-caret .75s step-end infinite; */
-    animation: typing 4.5s steps(100,end), blink-caret .75s step-end infinite;
-    }
-
-@keyframes typing{
-  from {max-width: 0}
-  to {max-width: 100%}
-}
-
-@keyframes blink-caret{
-  from, to {border-color: transparent}
-}
-
-#typed {
-  text-shadow: 1px 1px 3px rgb(40, 39, 39);
-  font-weight: 500;
-  font-size: 1.2rem;
-}
-
-#typed-small-screens {
-  font-family: 'Futura-PT', sans-serif;
-  font-weight: 600;
-  color: var(--violet);
-  font-size: 1.65rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-/*-------------------------------- Background Images */
-/* Create a Parallax Effect - copied from w3schools.com */
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) - copied from w3schools.com */
-.bgimg-1 {
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)),
-  url('../images/deskspace.jpg') no-repeat center fixed;
-  background-size: cover;
-  min-height: 100vh;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("../images/bg4.png");
-  min-height: 400px;
-}
 
 /* Third image (Contact) */
 .bgimg-3 {
@@ -448,14 +339,6 @@ p {
 .text-lighter.text-center.display-1 {
   font-family: 'Futura-PT', sans-serif;
   letter-spacing: 3px;
-}
-
-.w3-wide {
-  letter-spacing: 10px;
-}
-
-.w3-hover-opacity {
-  cursor: pointer;
 }
 
 hr.project-divider {
@@ -480,8 +363,6 @@ hr.project-divider {
 
 .project-item:nth-child(even) {
   flex-direction: row-reverse;
-  /* background: rgba( 255, 255, 255, 0.5 ); */
-  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
   backdrop-filter: blur( 10px );
   -webkit-backdrop-filter: blur( 10px );
   border-radius: 10px;
@@ -511,7 +392,6 @@ hr.project-divider {
 
 /*-------------------------------- About Section */
 #about {
-	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75), rgba(255, 255, 255, 0.5)), url('../images/bg.jpg') no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
@@ -556,44 +436,22 @@ h5.role-heading {
 
 .profile-about p {
 	color: #0a0a0a;
-	margin-top: 50px;
 	text-align: center;
 	font-size: 1rem;
-	margin: 30px 50px;
+	margin: 30px 40px;
 }
 
 .profile-card .profile-header {
 	text-align: center;
 	position: relative;
 	min-width: 100%;
-    height: auto;
+  height: auto;
 }
 
 .profile-card .profile-header a > img {
 	width: 150px;
 	height: 100%;
 	border-radius: 50%;
-}
-
-.fab {
-	margin: 0px 10px;
-	color: #0a0a0a;
-}
-
-.fab:hover {
-	color: #2e6066;
-}
-
-.profile-socials {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin: 0px 50px;
-}
-
-.icons {
-	margin: 0px 40px;
 }
 
 a.resume-link {
@@ -607,7 +465,6 @@ a.resume-link:hover {
 }
 
 /* --------------- Skills */
-
 #skills {
 	align-content: center;
 	overflow: hidden;
@@ -625,7 +482,7 @@ a.resume-link:hover {
     background-size: cover;   
 }
   
-  .slider {
+.slider {
 	display: flex;
 	overflow: hidden;
 	user-select: none;
