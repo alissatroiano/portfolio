@@ -18,6 +18,8 @@
   --yellow-3: #F5B935;
   --purple: rgb(156, 70, 218);
 	--purple2:rgb(206, 154, 245);
+  --purple3: rgb(221, 173, 255);
+
   --violet: #9E7AE6;
   --violet-2: #7353be;
   --dark-violet: #3f1d82;
@@ -32,6 +34,10 @@
 html,
 body {
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
 }
 
 .bg-gray {
@@ -88,10 +94,25 @@ body {
 
 .text-lighter {
   font-family: 'Futura PT', sans-serif;
-  letter-spacing: 10px;
   color: var(--light-grey);
   font-weight: 450;
   text-shadow: 1px 1px 3px var(--dark-grey);
+}
+
+.glow {
+  color: #fff;
+  text-align: center;
+  animation: glow 1.3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow:  0px 0px 7px #979797, 0 0 20px #979797, 0 0 10px #8e20f5, 0 0 20px #8e20f5, 0 0 25px #8e20f5, 0 0 30px #8e20f5, 0 0 35px #8e20f5;
+  }
+  
+  to {
+    text-shadow: 0 0 7px #979797, 0 0 15px #5709b0, 0 0 20px #5709b0, 0 0 25px #5709b0, 0 0 30px #5709b0, 0 0 70px #5709b0, 0 0 40px #5709b0;
+  }
 }
 
 /*--------------------------------Main Page Content */
@@ -131,6 +152,16 @@ hr {
 }
 
 /*------------- Fixed Bottom Nav */
+.navbar-dark .navbar-brand {
+  color: var(--light-grey);
+}
+
+.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+  color: var(--violet);
+  text-decoration: line-through;
+}
+
+
 a.nav-link,
 #navbarCollapse,
 .navbar-dark .navbar-nav .nav-link {
@@ -169,14 +200,17 @@ a#resumeBtn, .project-button {
   box-shadow: 2px -2px 5px var(--grey);
   padding: 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   text-decoration: none;
   font-family: 'Futura-PT', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.25px;
-  width: fit-content;
   margin: 0 auto;
   font-size: 1.2rem;
+}
+
+a>button.project-button {
+  text-decoration: none;
 }
 
 a.cta-btn:hover,
@@ -895,8 +929,6 @@ i.fas.fa-chevron-up.fa-2x:hover {
 }
 
 /*--------------------------------  Media Queries */
-
-
   @media only screen and (min-width: 768px) {
       h1.text-center.text-lighter.display-1 {
         padding-top: 50px;
@@ -913,6 +945,13 @@ i.fas.fa-chevron-up.fa-2x:hover {
       .bgimg-3 {
         background-attachment: scroll;
         min-height: 450px;
+      }
+      .project-item:nth-child(odd) {
+        /* background: rgba( 255, 255, 255, 0.25 ); */
+        backdrop-filter: blur( 5px );
+        -webkit-backdrop-filter: blur( 5px );
+        border-radius: 10px;
+        text-align: end;
       }
       .img-wrapper--reverse:hover  {
         transform: matrix3d(0.94, 0, 0.34, 0.00025, 0, 1, 0, 0, 0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(30px);
