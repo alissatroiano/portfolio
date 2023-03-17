@@ -4,7 +4,7 @@
 var body = document.getElementById("welcome")
 var nav = document.getElementById("nav");
 
-for(let text of nav.getElementsByClassName("jumbotron-list")) {  
+for(const text of nav.getElementsByTagName("li")) {  
   text.onmousemove = e => {
     const rect = text.getBoundingClientRect(),    
           img = text.querySelector("img");
