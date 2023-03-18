@@ -19,7 +19,6 @@
   --purple: rgb(156, 70, 218);
 	--purple2:rgb(206, 154, 245);
   --purple3: rgb(221, 173, 255);
-
   --violet: #9E7AE6;
   --violet-2: #7353be;
   --dark-violet: #3f1d82;
@@ -29,6 +28,16 @@
 	--duration: 60s;
 	--scroll-start: 0;
 	--scroll-end: calc(-100% - var(--gap));
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--light);
+  background: var(--violet);
+}
+
+::selection {
+  color: var(--light);
+  background: var(--violet);
 }
 
 html,
