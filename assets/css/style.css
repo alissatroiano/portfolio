@@ -1,7 +1,6 @@
 /* Global Styles */
 :root {
   --primary: #5c9caf;
-  --violet: rgb(255 124 95);
   --dark-salmon: rgb(255 88 73);
   --light-salmon: rgb(255 160 122);
   --light: #fafafa;
@@ -17,6 +16,9 @@
   --yellow-1: #FDD935;
   --yellow-2: #E9BD43;
   --yellow-3: #F5B935;
+  --purple: rgb(156, 70, 218);
+	--purple2:rgb(206, 154, 245);
+  --purple3: rgb(221, 173, 255);
   --violet: #9E7AE6;
   --violet-2: #7353be;
   --dark-violet: #3f1d82;
@@ -28,9 +30,14 @@
 	--scroll-end: calc(-100% - var(--gap));
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+::-moz-selection { /* Code for Firefox */
+  color: var(--light);
+  background: var(--violet);
+}
+
+::selection {
+  color: var(--light);
+  background: var(--violet);
 }
 
 html,
@@ -38,8 +45,16 @@ body {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 .bg-gray {
   background-color: var(--light-grey);
+}
+
+.bg-main {
+	background-color: #0a0a0acf;
 }
 
 .text-mark {
@@ -49,9 +64,13 @@ body {
   font-size: 1rem;
 }
 
-nav {
-  font-family: 'Futura-PT', sans-serif;
-  text-transform: uppercase;
+#resume-nav-link {
+  color: var(--purple2);
+  font-weight: 400;
+}
+
+#resume-nav-link:hover {
+  color: var(--violet);
 }
 
 .bg-blur {
@@ -73,12 +92,36 @@ nav {
   margin-top: 120px;
 }
 
+.section-title {
+  letter-spacing: 2.35px;
+  color: var(--dark-grey);
+}
+
+.text-grey {
+  color: var(--dark-grey);
+}
+
 .text-lighter {
   font-family: 'Futura PT', sans-serif;
-  letter-spacing: 10px;
   color: var(--light-grey);
   font-weight: 450;
   text-shadow: 1px 1px 3px var(--dark-grey);
+}
+
+.glow {
+  color: #fff;
+  text-align: center;
+  animation: glow 1.3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow:  0px 0px 7px #979797, 0 0 20px #979797, 0 0 10px #8e20f5, 0 0 20px #8e20f5, 0 0 25px #8e20f5, 0 0 30px #8e20f5, 0 0 35px #8e20f5;
+  }
+  
+  to {
+    text-shadow: 0 0 7px #979797, 0 0 15px #5709b0, 0 0 20px #5709b0, 0 0 25px #5709b0, 0 0 30px #5709b0, 0 0 70px #5709b0, 0 0 40px #5709b0;
+  }
 }
 
 /*--------------------------------Main Page Content */
@@ -108,120 +151,75 @@ strong {
 }
 
 hr {
-  border: 1px solid #666;
-  width: 50px;
-  padding: 1px 0px;
-  background-color: #666;
+  border: 1px solid var(--violet);
+  width: 75%;
   opacity: 1;
 }
 
-a.w3-button.w3-black.w3-padding-large.w3-margin-top.aos-init.aos-animate {
-  font-family: 'Futura-PT', sans-serif;
+.subheading {
+  font-weight: 400;
 }
 
-.nav-top {
-  top:0
+/*------------- Fixed Bottom Nav */
+.navbar-dark .navbar-brand {
+  color: var(--light-grey);
 }
 
-.w3-bar{
-  width:100%;
-  overflow:hidden
-}
-
-.nav-bar {
-  width:100%;
-  overflow:hidden;
-}
-
-.w3-center 
-.w3-bar{
-  display:inline-block;
-  width:auto
-}
-
-/*----------------------------------Navbar */
-.navbar-light .navbar-brand {
-  font-size: 1.4rem;
-  letter-spacing: 1px;
-  color: #000;
-  text-shadow: 1px 3px 5px rgba(119, 119, 119, 0.605);
-}
-
-.navbar-light .navbar-brand:hover {
+.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
   color: var(--violet);
+  text-decoration: line-through;
 }
 
-.fab.fa-github ,
-.fab.fa-linkedin ,
-.fab.fa-twitter ,
-.fas.fa-envelope  {
-  padding: 10px 5px;
-  font-size: 1.36rem;
+
+a.nav-link,
+#navbarCollapse,
+.navbar-dark .navbar-nav .nav-link {
+	color: var(--light);
 }
 
-.fab.fa-github:hover,
-.fab.fa-linkedin:hover,
-.fab.fa-twitter:hover,
-.fas.fa-envelope:hover {
+a.nav-link, #navbarCollapse, .navbar-dark .navbar-nav .nav-link {
+  color: var(--light);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
   color: var(--violet);
+  /* text-shadow: 1px -1px 12px rgb(134, 37, 203); */
+  text-decoration: line-through;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: rgb(16, 12, 12);
-  letter-spacing: 1px;
+nav.navbar {
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 300;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-li.nav-item:hover,
-a.nav-link:hover {
-  color: var(--violet);
-  /* text-shadow: 1px 1px 3px #666; */
+.dropup .dropdown-menu[data-bs-popper] {
+	background-color: var(--dark-2);
 }
 
-a.w3-bar-item.w3-button { 
- font-size: 1.1rem;
- font-weight: 400;
- margin-top: 5px;
-/* color: #030303; */
- font-family: 'Playfair Display',
-  serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 1px #777;
-}
-
-a.w3-bar-item.w3-button:hover {
-  text-decoration-line: line-through;
-  background-color: transparent;
-}
-
-.w3-bar-item {
-   background-color: transparent;
-}
-
-.fa.fa-bars {
-  font-size: 2rem;
-  background-color: transparent;
-}
-
-#myNavbar {
-  background-color: rgba(255, 255, 255, 0.8);
+a.dropdown-item {
+	color: var(--light);
 }
 
 a.cta-btn,
 a#resumeBtn, .project-button {
-  background-color: rgba(4, 6, 7, 0.891);
+  background-color: var(--dark-violet);
   color: #fafafa;
-  box-shadow: 3px 3px 6px #666;
+  box-shadow: 2px -2px 5px var(--grey);
   padding: 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   text-decoration: none;
   font-family: 'Futura-PT', sans-serif;
   text-transform: uppercase;
-  letter-spacing: .5px;
-  width: fit-content;
+  letter-spacing: 1.25px;
   margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+a>button.project-button {
+  text-decoration: none;
 }
 
 a.cta-btn:hover,
@@ -281,17 +279,12 @@ hr.folio-hr {
 }
 
 /*-------------------------------- Headers and text */
-
-
 h1,
 h2,
 h3 {
   font-family: 'Futura-PT', sans-serif;
   font-size: 1.8rem;
-  letter-spacing: 4px;
   text-transform: uppercase;
-  text-shadow: 1px 2px 3px rgba(121, 121, 121, 0.495);
-  font-weight: 500;
 }
 
 h4,
@@ -299,22 +292,11 @@ h5,
 h6 {
   font-family: 'Futura-PT', sans-serif;
   text-transform: uppercase;
-  font-size: 1.2rem;
 }
 
 h1#title {
-  /* background-color: var(--black); */
-  /* padding: 20px 5px; */
   margin: 0 auto;
-  /* width: fit-content; */
   color: var(--dark);
-}
-
-
-h6 {
-  font-family: 'Playfair Display', serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 #subtitle {
@@ -331,212 +313,74 @@ p {
   font-family: 'Futura-PT', sans-serif;
 }
 
-span#name {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin: 0px auto;
-  text-align: center;
+/* ------------- Welcome */
+
+/* ---------- Cover Page Navigation */
+#welcome {
+	overflow: auto;
+	background-color: rgb(10, 10, 10);
+	height: 100vh;
 }
 
-.w3-black {
-  padding: 10px 30px;
-  margin: 0px auto;
+ul#nav {
+	list-style: none;
 }
 
-.w3-text-white.w3-wide {
-   font-family: 'Futura-PT',
-     sans-serif;
-   text-transform: uppercase;
-    letter-spacing: 2;
-    text-shadow: 1px 3px 6px #777474;
-    font-size: 2.8rem;
-
+#nav {
+	display: flex;
+	flex-direction: column;
+	padding: clamp(2rem, 5vw, 6rem);
+	margin-bottom: 20vh;
+	height: auto;
 }
 
-/* -------------------------------------- Jumbotron -------------------------------------- */
-
-/* https://css-tricks.com/perfect-full-page-background-image/ */
-
-
-/* -------------------------------------- Jumbotron -------------------------------------- */
-
-/* https://css-tricks.com/perfect-full-page-background-image/ */
-.jumbotron-container {
-	/* background: linear-gradient(rgba(25, 24, 24, 0.478), rgba(16, 16, 16, 0.5)), url('../images/bg2.png') no-repeat center center fixed; */
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75), rgba(255, 255, 255, 0.5)), url('../images/bg.jpg') no-repeat center center fixed;
-  animation: fadein 5s;
-  -webkit-animation: fadein 5s;
-  -moz-animation: fadein 5s;
-  -o-animation: fadein 5s;
-  /* background-color:  rgb(227, 71, 57); */
-  background-size: cover;
-  background-attachment: fixed;
-  backdrop-filter: blur(10px);
-  overflow: hidden;
-  max-width: 100%;
-  height: 100vh;
-  min-height: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
+#nav>li {
+	color: var(--light);
+	opacity: .65;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1.85px;
+	font-size: clamp(3rem, 6vw, 6rem);
+	font-weight: 200;
+	text-decoration: none;
+	position: relative;
+	list-style: none;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+#nav>li:hover {
+	color: var(--purple2);
+	opacity: 1;
+	letter-spacing: 3px;
+	font-weight: 600;
 }
 
-@-moz-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+#nav>li>span {
+	display: block;
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid transparent;
+	position: relative;
+	z-index: 2;
 }
 
-.jumbotron-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  overflow: visible;
+#nav>li:hover>span {
+	border-top-color: var(--purple);
+	border-bottom-color: var(--purple);
 }
 
-.jumbotron-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  overflow: visible;
+#nav>li>img {
+	position: absolute;
+	opacity: 0;
+	transform: translate(-50%, -50%) scale(0.5);
+	transition: transform 250ms, opacity 250ms;
+	pointer-events: none;
+	width: min(40vw, 500px);
 }
 
-#home-text {
-  font-family: 'Futura-PT', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  letter-spacing: 3px;
-  /* color: var(--light); */
-  color: var(--black);
-  font-weight: 500;
-  /* text-shadow: 1px 1px 6px var(--light-grey); */
+#nav>li:hover>img {
+	opacity: .35;
+	transform: translate(-50%, -50%) scale(1);
 }
 
-.typewriter {
-    width: auto;
-    border-right: .15em solid var(--red); /* The typwriter cursor */
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap; Keeps the content on a single line
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    /* animation:  typing 3.5s steps(100, end), blink-caret .75s step-end infinite; */
-    animation: typing 4.5s steps(100,end), blink-caret .75s step-end infinite;
-    }
-
-@keyframes typing{
-  from {max-width: 0}
-  to {max-width: 100%}
-}
-
-@keyframes blink-caret{
-  from, to {border-color: transparent}
-}
-
-#typed {
-  text-shadow: 1px 1px 3px rgb(40, 39, 39);
-  font-weight: 500;
-  font-size: 1.2rem;
-}
-
-
-/* -------------------------------------- Jumbotron -------------------------------------- */
-#home-text {
-  font-family: 'Futura-PT', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  letter-spacing: 3px;
-  /* color: var(--light); */
-  color: var(--black);
-  font-weight: 900;
-  /* text-shadow: 1px 1px 6px var(--light-grey); */
-}
-
-.typewriter {
-    width: auto;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap; Keeps the content on a single line
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    /* animation:  typing 3.5s steps(100, end), blink-caret .75s step-end infinite; */
-    animation: typing 4.5s steps(100,end), blink-caret .75s step-end infinite;
-    }
-
-@keyframes typing{
-  from {max-width: 0}
-  to {max-width: 100%}
-}
-
-@keyframes blink-caret{
-  from, to {border-color: transparent}
-}
-
-#typed {
-  text-shadow: 1px 1px 3px rgb(40, 39, 39);
-  font-weight: 500;
-  font-size: 1.2rem;
-}
-
-#typed-small-screens {
-  font-family: 'Futura-PT', sans-serif;
-  font-weight: 600;
-  color: var(--violet);
-  font-size: 1.65rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-/*-------------------------------- Background Images */
-/* Create a Parallax Effect - copied from w3schools.com */
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) - copied from w3schools.com */
-.bgimg-1 {
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)),
-  url('../images/deskspace.jpg') no-repeat center fixed;
-  background-size: cover;
-  min-height: 100vh;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("../images/bg4.png");
-  min-height: 400px;
-}
 
 /* Third image (Contact) */
 .bgimg-3 {
@@ -547,14 +391,6 @@ span#name {
 .text-lighter.text-center.display-1 {
   font-family: 'Futura-PT', sans-serif;
   letter-spacing: 3px;
-}
-
-.w3-wide {
-  letter-spacing: 10px;
-}
-
-.w3-hover-opacity {
-  cursor: pointer;
 }
 
 hr.project-divider {
@@ -579,8 +415,6 @@ hr.project-divider {
 
 .project-item:nth-child(even) {
   flex-direction: row-reverse;
-  /* background: rgba( 255, 255, 255, 0.5 ); */
-  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
   backdrop-filter: blur( 10px );
   -webkit-backdrop-filter: blur( 10px );
   border-radius: 10px;
@@ -607,22 +441,34 @@ hr.project-divider {
   margin-right: auto;
   flex-grow: 1;
 }
+
 /*-------------------------------- About Section */
-p.w3-wide {
-  font-family: 'Futura-PT', sans-serif;
-  font-size: 1.3rem;
-  letter-spacing: 5px;
-  margin: 10px 0px;
+#about {
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.75), rgba(255, 255, 255, 0.5)), url('../images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  max-width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
 }
 
-p#about-me.mx-.px-3 {
-  margin: 10px 30px;
-}
+h5.role-heading {
+  letter-spacing: 3.5px;
+  color: var(--purple);
 
-#skill-icons {
-  font-size: 1.3rem;
-  color: var(--dark-grey);
-  text-shadow: 3px 1px 3px darkgray;
 }
 
 #portrait2 {
@@ -631,16 +477,69 @@ p#about-me.mx-.px-3 {
   border-radius: 50%;
 }
 
-#about-me {
-  font-family: 'Futura-PT', sans-serif;
-  font-size: 1.1rem;
-  letter-spacing: .2px;
-  margin: 0px 30px;
+.profile-card {
+	/* Box shadow #71 copied from https://getcssscan.com/css-box-shadow-examples */
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  background: rgba( 250, 250, 250, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    max-width: 500px;
+	margin: auto;
+	text-align: center;
+  transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
 
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 10px rgba(56, 56, 56, 0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 10px rgba(35, 35, 35, 0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 10px rgba(45, 45, 45, 0.6);
+		transform: translatey(0px);
+	}
+}
+
+.profile-about p {
+	color: #0a0a0a;
+	text-align: center;
+	font-size: 1rem;
+	margin: 30px 40px;
+}
+
+.profile-card .profile-header {
+	text-align: center;
+	position: relative;
+	min-width: 100%;
+  height: auto;
+}
+
+.profile-card .profile-header a > img {
+	width: 150px;
+	height: auto;
+	border-radius: 50%;
+  box-shadow: -10px 10px 10px rgba(42, 42, 42, 0.25);
+}
+
+a.resume-link {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+a.resume-link:hover {
+  color: var(--violet);
+}
 
 /* --------------- Skills */
-
 #skills {
 	align-content: center;
 	overflow: hidden;
@@ -658,7 +557,7 @@ p#about-me.mx-.px-3 {
     background-size: cover;   
 }
   
-  .slider {
+.slider {
 	display: flex;
 	overflow: hidden;
 	user-select: none;
@@ -968,12 +867,46 @@ a#footer-link:hover {
 
 #btn-back-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  top: 25px;
+  right: 35px;
   display: none;
   color: var(--black);
+  z-index: 1000;
   /* box-shadow: 1px 3px 6.5px rgba(105, 105, 105, 0.399); */
 }
+
+.cta {
+	margin: 13% auto;
+	width: 50px;
+  height: 50px;
+	text-align: center;
+	padding: 30px;
+	overflow: hidden;
+}
+
+a.cta-link {
+	padding: 20px 5px;
+	border: 1px solid #FF8D81;
+  font-family: 'Futura-PT, sans-serif';
+  text-transform: uppercase;
+  font-weight: 400;
+	margin: 10% auto;
+	border-radius: 50%;
+	float: right;
+	color: #FF8D81;
+	text-decoration: none;
+	text-align: center;
+	-moz-box-shadow: inset 503px 600px 0 -703px rgba(250, 250, 250, 0.04);
+	-webkit-box-shadow: inset 503px 600px 0 -703px rgba(250, 250, 250, 0.04);
+	box-shadow: inset 503px 600px 0 -703px rgba(250, 250, 250, 0.04);
+}
+
+a.cta-link:hover {
+	-moz-box-shadow: 0 0 50px #FF8080, inset 503px 600px 0 -703px rgba(250, 250, 250, 0.04);
+	-webkit-box-shadow: 0 0 50px #FF8080, inset 503px 600px 0 -703px rgba(250, 250, 250, 0.04);
+	box-shadow: 0 0 50px #FF8080, inset 503px 600px 0 -703px rgba(250, 250, 250, 0.04);
+}
+
 
 .btn-trans {
   background-color: transparent;
@@ -1005,8 +938,6 @@ i.fas.fa-chevron-up.fa-2x:hover {
 }
 
 /*--------------------------------  Media Queries */
-
-
   @media only screen and (min-width: 768px) {
       h1.text-center.text-lighter.display-1 {
         padding-top: 50px;
@@ -1023,6 +954,13 @@ i.fas.fa-chevron-up.fa-2x:hover {
       .bgimg-3 {
         background-attachment: scroll;
         min-height: 450px;
+      }
+      .project-item:nth-child(odd) {
+        /* background: rgba( 255, 255, 255, 0.25 ); */
+        backdrop-filter: blur( 5px );
+        -webkit-backdrop-filter: blur( 5px );
+        border-radius: 10px;
+        text-align: end;
       }
       .img-wrapper--reverse:hover  {
         transform: matrix3d(0.94, 0, 0.34, 0.00025, 0, 1, 0, 0, 0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(30px);
