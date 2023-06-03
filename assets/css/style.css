@@ -317,7 +317,7 @@ p {
 
 /* ---------- Cover Page Navigation */
 #welcome {
-	overflow: auto;
+	overflow: hidden;
 	background-color: rgb(10, 10, 10);
 	height: 100vh;
 }
