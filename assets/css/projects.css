@@ -1,7 +1,41 @@
+
+
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
+
+
+:root {
+  --primary: #5c9caf;
+  --dark-salmon: rgb(255 88 73);
+  --light-salmon: rgb(255 160 122);
+  --light: #fafafa;
+  --lighter: #f5f5f5;
+  --dark: #2C2C2C;
+  --grey: #979797;
+  --light-grey: #eeecec;
+  --dark-grey: #4d4d4d;
+  --darker: #080808;
+  --black: #000000;
+  --blue: #7DA2A9;
+  --light-blue: #B3E5F1;
+  --yellow-1: #FDD935;
+  --yellow-2: #E9BD43;
+  --yellow-3: #F5B935;
+  --purple: rgb(156, 70, 218);
+	--purple2:rgb(206, 154, 245);
+  --purple3: rgb(221, 173, 255);
+  --violet: #9E7AE6;
+  --violet-2: #7353be;
+  --dark-violet: #3f1d82;
+  --red: #E83939;
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+	--gap: calc(var(--size) / 14);
+	--duration: 60s;
+	--scroll-start: 0;
+	--scroll-end: calc(-100% - var(--gap));
+}
 
 * {
   box-sizing: border-box;
@@ -47,7 +81,7 @@ body {
     background-color: #fff;
     flex-shrink: 0;
    -webkit-flex-shrink: 0;
-    position: absolute;
+    /* position: absolute; */
     z-index: 0;
   transition: 0.6s all linear;
 }
@@ -80,7 +114,6 @@ body {
       -webkit-order: 2;
     -webkit-align-self: flex-end;
     -webkit-flex-basis: 60%;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,24 +164,34 @@ body {
 }
 
 .carousel-item--1 .carousel-item__image{
-  background-image: url('../images/angles.jpg');
+  background-image: url('../images/hue.png');
+  background-size: contain;
+
 }
 
 
 .carousel-item--2 .carousel-item__image{
-  background-image: url('../images/bg.jpg');
+  background-image: url('../images/inklusion.png');
+  background-size: contain;
+
 }
 
 .carousel-item--3 .carousel-item__image{
-  background-image: url('https://images.pexels.com/photos/92733/pexels-photo-92733.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-image: url('../images/electrillo.png');
+  background-size: contain;
+
 }
 
 .carousel-item--4 .carousel-item__image{
-  background-image: url('https://images.pexels.com/photos/1008732/pexels-photo-1008732.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-image: url('../images/emojourney.png');
+  max-width: 100%;
+  background-size: contain;
 }
 
 .carousel-item--5 .carousel-item__image{
-  background-image: url('https://images.pexels.com/photos/1029614/pexels-photo-1029614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-image: url('../images/infinity-responsive.png');
+  background-size: contain;
+
 }
 
 
@@ -160,7 +203,7 @@ body {
 
 .carousel-item__btn {
     width: 35%;
-    color: #2C2C2C;
+    color: var(--purple);
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 3px;
     font-size: 11px;
@@ -175,8 +218,11 @@ body {
     transition: 0.6s all ease-in-out;
 }
 
+.carousel-item__btn:hover {
+  color: var(--purple2);
+}
 .carousel__nav {
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     z-index: 2;
     background-color: #fff;
@@ -200,7 +246,7 @@ body {
 .carousel__arrow:nth-child(1):after {
     content:'';
     right: -3px;
-    position: absolute;
+    /* position: absolute; */
     width: 1px;
     background-color: #b0b0b0;
     height: 14px;
