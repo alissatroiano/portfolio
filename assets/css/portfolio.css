@@ -1,0 +1,54 @@
+/* Global Styles */
+:root {
+    --primary: #5c9caf;
+    --dark-salmon: rgb(255 88 73);
+    --light-salmon: rgb(255 160 122);
+    --light: #fafafa;
+    --lighter: #f5f5f5;
+    --dark: #2C2C2C;
+    --grey: #979797;
+    --light-grey: #eeecec;
+    --dark-grey: #4d4d4d;
+    --darker: #080808;
+    --black: #000000;
+    --blue: #7DA2A9;
+    --light-blue: #B3E5F1;
+    --yellow-1: #FDD935;
+    --yellow-2: #E9BD43;
+    --yellow-3: #F5B935;
+    --purple: rgb(156, 70, 218);
+      --purple2:rgb(206, 154, 245);
+    --purple3: rgb(221, 173, 255);
+    --violet: #9E7AE6;
+    --violet-2: #7353be;
+    --dark-violet: #3f1d82;
+    --red: #E83939;
+    --size: clamp(10rem, 1rem + 40vmin, 30rem);
+      --gap: calc(var(--size) / 14);
+      --duration: 60s;
+      --scroll-start: 0;
+      --scroll-end: calc(-100% - var(--gap));
+  }
+  
+  ::-moz-selection { /* Code for Firefox */
+    color: var(--light);
+    background: var(--violet);
+  }
+  
+  ::selection {
+    color: var(--light);
+    background: var(--violet);
+  }
+  
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+
+#projectModal1 {
+    min-width: 100vw;
+}
+
+.modal-dialog.modal-dialog-centered.modal-dialog-scrollable.w-100 {
+    min-width: 80vw;
+}

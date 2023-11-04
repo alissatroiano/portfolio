@@ -1,33 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> Alissa Troiano | Web & Software Development</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Load Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <!--Import Futura from Adobe Fonts-->
-        <link rel="stylesheet" href="https://use.typekit.net/hdw8ydb.css">
-        <!-- W3 Schools Starter Stylesheet -->
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <!--Load Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-          integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-        <!--Load Google Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
-          rel="stylesheet">
-        <!--AOS Animations -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-        </script>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-         <!--Favicon Link-->
-         <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
-      </head>
+  <head>
+    <title> Alissa Troiano | Web & Software Development</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Load Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--Import Futura from Adobe Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/hdw8ydb.css">
+    <!-- W3 Schools Starter Stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Load Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <!--AOS Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!--Favicon Link-->
+    <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
+    <!---->
+  </head>
 <body>
+  <!--Fixed Bottom Nav-->
+  <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-main">
+    <div class="container-fluid">
+      <a class="navbar-brand nav-link" href="#">
+        <i class="fas fa-code"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-main" href="assets/resume.pdf" target="_blank" id="resume-nav-link">
+              <i class="fas fa-download"></i>
+              Resume
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav d-flex ms-auto text-light list-group list-group-horizontal">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/alissatroiano" target="_blank">
+              <i class="fab fa-github mx-3"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://linkedin.com/in/alissatroiano" target="_blank">
+              <i class="fab fa-linkedin mx-3"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/alissamtroiano" target="_blank">
+              <i class="fab fa-twitter mx-3"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="mailto:alissatroiano@alissatroiano.com">
+              <i class="fas fa-envelope mx-3"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 <section class="container-fluid p-3 my-x mx-auto portfolio" id="projects">
   <div class="row d-flex justify-content-center g-4 my-0 mx-auto" data-masonry='{"percentPosition": true }'>
@@ -76,19 +136,49 @@
 
 
 <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
+        <div class="text-end">
+        <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
         <div class="modal-header">
-            <h1 class="title text-center text-dark display-3 fw-bold">Hue</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row my-1 d-flex justify-content-center">
+            <div class="col-12">
+              <h1 class="title display-1 text-center fw-bold">Hue</h1>
         </div>
+       
         <div class="modal-body">
-          ...
+          <div class="row">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+                <h2 class="h1 mb-4">About</h2>
+                <p class="fs-lg mb-0">Hue is a digital art store and image generation app with custom
+                  machine learning models powered by MindsDB and OpenAI. Hue's backend is powered by Python and Django and the
+                  shopping cart checkout functionality uses the Stripe API.</p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+              <div class="ps-lg-4 ms-lg-3">
+                <h3 class="h5 d-flex align-items-center">
+                  <i class="fas fa-info-circle me-2"></i>
+                  Problem
+                </h3>
+                <p class="pb-4 mb-0 mb-lg-3">Ultricies massa iaculis vestibulum egestas vestibulum, cursus. Leo non arcu ultricies senectus a purus sed.</p>
+                <h3 class="h5 d-flex align-items-center">
+                  <i class="fas fa-lightbulb me-2"></i>
+                  Solution
+                </h3>
+                <p class="mb-0">Sit tellus id proin viverra iaculis pellentesque ornare. Diam augue sit feugiat porttitor leo, fusce vel ac. Placerat vulputate quisque.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Live Project</button>
           <button type="button" class="btn btn-primary">Source Code</button>
+       
         </div>
+    
       </div>
     </div>
   </div>
