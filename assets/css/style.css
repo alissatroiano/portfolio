@@ -1,3 +1,6 @@
+@import url("https://use.typekit.net/ieo5nme.css");
+
+
 /* Global Styles */
 :root {
   --primary: #5c9caf;
@@ -34,6 +37,16 @@
   color: var(--light);
   background: var(--violet);
 }
+
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-weight: 500;
+} 
 
 ::selection {
   color: var(--light);
@@ -147,7 +160,7 @@ em {
 strong {
   font-family: 'Futura-PT',
   sans-serif;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 hr {
@@ -285,6 +298,7 @@ h3 {
   font-family: 'Futura-PT', sans-serif;
   font-size: 1.8rem;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 h4,
@@ -292,6 +306,8 @@ h5,
 h6 {
   font-family: 'Futura-PT', sans-serif;
   text-transform: uppercase;
+  font-weight: 500;
+
 }
 
 h1#title {
@@ -312,6 +328,7 @@ h1#title {
 li,
 p {
   font-family: 'Futura-PT', sans-serif;
+  font-weight: light;
 }
 
 /* ---------- Cover Page Navigation */
@@ -390,6 +407,7 @@ ul#nav {
 .text-lighter.text-center.display-1 {
   font-family: 'Futura-PT', sans-serif;
   letter-spacing: 3px;
+  font-weight: light;
 }
 
 hr.project-divider {
@@ -401,23 +419,43 @@ hr.project-divider {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px dotted var(--grey);
-  padding: 20px 0;
+  padding: 10px;
 }
 
 .project-item:nth-child(odd) {
-  background: rgba( 255, 255, 255, 0.25 );
+  border: 5px double rgb(157, 124, 237);
   backdrop-filter: blur( 5px );
   -webkit-backdrop-filter: blur( 5px );
   border-radius: 10px;
 }
 
 .project-item:nth-child(even) {
+  border: 3px solid var(--dark-violet);
   flex-direction: row-reverse;
   backdrop-filter: blur( 10px );
   -webkit-backdrop-filter: blur( 10px );
   border-radius: 10px;
   justify-items: center;
+}
+
+.image-slideshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+img {
+  width: 100%
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  from {opacity: .65}
+  to {opacity: 1}
 }
 
 .layout__item--body {
@@ -629,7 +667,6 @@ a.resume-link:hover {
 	width: clamp(10rem, 1rem + 40vmin, 30rem);
 	color: var(--light);
 	background: rgb(156, 70, 218);
-	padding: 50px;
 	border-radius: 0.5rem;
 	font-size: 5em;
 	margin-top: 50px;
@@ -672,6 +709,7 @@ a.resume-link:hover {
     font-family: 'Futura-PT',
     sans-serif;
     font-size: 1.1rem;
+    font-weight: light;
     letter-spacing: 0.3px;
     line-height: 2;
     margin: 10px 0;
@@ -679,8 +717,6 @@ a.resume-link:hover {
 
 img {
   margin: 0 auto;
-  /* padding-top: 10px;
-  padding-bottom: 10px; */
 }
 
 .portfolio-image {

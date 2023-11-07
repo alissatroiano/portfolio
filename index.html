@@ -9,8 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!--Import Futura from Adobe Fonts-->
-  <link rel="stylesheet" href="https://use.typekit.net/hdw8ydb.css">
-  <!-- W3 Schools Starter Stylesheet -->
+  <link rel="stylesheet" href="https://use.typekit.net/xwz5atb.css">
+    <!-- W3 Schools Starter Stylesheet -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!--Load Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
@@ -517,7 +517,6 @@
         <p>
           <strong>SERVICES: </strong>
         </p>
-
         <ul class="text-start">
           <li> Updated ReactJS components to properly handle form submission</li>
           <li>Front-end flexbox design using custom CSS</li>
@@ -536,6 +535,50 @@
       </div>
       <div class="col-12 col-md-7">
         <img src="assets/images/OBBA.png" class="img-wrapper--reverse img-fluid project-img" alt="hue" />
+      </div>
+    </div>
+
+    <!--OLLA AI-->
+    <div class="row align-items-center d-block d-md-flex my-5 py-2 py-md-4 project-item" data-aos="fade-up"
+      data-aos-duration="1000">
+      <div class="col-12 col-md-5 project-details">
+        <h2 class="display-5 my-2">OLLA AI</h2>
+        <h4 class="text-muted">AI Assistant Interface</h4>
+        <p class="my-3 project-description">
+          <strong>CLIENT: </strong> OLLA AI
+          <br>
+          <strong>SERVICES: </strong>
+          <br>
+          <p class="text-end">
+            - Studied user stories to craft a design solution
+            <br>
+            - Applied branded color palette, typography, and layout
+            <br>
+            - Wrote custom media queries for responsie design
+            <br>
+           - Used custom JavaScript & CSS to create darkmode and lightmode themes
+          </p>
+          <strong>TECHNOLOGIES: </strong>
+          <p class="text-mark"> CSS, HTML, JavaScript</p>
+
+        <div class="btn-row mb-3">
+          <a href="https://olla.ai" target="_blank">
+            <button class="project-button">OLLA AI</button></a>
+          <a href="https://github.com/alissatroiano/olla-styles" target="_blank"><button class="project-button">Source
+              Code</button></a>
+        </div>
+      </div>
+      <div class="col-12 col-md-7">
+        <div class="img-wrapper img-fluid project-img image-slideshow">
+          <div class="image fade">
+            <img src="assets/images/light-olla-rdv.png" alt="Lightmode">
+          </div>
+
+          <div class="image fade">
+            <img src="assets/images/dark-olla-rdv.png" alt="Dark Mode">
+          </div>
+
+        </div>
       </div>
     </div>
 
@@ -560,7 +603,7 @@
         </div>
       </div>
       <div class="col-12 col-md-7">
-        <img src="assets/images/hue.png" class="img-wrapper img-fluid project-img" alt="hue" />
+        <img src="assets/images/hue.png" class="img-wrapper--reverse img-fluid project-img" alt="hue" />
       </div>
     </div>
 
@@ -588,7 +631,7 @@
         </div>
       </div>
       <div class="col-12 col-md-7 my-0 mx-auto justify-content-end">
-        <img src="assets/images/inklusion.png" class="img-wrapper--reverse img-fluid project-img" alt="inklusion" />
+        <img src="assets/images/inklusion.png" class="img-wrapper img-fluid project-img" alt="inklusion" />
       </div>
     </div>
 
@@ -613,7 +656,7 @@
         </div>
       </div>
       <div class="col-12 col-md-7 my-0 mx-auto justify-content-end">
-        <img src="assets/images/muzak.png" class="img-wrapper img-fluid project-img" alt="inklusion" />
+        <img src="assets/images/muzak.png" class="img-wrapper--reverse img-fluid project-img" alt="inklusion" />
       </div>
     </div>
 
@@ -639,7 +682,7 @@
         </div>
       </div>
       <div class="col-12 col-md-7 my-0 mx-auto justify-content-end">
-        <img src="assets/images/electrillo.png" class="img-wrapper--reverse img-fluid project-img" alt="smitten" />
+        <img src="assets/images/electrillo.png" class="img-wrapper img-fluid project-img" alt="smitten" />
       </div>
     </div>
 
@@ -666,7 +709,7 @@
         </div>
       </div>
       <div class="col-12 col-md-7 my-0 mx-auto">
-        <img src="assets/images/smitten.png" class="img-wrapper img-fluid project-img" alt="smitten" />
+        <img src="assets/images/smitten.png" class="img-wrapper--reverse img-fluid project-img" alt="smitten" />
       </div>
     </div>
 
@@ -691,7 +734,7 @@
         </div>
       </div>
       <div class="col-12 col-md-7">
-        <img src="assets/images/gameoffacts-responsive.png" class="img-fluid img-wrapper--reverse project-img"
+        <img src="assets/images/gameoffacts-responsive.png" class="img-fluid img-wrapper project-img"
           alt="gameoffacts" />
       </div>
     </div>
@@ -716,7 +759,8 @@
         </div>
       </div>
       <div class="col-12 col-md-7">
-        <img src="assets/images/infinity-responsive.png" class="img-fluid img-wrapper project-img" alt="infinity" />
+        <img src="assets/images/infinity-responsive.png" class="img-fluid img-wrapper--reverse project-img"
+          alt="infinity" />
       </div>
     </div>
     <!--./end-infinity-->
@@ -771,6 +815,23 @@
     AOS.init();
   </script>
 
+  <script>
+    let index = 0;
+    displayImages();
+    function displayImages() {
+      let i;
+      const images = document.getElementsByClassName("image");
+      for (i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+      }
+      index++;
+      if (index > images.length) {
+        index = 1;
+      }
+      images[index - 1].style.display = "block";
+      setTimeout(displayImages, 5000);
+    }
+  </script>
   <!--Load Scripts-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
