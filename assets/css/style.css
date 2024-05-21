@@ -77,6 +77,13 @@ a {
   font-size: 1rem;
 }
 
+.text-mark-projects {
+  color: var(--violet);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .25px;
+}
+
 #resume-nav-link {
   color: var(--purple2);
   font-weight: 400;

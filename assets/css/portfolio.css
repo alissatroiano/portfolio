@@ -49,6 +49,22 @@
     min-width: 100vw;
 }
 
-.modal-dialog.modal-dialog-centered.modal-dialog-scrollable.w-100 {
-    min-width: 80vw;
+.img-wrapper,
+.img-wrapper--reverse {
+  width: 800px;
+  border: none;
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+/* 
+section#projects {
+  background: #f7f7f7;
+} */
+
+.modal-dialog.modal-dialog-centered.modal-dialog-scrollable.w-100, .modal-dialog-scrollable .modal-content {
+    min-width: 90vw;
+    overflow: auto;
 }

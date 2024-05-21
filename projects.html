@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title> Alissa Troiano | Web & Software Development</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Load Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <!--Import Futura from Adobe Fonts-->
-    <link rel="stylesheet" href="https://use.typekit.net/hdw8ydb.css">
-    <!-- W3 Schools Starter Stylesheet -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!--Load Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet">
-    <!--AOS Animations -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-    </script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <!--Favicon Link-->
-    <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
-    <!---->
-  </head>
+
+<head>
+  <title> Alissa Troiano | Web & Software Development</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Load Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!--Import Futura from Adobe Fonts-->
+  <link rel="stylesheet" href="https://use.typekit.net/hdw8ydb.css">
+  <!-- W3 Schools Starter Stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!--Load Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!--AOS Animations -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <!--Favicon Link-->
+  <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
+  <!--Custom Styles-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css" />
+</head>
+
 <body>
   <!--Fixed Bottom Nav-->
   <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-main">
@@ -89,97 +93,133 @@
     </div>
   </nav>
 
-<section class="container-fluid p-3 my-x mx-auto portfolio" id="projects">
-  <div class="row d-flex justify-content-center g-4 my-0 mx-auto" data-masonry='{"percentPosition": true }'>
-    <div class="col-xs-8 col-sm-4">
-      <div class="card h-100 rounded-5 img-fluid border-0">
-        <img src="assets/images/hue.png" class="img-wrapper--reverse img-fluid project-img" alt="hue" />
-        <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1"></a>
+  <!--Project Thumbnail (Links to Modals)-->
+  <section class="container-fluid p-3 my-x mx-auto portfolio" id="projects">
+    <div class="row d-flex justify-content-center g-4 my-0 mx-auto" data-masonry='{"percentPosition": true }'>
+
+      <!--Hue-->
+      <div class="col-xs-8 col-sm-4">
+        <div class="card h-100 rounded-5 img-fluid border-0">
+          <img src="assets/images/hue.png" class="img-wrapper--reverse img-fluid project-img" alt="hue" />
+          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#projectModal1"></a>
+        </div>
       </div>
-  </div>
-  <div class="col-xs-8 col-sm-4">
-    <div class="card h-100 rounded-5 img-fluid  border-0">
-        <img src="assets/images/runner.jpg" class="card-img project-pic" alt="project.title">
-        <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal2"></a>
+
+      <!-- Olla -->
+     <div class="col-xs-8 col-sm-4">
+        <div class="card h-100 rounded-5 img-fluid border-0">
+          <img src="assets/images/OLLA-IG-RDV.png" class="img-wrapper img-fluid project-img" alt="Olla" />
+          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#projectModal1"></a>
+        </div>
+      </div>
+    
+    
+      <!-- Infinity-->
+      <div class="col-xs-8 col-sm-4">
+        <div class="card h-100 rounded-5 img-fluid  border-0">
+          <img src="assets/images/infinity-responsive.png" class="img-wrapper--reverse img-fluid project-img" alt="Infinity">
+          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#projectModal2"></a>
+        </div>
+      </div>
+
+      <!-- Electrillo -->
+      <div class="col-xs-8 col-sm-4">
+        <div class="card h-100 rounded-5 img-fluid border-0">
+          <img src="assets/images/electrillo.png" class="img-wrapper--reverse img-fluid project-img" alt="Electrillo">
+          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#projectModal3"></a>
+        </div>
+      </div>
+
+
+    <!--Smitten-->
+      <div class="col-xs-8 col-sm-4">
+        <div class="card h-100 rounded-5 img-fluid  border-0">
+          <img src="assets/images/smitten.png" class="card-img project-pic" alt="project.title">
+          <a href="#" class="stretched-link h-100" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#projectModal5"></a>
+        </div>
+      </div>
+
+      <div class="col-xs-8 col-sm-4">
+        <div class="card h-100 rounded-5 img-fluid border-0">
+          <img src="assets/images/inklusion.png" class="card-img border-0" alt="project.title">
+          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#projectModal3"></a>
+        </div>
+      </div>
+
+
     </div>
-</div>
+  </section>
 
-<div class="col-xs-8 col-sm-4">
-  <div class="card h-100 rounded-5 img-fluid border-0">
-      <img src="assets/images/electrillo-img.png" class="card-img shadow-sm" alt="project.title">
-      <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal3"></a>
-  </div>
-</div>
-<div class="col-xs-8 col-sm-4">
-    <div class="card h-100 rounded-5 img-fluid border-0">
-        <img src="assets/images/popart.png" class="card-img project-pic" alt="hue">
-        <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1"></a>
-    </div>
-</div>
-<div class="col-xs-8 col-sm-4">
-  <div class="card h-100 rounded-5 img-fluid  border-0">
-      <img src="assets/images/smitten.png" class="card-img project-pic" alt="project.title">
-      <a href="#" class="stretched-link h-100" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal2"></a>
-  </div>
-</div>
-
-<div class="col-xs-8 col-sm-4">
-<div class="card h-100 rounded-5 img-fluid border-0">
-    <img src="assets/images/electrillo-img.png" class="card-img border-0" alt="project.title">
-    <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal3"></a>
-</div>
-</div>
-
-
-</div>
-</section>
-
-
-<div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Hue Modal-->
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
-        <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
+          <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
         <div class="modal-header">
           <div class="row my-1 d-flex justify-content-center">
             <div class="col-12">
               <h1 class="title display-1 text-center fw-bold">Hue</h1>
-        </div>
-       
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-lg-7 mb-4 mb-lg-0">
-              <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
-                <img src="assets/images/hue.png" class="img-wrapper--reverse img-fluid project-img" alt="hue" />
-                <h2 class="h1 mb-4">About</h2>
-                <p class="fs-lg mb-0">Hue is a digital art store and image generation app with custom
-                  machine learning models powered by MindsDB and OpenAI. Hue's backend is powered by Python and Django and the
-                  shopping cart checkout functionality uses the Stripe API.</p>
+            </div>
+
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                  <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+                    <img src="assets/images/hue.png" class="img-wrapper--reverse img-fluid project-img" alt="hue" />
+                    <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
+                      About</h2>
+                    <p class="fs-lg mb-0">Hue is a digital art store and image generation app with custom machine
+                      learning models powered by MindsDB and OpenAI's Dalle-3 model. Hue started as a full-stack
+                      e-commerce application where users could sign up, create a profile, and purchase digital artwork
+                      but was upgraded for MindsDB's August 2023 Hackathon.</p>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+                  <div class="ps-lg-4 ms-lg-3">
+
+                    <h3 class="h5 d-flex align-items-center text-mark-projects">
+                      <i class="fas fa-circle-question mx-1"></i>
+                      Problem
+                    </h3>
+                    <p class="pb-3">
+                      Create or update a web application that integrates MindsDB to improve its' overall functionality.
+                    </p>
+                    <h3 class="h5 d-flex align-items-center text-mark-projects">
+                      <i class="fas fa-lightbulb me-2"></i>
+                      Solution
+                    </h3>
+                    <p class="mb-3">For this challenge, I added an AI Image Generation Tool to the site and trained its'
+                      connected models on datasets of famous artwork by iconic artists. I also added special
+                      permissions, so users can decide if they want to make their artwork public and/or downloadable.
+                      Finally, I connected the store and gave users permission to sell their artwork there.</p>
+                    <h3 class="h5 d-flex align-items-center text-mark-projects">
+                      Tech
+                      <i class="fas fa-wrench mx-1"></i>
+                      Stack
+                    </h3>
+                    <p class="pb-3">PYTHON, DJANGO, MINDSDB, OPENAI, JAVASCRIPT, HTML, CSS,
+                      BOOTSTRAP 5, AWS S3, HEROKU, STRIPE API, GIT
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
-              <div class="ps-lg-4 ms-lg-3">
-                <h3 class="h5 d-flex align-items-center">
-                  <i class="fas fa-info-circle me-2"></i>
-                  Problem
-                </h3>
-                <p class="pb-4 mb-0 mb-lg-3">Ultricies massa iaculis vestibulum egestas vestibulum, cursus. Leo non arcu ultricies senectus a purus sed.</p>
-                <h3 class="h5 d-flex align-items-center">
-                  <i class="fas fa-lightbulb me-2"></i>
-                  Solution
-                </h3>
-                <p class="mb-0">Sit tellus id proin viverra iaculis pellentesque ornare. Diam augue sit feugiat porttitor leo, fusce vel ac. Placerat vulputate quisque.</p>
-              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Live Project</button>
+              <button type="button" class="btn btn-primary">Source Code</button>
+
             </div>
+
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Live Project</button>
-          <button type="button" class="btn btn-primary">Source Code</button>
-       
-        </div>
-    
       </div>
     </div>
   </div>
@@ -197,7 +237,10 @@
     crossorigin="anonymous"></script>
   <script src="assets/js/nav.js"></script>
   <!--Masonry Plugin-->
-	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
 
 </body>
+
 </html>
