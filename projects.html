@@ -32,6 +32,7 @@
   <!--Custom Styles-->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/projects.css" />
 </head>
 
 <body>
@@ -92,6 +93,10 @@
     </div>
   </nav>
 
+  <header>
+    <!-- <canvas id="waterCanvas"></canvas> -->
+  </header>
+
   <!--Project Thumbnail (Links to Modals)-->
   <section class="container-fluid p-3 my-x mx-auto portfolio" id="projects">
     <div class="row d-flex justify-content-center g-4 my-0 mx-auto" data-masonry='{"percentPosition": true }'>
@@ -105,8 +110,18 @@
         </div>
       </div>
 
-      <!-- Olla -->
+    <!-- Obba/Olla -->
      <div class="col-xs-8 col-sm-4">
+      <div class="card h-100 rounded-5 img-fluid border-0" data-aos="fade-in"
+      data-aos-duration="1000">
+      <img src="assets/images/OBBA.png" class="img-wrapper--reverse img-fluid project-img" alt="olla" />
+        <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+          data-bs-target="#projectModal2"></a>
+      </div>
+    </div>
+
+      <!-- Olla -->
+     <!-- <div class="col-xs-8 col-sm-4">
         <div class="card h-100 rounded-5 img-fluid border-0" data-aos="fade-in"
         data-aos-duration="1000">
         <img src="assets/images/OLLA-IG-RDV.png" class="img-wrapper--reverse img-fluid project-img" alt="olla" />
@@ -114,8 +129,7 @@
             data-bs-target="#projectModal2"></a>
         </div>
       </div>
-    
-    
+       -->
       <!-- Infinity-->
       <div class="col-xs-8 col-sm-4">
         <div class="card h-100 rounded-5 img-fluid  border-0">
@@ -143,7 +157,6 @@
             data-bs-target="#projectModal5"></a>
         </div>
       </div>
-
       <div class="col-xs-8 col-sm-4">
         <div class="card h-100 rounded-5 img-fluid border-0">
           <img src="assets/images/inklusion.png" class="card-img border-0" alt="project.title">
@@ -151,8 +164,6 @@
             data-bs-target="#projectModal3"></a>
         </div>
       </div>
-
-
     </div>
   </section>
 
@@ -168,7 +179,6 @@
             <div class="col-12">
               <h1 class="title display-1 text-center fw-bold">Hue</h1>
             </div>
-
             <div class="modal-body">
               <div class="row">
                 <div class="col-lg-7 mb-4 mb-lg-0">
@@ -184,7 +194,6 @@
                 </div>
                 <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
                   <div class="ps-lg-4 ms-lg-3">
-
                     <h3 class="h5 d-flex align-items-center text-mark-projects">
                       <i class="fas fa-circle-question mx-1"></i>
                       Problem
@@ -224,8 +233,7 @@
     </div>
   </div>
 
-  <!-- OLLA Modal -->
-
+  <!--OBBA/OLLA QUEUE-->
   <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
@@ -235,7 +243,70 @@
         <div class="modal-header">
           <div class="row my-1 d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="title display-1 text-center fw-bold">Hue</h1>
+              <h1 class="folio-title display-1 text-center">OLLA AI & OBBA BBQ </h1>
+              <h3 class="display-3 text-center text-light-purple my-3 pb-3">WAIT QUEUE MANAGEMENT</h3>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                  <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+                    <div class="embed-responsive embed-responsive-21by9 text-center align-items-center justify-content-center">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/RPsIF0tr8KU?si=j-1L97_vEvEfTTS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
+                      About</h2>
+                    <p class="fs-lg mb-0">This onboarding page was built to support OLLA AI's integration with OBBA BQQ, a Korean Barbeque Restaurant in Singapore.</p>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+                  <div class="ps-lg-4 ms-lg-3">
+                    <h3 class="h5 d-flex align-items-center text-mark-projects">
+                      <i class="fas fa-circle-question mx-1"></i>
+                      Problem
+                    </h3>
+                    <p class="pb-3">
+                      OLLA AI and OBBA, a chain restaurant in Korea, need somewhere to send customers so they can begin the onboarding process and streamline the wait queue process.
+                    </p>
+                    <h3 class="h5 d-flex align-items-center text-mark-projects">
+                      <i class="fas fa-lightbulb me-2"></i>
+                      Solution
+                    </h3>
+                    <p class="mb-3">For these clients, I built a responsive React app to handle the customer onboarding process. Because this will be filled out while customers are waiting on line for a table, the application was bootstrapped with React. I used CSS to make it look great on tablets. The login flow was built with React.js and configured to send data to the backend queue management system.</p>
+                    <h3 class="h5 d-flex align-items-center text-mark-projects">
+                      Tech
+                      <i class="fas fa-wrench mx-1"></i>
+                      Stack
+                    </h3>
+                    <p class="pb-3">REACTJS, JAVASCRIPT, HTML, CSS
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Live Project</button>
+              <button type="button" class="btn btn-primary">Source Code</button>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- OLLA Modal -->
+  <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+      <div class="modal-content">
+        <div class="text-end">
+          <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-header">
+          <div class="row my-1 d-flex justify-content-center">
+            <div class="col-12">
+              <h1 class="title display-1 text-center fw-bold">O</h1>
             </div>
 
             <div class="modal-body">
@@ -336,7 +407,7 @@
         setTimeout(displayImages, 5000);
       }
     </script>
-
+  <script src="assets/js/canvas.js"></script>
 </body>
 
 </html>
