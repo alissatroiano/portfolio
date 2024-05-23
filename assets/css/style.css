@@ -79,6 +79,13 @@ a {
   color: var(--violet);
 }
 
+.award-text {
+  background-color: var(--dark-violet);
+  color: #fafafa;
+  font-family: 'Futura-PT', sans-serif;
+  padding: 5px;
+}
+
 .text-purple {
   color: var(--violet-2);
 }
@@ -813,7 +820,7 @@ p.text-muted {
 
 /*-------------------------------- Contact Section */
 #contact {
-  min-height: 85vh;
+  min-height: 100vh;
   max-width: 100%;
   overflow: hidden;
   display: flex;
