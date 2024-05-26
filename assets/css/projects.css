@@ -38,6 +38,10 @@
   background: var(--violet);
 }
 
+body.projects {
+  background-color: var(--dark-violet);
+}
+
 .display-1,
 .display-2,
 .display-3,
@@ -349,6 +353,8 @@ nav.navbar {
 .gallery {
   margin: 20px auto;
   padding: 50px;
+  background-color: var(--dark-violet);
+
 }
 
 .gallery .gallery-item {
