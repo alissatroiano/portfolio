@@ -1,6 +1,139 @@
+@import url("https://use.typekit.net/ieo5nme.css");
+
+/* Global Styles */
+:root {
+  --primary: #5c9caf;
+  --dark-salmon: rgb(255 88 73);
+  --light-salmon: rgb(255 160 122);
+  --light: #fafafa;
+  --lighter: #f5f5f5;
+  --dark: #2C2C2C;
+  --grey: #979797;
+  --light-grey: #eeecec;
+  --dark-grey: #4d4d4d;
+  --darker: #080808;
+  --black: #000000;
+  --blue: #7DA2A9;
+  --light-blue: #B3E5F1;
+  --yellow-1: #FDD935;
+  --yellow-2: #E9BD43;
+  --yellow-3: #F5B935;
+  --purple: rgb(156, 70, 218);
+  --purple2: rgb(206, 154, 245);
+  --purple3: rgb(221, 173, 255);
+  --violet: #9E7AE6;
+  --violet-2: #7353be;
+  --dark-violet: #3f1d82;
+  --red: #E83939;
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 60s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--light);
+  background: var(--violet);
+}
+
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-weight: 500;
+}
+
+::selection {
+  color: var(--light);
+  background: var(--violet);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-gray {
+  background-color: var(--light-grey);
+}
+
+.bg-main {
+  background-color: #0a0a0acf;
+}
+
+.text-mark {
+  color: var(--violet);
+  font-weight: 660;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.text-light-purple {
+  color: var(--violet);
+}
+
+.award-text {
+  background-color: var(--dark-violet);
+  color: #fafafa;
+  font-family: 'Futura-PT', sans-serif;
+  padding: 5px;
+}
+
+.text-purple {
+  color: var(--violet-2);
+}
+
+.text-mark-projects {
+  color: var(--violet);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .25px;
+}
+
+#resume-nav-link {
+  color: var(--purple2);
+  font-weight: 400;
+}
+
+#resume-nav-link:hover {
+  color: var(--violet);
+}
+
+.bg-blur {
+  --bs-bg-opacity: 1;
+  background-color: #fafafab4;
+  opacity: 1;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
+}
+
+.bg-custom {
+  background-color: rgb(58, 58, 58);
+  color: #fafafa;
+}
+
+.text-lighter.text-center.display-1 {
+  font-family: 'Futura-PT', sans-serif;
+  letter-spacing: 30px;
+  margin-top: 120px;
+}
+
+.section-title {
+  letter-spacing: 2.35px;
+  color: var(--dark-grey);
+}
 
 .gallery {
-    margin-top: 40px;
+    margin: 20px;
 }
 
 .gallery .gallery-item {
