@@ -30,8 +30,7 @@
   <!--Favicon Link-->
   <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
   <!--Custom Styles-->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> -->
   <link rel="stylesheet" type="text/css" href="assets/css/projects.css" />
 </head>
 
@@ -93,27 +92,41 @@
     </div>
   </nav>
 
-  <header>
-    <!-- <canvas id="waterCanvas"></canvas> -->
-  </header>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 mt-5 text-center">
+         <h1 class="display-1 title">PROJECTS</h1>
+          <a href="index.html#contact" class="btn-get-started">Available for hire</a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
 
+  <main id="main" data-aos="fade" data-aos-delay="1500">
   <!--Project Thumbnails (Links to Modals)-->
-  <section class="container-fluid p-3 my-x mx-auto portfolio" id="projects">
-    <div class="row d-flex justify-content-center g-4 my-0 mx-auto" data-masonry='{"percentPosition": true }'>
+  <section id="gallery" class="gallery">
+    <div class="container-fluid">
+      <div class="row gy-4 gx-3 justify-content-center" data-masonry='{"percentPosition": true }'>
       <!--Hue-->
-      <div class="col-xs-8 col-sm-4">
-        <div class="card h-100 rounded-5 img-fluid border-0 shadow-lg">
-          <img src="assets/images/hue.png" class="img-wrapper--reverse img-fluid project-img" alt="hue" />
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/images/projects/thumb-hue.png" alt="hue" class="img-fluid" />
+          <div class="gallery-links d-flex align-items-center justify-content-center">
           <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
             data-bs-target="#projectModal1"></a>
+            </div>
         </div>
       </div>
       <!-- Obba/Olla -->
-      <div class="col-xs-8 col-sm-4">
-        <div class="card h-100 rounded-5 img-fluid border-0 shadow-lg" data-aos="fade-in" data-aos-duration="1000">
-          <img src="assets/images/OBBA.png" class="img-wrapper--reverse img-fluid project-img" alt="olla" />
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/images/OBBA.png" class="img-fluid" alt="olla" />
+          <div class="gallery-links d-flex align-items-center justify-content-center">
           <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
             data-bs-target="#projectModal2"></a>
+          </div>
         </div>
       </div>
       <!-- Olla -->
@@ -127,39 +140,48 @@
       </div>
        -->
       <!-- Muzak -->
-      <div class="col-xs-8 col-sm-4">
-        <div class="card h-100 rounded-5 img-fluid border-0">
-          <img src="assets/images/muzak.png" class="img-wrapper--reverse img-fluid project-img" alt="Muzak">
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/images/projects/project_4.png" class="img-fluid" alt="Muzak">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
           <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
             data-bs-target="#projectModal5"></a>
+            </div>
         </div>
       </div>
       <!--Electrillo-->
-      <div class="col-xs-8 col-sm-4">
-        <div class="card h-100 rounded-5 img-fluid border-0 shadow-lg">
-          <img src="assets/images/electrillo.png" class="card-img border-0" alt="electrillo">
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/images/projects/project_2.png" class="card-img border-0" alt="electrillo">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
           <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
             data-bs-target="#projectModal6"></a>
+            </div>  
         </div>
       </div>
       <!-- inklusion-->
-      <div class="col-xs-8 col-sm-4">
-        <div class="card h-100 rounded-5 img-fluid  border-0 shadow-lg">
-          <img src="assets/images/inklusion.png" class="img-wrapper--reverse img-fluid project-img" alt="Infinity">
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/images/projects/project_5.png" class="img-fluid" alt="Infinity">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
           <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
             data-bs-target="#projectModal4"></a>
         </div>
+        </div>
       </div>
       <!--Smitten-->
-      <div class="col-xs-8 col-sm-4">
-        <div class="card h-100 rounded-5 img-fluid  border-0">
-          <img src="assets/images/smitten.png" class="card-img project-pic" alt="project.title">
-          <a href="#" class="stretched-link h-100" type="button" class="btn btn-primary" data-bs-toggle="modal"
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/images/projects/project_6.png" class="img-wrapper" alt="smitten">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
             data-bs-target="#projectModal5"></a>
+          </div>
         </div>
       </div>
 
     </div>
+    </div>  
   </section>
 
   <!-- Hue Modal-->
@@ -218,8 +240,12 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Live Project</button>
-          <button type="button" class="btn btn-primary">Source Code</button>
+          <a href="https://hue-alissa.herokuapp.com" target="_blank"> <button class="project-button">Live
+            Project</button>
+           </a>
+
+          <a href="https://github.com/alissatroiano/Hue" target="_blank"><button class="project-button">Source
+              Code</button></a>
         </div>
         Source Code
       </div>
