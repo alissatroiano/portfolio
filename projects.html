@@ -10,8 +10,6 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!--Import Futura from Adobe Fonts-->
   <link rel="stylesheet" href="https://use.typekit.net/hdw8ydb.css">
-  <!-- W3 Schools Starter Stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!--Load Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -31,6 +29,7 @@
   <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
   <!--Custom Styles-->
   <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/projects.css" />
 </head>
 
@@ -92,45 +91,36 @@
     </div>
   </nav>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 mt-5 text-center my-3">
-         <h1 class="display-1 title">PROJECTS</h1>
-          <a href="index.html#contact" class="btn-get-started">Available for hire</a>
-        </div>
-      </div>
-    </div>
-  </section><!-- End Hero Section -->
+  <header>
+    <!-- <canvas id="waterCanvas"></canvas> -->
+  </header>
 
-  <main id="main" data-aos="fade" data-aos-delay="1500">
   <!--Project Thumbnails (Links to Modals)-->
-  <section id="gallery mt-3" class="gallery">
+  <section id="gallery" class="gallery">
     <div class="container-fluid">
       <div class="row gy-4 gx-3 justify-content-center" data-masonry='{"percentPosition": true }'>
-      <!--Hue-->
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="gallery-item h-100">
-          <img src="assets/images/projects/thumb-hue.png" alt="hue" class="img-fluid" />
-          <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#projectModal1"></a>
+        <!--Hue-->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="assets/images/projects/thumb-hue.png" alt="hue" class="img-fluid" />
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#projectModal1"></a>
             </div>
-        </div>
-      </div>
-      <!-- Obba/Olla -->
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="gallery-item h-100">
-          <img src="assets/images/OBBA.png" class="img-fluid" alt="olla" />
-          <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#projectModal2"></a>
           </div>
         </div>
-      </div>
-      <!-- Olla -->
-      <!-- <div class="col-xs-8 col-sm-4">
+        <!-- Obba/Olla -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="assets/images/OBBA.png" class="img-fluid" alt="olla" />
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#projectModal2"></a>
+            </div>
+          </div>
+        </div>
+        <!-- Olla -->
+        <!-- <div class="col-xs-8 col-sm-4">
         <div class="card h-100 rounded-5 img-fluid border-0" data-aos="fade-in"
         data-aos-duration="1000">
         <img src="assets/images/OLLA-IG-RDV.png" class="img-wrapper--reverse img-fluid project-img" alt="olla" />
@@ -139,49 +129,97 @@
         </div>
       </div>
        -->
-      <!-- Muzak -->
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="gallery-item h-100">
-          <img src="assets/images/projects/project_4.png" class="img-fluid" alt="Muzak">
-          <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#projectModal5"></a>
+
+        <!-- inklusion-->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="assets/images/projects/project_5.png" class="img-fluid" alt="Infinity">
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#projectModal4"></a>
             </div>
-        </div>
-      </div>
-      <!--Electrillo-->
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="gallery-item h-100">
-          <img src="assets/images/projects/project_2.png" class="card-img border-0" alt="electrillo">
-          <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#projectModal6"></a>
-            </div>  
-        </div>
-      </div>
-      <!-- inklusion-->
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="gallery-item h-100">
-          <img src="assets/images/projects/project_5.png" class="img-fluid" alt="Infinity">
-          <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#projectModal4"></a>
-        </div>
-        </div>
-      </div>
-      <!--Smitten-->
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="gallery-item h-100">
-          <img src="assets/images/projects/project_6.png" class="img-wrapper" alt="smitten">
-          <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#projectModal5"></a>
           </div>
         </div>
-      </div>
 
+        <!--Emojourney-->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="assets/images/projects/project_8.png" class="img-wrapper" alt="smitten">
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#projectModal10"></a>
+            </div>
+          </div>
+        </div>
+        <!--Electrillo-->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="assets/images/projects/project_2.png" class="card-img border-0" alt="electrillo">
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#projectModal6"></a>
+            </div>
+          </div>
+        </div>
+
+        <!--Game of Facts-->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="assets/images/projects/project_1.png" class="card-img border-0" alt="electrillo">
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#projectModal8"></a>
+            </div>
+          </div>
+        </div>
+
+        <!--Infinity-->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="assets/images/projects/project_7.png" class="img-wrapper" alt="smitten">
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#projectModal9"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Muzak -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="assets/images/projects/project_4.png" class="img-fluid" alt="Muzak">
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#projectModal5"></a>
+            </div>
+          </div>
+        </div>
+
+        <!--Smitten-->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="assets/images/projects/project_6.png" class="img-wrapper" alt="smitten">
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#projectModal7"></a>
+            </div>
+          </div>
+        </div>
+
+           <!--Deathscape-->
+           <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/images/projects/project_9.png" class="img-wrapper" alt="deathscape">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#projectModal11"></a>
+              </div>
+            </div>
+          </div>
+  
+
+      </div>
     </div>
-    </div>  
   </section>
 
   <!-- Hue Modal-->
@@ -241,8 +279,8 @@
         </div>
         <div class="modal-footer">
           <a href="https://hue-alissa.herokuapp.com" target="_blank"> <button class="project-button">Live
-            Project</button>
-           </a>
+              Project</button>
+          </a>
 
           <a href="https://github.com/alissatroiano/Hue" target="_blank"><button class="project-button">Source
               Code</button></a>
@@ -401,7 +439,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="title display-3 text-center text-sm-start fw-bold">Inklusion: <span
+              <h1 class="title display-4 text-center text-sm-start fw-bold">Inklusion: <span
                   class="text-light-purple">Pride Art Gallery</span></h1>
               <span class="award-text text-center text-sm-start"> 1st Place - Code Institute Hackathon, 06/17/22 </span>
             </div>
@@ -527,7 +565,6 @@
     </div>
   </div>
 
-
   <!--Electrillo-->
   <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="electrilloModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
@@ -537,7 +574,7 @@
         </div>
         <div class="modal-header">
           <div class="col-12">
-            <h1 class="folio-title display-3 text-center text-sm-start">Electrillo: <span
+            <h1 class="folio-title display-4 text-center text-sm-start">Electrillo: <span
                 class="text-light-purple">EV-Fuel Calculator </span></h1>
             <span class="award-text text-center text-sm-start"> 1st Place - Code Institute Hackathon, 04/10/22 </span>
           </div>
@@ -545,40 +582,36 @@
         <div class="modal-body">
           <div class="row">
             <div class="col-lg-7 mb-4 mb-lg-0">
-              <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
-                <img src="assets/images/electrillo.png" class="img-wrapper--reverse img-fluid project-img" alt="hue" />
-                <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
-                  About</h2>
-                <p class="fs-lg mb-0">Electrillo is a web application that allows users to calculate the amount of money
-                  they could save by switching from fuel to EV-powered vehicles. Electrillo includes a homepage, mission
-                  statement, team page, EV/Fuel savings calculator, and an electric vehicle search tool. </p>
-              </div>
+              <img src="assets/images/electrillo.png" class="img-wrapper--reverse img-fluid project-img" alt="hue" />
+              <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
+                About</h2>
+              <p class="fs-lg mb-0">Electrillo is a web application that allows users to calculate the amount of money
+                they could save by switching from fuel to EV-powered vehicles. Electrillo includes a homepage, mission
+                statement, team page, EV/Fuel savings calculator, and an electric vehicle search tool. </p>
             </div>
             <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
-              <div class="ps-lg-4 ms-lg-3">
-                <h3 class="h5 d-flex align-items-center text-mark-projects">
-                  <i class="fas fa-circle-question mx-1"></i>
-                  Problem
-                </h3>
-                <p class="pb-3">
-                  Create a project to promote clean/green solutions for Earth Day
-                </p>
-                <h3 class="h5 d-flex align-items-center text-mark-projects">
-                  <i class="fas fa-lightbulb me-2"></i>
-                  Solution
-                </h3>
-                <p class="mb-3">For this project, my team and I created Electrillo, a website that allows users to
-                  calculate the amount of money they could save by switching from fuel to EV-powered vehicles. The
-                  application also provides an electrical vehicle search, where users can search for electric vehicles
-                  based on their needs.</p>
-                <h3 class="h5 d-flex align-items-center text-mark-projects">
-                  Tech
-                  <i class="fas fa-wrench mx-1"></i>
-                  Stack
-                </h3>
-                <p class="pb-3">JavaScript, HTML, CSS, Bootstrap 5, JSON
-                </p>
-              </div>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-circle-question mx-1"></i>
+                Problem
+              </h3>
+              <p class="pb-3">
+                Create a project to promote clean/green solutions for Earth Day
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-lightbulb me-2"></i>
+                Solution
+              </h3>
+              <p class="mb-3">For this project, my team and I created Electrillo, a website that allows users to
+                calculate the amount of money they could save by switching from fuel to EV-powered vehicles. The
+                application also provides an electrical vehicle search, where users can search for electric vehicles
+                based on their needs.</p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                Tech
+                <i class="fas fa-wrench mx-1"></i>
+                Stack
+              </h3>
+              <p class="pb-3">JavaScript, HTML, CSS, Bootstrap 5, JSON
+              </p>
             </div>
           </div>
         </div>
@@ -588,6 +621,334 @@
               Project</button>
             <a href="https://github.com/alissatroiano/team-4-april-2022" target="_blank">
               <button class="project-button">Source Code</button></a>
+        </div>
+      </div>
+      Source Code
+    </div>
+  </div>
+
+  <!--Smitten-->
+  <div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="electrilloModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+      <div class="modal-content">
+        <div class="text-end">
+          <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-header">
+          <div class="col-12">
+            <h1 class="folio-title display-4 text-center text-sm-start">Smitten: <span
+                class="text-light-purple">JAVASCRIPT WORDLE GAME
+              </span></h1>
+            <span class="award-text text-center text-sm-start"> 1ST PLACE - CODE INSTITUTE HACKATHON, 02/22
+            </span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <img src="assets/images/smitten.png" class="img-wrapper--reverse img-fluid project-img" alt="hue" />
+              <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
+                About</h2>
+              <p class="fs-lg mb-0">As the 1st Place winner in Code Institute’s 2022 “Love is in The Air” Hackathon,
+                "Smitten" is a Valentine's Day & Love themed "Wordle" game.
+              </p>
+            </div>
+            <div class="col-lg-5 col-xl-4 border-start-lg">
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-circle-question mx-1"></i>
+                Problem
+              </h3>
+              <p class="pb-3">
+                Create a project for Valentine's Day theme, "Love is in the air".
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-lightbulb me-2"></i>
+                Solution
+              </h3>
+              <p class="mb-3">For this challenge, my team and I crreated Smitten. Smitten is an online word game related
+                to love and Valentine's Day. Smitten was inspired by the famous game, Wordle. The game is built for
+                anyone who likes word games, and want to test their knowledge in love.
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                Tech
+                <i class="fas fa-wrench mx-1"></i>
+                Stack
+              </h3>
+              <p class="pb-3">JAVASCRIPT, HTML, CSS, BOOTSTRAP, JSON
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://alissatroiano.github.io/Milestone-2/" target="_blank">
+            <button class="project-button">Live
+              Project</button>
+            <a href="https://github.com/alissatroiano/Milestone-2" target="_blank"><button class="project-button">Source
+                Code</button></a>
+        </div>
+      </div>
+      Source Code
+    </div>
+  </div>
+
+  <!--Game of Facts-->
+  <div class="modal fade" id="projectModal8" tabindex="-1" aria-labelledby="electrilloModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+      <div class="modal-content">
+        <div class="text-end">
+          <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-header">
+          <div class="col-12">
+            <h1 class="folio-title display-3 text-center text-sm-start">Game of Facts: <span
+                class="text-light-purple">Trivia Game </span></h1>
+            <span class="award-text text-center text-sm-start"> Merit Award - Code Institute Milestone 2 Project </span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <img src="assets/images/gameoffacts-responsive.png" class="img-wrapper--reverse img-fluid project-img"
+                alt="hue" />
+              <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
+                About</h2>
+              <p class="fs-lg mb-0">Built for Game of Thrones fans and history lovers, Game Of Facts is a fun &
+                interactive way to learn about the historical people & events that inspired George R.R Martin's book
+                and television series, Game of Thrones.
+              </p>
+            </div>
+            <div class="col-lg-5 col-xl-4">
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-circle-question mx-1"></i>
+                Problem
+              </h3>
+              <p class="pb-3">
+                Create a web-based program that relies on JavaScript and/or JavaScript libraries for its' main
+                functionality.
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-lightbulb me-2"></i>
+                Solution
+              </h3>
+              <p class="mb-3">I used JavaScript and jQuery to create a web-based trivia game about the real history
+                behind George R.R Martin & HBO's popular book and television series, Game of Thrones. The website
+                features a landing page with a 'Play' button that starts the game. The game includes 10 questions. A
+                modal dialog opens after each question is answered revealing a relevant GIF along with the correct
+                answer and its' explanation. The game also includes an FAQ("How to Play"). When all 10 questions have
+                been answered the user is presented with their final score and a 'Play Again' button that will restart
+                the game when clicked. </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                Tech
+                <i class="fas fa-wrench mx-1"></i>
+                Stack
+              </h3>
+              <p class="pb-3">JAVASCRIPT, HTML, CSS, BOOTSTRAP 4, JQUERY, GIT
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://alissatroiano.github.io/Milestone-2/" target="_blank">
+            <button class="project-button">Live
+              Project</button>
+            <a href="https://github.com/alissatroiano/Milestone-2" target="_blank"><button class="project-button">Source
+                Code</button></a>
+        </div>
+      </div>
+      Source Code
+    </div>
+  </div>
+
+  <!--Infinity-->
+  <div class="modal fade" id="projectModal9" tabindex="-1" aria-labelledby="infinityModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+      <div class="modal-content">
+        <div class="text-end">
+          <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-header">
+          <div class="col-12">
+            <h1 class="folio-title display-3 text-center text-sm-start">Infinity: <span
+                class="text-light-purple">Landing Page </span></h1>
+            <span class="award-text text-center text-sm-start"> Distinction Award - Code Institute Milestone 1 Project
+            </span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <img src="assets/images/infinity-responsive.png" class="img-wrapper--reverse img-fluid project-img"
+                alt="infinity" />
+              <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
+                About</h2>
+              <p class="fs-lg mb-0">This responsive website was created for Infinity, a fictional Yoga & Meditation
+                studio in New York, New York. As the Milestone 1 Project for Code Institute's Full Stack Software
+                Development Program, this website was built with HTML, CSS & Bootstrap.
+              </p>
+            </div>
+            <div class="col-lg-5 col-xl-4">
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-circle-question mx-1"></i>
+                Problem
+              </h3>
+              <p class="pb-3">
+                Create a frontend website that achieves business goals and uses HTML and CSS best practices.
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-lightbulb me-2"></i>
+                Solution
+              </h3>
+              <p class="mb-3">For this project, I created a responsive landing page for a fictional Yoga Studio,
+                Infinity. Infinity’s website addresses all of the studio's goals in a clean, user-friendly, and visually
+                appealing manner. The website's Jumbotron includes a call-to-action button that directs users to the
+                schedule section where class details, times, and a signup button can be accessed with ease. The website
+                also includes an interactive, 'About' section, relatable 'Customer Reviews, and contact details.
+
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                Tech
+                <i class="fas fa-wrench mx-1"></i>
+                Stack
+              </h3>
+              <p class="pb-3">JAVASCRIPT, HTML, CSS, BOOTSTRAP 4, JQUERY, GIT
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://alissatroiano.github.io/Milestone-2/" target="_blank">
+            <button class="project-button">Live
+              Project</button>
+            <a href="https://github.com/alissatroiano/Milestone-2" target="_blank"><button class="project-button">Source
+                Code</button></a>
+        </div>
+      </div>
+      Source Code
+    </div>
+  </div>
+
+  <!--Emojourney-->
+  <div class="modal fade" id="projectModal10" tabindex="-1" aria-labelledby="infinityModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+      <div class="modal-content">
+        <div class="text-end">
+          <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-header">
+          <div class="col-12">
+            <h1 class="folio-title display-3 text-center text-sm-start">Emojourney: <span
+                class="text-light-purple">Emoji Travel Guide </span></h1>
+            <span class="award-text text-center text-sm-start"> 1st Place - Code Institute World Emoji Day Hackathon 04/22
+            </span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <img src="assets/images/emojourney.png" class="img-wrapper--reverse img-fluid project-img"
+                alt="infinity" />
+              <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
+                About</h2>
+              <p class="fs-lg mb-0">Emojourney is a guide to educate people about the different meanings of emojis for
+                different cultures.
+              </p>
+            </div>
+            <div class="col-lg-5 col-xl-4">
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-circle-question mx-1"></i>
+                Problem
+              </h3>
+              <p class="pb-3">
+                Create a project to celebrate World Emoji Day.
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-lightbulb me-2"></i>
+                Solution
+              </h3>
+              <p class="mb-3">For this project, my team and I came up with a rather unique concept: an Emoji travel
+                guide. The idea for Emojourney was born after my team and I shared funny stories about how certain
+                emojis can be offensive or insulting in other cultures. The goal of Emojourney is to share
+                unexpected/unusual meanings for Emojis in a creative way. The app features a landing page and a Team
+                page with links to hackathon team members. The main feature of Emojourney is 'The Guide', which includes
+                an Emoji fixed action navigation tool,so users can navigate different Emoji meanings with ease.
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                Tech
+                <i class="fas fa-wrench mx-1"></i>
+                Stack
+              </h3>
+              <p class="pb-3">JAVASCRIPT, HTML, CSS, BOOTSTRAP 5
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://alissatroiano.github.io/team-8/index.html" target="_blank">
+            <button class="project-button">Live
+              Project</button>
+            <a href="https://github.com/alissatroiano/team-8/blob/main/README.md" target="_blank"><button class="project-button">Source
+                Code</button></a>
+        </div>
+      </div>
+      Source Code
+    </div>
+  </div>
+
+  <!--DeathScape-->
+  <div class="modal fade" id="projectModal11" tabindex="-1" aria-labelledby="infinityModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+      <div class="modal-content">
+        <div class="text-end">
+          <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-header">
+          <div class="col-12">
+            <h1 class="folio-title display-3 text-center text-sm-start">DeathScape: <span
+                class="text-light-purple">Star Wars Escape Room Game </span></h1>
+            <span class="award-text text-center text-sm-start"> 2nd Place - Code Institute May the Fourth Hackathom 05/2023
+            </span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <img src="assets/images/deathscape.png" class="img-wrapper--reverse img-fluid project-img"
+                alt="deathscape" />
+              <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
+                About</h2>
+              <p class="fs-lg mb-0">DeathScape is a Star Wars themed escape room game.
+              </p>
+            </div>
+            <div class="col-lg-5 col-xl-4">
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-circle-question mx-1"></i>
+                Problem
+              </h3>
+              <p class="pb-3">
+                Create a Star Wars themed project for May the 4th.
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-lightbulb me-2"></i>
+                Solution
+              </h3>
+              <p class="mb-3">For this project my team and I created DeathScape, a Star Wars themed escape game. To play Deathscape, the user must use Star Wars knowledge to escape the Death Star. To win users must find the hidden mini-games and complete them all to unlock the sealed door and lead the others to safety.
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                Tech
+                <i class="fas fa-wrench mx-1"></i>
+                Stack
+              </h3>
+              <p class="pb-3">JAVASCRIPT, HTML, CSS, BOOTSTRAP 5
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://alissatroiano.github.io/team-11/" target="_blank">
+            <button class="project-button">Live
+              Project</button>
+            <a href="https://github.com/alissatroiano/team-11" target="_blank"><button class="project-button">Source
+                Code</button></a>
         </div>
       </div>
       Source Code
