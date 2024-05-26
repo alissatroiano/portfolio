@@ -352,10 +352,13 @@ nav.navbar {
 /* ------------------ Gallery */
 .gallery {
   background-color: var(--dark-violet);
+  min-height: 100vh;
+  overflow: hidden;
+  padding-bottom: 30px;
 }
 
 #projectsRow {
-  padding: 30px;
+  margin: 20px;
 }
 
 .gallery .gallery-item {
