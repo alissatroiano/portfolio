@@ -98,7 +98,7 @@ a {
 }
 
 #resume-nav-link {
-  color: var(--purple2);
+  color: var(--light-grey);
   font-weight: 400;
 }
 
@@ -202,7 +202,6 @@ hr {
   color: var(--violet);
   text-decoration: line-through;
 }
-
 
 a.nav-link,
 #navbarCollapse,
@@ -430,6 +429,36 @@ ul#nav {
 	transform: translate(-50%, -50%) scale(1);
 }
 
+a#projectsLink {
+  animation: flicker 1.5s infinite alternate;
+  color: var(--purple3);
+}
+
+
+a#projectsLink:hover {
+  animation: glow 1.25s infinite alternate;
+  color: var(--purple3);
+}
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #8e20f5,
+      0 0 11px  #8e20f5,
+      0 0 19px #8e20f5,
+      0 0 40px var(--purple),
+      0 0 80px var(--purple),
+      0 0 90px var(--purple),
+      0 0 100px var(--purple),
+      0 0 150px var(--purple);
+  }
+  
+  30%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
 
 /* Third image (Contact) */
 .bgimg-3 {

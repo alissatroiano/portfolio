@@ -361,6 +361,11 @@ nav.navbar {
   margin: 20px;
 }
 
+#gallery {
+  padding: 30px;
+  margin-top: 30px;
+}
+
 .gallery .gallery-item {
   position: relative;
   overflow: hidden;

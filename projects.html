@@ -53,7 +53,7 @@
             <a class="nav-link" href="index.html#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#projects">Projects</a>
+            <a class="nav-link" href="index.html#projects" id="glowingLink">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html#contact">Contact</a>
@@ -91,14 +91,16 @@
     </div>
   </nav>
 
-  <header>
-    <!-- <canvas id="waterCanvas"></canvas> -->
-  </header>
-
   <!--Project Thumbnails (Links to Modals)-->
   <section id="gallery" class="gallery">
     <div class="container-fluid">
-      <div class="row gy-4 gx-3 justify-content-center" data-masonry='{"percentPosition": true }'>
+      <div class="row d-flex gy-4 gx-3 justify-content-center" data-masonry='{"percentPosition": true }'>
+        <div class="col-12 text-center text-sm-start">
+          <h1 class="section-title display-3 text-light my-3">MY PROJECTS</h1>
+        </div>
+        </div>
+      
+        <div class="row d-flex gy-4 gx-3 justify-content-center py-3 mb-5" data-masonry='{"percentPosition": true }'>
         <!--Hue-->
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="gallery-item h-100">
@@ -129,6 +131,16 @@
         </div>
       </div>
        -->
+       <!--Coming Soon-->
+       <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/images/db-coming-soon.png" class="img-wrapper" alt="coming-soon">
+          <div class="gallery-links d-flex align-items-center justify-content-center">
+            <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#projectModal12"></a>
+          </div>
+        </div>
+      </div>
 
         <!-- inklusion-->
         <div class="col-xl-3 col-lg-4 col-md-6">
@@ -216,7 +228,6 @@
               </div>
             </div>
           </div>
-  
 
       </div>
     </div>
@@ -956,6 +967,72 @@
     </div>
   </div>
 
+ <!--Dara-->
+ <div class="modal fade" id="projectModal12" tabindex="-1" aria-labelledby="inklusionModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+    <div class="modal-content">
+      <div class="text-end">
+        <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-header">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12">
+            <h1 class="title display-4 text-center text-sm-start fw-bold">Dara Budapen Fashion: <span
+                class="text-light-purple">Coming Soon</span></h1>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-7 mb-4 mb-lg-0">
+            <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+              <div class="embed-responsive text-center align-items-center justify-content-center ratio ratio-4x3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gzH3S2cGaGw?si=13j82E5jyAN1s3Af" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
+                About</h2>
+              <p class="fs-lg mb-0">Coming soon page for fashion company</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+            <div class="ps-lg-4 ms-lg-3">
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-circle-question mx-1"></i>
+                Problem
+              </h3>
+              <p class="pb-3">
+                Client wants something in place while she makes her products
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-lightbulb me-2"></i>
+                Solution
+              </h3>
+              <p class="mb-3">An attractive coming soon splash page to get customers excited </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                Tech
+                <i class="fas fa-wrench mx-1"></i>
+                Stack
+              </h3>
+              <p class="pb-3"> HTML, CSS, BOOTSTRAP 5, JAVASCRIPT, CANVAS
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://alissatroiano.github.io/fashion/" target="_blank">
+          <button class="project-button">
+            Live Project</button>
+        </a>
+        <a href="https://github.com/alissatroiano/fashion" target="_blank">
+          <button class="project-button">Source Code
+          </button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
 
   <script>
     AOS.init();
