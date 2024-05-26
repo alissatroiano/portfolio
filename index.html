@@ -10,8 +10,6 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!--Import Futura from Adobe Fonts-->
   <link rel="stylesheet" href="https://use.typekit.net/xwz5atb.css">
-  <!-- W3 Schools Starter Stylesheet -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!--Load Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
     integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
@@ -506,20 +504,19 @@
       </div>
     </div>
     <div class="row d-flex my-0 mx-auto align-items-center py-2 align-items-center justify-content-center">
-      <div class="col-12 col-sm-8 text-start">
-        <div class="card shadow-lg border-0 mb-5">
-          <form class="form" method="POST" id="contact-form" action="submit">
-            <div class="form-group m-3 m-md-5">
+      <div class="col-12 col-sm-6 text-start">
+          <form class="form-floating" method="POST" id="contact-form" action="submit">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" name="from_name" id="from_name" placeholder="Your Name">
               <label for="from_name">Your Name</label>
-              <input type="text" name="from_name" id="from_name" class="w3-input">
             </div>
-            <div class="form-group m-3 m-md-5">
+            <div class="form-floating my-3">
+              <input type="email" class="form-control" id="from_email" placeholder="Email">
+              <label for="from_email">Email</label>
+            </div>
+            <div class="form-floating">
+              <textarea type="text" name="message" class="form-control" id="message" placeholder="Your Message" style="height: 100px"></textarea>
               <label for="message">Your Message</label>
-              <textarea type="text" name="message" id="message" class="w3-input"></textarea>
-            </div>
-            <div class="form-group m-3 m-md-5">
-              <label for="reply_to">Your Email</label>
-              <input type="text" name="reply_to" id="reply_to" class="w3-input">
             </div>
             <div class="form-group text-center my-4 pt-3">
               <button class="btn">

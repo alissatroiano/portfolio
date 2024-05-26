@@ -874,7 +874,6 @@ p.text-muted {
     letter-spacing: .2px;
     margin: 5px 30px;
     position: relative;
-    width: 100%;
 }
 
 .w3-col.m8.w3-panel {
@@ -921,7 +920,6 @@ label {
 
 .field input {
   display: block;
-  min-width: 250px;
   line-height: 1.5;
   font-size: 14px;
   color: var(--violet);
@@ -929,7 +927,6 @@ label {
 
 input[type="submit"] {
   display: block;
-  padding: 6px 30px;
   font-size: 1rem;
   font-family: 'Futura-PT', sans-serif;
   font-weight: 500;
