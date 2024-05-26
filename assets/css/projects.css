@@ -351,10 +351,11 @@ nav.navbar {
 
 /* ------------------ Gallery */
 .gallery {
-  margin: 20px auto;
-  padding: 50px;
   background-color: var(--dark-violet);
+}
 
+#projectsRow {
+  padding: 20px;
 }
 
 .gallery .gallery-item {
@@ -364,7 +365,7 @@ nav.navbar {
 }
 
 img.gallery-item {
-  vertical-align: ;
+  vertical-align: middle;
 }
 
 .gallery .gallery-item img {
