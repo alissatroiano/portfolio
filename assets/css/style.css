@@ -483,7 +483,7 @@ img {
 
 .fade {
   animation-name: fade;
-  animation-duration: 5s;
+  animation-duration: 20s;
 }
 
 @keyframes fade {
