@@ -401,7 +401,7 @@ ul#nav {
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1.85px;
-	font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 1.45;
 	font-weight: 200;
 	text-decoration: none;
 	position: relative;
