@@ -102,23 +102,20 @@
             <span>Troiano</span>
             <img alt="planning"
               src="https://images.unsplash.com/photo-1603975711481-18b7aaca4caa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" />
-            </a>
+      
           <li>
             <span>Full</span>
             <img alt="laptop"
-              src="https://images.unsplash.com/photo-1624996752380-8ec242e0f85d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" />
-            </a>
+              src="https://images.unsplash.com/photo-1624996752380-8ec242e0f85d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="portfolio image"/>
           <li>
             <span>Stack</span>
             <img
-              src="https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80" />
-            </a>
+              src="https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80" alt="computer"/> 
           <li>
             <span>Software</span>
             <img
               src="https://images.unsplash.com/photo-1573643808568-4a3c26f3a06b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80"
               alt="laptop-text" />
-            </a>
           </li>
           <li>
             <span>Developer</span>
@@ -126,8 +123,15 @@
               src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1055&q=80"
               alt="laptop-text" />
           </li>
+          <li class="my-3 pt-3">
+            <a class="jumbo-link" href="projects.html">
+              <h1 class="display-3">Portfolio
+                <i class="fas fa-chevron-right ms-2"></i>
+              </h1> 
+            </a>
+          </li>
         </ul>
-      </div>
+      </div>  
     </div>
   </section>
   <!-- end-jumbotron -->
@@ -166,9 +170,9 @@
               </a>
             </div>
             <!--./end-resume-->
-
           </div>
         </div>
+      </div>
       </div>
   </section>
 
@@ -493,18 +497,12 @@
 
   <!-- Contact Form -->
   <section class="container my-0 mx-auto" id="contact">
-    <div class="row my-0 mx-auto my-3">
-      <div class="col-12 my-3">
-        <h2 class="section-title text-start ms-sm-4 display-1 text-dark" data-aos="fade-in" data-aos-delay="200"
-          data-aos-duration="1200">Contact Me</h2>
-        <div class="ms-sm-4 mt-2 mt-md-3">
-          <hr>
-        </div>
-      </div>
-    </div>
-    <div class="row d-flex my-0 mx-auto align-items-center py-2 align-items-center justify-content-center">
-      <div class="col-12 col-sm-6 text-start">
-          <form class="form-floating" method="POST" id="contact-form" action="submit">
+    <div class="row d-flex my-0 mx-auto text-center align-items-center justify-content-center">
+      <div class="col-12 mt-5 pt-5">
+        <div class="contact-form-wrapper">
+          <h2 class="section-title text-center display-6 my-3 my-md-4" data-aos="fade-in" data-aos-delay="200"
+          data-aos-duration="1200" id="contactMe">Contact Me</h2>
+          <form method="POST" id="contact-form" action="submit">
             <div class="form-floating mb-3">
               <input class="form-control" type="text" name="from_name" id="from_name" placeholder="Your Name">
               <label for="from_name">Your Name</label>
@@ -514,21 +512,18 @@
               <label for="from_email">Email</label>
             </div>
             <div class="form-floating">
-              <textarea type="text" name="message" class="form-control" id="message" placeholder="Your Message" style="height: 100px"></textarea>
+              <textarea name="message" class="form-control" id="message" placeholder="Your Message" style="height: 100px"></textarea>
               <label for="message">Your Message</label>
             </div>
             <div class="form-group text-center my-4 pt-3">
-              <button class="project-button">
-                <input type="submit" id="button" value="Send Email">
-              </button>
+                <input class="contact-button" type="submit" id="button" value="Send Email">
             </div>
           </form>
+          </div>
         </div>
       </div>
-    </div>
   </section>
 
-  
   <!-- Email JS Script -->
   <script type="text/javascript">
     emailjs.init('user_zf3vBJuHYSbtEgwwo7YWb')
@@ -537,7 +532,10 @@
   <script>
     AOS.init();
   </script>
-
+<!--Bootstrap Scripts-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+crossorigin="anonymous"></script>
   <script>
     let index = 0;
     displayImages();
@@ -561,10 +559,14 @@
   <script src="assets/js/top.js"></script>
   <script src="assets/js/nav.js" type="text/javascript"></script>
 
-<!--Bootstrap Scripts-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-crossorigin="anonymous"></script>
+<script>
+  $("#navbarCollapse").on('show.bs.collapse', function() {
+    $('a.nav-link').click(function() {
+        $("#navbarCollapse").collapse('hide');
+    });
+});
+</script>
+
 </body>
 
 </html>
