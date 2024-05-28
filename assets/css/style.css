@@ -555,17 +555,19 @@ img {
 
 /* ------------ First CTA */
 section#cta1 {
-  min-height: 20vh;
+  min-height: 30vh;
   background-color: #4d24a1;
 }
 
 section#cta2 {
-  background-color: #b0a9e5;
+  min-height: 30vh;
+  background-color: #fafafa;
 
 }
 
 a.data-2,
 a.data {
+  margin: 40px 0;
   text-decoration: none;
   color: #3f1d82;
   font-family: 'futura-pt', sans-serif;
