@@ -474,7 +474,7 @@ a#projectsLink:hover {
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("../images/bg4.png");
+  background-image: url("../images/bg.png");
   min-height: 400px;
 }
 
@@ -551,6 +551,52 @@ img {
 .layout__item--figure {
   margin-right: auto;
   flex-grow: 1;
+}
+
+/* ------------ First CTA */
+section#cta1 {
+  min-height: 20vh;
+  background-color: #4d24a1;
+}
+
+h1 {
+  position: relative;
+  color: rgba(0, 0, 0, .3);
+  font-size: 5em
+}
+
+a.data {
+  text-decoration: none;
+  color: #3f1d82;
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 450;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+a.data:hover {
+  text-shadow: -1px -1px 2px var(--dark-violet),
+  1px 1px 2px var(--dark-violet),
+  0px 0px 18px var(--dark-violet),
+   0px 0px 38px var(--dark-violet);
+  border: none;
+  color: var(--violet);
+}
+
+a.data:before {
+  content: attr(data-text);
+  position: absolute;
+  overflow: hidden;
+  max-width: 7em;
+  white-space: nowrap;
+  color: #7c66da;
+  border: none;
+  animation: loading 4s linear infinite;
+}
+@keyframes loading {
+  0% {
+      max-width: 0;
+  }
 }
 
 /*-------------------------------- About Section */
