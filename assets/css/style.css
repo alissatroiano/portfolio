@@ -210,11 +210,10 @@ a.nav-link,
 }
 
 a.jumbo-link {
-  color: #8e61f7;
+  color: #7442eb;
   background-color: var(--dark-violet);
-  opacity: 1;
+  opacity: .5;
   text-decoration: none;
-  animation: flicker 1.5s infinite alternate;
 }
 
 a.jumbo-link:hover {
@@ -401,7 +400,7 @@ ul#nav {
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1.85px;
-  line-height: 1.45;
+	font-size: clamp(3rem, 6vw, 6rem);
 	font-weight: 200;
 	text-decoration: none;
 	position: relative;
