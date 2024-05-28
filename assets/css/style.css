@@ -744,7 +744,7 @@ a.resume-link:hover {
 	justify-content: space-around;
 	gap: var(--gap);
 	min-width: 100%;
-	animation: scroll-x 60s linear infinite;
+	animation: scroll-x 30s linear infinite;
   }
   
   @media (prefers-reduced-motion: reduce) {
@@ -795,7 +795,7 @@ a.resume-link:hover {
 	place-items: center;
 	width: clamp(10rem, 1rem + 40vmin, 30rem);
 	color: var(--light);
-	background: rgb(156, 70, 218);
+	background: #6234bc;
 	border-radius: 0.5rem;
 	font-size: 5em;
 	margin-top: 50px;
@@ -813,7 +813,7 @@ a.resume-link:hover {
   
   .slider--vertical i {
 	aspect-ratio: 1;
-	width: calc(var(--size) / 1.5);
+	width: 400px;
 	padding: calc(var(--size) / 6);
   }
   
