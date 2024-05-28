@@ -359,6 +359,11 @@ ul#nav {
 	transform: translate(-50%, -50%) scale(1);
 }
 
+hr {
+  border: 1px solid var(--violet);
+  width: 75%;
+  opacity: 1;
+}
 
 a.nav-link,
 #navbarCollapse,
@@ -396,7 +401,7 @@ nav.navbar {
 }
 
 #gallery {
-  padding: 30px;
+  padding: 60px;
   margin-top: 30px;
 }
 
@@ -404,6 +409,7 @@ nav.navbar {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: rgba(160, 117, 245, 0.4) 0px 2px 4px, rgba(160, 117, 245, 0.3) 0px 7px 13px -3px, rgba(106, 22, 232, 0.2) 0px -3px 0px inset;
 }
 
 img.gallery-item {
@@ -464,16 +470,25 @@ img.gallery-item {
   margin: 0;
 }
 
-
-
 #projectModal1 {
   min-width: 100vw;
 }
 
-/* 
-section#projects {
-  background: #f7f7f7;
-} */
+p.tech-stack {
+  font-size: 14px;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom:80px;
+  right: 20px;
+  color: #6d62ff;
+}
+
+#btn-back-to-top:hover {
+  position: fixed;
+  color: #6c62ffc1;
+}
 
 .modal-dialog.modal-dialog-centered.modal-dialog-scrollable.w-100,
 .modal-dialog-scrollable .modal-content {

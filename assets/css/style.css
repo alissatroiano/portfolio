@@ -561,7 +561,7 @@ section#cta1 {
 
 section#cta2 {
   min-height: 30vh;
-  background-color: #fafafa;
+  background-color: rgb(219, 207, 243);
 
 }
 
@@ -577,18 +577,17 @@ a.data {
 }
 
 a.data:hover {
-  text-shadow: -1px -1px 2px var(--dark-violet),
-  1px 1px 2px var(--dark-violet),
-  0px 0px 18px var(--dark-violet),
-   0px 0px 38px var(--dark-violet);
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+  10px 20px 5px rgba(0,0,0,0.05),
+  -10px 20px 5px rgba(0,0,0,0.05);
   border: none;
   color: var(--violet);
 }
 
 a.data-2:hover {
   color: var(--violet);
-  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-  0px -4px 10px rgba(255,255,255,0.3);
+	
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 }
 
 a.data-2:before,
@@ -961,6 +960,10 @@ form {
   unicode-bidi: isolate;
   padding-top: 20px;
   margin-top: 20px;
+}
+
+input#button {
+  background: #0c010175;
 }
 
 #ringForm {
