@@ -559,12 +559,12 @@ section#cta1 {
   background-color: #4d24a1;
 }
 
-h1 {
-  position: relative;
-  color: rgba(0, 0, 0, .3);
-  font-size: 5em
+section#cta2 {
+  background-color: #b0a9e5;
+
 }
 
+a.data-2,
 a.data {
   text-decoration: none;
   color: #3f1d82;
@@ -583,6 +583,13 @@ a.data:hover {
   color: var(--violet);
 }
 
+a.data-2:hover {
+  color: var(--violet);
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+  0px -4px 10px rgba(255,255,255,0.3);
+}
+
+a.data-2:before,
 a.data:before {
   content: attr(data-text);
   position: absolute;
