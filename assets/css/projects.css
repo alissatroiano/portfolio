@@ -296,6 +296,7 @@ a {
 .section-title {
   letter-spacing: 2.35px;
   color: var(--dark-grey);
+  font-weight: 400;
 }
 
 /* ---------- Nav */
@@ -401,7 +402,7 @@ nav.navbar {
 }
 
 #gallery {
-  padding: 60px;
+  padding: 30px 60px;
   margin-top: 30px;
 }
 
@@ -468,6 +469,46 @@ img.gallery-item {
 .glightbox-clean .gslide-title {
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
+}
+
+/* Three column layout */
+.columns {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.column-reverse {
+	transform: translateY(calc(-100% + 100vh));
+}
+
+.columns {
+	overflow-y: hidden;
+}
+
+.column-reverse {
+	flex-direction: column-reverse;
+}
+
+.column-reverse {
+	animation: adjust-position linear forwards;
+	animation-timeline: scroll(root block);
+}
+
+@keyframes adjust-position {
+	/* Start position: shift entire column up, but not so that it goes out of view */
+	from {
+		transform: translateY(calc(-100% + 100vh));
+	}
+
+	/* End position: shift entire column down, but not so that it goes out of view */
+	to {
+		transform: translateY(calc(100% - 100vh));
+	}
 }
 
 #projectModal1 {
