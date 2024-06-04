@@ -155,16 +155,14 @@
       data-aos-duration="1000">
         <div class="card profile-card pb-5" >
           <!--Header-->
-          <div class="card-body border-0 profile-header" data-aos="fade-up"
-          data-aos-duration="2000" data-aos-delay="500">
+          <div class="card-body border-0 profile-header">
             <!--Custom Avatar Goes Here-->
             <a>
-              <img class="img-fluid" src="assets/images/alissa.png" alt="Avatar">
+              <img class="img-fluid" src="assets/images/alissa.png" alt="Avatar" >
             </a>
           </div>
           <!--./end-header-->
-          <div class="profile-body" data-aos="fade-up"
-          data-aos-duration="2000" data-aos-delay="1000">
+          <div class="profile-body" >
             <!--Name-->
             <h4 class="display-5 fw-light subheading text-grey">Alissa Troiano</h4>
             <!--Role-->
@@ -532,10 +530,8 @@
     <div class="row d-flex my-0 mx-auto text-center align-items-center justify-content-center">
       <div class="col-12 mt-5 pt-5">
         <div class="contact-form-wrapper mt-4" data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="1500">
-          <h2 class="section-title text-center display-6 my-3 my-md-4" data-aos="fade-in" data-aos-delay="200"
-          data-aos-duration="800" id="contactMe">Contact Me</h2>
+        data-aos-duration="2000" data-aos-delay="150">
+          <h2 class="section-title text-center display-6 my-3 my-md-4" id="contactMe">Contact Me</h2>
           <form method="POST" id="contact-form" action="submit" >
             <div class="form-floating mb-3">
               <input class="form-control" type="text" name="from_name" id="from_name" placeholder="Your Name">
@@ -590,17 +586,8 @@ crossorigin="anonymous"></script>
   <!--Load Scripts-->
   <script src="assets/js/welcome.js" type="text/javascript"></script>
   <script src="assets/js/script.js"></script>
-  <script src="assets/js/top.js"></script>
   <script src="assets/js/nav.js" type="text/javascript"></script>
 
-<script>
-  $("#navbarCollapse").on('show.bs.collapse', function() {
-    $('a.nav-link').click(function() {
-        $("#navbarCollapse").collapse('hide');
-    });
-});
-</script>
 
 </body>
-
 </html>
