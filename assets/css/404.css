@@ -163,7 +163,7 @@
   .glitch {
     position: relative;
     color: #ffffffe4;
-    text-shadow: 0px 6px 3px #ff2aa4b5;
+    text-shadow: 0px 6px 3px #05512d;
     letter-spacing: 0.5em;
     animation: glitch-skew 1s infinite linear alternate-reverse;
     font-family: 'Montserrat', sans-serif;
