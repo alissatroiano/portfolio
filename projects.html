@@ -92,7 +92,7 @@
   </nav>
 
   <!--Project Thumbnails (Links to Modals)-->
-  <section id="gallery" class="gallery">
+  <section id="gallery p-3 p-md-4 p-lg-5" class="gallery">
     <div class="container">
       <div class="row d-flex gy-4 gx-3 justify-content-center" data-masonry='{"percentPosition": true }'>
         <div class="col-12 text-center text-sm-start py-3">
@@ -105,6 +105,17 @@
         </div>
         </div>
         <div class="row d-flex gy-4 g-3 justify-content-center py-3 mb-5" data-masonry='{"percentPosition": true }'>
+
+          <!-- COAST VA -->
+          <div class="col-12 col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="assets/images/projects/coast-va-home.png" alt="hue" class="img-fluid" />
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#projectModal13"></a>
+              </div>
+            </div>
+          </div>
         <!--Hue-->
         <div class="col-12 col-xl-3 col-lg-4 col-md-6">
           <div class="gallery-item h-100">
@@ -141,7 +152,7 @@
           <img src="assets/images/db-coming-soon.png" class="img-wrapper" alt="coming-soon">
           <div class="gallery-links d-flex align-items-center justify-content-center">
             <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
-              data-bs-target="#projectModal12"></a>
+              data-bs-target="#projectModal13"></a>
           </div>
         </div>
       </div>
@@ -242,6 +253,7 @@
   </section>
 
   <!-- --------------------- MODALS-->
+   
   <!-- Hue Modal-->
   <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
@@ -661,7 +673,6 @@
     </div>
   </div>
 
-
   <!--Smitten-->
   <div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="electrilloModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
@@ -1048,6 +1059,78 @@
             Live Project</button>
         </a>
         <a href="https://github.com/alissatroiano/fashion" target="_blank">
+          <button class="project-button">Source Code
+          </button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+ <!--COAST VA-->
+ <div class="modal fade" id="projectModal13" tabindex="-1" aria-labelledby="inklusionModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+    <div class="modal-content">
+      <div class="text-end">
+        <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-header">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12">
+            <h1 class="title display-4 text-center text-sm-start fw-bold">Coast VA, <span
+                class="text-light-purple">Girls Lacrosse Club </span></h1>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-md-7 mb-4 mb-lg-0">
+            <img src="assets/images/coast-responsive.png" class="img-wrapper--reverse img-fluid project-img"
+            alt="COAST VA" />
+            <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
+              About</h2>
+            <p class="fs-lg mb-0">Coastva.org is a simple, user friendly website for a girls lacrosse club that can be edited by client via Google Apps Script/GitHub Workflow intgration.
+            </p>
+          </div>
+          <div class="col-12 col-md-5 offset-xl-1 border-start-lg">
+            <div class="ps-lg-4 ms-lg-3">
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-circle-question mx-1"></i>
+                Problem
+              </h3>
+              <p class="pb-3">
+                Create a simple, user friendly website for a girls lacrosse club that client can be updated and edited as needed.
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-clock mx-1"></i>
+                Duration
+              </h3>
+              <p class="pb-3">
+               2 Weeks
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-lightbulb me-2"></i>
+                Solution
+              </h3>
+              <p class="mb-3"> Developed website that solves all clients goals in just two weeks. Because the client needs to update website content as needed, I created .CSV data files and cooresponding Google Sheets (spreadsheets) for each section. I then wrote custom Google Apps Scripts & GitHub workflows to automatically update .csv data files in the website's GitHub repository whenever the connected Google Sheets are updated, using JavaScript to render changes on the frontend. Finally, I made thorough screencasts for the client, demonstrating how to update the site accordingly </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                Tech
+                <i class="fas fa-wrench mx-1"></i>
+                Stack
+              </h3>
+              <p class="pb-3"> HTML, CSS, BOOTSTRAP 5, JAVASCRIPT, Google Apps Script, Google API, YAML, GitHub Actions
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://coastva.org" target="_blank">
+          <button class="project-button">
+            Live Project</button>
+        </a>
+        <a href="https://github.com/alissatroiano/coast-va" target="_blank">
           <button class="project-button">Source Code
           </button>
         </a>
