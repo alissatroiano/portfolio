@@ -29,8 +29,8 @@ function initializeBreadcrumbFilter(projects) {
             } else {
                 // Filter projects by selected technology
                 const filteredProjects = projects.filter((project) => {
-                    // Check if the selected tech is included in the project
-                    return project.Technologies.split(',').map(tech => tech.trim().toLowerCase()).includes(selectedTech.toLowerCase());
+                    const techList = project.Technologies.split(",").map((tech) => tech.trim().toLowerCase());
+                    return techList.includes(selectedTech.toLowerCase());
                 });
                 displayProjects(filteredProjects);
             }
@@ -41,19 +41,18 @@ function initializeBreadcrumbFilter(projects) {
     displayProjects(projects);
 }
 
+
 function displayProjects(projects) {
     const container = document.querySelector("#project-container .row"); // Target the correct row container
+
     container.innerHTML = ""; // Clear existing content
 
     projects.forEach((project) => {
-        // Ensure valid data is provided for each field
+        // Extract data for each project
         const { Project, Technologies, ModalID, ImageSrc } = project;
 
-        // Check for missing or undefined data
-        if (!ImageSrc || !ModalID || !Project) {
-            console.warn("Missing data for project:", project);
-            return; // Skip this project
-        }
+        // Split the technologies into an array
+        const techList = Technologies.split(",").map((tech) => tech.trim());
 
         const projectCard = `
             <div class="col-12 col-xl-3 col-lg-4 col-md-6">
@@ -61,7 +60,11 @@ function displayProjects(projects) {
                     <img src="${ImageSrc}" alt="${Project}" class="img-fluid" />
                     <div class="gallery-links d-flex align-items-center justify-content-center">
                       <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${ModalID}"></a>
-                
+                    </div>
+                    <div class="technologies">
+                      ${techList
+                .map((tech) => `<span class="badge bg-secondary me-1">${tech}</span>`)
+                .join("")}
                     </div>
                 </div>
             </div>
@@ -69,4 +72,3 @@ function displayProjects(projects) {
         container.insertAdjacentHTML("beforeend", projectCard); // Add each project card dynamically
     });
 }
-
