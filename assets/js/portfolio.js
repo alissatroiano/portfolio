@@ -42,7 +42,7 @@ Papa.parse("assets/data/portfolio.csv", {
       const projectCard = `
         <div class="col-12 col-xl-3 col-lg-4 col-md-6">
           <div class="gallery-item h-100">
-            <img src="${project.Image}" alt="${project.Project}" class="img-fluid" />
+            <img src="${project.ImageSrc}" alt="${project.Project}" class="img-fluid" />
             <div class="gallery-links d-flex align-items-center justify-content-center">
               <a href="#" class="stretched-link" type="button" data-bs-toggle="modal" data-bs-target="#${project.ModalID}"></a>
             </div>
