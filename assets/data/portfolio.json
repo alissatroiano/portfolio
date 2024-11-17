@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Coast VA",
+        "image": "assets/images/projects/coast-va-home.png",
+        "technologies": ["Frontend", "JavaScript", "Google"]
+    },
+    {
+        "title": "Hue",
+        "image": "assets/images/projects/thumb-hue.png",
+        "technologies": ["Django", "JavaScript", "OpenAI", "Frontend"]
+    },
+    {
+        "title": "OBBA",
+        "image": "assets/images/OBBA.png",
+        "technologies": ["Frontend", "JavaScript", "React"]
+    }
+]

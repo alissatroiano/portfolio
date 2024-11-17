@@ -90,6 +90,7 @@
       </div>
     </div>
   </nav>
+  
 
   <!--Project Thumbnails (Links to Modals)-->
   <section id="gallery p-3 p-md-4 p-lg-5" class="gallery">
@@ -104,8 +105,28 @@
           data-aos-duration="2000" data-aos-delay="1200">
         </div>
         </div>
-        <div class="row d-flex gy-4 g-3 justify-content-center py-3 mb-5" data-masonry='{"percentPosition": true }'>
+         <!--breadcrumb-->
+        <div class="row" id="breadcrumbNav">
+          <div class="col-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Frontend</a></li>
+                <li class="breadcrumb-item"><a href="#">JavaScript</a></li>
+                <li class="breadcrumb-item"><a href="#">React</a></li>
+                <li class="breadcrumb-item"><a href="#">Django</a></li>
+                <li class="breadcrumb-item"><a href="#">Flask</a></li>
+                <li class="breadcrumb-item"><a href="#">MongoDB</a></li>
+                <li class="breadcrumb-item"><a href="#">PostgreSQL</a></li>
+                <li class="breadcrumb-item"><a href="#">AWS</a></li>
+                <li class="breadcrumb-item"><a href="#">Google API</a></li>
 
+                <li class="breadcrumb-item active" aria-current="page">All</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <!--.end-breadcrumb-->
+        <div class="row d-flex gy-4 g-3 justify-content-center py-3 mb-5" data-masonry='{"percentPosition": true }'>
           <!-- COAST VA -->
           <div class="col-12 col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
@@ -127,7 +148,7 @@
           </div>
         </div>
         <!-- Obba/Olla -->
-        <div class="col-12 col-12 col-12 col-xl-3 col-lg-4 col-md-6">
+        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
           <div class="gallery-item h-100">
             <img src="assets/images/OBBA.png" class="img-fluid" alt="olla" />
             <div class="gallery-links d-flex align-items-center justify-content-center">
@@ -136,6 +157,18 @@
             </div>
           </div>
         </div>
+
+        <!--Dash-->
+        <div class="col-12 col-xl-3 col-lg-4 col-md-6">
+          <div class="gallery-item h-100">
+            <img src="assets/images/projects/project_10.png" alt="hue" class="img-fluid" />
+            <div class="gallery-links d-flex align-items-center justify-content-center">
+              <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#projectModal14"></a>
+            </div>
+          </div>
+        </div>
+
         <!-- Olla -->
         <!-- <div class="col-xs-8 col-sm-4">
         <div class="card h-100 rounded-5 img-fluid border-0" data-aos="fade-in"
@@ -874,7 +907,7 @@
   </div>
 
   <!--Emojourney-->
-  <div class="modal fade" id="projectModal10" tabindex="-1" aria-labelledby="infinityModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal10" tabindex="-1" aria-labelledby="emoourneyModel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -941,7 +974,7 @@
   </div>
 
   <!--DeathScape-->
-  <div class="modal fade" id="projectModal11" tabindex="-1" aria-labelledby="infinityModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal11" tabindex="-1" aria-labelledby="deathscapModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1002,7 +1035,7 @@
   </div>
 
  <!--Dara-->
- <div class="modal fade" id="projectModal12" tabindex="-1" aria-labelledby="inklusionModal" aria-hidden="true">
+ <div class="modal fade" id="projectModal12" tabindex="-1" aria-labelledby="daraModal" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
     <div class="modal-content">
       <div class="text-end">
@@ -1069,7 +1102,7 @@
 </div>
 
  <!--COAST VA-->
- <div class="modal fade" id="projectModal13" tabindex="-1" aria-labelledby="inklusionModal" aria-hidden="true">
+ <div class="modal fade" id="projectModal13" tabindex="-1" aria-labelledby="coastVaModal" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
     <div class="modal-content">
       <div class="text-end">
@@ -1141,6 +1174,79 @@
   </div>
 </div>
 
+<!--Dash-->
+<div class="modal fade" id="projectModal14" tabindex="-1" aria-labelledby="dashModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+    <div class="modal-content">
+      <div class="text-end">
+        <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-header">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12">
+            <h1 class="title display-4 text-center text-sm-start fw-bold">Coast VA, <span
+                class="text-light-purple">Girls Lacrosse Club </span></h1>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-sm-6 mb-4 mb-lg-0">
+            <img src="assets/images/projects/project_10.png" class="img-wrapper--reverse img-fluid project-img"
+            alt="Dash" />
+            <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
+              About</h2>
+            <p class="fs-lg mb-0">Dash is a recipe sharing application powered by Flask. To become a contributor or an editor for Dash, all you need to do is sign up for a free account, log in, and start creating/editing recipes! Dash's administrator account manages the application and may delete inappropriate or offensive content.
+            </p>
+          </div> 
+          <div class="col-12 col-sm-5 mt-sm-3 border-start-lg">
+            <div class="ps-lg-4 ms-lg-3">
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-circle-question mx-1"></i>
+                Problem
+              </h3>
+              <p class="pb-3">
+                 Use Flask to build a Full Stack application with CRUD (create, read, edit, delete) capabilities to satisfy Code Institute's 'Data-Centric Development' portion of the Software Development Diploma program.</p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-clock mx-1"></i>
+                Duration
+              </h3>
+              <p class="pb-3">
+                2 Months
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-lightbulb me-2"></i>
+                Solution
+              </h3>
+              <p class="mb-3"> 
+                Developed a full-stack application where users can find and share recipes. I connected the Flask app with MongoDB in order to store Dash's recipe & user data efficiently. Photos are stored in a remote AWS S3 Photo Bucket. </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                Tech
+                <i class="fas fa-wrench mx-1"></i>
+                Stack
+              </h3>
+              <p class="pb-3"> HTML, CSS, BOOTSTRAP 5, JAVASCRIPT, Flask, MongoDB, AWS
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://coastva.org" target="_blank">
+          <button class="project-button">
+            Live Project</button>
+        </a>
+        <a href="https://github.com/alissatroiano/coast-va" target="_blank">
+          <button class="project-button">Source Code
+          </button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
   <script>
     AOS.init();
   </script>
@@ -1157,6 +1263,8 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
   <script src="assets/js/top.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+
   <script src="assets/js/nav.js"></script>
   <script>
 
