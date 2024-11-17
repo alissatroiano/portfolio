@@ -1,6 +1,6 @@
 Project,Technologies,ModalID,ImageSrc
-"Hue","Django,Python,JavaScript",projectModal1,assets/images/projects/thumb-hue.png
-"OBBA/OLLA Queue","ReactJS,JavaScript,HTML,CSS",projectModal2,assets/images/OBBA.png
+"Hue","Django,Python,JavaScript,AWS",projectModal1,assets/images/projects/thumb-hue.png
+"OBBA/OLLA Queue","React,JavaScript,HTML,CSS",projectModal2,assets/images/OBBA.png
 "OLLA","React,JavaScript,HTML,CSS",projectModal3,assets/images/OLLA-IG-RDV.png
 "Inklusion","HTML,CSS,Bootstrap 5,JavaScript",projectModal4,assets/images/projects/project_5.png
 "Muzak","React,JavaScript,HTML,CSS,YouTube API",projectModal5,assets/images/projects/project_4.png
