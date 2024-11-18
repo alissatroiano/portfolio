@@ -56,14 +56,14 @@ function displayProjects(projects) {
 
         const projectCard = `
             <div class="col-12 col-xl-3 col-lg-4 col-md-6">
-                <div class="gallery-item h-100">
+                <div class="gallery-item">
                     <img src="${ImageSrc}" alt="${Project}" class="img-fluid" />
                     <div class="gallery-links d-flex align-items-center justify-content-center">
                       <a href="#" class="stretched-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${ModalID}"></a>
                     </div>
                     <div class="technologies">
                       ${techList
-                .map((tech) => `<span class="badge bg-secondary me-1">${tech}</span>`)
+                .map((tech) => `<span class="badge">${tech}</span>`)
                 .join("")}
                     </div>
                 </div>

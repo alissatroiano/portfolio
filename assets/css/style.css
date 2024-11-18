@@ -275,6 +275,9 @@ a#resumeBtn:hover, .project-button:hover {
   padding: 13px;
 }
 
+span.badge {
+  font-family: 'Futura-PT', sans-serif;
+}
 
 span.button-text {
   font-family: "Futura-PT", serif;
@@ -373,6 +376,10 @@ li,
 p {
   font-family: 'Futura-PT', sans-serif;
   font-weight: light;
+}
+
+.mb-n7 {
+    margin-bottom: -7rem !important;
 }
 
 /* ---------- Cover Page Navigation */
