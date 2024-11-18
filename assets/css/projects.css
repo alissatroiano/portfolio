@@ -412,8 +412,7 @@ nav.navbar {
 }
 
 #gallery {
-  padding: 30px 60px;
-  margin-top: 30px;
+  padding: 40px;
 }
 
 .gallery .gallery-item {
@@ -543,16 +542,31 @@ p.tech-stack {
   font-size: 14px;
 }
 
-#btn-back-to-top {
+/* #btn-back-to-top {
   position: fixed;
   bottom:80px;
   right: 20px;
   color: #6d62ff;
+} */
+
+#btn-back-to-top {
+  display: none; /* Initially hidden */
+  position: fixed; /* Fixed position to stay in the same place */
+  bottom: 60px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  z-index: 1000; /* High z-index to be above other content */
+  color: #6d62ff;
+  background-color: #fafafa;
+  border-radius: 50%; /* Rounded corners */
+  padding: 10px; /* Padding */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
 }
+
 
 #btn-back-to-top:hover {
   position: fixed;
-  color: #6c62ffc1;
+  background-color: #6d62ff; /* Background color */
+  color: #fafafa;
 }
 
 .modal-dialog.modal-dialog-centered.modal-dialog-scrollable.w-100,
