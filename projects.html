@@ -93,8 +93,8 @@
 
   <!--Project Thumbnails (Links to Modals)-->
   <section class="gallery p-3 p-md-4 p-lg-5" id="gallery">
-    <div class="container p-3">
-      <div class="row d-flex gy-4 gx-3 justify-content-center" data-masonry='{"percentPosition": true }'>
+    <div class="container-fluid p-3">
+      <div class="row">
         <div class="col-12 text-center text-sm-start py-3">
           <h1 class="section-title display-3 text-light my-3" data-aos="fade-down" data-aos-easing="linear"
             data-aos-duration="1500">MY PROJECTS</h1>
@@ -124,17 +124,17 @@
       </div>
       <!--.end-breadcrumb-->
       </div>
-
-<div id="project-container" class="row d-flex justify-content-center">
-      <div class="row d-flex gy-4 g-3 justify-content-center py-3 mb-5" data-masonry='{"percentPosition": true }'>
-       
+      <div id="project-container" class="row d-flex justify-content-center">
+        <div class="row d-flex gy-4 g-3 justify-content-center py-3 mb-5" data-masonry='{"percentPosition": true }'>
+          <!-- Project cards will be dynamically inserted here -->
+        </div>
       </div>
-      <div class="pb-3 d-flex justify-content-end">
-        <button type="button" class="btn border-0" id="btn-back-to-top" style="display: block;">
-          <i class="fas fa-chevron-up fa-2x" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
+      
+      <!-- Back to Top button -->
+      <button type="button" class="btn border-0" id="btn-back-to-top">
+        <i class="fas fa-chevron-up fa-2x" aria-hidden="true"></i>
+      </button>
+      
   </section>
 
   <!-- --------------------- MODALS-->
@@ -1065,8 +1065,9 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="title display-4 text-center text-sm-start fw-bold">Coast VA, <span
-                  class="text-light-purple">Girls Lacrosse Club </span></h1>
+              <h1 class="title display-4 text-center text-sm-start fw-bold">Dash, 
+                <span
+                  class="text-light-purple">Recipe Sharing </span></h1>
             </div>
           </div>
         </div>
@@ -1113,18 +1114,18 @@
                   <i class="fas fa-wrench mx-1"></i>
                   Stack
                 </h3>
-                <p class="pb-3"> HTML, CSS, BOOTSTRAP 5, JAVASCRIPT, Flask, MongoDB, AWS
+                <p class="pb-3"> HTML, CSS, Bootstrap 5, JavaScript, Flask, MongoDB, AWS
                 </p>
               </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <a href="https://coastva.org" target="_blank">
+          <a href="https://dash-recipes-aaba758004a9.herokuapp.com/" target="_blank">
             <button class="project-button">
               Live Project</button>
           </a>
-          <a href="https://github.com/alissatroiano/coast-va" target="_blank">
+          <a href="https://github.com/alissatroiano/dash" target="_blank">
             <button class="project-button">Source Code
             </button>
           </a>
@@ -1151,8 +1152,8 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
-  <script src="assets/js/portfolio.js"></script>
   <script src="assets/js/top.js"></script>
+  <script src="assets/js/portfolio.js"></script>
   <script src="assets/js/nav.js"></script>
   <script>
 
