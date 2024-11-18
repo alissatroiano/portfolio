@@ -1,0 +1,13 @@
+Project,Technologies,ModalID,ImageSrc
+"Hue","Django,Python,JavaScript,AWS,PostgreSQL,OpenAI",projectModal1,assets/images/projects/thumb-hue.png
+"OBBA/OLLA Queue","React,JavaScript,HTML,CSS",projectModal2,assets/images/OBBA.png
+"Inklusion","HTML,CSS,Bootstrap 5,JavaScript",projectModal4,assets/images/projects/project_5.png
+"Muzak","React,JavaScript,HTML,CSS,YouTube API",projectModal5,assets/images/projects/project_4.png
+"Electrillo","JavaScript,HTML,CSS,Bootstrap 5,JSON",projectModal6,assets/images/projects/project_2.png
+"Smitten","JavaScript,HTML,CSS,Bootstrap,JSON",projectModal7,assets/images/projects/project_6.png
+"Game of Facts","JavaScript,HTML,CSS,Bootstrap 5",projectModal8,assets/images/projects/project_1.png
+"Infinity","HTML,CSS,Bootstrap 5,JavaScript,Canvas",projectModal9,assets/images/projects/project_7.png
+"COAST VA","HTML,CSS,Bootstrap 5,JavaScript,Google Apps Script,Google API,YAML,GitHub Actions",projectModal13,assets/images/projects/coast-va-home.png
+"Dash","HTML,CSS,Bootstrap 5,JavaScript,Flask,MongoDB,AWS",projectModal14,assets/images/projects/project_10.png
+"DeathScape","JavaScript,HTML,CSS,Bootstrap 5",projectModal11,assets/images/projects/project_9.png
+"Emojourney","JavaScript,HTML,CSS,Bootstrap 5",projectModal10,assets/images/projects/project_8.png
