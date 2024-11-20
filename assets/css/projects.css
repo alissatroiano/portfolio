@@ -403,23 +403,18 @@ nav.navbar {
 /* ------------------ Gallery */
 .gallery {
   background-color: var(--dark-violet);
-  min-height: 100vh;
-  padding-bottom: 30px;
 }
 
-#projectsRow {
-  margin: 20px;
+#gallery { 
+  padding: 60px;
+  margin-bottom: 250px;
 }
 
-#gallery {
-  padding: 40px;
-}
-
-.gallery .gallery-item {
+.gallery-item {
   position: relative;
-  overflow: hidden;
   border-radius: 10px;
   box-shadow: rgba(160, 117, 245, 0.4) 0px 2px 4px, rgba(160, 117, 245, 0.3) 0px 7px 13px -3px, rgba(106, 22, 232, 0.2) 0px -3px 0px inset;
+  margin: 10px auto;
 }
 
 img.gallery-item {
@@ -430,21 +425,12 @@ img.gallery-item {
   transition: 0.3s;
 }
 
-.gallery .gallery-links {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 3;
-}
-
 .gallery .gallery-links .preview-link,
 .gallery .gallery-links .details-link {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
-  line-height: 1.2;
+  line-height: 1;
   margin: 30px 8px 0 8px;
 }
 

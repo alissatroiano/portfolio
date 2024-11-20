@@ -92,20 +92,21 @@
   </nav>
 
   <!--Project Thumbnails (Links to Modals)-->
-  <section class="gallery p-3 p-md-4 p-lg-5" id="gallery">
-    <div class="container-fluid p-3">
+  <section class="gallery" id="gallery">
+    <div class="container">
       <div class="row">
-        <div class="col-12 text-center text-sm-start py-3">
+        <div class="col-12 text-center text-sm-start my-3">
           <h1 class="section-title display-3 text-light my-3" data-aos="fade-down" data-aos-easing="linear"
             data-aos-duration="1500">MY PROJECTS</h1>
-          <hr data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000" data-aos-delay="1200">
+          <hr style="width:100%" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000" data-aos-delay="1200">
         </div>
       </div>
       <!--breadcrumb-->
-      <div class="row" id="breadcrumbNav">
+      <div class="row m-3 pb-3" id="breadcrumbNav">
         <div class="col-12">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">All</a></li>
               <li class="breadcrumb-item"><a href="#">HTML</a></li>
               <li class="breadcrumb-item"><a href="#">CSS</a></li>
               <li class="breadcrumb-item"><a href="#">JavaScript</a></li>
@@ -114,18 +115,20 @@
               <li class="breadcrumb-item"><a href="#">Flask</a></li>
               <li class="breadcrumb-item"><a href="#">OpenAI</a></li>
               <li class="breadcrumb-item"><a href="#">MongoDB</a></li>
+              <li class="breadcrumb-item"><a href="#">MindsDB</a></li>
               <li class="breadcrumb-item"><a href="#">PostgreSQL</a></li>
               <li class="breadcrumb-item"><a href="#">AWS</a></li>
               <li class="breadcrumb-item"><a href="#">Google API</a></li>
-              <li class="breadcrumb-item"><a href="#">All</a></li>
+              <li class="breadcrumb-item"><a href="#">bootstrap 5</a></li>
+              <li class="breadcrumb-item"><a href="#">hackathon</a></li>
             </ol>
           </nav>
         </div>
       </div>
       <!--.end-breadcrumb-->
       </div>
-      <div id="project-container" class="row d-flex justify-content-center">
-        <div class="row d-flex gy-4 g-3 justify-content-center py-3 mb-5" data-masonry='{"percentPosition": true }'>
+      <div id="project-container" class="container-fluid d-flex justify-content-center my-5 pb-5">
+        <div class="row d-flex g-3 justify-content-center mb-5 pb-5" data-masonry='{"percentPosition": true }'>
           <!-- Project cards will be dynamically inserted here -->
         </div>
       </div>
