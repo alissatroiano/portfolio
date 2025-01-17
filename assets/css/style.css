@@ -209,6 +209,11 @@ a.nav-link,
 	color: var(--light);
 }
 
+.logo-img {
+  max-width: 100%;
+  width: 50px;
+  height: auto;
+}
 a.jumbo-link {
   color: #7442eb;
   background-color: var(--dark-violet);
