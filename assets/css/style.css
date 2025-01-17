@@ -464,43 +464,6 @@ p {
   }
 }
 
-/* ---------- Cover Page Navigation */
-a#projectsLink {
-  animation: flicker 1.5s infinite alternate;
-  color: var(--purple3);
-}
-
-
-a#projectsLink:hover {
-  animation: glow 1.25s infinite alternate;
-  color: var(--purple3);
-}
-
-@keyframes flicker {
-    
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-
-      text-shadow:
-      0 0 4px #8e20f5,
-      0 0 11px  #8e20f5,
-      0 0 19px #8e20f5,
-      0 0 40px var(--purple),
-      0 0 80px var(--purple),
-      0 0 90px var(--purple),
-      0 0 100px var(--purple),
-      0 0 150px var(--purple);
-  }
-  
-  30%, 24%, 55% {        
-      text-shadow: none;
-  }    
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("../images/bg.png");
-  min-height: 400px;
-}
 
 .text-lighter.text-center.display-1 {
   font-family: 'Futura-PT', sans-serif;
@@ -741,7 +704,7 @@ a.resume-link:hover {
 	font-size: 1rem;
 	color: var(--light);
     overflow: hidden;
-    background: url('../images/bg.jpg') no-repeat center center;
+    background: var(--light-blue);
     background-repeat: no-repeat;
 	  background-attachment: fixed;
     background-position: center;
@@ -942,12 +905,14 @@ p.text-muted {
 
 /*-------------------------------- Contact Section */
 #contact {
-  min-height: 100vh;
   max-width: 100%;
+  height: auto;
   overflow: hidden;
   justify-content: center;
-  background: url('../images/bg.jpg') no-repeat center;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(230, 230, 230, 0.75), rgba(255, 255, 255, 0.685)), url('../images/contact.jpg') no-repeat center center;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   z-index: -1;
 }
 
