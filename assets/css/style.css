@@ -111,7 +111,7 @@ a {
 .award-text {
   background-color: var(--dark-violet);
   color: #fafafa;
-  font-family: ''Dosis", sans-serif;
+  font-family: 'Dosis', serif;
   padding: 5px;
 }
 
@@ -149,7 +149,7 @@ a {
 }
 
 .text-lighter.text-center.display-1 {
-  font-family: ''Dosis", sans-serif;
+  font-family: 'Dosis', serif;
   letter-spacing: 30px;
   margin-top: 120px;
 }
@@ -199,8 +199,7 @@ body {
 }
 
 em {
-  font-family: ''Dosis",
-  sans-serif;
+  font-family: 'Dosis', serif;
   font-size: 1.1rem;
   font-style: normal;
   letter-spacing: .8;
@@ -321,8 +320,15 @@ span.button-text {
 .btn.btn-main {
   background-color: #b894ed;
   color: #080808;
+  font-size: 14px;
   font-weight: 400;
   text-transform: lowercase;
+}
+
+.btn-main:hover {
+  animation: pulse 1s infinite;
+  transition: .3s;
+  background-color: var(--dark-violet);
 }
 
 .btn-dark {
