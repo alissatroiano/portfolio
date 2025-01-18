@@ -1,9 +1,9 @@
-@import url("https://use.typekit.net/ieo5nme.css");
+/* @import url("https://use.typekit.net/ieo5nme.css"); */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lexend+Giga:wght@100..900&display=swap');
 /* Global Styles */
 :root {
-  --primary: #5c9caf;
-  --dark-salmon: rgb(255 88 73);
-  --light-salmon: rgb(255 160 122);
+  --primary-color: #6234bc;
+  --accent-color: #f598aa;
   --light: #fafafa;
   --lighter: #f5f5f5;
   --dark: #2C2C2C;
@@ -109,7 +109,7 @@ a {
 .award-text {
   background-color: var(--dark-violet);
   color: #fafafa;
-  font-family: 'Futura-PT', sans-serif;
+  font-family: ''Dosis", sans-serif;
   padding: 5px;
 }
 
@@ -147,7 +147,7 @@ a {
 }
 
 .text-lighter.text-center.display-1 {
-  font-family: 'Futura-PT', sans-serif;
+  font-family: ''Dosis", sans-serif;
   letter-spacing: 30px;
   margin-top: 120px;
 }
@@ -162,7 +162,7 @@ a {
 }
 
 .text-lighter {
-  font-family: 'Futura PT', sans-serif;
+  font-family: 'Dosis', serif;
   color: var(--light-grey);
   font-weight: 450;
   text-shadow: 1px 1px 3px var(--dark-grey);
@@ -197,7 +197,7 @@ body {
 }
 
 em {
-  font-family: 'Futura-PT',
+  font-family: ''Dosis",
   sans-serif;
   font-size: 1.1rem;
   font-style: normal;
@@ -205,8 +205,7 @@ em {
 }
 
 strong {
-  font-family: 'Futura-PT',
-  sans-serif;
+  font-family: 'Dosis', serif;
   font-weight: 700;
 }
 
@@ -221,15 +220,23 @@ hr {
 }
 
 /*------------- Fixed Bottom Nav */
-.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
-  color: var(--violet);
-  text-decoration: line-through;
-}
 
 a.nav-link,
 #navbarCollapse,
 .navbar-dark .navbar-nav .nav-link {
   font-weight: 600;
+}
+
+li.nav-item, 
+.navbar-light .navbar-nav a.nav-link {
+  color: var(--purple);
+  letter-spacing: normal;
+  font-weight: 450;
+}
+
+li.nav-item:hover, 
+.navbar-light .navbar-nav a.nav-link:hover {
+  color: var(--);
 }
 
 a .nav-link {
@@ -254,8 +261,8 @@ a.jumbo-link:hover {
 }
 
 
-nav.navbar {
-	font-family: 'Poppins', sans-serif;
+.navbar {
+	font-family: 'Dosis', serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 300;
@@ -278,9 +285,9 @@ a#resumeBtn, .project-button {
   border: none;
   border-radius: 50px;
   text-decoration: none;
-  font-family: 'Futura-PT', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1.25px;
+  font-family: "Lexend Giga", serif;
+  text-transform: lowercase;
+  letter-spacing: -1.05px;
   margin: 0 auto;
   font-size: 1.2rem;
 }
@@ -299,11 +306,11 @@ a#resumeBtn:hover, .project-button:hover {
 }
 
 span.badge {
-  font-family: 'Futura-PT', sans-serif;
+  font-family: 'Dosis', serif;
 }
 
 span.button-text {
-  font-family: "Futura-PT", serif;
+  font-family: "Dosis", serif;
   letter-spacing: 2px;
   font-size: 1.2rem;
   font-weight: 400;
@@ -338,11 +345,11 @@ hr.folio-hr {
 }
 
 .btn {
-  font-family: 'Futura-PT', sans-serif;
-  background-color: var(--black);
+  font-family: "Lexend Giga", serif;
+    background-color: var(--black);
   text-transform: uppercase;
   box-shadow: 1px 4px 14px 1px rgba(46, 46, 46, 0.818);
-  letter-spacing: 2px;
+  letter-spacing: -1.49125px;
   font-weight: 520;
   padding: 15px 25px;
   border: none;
@@ -369,19 +376,20 @@ hr.folio-hr {
 }
 
 /*-------------------------------- Headers and text */
-h1,
-h2,
-h3 {
-  font-family: 'Futura-PT', sans-serif;
+h1 {
+  font-family: "Lexend Giga", serif;  
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: -10.985250px;
 }
 
+h2,
+h3,
 h4,
 h5,
 h6 {
-  font-family: 'Futura-PT', sans-serif;
+  font-family: "Lexend Giga", serif;
   text-transform: uppercase;
   font-weight: 500;
 
@@ -396,15 +404,15 @@ h1#title {
   text-align: center;
   font-size: 1.2rem;
   letter-spacing: 8px;
-  font-family: 'Futura-PT',
-     sans-serif;
+  font-family: 'Dosis',
+     serif;
   font-weight: 400;
   text-align: center;
 }
 
 li,
 p {
-  font-family: 'Futura-PT', sans-serif;
+  font-family: 'Dosis', serif;
   font-weight: light;
 }
 
@@ -461,7 +469,7 @@ p {
 
 
 .text-lighter.text-center.display-1 {
-  font-family: 'Futura-PT', sans-serif;
+  font-family: 'Dosis', serif;
   letter-spacing: 3px;
   font-weight: light;
 }
@@ -552,7 +560,7 @@ a.data {
   margin: 40px 0;
   text-decoration: none;
   color: #3f1d82;
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'Dosis', serif;
   font-weight: 450;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -681,7 +689,7 @@ h5.role-heading {
 
 a.resume-link {
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Dosis', serif;
   text-transform: uppercase;
 }
 
@@ -819,8 +827,7 @@ a.resume-link:hover {
 
 /*-------------------------------- Portfolio Section */
 #portfolio-text, #portfolioText {
-    font-family: 'Futura-PT',
-    sans-serif;
+  font-family: "Lexend Giga", serif;
     font-size: 1.1rem;
     font-weight: light;
     letter-spacing: 0.3px;
@@ -856,8 +863,8 @@ img {
 }
 
 .awards {
-  font-family: 'Futura-PT', sans-serif;
-  font-size: 1rem;
+  font-family: "Lexend Giga", serif;
+    font-size: 1rem;
   margin: 6.5px 0;
   font-weight: 500;
   color: #416e7c;
@@ -935,7 +942,7 @@ p.text-muted {
   border: none;
   border-radius: 50px;
   text-decoration: none;
-  font-family: 'Futura-PT', sans-serif;
+  font-family: 'Dosis', serif;
   text-transform: uppercase;
   letter-spacing: 1.25px;
   margin: 0 auto;
@@ -958,24 +965,24 @@ input#button {
 }
 
 #contact-details {
-  font-family: 'Futura-PT',
-  sans-serif;
+  font-family: "Dosis",
+  serif;
   font-size: 1rem;
   letter-spacing: 1px;
   font-weight: 500;
 }
 
 #contact-form {
-    font-family: 'Futura-PT',
-    sans-serif;
+  font-family: "Dosis",
+  serif;
     font-size: 1rem;
     letter-spacing: .2px;
   display: block;
   }
 
 .w3-col.m8.w3-panel {
-   font-family: 'Futura-PT',
-   sans-serif;
+  font-family: "Dosis",
+  serif;
    font-size: 1rem;
    letter-spacing: 1px;
    font-weight: 300;
@@ -993,7 +1000,7 @@ img {
 }
 
 .text-lighter.text-center.display-1 {
-  font-family: 'Futura-PT', sans-serif;
+  font-family: 'Dosis', serif;
   letter-spacing: 15px;
   margin-top: 90px;
 }
@@ -1022,7 +1029,7 @@ label {
 input[type="submit"] {
   display: block;
   font-size: 1rem;
-  font-family: 'Futura-PT', sans-serif;
+  font-family: 'Dosis', serif;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1093,8 +1100,8 @@ footer {
 }
 
 .w3-button.w3-light-grey {
-    font-family: 'Futura-PT',
-    sans-serif;
+    font-family: 'Dosis',
+   serif;
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 300;
@@ -1129,7 +1136,7 @@ a#footer-link:hover {
 a.cta-link {
 	padding: 20px 5px;
 	border: 1px solid #FF8D81;
-  font-family: 'Futura-PT, sans-serif';
+  font-family: ', sans-serif';
   text-transform: uppercase;
   font-weight: 400;
 	margin: 10% auto;
