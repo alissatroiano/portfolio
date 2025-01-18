@@ -20,16 +20,15 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
   </script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <!--Favicon Link-->
   <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
   <link rel="shortcut icon" type="image/ico" href="assets/images/8.png" />
-
   <!--Load Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <!---->
+  <!--Custom-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 
 <body>
@@ -93,18 +92,18 @@
   <!-- Hero -->
   <section class="py-5 pb-0 overflow-hidden">
     <div class="container-fluid" data-sticky-container="">
-      <div class="row d-flex align-items-stretch py-3 py-md-4 mt-5 mb-5">         
+      <div class="row d-flex align-items-center justify-content-center py-3 py-md-4 mt-5 mb-5">         
         <!-- Image -->
         <div class="col-md-6 order-2 mb-5 mb-lg-0">
           <div data-sticky="" data-margin-top="100" data-sticky-for="992">
             <div class="position-relative h-500px h-md-750px w-lg-50vw">
-              <div class="w-100 h-500px h-md-750px rounded-4"
-               style="background-image: url('assets/images/2.png'); background-size:cover; background-position:top center;"></div>
+              <div class="w-100 h-100 h-md-750px rounded-4"
+               style="background-image: url('assets/images/icons/web-dev.png'); background-repeat: no-repeat; background-size:cover; background-position:top center; background-size: contain;"></div>
             </div>
           </div>
         </div>
         <!-- Contents -->
-        <div class="col-md-5  order-1 my-0 mx-auto">
+        <div class="col-md-6  order-1 my-0 mx-auto">
           <div class="pb-lg-5 pt-lg-5">
             <!-- Pre title -->
             <h5 class="mb-lg-4"><span class="hand-wave-animate">👋🏻</span> Hi, I’m</h5>
@@ -126,8 +125,8 @@
   <!-- end-jumbotron -->
 
   <!--Skills Section-->
-  <section class="container-fluid skills" id="skills">
-    <div class="row">
+  <section class="container-fluid skills pb-5" id="skills">
+    <div class="row mt-5">
       <div class="col-12">
         <h2 class="display-2 my-5 title ms-sm-4 ms-lg-5" data-aos="fade-down" data-aos-easing="linear"
           data-aos-duration="1500">My Stack</h2>
@@ -450,7 +449,7 @@
     <div class="container">
       <div class="row d-flex justify-content-center my-0 mx-auto pb-5">
         <!-- Image -->
-        <div class="col-lg-5 pe-lg-5">
+        <div class="col-lg-5 pe-lg-3">
           <img src="assets/images/8.png" class="rounded-4" alt="portfolio-img">
         </div>
         <!-- Content and form -->
@@ -473,7 +472,7 @@
               <label for="message">Your Message</label>
             </div>
             <div class="form-group text-center my-4 pt-3">
-              <input class="contact-button" type="submit" id="button" value="Send Email">
+              <input class="contact-button click-btn btn-style702" type="submit" id="button" value="Send Email">
             </div>
           </form>
           <!-- Form END -->

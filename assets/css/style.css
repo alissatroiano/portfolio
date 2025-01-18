@@ -3,7 +3,14 @@
 /* Global Styles */
 :root {
   --primary-color: #6234bc;
+  --purple: #6234bc;
+	--purple2: #4d24a1;
+  --purple3: rgb(221, 173, 255);
+  --violet: #9E7AE6;
+  --violet-2: #7353be;
+  --dark-violet: #3f1d82;
   --accent-color: #f598aa;
+  --accent-color-2: #fbb6c463;
   --light: #fafafa;
   --lighter: #f5f5f5;
   --dark: #2C2C2C;
@@ -18,11 +25,6 @@
   --yellow-2: #E9BD43;
   --yellow-3: #F5B935;
   --purple: #6234bc;
-	--purple2: #4d24a1;
-  --purple3: rgb(221, 173, 255);
-  --violet: #9E7AE6;
-  --violet-2: #7353be;
-  --dark-violet: #3f1d82;
   --red: #E83939;
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
 	--gap: calc(var(--size) / 14);
@@ -431,6 +433,13 @@ p {
   opacity: .675;
 }
 
+#coverIcon {
+  background-image: url('../images/icons/web-dev.png'); 
+  background-position:center center; 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .hand-wave-animate {
   animation: hand-wave 2.5s infinite;
   transform-origin: 50% 80%;
@@ -705,9 +714,9 @@ a.resume-link:hover {
 	width: 100%;
 	min-height: 100vh;
 	font-size: 1rem;
-	color: var(--light);
+	color: var(--darker);
     overflow: hidden;
-    background: var(--light-blue);
+    background: var(--accent-color-2);
     background-repeat: no-repeat;
 	  background-attachment: fixed;
     background-position: center;
@@ -934,10 +943,10 @@ p.text-muted {
   color: #fafafa;
 }
 
-.contact-button {
-  background-color: var(--dark-violet);
+.contact-button#button {
+  background-color: var(--primary-color);
   color: #fafafa;
-  box-shadow: 2px -2px 5px var(--darker);
+  box-shadow: 2px 2px 12.752px var(--dark-grey);
   padding: 12px;
   border: none;
   border-radius: 50px;
@@ -947,6 +956,26 @@ p.text-muted {
   letter-spacing: 1.25px;
   margin: 0 auto;
   font-size: 1.2rem;
+    transition: .3s;
+
+}
+
+.contact-button#button:hover {
+  background-color: var(--violet-2);
+  animation: pulse 1s infinite;
+  transition: .3s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(.9);
+  }
+    100% {
+    transform: scale(1);
+  }
 }
 
 form {
