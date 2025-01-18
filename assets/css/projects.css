@@ -309,7 +309,6 @@ a {
 }
 
 /* ---------- Nav */
-
 ul#nav {
   list-style: none;
 }
@@ -323,7 +322,6 @@ ul#nav {
 }
 
 #nav>li {
-  color: var(--light);
   opacity: .65;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -375,22 +373,9 @@ hr {
   opacity: 1;
 }
 
-a.nav-link,
-#navbarCollapse,
-.navbar-dark .navbar-nav .nav-link {
-  color: var(--light);
-}
-
-a.nav-link,
-#navbarCollapse,
-.navbar-dark .navbar-nav .nav-link {
-  color: var(--light);
-}
-
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
   color: var(--violet);
-  /* text-shadow: 1px -1px 12px rgb(134, 37, 203); */
   text-decoration: line-through;
 }
 
