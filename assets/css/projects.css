@@ -572,17 +572,14 @@ p.tech-stack {
 
 #btn-back-to-top {
   display: none;
-  /* Initially hidden */
   position: fixed;
-  /* Fixed position to stay in the same place */
   bottom: 60px;
-  /* Distance from the bottom */
-  right: 20px;
+  right: 10px;
   /* Distance from the right */
   z-index: 1000;
   /* High z-index to be above other content */
-  color: #6d62ff;
-  background-color: #fafafa;
+  color: #fafafa;
+  background-color: #6d62ff;
   border-radius: 50%;
   /* Rounded corners */
   padding: 10px;
@@ -593,10 +590,26 @@ p.tech-stack {
 
 #btn-back-to-top:hover {
   position: fixed;
-  background-color: #6d62ff;
+  background-color: var(--dark-violet);
   /* Background color */
   color: #fafafa;
+  animation: pulse 1s infinite;
+  transition: .3s;
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(.9);
+  }
+    100% {
+    transform: scale(1);
+  }
+}
+
+
 
 .modal-dialog.modal-dialog-centered.modal-dialog-scrollable.w-100,
 .modal-dialog-scrollable .modal-content {
