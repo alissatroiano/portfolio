@@ -912,7 +912,6 @@ p.text-muted {
   background: linear-gradient(rgba(255, 255, 255, 0.685), rgba(230, 230, 230, 0.875), rgba(255, 255, 255, 0.685)), url('../images/contact.jpg') no-repeat center center;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   z-index: -1;
 }
 
