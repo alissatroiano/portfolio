@@ -4,8 +4,6 @@
     <title>Alissa Troiano | Web & Software Development</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--Import Futura from Adobe Fonts-->
-    <link rel="stylesheet" href="https://use.typekit.net/xwz5atb.css" />
     <!--Load Font Awesome -->
     <link
       rel="stylesheet"
@@ -46,7 +44,7 @@
   </head>
 
   <body>
-    <!--Fixed Bottom Nav-->
+    <!--Fixed Top Nav-->
     <nav
       class="navbar fixed-top navbar-expand-md navbar-light bg-nav shadow-lg"
     >
@@ -138,7 +136,7 @@
 
     <!-- Hero -->
     <section class="py-5 pb-0 overflow-hidden">
-      <div class="container-fluid" data-sticky-container="">
+      <div class="container" data-sticky-container="">
         <div
           class="row d-flex align-items-center justify-content-center py-3 py-md-4 mt-5 mb-5"
         >
@@ -160,7 +158,7 @@
             </div>
           </div>
           <!-- Contents -->
-          <div class="col-md-6 order-1 my-0 mx-auto" id="about">
+          <div class="col-md-6 order-1 my-0 mx-auto">
             <div class="pb-lg-5 pt-lg-5">
               <!-- Pre title -->
               <h5 class="mb-lg-4">
@@ -177,14 +175,8 @@
                 /></span>
               </h1>
               <div class="mt-3 pb-3">
-                <p class="my-4 lead">
-                  I'm a creative Full Stack Software Developer with a knack for
-                  Graphic Design and a Marketing background. I have 4 years
-                  experience developing high-quality, scalable, and maintainable
-                  software through client work, hackathons, and personal
-                  projects. Known for collaborating with cross-functional teams,
-                  participating in code reviews, and providing constructive
-                  feedback to enhance code quality.
+                <p class="my-4 my-sm-5 lead">
+                I'm a creative software developer with a passion for UI/UX design and brand development. 
                 </p>
               </div>
               <!-- Buttons -->
@@ -205,6 +197,46 @@
       </div>
     </section>
     <!-- end-jumbotron -->
+
+    <!--About-->
+    <div class="container" id="about">
+      <div class="row d-flex justify-content-start">
+        <div class="col-12 mt-5 text-start">
+          <h2
+          class="display-2 my-5 title"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+About
+        </h2>
+        </div>
+        <div class="col-6">
+          <p class="my-4 lead order-2">
+           I have 4 years
+            experience developing high-quality, maintainable
+            software & user-friendly websites through client work, hackathons, and personal
+            projects. I'm known for collaborating with cross-functional teams,
+            participating in code reviews, and providing constructive
+            feedback to enhance code quality.</p>
+            <p class="my-2 lead"> I also studied Marketing at the Fashion Institute of Technology in NYC, so I know what it takes to design a brand's identity and visual language.</p>
+        </div>
+        <div class="col-6 order-1">
+          <div class="position-relative h-500px h-md-750px w-lg-50vw">
+            <div
+              class="w-100 h-100 h-md-750px rounded-4"
+              style="
+                background-image: url('assets/images/icons/web-dev.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;
+                background-size: contain;
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--Skills Section-->
     <section class="container-fluid skills pb-5" id="skills">
@@ -607,8 +639,11 @@
     <section class="contact-section pt-3 pt-sm-5" id="contact">
       <div class="container">
         <div class="row d-flex justify-content-center my-0 mx-auto pb-5">
+          <div class="col-12">
+            <h2 class="display-2 my-3 my-md-5 title ms-sm-4 ms-lg-5">Contact</h2>
+          </div>
           <!-- Image -->
-          <div class="col-lg-5 pe-lg-3">
+          <div class="col-lg-5 pe-lg-3 order-2">
             <img
               src="assets/images/8.png"
               class="rounded-4"
@@ -616,9 +651,9 @@
             />
           </div>
           <!-- Content and form -->
-          <div class="col-lg-7 p-5">
+          <div class="col-lg-7 p-5 order-1">
             <!-- Title -->
-            <h2 class="mb-4">Fill out the form below to get in touch!</h2>
+            <h4 class="mb-4">Fill out the form to get in touch!</h4>
             <!-- Form START -->
             <form method="POST" id="contact-form" action="submit">
               <div class="form-floating mb-3">

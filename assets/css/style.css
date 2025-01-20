@@ -1,5 +1,5 @@
-/* @import url("https://use.typekit.net/ieo5nme.css"); */
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lexend+Giga:wght@100..900&display=swap');
+
 /* Global Styles */
 :root {
   --primary-color: #6234bc;
@@ -8,7 +8,7 @@
   --purple3: rgb(221, 173, 255);
   --violet: #9E7AE6;
   --violet-2: #7353be;
-  --dark-violet: #3f1d82;
+  --dark-violet: #3e1c82;
   --accent-color: #f598aa;
   --accent-color-2: #fbb6c463;
   --light: #fafafa;
@@ -220,8 +220,7 @@ hr {
   font-weight: 400;
 }
 
-/*------------- Fixed Bottom Nav */
-
+/*------------- Fixed Top Nav */
 a.nav-link,
 #navbarCollapse,
 .navbar-dark .navbar-nav .nav-link {
@@ -237,7 +236,7 @@ li.nav-item,
 
 li.nav-item:hover, 
 .navbar-light .navbar-nav a.nav-link:hover {
-  color: var(--);
+  color: var(--dark-violet);
 }
 
 a .nav-link {
@@ -612,7 +611,6 @@ a.data:before {
 }
 
 /*-------------------------------- About Section */
-
 h5.role-heading {
   letter-spacing: 3.5px;
   color: var(--purple);
@@ -697,7 +695,6 @@ a.resume-link:hover {
 	overflow: hidden;
 	gap: calc(clamp(10rem, 1rem + 40vmin, 30rem) / 14);
 	width: 100%;
-	min-height: 100vh;
 	font-size: 1rem;
 	color: var(--darker);
 
