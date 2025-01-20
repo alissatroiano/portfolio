@@ -64,20 +64,10 @@ body {
   overflow: hidden;
 }
 
-
 .modal-dialog.modal-dialog-centered.modal-dialog-scrollable.w-100,
 .modal-dialog-scrollable .modal-content {
   min-width: 90vw;
   overflow: auto;
-}
-
-body {
-  --bs-bg-opacity: 1;
-  background-color: #fafafab4;
-  opacity: 1;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(3px);
-  min-height: 100vh;
 }
 
 .display-1,
@@ -126,6 +116,10 @@ a {
   font-weight: 660;
   text-transform: uppercase;
   font-size: 1rem;
+}
+
+.text-small {
+  font-size: 14px;
 }
 
 .text-light-purple {
@@ -414,10 +408,10 @@ nav.navbar {
 }
 
 /* ------------------ Breadcrumb */
-
 .breadcrumb-item a {
   color: var(--primary-color);
   text-transform: lowercase;
+  font-size: 13.25px;
 }
 
 .breadcrumb-item a:hover {
@@ -608,4 +602,12 @@ p.tech-stack {
 .modal-dialog-scrollable .modal-content {
   min-width: 90vw;
   overflow: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .breadcrumb-item a {
+  color: var(--primary-color);
+  text-transform: lowercase;
+  font-size: 1rem;
+}
 }

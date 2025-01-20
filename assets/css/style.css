@@ -97,6 +97,10 @@ a {
   background-color: rgba(239, 239, 239, 0.895) !important;
 }
 
+.lead {
+  font-size: 1rem;
+}
+
 .text-mark {
   color: var(--violet);
   font-weight: 660;
@@ -168,6 +172,11 @@ a {
   color: var(--light-grey);
   font-weight: 450;
   text-shadow: 1px 1px 3px var(--dark-grey);
+}
+
+.mr-3.btn.btn-main.icon-link.icon-link-hover.mb-5,
+.mx-3.btn.btn-main.icon-link.icon-link-hover.mb-5 {
+  font-size: 12px;
 }
 
 .glow {
@@ -611,10 +620,13 @@ a.data:before {
 }
 
 /*-------------------------------- About Section */
+.about-row {
+  display: flex;
+}
+
 h5.role-heading {
   letter-spacing: 3.5px;
   color: var(--purple);
-
 }
 
 #portrait2 {
@@ -1198,6 +1210,11 @@ i.fas.fa-chevron-up.fa-2x:hover {
         padding-top: 50px;
       }
 
+      .mr-3.btn.btn-main.icon-link.icon-link-hover.mb-5,
+      .mx-3.btn.btn-main.icon-link.icon-link-hover.mb-5 {
+       font-size: 14px;
+}
+
       .col-12.col-md-6.my-0.mx-auto.justify-content-center.text-center {
         padding: 40px 0;
       }
@@ -1207,6 +1224,10 @@ i.fas.fa-chevron-up.fa-2x:hover {
         background-attachment: scroll;
         min-height: 450px;
       }
+      .lead {
+        font-size: 1.25rem;
+      }
+      
       .project-item:nth-child(odd) {
         /* background: rgba( 255, 255, 255, 0.25 ); */
         backdrop-filter: blur( 5px );

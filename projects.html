@@ -23,7 +23,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/projects.css" />
 </head>
 
-<body class="projects">
+<body>
     <!--Fixed Top Nav-->
     <nav
       class="navbar fixed-top navbar-expand-md navbar-light bg-nav shadow-lg"
@@ -46,18 +46,18 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="index.html#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="index.html#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="projects.html" id="projectsLink"
+              <a class="nav-link" href="#gallery" id="projectsLink"
                 >Portfolio</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="index.html#contact">Contact</a>
             </li>
             <li class="nav-item">
               <a
@@ -124,32 +124,32 @@
           <hr style="width:100%" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
             data-aos-delay="1200">
         </div>
-      </div>
-      <!--breadcrumb-->
+          <!--breadcrumb-->
     <div class="row m-3 py-1" id="breadcrumbNav">
-        <div class="col-12">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">All</a></li>
-              <li class="breadcrumb-item"><a href="#">HTML</a></li>
-              <li class="breadcrumb-item"><a href="#">CSS</a></li>
-              <li class="breadcrumb-item"><a href="#">JavaScript</a></li>
-              <li class="breadcrumb-item"><a href="#">React</a></li>
-              <li class="breadcrumb-item"><a href="#">Django</a></li>
-              <li class="breadcrumb-item"><a href="#">Flask</a></li>
-              <li class="breadcrumb-item"><a href="#">OpenAI</a></li>
-              <li class="breadcrumb-item"><a href="#">MongoDB</a></li>
-              <li class="breadcrumb-item"><a href="#">MindsDB</a></li>
-              <li class="breadcrumb-item"><a href="#">PostgreSQL</a></li>
-              <li class="breadcrumb-item"><a href="#">AWS</a></li>
-              <li class="breadcrumb-item"><a href="#">Google API</a></li>
-              <li class="breadcrumb-item"><a href="#">bootstrap 5</a></li>
-              <li class="breadcrumb-item"><a href="#">hackathon</a></li>
-            </ol>
-          </nav>
-        </div>
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">All</a></li>
+            <li class="breadcrumb-item"><a href="#">HTML</a></li>
+            <li class="breadcrumb-item"><a href="#">CSS</a></li>
+            <li class="breadcrumb-item"><a href="#">JavaScript</a></li>
+            <li class="breadcrumb-item"><a href="#">React</a></li>
+            <li class="breadcrumb-item"><a href="#">Django</a></li>
+            <li class="breadcrumb-item"><a href="#">Flask</a></li>
+            <li class="breadcrumb-item"><a href="#">OpenAI</a></li>
+            <li class="breadcrumb-item"><a href="#">MongoDB</a></li>
+            <li class="breadcrumb-item"><a href="#">MindsDB</a></li>
+            <li class="breadcrumb-item"><a href="#">PostgreSQL</a></li>
+            <li class="breadcrumb-item"><a href="#">AWS</a></li>
+            <li class="breadcrumb-item"><a href="#">Google API</a></li>
+            <li class="breadcrumb-item"><a href="#">bootstrap 5</a></li>
+            <li class="breadcrumb-item"><a href="#">hackathon</a></li>
+          </ol>
+        </nav>
       </div>
-      <!--.end-breadcrumb-->
+    </div>
+    <!--.end-breadcrumb-->
+      </div>
     </div>
     <div id="project-container" class="container-fluid d-flex justify-content-center my-5 p-5">
       <div class="row d-flex g-3 justify-content-center mb-5 pb-5" data-masonry='{"percentPosition": true }'>
@@ -294,8 +294,8 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Live Project</button>
-          <button type="button" class="btn btn-primary">Source Code</button>
+          <button type="button" class="btn project-button" data-bs-dismiss="modal">Live Project</button>
+          <button type="button" class="btn project-button">Source Code</button>
 
         </div>
 
@@ -1156,11 +1156,10 @@
     </div>
   </div>
 
-
   <script>
     AOS.init();
   </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
     <script src="assets/js/portfolio.js"></script>
     <script src="assets/js/nav.js"></script>
   <!--Masonry Plugin-->
