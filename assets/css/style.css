@@ -447,6 +447,10 @@ p {
   opacity: .675;
 }
 
+.mx-3.btn.btn-main.icon-link.icon-link-hover.mb-5 {
+  z-index: 1000;
+}
+
 #coverIcon {
   background-image: url('../images/icons/web-dev.png'); 
   background-position:center center; 
