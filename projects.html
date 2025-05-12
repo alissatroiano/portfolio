@@ -12,11 +12,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--AOS Animations -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-  </script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <!--Favicon Link-->
   <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
   <!--Custom Styles-->
@@ -24,98 +19,66 @@
 </head>
 
 <body>
-    <!--Fixed Top Nav-->
-    <nav
-      class="navbar fixed-top navbar-expand-md navbar-light bg-nav shadow-lg"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand nav-link" href="index.html">
-          <img src="assets/images/favicon.png" class="img-fluid logo-img" alt="logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery" id="projectsLink"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-main"
-                href="assets/resume.pdf"
-                target="_blank"
-              >
-                <i class="fas fa-download"></i>
-                Resume
-              </a>
-            </li>
-          </ul>
-          <ul
-            class="navbar-nav d-flex ms-auto text-light list-group list-group-horizontal"
-          >
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://github.com/alissatroiano"
-                target="_blank"
-              >
-                <i class="fab fa-github mx-3"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://linkedin.com/in/alissatroiano"
-                target="_blank"
-              >
-                <i class="fab fa-linkedin mx-3"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://twitter.com/alissamtroiano"
-                target="_blank"
-              >
-                <i class="fab fa-twitter mx-3"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                target="_blank"
-                href="mailto:alissatroiano@alissatroiano.com"
-              >
-                <i class="fas fa-envelope mx-3"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+  <!--Fixed Top Nav-->
+  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-nav shadow-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand nav-link" href="index.html">
+        <img src="assets/images/favicon.png" class="img-fluid logo-img" alt="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery" id="projectsLink">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-main" href="assets/resume.pdf" target="_blank">
+              <i class="fas fa-download"></i>
+              Resume
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav d-flex ms-auto text-light list-group list-group-horizontal">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/alissatroiano" target="_blank">
+              <i class="fab fa-github mx-3"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://linkedin.com/in/alissatroiano" target="_blank">
+              <i class="fab fa-linkedin mx-3"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/alissamtroiano" target="_blank">
+              <i class="fab fa-twitter mx-3"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="mailto:alissatroiano@alissatroiano.com">
+              <i class="fas fa-envelope mx-3"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    
+    </div>
+  </nav>
+
   <!--Project Thumbnails (Links to Modals)-->
   <section class="gallery" id="gallery">
+    <!-- Title and Breadcrumb-->
     <div class="container">
       <div class="row">
         <div class="col-12 text-center text-sm-start mt-5">
@@ -124,31 +87,21 @@
           <hr style="width:100%" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
             data-aos-delay="1200">
         </div>
-          <!--breadcrumb-->
-    <div class="row m-3 py-1" id="breadcrumbNav">
-      <div class="col-12">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">All</a></li>
-            <li class="breadcrumb-item"><a href="#">HTML</a></li>
-            <li class="breadcrumb-item"><a href="#">CSS</a></li>
-            <li class="breadcrumb-item"><a href="#">JavaScript</a></li>
-            <li class="breadcrumb-item"><a href="#">React</a></li>
-            <li class="breadcrumb-item"><a href="#">Django</a></li>
-            <li class="breadcrumb-item"><a href="#">Flask</a></li>
-            <li class="breadcrumb-item"><a href="#">OpenAI</a></li>
-            <li class="breadcrumb-item"><a href="#">MongoDB</a></li>
-            <li class="breadcrumb-item"><a href="#">MindsDB</a></li>
-            <li class="breadcrumb-item"><a href="#">PostgreSQL</a></li>
-            <li class="breadcrumb-item"><a href="#">AWS</a></li>
-            <li class="breadcrumb-item"><a href="#">Google API</a></li>
-            <li class="breadcrumb-item"><a href="#">bootstrap 5</a></li>
-            <li class="breadcrumb-item"><a href="#">hackathon</a></li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-    <!--.end-breadcrumb-->
+        <!--breadcrumb-->
+        <div class="row m-3 py-1" id="breadcrumbNav">
+          <div class="col-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">All</a></li>
+                <li class="breadcrumb-item"><a href="#">Web Development</a></li>
+                <li class="breadcrumb-item"><a href="#">Software Development</a></li>
+                <li class="breadcrumb-item"><a href="#">Graphic Design</a></li>
+                <li class="breadcrumb-item"><a href="#">Illustrations</a></li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <!--./breadcrumb-->
       </div>
     </div>
     <div id="project-container" class="container-fluid d-flex justify-content-center my-1 p-3">
@@ -1160,9 +1113,6 @@
     </div>
   </div>
 
-  <script>
-    AOS.init();
-  </script>
   <script src="http://localhost:5504/livereload.js"></script>
   <!--Masonry Plugin-->
   <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
