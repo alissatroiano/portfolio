@@ -1,25 +1,25 @@
 [
   {
     "Project": "COAST VA",
-    "Category": "Web Development",
+    "Category": "Frontend Development",
     "ModalID": "projectModal13",
     "ImageSrc": "assets/images/projects/coast-va-home.png"
   },
   {
     "Project": "Hue",
-    "Category": "Software Development",
+    "Category": "Fullstack Development",
     "ModalID": "projectModal1",
     "ImageSrc": "assets/images/projects/thumb-hue.png"
   },
   {
     "Project": "OBBA/OLLA Queue",
-    "Category": "Software Development",
+    "Category": "Fullstack Development",
     "ModalID": "projectModal2",
     "ImageSrc": "assets/images/OBBA.png"
   },
   {
     "Project": "Dash",
-    "Category": "Web Development",
+    "Category": "Fullstack Development",
     "ModalID": "projectModal14",
     "ImageSrc": "assets/images/projects/project_10.png"
   },
@@ -31,7 +31,7 @@
   },
   {
     "Project": "Muzak",
-    "Category": "Hackathon",
+    "Category": "Fullstack Development",
     "ModalID": "projectModal5",
     "ImageSrc": "assets/images/projects/project_4.png"
   },
@@ -49,19 +49,19 @@
   },
   {
     "Project": "Game of Facts",
-    "Category": "Hackathon",
+    "Category": "Game Dev",
     "ModalID": "projectModal8",
     "ImageSrc": "assets/images/projects/project_1.png"
   },
   {
     "Project": "Infinity",
-    "Category": "Web Development",
+    "Category": "Frontend Development",
     "ModalID": "projectModal9",
     "ImageSrc": "assets/images/projects/project_7.png"
   },
   {
     "Project": "DeathScape",
-    "Category": "Hackathon",
+    "Category": "Game Dev",
     "ModalID": "projectModal11",
     "ImageSrc": "assets/images/projects/project_9.png"
   },

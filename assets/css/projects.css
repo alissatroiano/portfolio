@@ -411,7 +411,7 @@ nav.navbar {
 .breadcrumb-item a {
   color: var(--primary-color);
   text-transform: lowercase;
-  font-size: 13.25px;
+  font-size: 12px;
 }
 
 .breadcrumb-item a:hover {
