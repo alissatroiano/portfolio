@@ -37,9 +37,22 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html#skills">Skills</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#gallery" id="projectsLink">Portfolio</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#gallery" id="projectsDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Portfolio
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+              <li><a class="dropdown-item filter-btn" href="#" data-category="All">All</a></li>
+              <li><a class="dropdown-item filter-btn" href="#" data-category="Frontend">Frontend</a></li>
+              <li><a class="dropdown-item filter-btn" href="#" data-category="Fullstack">Fullstack</a></li>
+              <li><a class="dropdown-item filter-btn" href="#" data-category="Hackathon">Hackathon</a></li>
+              <li><a class="dropdown-item filter-btn" href="#" data-category="Game Dev">Game Dev</a></li>
+              <li><a class="dropdown-item filter-btn" href="#" data-category="Graphic Design">Graphic Design</a></li>
+              <li><a class="dropdown-item filter-btn" href="#" data-category="Illustrations">Illustrations</a></li>
+            </ul>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="index.html#contact">Contact</a>
           </li>
@@ -77,33 +90,22 @@
   </nav>
 
   <!--Project Thumbnails (Links to Modals)-->
-  <section class="gallery pb-5 my-3" id="gallery">
-    <!-- Title and Breadcrumb-->
-    <div class="container-fluid my-3 mx-auto d-flex justify-content-center text-center">
-        <!--breadcrumb-->
-        <div class="row mt-5 pt-5" id="breadcrumbNav">
-          <div class="col-12">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">All</a></li>
-                <li class="breadcrumb-item"><a href="#">Frontend Development</a></li>
-                <li class="breadcrumb-item"><a href="#">Fullstack Development</a></li>
-                <li class="breadcrumb-item"><a href="#">Hackathon</a></li>
-                <li class="breadcrumb-item"><a href="#">Game Dev</a></li>
-                <li class="breadcrumb-item"><a href="#">Graphic Design</a></li>
-                <li class="breadcrumb-item"><a href="#">Illustrations</a></li>
-              </ol>
-            </nav>
-          </div>
+  <section class="gallery py-3 mt-5" id="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-start mt-5">
+          <h1 class="folio-title display-3 title text-center text-sm-start">Projects</h1>
+          <p class="text-center text-sm-start">Click on the project cards below to view the live demo and source code.</p>
         </div>
-        <!--./breadcrumb-->
       </div>
-    
+    </div>
+    <!--project-gallery-->
     <div id="project-container" class="container d-flex justify-content-center my-1 p-3">
       <div class="row d-flex g-3 justify-content-center mb-5 pb-5" data-masonry='{"percentPosition": true }'>
         <!-- Project cards will be dynamically inserted here -->
       </div>
     </div>
+    <!--./project-gallery-->
     <!--Back To Top-->
     <button type="button" class="btn border-0" id="btn-back-to-top">
       <i class="fas fa-chevron-up fa-2x" aria-hidden="true"></i>
@@ -112,6 +114,76 @@
   </section>
 
   <!-- --------------------- MODALS-->
+   <!--Cosmos-->
+  <div class="modal fade" id="projectModal15" tabindex="-1" aria-labelledby="cosmosModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
+      <div class="modal-content">
+        <div class="text-end">
+          <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-header">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12">
+              <h1 class="folio-title display-3 text-center text-sm-start">Cosmos: <span class="text-light-purple">Three.JS
+                  Game</span></h1>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-6 mb-4 mb-lg-0">
+                <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+                <img src="assets/images/cosmos.png" class="img-wrapper--reverse img-fluid project-img"
+                  alt="electrillo" />
+                <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
+                  About</h2>
+                <p class="fs-lg mb-0">Electrillo is a web application that allows users to calculate the amount of money
+                  they could save by switching from fuel to EV-powered vehicles. Electrillo includes a homepage, mission
+                  statement, team page, EV/Fuel savings calculator, and an electric vehicle search tool.</p>
+              </div>               
+               <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i>
+                  About</h2>
+                <p class="fs-lg mb-0">The main objective of Cosmos is to use the game's mechanics to move around your
+                  orbit as many times as possible without colliding into other planets on the adjacent orbit.</p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                <i class="fas fa-circle-question mx-1"></i>
+                Problem
+              </h3>
+              <p class="my-3">
+                Create or update a web application that integrates MindsDB to improve its' overall functionality.
+              </p>
+              <h3 class="h5 d-flex align-items-center text-mark-projects my-2">
+                <i class="fas fa-lightbulb me-2"></i>
+                Solution
+              </h3>
+              <p class="my-3">Cosmos is a space game that challenges players to control a planet's movement in orbit and
+                avoid colliding into other planets. Cosmos was built for AWS's Game Builder Challenge.
+              <h3 class="h5 d-flex align-items-center text-mark-projects">
+                Tech
+                <i class="fas fa-wrench mx-1"></i>
+                Stack
+              </h3>
+              <p class=" tech-stack">ThreeJS, JavaScript, HTML, CSS,
+                BOOTSTRAP 5, NPM, Node
+              </p>
+         
+            </div>
+          </div>
+        <div class="modal-footer">
+          <a href="https://cosmos-game.netlify.app/" target="_blank"> <button class="project-button">Live
+              Project</button>
+          </a>
+  
+          <a href="https://github.com/alissatroiano/cosmos" target="_blank"><button class="project-button">Source
+              Code</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Hue Modal-->
   <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="hueModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">

@@ -403,8 +403,9 @@ nav.navbar {
   font-weight: 300;
 }
 
-.section-title.display-3.my-3.aos-init.aos-animate {
-  color: var(--primary-color);
+.section-title {
+  letter-spacing: 2.35px;
+  color: var(--dark-grey);
 }
 
 /* ------------------ Breadcrumb */

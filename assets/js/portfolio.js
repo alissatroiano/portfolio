@@ -8,27 +8,28 @@ fetch("assets/data/portfolio.json")
     });
 
 function initializeCategoryFilter(projects) {
-    const breadcrumbLinks = document.querySelectorAll(".breadcrumb-item a");
+    const filterLinks = document.querySelectorAll(".filter-btn");
 
-    breadcrumbLinks.forEach((link) => {
+    filterLinks.forEach((link) => {
         link.addEventListener("click", (e) => {
             e.preventDefault();
-            const selectedCategory = link.textContent.trim();
+            const selectedCategory = link.getAttribute("data-category");
 
-            if (selectedCategory === "All") {
-                displayProjects(projects);
-            } else {
-                const filteredProjects = projects.filter(
-                    (project) =>
-                        project.Category?.toLowerCase() === selectedCategory.toLowerCase()
-                );
-                displayProjects(filteredProjects);
-            }
+            const filteredProjects =
+                selectedCategory === "All"
+                    ? projects
+                    : projects.filter(
+                          (project) =>
+                              project.Category?.toLowerCase() === selectedCategory.toLowerCase()
+                      );
+
+            displayProjects(filteredProjects);
         });
     });
 
     displayProjects(projects); // Show all by default
 }
+
 
 function displayProjects(projects) {
     const container = document.querySelector("#project-container .row");
