@@ -327,8 +327,39 @@ li.nav-item:hover,
   color: var(--dark-violet);
 }
 
-a .nav-link {
+li.nav-item.dropdown >a.nav-link {
+background: linear-gradient(to right, hsl(306, 88%, 64%) 0%, #7520de 100%);
+font-weight: 700;
+letter-spacing: 1.252px;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;}
+
+a.dropdown-item.filter-btn {
   color: var(--dark-violet);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+}
+
+a.dropdown-item.filter-btn:hover {
+  color: var(--violet);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -.51px;
+  font-size: 1rem;
+  background-color: #fafafa61;
+}
+
+a.nav-link {
+  color: var(--dark-violet);
+  font-weight: 800;
+}
+
+li.nav-item:hover, .navbar-light .navbar-nav a.nav-link:hover {
+    color: var(--dark-violet);
+      font-weight: 800;
+
 }
 
 /* ---------- Nav */
