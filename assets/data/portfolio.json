@@ -1,17 +1,80 @@
 [
-    {
-        "title": "Coast VA",
-        "image": "assets/images/projects/coast-va-home.png",
-        "technologies": ["Frontend", "JavaScript", "Google"]
-    },
-    {
-        "title": "Hue",
-        "image": "assets/images/projects/thumb-hue.png",
-        "technologies": ["Django", "JavaScript", "OpenAI", "Frontend"]
-    },
-    {
-        "title": "OBBA",
-        "image": "assets/images/OBBA.png",
-        "technologies": ["Frontend", "JavaScript", "React"]
-    }
+  {
+    "Project": "COAST VA",
+    "Category": "Frontend",
+    "ModalID": "projectModal13",
+    "ImageSrc": "assets/images/projects/coast-va-home.png"
+  },
+  {
+    "Project": "Hue",
+    "Category": "Fullstack",
+    "ModalID": "projectModal1",
+    "ImageSrc": "assets/images/projects/thumb-hue.png"
+  },
+  {
+    "Project": "OBBA/OLLA Queue",
+    "Category": "Fullstack",
+    "ModalID": "projectModal2",
+    "ImageSrc": "assets/images/OBBA.png"
+  },
+  {
+    "Project": "Dash",
+    "Category": "Fullstack",
+    "ModalID": "projectModal14",
+    "ImageSrc": "assets/images/projects/project_10.png"
+  },
+  {
+    "Project": "Inklusion",
+    "Category": "Hackathon",
+    "ModalID": "projectModal4",
+    "ImageSrc": "assets/images/projects/project_5.png"
+  },
+  {
+    "Project": "Muzak",
+    "Category": "Fullstack",
+    "ModalID": "projectModal5",
+    "ImageSrc": "assets/images/projects/project_4.png"
+  },
+  {
+    "Project": "Electrillo",
+    "Category": "Hackathon",
+    "ModalID": "projectModal6",
+    "ImageSrc": "assets/images/projects/project_2.png"
+  },
+  {
+    "Project": "Smitten",
+    "Category": "Hackathon",
+    "ModalID": "projectModal7",
+    "ImageSrc": "assets/images/projects/project_6.png"
+  },
+  {
+    "Project": "Game of Facts",
+    "Category": "Game Dev",
+    "ModalID": "projectModal8",
+    "ImageSrc": "assets/images/projects/project_1.png"
+  },
+  {
+    "Project": "Infinity",
+    "Category": "Frontend",
+    "ModalID": "projectModal9",
+    "ImageSrc": "assets/images/projects/project_7.png"
+  },
+  {
+    "Project": "DeathScape",
+    "Category": "Game Dev",
+    "ModalID": "projectModal11",
+    "ImageSrc": "assets/images/projects/project_9.png"
+  },
+  {
+    "Project": "Emojourney",
+    "Category": "Hackathon",
+    "ModalID": "projectModal10",
+    "ImageSrc": "assets/images/projects/project_8.png"
+  },
+  {
+    "Project": "Cosmos",
+    "Category": "Game Dev",
+    "ModalID": "projectModal15",
+    "ImageSrc": "assets/images/cosmos.png"
+  }
 ]
