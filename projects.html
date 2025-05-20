@@ -18,9 +18,9 @@
   <link rel="stylesheet" type="text/css" href="assets/css/projects.css" />
 </head>
 
-<body>
+<body id="projects">
   <!--Fixed Top Nav-->
-  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-nav shadow-lg">
+  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-nav shadow-lg" id="projectsNav">
     <div class="container-fluid">
       <a class="navbar-brand nav-link" href="index.html">
         <img src="assets/images/favicon.png" class="img-fluid logo-img" alt="logo" />
@@ -90,8 +90,11 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-start mt-5">
-          <h1 class="folio-title display-3 title text-center text-sm-start">Projects</h1>
-          <p class="text-center text-sm-start">Click on the project cards below to view the live demo and source code.</p>
+          <h1 class="display-2 title text-center text-gradient text-sm-start">Projects</h1>
+         <div class="d-flex justify-content-center justify-content-sm-start my-1">
+          <hr>
+          </div>
+          <p class="text-center text-sm-start text-accent my-0 mx-auto">Use the portfolio dropdown in the navigation to filter project categories, then click on the project cards below to view the live demo and source code.</p>
         </div>
       </div>
     </div>
@@ -1176,22 +1179,45 @@
     </div>
   </div>
 
-  <script src="http://localhost:5504/livereload.js"></script>
-  <!--Masonry Plugin-->
-  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
-    async></script>
-  <!--load-bootstrap-scripts-->
+<!--load-bootstrap-scripts-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+  <script src="http://localhost:5504/livereload.js"></script>
+  <!--Masonry Plugin-->
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
   <script src="assets/js/top.js"></script>
   <script src="assets/js/portfolio.js"></script>
-  <script src="assets/js/nav.js"></script>
+    <!--Navbar Collapse Script -->
+	<!-- This script automatically closes the navbar-toggle after a user clicks a nav-link. The navbar remained in the expanded state prior to placing this script. -->
+	<!-- This script was copied from Stack Overflow (https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click) -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.dropdown-menu .dropdown-item').forEach(function (item) {
+      item.addEventListener('click', function () {
+        // Hide dropdown
+        const dropdownToggle = this.closest('.dropdown-menu').previousElementSibling;
+        const dropdown = bootstrap.Dropdown.getInstance(dropdownToggle);
+        if (dropdown) dropdown.hide();
+
+        // Collapse navbar if open
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) 
+                           || new bootstrap.Collapse(navbarCollapse, { toggle: false });
+        bsCollapse.hide();
+      });
+    });
+  });
+</script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+
   <script>
 
     let index = 0;
@@ -1212,5 +1238,6 @@
   </script>
 
 </body>
+
 
 </html>
