@@ -88,5 +88,11 @@
     "Category": ["Game Dev", "Hackathon"],
     "ModalID": "projectModal17",
     "ImageSrc": "assets/images/projects/screensnaps.png"
+  },
+  {
+    "Project": "Slangman",
+    "Category": ["Game Dev", "Hackathon"],
+    "ModalID": "projectModal18",
+    "ImageSrc": "assets/images/projects/slangman.png"
   }
 ]

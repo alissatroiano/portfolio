@@ -19,7 +19,7 @@
   --dark-grey: #4d4d4d;
   --darker: #080808;
   --black: #000000;
-  --blue: #7DA2A9;
+  --blue: #2392a8;
   --light-blue: #B3E5F1;
   --yellow-1: #FDD935;
   --yellow-2: #E9BD43;
@@ -282,7 +282,17 @@ hr {
 }
 
 .text-purple {
-  color: var(--violet-2);
+  color: var(--primary-color);
+}
+
+a.text-purple.folio-link {
+  text-decoration: none;
+  font-weight: 550;
+}
+
+a.text-purple.folio-link:hover {
+  color: var(--violet);
+  text-decoration: none;
 }
 
 .text-mark-projects {
