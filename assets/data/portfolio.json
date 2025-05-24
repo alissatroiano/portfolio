@@ -25,7 +25,7 @@
   },
   {
     "Project": "Inklusion",
-    "Category": "Hackathon",
+    "Category": ["Hackathon", "Frontend"],
     "ModalID": "projectModal4",
     "ImageSrc": "assets/images/projects/project_5.png"
   },
@@ -37,19 +37,19 @@
   },
   {
     "Project": "Electrillo",
-    "Category": "Hackathon",
+    "Category": ["Hackathon", "Frontend"],
     "ModalID": "projectModal6",
     "ImageSrc": "assets/images/projects/project_2.png"
   },
   {
     "Project": "Smitten",
-    "Category": "Hackathon",
+    "Category": ["Game Dev", "Hackathon"],
     "ModalID": "projectModal7",
     "ImageSrc": "assets/images/projects/project_6.png"
   },
   {
     "Project": "Game of Facts",
-    "Category": "Game Dev",
+    "Category": ["Game Dev", "Frontend"],
     "ModalID": "projectModal8",
     "ImageSrc": "assets/images/projects/project_1.png"
   },
@@ -61,7 +61,7 @@
   },
   {
     "Project": "DeathScape",
-    "Category": "Game Dev",
+    "Category": ["Game Dev", "Hackathon"],
     "ModalID": "projectModal11",
     "ImageSrc": "assets/images/projects/project_9.png"
   },
