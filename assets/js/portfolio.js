@@ -18,10 +18,16 @@ function initializeCategoryFilter(projects) {
             const filteredProjects =
                 selectedCategory === "All"
                     ? projects
-                    : projects.filter(
-                          (project) =>
-                              project.Category?.toLowerCase() === selectedCategory.toLowerCase()
-                      );
+                    : projects.filter((project) => {
+                          const categories = Array.isArray(project.Category)
+                              ? project.Category
+                              : [project.Category];
+                          return categories.some(
+                              (cat) =>
+                                  cat?.toLowerCase() ===
+                                  selectedCategory.toLowerCase()
+                          );
+                      });
 
             displayProjects(filteredProjects);
         });

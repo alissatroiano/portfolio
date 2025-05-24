@@ -73,8 +73,20 @@
   },
   {
     "Project": "Cosmos",
-    "Category": "Game Dev",
+    "Category": ["Game Dev", "Hackathon"],
     "ModalID": "projectModal15",
     "ImageSrc": "assets/images/cosmos.png"
+  },
+  { 
+    "Project": "Snooscapes",
+    "Category": ["Game Dev", "Hackathon"],
+    "ModalID": "projectModal16",
+    "ImageSrc": "assets/images/projects/snooscapes.png"
+  },
+  {
+    "Project": "Screen Snaps",
+    "Category": ["Game Dev", "Hackathon"],
+    "ModalID": "projectModal17",
+    "ImageSrc": "assets/images/projects/screensnaps.png"
   }
 ]
