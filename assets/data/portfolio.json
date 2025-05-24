@@ -100,5 +100,11 @@
     "Category": ["Illustrations", "Graphic Design"],
     "ModalID": "projectModal19",
     "ImageSrc": "assets/images/projects/cassie-cover.jpg"
+  },
+  {
+    "Project": "The Magic of Love",
+    "Category": ["Illustrations", "Graphic Design"],
+    "ModalID": "projectModal20",
+    "ImageSrc": "assets/images/projects/magic-of-love.jpg"
   }
 ]
