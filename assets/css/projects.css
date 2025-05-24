@@ -285,6 +285,12 @@ hr {
   color: var(--primary-color);
 }
 
+.img-small {
+  max-width: 100%;
+  /* width: 250px; */
+  height: auto;
+}
+
 a.text-purple.folio-link {
   text-decoration: none;
   font-weight: 550;
