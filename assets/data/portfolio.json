@@ -71,12 +71,6 @@
     "ModalID": "projectModal10",
     "ImageSrc": "assets/images/projects/project_8.png"
   },
-  {
-    "Project": "Cosmos",
-    "Category": ["Game Dev", "Hackathon", "Logo Design"],
-    "ModalID": "projectModal15",
-    "ImageSrc": "assets/images/cosmos.png"
-  },
   { 
     "Project": "Snooscapes",
     "Category": ["Game Dev", "Hackathon"],
@@ -94,6 +88,12 @@
     "Category": ["Game Dev", "Hackathon", "Logo Design"],
     "ModalID": "projectModal18",
     "ImageSrc": "assets/images/projects/slangman.png"
+  },
+    {
+    "Project": "Cosmos",
+    "Category": ["Game Dev", "Hackathon", "Logo Design"],
+    "ModalID": "projectModal15",
+    "ImageSrc": "assets/images/cosmos.png"
   },
   {
     "Project": "Cassie The Cat",
