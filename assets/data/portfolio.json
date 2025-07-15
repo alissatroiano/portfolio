@@ -37,7 +37,7 @@
   },
   {
     "Project": "Muzak",
-    "Category": ["Fullstack","Logo Design"],
+    "Category": ["Fullstack","Logo Design", "Graphic Design"],
     "ModalID": "projectModal5",
     "ImageSrc": "assets/images/projects/project_4.png"
   },
@@ -85,19 +85,19 @@
   },
   {
     "Project": "Screen Snaps",
-    "Category": ["Game Dev", "Hackathon", "Logo Design"],
+    "Category": ["Game Dev", "Hackathon", "Logo Design", "Graphic Design"],
     "ModalID": "projectModal17",
     "ImageSrc": "assets/images/projects/screensnaps.png"
   },
   {
     "Project": "Slangman",
-    "Category": ["Game Dev", "Hackathon", "Logo Design"],
+    "Category": ["Game Dev", "Hackathon", "Logo Design", "Graphic Design"],
     "ModalID": "projectModal18",
     "ImageSrc": "assets/images/projects/slangman.png"
   },
     {
     "Project": "Cosmos",
-    "Category": ["Game Dev", "Hackathon", "Logo Design"],
+    "Category": ["Game Dev", "Hackathon", "Logo Design", "Graphic Design"],
     "ModalID": "projectModal15",
     "ImageSrc": "assets/images/cosmos.png"
   },
