@@ -1,5 +1,11 @@
 [
   {
+    "Project": "Neomate",
+    "Category": ["Hackathon", "Fullstack", "Frontend"],
+    "ModalID": "projectModal21",
+    "ImageSrc": "assets/images/projects/neomate_app.jpg"
+  },
+  {
     "Project": "COAST VA",
     "Category": "Frontend",
     "ModalID": "projectModal13",
