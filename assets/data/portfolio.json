@@ -1,4 +1,10 @@
 [
+    {
+    "Project": "Coming Soon",
+    "Category": ["Frontend"],
+    "ModalID": "projectModal22",
+    "ImageSrc": "assets/images/coming-soon.png"
+  },
   {
     "Project": "COAST VA",
     "Category": "Frontend",
