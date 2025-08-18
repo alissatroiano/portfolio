@@ -1,7 +1,7 @@
 [
     {
     "Project": "Coming Soon",
-    "Category": ["Frontend"],
+    "Category": "Frontend",
     "ModalID": "projectModal22",
     "ImageSrc": "assets/images/coming-soon.png"
   },
@@ -46,6 +46,12 @@
     "Category": ["Hackathon", "Fullstack", "Frontend"],
     "ModalID": "projectModal21",
     "ImageSrc": "assets/images/projects/neomate_app.jpg"
+  },
+    {
+    "Project": "The Odditie",
+    "Category": ["Frontend", "Graphic Design"],
+    "ModalID": "projectModal23",
+    "ImageSrc": "assets/images/projects/odditie-thumb.jpg"
   },
   {
     "Project": "Muzak",

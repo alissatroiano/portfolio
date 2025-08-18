@@ -677,7 +677,11 @@ p.tech-stack {
   }
 }
 
-
+#odditieBranding {
+  max-width: 100%;
+  height: auto;
+  max-height: fit-content;
+}
 
 .modal-dialog.modal-dialog-centered.modal-dialog-scrollable.w-100,
 .modal-dialog-scrollable .modal-content {
