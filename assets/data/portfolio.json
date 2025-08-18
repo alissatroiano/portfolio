@@ -5,6 +5,18 @@
     "ModalID": "projectModal13",
     "ImageSrc": "assets/images/projects/coast-va-home.png"
   },
+    {
+    "Project": "Infinity",
+    "Category": "Frontend",
+    "ModalID": "projectModal9",
+    "ImageSrc": "assets/images/projects/project_7.png"
+  },
+    {
+    "Project": "Inklusion",
+    "Category": ["Hackathon", "Frontend"],
+    "ModalID": "projectModal4",
+    "ImageSrc": "assets/images/projects/project_5.png"
+  },
   {
     "Project": "Hue",
     "Category": "Fullstack",
@@ -22,12 +34,6 @@
     "Category": "Fullstack",
     "ModalID": "projectModal14",
     "ImageSrc": "assets/images/projects/project_10.png"
-  },
-  {
-    "Project": "Inklusion",
-    "Category": ["Hackathon", "Frontend"],
-    "ModalID": "projectModal4",
-    "ImageSrc": "assets/images/projects/project_5.png"
   },
     {
     "Project": "Neomate",
@@ -58,12 +64,6 @@
     "Category": ["Game Dev", "Frontend"],
     "ModalID": "projectModal8",
     "ImageSrc": "assets/images/projects/project_1.png"
-  },
-  {
-    "Project": "Infinity",
-    "Category": "Frontend",
-    "ModalID": "projectModal9",
-    "ImageSrc": "assets/images/projects/project_7.png"
   },
   {
     "Project": "DeathScape",
