@@ -1,11 +1,5 @@
 [
   {
-    "Project": "Neomate",
-    "Category": ["Hackathon", "Fullstack", "Frontend"],
-    "ModalID": "projectModal21",
-    "ImageSrc": "assets/images/projects/neomate_app.jpg"
-  },
-  {
     "Project": "COAST VA",
     "Category": "Frontend",
     "ModalID": "projectModal13",
@@ -34,6 +28,12 @@
     "Category": ["Hackathon", "Frontend"],
     "ModalID": "projectModal4",
     "ImageSrc": "assets/images/projects/project_5.png"
+  },
+    {
+    "Project": "Neomate",
+    "Category": ["Hackathon", "Fullstack", "Frontend"],
+    "ModalID": "projectModal21",
+    "ImageSrc": "assets/images/projects/neomate_app.jpg"
   },
   {
     "Project": "Muzak",
