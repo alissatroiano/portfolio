@@ -10,7 +10,13 @@
     "Category": "Frontend",
     "ModalID": "projectModal13",
     "ImageSrc": "assets/images/projects/coast-va-home.png"
+  },    {
+    "Project": "Neomate",
+    "Category": ["Hackathon", "Fullstack", "Frontend"],
+    "ModalID": "projectModal21",
+    "ImageSrc": "assets/images/projects/neomate_app.jpg"
   },
+
     {
     "Project": "Infinity",
     "Category": "Frontend",
@@ -40,12 +46,6 @@
     "Category": "Fullstack",
     "ModalID": "projectModal14",
     "ImageSrc": "assets/images/projects/project_10.png"
-  },
-    {
-    "Project": "Neomate",
-    "Category": ["Hackathon", "Fullstack", "Frontend"],
-    "ModalID": "projectModal21",
-    "ImageSrc": "assets/images/projects/neomate_app.jpg"
   },
     {
     "Project": "The Odditie",
