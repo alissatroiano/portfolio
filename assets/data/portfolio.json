@@ -5,6 +5,12 @@
     "ModalID": "projectModal22",
     "ImageSrc": "assets/images/coming-soon.png"
   },
+ {
+  "Project": "Trend Tracker",
+  "Category": ["Fullstack", "Frontend"],
+  "ModalID": "projectModal24",
+  "ImageSrc": "assets/images/projects/trend-tracker.png"
+ },
   {
     "Project": "COAST VA",
     "Category": "Frontend",
