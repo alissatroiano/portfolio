@@ -1,79 +1,85 @@
 [
     {
     "Project": "Coming Soon",
-    "Category": "Frontend",
+    "Category": "Frontend, UI Design",
     "ModalID": "projectModal22",
     "ImageSrc": "assets/images/coming-soon.png"
   },
+ {
+  "Project": "Trend Tracker",
+  "Category": ["Fullstack", "Frontend, UI Design"],
+  "ModalID": "projectModal24",
+  "ImageSrc": "assets/images/projects/trend-tracker-thumb.png"
+ },
   {
     "Project": "COAST VA",
-    "Category": "Frontend",
+    "Category": "Frontend, UI Design",
     "ModalID": "projectModal13",
     "ImageSrc": "assets/images/projects/coast-va-home.png"
   },    {
     "Project": "Neomate",
-    "Category": ["Hackathon", "Fullstack", "Frontend"],
+    "Category": ["Hackathon", "Fullstack", "Frontend, UI Design"],
     "ModalID": "projectModal21",
     "ImageSrc": "assets/images/projects/neomate_app.jpg"
   },
 
     {
     "Project": "Infinity",
-    "Category": "Frontend",
+    "Category": ["Frontend", "UI Design"],
     "ModalID": "projectModal9",
     "ImageSrc": "assets/images/projects/project_7.png"
   },
     {
     "Project": "Inklusion",
-    "Category": ["Hackathon", "Frontend"],
+    "Category": ["Hackathon", "Frontend", "UI Design"],
     "ModalID": "projectModal4",
     "ImageSrc": "assets/images/projects/project_5.png"
   },
   {
     "Project": "Hue",
-    "Category": "Fullstack",
+    "Category": ["UI Design", "Fullstack"],
     "ModalID": "projectModal1",
     "ImageSrc": "assets/images/projects/thumb-hue.png"
   },
   {
     "Project": "OBBA/OLLA Queue",
-    "Category": "Fullstack",
+    "Category": ["UI Design", "Frontend"],
     "ModalID": "projectModal2",
     "ImageSrc": "assets/images/OBBA.png"
   },
   {
     "Project": "Dash",
-    "Category": "Fullstack",
+    "Category": ["Fullstack", "UI Design", "Frontend"],
     "ModalID": "projectModal14",
     "ImageSrc": "assets/images/projects/project_10.png"
   },
     {
     "Project": "The Odditie",
-    "Category": ["Frontend", "Graphic Design"],
+    "Category": ["Frontend", "UI Design"],
     "ModalID": "projectModal23",
     "ImageSrc": "assets/images/projects/odditie-thumb.jpg"
   },
   {
     "Project": "Muzak",
-    "Category": ["Fullstack","Logo Design", "Graphic Design"],
+    "Category": ["Fullstack","UI Design", "Frontend"],
     "ModalID": "projectModal5",
     "ImageSrc": "assets/images/projects/project_4.png"
   },
   {
     "Project": "Electrillo",
-    "Category": ["Hackathon", "Frontend"],
+    "Category": ["Hackathon", "Frontend", "UI Design"],
     "ModalID": "projectModal6",
     "ImageSrc": "assets/images/projects/project_2.png"
   },
   {
     "Project": "Smitten",
-    "Category": ["Game Dev", "Hackathon"],
+    "Category": ["Game Dev", "Hackathon", "UI Design", "Fullstack"],
     "ModalID": "projectModal7",
     "ImageSrc": "assets/images/projects/project_6.png"
   },
   {
     "Project": "Game of Facts",
-    "Category": ["Game Dev", "Frontend"],
+    "Category": ["Game Dev", "Frontend", "UI Design", "Fullstack"],
     "ModalID": "projectModal8",
     "ImageSrc": "assets/images/projects/project_1.png"
   },
@@ -97,31 +103,31 @@
   },
   {
     "Project": "Screen Snaps",
-    "Category": ["Game Dev", "Hackathon", "Logo Design", "Graphic Design"],
+    "Category": ["Game Dev", "Hackathon", "UI Design", "Fullstack"],
     "ModalID": "projectModal17",
     "ImageSrc": "assets/images/projects/screensnaps.png"
   },
   {
     "Project": "Slangman",
-    "Category": ["Game Dev", "Hackathon", "Logo Design", "Graphic Design"],
+    "Category": ["Game Dev", "Hackathon", "UI Design", "Fullstack"],
     "ModalID": "projectModal18",
     "ImageSrc": "assets/images/projects/slangman.png"
   },
     {
     "Project": "Cosmos",
-    "Category": ["Game Dev", "Hackathon", "Logo Design", "Graphic Design"],
+    "Category": ["Game Dev", "Hackathon", "UI Design", "Fullstack"],
     "ModalID": "projectModal15",
     "ImageSrc": "assets/images/cosmos.png"
   },
   {
     "Project": "Cassie The Cat",
-    "Category": ["Illustrations", "Graphic Design"],
+    "Category": ["Illustrations", "UI Design"],
     "ModalID": "projectModal19",
     "ImageSrc": "assets/images/projects/cassie-cover.jpg"
   },
   {
     "Project": "The Magic of Love",
-    "Category": ["Illustrations", "Graphic Design"],
+    "Category": ["Illustrations", "UI Design"],
     "ModalID": "projectModal20",
     "ImageSrc": "assets/images/projects/magic-of-love.jpg"
   }
