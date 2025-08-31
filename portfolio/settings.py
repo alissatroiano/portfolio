@@ -12,11 +12,13 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 import os
 import dj_database_url
+from pathlib import Path
+
 from dotenv import load_dotenv
 
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 print("SECRET_KEY:", SECRET_KEY)  # Debugging line to check if SECRET_KEY is loaded correctly
@@ -27,6 +29,37 @@ print("DATABASE_URL:", DATABASE_URL)  # Debugging line to check if DATABASE_URL 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
+USE_AWS = 'USE_AWS' in os.environ
+
+STATIC_HOST = os.environ.get("DJANGO_STATIC_HOST", "") if not DEBUG else ""
+STATIC_URL = STATIC_HOST + "/static/"
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
+# Whitenoise for static files
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+if USE_AWS:
+    # AWS S3 settings
+    AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
+    AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
+    AWS_STORAGE_BUCKET_NAME = os.environ.get("AWS_STORAGE_BUCKET_NAME")
+    AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
+    AWS_QUERYSTRING_AUTH = False  # optional, cleaner URLs
+
+    DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+    MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/"
+else:
+    # Local dev storage
+    MEDIA_URL = "/media/"
+    MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+    # Media backend handled by DEFAULT_FILE_STORAGE when USE_AWS=True
+}
 
 ALLOWED_HOSTS = ['https://alissatroiano-236bed6eeae0.herokuapp.com/', 'alissatroiano-236bed6eeae0.herokuapp.com', 'localhost', '127.0.0.1']
 
@@ -44,6 +77,7 @@ INSTALLED_APPS = [
     'homepage',
     'storages',
     'projects',
+    
 ]
 
 MIDDLEWARE = [
@@ -87,16 +121,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'portfolio.wsgi.application'
-
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
 # Database
 if 'DATABASE_URL' in os.environ:
@@ -143,31 +167,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
-STATIC_HOST = os.environ.get("DJANGO_STATIC_HOST", "") if not DEBUG else ""
-STATIC_URL = STATIC_HOST + "/static/"
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-# Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-
-STORAGES = {
- "default": {
-            "BACKEND": "django.core.files.storage.FileSystemStorage",
-            "LOCATION": os.path.join(BASE_DIR, 'media'),},
-         "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
-
-
-# Media
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
