@@ -1,34 +1,91 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content %}
-<section class="container py-5 my-1 my-md-4 my-lg-5">
-    <div class="row mt-5">
-        <div class="col-12">
-            <h1 class="title text-center display-1 fw-bold">{{ project.title }}</h1>
-        </div>
-    </div>
+{% block page_header %}
+<div class="container mt-5 pt-5">
     <div class="row">
-      <div class="col-lg-7 mb-4 mb-lg-0">
-        <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
-          <h2 class="h1 mb-4">About</h2>
-          <p class="fs-lg mb-0">Lacinia pulvinar at diam, urna, non blandit. Cras id enim tortor nascetur. Cursus ante eu nam ut non vestibulum sem. Ullamcorper quis varius eu, vel. Sagittis ut suspendisse et, nec. Parturient eu iaculis sit dolor, erat mauris. Leo at egestas aliquet duis pellentesque amet. Proin mattis ac ornare malesuada sed. Diam libero tortor suspendisse molestie non duis enim. Lectus pulvinar euismod et risus egestas. Cursus porttitor id faucibus eu vestibulum. Eu blandit faucibus nulla adipiscing amet ullamcorper.</p>
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section class="container-fluid mt-3 p-5">
+  <div class="row p-3">
+    <div class="col-12">
+      <h1 class="display-3 folio-title text-center text-sm-start my-3 my-md-4 pb-2">{{ project.title }}:
+      <span class="text-light-purple">{{ project.name }}</span></h1>
+    </div>
+    <!-- Left column: Video or Image -->
+    <div class="col-12 col-lg-7 mb-4">
+      <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+        {% if project.video_link %}
+        <div class="embed-responsive text-center align-items-center justify-content-center ratio ratio-16x9">
+                  <iframe width="560" height="315" src="{{ project.video_link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                </div>
+        {% else %}
+        <div class="project-picture text-center">
+          <img src="/media/{{ project.picture }}" alt="{{ project.title }}" class="project-img img-fluid">
         </div>
-      </div>
-      <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
-        <div class="ps-lg-4 ms-lg-3">
-          <h3 class="h5 d-flex align-items-center">
-            <i class="fas fa-info-circle me-2"></i>
-            Problem
-          </h3>
-          <p class="pb-4 mb-0 mb-lg-3">Ultricies massa iaculis vestibulum egestas vestibulum, cursus. Leo non arcu ultricies senectus a purus sed.</p>
-          <h3 class="h5 d-flex align-items-center">
-            <i class="fas fa-lightbulb me-2"></i>
-            Solution
-          </h3>
-          <p class="mb-0">Sit tellus id proin viverra iaculis pellentesque ornare. Diam augue sit feugiat porttitor leo, fusce vel ac. Placerat vulputate quisque.</p>
-        </div>
+        
+        {% endif %}
+
+        <h2 class="display-7 my-4 text-mark-projects">
+          <i class="fas fa-circle-info me-2"></i>About
+        </h2>
+        <p class="fs-lg">{{ project.description }}</p>
       </div>
     </div>
-  </section>
+
+    <!-- Right column: Details -->
+    <div class="col-12 col-lg-5">
+      {% if project.problem %}
+      <h3 class="display-7 d-flex align-items-center text-mark-projects">
+       <i class="fa-solid fa-circle-question me-2"></i>Problem
+      </h3>
+      <p class="my-3">{{ project.problem }}</p>
+      {% endif %}
+
+      {% if project.solution %}
+      <h3 class="display-7 d-flex align-items-center text-mark-projects my-2">
+        <i class="fas fa-lightbulb me-2"></i>Solution
+      </h3>
+      <p class="my-3">{{ project.solution }}</p>
+      {% endif %}
+
+      <h3 class="display-7 d-flex align-items-center text-mark-projects">
+        <i class="fas fa-wrench me-2"></i>Tech Stack
+      </h3>
+      <p class="tech-stack">{{ project.technologies }}</p>
+
+      {% if project.link %}
+      <div class="mt-4 row d-flex justify-content-center">
+        <div class="col-6">
+          <a href="{{ project.link }}" target="_blank">
+            <button class="project-button">Live Project</button>
+          </a>
+      </div>
+      {% endif %}
+      {% if project.repository %}
+              <div class="col-6">
+        <a href="{{ project.repository }}" target="_blank">
+          <button class="project-button">Source Code</button>
+        </a>
+              </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="my-0 mx-auto justify-content-center text-center py-3 py-sm-5">
+    <hr id="bottom-line">
+  </div>
+  <!-- Add A 'back to portfolio link'-->
+  <div class="row folio-title mt-1 mt-sm-3">
+    <div class="col text-center">
+      <a href="{% url 'project_index' %}" class="back-to-projects-button">
+        <i class="fas fa-chevron-left me-2"></i>
+        Back to Portfolio</a>
+    </div>
+  </div>
+</section>
 {% endblock %}
