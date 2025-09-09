@@ -7,9 +7,15 @@
   },
  {
   "Project": "Trend Tracker",
-  "Category": ["Fullstack", "Frontend, UI Design"],
+  "Category": ["Fullstack", "Frontend", "UI Design"],
   "ModalID": "projectModal24",
   "ImageSrc": "assets/images/projects/trend-tracker-thumb.png"
+ },
+  {
+  "Project": "Bridal Shower Designs",
+  "Category": ["Illustrations"],
+  "ModalID": "projectModal25",
+  "ImageSrc": "assets/images/bridalshower.jpg"
  },
   {
     "Project": "COAST VA",
