@@ -348,6 +348,15 @@ a#resumeBtn {
   font-size: 15px;
 }
 
+div#project-card {
+    background-color: transparent;
+    background-color: transparent;
+    background: none;
+    box-shadow: 5px 5px 15px 5px #000120a4;
+    border: none;
+}
+
+
 .back-to-projects-button {
   font-size: 1.2rem;
     padding: 12px;

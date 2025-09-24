@@ -1,5 +1,16 @@
 from django.contrib import admin
-from .models import Project
+from .models import Project, Category, Technology
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('name', 'created_at')
+    search_fields = ('name',)
+
+@admin.register(Technology)
+class TechnologyAdmin(admin.ModelAdmin):
+    list_display = ('name', 'created_at')
+    search_fields = ('name',)
+    ordering = ('name',)
 
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
@@ -9,7 +20,6 @@ class ProjectAdmin(admin.ModelAdmin):
   		'description', 
     	'created_at', 
      	'updated_at', 
-      	'technologies', 
         'link', 
         'picture',
         'problem',
@@ -24,17 +34,9 @@ class ProjectAdmin(admin.ModelAdmin):
 	]
     
     list_filter = [
-		'title', 
-  		'name',
-  		'description', 
-    	'created_at', 
-     	'updated_at',
-      	'technologies',
-        'link', 
-        'picture',
-        'problem',
-        'solution',
-        'video_link',
+        'technologies',
+        'created_at', 
+        'updated_at',
 	]
     
     list_per_page = 50
@@ -45,14 +47,16 @@ class ProjectAdmin(admin.ModelAdmin):
         'description', 
         'technologies', 
         'link', 
-        'picture',
-        'image_url',
         'repository',
+        'image_url',
+        'picture',
         'photo',
         'problem',
         'solution',
         'video_link',
 	]
+    
+    filter_horizontal = ('technologies',)
     
     readonly_fields = ['created_at', 'updated_at', 'deleted_at']
     

@@ -164,6 +164,14 @@ a>button.project-button {
   text-decoration: none;
 }
 
+div#project-card {
+    background-color: transparent;
+    background-color: transparent;
+    background: none;
+    box-shadow: 3px 5px 25px 5px #000120e3;
+    border: none;
+}
+
 a.cta-btn:hover,
 a#resumeBtn:hover,
 .project-button:hover {
