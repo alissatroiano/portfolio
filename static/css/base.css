@@ -350,12 +350,11 @@ a#resumeBtn {
 
 div#project-card {
     background-color: transparent;
-    background-color: transparent;
-    background: none;
+    background: transparent;
     box-shadow: 5px 5px 15px 5px #000120a4;
     border: none;
+    margin: 10px;
 }
-
 
 .back-to-projects-button {
   font-size: 1.2rem;
