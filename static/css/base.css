@@ -95,6 +95,10 @@ a {
   background-color: #0a0a0acf;
 }
 
+.bg-prime {
+  background-color: var(--primary-color);
+}
+
 .bg-nav {
   background-color: rgba(239, 239, 239, 0.895) !important;
 }
@@ -1226,6 +1230,11 @@ input[type="submit"] {
   font-size: 11px;
 }
 
+.dropdown-menu li {
+  margin: 2px auto;
+  line-height: 1;
+}
+
 .technologies-btn {
   font-family: 'Dosis', serif;
   background-color: var(--primary-color);
@@ -1280,6 +1289,7 @@ label.form-check-label {
   font-size: 11px;
   font-weight: semibold;
   color: var(--dark-violet);
+
 }
 
 /*------------------------- Footer */
