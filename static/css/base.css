@@ -1223,7 +1223,7 @@ input[type="submit"] {
 }
 
 #technologiesDropdown {
-  font-size: 13px;
+  font-size: 11px;
 }
 
 .technologies-btn {
@@ -1266,8 +1266,10 @@ hr.divider-dropdown {
 }
 
 .form-check-input[type=checkbox] {
+    margin-top: 9px;
     border-radius: 1rem;
-    border: 1px solid  var(--primary-color);
+    border: .5px solid var(--primary-color);
+    font-size: 11px;
 }
 
 .form-check-input:checked {
@@ -1275,7 +1277,7 @@ hr.divider-dropdown {
 }
 
 label.form-check-label {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: semibold;
   color: var(--dark-violet);
 }
