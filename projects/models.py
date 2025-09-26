@@ -37,6 +37,7 @@ class Project(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     link = models.URLField(max_length=1024, null=True, blank=True)
     repository = models.URLField(max_length=1024, null=True, blank=True)
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True, related_name='projects')
     technologies = models.ManyToManyField(Technology, blank=True, related_name='projects')
     problem = models.TextField(null=True, blank=True)
     solution = models.TextField(null=True, blank=True)

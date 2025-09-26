@@ -34,6 +34,7 @@ class ProjectAdmin(admin.ModelAdmin):
 	]
     
     list_filter = [
+        'category',
         'technologies',
         'created_at', 
         'updated_at',
@@ -44,7 +45,8 @@ class ProjectAdmin(admin.ModelAdmin):
     fields = [
         'title',
         'name',
-        'description', 
+        'description',
+        'category', 
         'technologies', 
         'link', 
         'repository',

@@ -10,10 +10,10 @@
 {% endblock %}
 
 {% block content %}
-<section class="container-fluid mt-3 p-5">
+<section class="container-fluid mt-3 p-3">
   <div class="row p-3">
     <div class="col-12">
-      <h1 class="display-3 folio-title text-center text-sm-start my-3 my-md-4 pb-2">{{ project.title }}:
+      <h1 class="display-3 folio-title text-center text-sm-start mt-5 py-2">{{ project.title }}
       <span class="text-light-purple">{{ project.name }}</span></h1>
     </div>
     <!-- Left column: Video or Image -->
@@ -56,7 +56,13 @@
       <h3 class="display-7 d-flex align-items-center text-mark-projects">
         <i class="fas fa-wrench me-2"></i>Tech Stack
       </h3>
-      <p class="tech-stack">{{ project.technologies }}</p>
+      <p class="tech-stack">
+        {% for tech in project.technologies.all %}
+          <span class="badge bg-secondary me-1">{{ tech.name }}</span>
+        {% empty %}
+          No technologies specified
+        {% endfor %}
+      </p>
 
       {% if project.link %}
       <div class="mt-4 row d-flex justify-content-center">

@@ -3,16 +3,49 @@
 
 {% block content %}
 
-<div class="container-fluid">
-    <div class="row text-center pt-5">
-        <div class="col-12">
-            <h2 class="ms-2 ms-sm-3 section-title display-5 mt-5 pt-5 text-center text-sm-start">My Projects</h2>
+<div class="container-fluid px-sm-4 px-md-5">
+    <div class="row text-center mt-5 py-3 py-sm-4">
+        <div class="col-12 my-0 mx-auto">
+            <h2 class="ms-2 ms-sm-3 section-title display-5 mt-3 pt-5 text-start">My Projects</h2>
         </div>
-        <div class="my-0 ms-sm-3 justify-content-center text-center py-2">
+        <div class="my-0 mx-auto justify-content-center text-center pt-2">
             <hr>
         </div>
+        
+        <!-- Filter Controls -->
+        <div class="row mb-4 d-flex justify-content-center">
+            <div class="col-12">
+                <form method="get" class="d-flex justify-content-center align-items-center">
+                    <div class="dropdown ms-5" id="technologiesDropdown">
+                        <button class="technologies-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Technologies
+                        </button>
+                        <div class="dropdown-menu p-3" style="min-width: 400px; max-width: 500px;">
+                            <div class="row">
+                                {% for tech in technologies %}
+                                <div class="col-6 mb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="technology" value="{{ tech.id }}" 
+                                               id="tech{{ tech.id }}" {% if tech.id|stringformat:'s' in selected_technologies %}checked{% endif %}
+                                               onchange="this.form.submit()">
+                                        <label class="form-check-label small my-1" for="tech{{ tech.id }}">
+                                            {{ tech.name }}
+                                        </label>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <hr class="my-2">
+                            <div class="text-center">
+                                <a href="{% url 'project_index' %}" class="clear-btn">Clear All Filters</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-<div class="row g-4 my-0 mx-auto" data-masonry='{"percentPosition": true }'>
+<div class="row g-4 my-0 mx-auto pb-3" data-masonry='{"percentPosition": true }'>
 {% for project in projects %}
 <div class="col-xs-8 col-sm-4">
     <div class="card h-100 rounded-5 img-fluid" id="project-card">
