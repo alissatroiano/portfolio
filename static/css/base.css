@@ -955,6 +955,18 @@ a.resume-link:hover {
   color: var(--darker);
 }
 
+h2.folio-index {
+  font-family: "Lexend Giga", serif;
+  letter-spacing: -5px;
+  font-weight: 300;
+  color: var(--primary-color);
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2), 0px -5px 10px rgba(255, 255, 255, 0.15); /* Multiple shadows for an embossed look */
+
+
+
+}
+
+
 img {
   margin: 0 auto;
 }
@@ -1237,16 +1249,25 @@ input[type="submit"] {
 
 .technologies-btn {
   font-family: 'Dosis', serif;
-  background-color: var(--primary-color);
   color: var(--lighter);
   border: none;
-  margin: 0 auto;
+  border-radius: 50%;
   text-transform: uppercase;
   letter-spacing: 1.25px;
   text-decoration: none;
   color: var(--lighter);
   font-weight: 700;
-  padding: 10px;
+  background-color: transparent;
+  width: 120px;
+  float: end;
+  align-items: end;
+  text-align: end;
+}
+
+.stack-icon {
+  background: url('../../media/icons/stack.gif');
+  max-width: 100%;
+  height: auto;
 }
 
 a.clear-btn {
