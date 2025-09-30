@@ -1258,7 +1258,7 @@ input[type="submit"] {
   color: var(--lighter);
   font-weight: 700;
   background-color: transparent;
-  width: 120px;
+  width: 80px;
   float: end;
   align-items: end;
   text-align: end;
@@ -1490,4 +1490,22 @@ i.fas.fa-chevron-up.fa-2x:hover {
       )
       translateX(-30px);
   }
+
+  .technologies-btn {
+  font-family: 'Dosis', serif;
+  color: var(--lighter);
+  border: none;
+  border-radius: 50%;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  text-decoration: none;
+  color: var(--lighter);
+  font-weight: 700;
+  background-color: transparent;
+  width: 100px;
+  float: end;
+  align-items: end;
+  text-align: end;
+}
+
 }
