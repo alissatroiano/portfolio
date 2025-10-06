@@ -52,7 +52,8 @@ DEFAULT_FILE_STORAGE = "django.core.files.storage.FileSystemStorage"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-ALLOWED_HOSTS = ['https://alissatroiano-236bed6eeae0.herokuapp.com/', 'alissatroiano-236bed6eeae0.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['https://alissatroiano-236bed6eeae0.herokuapp.com/', 'alissatroiano-236bed6eeae0.herokuapp.com', 'https://alissatroiano-76a13ff11440.herokuapp.com/', 'alissatroiano.com',  
+                 'www.alissatroiano.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
