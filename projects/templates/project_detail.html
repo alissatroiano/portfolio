@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load youtube_filters %}
 
 {% block page_header %}
 <div class="container mt-5 pt-5">
@@ -32,7 +33,7 @@
       <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
         {% if project.video_link %}
         <div class="embed-responsive text-center align-items-center justify-content-center ratio ratio-16x9">
-                  <iframe width="560" height="315" src="{{ project.video_link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                  <iframe width="560" height="315" src="{{ project.video_link|youtube_embed_url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
                 </div>
         {% else %}
         <div class="project-picture text-center">
