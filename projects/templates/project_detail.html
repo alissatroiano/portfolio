@@ -13,12 +13,12 @@
 {% block content %}
 <section class="container-fluid mt-5 p-3 px-3 px-sm-5">
   <div class="row d-flex p-4 my-0 mx-auto">
-    <div class="col-12 col-sm-6 mt-3">
+    <div class="col-12 col-sm-6 mt-3 px-1">
       <h1 class="display-4 folio-title text-center text-sm-start my-sm-5 pb-2">{{ project.title }}
       <span class="text-light-purple">{{ project.name }}</span></h1>
     </div>
-    <div class="col-12 col-sm-6 text-end mt-3">
-            <p class="tech-stack my-sm-5 py-2 py-sm-4 me-2 me-sm-4">
+    <div class="col-12 col-sm-6 text-end mt-3 px-1">
+            <p class="tech-stack my-sm-5 py-2 py-sm-4 me-2 me-sm-4 text-center text-sm-start">
         {% for tech in project.technologies.all %}
           <span class="badge bg-prime me-1">{{ tech.name }}</span>
         {% empty %}
@@ -28,9 +28,8 @@
     </div>
     </div>
   <div class="row d-flex justify-content-center">
-    <!-- Left column: Video or Image -->
-    <div class="col-12 col-lg-5 mb-4">
-      <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+    <div class="col-12 col-sm-5">
+      <div class="px-lg-2 me-lg-3 pe-xl-0 me-xl-0 mt-3">
         {% if project.video_link %}
         <div class="embed-responsive text-center align-items-center justify-content-center ratio ratio-16x9">
                   <iframe width="560" height="315" src="{{ project.video_link|youtube_embed_url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
@@ -45,8 +44,8 @@
     </div>
 
     <!-- Right column: Details -->
-    <div class="col-12 col-lg-7">
-       <h2 class="display-7 my-4 text-mark-projects">
+    <div class="col-12 col-sm-7 mt-3">
+       <h2 class="display-7 text-mark-projects">
           <i class="fas fa-circle-info me-2"></i>About
         </h2>
         <p class="fs-lg">{{ project.description }}</p>
