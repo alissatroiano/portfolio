@@ -137,6 +137,11 @@ a {
   letter-spacing: 0.25px;
 }
 
+.text-main {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.1rem;
+}
+
 #resume-nav-link {
   color: var(--light-grey);
   font-weight: 400;
@@ -543,7 +548,7 @@ p {
 }
 
 #homePhoto {
-  background-image: url("../../media/media/alissa.png");
+  background-image: url("../../media/alissa.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -555,7 +560,6 @@ p {
 }
 
 #coverIcon {
-  background-image: url("../images/icons/web-dev.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -733,13 +737,13 @@ a.data:before {
   display: flex;
 }
 
-.position-relative.h-500px.h-md-750px.w-lg-50vw {
-  background-image: url("../../media/icons/web-dev.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
+#aboutImg {
+  background-image: url('../../media/icons/web-dev.png');
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 
 h5.role-heading {
   letter-spacing: 3.5px;

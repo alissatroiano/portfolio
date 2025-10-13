@@ -1,6 +1,7 @@
 #homePhoto {
+  
 
-  background-image: url("../../media/media/alissa.png");
+  background-image: url("../../media/bubble.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -26,7 +27,6 @@
 }
 
 #coverIcon {
-  background-image: url('../images/icons/web-dev.png'); 
   background-position:center center; 
   background-size: contain;
   background-repeat: no-repeat;
