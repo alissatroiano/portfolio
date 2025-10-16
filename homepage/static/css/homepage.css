@@ -1,10 +1,10 @@
 #homePhoto {
-
-  background-image: url("../../media/media/alissa.png");
+  background-image: url("../../media/icons/anime-2.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   background-size: contain;
+  /* opacity: 0.75; */
 }
 
 
@@ -26,7 +26,6 @@
 }
 
 #coverIcon {
-  background-image: url('../images/icons/web-dev.png'); 
   background-position:center center; 
   background-size: contain;
   background-repeat: no-repeat;

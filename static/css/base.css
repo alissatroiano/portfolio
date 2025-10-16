@@ -733,7 +733,7 @@ a.data:before {
   display: flex;
 }
 
-.position-relative.h-500px.h-md-750px.w-lg-50vw {
+#aboutImg {
   background-image: url("../../media/icons/web-dev.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1414,6 +1414,20 @@ i.fas.fa-chevron-up.fa-2x {
 
 i.fas.fa-chevron-up.fa-2x:hover {
   color: var(--violet);
+}
+
+/* -------------------------------- Animations */
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 5px); }
+    to   { transform: translate(0, -0px); }    
 }
 
 /*--------------------------------  Media Queries */
