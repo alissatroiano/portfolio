@@ -642,20 +642,6 @@ img {
   max-width: 100%;
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 20s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.65;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .layout__item--body {
   margin-left: 0;
   flex-grow: 9999;
@@ -1429,6 +1415,52 @@ i.fas.fa-chevron-up.fa-2x:hover {
     65%  { transform: translate(0, 5px); }
     to   { transform: translate(0, -0px); }    
 }
+
+.float-in-text {
+  color: var(--violet-2);
+  opacity: 0;
+  transform: translateY(20px); /* Start slightly below its final position */
+  animation: floatIn 2.5s ease-out forwards; /* Apply the animation */
+}
+
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Initial state: invisible and slightly down */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Final state: fully visible and in place */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-text {
+  animation: fadeIn 4s ease-in forwards; /* 2s duration, ease-in timing, maintains final state */
+}
+
+.fade {
+  animation: fade ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.45;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 /*--------------------------------  Media Queries */
 @media only screen and (min-width: 768px) {
