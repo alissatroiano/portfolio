@@ -11,13 +11,13 @@
 {% endblock %}
 
 {% block content %}
-<section class="container-fluid mt-5 p-3 px-3 px-sm-5">
-  <div class="row d-flex p-4 my-0 mx-auto">
-    <div class="col-12 col-sm-8 mt-3">
-      <h1 class="display-4 folio-title text-center text-sm-start my-sm-5 pb-2">{{ project.title }}
-      <span class="text-light-purple">{{ project.name }}</span></h1>
+<section class="container-fluid mt-5" id="projectDetail">
+  <div class="row d-flex my-0 mx-auto pt-3">
+    <div class="col-12 col-sm-7 mt-3">
+      <h1 class="display-5 folio-title text-center text-sm-start my-sm-5 mt-3 pb-2">{{ project.title }}
+      <span class="text-light-purple mt-4">{{ project.name }}</span></h1>
     </div>
-    <div class="col-12 col-sm-4 text-center text-sm-end mt-3">
+    <div class="col-12 col-sm-5 text-center text-sm-end mt-3">
             <p class="tech-stack my-sm-5 py-2 py-sm-4 me-2 me-sm-4">
         {% for tech in project.technologies.all %}
           <span class="badge bg-prime me-1">{{ tech.name }}</span>
@@ -29,7 +29,7 @@
     </div>
   <div class="row d-flex justify-content-center">
     <!-- Left column: Video or Image -->
-    <div class="col-12 col-lg-5 mb-4">
+    <div class="col-12 col-sm-6">
       <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
         {% if project.video_link %}
         <div class="embed-responsive text-center align-items-center justify-content-center ratio ratio-16x9">
@@ -39,36 +39,13 @@
         <div class="project-picture text-center">
           <img src="/media/{{ project.photo }}" alt="{{ project.title }}" class="project-img img-fluid">
         </div>
-        
         {% endif %}
       </div>
-    </div>
-
-    <!-- Right column: Details -->
-    <div class="col-12 col-lg-7">
-       <h2 class="display-7 my-4 text-mark-projects">
-          <i class="fas fa-circle-info me-2"></i>About
-        </h2>
-        <p class="fs-lg">{{ project.description }}</p>
-      {% if project.problem %}
-      <h3 class="display-7 d-flex align-items-center text-mark-projects">
-       <i class="fa-solid fa-circle-question me-2"></i>Problem
-      </h3>
-      <p class="my-3">{{ project.problem }}</p>
-      {% endif %}
-
-      {% if project.solution %}
-      <h3 class="display-7 d-flex align-items-center text-mark-projects my-2">
-        <i class="fas fa-lightbulb me-2"></i>Solution
-      </h3>
-      <p class="my-3">{{ project.solution }}</p>
-      {% endif %}
-
-      {% if project.link %}
-      <div class="mt-4 row d-flex justify-content-center py-3">
+        {% if project.link %}
+    <div class="row my-3 mx-auto d-flex justify-content-center py-2">
         <div class="col-6">
           <a href="{{ project.link }}" target="_blank">
-            <button class="project-button">Live Project</button>
+            <button class="project-button ms-5">Live Project</button>
           </a>
       </div>
       {% endif %}
@@ -80,19 +57,44 @@
               </div>
       {% endif %}
     </div>
-  </div>
+    </div>
+    <!-- Right column: Details -->
+     
+    <div class="col-12 col-sm-6">
+          <h2 class="display-7 text-mark-projects">
+          <i class="fas fa-circle-info mx-2"></i>About
+        </h2>
+        <p class="fs-lg mx-2">{{ project.description }}</p>
+      {% if project.problem %}
+      <h3 class="display-7 d-flex align-items-center text-mark-projects">
+       <i class="fa-solid fa-circle-question me-2"></i>Problem
+      </h3>
+      <p class="my-3">{{ project.problem }}</p>
+      {% endif %}
 
-  <div class="my-3 mx-auto justify-content-center just text-center">
-    <hr id="bottom-line">
-  </div>
-  <!-- Add A 'back to portfolio link'-->
-  <div class="row folio-title mt-1 mt-sm-3 pb-3 pb-md-4 pt-3 my-3">
+      {% if project.solution %}
+      <h3 class="display-7 d-flex align-items-center text-mark-projects my-2">
+        <i class="fas fa-lightbulb me-2"></i>Solution
+      </h3>
+  <p class="my-3">{{ project.solution }}</p>
+    </div> 
+      {% endif %}
+
+      <div class="row">
+        <!-- Add A 'back to portfolio link'-->
+  <div class="row folio-title mt-1 mt-sm-3 mt-md-4 py-3 py-md-4">
     <div class="col text-center">
       <a href="{% url 'project_index' %}" class="back-to-projects-button">
         <i class="fas fa-chevron-left me-2"></i>
         Back to Portfolio</a>
     </div>
   </div>
+    </div>
+
+  <div class="my-3 mx-auto justify-content-center just text-center pb-3">
+    <hr id="bottom-line">
+  </div>
+
   </div>
 </section>
 {% endblock %}

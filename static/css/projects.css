@@ -47,7 +47,6 @@
 html,
 body {
   scroll-behavior: smooth;
-  background-color: yellow;
 }
 
 #projectModal1 {
@@ -119,6 +118,10 @@ a {
   font-size: 1rem;
 }
 
+section#projectDetail {
+  background: #fff;
+}
+
 .text-small {
   font-size: 14px;
 }
@@ -157,7 +160,12 @@ a {
   text-transform: uppercase;
   letter-spacing: 1.25px;
   margin: 0 auto;
-  font-size: 1.2rem;
+}
+
+a > button.project-button,
+button.project-button.ms-5,
+button.project-button {
+    font-size: 12px;
 }
 
 a>button.project-button {

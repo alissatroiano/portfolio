@@ -25,7 +25,6 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-
 # ---------------------------
 # STATIC FILES (Whitenoise)
 # ---------------------------
