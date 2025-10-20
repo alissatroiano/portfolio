@@ -266,6 +266,9 @@ section#skills {
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 30px;
+    min-height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 /*------------- Fixed Top Nav */
