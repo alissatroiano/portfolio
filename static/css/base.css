@@ -414,9 +414,11 @@ button.project-button {
 div#project-card {
     background-color: transparent;
     background: transparent;
-    box-shadow: 5px 5px 15px 5px #000120a4;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
     border: none;
-    margin: 10px;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .back-to-projects-button {

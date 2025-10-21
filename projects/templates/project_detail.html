@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{% load youtube_filters %}
 
 {% block page_header %}
 <div class="container mt-5 pt-5">
@@ -9,6 +8,9 @@
     </div>
 </div>
 {% endblock %}
+
+{% load youtube_filters %}
+
 
 {% block content %}
 <section class="container-fluid mt-5" id="projectDetail">
@@ -61,12 +63,12 @@
     <!-- Right column: Details -->
      
     <div class="col-12 col-sm-6">
-          <h2 class="display-7 text-mark-projects">
+          <h2 class="text-mark-projects">
           <i class="fas fa-circle-info mx-2"></i>About
         </h2>
         <p class="fs-lg mx-2">{{ project.description }}</p>
       {% if project.problem %}
-      <h3 class="display-7 d-flex align-items-center text-mark-projects">
+      <h3 class="d-flex align-items-center text-mark-projects">
        <i class="fa-solid fa-circle-question me-2"></i>Problem
       </h3>
       <p class="my-3">{{ project.problem }}</p>
@@ -98,6 +100,3 @@
   </div>
 </section>
 {% endblock %}
-
-	{% block footer %}
-  {% endblock %}
