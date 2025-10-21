@@ -59,5 +59,33 @@
 </div>
 {% endfor %}
 </div>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="btn back-to-top position-fixed" style="bottom: 20px; right: 20px; z-index: 1000; display: none;" id="backToTopBtn">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
 </div>
+{% endblock %}
+
+{% block scripts %}
+{{ block.super }}
+<script>
+// Back to top button functionality
+window.addEventListener('scroll', function() {
+    const backToTopBtn = document.getElementById('backToTop');
+    if (window.pageYOffset > 300) {
+        backToTopBtn.style.display = 'block';
+    } else {
+        backToTopBtn.style.display = 'none';
+    }
+});
+
+document.getElementById('backToTop').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+</script>
 {% endblock %}
