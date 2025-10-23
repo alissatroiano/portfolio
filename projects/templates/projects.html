@@ -2,19 +2,23 @@
 {% load static %}
 
 {% block content %}
-
-<div class="container-fluid px-sm-4 px-md-5 mt-5">
-    <div class="row d-flex my-0 m-auto py-3 py-sm-4">
-        <div class="col-6 text-start">
-            <h2 class="display-5 mt-3 pt-5 text-start folio-index">Portfolio</h2>
+<div class="container-fluid px-sm-4 px-md-5 mt-5 pt-5">
+    <div class="row d-flex my-0 mx-auto pt-3">
+        <div class="col-12 text-start pt-3">
+            <h2 class="display-5 text-start folio-index">Portfolio</h2>
         </div>
-              <div class="col-6 text-end">
+        </div>
+        <div class="row d-flex justify-content-end">
+              <div class="col-6 text-end order-2">
                 <form method="get" class="d-flex justify-content-end align-items-end">
                     <div class="dropdown me-3" id="technologiesDropdown">
                         <button class="technologies-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
                             <div class="stack-icon">
-                                <img class="img-fluid" src="../../media/icons/code-icon.gif">
-                                <p class="text-center text-mark-projects ps-3">Filter</p>
+                                <div class="my-0 mx-auto text-center ps-3 py-1">
+                                <i class="text-purple fas fa-wrench fa-lg"></i>
+                                </div>
+                                <p class="text-center text-mark-projects ps-3">Sort By </p>
+                    
                             </div>   
                         </button>
                         <div class="dropdown-menu p-3" style="min-width: 400px; max-width: 700px;" id="technologiesDropdown">
@@ -40,10 +44,39 @@
                     </div>
                 </form>
             </div>
-        <div class="my-0 mx-auto justify-content-center text-center pt-2">
-            <hr>
+            <div class="col-6 text-end order-1">
+                <form method="get" class="d-flex justify-content-start align-items-start">
+                    <div class="dropdown" id="categoriesDropdown">
+                        <button class="technologies-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <div class="stack-icon">
+                                <div class="my-0 mx-auto text-center ps-3 py-1">
+                                    <i class="text-purple fas fa-folder fa-lg"></i>
+                                </div>
+                                <p class="text-center text-mark-projects ps-3">Category</p>
+                            </div>
+                        </button>
+                        <div class="dropdown-menu p-3" style="min-width: 200px;">
+                            {% for category in categories %}
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="category" value="{{ category.id }}" 
+                                       id="cat{{ category.id }}" {% if selected_category == category.id|stringformat:'s' %}checked{% endif %}
+                                       onchange="this.form.submit()">
+                                <label class="form-check-label small" for="cat{{ category.id }}">
+                                    {{ category.name }}
+                                </label>
+                            </div>
+                            {% endfor %}
+                            <hr class="my-2">
+                            <div class="text-center">
+                                <a href="{% url 'project_index' %}" class="clear-btn">Clear</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
         </div>
-        
+  
         <!-- Filter Controls -->
         <div class="row mb-4 d-flex justify-content-start">
       

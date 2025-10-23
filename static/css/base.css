@@ -399,6 +399,19 @@ section#projectDetail {
   font-weight: 600;
 }
 
+.image-text {
+        background-image: url('https://images.pexels.com/photos/14097222/pexels-photo-14097222.jpeg'); /* Replace with your image path */
+        background-size: cover; /* or 'contain', '100% 100%', etc. */
+        background-position: center; /* or 'top', 'bottom', 'left', 'right' */
+        -webkit-background-clip: text; /* For WebKit browsers (Chrome, Safari, Edge) */
+        background-clip: text;
+        color: transparent;
+        font-family: 'Arial Black', sans-serif; /* Choose a bold font */
+        letter-spacing: 5px;
+        font-size: 1rem; /* Adjust font size as needed */
+        font-weight: bold;
+        text-transform: uppercase; /* Optional: for a bolder look */
+    }
 
 a > button.project-button,
 button.project-button.ms-5,
@@ -423,8 +436,7 @@ div#project-card {
 
 .back-to-projects-button {
   font-size: 1.2rem;
-    padding: 12px;
-
+  padding: 12px;
 }
 
 .project-button:hover,
@@ -1288,6 +1300,7 @@ input[type="submit"] {
   color: var(--violet);
 }
 
+#categoriesDropdown,
 #technologiesDropdown {
   font-size: 11px;
 }
@@ -1494,6 +1507,10 @@ i.fas.fa-chevron-up.fa-2x:hover {
     animation-timing-function: ease-in-out;
 }
 
+img.float-xs-top {
+  opacity: 0.765;
+}
+
 @keyframes floating {
     from { transform: translate(0,  0px); }
     65%  { transform: translate(0, 5px); }
@@ -1568,7 +1585,7 @@ i.fas.fa-chevron-up.fa-2x:hover {
     min-height: 450px;
   }
   .lead {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .project-item:nth-child(odd) {
