@@ -2,11 +2,12 @@
 {% load static %}
 
 {% block content %}
-<div class="container-fluid px-sm-4 px-md-5 mt-5 pt-5">
+<div class="container px-sm-4 px-md-5 mt-5 pt-5">
     <div class="row d-flex my-0 mx-auto pt-3">
         <div class="col-12 text-start pt-3">
             <h2 class="display-5 text-start folio-index">Portfolio</h2>
         </div>
+        <hr>
         </div>
         <div class="row d-flex justify-content-end">
               <div class="col-6 text-end order-2">
@@ -81,8 +82,8 @@
         <div class="row mb-4 d-flex justify-content-start">
       
         </div>
-    </div>
-<div class="row g-4 my-0 mx-auto pb-3" data-masonry='{"percentPosition": true }'>
+<div class="container">
+<div class="row g-5 my-0 mx-auto pb-3" data-masonry='{"percentPosition": true }'>
 {% for project in projects %}
 <div class="col-xs-8 col-sm-4">
     <div class="card rounded-5 img-fluid" id="project-card">
