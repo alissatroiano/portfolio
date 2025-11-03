@@ -9,6 +9,7 @@
   --violet: #9e7ae6;
   --violet-2: #7353be;
   --dark-violet: #3e1c82;
+  --dark-violet-transparent: #280e5dc3;
   --accent-color: #f598aa;
   --accent-color-2: #fbb6c463;
   --accent-color-3: #ffbfcc;
@@ -19,7 +20,7 @@
   --light-grey: #eeecec;
   --dark-grey: #4d4d4d;
   --darker: #080808;
-  --dark-transparent: #080808d1;
+  --dark-transparent: #080808c3;
   --black: #000000;
   --blue: #7da2a9;
   --light-blue: #b3e5f1;
@@ -238,12 +239,16 @@ hr {
   opacity: 1;
 }
 
-hr#bottom-line {
-  border: 1px solid var(--violet);
+hr#bottomLine {
+  border: 1px solid var(--darker);
   width: 75%;
   opacity: 1;
-  margin: 0px auto;
+}
 
+hr#skillsHr {
+  border: 1px solid var(--darker);
+  width: 75%;
+  opacity: 1;
 }
 
 .subheading {
@@ -262,8 +267,7 @@ section.container-fluid.mt-3.mx-auto.px-3.overflow-hidden {
 }
 
 section#skills {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.162), rgba(255, 255, 255, 0.288)), url('../images/backgrounds/tech-bg.jpg');
-    background-size: cover;
+    background-image: linear-gradient(to top, rgba(233, 215, 247, 0.66), #ffffff9c), url('../images/backgrounds/tech-bg.jpg');    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 30px;
@@ -793,6 +797,19 @@ a.data:before {
   display: flex;
 }
 
+#about {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.618),
+      rgba(230, 230, 230, 0.605),
+      rgba(255, 255, 255, 0.368)
+    ),
+    url('../images/backgrounds/white-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
 #aboutImg {
   background-image: url("../../media/icons/web-dev.png");
   background-repeat: no-repeat;
@@ -890,6 +907,15 @@ a.resume-link:hover {
   background-color: none;
 }
 
+.skills hr {
+  color: var(--dark-transparent);
+  border-color: var(--dark-violet);
+}
+
+h2#skillsTitle {
+  color: var(--darker);
+}
+
 .slider {
   display: flex;
   overflow: hidden;
@@ -962,7 +988,7 @@ a.resume-link:hover {
   place-items: center;
   width: clamp(10rem, 1rem + 40vmin, 30rem);
   color: var(--light);
-  background: #6234bc;
+  background: var(--dark-violet);
   border-radius: 0.5rem;
   font-size: 5em;
   margin-top: 50px;
@@ -970,17 +996,12 @@ a.resume-link:hover {
 
 .slider svg,
 .slider figure {
-  background-color: var(--dark-transparent);
+  background-color: var(--dark-violet-transparent);
   border: none;
   fill: var(--light);
   width: clamp(5rem, 10rem + 10vmin, 40rem);
   padding: 15px 10px;
   height: 120px;
-  z-index: 10000;
-}
-
-h2.display-3.mt-5.title.ms-3.fade-in-text {
-    color: #fafafa;
 }
 
 .slider--vertical i {
