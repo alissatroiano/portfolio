@@ -19,6 +19,7 @@
   --light-grey: #eeecec;
   --dark-grey: #4d4d4d;
   --darker: #080808;
+  --dark-transparent: #080808d1;
   --black: #000000;
   --blue: #7da2a9;
   --light-blue: #b3e5f1;
@@ -261,7 +262,7 @@ section.container-fluid.mt-3.mx-auto.px-3.overflow-hidden {
 }
 
 section#skills {
-    background-color: var(--accent-color-3);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.162), rgba(255, 255, 255, 0.288)), url('../images/backgrounds/tech-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -969,12 +970,17 @@ a.resume-link:hover {
 
 .slider svg,
 .slider figure {
-  background-color: #6234bc;
+  background-color: var(--dark-transparent);
   border: none;
   fill: var(--light);
   width: clamp(5rem, 10rem + 10vmin, 40rem);
   padding: 15px 10px;
   height: 120px;
+  z-index: 10000;
+}
+
+h2.display-3.mt-5.title.ms-3.fade-in-text {
+    color: #fafafa;
 }
 
 .slider--vertical i {
