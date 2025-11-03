@@ -437,6 +437,7 @@ div#project-card {
     margin: 10px 15px;
     max-width: 100%;
     height: auto;
+    animation: float 6s ease-in-out infinite;
 }
 
 .back-to-projects-button {
@@ -846,8 +847,6 @@ h5.role-heading {
   max-width: 500px;
   margin: auto;
   text-align: center;
-  transform: translatey(0px);
-  animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
