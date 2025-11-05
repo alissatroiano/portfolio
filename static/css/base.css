@@ -129,6 +129,14 @@ a {
   padding: 5px;
 }
 
+a#projectsLink,
+.text-gradient {
+  background: linear-gradient(to left, hsl(311, 91%, 73%) 50%, #7520de 100%);
+  font-weight: 800;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
 .text-purple {
   color: var(--violet-2);
 }
