@@ -18,6 +18,19 @@ def project_index(request):
     if tech_ids:
         projects = projects.filter(technologies__in=tech_ids).distinct()
     
+    # Custom ordering: websites, software, games, graphic design
+    from django.db.models import Case, When, Value, IntegerField
+    projects = projects.annotate(
+        category_order=Case(
+            When(category__name__iexact='websites', then=Value(1)),
+            When(category__name__iexact='software', then=Value(2)),
+            When(category__name__iexact='games', then=Value(3)),
+            When(category__name__iexact='graphic design', then=Value(4)),
+            default=Value(5),
+            output_field=IntegerField()
+        )
+    ).order_by('category_order', '-created_at')
+    
     context = {
         'projects': projects,
         'categories': Category.objects.all(),
