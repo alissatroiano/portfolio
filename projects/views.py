@@ -8,10 +8,10 @@ from django.templatetags.static import static
 def project_index(request):
     projects = Project.objects.all()
     
-    # Filter by category
-    category_id = request.GET.get('category')
-    if category_id:
-        projects = projects.filter(category_id=category_id)
+    # Filter by multiple categories
+    category_ids = request.GET.getlist('category')
+    if category_ids:
+        projects = projects.filter(category_id__in=category_ids)
     
     # Filter by multiple technologies
     tech_ids = request.GET.getlist('technology')
@@ -26,16 +26,31 @@ def project_index(request):
             When(category__name__iexact='software', then=Value(2)),
             When(category__name__iexact='games', then=Value(3)),
             When(category__name__iexact='graphic design', then=Value(4)),
+            When(category__name__iexact='illustrations', then=Value(4)),
             default=Value(5),
             output_field=IntegerField()
         )
     ).order_by('category_order', '-created_at')
     
+    # Order categories in dropdown same as projects
+    ordered_categories = Category.objects.annotate(
+        category_order=Case(
+            When(name__iexact='websites', then=Value(1)),
+            When(name__iexact='software', then=Value(2)),
+            When(name__iexact='games', then=Value(3)),
+            When(name__iexact='game dev', then=Value(3)),
+            When(name__iexact='graphic design', then=Value(4)),
+            When(name__iexact='illustrations', then=Value(4)),
+            default=Value(5),
+            output_field=IntegerField()
+        )
+    ).order_by('category_order', 'name')
+    
     context = {
         'projects': projects,
-        'categories': Category.objects.all(),
+        'categories': ordered_categories,
         'technologies': Technology.objects.all(),
-        'selected_category': category_id,
+        'selected_categories': category_ids,
         'selected_technologies': tech_ids,
     }
     
