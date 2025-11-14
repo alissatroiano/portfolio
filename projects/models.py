@@ -33,6 +33,8 @@ class Technology(models.Model):
 class Project(models.Model):
     title = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
+    date_created = models.DateField(null=True, blank=True)
+    badge = models.BooleanField(default=False)
     description = models.TextField()
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     link = models.URLField(max_length=1024, null=True, blank=True)

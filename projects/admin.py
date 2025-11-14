@@ -17,6 +17,8 @@ class ProjectAdmin(admin.ModelAdmin):
     list_display = [
 		'title',
         'name',
+        'date_created',
+        'badge',
   		'description', 
     	'created_at', 
      	'updated_at', 
@@ -38,6 +40,7 @@ class ProjectAdmin(admin.ModelAdmin):
         'technologies',
         'created_at', 
         'updated_at',
+        'date_created',
 	]
     
     list_per_page = 50
@@ -46,6 +49,8 @@ class ProjectAdmin(admin.ModelAdmin):
         'title',
         'name',
         'description',
+        'date_created',
+        'badge',
         'category', 
         'technologies', 
         'link', 
