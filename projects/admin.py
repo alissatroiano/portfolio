@@ -18,6 +18,12 @@ class ProjectAdmin(admin.ModelAdmin):
 		'title',
         'name',
         'date_created',
+        'featured',
+        'badge_label',
+        'badge_link',
+        'badge_link_text',
+        'cert_link',
+        'cert_link_text',
         'badge',
   		'description', 
     	'created_at', 
@@ -50,7 +56,13 @@ class ProjectAdmin(admin.ModelAdmin):
         'name',
         'description',
         'date_created',
+        'featured',
         'badge',
+        'badge_label',
+        'badge_link',
+        'badge_link_text',
+        'cert_link',
+        'cert_link_text',
         'category', 
         'technologies', 
         'link', 
@@ -61,6 +73,7 @@ class ProjectAdmin(admin.ModelAdmin):
         'problem',
         'solution',
         'video_link',
+        
 	]
     
     filter_horizontal = ('technologies',)
