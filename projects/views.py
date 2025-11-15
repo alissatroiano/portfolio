@@ -22,11 +22,11 @@ def project_index(request):
     from django.db.models import Case, When, Value, IntegerField
     projects = projects.annotate(
         category_order=Case(
-            When(category__name__iexact='websites', then=Value(1)),
-            When(category__name__iexact='software', then=Value(2)),
-            When(category__name__iexact='games', then=Value(3)),
-            When(category__name__iexact='graphic design', then=Value(4)),
-            When(category__name__iexact='illustrations', then=Value(4)),
+            When(category__name__icontains='website', then=Value(1)),
+            When(category__name__icontains='software', then=Value(2)),
+            When(category__name__icontains='game', then=Value(3)),
+            When(category__name__icontains='graphic', then=Value(4)),
+            When(category__name__icontains='illustration', then=Value(4)),
             default=Value(5),
             output_field=IntegerField()
         )
@@ -35,12 +35,11 @@ def project_index(request):
     # Order categories in dropdown same as projects
     ordered_categories = Category.objects.annotate(
         category_order=Case(
-            When(name__iexact='websites', then=Value(1)),
-            When(name__iexact='software', then=Value(2)),
-            When(name__iexact='games', then=Value(3)),
-            When(name__iexact='game dev', then=Value(3)),
-            When(name__iexact='graphic design', then=Value(4)),
-            When(name__iexact='illustrations', then=Value(4)),
+            When(name__icontains='website', then=Value(1)),
+            When(name__icontains='software', then=Value(2)),
+            When(name__icontains='game', then=Value(3)),
+            When(name__icontains='graphic', then=Value(4)),
+            When(name__icontains='illustration', then=Value(4)),
             default=Value(5),
             output_field=IntegerField()
         )
