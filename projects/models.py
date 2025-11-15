@@ -40,6 +40,16 @@ class Project(models.Model):
     badge_link_text=models.CharField(max_length=254, null=True, blank=True)
     cert_link=models.URLField(max_length=1024, null=True, blank=True)
     cert_link_text=models.CharField(max_length=254, null=True, blank=True)
+    
+    PROJECT_TYPE_CHOICES = [
+        ('personal', 'Personal Project'),
+        ('client', 'Client Work'),
+        ('freelance', 'Freelance'),
+        ('hackathon', 'Hackathon'),
+        ('school', 'School Project'),
+        ('open_source', 'Open Source'),
+    ]
+    project_type = models.CharField(max_length=50, choices=PROJECT_TYPE_CHOICES, null=True, blank=True)
     featured = models.BooleanField(default=False)
     description = models.TextField()
     image_url = models.URLField(max_length=1024, null=True, blank=True)
@@ -56,12 +66,6 @@ class Project(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     deleted_at = models.DateTimeField(auto_now=True)
 
-def get_category(c):
-    return dict((project.id, project.name) for project in Project.objects.filter(category=c).order_by('name'))
-
-def get_category_projects(x):
-    return dict(Project.objects.filter(category=x).order_by('name'))
-
     class Meta:
         verbose_name_plural = 'Projects'
         ordering = ['-created_at']
@@ -71,3 +75,9 @@ def get_category_projects(x):
 
     def __str__(self):
         return self.name
+
+def get_category(c):
+    return dict((project.id, project.name) for project in Project.objects.filter(category=c).order_by('name'))
+
+def get_category_projects(x):
+    return dict(Project.objects.filter(category=x).order_by('name'))

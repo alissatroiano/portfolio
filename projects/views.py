@@ -30,7 +30,7 @@ def project_index(request):
             default=Value(5),
             output_field=IntegerField()
         )
-    ).order_by('category_order', '-badge', '-date_created')
+    ).order_by('category_order', '-featured', '-date_created')
     
     # Order categories in dropdown same as projects
     ordered_categories = Category.objects.annotate(

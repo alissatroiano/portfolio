@@ -19,6 +19,7 @@ class ProjectAdmin(admin.ModelAdmin):
         'name',
         'date_created',
         'featured',
+        'project_type',
         'badge_label',
         'badge_link',
         'badge_link_text',
@@ -42,6 +43,7 @@ class ProjectAdmin(admin.ModelAdmin):
 	]
     
     list_filter = [
+        'featured',
         'category',
         'technologies',
         'created_at', 
@@ -55,6 +57,7 @@ class ProjectAdmin(admin.ModelAdmin):
         'title',
         'name',
         'description',
+        'project_type',
         'date_created',
         'featured',
         'badge',
