@@ -2,14 +2,15 @@
 {% load static %}
 
 {% block content %}
-<div class="container px-sm-4 px-md-5 mt-5 pt-5">
-    <div class="row d-flex my-0 mx-auto pt-3">
-        <div class="col-12 text-start pt-3">
-            <h2 class="display-5 text-start folio-index">Portfolio</h2>
-        </div>
-        <hr>
-        </div>
-        <div class="row d-flex justify-content-end">
+<!-- Fixed Header -->
+<div class="fixed-top bg-light shadow-sm" style="top: 76px; z-index: 1020;">
+    <div class="container-fluid px-sm-4 px-md-5 py-3">
+        <div class="row d-flex align-items-center">
+            <div class="col-12 col-md-4">
+                <h2 class="display-6 folio-index mb-0">Portfolio</h2>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="row d-flex justify-content-end">
               <div class="col-6 text-end order-2">
                 <form method="get" class="d-flex justify-content-end align-items-end">
                     <div class="dropdown me-3" id="technologiesDropdown">
@@ -82,8 +83,8 @@
         <div class="row mb-4 d-flex justify-content-start">
       
         </div>
-<div class="container-fluid">
-<div class="row g-5 my-0 mx-auto pb-3">
+<div class="container">
+<div class="row g-4 my-0 mx-auto pb-3">
 {% for project in projects %}
 <div class="col-xs-8 col-sm-4">
     <div class="card rounded-5 img-fluid" id="project-card">
