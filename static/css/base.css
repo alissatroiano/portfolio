@@ -198,6 +198,7 @@ a#projectsLink,
   font-size: 12px;
 }
 
+
 .glow {
   color: #fff;
   text-align: center;
@@ -336,6 +337,79 @@ a.nav-link,
   text-decoration-color: var(--violet);
 }
 
+#projectNav,
+.project-sort, .project-sort:active {
+    position: absolute;
+    top: 1.5rem;
+    right: 6rem;
+    background: #011826;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+    font-family: 'Futura-PT', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+    color: #fafafa;
+    z-index: 1;
+    border: none;
+    outline: none;
+    -webkit-animation: fadein 2.5s ease-in;
+    animation: fadein 2.5s ease-in;
+    padding-top: 29px;
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: 1px;
+}
+  
+.project-sort:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    background: #69A8A9;
+    color: #fafafa;
+}
+
+.project-sort, .project-sort:active {
+    position: absolute;
+    top: 1.5rem;
+    right: 6rem;
+    background: #011826;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+    font-family: 'Futura-PT', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+    color: #fafafa;
+    z-index: 1;
+    border: none;
+    outline: none;
+    -webkit-animation: fadein 2.5s ease-in;
+    animation: fadein 2.5s ease-in;
+    padding-top: 29px;
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: 1px;
+}
+  
+  .project-sort:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    background: #69A8A9;
+    color: #fafafa;
+}
+
 li.nav-item:hover,
 .navbar-light .navbar-nav a.nav-link:hover {
   color: var(--dark-violet);
@@ -378,7 +452,6 @@ a.dropdown-item {
   color: var(--light);
 }
 
-a.cta-btn,
 a#resumeBtn {
   background-color: var(--dark-violet);
   color: #fafafa;
@@ -1404,10 +1477,10 @@ hr.divider-dropdown {
 }
 
 .form-check-input[type=checkbox] {
-    margin-top: 5px;
+    margin-top: 2px;
     border-radius: 1rem;
     border: .5px solid var(--primary-color);
-    font-size: 9px;
+    font-size: 11px;
 }
 
 .form-check-input:checked {
@@ -1415,7 +1488,7 @@ hr.divider-dropdown {
 }
 
 label.form-check-label {
-  font-size: 9px;
+  font-size: 11px;
   font-weight: semibold;
   color: var(--dark-violet);
 }
@@ -1610,6 +1683,57 @@ img.float-xs-top {
 
 
 /*--------------------------------  Media Queries */
+@media only screen and (max-width: 575px) {
+     .project-sort, .project-sort:active {
+        display: inline-block;
+        padding-left: .5rem;
+        position: absolute;
+        top: 2rem;
+        right: 5rem;
+        background: #011826;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-family: 'Futura-PT', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        transform: rotate(-7deg);
+        color: #fafafa;
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        animation: fadein 2.5s ease-in;
+        vertical-align: middle;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-top: 22px;
+    } .project-sort:hover {
+        display: inline-block;
+        padding-left: .5rem;
+        position: absolute;
+        top: 2rem;
+        right: 5rem;
+        background: #011826;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-family: 'Futura-PT', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        transform: rotate(-7deg);
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        animation: fadein 2.5s ease-in;
+        vertical-align: middle;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-top: 22px;
+        background: #69A8A9;
+        color: #fafafa;
+}
+}
+
 @media only screen and (min-width: 768px) {
   h1.text-center.text-lighter.display-1 {
     padding-top: 50px;

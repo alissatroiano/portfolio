@@ -3,24 +3,17 @@
 
 {% block content %}
 <!-- Fixed Header -->
-<div class="fixed-top bg-light shadow-sm" style="top: 76px; z-index: 1020;">
-    <div class="container-fluid px-sm-4 px-md-5 py-3">
+<div class="fixed-top bg-purple shadow-lg" style="top: 76px;">
+    <div class="container-fluid px-sm-4 px-md-5 my-0 mx-auto">
         <div class="row d-flex align-items-center">
-            <div class="col-12 col-md-4">
-                <h2 class="display-6 folio-index mb-0">Portfolio</h2>
-            </div>
-            <div class="col-12 col-md-8">
-                <div class="row d-flex justify-content-end">
-              <div class="col-6 text-end order-2">
+              <div class="col-6 align-items-end justify-content-end order-2">
                 <form method="get" class="d-flex justify-content-end align-items-end">
                     <div class="dropdown me-3" id="technologiesDropdown">
                         <button class="technologies-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
                             <div class="stack-icon">
-                                <div class="my-0 mx-auto text-center ps-3 py-1">
-                                <i class="text-purple fas fa-wrench fa-lg"></i>
-                                </div>
-                                <p class="text-center text-mark-projects ps-3">Technologies </p>
-                    
+                                <div class="my-0 mx-auto text-end align-items-end">
+                                <i class="text-light fas fa-wrench fa-xl"></i>
+                                </div>                    
                             </div>   
                         </button>
                         <div class="dropdown-menu p-3" style="min-width: 400px; max-width: 700px;" id="technologiesDropdown">
@@ -46,15 +39,14 @@
                     </div>
                 </form>
             </div>
-            <div class="col-6 text-end order-1">
+            <div class="col-6 order-1 d-flex justify-content-start align-items-start">
                 <form method="get" class="d-flex justify-content-start align-items-start">
                     <div class="dropdown" id="categoriesDropdown">
                         <button class="technologies-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
                             <div class="stack-icon">
-                                <div class="my-0 mx-auto text-center ps-3 py-1">
-                                    <i class="text-purple fas fa-folder fa-lg"></i>
+                                <div class="my-0 mx-auto text-center ps-5">
+                                    <i class="text-light fas fa-folder fa-xl"></i>
                                 </div>
-                                <p class="text-center text-mark-projects ps-3">Category</p>
                             </div>
                         </button>
                         <div class="dropdown-menu p-3" style="min-width: 200px;">
@@ -76,15 +68,19 @@
                     </div>
                 </form>
             </div>
+                </div>
             </div>
         </div>
-  
-        <!-- Filter Controls -->
-        <div class="row mb-4 d-flex justify-content-start">
-      
-        </div>
-<div class="container">
-<div class="row g-4 my-0 mx-auto pb-3">
+    </div>
+</div>
+
+<div class="pt-5 mt-5">
+    <div class="container"></div>
+</div>
+
+<!-- Main Content with top padding to account for fixed header -->
+<div class="container" style="margin-top: 140px;">
+    <div class="row g-4 my-0 mx-auto pb-3">
 {% for project in projects %}
 <div class="col-xs-8 col-sm-4">
     <div class="card rounded-5 img-fluid" id="project-card">
