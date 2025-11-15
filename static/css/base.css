@@ -58,6 +58,10 @@
   background: var(--violet);
 }
 
+.bg-trans {
+  background: var(--dark-violet-transparent);
+}
+
 .align-items-stretch {
   -webkit-box-align: stretch !important;
   -ms-flex-align: stretch !important;

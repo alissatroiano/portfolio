@@ -3,7 +3,7 @@
 
 {% block content %}
 <!-- Fixed Header -->
-<div class="fixed-top bg-purple shadow-lg" style="top: 76px;">
+<div class="fixed-top bg-trans shadow-lg" style="top: 76px;">
     <div class="container-fluid px-sm-4 px-md-5 my-0 mx-auto">
         <div class="row d-flex align-items-center">
               <div class="col-6 align-items-end justify-content-end order-2">
@@ -12,7 +12,7 @@
                         <button class="technologies-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
                             <div class="stack-icon">
                                 <div class="my-0 mx-auto text-end align-items-end">
-                                <i class="text-light fas fa-wrench fa-xl"></i>
+                                <i class="text-light fas fa-code fa-xl"></i>
                                 </div>                    
                             </div>   
                         </button>
@@ -42,10 +42,10 @@
             <div class="col-6 order-1 d-flex justify-content-start align-items-start">
                 <form method="get" class="d-flex justify-content-start align-items-start">
                     <div class="dropdown" id="categoriesDropdown">
-                        <button class="technologies-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <button class="technologies-btn dropdown-toggle pb-3" type="button" data-bs-toggle="dropdown">
                             <div class="stack-icon">
                                 <div class="my-0 mx-auto text-center ps-5">
-                                    <i class="text-light fas fa-folder fa-xl"></i>
+                                    <i class="text-light fas fa-ellipsis fa-xl"></i>
                                 </div>
                             </div>
                         </button>
@@ -79,7 +79,7 @@
 </div>
 
 <!-- Main Content with top padding to account for fixed header -->
-<div class="container" style="margin-top: 140px;">
+<div class="container-fluid px-5" style="margin-top: 140px;">
     <div class="row g-4 my-0 mx-auto pb-3">
 {% for project in projects %}
 <div class="col-xs-8 col-sm-4">
