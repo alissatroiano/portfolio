@@ -634,6 +634,25 @@ p.tech-stack {
   overflow: auto;
 }
 
+/* Technologies dropdown alignment */
+#technologiesDropdown .form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#technologiesDropdown .form-check-input {
+  margin-right: 0.5rem;
+  margin-top: 0;
+}
+
+#technologiesDropdown .form-check-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
 @media only screen and (min-width: 768px) {
   .breadcrumb-item a {
   color: var(--primary-color);
