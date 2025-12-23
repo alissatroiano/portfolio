@@ -1,2 +1,15 @@
+<<<<<<< HEAD
 env.py
 .env
+.venv/
+.venv
+.vscode
+.vscode/
+__pycache__
+db.sqlite3
+myenv/
+staticfiles/
+=======
+.vscode/
+.DS_Store
+>>>>>>> bdc90dafbd11db4b616785e51a7c989dd98beef1

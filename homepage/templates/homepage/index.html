@@ -16,7 +16,7 @@
 
 {% block content %}
    <!-- Hero -->
-  <section class="container-fluid mt-3 mx-auto px-3 overflow-hidden">
+  <section class="container-fluid my-0 mx-auto px-3 overflow-hidden">
     <div class="pt-5" data-sticky-container="">
       <div class="row d-flex align-items-center justify-content-center py-3 py-md-4 mt-5 mb-5">
         <!-- Image -->
@@ -30,22 +30,24 @@
         </div>
         <!-- Contents -->
         <div class="col-12 col-sm-6 order-1 my-0 mx-auto">
-          <div class="pb-lg-5 pt-lg-5 ms-3">
+          <div class="pb-lg-5 pt-lg-5 ms-3 mt-4">
             <!-- Pre title -->
-            <h5 class="mb-lg-4">
-              <span class="hand-wave-animate">👋🏻</span> Hi, I’m
+            <h5 class="mb-lg-4 float-in-text">
+              <span class="hand-wave-animate ">👋🏻</span> Hi, I’m
             </h5>
             <!-- Title -->
-            <h1 class="display-1 name position-relative my-3">
+            <h1 class="display-1 name position-relative my-3 fade-in-text">
               Alissa Troiano
               <span
                 class="rounded-3 rotate-350 position-absolute bottom-0 end-0 mb-n5 mb-sm-n3 mb-lg-n1 pt-sm-5 px-4 py-3"
                 id="imgBanner">
                 <img class="float-xs-top" src="/media/favicon.png" /></span>
             </h1>
-            <div class="mt-3 pb-3">
-              <p class="my-4 my-sm-5 lead">
-                I'm a creative software developer with a passion for UI/UX design and brand development.
+            <div class="mt-3 py-1">
+              <p class="my-1 my-sm-2 pt-5 pt-md-3 lead">
+                I'm a creative software developer with a passion for UI/UX design and brand development.</p>
+                <p class="lead">
+                I create beautiful, user-friendly websites and applications that solve real-world problems. I also design logos & content for brands to create visual identities that resonate with audiences.
               </p>
             </div>
             <div class="d-flex justify-content-start">
@@ -67,7 +69,7 @@
   <section class="container-fluid" id="about">
     <div class="row my-3 mx-auto">
       <div class="col-12 mt-3 mt-sm-5 text-start">
-        <h2 class="display-3 mt-5 title mb-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <h2 class="display-3 mt-5 pt-5 pt-sm-1 title mb-3 fade-in-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
           About</h2>
         <div class="my-3">
           <hr class="my-3" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="1500" />
@@ -76,7 +78,7 @@
     </div>
     <div class="row d-flex about-row flex-sm-row-reverse my-3">
       <div class="col-12 col-sm-7 order-2 ">
-        <div class="position-relative h-500px h-md-750px w-lg-50vw">
+        <div class="position-relative h-500px h-md-750px w-lg-50vw floating">
           <div class="w-100 h-100 h-md-750px rounded-4" id="aboutImg"></div>
         </div>
       </div>
@@ -93,19 +95,18 @@
   </section>
   
   <!--Skills Section-->
-  <section class="container-fluid skills pb-5" id="skills">
+  <section class="container-fluid skills" id="skills">
     <div class="row mt-5">
-      <div class="col-12">
-        <h2 class="display-3 my-3 my-md-5 title ms-sm-4 ms-lg-5" data-aos="fade-down" data-aos-easing="linear"
-          data-aos-duration="1500">
+      <div class="col-12 my-3 my-sm-4">
+        <h2 class="display-3 mt-5 title ms-3 fade-in-text" id="skillsTitle">
           My Stack
         </h2>
-        <div class="ms-sm-4 ms-lg-5 mt-2 mt-md-3">
-          <hr />
+        <div class="ms-sm-4 ms-lg-5">
+          <hr id="bottomLine"/>
         </div>
       </div>
 
-      <div class="wrapper py-3">
+      <div class="wrapper py-4 py-sm-5">
         <div class="slider mt-3 mt-md-5">
           <div class="slider__group">
             <svg>
@@ -114,7 +115,7 @@
             <svg>
               <use xlink:href="#python" />
             </svg>
-            <svg>
+            <svg class="text-dark">
               <use xlink:href="#js" />
             </svg>
 
@@ -285,7 +286,7 @@
 
           <symbol id="js" viewBox="0 0 128 128">
             <path fill="#fafafa" d="M1.408 1.408h125.184v125.185H1.408z"></path>
-            <path fill="#6234bc"
+            <path fill="#3e1c82c3"
               d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z">
             </path>
           </symbol>
@@ -453,17 +454,17 @@
   <!--./end-skills-section-->
 
 <!-- Contact Form -->
-  <section class="contact-section mt-5 container" id="contact">
+  <section class="contact-section mt-5 container-fluid" id="contact">
     <div class="row d-flex justify-content-center my-0 mx-auto">
       <div class="col-12 mt-5 pt-3">
-        <h2 class="display-3 my-3 my-md-5 title ms-sm-4 ms-lg-5">Contact</h2>
+      <h2 class="display-3 my-3 my-md-5 pt-1 title ms-sm-4 ms-lg-5">Contact</h2>
         <hr class="ms-sm-5" />
       </div>
     </div>
     <div class="row d-flex justify-content-center align-items-center my-0 mx-auto p-3 flex-sm-row-reverse">
       <!-- Image -->
       <div class="col-12 col-sm-6 order-2">
-        <img src="../../media/icons/9.png" class="rounded-4" alt="portfolio-img" />
+        <img src="../../media/icons/anime-3.gif" class="img-fluid" alt="contact-img" />
       </div>
       <!-- Content and form -->
       <div class="col-12 col-sm-6 order-1">
@@ -499,5 +500,4 @@
     </script>
     <script src="static/js/script.js"></script>
 </body>
-
 {% endblock %}

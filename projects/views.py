@@ -8,21 +8,48 @@ from django.templatetags.static import static
 def project_index(request):
     projects = Project.objects.all()
     
-    # Filter by category
-    category_id = request.GET.get('category')
-    if category_id:
-        projects = projects.filter(category_id=category_id)
+    # Filter by multiple categories
+    category_ids = request.GET.getlist('category')
+    if category_ids:
+        projects = projects.filter(category_id__in=category_ids)
     
     # Filter by multiple technologies
     tech_ids = request.GET.getlist('technology')
     if tech_ids:
         projects = projects.filter(technologies__in=tech_ids).distinct()
     
+    # Custom ordering: websites, software, games, graphic design
+    from django.db.models import Case, When, Value, IntegerField
+    projects = projects.annotate(
+        category_order=Case(
+            When(category__name__icontains='website', then=Value(1)),
+            When(category__name__icontains='software', then=Value(2)),
+            When(category__name__icontains='game', then=Value(3)),
+            When(category__name__icontains='graphic', then=Value(4)),
+            When(category__name__icontains='illustration', then=Value(4)),
+            default=Value(5),
+            output_field=IntegerField()
+        )
+    ).order_by('category_order', '-featured', '-date_created')
+    
+    # Order categories in dropdown same as projects
+    ordered_categories = Category.objects.annotate(
+        category_order=Case(
+            When(name__icontains='website', then=Value(1)),
+            When(name__icontains='software', then=Value(2)),
+            When(name__icontains='game', then=Value(3)),
+            When(name__icontains='graphic', then=Value(4)),
+            When(name__icontains='illustration', then=Value(4)),
+            default=Value(5),
+            output_field=IntegerField()
+        )
+    ).order_by('category_order', 'name')
+    
     context = {
         'projects': projects,
-        'categories': Category.objects.all(),
+        'categories': ordered_categories,
         'technologies': Technology.objects.all(),
-        'selected_category': category_id,
+        'selected_categories': category_ids,
         'selected_technologies': tech_ids,
     }
     

@@ -17,6 +17,15 @@ class ProjectAdmin(admin.ModelAdmin):
     list_display = [
 		'title',
         'name',
+        'date_created',
+        'featured',
+        'project_type',
+        'badge_label',
+        'badge_link',
+        'badge_link_text',
+        'cert_link',
+        'cert_link_text',
+        'badge',
   		'description', 
     	'created_at', 
      	'updated_at', 
@@ -34,10 +43,12 @@ class ProjectAdmin(admin.ModelAdmin):
 	]
     
     list_filter = [
+        'featured',
         'category',
         'technologies',
         'created_at', 
         'updated_at',
+        'date_created',
 	]
     
     list_per_page = 50
@@ -46,6 +57,15 @@ class ProjectAdmin(admin.ModelAdmin):
         'title',
         'name',
         'description',
+        'project_type',
+        'date_created',
+        'featured',
+        'badge',
+        'badge_label',
+        'badge_link',
+        'badge_link_text',
+        'cert_link',
+        'cert_link_text',
         'category', 
         'technologies', 
         'link', 
@@ -56,6 +76,7 @@ class ProjectAdmin(admin.ModelAdmin):
         'problem',
         'solution',
         'video_link',
+        
 	]
     
     filter_horizontal = ('technologies',)

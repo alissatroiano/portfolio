@@ -2,27 +2,26 @@
 {% load static %}
 
 {% block content %}
-
-<div class="container-fluid px-sm-4 px-md-5 mt-5">
-    <div class="row d-flex my-0 m-auto py-3 py-sm-4">
-        <div class="col-6 text-start">
-            <h2 class="display-5 mt-3 pt-5 text-start folio-index">Portfolio</h2>
-        </div>
-              <div class="col-6 text-end">
+<!-- Fixed Header -->
+<div class="fixed-top bg-trans" style="top: 76px;">
+    <div class="container-fluid px-sm-4 px-md-5 my-0 mx-auto">
+        <div class="row d-flex align-items-center">
+              <div class="col-6 align-items-end justify-content-end order-2">
                 <form method="get" class="d-flex justify-content-end align-items-end">
                     <div class="dropdown me-3" id="technologiesDropdown">
                         <button class="technologies-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
                             <div class="stack-icon">
-                                <img class="img-fluid" src="../../media/icons/code-icon.gif">
-                                <p class="text-center text-mark-projects ps-3">Filter</p>
+                                <div class="my-0 mx-auto text-end align-items-end">
+                                <i class="text-light fas fa-code fa-xl"></i>
+                                </div>                    
                             </div>   
                         </button>
                         <div class="dropdown-menu p-3" style="min-width: 400px; max-width: 700px;" id="technologiesDropdown">
                             <div class="row">
                                 {% for tech in technologies %}
-                                <div class="col-6 col-sm-4 mb-1">
+                                <div class="col-6 col-sm-4">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="technology" value="{{ tech.id }}" 
+                                        <input class="form-check-input mt-1 mt-sm-2" type="checkbox" name="technology" value="{{ tech.id }}" 
                                                id="tech{{ tech.id }}" {% if tech.id|stringformat:'s' in selected_technologies %}checked{% endif %}
                                                onchange="this.form.submit()">
                                         <label class="form-check-label small my-1" for="tech{{ tech.id }}">
@@ -40,24 +39,84 @@
                     </div>
                 </form>
             </div>
-        <div class="my-0 mx-auto justify-content-center text-center pt-2">
-            <hr>
-        </div>
-        
-        <!-- Filter Controls -->
-        <div class="row mb-4 d-flex justify-content-start">
-      
+            <div class="col-6 order-1 d-flex justify-content-start align-items-start">
+                <form method="get" class="d-flex justify-content-start align-items-start">
+                    <div class="dropdown" id="categoriesDropdown">
+                        <button class="technologies-btn dropdown-toggle pb-3" type="button" data-bs-toggle="dropdown">
+                            <div class="stack-icon">
+                                <div class="my-0 mx-auto text-center ps-5">
+                                    <i class="text-light fas fa-ellipsis fa-xl"></i>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="dropdown-menu p-3" style="min-width: 200px;">
+                            {% for category in categories %}
+                            <div class="form-check d-flex align-items-center justify-content-start px-2">
+                                <input class="form-check-input" type="checkbox" name="category" value="{{ category.id }}" 
+                                       id="cat{{ category.id }}" {% if category.id|stringformat:'s' in selected_categories %}checked{% endif %}
+                                       onchange="this.form.submit()" style="transform: scale(1.3);">
+                                <label class="form-check-label small text-start w-100 ps-2" for="cat{{ category.id }}" style="cursor: pointer; padding: 8px 0;">
+                                    {{ category.name }}
+                                </label>
+                            </div>
+                            {% endfor %}
+                            <hr class="my-2">
+                            <div class="text-center">
+                                <a href="{% url 'project_index' %}" class="clear-btn">Clear</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+                </div>
+            </div>
         </div>
     </div>
-<div class="row g-4 my-0 mx-auto pb-3" data-masonry='{"percentPosition": true }'>
+</div>
+
+<div class="pt-5 mt-5">
+    <div class="container"></div>
+</div>
+
+<!-- Main Content with top padding to account for fixed header -->
+<div class="container-fluid px-5" style="margin-top: 140px;">
+    <div class="row g-4 my-0 mx-auto pb-3">
 {% for project in projects %}
 <div class="col-xs-8 col-sm-4">
-    <div class="card h-100 rounded-5 img-fluid" id="project-card">
+    <div class="card rounded-5 img-fluid" id="project-card">
         <img src="/media/{{ project.picture }}" class="card-img project-pic" alt="project.title">
         <a href="{% url 'project_detail' project.id %}" class="stretched-link"></a>
     </div>
 </div>
 {% endfor %}
 </div>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="btn back-to-top position-fixed" style="bottom: 20px; right: 20px; z-index: 1000; display: none;" id="backToTopBtn">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
 </div>
+{% endblock %}
+
+{% block scripts %}
+{{ block.super }}
+<script>
+// Back to top button functionality
+window.addEventListener('scroll', function() {
+    const backToTopBtn = document.getElementById('backToTop');
+    if (window.pageYOffset > 300) {
+        backToTopBtn.style.display = 'block';
+    } else {
+        backToTopBtn.style.display = 'none';
+    }
+});
+
+document.getElementById('backToTop').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+</script>
 {% endblock %}

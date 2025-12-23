@@ -1,11 +1,10 @@
 #homePhoto {
-  
-
-  background-image: url("../../media/bubble.gif");
+  background-image: url("../../media/icons/anime-2.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   background-size: contain;
+  /* opacity: 0.75; */
 }
 
 
