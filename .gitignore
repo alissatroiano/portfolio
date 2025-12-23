@@ -1,10 +1,22 @@
-env.py
-.env
+# Python
+venv/
 .venv/
-.venv
-.vscode
-.vscode/
 __pycache__
+*.pyc
+
+# Django
 db.sqlite3
-myenv/
 staticfiles/
+media/
+__pycache__
+
+# Env
+.env
+myenv
+.vscode
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
