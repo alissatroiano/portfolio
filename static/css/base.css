@@ -1350,20 +1350,30 @@ img {
   margin-bottom: 10px;
 }
 
+input#from_name,
+input#from_email,
+textarea#message,
+textarea#validationTextarea {
+  color: var(--dark-violet);
+  font-family: 'Dosis', serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+
 .field label {
   font-size: 12px;
-  color: var(--violet);
+  color: rgb(188, 75, 241);
 }
 
 label {
-  color: var(--accent-color-3);
+  color: rgb(234, 73, 234);
   margin: 10px auto;
   text-align: start;
 }
 
 .field input {
   font-size: 14px;
-  color: var(--violet);
 }
 
 input[type="submit"] {
@@ -1512,12 +1522,6 @@ label.form-check-label {
     /* margin-bottom: .125rem; */
 }
 
-input#from_name,
-input#from_email,
-textarea#message {
-  font-weight: 600;
-  color: var(--darker);
-}
 
 .form-floating>.form-control {
     padding: 1rem .75rem;
