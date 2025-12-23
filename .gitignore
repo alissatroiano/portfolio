@@ -5,7 +5,6 @@ __pycache__
 *.pyc
 
 # Django
-db.sqlite3
 staticfiles/
 __pycache__
 
