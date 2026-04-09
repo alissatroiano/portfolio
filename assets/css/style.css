@@ -54,6 +54,7 @@
   --black: #ffffff;
   --blue: #7DA2A9;
   --light-blue: #B3E5F1;
+  --dark-blue: #000b2e;
   --yellow-1: #FDD935;
   --yellow-2: #E9BD43;
   --yellow-3: #F5B935;
@@ -119,10 +120,17 @@ a {
   background-color: var(--light-grey);
 }
 
-.bg-purple {
-  background-color: var(--purple);
+.fa-sun {
+  color: var(--yellow-1);
 }
 
+.fa-sun:hover {
+  color: var(--yellow-3) !important;
+}
+
+.fa-moon {
+  color: var(--dark-blue);
+}
 
 .bg-nav {
   background-color: rgba(239, 239, 239, 0.895) !important;
@@ -159,7 +167,7 @@ a {
 #theme-toggle {
   border: none;
   background: none;
-  color: var(--purple);
+  color: var(--dark-blue);
   font-size: 1.2rem;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -170,11 +178,11 @@ a {
 }
 
 #theme-toggle:hover {
-  color: var(--violet) !important;
+  color: var(--blue) !important;
 }
 
 .dark-mode #theme-toggle:hover {
-  color: var(--purple) !important;
+  color: var(--blue) !important;
 }
 
 .dark-mode .bg-gray,
