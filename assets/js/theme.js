@@ -1,23 +1,13 @@
 // Theme toggle functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
-    const icon = themeToggle.querySelector('i');
+    const themeToggles = Array.from(document.querySelectorAll('[data-theme-toggle]'));
+    const themeTargets = Array.from(document.querySelectorAll('#mainNav, #projectsNav, #hero, #about, #skills, #contact'));
+    const icon = themeToggles.length ? themeToggles[0].querySelector('i') : null;
 
-    // Check for saved theme preference or default to light mode
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    if (currentTheme === 'dark') {
-        body.classList.add('dark-mode');
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
-    }
-
-    // Toggle theme on button click
-    themeToggle.addEventListener('click', function() {
-        body.classList.toggle('dark-mode');
-
-        // Update icon
-        if (body.classList.contains('dark-mode')) {
+    const setDarkMode = (enabled) => {
+        themeTargets.forEach((el) => el.classList.toggle('dark-mode', enabled));
+        if (!icon) return;
+        if (enabled) {
             icon.classList.remove('fa-moon');
             icon.classList.add('fa-sun');
             localStorage.setItem('theme', 'dark');
@@ -26,5 +16,15 @@ document.addEventListener('DOMContentLoaded', function() {
             icon.classList.add('fa-moon');
             localStorage.setItem('theme', 'light');
         }
+    };
+
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    setDarkMode(currentTheme === 'dark');
+
+    themeToggles.forEach((toggle) => {
+        toggle.addEventListener('click', function() {
+            const isDark = !themeTargets.some((el) => el.classList.contains('dark-mode'));
+            setDarkMode(isDark);
+        });
     });
 });

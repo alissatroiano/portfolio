@@ -145,20 +145,22 @@ a {
   background-color: rgba(239, 239, 239, 0.895) !important;
 }
 
-.dark-mode .bg-nav {
+.dark-mode .bg-nav,
+.dark-mode.bg-nav {
   background-color: rgba(26, 26, 26, 0.9) !important;
 }
 
-.dark-mode body {
-  background-color: var(--light);
+.dark-mode {
   color: var(--darker);
 }
 
-.dark-mode .bg-blur {
+.dark-mode .bg-blur,
+.dark-mode.bg-blur {
   background-color: rgba(26, 26, 26, 0.8);
 }
 
-.dark-mode .bg-custom {
+.dark-mode .bg-custom,
+.dark-mode.bg-custom {
   background-color: rgb(200, 200, 200);
   color: var(--light);
 }
@@ -192,15 +194,18 @@ a {
   color: var(--purple) !important;
 }
 
-.dark-mode .bg-gray {
+.dark-mode .bg-gray,
+.dark-mode.bg-gray {
   background-color: var(--light-grey);
 }
 
-.dark-mode .bg-main {
+.dark-mode .bg-main,
+.dark-mode.bg-main {
   background-color: rgba(10, 10, 10, 0.9);
 }
 
-.dark-mode .bg-custom {
+.dark-mode .bg-custom,
+.dark-mode.bg-custom {
   background-color: rgb(100, 100, 100);
   color: var(--light);
 }

@@ -128,19 +128,22 @@ a {
   background-color: rgba(239, 239, 239, 0.895) !important;
 }
 
-.dark-mode .bg-nav {
+.dark-mode .bg-nav,
+.dark-mode.bg-nav {
  background-color: rgba(1, 0, 3, 0.862) !important;
 }
 
-.dark-mode body {
+.dark-mode {
   color: var(--darker);
 }
 
-.dark-mode .bg-blur {
+.dark-mode .bg-blur,
+.dark-mode.bg-blur {
   background-color: rgba(26, 26, 26, 0.8);
 }
 
-.dark-mode .bg-custom {
+.dark-mode .bg-custom,
+.dark-mode.bg-custom {
   background-color: rgb(200, 200, 200);
   color: var(--light);
 }
@@ -174,30 +177,33 @@ a {
   color: var(--purple) !important;
 }
 
-.dark-mode .bg-gray {
+.dark-mode .bg-gray,
+.dark-mode.bg-gray {
   background-color: var(--light-grey);
 }
 
-.dark-mode .bg-purple {
+.dark-mode .bg-purple,
+.dark-mode.bg-purple {
   background-color: var(--dark-violet);
 }
 
-.dark-mode .bg-main {
+.dark-mode .bg-main,
+.dark-mode.bg-main {
 	background-color: #150437;
   color: #fafafa;
 }
 
-.dark-mode #contact {
+#contact.dark-mode {
   background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.8)), url('../images/contact.jpg') no-repeat center center;
   background-size: cover;
   background-position: center;
 }
 
-.dark-mode section#cta1 {
+section#cta1.dark-mode {
   background-color: var(--dark-violet);
 }
 
-.dark-mode section#cta2 {
+section#cta2.dark-mode {
   background-color: var(--lighter);
 }
 

@@ -26,6 +26,13 @@
       <a class="navbar-brand nav-link" href="index.html">
         <img src="assets/images/favicon.png" class="img-fluid logo-img" alt="logo" />
       </a>
+       <div class="my-0 mx-auto text-center align-items-center">
+          <div class="col-3">
+            <button id="theme-toggle" data-theme-toggle class="btn-link nav-link" title="Toggle Dark Mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,11 +71,6 @@
           </li>
         </ul>
         <ul class="navbar-nav d-flex ms-auto text-light list-group list-group-horizontal">
-          <li class="nav-item">
-            <button id="theme-toggle" class="btn btn-link nav-link" title="Toggle Dark Mode">
-              <i class="fas fa-moon"></i>
-            </button>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="https://linkedin.com/in/alissatroiano" target="_blank">
               <i class="fab fa-linkedin mx-2"></i>
@@ -1866,6 +1868,8 @@
     async></script>
   <script src="assets/js/top.js"></script>
   <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/theme.js" type="text/javascript"></script>
+
   <!--Navbar Collapse Script -->
   <!-- This script automatically closes the navbar-toggle after a user clicks a nav-link. The navbar remained in the expanded state prior to placing this script. -->
   <!-- This script was copied from Stack Overflow (https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click) -->
@@ -1909,7 +1913,7 @@
       setTimeout(displayImages, 5000);
     }
   </script>
-  <script src="assets/js/theme.js" type="text/javascript"></script>
+
 </body>
 
 

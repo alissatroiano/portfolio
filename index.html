@@ -31,16 +31,16 @@
 
 <body>
   <!--Fixed Top Nav-->
-  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-nav shadow-lg">
+  <nav id="mainNav" class="navbar fixed-top navbar-expand-md navbar-light bg-nav shadow-lg">
     <div class="container-fluid">
       <a class="navbar-brand nav-link" href="#">
         <img src="assets/images/favicon.png" class="img-fluid logo-img" />
       </a>
-       <div class="my-0 mx-auto text-center align-items-center d-md-none">
+       <div class="my-0 mx-auto text-center align-items-center">
           <div class="col-3">
-            <a id="theme-toggle" class="btn-link nav-link" title="Toggle Dark Mode">
+            <button id="theme-toggle" data-theme-toggle class="btn-link nav-link" title="Toggle Dark Mode">
               <i class="fas fa-moon"></i>
-            </a>
+            </button>
           </div>
         </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -68,13 +68,6 @@
             </a>
           </li>
         </ul>
-      <div class="my-0 mx-auto text-center align-items-center d-xs-none d-md-block">
-          <div class="col-3">
-            <a id="theme-toggle" class="btn-link nav-link" title="Toggle Dark Mode">
-              <i class="fas fa-moon"></i>
-            </a>
-          </div>
-        </div>
         <ul class="navbar-nav d-flex ms-auto text-light list-group list-group-horizontal">
 
                 <li class="nav-item">
