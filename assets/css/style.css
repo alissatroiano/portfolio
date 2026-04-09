@@ -33,6 +33,33 @@
 	--scroll-end: calc(-100% - var(--gap));
 }
 
+/* Dark Mode Variables */
+.dark-mode {
+  --primary-color: #9E7AE6;
+  --purple: #9E7AE6;
+  --purple2: #7353be;
+  --purple3: rgb(150, 100, 200);
+  --violet: #6234bc;
+  --violet-2: #4d24a1;
+  --dark-violet: #2a0f5c;
+  --accent-color: #f598aa;
+  --accent-color-2: #fbb6c463;
+  --light: #1a1a1a;
+  --lighter: #2a2a2a;
+  --dark: #f5f5f5;
+  --grey: #888888;
+  --light-grey: #333333;
+  --dark-grey: #cccccc;
+  --darker: #ffffff;
+  --black: #ffffff;
+  --blue: #7DA2A9;
+  --light-blue: #B3E5F1;
+  --yellow-1: #FDD935;
+  --yellow-2: #E9BD43;
+  --yellow-3: #F5B935;
+  --red: #E83939;
+}
+
 ::-moz-selection { /* Code for Firefox */
   color: var(--light);
   background: var(--violet);
@@ -96,12 +123,88 @@ a {
   background-color: var(--purple);
 }
 
-.bg-main {
-	background-color: #0a0a0acf;
-}
 
 .bg-nav {
   background-color: rgba(239, 239, 239, 0.895) !important;
+}
+
+.dark-mode .bg-nav {
+ background-color: rgba(1, 0, 3, 0.862) !important;
+}
+
+.dark-mode body {
+  color: var(--darker);
+}
+
+.dark-mode .bg-blur {
+  background-color: rgba(26, 26, 26, 0.8);
+}
+
+.dark-mode .bg-custom {
+  background-color: rgb(200, 200, 200);
+  color: var(--light);
+}
+
+.dark-mode .navbar-light .navbar-nav .nav-link {
+  color: var(--darker);
+}
+
+.dark-mode .navbar-light .navbar-nav .nav-link:hover {
+  color: var(--violet);
+}
+
+#theme-toggle {
+  border: none;
+  background: none;
+  color: var(--purple);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dark-mode #theme-toggle {
+  color: var(--violet);
+}
+
+#theme-toggle:hover {
+  color: var(--violet) !important;
+}
+
+.dark-mode #theme-toggle:hover {
+  color: var(--purple) !important;
+}
+
+.dark-mode .bg-gray {
+  background-color: var(--light-grey);
+}
+
+.dark-mode .bg-purple {
+  background-color: var(--dark-violet);
+}
+
+.dark-mode .bg-main {
+	background-color: #150437;
+  color: #fafafa;
+}
+
+.dark-mode #contact {
+  background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.8)), url('../images/contact.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+}
+
+.dark-mode section#cta1 {
+  background-color: var(--dark-violet);
+}
+
+.dark-mode section#cta2 {
+  background-color: var(--lighter);
+}
+
+.dark-mode .card.profile-card.pb-5 {
+  background: rgba(26, 26, 26, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .lead {
@@ -152,6 +255,9 @@ a {
   opacity: 1;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(3px);
+}
+
+i.fab {
 }
 
 .bg-custom {
