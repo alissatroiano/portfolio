@@ -140,10 +140,11 @@ a {
 .dark-mode.bg-nav {
  background-color: rgba(1, 0, 3, 0.862) !important;
 }
-
+/* 
 .dark-mode {
-  color: var(--darker);
-}
+  background-color: var(--dark-violet);
+  color: var(--light);
+} */
 
 .dark-mode .bg-blur,
 .dark-mode.bg-blur {
@@ -198,6 +199,11 @@ a {
 .dark-mode .bg-main,
 .dark-mode.bg-main {
 	background-color: #150437;
+  color: #fafafa;
+}
+
+.dark-mode.bg-about {
+  background-color: #080808;
   color: #fafafa;
 }
 
