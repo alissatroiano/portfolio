@@ -19,16 +19,23 @@
   <link rel="stylesheet" type="text/css" href="assets/css/projects.css" />
 </head>
 
-<body id="projects">
+<body>
   <!--Fixed Top Nav-->
   <nav class="navbar fixed-top navbar-expand-md navbar-light bg-nav shadow-lg" id="projectsNav">
     <div class="container-fluid">
       <a class="navbar-brand nav-link" href="index.html">
         <img src="assets/images/favicon.png" class="img-fluid logo-img" alt="logo" />
       </a>
+       <div class="my-0 mx-auto text-center align-items-center">
+          <div class="col-3">
+            <button id="theme-toggle" data-theme-toggle class="btn-link nav-link" title="Toggle Dark Mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto">
@@ -93,9 +100,9 @@
               <i class="fab fa-upwork mx-2"></i>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="mailto:alissatroiano@alissatroiano.com">
-              <i class="fas fa-envelope mx-2"></i>
+          <li class="nav-item devpost-item">
+            <a class="nav-link" href="https://devpost.com/alissatroiano" target="_blank">
+              <img src="assets/images/devpost.png" width="70" class="img-fluid" />
             </a>
           </li>
         </ul>
@@ -184,7 +191,6 @@
     </div>
   </div>
   
-
   <!-- Dashboard App-->
      <div class="modal fade" id="projectModal24" tabindex="-1" aria-labelledby="odditieModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
@@ -1861,6 +1867,8 @@
     async></script>
   <script src="assets/js/top.js"></script>
   <script src="assets/js/portfolio.js"></script>
+  <script src="assets/js/theme.js"></script>
+
   <!--Navbar Collapse Script -->
   <!-- This script automatically closes the navbar-toggle after a user clicks a nav-link. The navbar remained in the expanded state prior to placing this script. -->
   <!-- This script was copied from Stack Overflow (https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click) -->
