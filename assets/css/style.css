@@ -392,8 +392,7 @@ a.nav-link,
 #navbarCollapse,
 .navbar-dark .navbar-nav .nav-link {
   font-weight: 600;
-    font-size: 15.258px;
-
+  font-size: 14px;
 }
 
 li.nav-item, 
@@ -401,19 +400,19 @@ li.nav-item,
   color: var(--purple);
   letter-spacing: normal;
   font-weight: 450;
-  font-size: 13.9px;
+  font-size: 14px;
 }
 
 li.nav-item:hover,.navbar-nav a.nav-link,
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 li.nav-item:hover,.navbar-nav a.nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   text-decoration: line-through;
   font-weight: 600;
-  font-size: 15.258px;
+  font-size: 14px;
   color: var(--violet);
 }
 
