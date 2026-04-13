@@ -1,7 +1,7 @@
 // Theme toggle functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const themeToggles = Array.from(document.querySelectorAll('[data-theme-toggle]'));
-    const themeTargets = Array.from(document.querySelectorAll('#mainNav, #projectsNav, #hero, #about, #skills, #contact'));
+    const themeTargets = Array.from(document.querySelectorAll('body, #mainNav, #projectsNav, #hero, #about, #skills, #contact, #projects, #toggleNav'));
     const icon = themeToggles.length ? themeToggles[0].querySelector('i') : null;
 
     const setDarkMode = (enabled) => {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setDarkMode(currentTheme === 'dark');
 
     themeToggles.forEach((toggle) => {
-        toggle.addEventListener('click', function() {
+        toggle.addEventListener('click', function () {
             const isDark = !themeTargets.some((el) => el.classList.contains('dark-mode'));
             setDarkMode(isDark);
         });

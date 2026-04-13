@@ -120,16 +120,20 @@ a {
   background-color: var(--light-grey);
 }
 
-.fa-sun {
+i.fas.fa-sun {
   color: var(--yellow-1);
 }
 
-.fa-sun:hover {
+i.fas.fa-sun:hover {
   color: var(--yellow-3) !important;
 }
 
-.fa-moon {
-  color: var(--dark-blue);
+i.fas.fa-moon {
+  color: var(--blue);
+}
+
+i.fas.fa-moon:hover {
+  color: var(--light-blue) !important;
 }
 
 .bg-nav {
@@ -140,11 +144,6 @@ a {
 .dark-mode.bg-nav {
  background-color: rgba(1, 0, 3, 0.862) !important;
 }
-/* 
-.dark-mode {
-  background-color: var(--dark-violet);
-  color: var(--light);
-} */
 
 .dark-mode .bg-blur,
 .dark-mode.bg-blur {
@@ -165,21 +164,46 @@ a {
   color: var(--violet);
 }
 
+button.navbar-toggler {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fa-bars {
+    color: var(--purple);
+    font-size: 1.5rem;
+    border: none;
+    margin: 0 auto;
+    outline: none;
+}
+
+.fa-bars:hover {
+    color: var(--violet) !important;
+    border: none;
+}
+
+
+.dark-mode span.navbar-toggler-icon:hover {
+    background-color: var(--violet-2);
+}
+
 #theme-toggle {
   border: none;
   background: none;
-  color: var(--dark-blue);
+  color: var(--yellow-2);
   font-size: 1.2rem;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .dark-mode #theme-toggle {
-  color: var(--violet);
+  color: var(--blue);
 }
 
 #theme-toggle:hover {
-  color: var(--blue) !important;
+  color: var(--light-blue) !important;
 }
 
 .dark-mode #theme-toggle:hover {
@@ -338,6 +362,7 @@ body {
   font-size: 16px;
   margin: 0px auto;
   overflow: hidden;
+  background-color: var(--light);
 }
 
 em {
@@ -367,6 +392,8 @@ a.nav-link,
 #navbarCollapse,
 .navbar-dark .navbar-nav .nav-link {
   font-weight: 600;
+    font-size: 15.258px;
+
 }
 
 li.nav-item, 
@@ -374,13 +401,19 @@ li.nav-item,
   color: var(--purple);
   letter-spacing: normal;
   font-weight: 450;
+  font-size: 13.9px;
+}
+
+li.nav-item:hover,.navbar-nav a.nav-link,
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
+  font-size: 15px;
 }
 
 li.nav-item:hover,.navbar-nav a.nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   text-decoration: line-through;
   font-weight: 600;
-  font-size: 17.258px;
+  font-size: 15.258px;
   color: var(--violet);
 }
 
@@ -404,7 +437,6 @@ a.jumbo-link:hover {
   background-color: var(--dark-violet);
   color: #7442eb;
 }
-
 
 .navbar {
 	font-family: 'Dosis', serif;
@@ -1382,3 +1414,161 @@ i.fas.fa-chevron-up.fa-2x:hover {
         transform: matrix3d(0.94, 0, 0.34, -0.00025, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(-30px);
       }
     }
+
+/*--------------------------------  Dark Mode Section Styles */
+/* Root elements */
+.dark-mode,
+.dark-mode html,
+.dark-mode body {
+  background-color: #0a0a0a !important;
+  color: #fafafa !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Hero Section */
+section#hero.dark-mode {
+  background-color: #0a0a0a !important;
+  color: #fafafa !important;
+}
+
+section#hero.dark-mode h1,
+section#hero.dark-mode h2,
+section#hero.dark-mode h3,
+section#hero.dark-mode h4,
+section#hero.dark-mode h5,
+section#hero.dark-mode h6,
+section#hero.dark-mode p,
+section#hero.dark-mode span,
+section#hero.dark-mode a {
+  color: #fafafa !important;
+}
+
+/* About Section */
+section#about.dark-mode,
+.dark-mode section#about {
+  background-color: #080808 !important;
+  color: #fafafa !important;
+}
+
+section#about.dark-mode h1,
+section#about.dark-mode h2,
+section#about.dark-mode h3,
+section#about.dark-mode h4,
+section#about.dark-mode h5,
+section#about.dark-mode h6,
+section#about.dark-mode p,
+section#about.dark-mode span,
+section#about.dark-mode a,
+.dark-mode section#about h1,
+.dark-mode section#about h2,
+.dark-mode section#about h3,
+.dark-mode section#about h4,
+.dark-mode section#about h5,
+.dark-mode section#about h6,
+.dark-mode section#about p,
+.dark-mode section#about span,
+.dark-mode section#about a {
+  color: #fafafa !important;
+}
+
+/* Skills Section */
+section#skills.dark-mode,
+.dark-mode section#skills {
+  background-color: #0f0f0f !important;
+  color: #fafafa !important;
+}
+
+section#skills.dark-mode h1,
+section#skills.dark-mode h2,
+section#skills.dark-mode h3,
+section#skills.dark-mode h4,
+section#skills.dark-mode h5,
+section#skills.dark-mode h6,
+section#skills.dark-mode p,
+section#skills.dark-mode span,
+.dark-mode section#skills h1,
+.dark-mode section#skills h2,
+.dark-mode section#skills h3,
+.dark-mode section#skills h4,
+.dark-mode section#skills h5,
+.dark-mode section#skills h6,
+.dark-mode section#skills p,
+.dark-mode section#skills span {
+  color: #fafafa !important;
+}
+
+/* Contact Section */
+section#contact.dark-mode,
+.dark-mode section#contact {
+  background: linear-gradient(rgba(26, 26, 26, 0.95), rgba(20, 20, 20, 0.95), rgba(26, 26, 26, 0.95)), url('../images/contact.jpg') no-repeat center center !important;
+  background-size: cover !important;
+  background-position: center !important;
+  color: #fafafa !important;
+}
+
+section#contact.dark-mode h1,
+section#contact.dark-mode h2,
+section#contact.dark-mode h3,
+section#contact.dark-mode h4,
+section#contact.dark-mode h5,
+section#contact.dark-mode h6,
+section#contact.dark-mode p,
+section#contact.dark-mode span,
+section#contact.dark-mode a,
+.dark-mode section#contact h1,
+.dark-mode section#contact h2,
+.dark-mode section#contact h3,
+.dark-mode section#contact h4,
+.dark-mode section#contact h5,
+.dark-mode section#contact h6,
+.dark-mode section#contact p,
+.dark-mode section#contact span,
+.dark-mode section#contact a {
+  color: #fafafa !important;
+}
+
+/* CTA Sections */
+section#cta1.dark-mode {
+  background-color: var(--dark-violet) !important;
+  color: #fafafa !important;
+}
+
+section#cta1.dark-mode h1,
+section#cta1.dark-mode h2,
+section#cta1.dark-mode h3,
+section#cta1.dark-mode h4,
+section#cta1.dark-mode h5,
+section#cta1.dark-mode h6,
+section#cta1.dark-mode p,
+section#cta1.dark-mode span,
+section#cta1.dark-mode a {
+  color: #fafafa !important;
+}
+
+section#cta2.dark-mode {
+  background-color: var(--lighter) !important;
+  color: #000000 !important;
+}
+
+/* Generic section dark mode fallback */
+.dark-mode section {
+  background-color: inherit;
+}
+
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) {
+  background-color: #0a0a0a !important;
+  color: #fafafa !important;
+}
+
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) h1,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) h2,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) h3,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) h4,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) h5,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) h6,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) p,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) span,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) a {
+  color: #fafafa !important;
+}
