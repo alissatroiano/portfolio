@@ -1571,3 +1571,71 @@ section#cta2.dark-mode {
 .dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) a {
   color: #fafafa !important;
 }
+
+/* Modal Dark Mode Styles */
+.dark-mode .modal-content {
+  background-color: #0a0a0a !important;
+  color: #fafafa !important;
+  border: 1px solid #333333 !important;
+}
+
+.dark-mode .modal-header {
+  background-color: #0a0a0a !important;
+  color: #fafafa !important;
+  border-bottom: 1px solid #333333 !important;
+}
+
+.dark-mode .modal-header h1,
+.dark-mode .modal-header h2,
+.dark-mode .modal-header h3,
+.dark-mode .modal-header h4,
+.dark-mode .modal-header h5,
+.dark-mode .modal-header h6 {
+  color: #fafafa !important;
+}
+
+.dark-mode .modal-body {
+  background-color: #0a0a0a !important;
+  color: #fafafa !important;
+}
+
+.dark-mode .modal-body h1,
+.dark-mode .modal-body h2,
+.dark-mode .modal-body h3,
+.dark-mode .modal-body h4,
+.dark-mode .modal-body h5,
+.dark-mode .modal-body h6,
+.dark-mode .modal-body p,
+.dark-mode .modal-body span,
+.dark-mode .modal-body a {
+  color: #fafafa !important;
+}
+
+.dark-mode .modal-body .text-purple,
+.dark-mode .modal-body .text-light-purple {
+  color: #9E7AE6 !important;
+}
+
+.dark-mode .modal-footer {
+  background-color: #0a0a0a !important;
+  border-top: 1px solid #333333 !important;
+}
+
+.dark-mode .modal-footer .project-button {
+  background-color: var(--dark-violet) !important;
+  color: #fafafa !important;
+}
+
+.dark-mode .modal-footer .project-button:hover {
+  background-color: var(--violet) !important;
+  color: #fafafa !important;
+}
+
+.dark-mode .btn-close {
+  background-color: #fafafa !important;
+  opacity: 0.8;
+}
+
+.dark-mode .btn-close:hover {
+  opacity: 1;
+}
