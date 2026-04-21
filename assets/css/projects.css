@@ -902,13 +902,23 @@ p.tech-stack {
   color: #fafafa !important;
 }
 
+button.btn-close.me-3.mt-3,
 .dark-mode .btn-close {
-  background-color: #fafafa !important;
-  opacity: 0.8;
+  background-color: var(--accent-color) !important;
+  opacity: 0.68;
+  color: #fafafa !important;
 }
 
 .dark-mode .btn-close:hover {
   opacity: 1;
+}
+
+.dark-mode .text-mark-projects {
+  color: #9E7AE6 !important;
+}
+
+.dark-mode .text-mark-projects i {
+  color: #9E7AE6 !important;
 }
 
 @media only screen and (min-width: 768px) {
