@@ -33,6 +33,34 @@
 	--scroll-end: calc(-100% - var(--gap));
 }
 
+/* Dark Mode Variables */
+.dark-mode {
+  --primary-color: #9E7AE6;
+  --purple: #9E7AE6;
+  --purple2: #7353be;
+  --purple3: rgb(150, 100, 200);
+  --violet: #6234bc;
+  --violet-2: #4d24a1;
+  --dark-violet: #2a0f5c;
+  --accent-color: #f598aa;
+  --accent-color-2: #fbb6c463;
+  --light: #1a1a1a;
+  --lighter: #2a2a2a;
+  --dark: #f5f5f5;
+  --grey: #888888;
+  --light-grey: #333333;
+  --dark-grey: #cccccc;
+  --darker: #ffffff;
+  --black: #ffffff;
+  --blue: #7DA2A9;
+  --light-blue: #B3E5F1;
+  --dark-blue: #000b2e;
+  --yellow-1: #FDD935;
+  --yellow-2: #E9BD43;
+  --yellow-3: #F5B935;
+  --red: #E83939;
+}
+
 ::-moz-selection { /* Code for Firefox */
   color: var(--light);
   background: var(--violet);
@@ -92,16 +120,135 @@ a {
   background-color: var(--light-grey);
 }
 
-.bg-purple {
-  background-color: var(--purple);
+i.fas.fa-sun {
+  color: var(--yellow-1);
 }
 
-.bg-main {
-	background-color: #0a0a0acf;
+i.fas.fa-sun:hover {
+  color: var(--yellow-3) !important;
+}
+
+i.fas.fa-moon {
+  color: var(--blue);
+}
+
+i.fas.fa-moon:hover {
+  color: var(--light-blue) !important;
 }
 
 .bg-nav {
   background-color: rgba(239, 239, 239, 0.895) !important;
+}
+
+.dark-mode .bg-nav,
+.dark-mode.bg-nav {
+ background-color: rgba(1, 0, 3, 0.862) !important;
+}
+
+.dark-mode .bg-blur,
+.dark-mode.bg-blur {
+  background-color: rgba(26, 26, 26, 0.8);
+}
+
+.dark-mode .bg-custom,
+.dark-mode.bg-custom {
+  background-color: rgb(200, 200, 200);
+  color: var(--light);
+}
+
+.dark-mode .navbar-light .navbar-nav .nav-link {
+  color: var(--darker);
+}
+
+.dark-mode .navbar-light .navbar-nav .nav-link:hover {
+  color: var(--violet);
+}
+
+button.navbar-toggler {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fa-bars {
+    color: var(--purple);
+    font-size: 1.5rem;
+    border: none;
+    margin: 0 auto;
+    outline: none;
+}
+
+.fa-bars:hover {
+    color: var(--violet) !important;
+    border: none;
+}
+
+
+.dark-mode span.navbar-toggler-icon:hover {
+    background-color: var(--violet-2);
+}
+
+#theme-toggle {
+  border: none;
+  background: none;
+  color: var(--yellow-2);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dark-mode #theme-toggle {
+  color: var(--blue);
+}
+
+#theme-toggle:hover {
+  color: var(--light-blue) !important;
+}
+
+.dark-mode #theme-toggle:hover {
+  color: var(--blue) !important;
+}
+
+.dark-mode .bg-gray,
+.dark-mode.bg-gray {
+  background-color: var(--light-grey);
+}
+
+.dark-mode .bg-purple,
+.dark-mode.bg-purple {
+  background-color: var(--dark-violet);
+}
+
+.dark-mode .bg-main,
+.dark-mode.bg-main {
+	background-color: #150437;
+  color: #fafafa;
+}
+
+.dark-mode.bg-about {
+  background-color: #080808;
+  color: #fafafa;
+}
+
+#contact.dark-mode {
+  background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.8)), url('../images/contact.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+}
+
+section#cta1.dark-mode {
+  background-color: var(--dark-violet);
+}
+
+section#cta2.dark-mode {
+  background-color: var(--lighter);
+}
+
+.dark-mode .card.profile-card.pb-5 {
+  background: rgba(26, 26, 26, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .lead {
@@ -152,6 +299,9 @@ a {
   opacity: 1;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(3px);
+}
+
+i.fab {
 }
 
 .bg-custom {
@@ -212,6 +362,7 @@ body {
   font-size: 16px;
   margin: 0px auto;
   overflow: hidden;
+  background-color: var(--light);
 }
 
 em {
@@ -241,6 +392,7 @@ a.nav-link,
 #navbarCollapse,
 .navbar-dark .navbar-nav .nav-link {
   font-weight: 600;
+  font-size: 14px;
 }
 
 li.nav-item, 
@@ -248,13 +400,19 @@ li.nav-item,
   color: var(--purple);
   letter-spacing: normal;
   font-weight: 450;
+  font-size: 14px;
+}
+
+li.nav-item:hover,.navbar-nav a.nav-link,
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
+  font-size: 14px;
 }
 
 li.nav-item:hover,.navbar-nav a.nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   text-decoration: line-through;
   font-weight: 600;
-  font-size: 17.258px;
+  font-size: 14px;
   color: var(--violet);
 }
 
@@ -278,7 +436,6 @@ a.jumbo-link:hover {
   background-color: var(--dark-violet);
   color: #7442eb;
 }
-
 
 .navbar {
 	font-family: 'Dosis', serif;
@@ -1256,3 +1413,229 @@ i.fas.fa-chevron-up.fa-2x:hover {
         transform: matrix3d(0.94, 0, 0.34, -0.00025, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(-30px);
       }
     }
+
+/*--------------------------------  Dark Mode Section Styles */
+/* Root elements */
+.dark-mode,
+.dark-mode html,
+.dark-mode body {
+  background-color: #0a0a0a !important;
+  color: #fafafa !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Hero Section */
+section#hero.dark-mode {
+  background-color: #0a0a0a !important;
+  color: #fafafa !important;
+}
+
+section#hero.dark-mode h1,
+section#hero.dark-mode h2,
+section#hero.dark-mode h3,
+section#hero.dark-mode h4,
+section#hero.dark-mode h5,
+section#hero.dark-mode h6,
+section#hero.dark-mode p,
+section#hero.dark-mode span,
+section#hero.dark-mode a {
+  color: #fafafa !important;
+}
+
+/* About Section */
+section#about.dark-mode,
+.dark-mode section#about {
+  background-color: #080808 !important;
+  color: #fafafa !important;
+}
+
+section#about.dark-mode h1,
+section#about.dark-mode h2,
+section#about.dark-mode h3,
+section#about.dark-mode h4,
+section#about.dark-mode h5,
+section#about.dark-mode h6,
+section#about.dark-mode p,
+section#about.dark-mode span,
+section#about.dark-mode a,
+.dark-mode section#about h1,
+.dark-mode section#about h2,
+.dark-mode section#about h3,
+.dark-mode section#about h4,
+.dark-mode section#about h5,
+.dark-mode section#about h6,
+.dark-mode section#about p,
+.dark-mode section#about span,
+.dark-mode section#about a {
+  color: #fafafa !important;
+}
+
+/* Skills Section */
+section#skills.dark-mode,
+.dark-mode section#skills {
+  background-color: #0f0f0f !important;
+  color: #fafafa !important;
+}
+
+section#skills.dark-mode h1,
+section#skills.dark-mode h2,
+section#skills.dark-mode h3,
+section#skills.dark-mode h4,
+section#skills.dark-mode h5,
+section#skills.dark-mode h6,
+section#skills.dark-mode p,
+section#skills.dark-mode span,
+.dark-mode section#skills h1,
+.dark-mode section#skills h2,
+.dark-mode section#skills h3,
+.dark-mode section#skills h4,
+.dark-mode section#skills h5,
+.dark-mode section#skills h6,
+.dark-mode section#skills p,
+.dark-mode section#skills span {
+  color: #fafafa !important;
+}
+
+/* Contact Section */
+section#contact.dark-mode,
+.dark-mode section#contact {
+  background: linear-gradient(rgba(26, 26, 26, 0.95), rgba(20, 20, 20, 0.95), rgba(26, 26, 26, 0.95)), url('../images/contact.jpg') no-repeat center center !important;
+  background-size: cover !important;
+  background-position: center !important;
+  color: #fafafa !important;
+}
+
+section#contact.dark-mode h1,
+section#contact.dark-mode h2,
+section#contact.dark-mode h3,
+section#contact.dark-mode h4,
+section#contact.dark-mode h5,
+section#contact.dark-mode h6,
+section#contact.dark-mode p,
+section#contact.dark-mode span,
+section#contact.dark-mode a,
+.dark-mode section#contact h1,
+.dark-mode section#contact h2,
+.dark-mode section#contact h3,
+.dark-mode section#contact h4,
+.dark-mode section#contact h5,
+.dark-mode section#contact h6,
+.dark-mode section#contact p,
+.dark-mode section#contact span,
+.dark-mode section#contact a {
+  color: #fafafa !important;
+}
+
+/* CTA Sections */
+section#cta1.dark-mode {
+  background-color: var(--dark-violet) !important;
+  color: #fafafa !important;
+}
+
+section#cta1.dark-mode h1,
+section#cta1.dark-mode h2,
+section#cta1.dark-mode h3,
+section#cta1.dark-mode h4,
+section#cta1.dark-mode h5,
+section#cta1.dark-mode h6,
+section#cta1.dark-mode p,
+section#cta1.dark-mode span,
+section#cta1.dark-mode a {
+  color: #fafafa !important;
+}
+
+section#cta2.dark-mode {
+  background-color: var(--lighter) !important;
+  color: #000000 !important;
+}
+
+/* Generic section dark mode fallback */
+.dark-mode section {
+  background-color: inherit;
+}
+
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) {
+  background-color: #0a0a0a !important;
+  color: #fafafa !important;
+}
+
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) h1,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) h2,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) h3,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) h4,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) h5,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) h6,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) p,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) span,
+.dark-mode section:where(:not(#hero):not(#about):not(#skills):not(#contact):not(#cta1):not(#cta2)):not(.no-dark-mode) a {
+  color: #fafafa !important;
+}
+
+/* Modal Dark Mode Styles */
+.dark-mode .modal-content {
+  background-color: #0a0a0a !important;
+  color: #fafafa !important;
+  border: 1px solid #333333 !important;
+}
+
+.dark-mode .modal-header {
+  background-color: #0a0a0a !important;
+  color: #fafafa !important;
+  border-bottom: 1px solid #333333 !important;
+}
+
+.dark-mode .modal-header h1,
+.dark-mode .modal-header h2,
+.dark-mode .modal-header h3,
+.dark-mode .modal-header h4,
+.dark-mode .modal-header h5,
+.dark-mode .modal-header h6 {
+  color: #fafafa !important;
+}
+
+.dark-mode .modal-body {
+  background-color: #0a0a0a !important;
+  color: #fafafa !important;
+}
+
+.dark-mode .modal-body h1,
+.dark-mode .modal-body h2,
+.dark-mode .modal-body h3,
+.dark-mode .modal-body h4,
+.dark-mode .modal-body h5,
+.dark-mode .modal-body h6,
+.dark-mode .modal-body p,
+.dark-mode .modal-body span,
+.dark-mode .modal-body a {
+  color: #fafafa !important;
+}
+
+.dark-mode .modal-body .text-purple,
+.dark-mode .modal-body .text-light-purple {
+  color: #9E7AE6 !important;
+}
+
+.dark-mode .modal-footer {
+  background-color: #0a0a0a !important;
+  border-top: 1px solid #333333 !important;
+}
+
+.dark-mode .modal-footer .project-button {
+  background-color: var(--dark-violet) !important;
+  color: #fafafa !important;
+}
+
+.dark-mode .modal-footer .project-button:hover {
+  background-color: var(--violet) !important;
+  color: #fafafa !important;
+}
+
+.dark-mode .btn-close {
+  background-color: #fafafa !important;
+  opacity: 0.8;
+}
+
+.dark-mode .btn-close:hover {
+  opacity: 1;
+}
