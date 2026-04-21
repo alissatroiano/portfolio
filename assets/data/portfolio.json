@@ -5,6 +5,12 @@
     "ModalID": "projectModal22",
     "ImageSrc": "assets/images/coming-soon.png"
   },
+  {
+    "Project": "Military Mama",
+    "Category": ["Frontend", "UI Design"],
+    "ModalID": "projectModal26",
+    "ImageSrc": "assets/images/projects/laundry-landing.png"
+  },
  {
   "Project": "Trend Tracker",
   "Category": ["Fullstack", "Frontend", "UI Design"],
