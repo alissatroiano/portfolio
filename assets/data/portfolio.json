@@ -13,7 +13,7 @@
   },
  {
   "Project": "Trend Tracker",
-  "Category": ["Fullstack", "Frontend", "UI Design"],
+  "Category": ["Fullstack", "Frontend", "UI Design", "AI"],
   "ModalID": "projectModal24",
   "ImageSrc": "assets/images/projects/trend-tracker-thumb.png"
  },
@@ -30,7 +30,7 @@
     "ImageSrc": "assets/images/projects/coast-va-home.png"
   },    {
     "Project": "Neomate",
-    "Category": ["Hackathon", "Fullstack", "Frontend, UI Design"],
+    "Category": ["Hackathon", "Fullstack", "Frontend, UI Design", "AI"],
     "ModalID": "projectModal21",
     "ImageSrc": "assets/images/projects/neomate_app.jpg"
   },
@@ -49,13 +49,13 @@
   },
   {
     "Project": "Hue",
-    "Category": ["UI Design", "Fullstack"],
+    "Category": ["UI Design", "Fullstack", "AI"],
     "ModalID": "projectModal1",
     "ImageSrc": "assets/images/projects/thumb-hue.png"
   },
   {
     "Project": "OBBA/OLLA Queue",
-    "Category": ["UI Design", "Frontend"],
+    "Category": ["UI Design", "Frontend", "AI"],
     "ModalID": "projectModal2",
     "ImageSrc": "assets/images/OBBA.png"
   },
@@ -127,7 +127,7 @@
   },
     {
     "Project": "Cosmos",
-    "Category": ["Game Dev", "Hackathon", "UI Design", "Fullstack"],
+    "Category": ["Game Dev", "Hackathon", "UI Design", "Fullstack", "AI"],
     "ModalID": "projectModal15",
     "ImageSrc": "assets/images/cosmos.png"
   },
