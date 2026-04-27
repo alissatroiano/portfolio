@@ -10,6 +10,7 @@
   --violet-2: #7353be;
   --dark-violet: #3e1c82;
   --accent-color: #9c68e4;
+  --link-blue: #85d6eb;
   --accent-color-2: #fbb6c463;
   --light: #fafafa;
   --lighter: #f5f5f5;
@@ -126,6 +127,10 @@ button.navbar-toggler {
   text-transform: lowercase;
   font-weight: 500;
   font-size: 14px;
+}
+
+.text-purple {
+  color: var(--purple);
 }
 
 ::-moz-selection {
@@ -291,6 +296,15 @@ a {
   color: #fafafa;
   font-family: 'Dosis', serif;;
   padding: 5px;
+}
+
+.award-text a {
+  color: var(--link-blue);
+  text-decoration: none;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  animation: flash 5s;
 }
 
 .text-purple {

@@ -1,4 +1,10 @@
 [
+  {
+    "Project": "Logic Lift",
+    "Category": ["Hackathon", "AI"],
+    "ModalID": "projectModal27",
+    "ImageSrc": "assets/images/logiclift.jpg"
+  },
     {
     "Project": "Coming Soon",
     "Category": "Frontend, UI Design",
