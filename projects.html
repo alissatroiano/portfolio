@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Load Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    integrity="sha384a-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!--Load Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -87,8 +87,6 @@
               <i class="fab fa-youtube mx-2"></i>
             </a>
           </li>
-
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="https://www.etsy.com/shop/bohemiancraftscity" target="_blank">
               <i class="fab fa-etsy mx-2"></i>
@@ -103,7 +101,7 @@
           </li>
           <li class="nav-item devpost-item">
             <a class="nav-link" href="https://devpost.com/alissatroiano" target="_blank">
-              <img src="assets/images/devpost.png" width="70" class="img-fluid" />
+              <img src="assets/images/devpost.png" width="70" class="img-fluid" alt="Devpost Logo" />
             </a>
           </li>
         </ul>
@@ -141,7 +139,7 @@
 
 <!-- --------------------- MODALS-->
 <!--Logic Lift-->
-  <div class="modal fade" id="projectModal27" tabindex="-1" aria-labelledby="logicLift" aria-hidden="true">
+  <div class="modal fade" id="projectModal27" role="dialog" tabindex="-1" aria-labelledby="projectModal27Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -150,8 +148,8 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="folio-title display-3 text-center text-sm-start">Logic Lift: <span
-                  class="text-light-purple">Mainframe to Modern Logic Recovery</span></h1>
+              <h1 id="projectModal27Label" class="folio-title display-3 text-center text-sm-start">Logic Lift: <span
+                  class="text-light-purple">Legacy Mainframe to Modern Logic</span></h1>
                     <span class="award-text text-center text-sm-start"><a class="link-font" href="https://devpost.com/software/the-bunny-ear-adventure" target="_blank"> Honorable Mention - Gemini 3 DeepMind Hackathon, 04/2026 </a></span>
             </div>
           </div>
@@ -206,8 +204,9 @@
       </div>
     </div>
   </div>
+
   <!--Laundry Page-->
-       <div class="modal fade" id="projectModal26" tabindex="-1" aria-labelledby="localLaundryService" aria-hidden="true">
+  <div class="modal fade" id="projectModal26" role="dialog" tabindex="-1" aria-labelledby="projectModal26Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -216,7 +215,7 @@
           <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="folio-title display-3 text-center text-sm-start">Small Business: <span
+              <h1 id="projectModal26Label" class="folio-title display-3 text-center text-sm-start">Small Business: <span
                   class="text-light-purple"> Website</span></h1>
             </div>
           </div>
@@ -227,6 +226,7 @@
               <div class="p-sm-4 p-md-5 my-0 me-3">
                 <img src="assets/images/projects/laundry-demo.gif"
                   class="img-wrapper--reverse img-fluid project-img img-small" alt="Laundry Landing Page" id="localLaundryService" />
+              </div>
               </div>
             <div class="col-12 col-sm-4">
          <div class="pe-2 my-0 me-sm-3">
@@ -258,7 +258,7 @@
   </div>
 
   <!--Bridal Illustrations-->
-       <div class="modal fade" id="projectModal25" tabindex="-1" aria-labelledby="bridalShower" aria-hidden="true">
+       <div class="modal fade" id="projectModal25" role="dialog" tabindex="-1" aria-labelledby="projectModal25Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -267,7 +267,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="folio-title display-3 text-center text-sm-start">Stationary Design:<span
+              <h1 id="projectModal25Label" class="folio-title display-3 text-center text-sm-start">Stationary Design:<span
                   class="text-light-purple ms-1"> Bridal Shower</span></h1>
             </div>
           </div>
@@ -309,7 +309,7 @@
   </div>
   
   <!-- Dashboard App-->
-     <div class="modal fade" id="projectModal24" tabindex="-1" aria-labelledby="odditieModal" aria-hidden="true">
+     <div class="modal fade" id="projectModal24" role="dialog" tabindex="-1" aria-labelledby="projectModal24Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -318,7 +318,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="folio-title display-3 text-center text-sm-start">The Trend Tracker: <span
+              <h1 id="projectModal24Label" class="folio-title display-3 text-center text-sm-start">The Trend Tracker: <span
                   class="text-light-purple">Dashboard</span></h1>
             </div>
           </div>
@@ -361,7 +361,7 @@
   </div>
 
   <!--Odditie-->
-  <div class="modal fade" id="projectModal23" tabindex="-1" aria-labelledby="odditieModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal23" role="dialog" tabindex="-1" aria-labelledby="projectModal23Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -370,7 +370,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="folio-title display-3 text-center text-sm-start">The Odditie: <span
+              <h1 id="projectModal23Label" class="folio-title display-3 text-center text-sm-start">The Odditie: <span
                   class="text-light-purple">Wordpress Blog</span></h1>
             </div>
           </div>
@@ -422,7 +422,7 @@
   </div>
 
   <!--- Coming Soon-->
-  <div class="modal fade" id="projectModal22" tabindex="-1" aria-labelledby="comingSoon" aria-hidden="true">
+  <div class="modal fade" id="projectModal22" role="dialog" tabindex="-1" aria-labelledby="projectModal22Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -431,7 +431,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="folio-title display-3 text-center text-sm-start">Coming Soon: <span
+              <h1 id="projectModal22Label" class="folio-title display-3 text-center text-sm-start">Coming Soon: <span
                   class="text-light-purple">Dara Budabin Fashion</span></h1>
             </div>
           </div>
@@ -492,7 +492,7 @@
   </div>
 
   <!--- Coast Va-->
-  <div class="modal fade" id="projectModal21" tabindex="-1" aria-labelledby="neomateModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal21" role="dialog" tabindex="-1" aria-labelledby="projectModal21Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -501,7 +501,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="folio-title display-3 text-center text-sm-start">Neomate: <span
+              <h1 id="projectModal21Label" class="folio-title display-3 text-center text-sm-start">Neomate: <span
                   class="text-light-purple">Neonatal AI Assistant</span></h1>
             </div>
           </div>
@@ -573,7 +573,7 @@
   </div>
 
   <!--Cosmos-->
-  <div class="modal fade" id="projectModal15" tabindex="-1" aria-labelledby="cosmosModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal15" role="dialog" tabindex="-1" aria-labelledby="projectModal15Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -582,7 +582,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="folio-title display-3 text-center text-sm-start">Cosmos: <span
+              <h1 id="projectModal15Label" class="folio-title display-3 text-center text-sm-start">Cosmos: <span
                   class="text-light-purple">Three.JS
                   Game</span></h1>
             </div>
@@ -640,7 +640,7 @@
   </div>
 
   <!-- Hue Modal-->
-  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="hueModalLabel" aria-hidden="true">
+  <div class="modal fade" id="projectModal1" role="dialog" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -648,7 +648,7 @@
         </div>
         <div class="modal-header">
           <div class="col-12">
-            <h1 class="folio-title display-3 text-center text-sm-start">Hue: <span class="text-light-purple">Create &
+            <h1 id="projectModal1Label" class="folio-title display-3 text-center text-sm-start">Hue: <span class="text-light-purple">Create &
                 Sell AI Art </span></h1>
           </div>
         </div>
@@ -713,7 +713,7 @@
   </div>
 
   <!--OBBA/OLLA QUEUE-->
-  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="obbaOllaModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal2" role="dialog" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -722,7 +722,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="folio-title display-3 text-center text-sm-start">OLLA AI & OBBA: <span
+              <h1 id="projectModal2Label" class="folio-title display-3 text-center text-sm-start">OLLA AI & OBBA: <span
                   class="text-light-purple">WAIT QUEUE MGMT</span></h1>
             </div>
           </div>
@@ -783,7 +783,7 @@
   </div>
 
   <!-- OLLA Modal -->
-  <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="ollaChatModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal3" role="dialog" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -792,7 +792,7 @@
         <div class="modal-header">
           <div class="row my-1 d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="folio-title display-1 text-center text-sm-start">OLLA AI</h1>
+              <h1 id="projectModal3Label" class="folio-title display-1 text-center text-sm-start">OLLA AI</h1>
             </div>
           </div>
         </div>
@@ -852,7 +852,7 @@
   </div>
 
   <!--Inklusion-->
-  <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="inklusionModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal4" role="dialog" tabindex="-1" aria-labelledby="projectModal4Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -861,7 +861,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="title display-4 text-center text-sm-start fw-bold">Inklusion: <span
+              <h1 id="projectModal4Label" class="title display-4 text-center text-sm-start fw-bold">Inklusion: <span
                   class="text-light-purple">Pride Art Gallery</span></h1>
               <span class="award-text text-center text-sm-start"> 1st Place - Code Institute Hackathon, 06/17/22 </span>
             </div>
@@ -934,7 +934,7 @@
 
 
   <!--Muzak-->
-  <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="muzakModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal5" role="dialog" tabindex="-1" aria-labelledby="projectModal5Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -943,7 +943,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="folio-title display-3 text-center text-sm-start">Muzak: <span class="text-light-purple">YouTube
+              <h1 id="projectModal5Label" class="folio-title display-3 text-center text-sm-start">Muzak: <span class="text-light-purple">YouTube
                   Music Player </span></h1>
             </div>
           </div>
@@ -1000,7 +1000,7 @@
   </div>
 
   <!--Electrillo-->
-  <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="electrilloModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal6" role="dialog" tabindex="-1" aria-labelledby="projectModal6Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1009,7 +1009,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="folio-title display-4 text-center text-sm-start">Electrillo: <span
+              <h1 id="projectModal6Label" class="folio-title display-4 text-center text-sm-start">Electrillo: <span
                   class="text-light-purple">EV-Fuel Calculator </span></h1>
               <span class="award-text text-center text-sm-start"> 1st Place - Code Institute Hackathon, 04/10/22 </span>
             </div>
@@ -1068,7 +1068,7 @@
   </div>
 
   <!--Smitten-->
-  <div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="electrilloModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal7" role="dialog" tabindex="-1" aria-labelledby="projectModal7Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1076,7 +1076,7 @@
         </div>
         <div class="modal-header">
           <div class="col-12">
-            <h1 class="folio-title display-4 text-center text-sm-start">Smitten: <span
+            <h1 id="projectModal7Label" class="folio-title display-4 text-center text-sm-start">Smitten: <span
                 class="text-light-purple">JAVASCRIPT WORDLE GAME
               </span></h1>
             <span class="award-text text-center text-sm-start"> 1ST PLACE - CODE INSTITUTE HACKATHON, 02/22
@@ -1133,7 +1133,7 @@
   </div>
 
   <!--Game of Facts-->
-  <div class="modal fade" id="projectModal8" tabindex="-1" aria-labelledby="electrilloModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal8" role="dialog" tabindex="-1" aria-labelledby="projectModal8Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1141,7 +1141,7 @@
         </div>
         <div class="modal-header">
           <div class="col-12">
-            <h1 class="folio-title display-3 text-center text-sm-start">Game of Facts: <span
+            <h1 id="projectModal8Label" class="folio-title display-3 text-center text-sm-start">Game of Facts: <span
                 class="text-light-purple">Trivia Game </span></h1>
             <span class="award-text text-center text-sm-start"> Merit Award - Code Institute Milestone 2 Project </span>
           </div>
@@ -1201,7 +1201,7 @@
   </div>
 
   <!--Infinity-->
-  <div class="modal fade" id="projectModal9" tabindex="-1" aria-labelledby="infinityModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal9" role="dialog" tabindex="-1" aria-labelledby="projectModal9Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1209,7 +1209,7 @@
         </div>
         <div class="modal-header">
           <div class="col-12">
-            <h1 class="folio-title display-3 text-center text-sm-start">Infinity: <span
+            <h1 id="projectModal9Label" class="folio-title display-3 text-center text-sm-start">Infinity: <span
                 class="text-light-purple">Landing Page </span></h1>
             <span class="award-text text-center text-sm-start"> Distinction Award - Code Institute Milestone 1 Project
             </span>
@@ -1269,7 +1269,7 @@
   </div>
 
   <!--Emojourney-->
-  <div class="modal fade" id="projectModal10" tabindex="-1" aria-labelledby="emoourneyModel" aria-hidden="true">
+  <div class="modal fade" id="projectModal10" role="dialog" tabindex="-1" aria-labelledby="projectModal10Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1277,7 +1277,7 @@
         </div>
         <div class="modal-header">
           <div class="col-12">
-            <h1 class="folio-title display-3 text-center text-sm-start">Emojourney: <span
+            <h1 id="projectModal10Label" class="folio-title display-3 text-center text-sm-start">Emojourney: <span
                 class="text-light-purple">Emoji Travel Guide </span></h1>
             <span class="award-text text-center text-sm-start"> 1st Place - Code Institute World Emoji Day Hackathon
               04/22
@@ -1338,7 +1338,7 @@
   </div>
 
   <!--DeathScape-->
-  <div class="modal fade" id="projectModal11" tabindex="-1" aria-labelledby="deathscapModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal11" role="dialog" tabindex="-1" aria-labelledby="projectModal11Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1346,7 +1346,7 @@
         </div>
         <div class="modal-header">
           <div class="col-12">
-            <h1 class="folio-title display-3 text-center text-sm-start">DeathScape: <span
+            <h1 id="projectModal11Label" class="folio-title display-3 text-center text-sm-start">DeathScape: <span
                 class="text-light-purple">Escape Room </span></h1>
             <span class="award-text text-center text-sm-start"> 3rd Place - Code Institute May the Fourth Hackathom
               05/2023
@@ -1402,7 +1402,7 @@
   </div>
 
   <!--COAST VA-->
-  <div class="modal fade" id="projectModal13" tabindex="-1" aria-labelledby="coastVaModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal13" role="dialog" tabindex="-1" aria-labelledby="projectModal13Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1411,7 +1411,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="title display-4 text-center text-sm-start fw-bold">Coast VA, <span
+              <h1 id="projectModal13Label" class="title display-4 text-center text-sm-start fw-bold">Coast VA, <span
                   class="text-light-purple">Girls Lacrosse Club </span></h1>
             </div>
           </div>
@@ -1487,7 +1487,7 @@
   </div>
 
   <!--Dash-->
-  <div class="modal fade" id="projectModal14" tabindex="-1" aria-labelledby="dashModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal14" role="dialog" tabindex="-1" aria-labelledby="projectModal14Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1496,7 +1496,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="title display-4 text-center text-sm-start fw-bold">Dash,
+              <h1 id="projectModal14Label" class="title display-4 text-center text-sm-start fw-bold">Dash,
                 <span class="text-light-purple">Recipe Sharing </span>
               </h1>
             </div>
@@ -1567,7 +1567,7 @@
   </div>
 
   <!--Snooscapes Modal-->
-  <div class="modal fade" id="projectModal16" tabindex="-1" aria-labelledby="snooscapesModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal16" role="dialog" tabindex="-1" aria-labelledby="projectModal16Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1576,7 +1576,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="title display-4 text-center text-sm-start fw-bold">Snooscapes <span
+              <h1 id="projectModal16Label" class="title display-4 text-center text-sm-start fw-bold">Snooscapes <span
                   class="text-light-purple">Reddit Game</span></h1>
             </div>
           </div>
@@ -1650,7 +1650,7 @@
   </div>
 
   <!--Screensnaps Modal-->
-  <div class="modal fade" id="projectModal17" tabindex="-1" aria-labelledby="screensnapsModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal17" role="dialog" tabindex="-1" aria-labelledby="projectModal17Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1659,7 +1659,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="title display-4 text-center text-sm-start fw-bold">Screensnaps, <span
+              <h1 id="projectModal17Label" class="title display-4 text-center text-sm-start fw-bold">Screensnaps, <span
                   class="text-light-purple">Reddit Game</span></h1>
             </div>
           </div>
@@ -1732,7 +1732,7 @@
   </div>
 
   <!--Slangman Modal-->
-  <div class="modal fade" id="projectModal18" tabindex="-1" aria-labelledby="slangmanModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal18" role="dialog" tabindex="-1" aria-labelledby="projectModal18Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1741,7 +1741,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="title display-4 text-center text-sm-start fw-bold">Slangman, <span
+              <h1 id="projectModal18Label" class="title display-4 text-center text-sm-start fw-bold">Slangman, <span
                   class="text-light-purple">Reddit Game</span></h1>
             </div>
           </div>
@@ -1816,7 +1816,7 @@
   </div>
 
   <!--Cassie The Cat - Illustration Modal-->
-  <div class="modal fade" id="projectModal19" tabindex="-1" aria-labelledby="cassieModal" aria-hidden="true">
+  <div class="modal fade" id="projectModal19" role="dialog" tabindex="-1" aria-labelledby="projectModal19Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1825,7 +1825,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="title display-4 text-center text-sm-start fw-bold">Cassie The Cat, <span
+              <h1 id="projectModal19Label" class="title display-4 text-center text-sm-start fw-bold">Cassie The Cat, <span
                   class="text-light-purple">Children's Book</span></h1>
             </div>
           </div>
@@ -1893,7 +1893,7 @@
   </div>
 
   <!--The Magic of Love Children's Book Modal -->
-  <div class="modal fade" id="projectModal20" tabindex="-1" aria-labelledby="magicOfLove" aria-hidden="true">
+  <div class="modal fade" id="projectModal20" role="dialog" tabindex="-1" aria-labelledby="projectModal20Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end">
@@ -1902,7 +1902,7 @@
         <div class="modal-header">
           <div class="row d-flex justify-content-center">
             <div class="col-12">
-              <h1 class="title display-4 text-center text-sm-start fw-bold">The Magic of Love, <span
+              <h1 id="projectModal20Label" class="title display-4 text-center text-sm-start fw-bold">The Magic of Love, <span
                   class="text-light-purple">Book Illustration</span></h1>
             </div>
           </div>
