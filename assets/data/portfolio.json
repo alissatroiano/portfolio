@@ -54,12 +54,6 @@
     "ImageSrc": "assets/images/projects/project_5.png"
   },
   {
-    "Project": "Hue",
-    "Category": ["UI Design", "Fullstack", "AI"],
-    "ModalID": "projectModal1",
-    "ImageSrc": "assets/images/projects/thumb-hue.png"
-  },
-  {
     "Project": "OBBA/OLLA Queue",
     "Category": ["UI Design", "Frontend", "AI"],
     "ModalID": "projectModal2",
