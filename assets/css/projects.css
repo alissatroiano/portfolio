@@ -560,20 +560,47 @@ letter-spacing: 1.252px;
 }
 
 a.dropdown-item.filter-btn {
-  color: var(--dark-violet);
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1.25px;
+  font-family: 'Dosis', sans-serif;
+
 }
 
 a.dropdown-item.filter-btn:hover {
   color: var(--violet);
   font-weight: 600;
+  font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
   letter-spacing: -.51px;
   font-size: 1rem;
   background-color: #fafafa61;
+}
+
+a.dropdown-menu {
+  font-family: 'Poppins', sans-serif;
+}
+
+.dark-mode .dropdown-menu {
+  background-color: rgba(10, 10, 10, 0.96);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: var(--light);
+}
+
+li > a.dropdown-item.filter-btn,
+.dark-mode .dropdown-menu .dropdown-item,
+.dark-mode .dropdown-menu .dropdown-item.filter-btn {
+  color: var(--light);
+}
+
+.dark-mode .dropdown-menu .dropdown-item:hover,
+.dark-mode .dropdown-menu .dropdown-item:focus,
+.dark-mode .dropdown-menu .dropdown-item.filter-btn:hover,
+.dark-mode .dropdown-menu .dropdown-item.filter-btn:focus {
+  color: var(--violet);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 a.nav-link {
