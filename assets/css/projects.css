@@ -208,12 +208,12 @@ a {
 }
 
 .bg-nav {
-  background-color: rgba(239, 239, 239, 0.895) !important;
+  background-color: rgba(244, 242, 238, 0.93) !important;
 }
 
 .dark-mode .bg-nav,
 .dark-mode.bg-nav {
-  background-color: rgba(26, 26, 26, 0.9) !important;
+  background-color: rgba(8, 8, 8, 0.95) !important;
 }
 
 .dark-mode {
@@ -242,14 +242,14 @@ a {
 #theme-toggle {
   border: none;
   background: none;
-  color: var(--purple);
-  font-size: 1.2rem;
+  color: var(--darker);
+  font-size: 1rem;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .dark-mode #theme-toggle {
-  color: var(--violet);
+  color: var(--lighter);
 }
 
 #theme-toggle:hover {
@@ -636,6 +636,59 @@ nav.navbar {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
+}
+
+.navbar-brand .nav-at-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  color: var(--darker);
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
+.navbar-brand .star-deco {
+  font-size: 0.55rem;
+  vertical-align: super;
+  opacity: 0.5;
+  margin-right: 0.1rem;
+}
+
+.navbar-light .navbar-nav a.nav-link,
+li.nav-item a.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--darker);
+  transition: color 0.2s;
+  padding: 0.4rem 0.75rem;
+}
+
+.navbar-light .navbar-nav a.nav-link:hover,
+li.nav-item a.nav-link:hover {
+  color: var(--dark-violet);
+}
+
+.navbar-nav .nav-link i.fab,
+.navbar-nav .nav-link i.fas {
+  font-size: 0.85rem;
+  color: var(--darker);
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover i {
+  color: var(--dark-violet);
+}
+
+.devpost-item img {
+  opacity: 0.55;
+  transition: opacity 0.2s;
+}
+
+.devpost-item:hover img {
+  opacity: 1;
 }
 
 .section-title {
