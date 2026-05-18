@@ -124,7 +124,7 @@
       font-weight: 300;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--text-muted);
+      color: rgba(10,10,10,0.72);
       transition: color 0.2s;
       padding: 0.4rem 0.75rem;
     }
@@ -744,15 +744,38 @@
     #contact {
       position: relative;
       overflow: hidden;
-      background: #0a0a0a;
+      background: var(--paper);
       padding: 7rem 5vw;
     }
 
-    #contactWaveBg { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.18; }
+    .dark-mode #contact {
+      background: #0a0a0a;
+    }
 
-    #contact .section-eyebrow { color: rgba(255,255,255,0.3); position: relative; z-index: 2; }
-    #contact .section-display { color: #fff; position: relative; z-index: 2; }
-    #contact .section-rule    { background: rgba(255,255,255,0.15); position: relative; z-index: 2; }
+    #contactWaveBg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.08;
+      filter: saturate(0.55);
+    }
+
+    #contact .section-eyebrow {
+      color: var(--text-muted);
+      position: relative;
+      z-index: 2;
+    }
+    #contact .section-display {
+      color: var(--text-primary);
+      position: relative;
+      z-index: 2;
+    }
+    #contact .section-rule {
+      background: var(--rule);
+      position: relative;
+      z-index: 2;
+    }
 
     .contact-inner {
       position: relative;
@@ -771,12 +794,12 @@
       align-items: center;
       gap: 1rem;
       padding: 1.1rem 0;
-      border-bottom: 0.5px solid rgba(255,255,255,0.08);
+      border-bottom: 0.5px solid var(--rule);
       font-family: var(--font-body);
       font-size: 0.78rem;
       font-weight: 300;
       letter-spacing: 0.04em;
-      color: rgba(255,255,255,0.48);
+      color: var(--text-muted);
       text-decoration: none;
       transition: color 0.2s;
     }
@@ -784,16 +807,18 @@
     .contact-detail-line i {
       width: 16px;
       font-size: 0.75rem;
-      color: rgba(255,255,255,0.22);
+      color: var(--accent-muted);
       flex-shrink: 0;
     }
 
-    .contact-detail-line:hover { color: rgba(255,255,255,0.85); }
+    .contact-detail-line:hover {
+      color: var(--text-primary);
+    }
 
     /* Form fields */
     .contact-form-wrapper {
-      background: rgba(255,255,255,0.03);
-      border: 0.5px solid rgba(255,255,255,0.08);
+      background: var(--paper-alt);
+      border: 0.5px solid var(--rule);
       padding: 2rem 1.8rem;
     }
 
@@ -802,7 +827,7 @@
       font-size: 1.1rem;
       font-style: italic;
       font-weight: 300;
-      color: rgba(255,255,255,0.6);
+      color: var(--text-muted);
       margin-bottom: 1.5rem;
     }
 
@@ -811,20 +836,52 @@
       font-size: 0.65rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.3);
+      color: var(--accent-muted);
     }
 
     .form-control {
       background: transparent;
       border: none;
-      border-bottom: 0.5px solid rgba(255,255,255,0.18);
+      border-bottom: 0.5px solid rgba(10, 10, 10, 0.18);
       border-radius: 0;
-      color: rgba(255,255,255,0.85);
+      color: var(--text-primary);
       font-family: var(--font-body);
       font-size: 0.85rem;
       font-weight: 300;
       padding: 0.8rem 0;
       transition: border-color 0.2s;
+    }
+
+    .dark-mode .form-control {
+      color: rgba(255, 255, 255, 0.85);
+      border-bottom-color: rgba(255, 255, 255, 0.18);
+    }
+
+    .dark-mode .form-floating label {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .dark-mode #contact .section-eyebrow,
+    .dark-mode #contact .section-display {
+      color: rgba(255,255,255,0.9);
+    }
+
+    .dark-mode #contact .section-rule {
+      background: rgba(255,255,255,0.12);
+    }
+
+    .dark-mode .contact-detail-line {
+      border-bottom-color: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.48);
+    }
+
+    .dark-mode .contact-detail-line i {
+      color: rgba(255,255,255,0.22);
+    }
+
+    .dark-mode .contact-form-wrapper {
+      background: rgba(255,255,255,0.03);
+      border-color: rgba(255,255,255,0.08);
     }
 
     .form-control:focus {
@@ -945,6 +1002,12 @@
       .about-layout  { grid-template-columns: 1fr; gap: 3rem; }
       .about-card-dark { display: none; }
       .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .navbar .mx-auto.order-md-last {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        justify-content: center;
+        display: flex;
+      }
     }
 
     @media (max-width: 991px) {

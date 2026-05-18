@@ -21,7 +21,7 @@ function initializeCategoryFilter(projects) {
                     : projects.filter((project) => {
                           const categories = Array.isArray(project.Category)
                               ? project.Category
-                              : [project.Category];
+                              : project.Category.split(",").map((cat) => cat.trim());
                           return categories.some(
                               (cat) =>
                                   cat?.toLowerCase() ===
