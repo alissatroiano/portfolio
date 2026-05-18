@@ -64,9 +64,30 @@ button.navbar-toggler {
     background-color: transparent;
     border: none;
     padding: 0;
-    margin: 10px;
+    margin: 0;
 }
 
+#theme-toggle {
+    border: none;
+    background: none;
+    color: var(--darker);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    line-height: 1;
+    width: 2.8rem;
+    min-width: 2.8rem;
+    height: 2.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#theme-toggle i {
+    width: 100%;
+    text-align: center;
+}
 
 .fa-bars {
     color: var(--purple);
