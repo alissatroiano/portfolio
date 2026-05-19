@@ -64,9 +64,30 @@ button.navbar-toggler {
     background-color: transparent;
     border: none;
     padding: 0;
-    margin: 10px;
+    margin: 0;
 }
 
+#theme-toggle {
+    border: none;
+    background: none;
+    color: var(--darker);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    line-height: 1;
+    width: 2.8rem;
+    min-width: 2.8rem;
+    height: 2.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#theme-toggle i {
+    width: 100%;
+    text-align: center;
+}
 
 .fa-bars {
     color: var(--purple);
@@ -208,12 +229,12 @@ a {
 }
 
 .bg-nav {
-  background-color: rgba(239, 239, 239, 0.895) !important;
+  background-color: rgba(244, 242, 238, 0.93) !important;
 }
 
 .dark-mode .bg-nav,
 .dark-mode.bg-nav {
-  background-color: rgba(26, 26, 26, 0.9) !important;
+  background-color: rgba(8, 8, 8, 0.95) !important;
 }
 
 .dark-mode {
@@ -242,14 +263,14 @@ a {
 #theme-toggle {
   border: none;
   background: none;
-  color: var(--purple);
-  font-size: 1.2rem;
+  color: var(--darker);
+  font-size: 1rem;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .dark-mode #theme-toggle {
-  color: var(--violet);
+  color: var(--lighter);
 }
 
 #theme-toggle:hover {
@@ -539,6 +560,7 @@ letter-spacing: 1.252px;
 }
 
 a.dropdown-item.filter-btn {
+  font-family: var(--font-body);
   color: var(--dark-violet);
   font-weight: 400;
   font-size: 14px;
@@ -553,6 +575,28 @@ a.dropdown-item.filter-btn:hover {
   letter-spacing: -.51px;
   font-size: 1rem;
   background-color: #fafafa61;
+}
+
+.dropdown-menu {
+  font-family: var(--font-body);
+}
+
+.dark-mode .dropdown-menu {
+  background-color: rgba(10, 10, 10, 0.96);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark-mode .dropdown-menu .dropdown-item,
+.dark-mode .dropdown-menu .dropdown-item.filter-btn {
+  color: var(--light);
+}
+
+.dark-mode .dropdown-menu .dropdown-item:hover,
+.dark-mode .dropdown-menu .dropdown-item:focus,
+.dark-mode .dropdown-menu .dropdown-item.filter-btn:hover,
+.dark-mode .dropdown-menu .dropdown-item.filter-btn:focus {
+  color: var(--violet);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 a.nav-link {
@@ -636,6 +680,59 @@ nav.navbar {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
+}
+
+.navbar-brand .nav-at-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  color: var(--darker);
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
+.navbar-brand .star-deco {
+  font-size: 0.55rem;
+  vertical-align: super;
+  opacity: 0.5;
+  margin-right: 0.1rem;
+}
+
+.navbar-light .navbar-nav a.nav-link,
+li.nav-item a.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--darker);
+  transition: color 0.2s;
+  padding: 0.4rem 0.75rem;
+}
+
+.navbar-light .navbar-nav a.nav-link:hover,
+li.nav-item a.nav-link:hover {
+  color: var(--dark-violet);
+}
+
+.navbar-nav .nav-link i.fab,
+.navbar-nav .nav-link i.fas {
+  font-size: 0.85rem;
+  color: var(--darker);
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover i {
+  color: var(--dark-violet);
+}
+
+.devpost-item img {
+  opacity: 0.55;
+  transition: opacity 0.2s;
+}
+
+.devpost-item:hover img {
+  opacity: 1;
 }
 
 .section-title {
