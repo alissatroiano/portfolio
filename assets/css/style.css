@@ -26,7 +26,7 @@
 
       /* Text */
       --text-primary: #0a0a0a;
-      --text-muted:   rgba(10,10,10,0.50);
+      --text-muted:   rgba(10,10,10,0.65);
 
       /* Rule */
       --rule:         rgba(10,10,10,0.15);
@@ -43,7 +43,7 @@
       --nav-bg:       rgba(8,8,8,0.95) !important;
       --nav-border:   rgba(255,255,255,0.08) !important;
       --text-primary: #f4f2ee !important;
-      --text-muted:   rgba(244,242,238,0.45) !important;
+      --text-muted:   rgba(244,242,238,0.75) !important;
       --rule:         rgba(255,255,255,0.12) !important;
       --accent:       #f4f2ee !important;
       --accent-muted: rgba(244,242,238,0.35) !important;
@@ -872,11 +872,11 @@
 
     .dark-mode .contact-detail-line {
       border-bottom-color: rgba(255,255,255,0.08);
-      color: rgba(255,255,255,0.48);
+      color: rgba(255,255,255,0.72);
     }
 
     .dark-mode .contact-detail-line i {
-      color: rgba(255,255,255,0.22);
+      color: rgba(255,255,255,0.55);
     }
 
     .dark-mode .contact-form-wrapper {
@@ -886,14 +886,14 @@
 
     .form-control:focus {
       background: transparent;
-      border-bottom-color: rgba(255,255,255,0.55);
+      border-bottom-color: currentColor;
       box-shadow: none;
-      color: #fff;
+      color: inherit;
     }
 
     .form-floating > .form-control:focus ~ label,
     .form-floating > .form-control:not(:placeholder-shown) ~ label {
-      color: rgba(255,255,255,0.3);
+      color: var(--accent-muted);
     }
 
     .contact-button#button {
