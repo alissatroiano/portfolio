@@ -1,0 +1,19 @@
+
+/* Dark-mode dropdown overrides */
+.dark-mode .dropdown-menu {
+  background: #0f0f0f !important;
+  border-color: rgba(255,255,255,0.06) !important;
+}
+
+.dark-mode .dropdown-menu .dropdown-item,
+.dark-mode .dropdown-menu a.dropdown-item,
+.dark-mode .dropdown-menu a.dropdown-item.filter-btn {
+  color: rgba(244,242,238,0.9) !important;
+  background: transparent !important;
+}
+
+.dark-mode .dropdown-menu .dropdown-item:hover,
+.dark-mode .dropdown-menu a.dropdown-item:hover {
+  color: #ffffff !important;
+  background: rgba(255,255,255,0.03) !important;
+}
