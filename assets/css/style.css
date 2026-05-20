@@ -1010,6 +1010,141 @@
       }
     }
 
+    /* ------------------ Gallery */
+#gallery {
+  padding: 20px;
+  margin-bottom: 250px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 10px;
+  /* box-shadow: rgba(32, 6, 85, 0.905) 0px 2px 4px, rgba(160, 117, 245, 0.3) 0px 7px 13px -3px, rgba(106, 22, 232, 0.2) 0px -3px 0px inset; */
+  margin: 10px auto;
+}
+
+img.gallery-item {
+  vertical-align: middle;
+
+}
+
+.gallery .gallery-item img {
+  transition: 0.3s;
+  border-radius: 4.6585%;
+  box-shadow: rgba(32, 6, 85, 0.905) 0px 2px 4px, rgb(19, 2, 54) 0px 7px 13px -3px, rgba(106, 22, 232, 0.2) 0px -3px 0px inset;
+}
+
+.gallery .gallery-links .preview-link,
+.gallery .gallery-links .details-link {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+  line-height: 1;
+  margin: 30px 8px 0 8px;
+}
+
+.gallery .gallery-links .preview-link:hover,
+.gallery .gallery-links .details-link:hover {
+  color: #fff;
+}
+
+.gallery .gallery-links .details-link {
+  font-size: 30px;
+  line-height: 0;
+}
+
+.gallery .gallery-item:hover .gallery-links {
+  opacity: 1;
+}
+
+.gallery .gallery-item:hover .preview-link,
+.gallery .gallery-item:hover .details-link {
+  margin-top: 0;
+}
+
+.gallery .gallery-item:hover img {
+  opacity: 1;
+  -webkit-animation: flash 2.5s;
+  animation: flash 3.5s;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.glightbox-clean .gslide-description {
+  background: #222425;
+}
+
+.glightbox-clean .gslide-title {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+#projectModal1 {
+  min-width: 100vw;
+}
+
+.img-wrapper,
+.img-wrapper--reverse {
+  width: 800px;
+  border: none;
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+
+.modal-dialog.modal-dialog-centered.modal-dialog-scrollable.w-100,
+.modal-dialog-scrollable .modal-content {
+  min-width: 90vw;
+  overflow: auto;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-weight: 500;
+}
+
+.logo-img {
+  max-width: 100%;
+  width: 50px;
+  height: auto;
+}
+
+::selection {
+  color: var(--light);
+  background: var(--violet);
+}
+
+
     @media (max-width: 991px) {
       .hero-at { font-size: clamp(5rem, 14vw, 9rem); }
     }

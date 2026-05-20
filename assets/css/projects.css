@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lexend+Giga:wght@100..900&display=swap');
-
-/* Global Styles */
 :root {
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-body:  'DM Sans', sans-serif;
   --primary-color: #6234bc;
   --purple: #6234bc;
 	--purple2: #4d24a1;
@@ -25,7 +25,6 @@
   --yellow-1: #FDD935;
   --yellow-2: #E9BD43;
   --yellow-3: #F5B935;
-  --purple: #6234bc;
   --red: #E83939;
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
 	--gap: calc(var(--size) / 14);
@@ -148,6 +147,49 @@ button.navbar-toggler {
   text-transform: lowercase;
   font-weight: 500;
   font-size: 14px;
+}
+
+.section-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.55);
+  margin-bottom: 0.5rem;
+}
+
+.section-display {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  line-height: 0.88;
+  letter-spacing: 0.015em;
+  margin: 0;
+}
+
+.section-rule {
+  width: 40px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.15);
+  margin: 1.4rem 0 2rem;
+}
+
+p {
+  font-size: 14px !important;
+}
+
+.dark-mode .section-eyebrow {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.dark-mode .section-display h2,
+.dark-mode .section-display {
+  color: #fafafa !important;
+}
+
+
+.dark-mode .section-rule {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .text-purple {
@@ -298,7 +340,7 @@ a {
 }
 
 .text-mark {
-  color: var(--violet);
+  color: var(--dark);
   font-weight: 660;
   text-transform: uppercase;
   font-size: 1rem;
@@ -309,23 +351,22 @@ a {
 }
 
 .text-light-purple {
-  color: var(--violet);
+  color: var(--dark-grey);
 }
 
 .award-text {
-  background-color: var(--dark-violet);
-  color: #fafafa;
-  font-family: 'Dosis', serif;;
+  font-family: var(--font-serif);
+  background: transparent;
   padding: 5px;
 }
 
 .award-text a {
-  color: var(--link-blue);
+  color: var(--blue);
   text-decoration: none;
-  padding: 5px;
-  text-transform: uppercase;
   font-weight: 500;
-  animation: flash 5s;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.25rem;
 }
 
 .text-purple {
@@ -333,25 +374,23 @@ a {
 }
 
 .text-mark-projects {
-  color: var(--violet);
+  font-family: var(--font-display);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .25px;
 }
 
 .project-button {
-  background-color: var(--dark-violet);
-  color: #fafafa;
-  box-shadow: 2px -2px 5px var(--grey);
-  padding: 12px;
+  background-color: transparent;
+  color: var(--blue);
   border: none;
-  border-radius: 50px;
   text-decoration: none;
-  font-family: 'Dosis', serif;;
-  text-transform: uppercase;
+  font-family: var(--font-serif);
   letter-spacing: 1.25px;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 16px;
+  color: var(--dark-grey);
+  font-style: italic;
 }
 
 a>button.project-button {
@@ -361,30 +400,29 @@ a>button.project-button {
 a.cta-btn:hover,
 a#resumeBtn:hover,
 .project-button:hover {
-  background-color: var(--violet);
-  border: none;
-  text-decoration: none;
-  color: #fafafa;
-  padding: 13px;
+ color: var(--dark-grey);
+ font-size: 17px;
+ font-weight: 600;
 }
 
 /*-------------------------------- Headers and text */
 h1,
+h1,
 h2,
-h3 {
-  font-family: 'Dosis', serif;;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
+h3,
 h4,
 h5,
 h6 {
-  font-family: 'Dosis', serif;;
-  text-transform: uppercase;
+  font-family: var(--font-serif);
   font-weight: 500;
+  text-transform: none;
+  margin: 0;
+}
 
+.folio-title,
+.section-display,
+.navbar-brand .nav-at-logo {
+  font-family: var(--font-display);
 }
 
 h1#title {
@@ -394,18 +432,16 @@ h1#title {
 
 #subtitle {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 8px;
-  font-family: 'Futura-PT',
-    sans-serif;
+  font-family: var(--font-body);
   font-weight: 400;
-  text-align: center;
 }
 
 li,
 p {
-  font-family: 'Dosis', serif;;
-  font-weight: light;
+  font-family: var(--font-body);
+  font-weight: 400;
 }
 
 .display-1,
@@ -459,13 +495,16 @@ hr {
 }
 
 .text-light-purple {
-  color: var(--violet);
+  color: var(--dark-grey);
+}
+
+.dark-mode .text-light-purple {
+  color: var(--grey);
 }
 
 .award-text {
-  background-color: var(--dark-violet);
   color: #fafafa;
-  font-family: 'Dosis', serif;;
+  font-family: var(--font-body);
   padding: 5px;
 }
 
@@ -490,7 +529,7 @@ a.text-purple.folio-link:hover {
 }
 
 .text-mark-projects {
-  color: var(--violet);
+  color: var(--dark-grey);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .25px;
@@ -519,7 +558,7 @@ a.text-purple.folio-link:hover {
 }
 
 .text-lighter.text-center.display-1 {
-  font-family: 'Futura-PT', sans-serif;
+  font-family: var(--font-body);
   letter-spacing: 30px;
   margin-top: 120px;
 }
@@ -561,20 +600,19 @@ letter-spacing: 1.252px;
 
 a.dropdown-item.filter-btn {
   font-family: var(--font-body);
-  color: var(--dark-violet);
+  color: var(--dark-grey);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1.25px;
 }
 
 a.dropdown-item.filter-btn:hover {
-  color: var(--violet);
+  color: var(--grey);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: -.51px;
   font-size: 1rem;
-  background-color: #fafafa61;
 }
 
 .dropdown-menu {
@@ -866,7 +904,7 @@ img.gallery-item {
 }
 
 .badge {
-  font-family: 'Futura-PT', sans-serif;
+  font-family: var(--font-body);
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: .751px;
@@ -954,6 +992,12 @@ p.tech-stack {
   overflow: auto;
 }
 
+.modal-body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: .5px;
+}
+
 /* Modal Dark Mode Styles */
 .dark-mode .modal-content {
   background-color: #0a0a0a !important;
@@ -978,7 +1022,10 @@ p.tech-stack {
 
 .dark-mode .modal-body {
   background-color: #0a0a0a !important;
-  color: #fafafa !important;
+  color: #aaaaaa !important;
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: .5px;
 }
 
 .dark-mode .modal-body h1,
@@ -995,7 +1042,7 @@ p.tech-stack {
 
 .dark-mode .modal-body .text-purple,
 .dark-mode .modal-body .text-light-purple {
-  color: #9E7AE6 !important;
+  color: #666666 !important;
 }
 
 .dark-mode .modal-footer {
@@ -1004,20 +1051,22 @@ p.tech-stack {
 }
 
 .dark-mode .modal-footer .project-button {
-  background-color: var(--dark-violet) !important;
-  color: #fafafa !important;
+  background-color: none;
+  color: var(--link-blue) !important;
+    font-weight: 600;
+
 }
 
 .dark-mode .modal-footer .project-button:hover {
-  background-color: var(--violet) !important;
-  color: #fafafa !important;
+  background-color: none;
+  color: var(--link-blue) !important;
+  font-size: 17px;
 }
 
 button.btn-close.me-3.mt-3,
 .dark-mode .btn-close {
-  background-color: var(--accent-color) !important;
+  background-color: var(--grey) !important;
   opacity: 0.68;
-  color: #fafafa !important;
 }
 
 .dark-mode .btn-close:hover {
@@ -1025,11 +1074,11 @@ button.btn-close.me-3.mt-3,
 }
 
 .dark-mode .text-mark-projects {
-  color: #9E7AE6 !important;
+  color: #888888 !important;
 }
 
 .dark-mode .text-mark-projects i {
-  color: #9E7AE6 !important;
+  color: #888888 !important;
 }
 
 @media only screen and (min-width: 768px) {
