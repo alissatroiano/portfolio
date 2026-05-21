@@ -484,33 +484,7 @@
       50%       { transform: scaleY(0.45); opacity: 0.7; }
     }
 
-    /* ═══════════════════════════════════════════════════
-       SECTION SYSTEM
-       ═══════════════════════════════════════════════════ */
-    .section-eyebrow {
-      font-family: var(--font-body);
-      font-size: 0.62rem;
-      font-weight: 300;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 0.5rem;
-    }
-
-    .section-display {
-      font-family: var(--font-display);
-      font-size: clamp(3.2rem, 7vw, 6.5rem);
-      line-height: 0.88;
-      letter-spacing: 0.015em;
-      color: var(--text-primary);
-    }
-
-    .section-rule {
-      width: 40px;
-      height: 1px;
-      background: var(--rule);
-      margin: 1.4rem 0 2rem;
-    }
+    /* SECTION SYSTEM (moved to page-specific CSS where needed) */
 
     /* ═══════════════════════════════════════════════════
        ABOUT
@@ -1358,65 +1332,7 @@
   #project-container .row { grid-template-columns: 1fr; }
 }
 
-/* ── Modal styles (preserve existing) ───────────── */
-.folio-title { font-family: var(--font-display); letter-spacing: 0.04em; }
-
-.award-text {
-  font-family: var(--font-body);
-  font-size: 0.65rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  display: block;
-  margin-top: 0.4rem;
-}
-
-.text-light-purple { color: #7520de; }
-
-.text-mark-projects {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  font-weight: 400;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--text-primary);
-}
-
-.tech-stack {
-  font-family: var(--font-body);
-  font-size: 0.72rem;
-  font-weight: 300;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
-}
-
-.project-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: #0a0a0a;
-  color: #fff;
-  font-family: var(--font-body);
-  font-size: 0.6rem;
-  font-weight: 300;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  padding: 0.65rem 1.4rem;
-  border: none;
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
-
-.project-button:hover { opacity: 0.75; }
-.dark-mode .project-button { background: rgba(255,255,255,0.9); color: #0a0a0a; }
-.link-font { color: #7520de; }
-.img-wrapper, .img-wrapper--reverse { width: 100%; max-width: 100%; height: auto; display: block; }
-.book-sample { max-height: 340px; object-fit: contain; }
-.border-start-lg { border-left: 0.5px solid var(--rule); padding-left: 1.5rem; }
-.modal-content { background: var(--paper); color: var(--text-primary); }
-.dark-mode .modal-content { background: #111; color: rgba(255,255,255,0.88); }
-.dark-mode .modal-header, .dark-mode .modal-footer { border-color: rgba(255,255,255,0.08); }
-  }
+/* Project/folio-specific modal and button styles are defined in assets/css/projects.css */
 
 @-webkit-keyframes flash {
   0% {
@@ -1453,46 +1369,7 @@ body {
   scroll-behavior: smooth;
 }
 
-#projectModal1 {
-  min-width: 100vw;
-}
-
-.img-wrapper,
-.img-wrapper--reverse {
-  width: 800px;
-  border: none;
-  display: flex;
-  max-width: 100%;
-  position: relative;
-  height: auto;
-  overflow: hidden;
-}
-
-.modal-dialog.modal-dialog-centered.modal-dialog-scrollable.w-100,
-.modal-dialog-scrollable .modal-content {
-  min-width: 90vw;
-  overflow: auto;
-}
-
-.display-1,
-.display-2,
-.display-3,
-.display-4,
-.display-5,
-.display-6 {
-  font-weight: 500;
-}
-
-.logo-img {
-  max-width: 100%;
-  width: 50px;
-  height: auto;
-}
-
-::selection {
-  color: var(--light);
-  background: var(--violet);
-}
+/* Project-specific modal, image wrapper, and selection styles moved to `assets/css/projects.css` */
 
 
     @media (max-width: 991px) {
