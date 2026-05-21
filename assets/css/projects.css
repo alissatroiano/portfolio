@@ -617,7 +617,7 @@ a.text-purple.folio-link:hover {
 /* ------------------ Gallery */
 #gallery {
   padding: 20px;
-  margin-bottom: 250px;
+  margin: 0 20px;
 }
 
 .gallery-item {
@@ -782,6 +782,8 @@ p.tech-stack {
   /* Padding */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   /* Optional shadow for better visibility */
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 #btn-back-to-top:hover {
@@ -805,6 +807,25 @@ p.tech-stack {
   }
 }
 
+/* Mobile optimizations for back-to-top button */
+@media (max-width: 768px) {
+  #btn-back-to-top {
+    bottom: 80px;
+    right: 15px;
+    padding: 12px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #btn-back-to-top {
+    bottom: 70px;
+    right: 12px;
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+}
+
 #odditieBranding {
   max-width: 100%;
   height: auto;
@@ -817,9 +838,64 @@ p.tech-stack {
   overflow: auto;
 }
 
+.modal-content {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--dark);
+}
+
+.modal-content h1,
+.modal-content h2,
+.modal-content h3,
+.modal-content h4,
+.modal-content h5,
+.modal-content h6,
+.modal-content p,
+.modal-content span,
+.modal-content a,
+.modal-content .text-mark-projects,
+.modal-content .award-text,
+.modal-content .tech-stack,
+.modal-content .project-button {
+  font-family: var(--font-body);
+}
+
+.modal-content h1,
+.modal-content h2,
+.modal-content h3,
+.modal-content h4,
+.modal-content h5,
+.modal-content h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.modal-content p,
+.modal-content span,
+.modal-content a,
+.modal-content .award-text,
+.modal-content .tech-stack {
+  font-size: 0.95rem;
+}
+
+.modal-content .project-button {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.modal-content .award-text a {
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 0.95rem;
+}
+
 .modal-body {
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: .5px;
 }
 

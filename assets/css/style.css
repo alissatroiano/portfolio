@@ -14,6 +14,7 @@
       --font-display: 'Bebas Neue', sans-serif;
       --font-serif:   'Cormorant Garamond', serif;
       --font-body:    'DM Sans', sans-serif;
+      --text-primary: 'Bebas Neue', sans-serif;
 
       /* Accent — pulled from business card white-on-black */
       --accent:       #0a0a0a;
@@ -30,8 +31,21 @@
 
       /* Rule */
       --rule:         rgba(10,10,10,0.15);
+      --text-gray:      rgb(85, 85, 85);
+      --text-gray-muted: rgba(85, 85, 85, 0.6);
     }
 
+    h1, h2 {
+      font-family: var(--text-primary);
+    }
+
+    h2.section-display {
+      font-family: var(--font-display);
+    }
+
+    .section-eyebrow {
+      font-family: var(--font-serif);
+    }
     /* Dark mode overrides — preserve existing .dark-mode system */
     .dark-mode,
     .dark-mode html,
@@ -801,7 +815,7 @@
       font-size: 1.1rem;
       font-style: italic;
       font-weight: 300;
-      color: var(--text-muted);
+      color: var(--);
       margin-bottom: 1.5rem;
     }
 
