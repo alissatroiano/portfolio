@@ -216,7 +216,6 @@ p {
 }
 
 ::-moz-selection {
-  /* Code for Firefox */
   color: var(--light);
   background: var(--violet);
 }
@@ -231,10 +230,6 @@ body {
   scroll-behavior: smooth;
 }
 
-#projectModal1 {
-  min-width: 100vw;
-}
-
 .img-wrapper,
 .img-wrapper--reverse {
   width: 800px;
@@ -244,12 +239,6 @@ body {
   position: relative;
   height: auto;
   overflow: hidden;
-}
-
-.modal-dialog.modal-dialog-centered.modal-dialog-scrollable.w-100,
-.modal-dialog-scrollable .modal-content {
-  min-width: 90vw;
-  overflow: auto;
 }
 
 .display-1,
@@ -265,16 +254,6 @@ body {
   max-width: 100%;
   width: 50px;
   height: auto;
-}
-
-::selection {
-  color: var(--light);
-  background: var(--violet);
-}
-
-html,
-body {
-  scroll-behavior: smooth;
 }
 
 a {
@@ -416,16 +395,7 @@ a>button.project-button {
   text-decoration: none;
 }
 
-a.cta-btn:hover,
-a#resumeBtn:hover,
-.project-button:hover {
- color: var(--dark-grey);
- font-size: 17px;
- font-weight: 600;
-}
-
 /*-------------------------------- Headers and text */
-h1,
 h1,
 h2,
 h3,
@@ -470,20 +440,6 @@ p {
 .display-5,
 .display-6 {
   font-weight: 500;
-}
-
-::selection {
-  color: var(--light);
-  background: var(--violet);
-}
-
-html,
-body {
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
 }
 
 .bg-gray {
@@ -533,7 +489,6 @@ hr {
 
 .img-small {
   max-width: 100%;
-  /* width: 250px; */
   height: auto;
 }
 
@@ -574,12 +529,6 @@ a.text-purple.folio-link:hover {
 .bg-custom {
   background-color: rgb(58, 58, 58);
   color: #fafafa;
-}
-
-.text-lighter.text-center.display-1 {
-  font-family: var(--font-body);
-  letter-spacing: 30px;
-  margin-top: 120px;
 }
 
 .section-title {
@@ -623,13 +572,11 @@ a.text-purple.folio-link:hover {
 .gallery-item {
   position: relative;
   border-radius: 10px;
-  /* box-shadow: rgba(32, 6, 85, 0.905) 0px 2px 4px, rgba(160, 117, 245, 0.3) 0px 7px 13px -3px, rgba(106, 22, 232, 0.2) 0px -3px 0px inset; */
   margin: 10px auto;
 }
 
 img.gallery-item {
   vertical-align: middle;
-
 }
 
 .gallery .gallery-item img {
@@ -668,28 +615,12 @@ img.gallery-item {
 
 .gallery .gallery-item:hover img {
   opacity: 1;
-  -webkit-animation: flash 2.5s;
   animation: flash 3.5s;
 }
 
-@-webkit-keyframes flash {
-  0% {
-    opacity: .4;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes flash {
-  0% {
-    opacity: .4;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: .4; }
+  100% { opacity: 1; }
 }
 
 .glightbox-clean .gslide-description {
@@ -746,20 +677,8 @@ img.gallery-item {
 }
 
 @keyframes adjust-position {
-
-  /* Start position: shift entire column up, but not so that it goes out of view */
-  from {
-    transform: translateY(calc(-100% + 100vh));
-  }
-
-  /* End position: shift entire column down, but not so that it goes out of view */
-  to {
-    transform: translateY(calc(100% - 100vh));
-  }
-}
-
-#projectModal1 {
-  min-width: 100vw;
+  from { transform: translateY(calc(-100% + 100vh)); }
+  to   { transform: translateY(calc(100% - 100vh)); }
 }
 
 p.tech-stack {
@@ -771,17 +690,12 @@ p.tech-stack {
   position: fixed;
   bottom: 60px;
   right: 10px;
-  /* Distance from the right */
   z-index: 1000;
-  /* High z-index to be above other content */
   color: #fafafa;
   background-color: #6d62ff;
   border-radius: 50%;
-  /* Rounded corners */
   padding: 10px;
-  /* Padding */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  /* Optional shadow for better visibility */
   font-size: 1.5rem;
   transition: all 0.3s ease;
 }
@@ -789,25 +703,17 @@ p.tech-stack {
 #btn-back-to-top:hover {
   position: fixed;
   background-color: var(--dark-violet);
-  /* Background color */
   color: #fafafa;
   animation: pulse 1s infinite;
   transition: .3s;
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  70% {
-    transform: scale(.9);
-  }
-    100% {
-    transform: scale(1);
-  }
+  0%   { transform: scale(1); }
+  70%  { transform: scale(.9); }
+  100% { transform: scale(1); }
 }
 
-/* Mobile optimizations for back-to-top button */
 @media (max-width: 768px) {
   #btn-back-to-top {
     bottom: 80px;
@@ -832,160 +738,289 @@ p.tech-stack {
   max-height: fit-content;
 }
 
+@media only screen and (min-width: 768px) {
+  .breadcrumb-item a {
+    color: var(--primary-color);
+    text-transform: lowercase;
+    font-size: 1rem;
+  }
+}
+
+
+/* ═══════════════════════════════════════════════════
+   MODAL REDESIGN
+   Dark glass panels · wave-card tokens · editorial type
+   Matches the site's black-on-black identity from
+   index.html hero, skills, and project cards.
+   ═══════════════════════════════════════════════════ */
+
+/* ── Dialog sizing ───────────────────────────────── */
 .modal-dialog.modal-dialog-centered.modal-dialog-scrollable.w-100,
 .modal-dialog-scrollable .modal-content {
-  min-width: 90vw;
+  min-width: min(92vw, 960px);
+  max-width: 960px;
   overflow: auto;
 }
 
+/* ── Modal chrome ────────────────────────────────── */
 .modal-content {
-  font-family: var(--font-body);
-  font-size: 15px;
-  line-height: 1.75;
-  color: var(--dark);
+  background: #0f0f0f !important;
+  border: 0.5px solid rgba(255,255,255,0.10) !important;
+  border-radius: 0 !important;
+  box-shadow:
+    0 40px 100px rgba(0,0,0,0.75),
+    0 0 0 0.5px rgba(255,255,255,0.06) inset;
+  overflow: hidden;
+  font-family: 'DM Sans', sans-serif;
+  color: rgba(244,242,238,0.82);
 }
 
-.modal-content h1,
-.modal-content h2,
-.modal-content h3,
-.modal-content h4,
-.modal-content h5,
-.modal-content h6,
-.modal-content p,
-.modal-content span,
-.modal-content a,
-.modal-content .text-mark-projects,
-.modal-content .award-text,
-.modal-content .tech-stack,
-.modal-content .project-button {
-  font-family: var(--font-body);
-}
-
-.modal-content h1,
-.modal-content h2,
-.modal-content h3,
-.modal-content h4,
-.modal-content h5,
-.modal-content h6 {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-}
-
-.modal-content p,
-.modal-content span,
-.modal-content a,
-.modal-content .award-text,
-.modal-content .tech-stack {
-  font-size: 0.95rem;
-}
-
-.modal-content .project-button {
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-
-.modal-content .award-text a {
-  font-family: var(--font-body);
-  font-style: normal;
-  font-size: 0.95rem;
-}
-
-.modal-body {
-  font-family: var(--font-body);
-  font-size: 15px;
-  letter-spacing: .5px;
-}
-
-/* Modal Dark Mode Styles */
-.dark-mode .modal-content {
-  background-color: #0a0a0a !important;
-  color: #fafafa !important;
-  border: 1px solid #333333 !important;
-}
-
-.dark-mode .modal-header {
-  background-color: #0a0a0a !important;
-  color: #fafafa !important;
-  border-bottom: 1px solid #333333 !important;
-}
-
-.dark-mode .modal-header h1,
-.dark-mode .modal-header h2,
-.dark-mode .modal-header h3,
-.dark-mode .modal-header h4,
-.dark-mode .modal-header h5,
-.dark-mode .modal-header h6 {
-  color: #fafafa !important;
-}
-
-.dark-mode .modal-body {
-  background-color: #0a0a0a !important;
-  color: #aaaaaa !important;
-  font-family: var(--font-body);
-  font-size: 13px;
-  letter-spacing: .5px;
-}
-
-.dark-mode .modal-body h1,
-.dark-mode .modal-body h2,
-.dark-mode .modal-body h3,
-.dark-mode .modal-body h4,
-.dark-mode .modal-body h5,
-.dark-mode .modal-body h6,
-.dark-mode .modal-body p,
-.dark-mode .modal-body span,
-.dark-mode .modal-body a {
-  color: #fafafa !important;
-}
-
-.dark-mode .modal-body .text-purple,
-.dark-mode .modal-body .text-light-purple {
-  color: #666666 !important;
-}
-
-.dark-mode .modal-footer {
-  background-color: #0a0a0a !important;
-  border-top: 1px solid #333333 !important;
-}
-
-.dark-mode .modal-footer .project-button {
-  background-color: none;
-  color: var(--link-blue) !important;
-    font-weight: 600;
-
-}
-
-.dark-mode .modal-footer .project-button:hover {
-  background-color: none;
-  color: var(--link-blue) !important;
-  font-size: 17px;
-}
-
+/* ── Close button ────────────────────────────────── */
 button.btn-close.me-3.mt-3,
-.dark-mode .btn-close {
-  background-color: var(--grey) !important;
-  opacity: 0.68;
+.modal .btn-close {
+  background-color: rgba(255,255,255,0.07) !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z' fill='rgba(255,255,255,0.55)'/%3E%3C/svg%3E") !important;
+  border: 0.5px solid rgba(255,255,255,0.12) !important;
+  border-radius: 0 !important;
+  opacity: 1 !important;
+  width: 32px;
+  height: 32px;
+  transition: background 0.2s, border-color 0.2s;
 }
 
-.dark-mode .btn-close:hover {
-  opacity: 1;
+button.btn-close.me-3.mt-3:hover,
+.modal .btn-close:hover {
+  background-color: rgba(255,255,255,0.15) !important;
+  border-color: rgba(255,255,255,0.3) !important;
 }
 
-.dark-mode .text-mark-projects {
-  color: #888888 !important;
+/* ── Header ──────────────────────────────────────── */
+.modal-header {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.045) 0%,
+    rgba(255,255,255,0.016) 100%
+  ) !important;
+  border-bottom: 0.5px solid rgba(255,255,255,0.09) !important;
+  padding: 2.4rem 2.4rem 1.8rem !important;
+  position: relative;
+  display: block;
 }
 
-.dark-mode .text-mark-projects i {
-  color: #888888 !important;
+/* Top-edge shine */
+.modal-header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0.28) 40%,
+    rgba(255,255,255,0.07) 100%
+  );
+  pointer-events: none;
 }
 
-@media only screen and (min-width: 768px) {
-  .breadcrumb-item a {
-  color: var(--primary-color);
-  text-transform: lowercase;
-  font-size: 1rem;
+/* Folio display title */
+.modal-header .folio-title,
+.modal-header h1.folio-title {
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: clamp(1.8rem, 5vw, 3.2rem) !important;
+  line-height: 0.92 !important;
+  letter-spacing: 0.03em !important;
+  color: #f4f2ee !important;
+  font-weight: 400 !important;
+  margin: 0 0 0.5rem !important;
 }
+
+.modal-header h1.title {
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: clamp(1.8rem, 5vw, 3rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.03em !important;
+  color: #f4f2ee !important;
+  margin: 0 0 0.5rem !important;
+}
+
+/* Subtitle — muted */
+.modal-header .text-light-purple,
+.modal-header h1 .text-light-purple {
+  color: rgba(244,242,238,0.35) !important;
+}
+
+/* Award badge — gold tone */
+.modal-header .award-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0.58rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  color: rgba(200,168,75,0.82) !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin-top: 0.9rem;
+  font-style: normal !important;
+}
+
+.modal-header .award-text::before {
+  content: '✦';
+  font-size: 0.5em;
+  opacity: 0.65;
+}
+
+.modal-header .award-text a,
+.modal-header .award-text a.link-font {
+  color: rgba(200,168,75,0.82) !important;
+  text-decoration: none !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-style: normal !important;
+  font-size: inherit !important;
+  font-weight: 300 !important;
+  transition: opacity 0.2s;
+}
+
+.modal-header .award-text a:hover { opacity: 0.65; }
+
+/* ── Body ────────────────────────────────────────── */
+.modal-body {
+  background: transparent !important;
+  padding: 2rem 2.4rem !important;
+  color: rgba(244,242,238,0.62) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0.82rem !important;
+  font-weight: 300 !important;
+  line-height: 1.85 !important;
+  letter-spacing: 0.01em;
+}
+
+/* Section labels */
+.modal-body .text-mark-projects,
+.modal-body h2.h1.text-mark-projects,
+.modal-body h2.h5.text-mark-projects,
+.modal-body h3.h5.text-mark-projects {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0.5rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.32em !important;
+  text-transform: uppercase !important;
+  color: rgba(244,242,238,0.28) !important;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.55rem;
+}
+
+.modal-body .text-mark-projects i {
+  color: rgba(244,242,238,0.2) !important;
+  font-size: 0.48rem !important;
+}
+
+/* Body text */
+.modal-body p,
+.modal-body p.fs-lg,
+.modal-body p.mb-0 {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0.84rem !important;
+  font-weight: 300 !important;
+  line-height: 1.85 !important;
+  color: rgba(244,242,238,0.58) !important;
+  margin-bottom: 0.5rem;
+}
+
+/* Tech stack pill text */
+.modal-body p.tech-stack {
+  font-size: 0.74rem !important;
+  color: rgba(244,242,238,0.38) !important;
+  letter-spacing: 0.05em !important;
+  line-height: 1.7 !important;
+}
+
+/* Column divider */
+.modal-body .border-start-lg {
+  border-left: 0.5px solid rgba(255,255,255,0.08) !important;
+  padding-left: 2rem;
+}
+
+/* Media containers */
+.modal-body .embed-responsive,
+.modal-body .ratio {
+  border: 0.5px solid rgba(255,255,255,0.08);
+  overflow: hidden;
+}
+
+/* Project images */
+.modal-body img.project-img,
+.modal-body .img-wrapper--reverse.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0.5px solid rgba(255,255,255,0.07);
+}
+
+/* ── Footer ──────────────────────────────────────── */
+.modal-footer {
+  background: rgba(255,255,255,0.02) !important;
+  border-top: 0.5px solid rgba(255,255,255,0.08) !important;
+  padding: 1.1rem 2.4rem !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 0.55rem !important;
+  justify-content: flex-start !important;
+}
+
+/* CTA buttons */
+.modal-footer a,
+.modal-footer a > button.project-button,
+.modal-footer button.project-button,
+.modal-footer .project-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+  background: rgba(255,255,255,0.055) !important;
+  color: rgba(244,242,238,0.7) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0.54rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  padding: 0.6rem 1.4rem !important;
+  border: 0.5px solid rgba(255,255,255,0.14) !important;
+  border-radius: 0 !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  transition: background 0.22s, color 0.22s, border-color 0.22s !important;
+  font-style: normal !important;
+  line-height: 1 !important;
+}
+
+.modal-footer a:hover,
+.modal-footer a > button.project-button:hover,
+.modal-footer button.project-button:hover,
+.modal-footer .project-button:hover {
+  background: rgba(255,255,255,0.92) !important;
+  color: #0a0a0a !important;
+  border-color: rgba(255,255,255,0.92) !important;
+  font-size: 0.54rem !important;
+  font-weight: 300 !important;
+}
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 768px) {
+  .modal-header { padding: 1.8rem 1.4rem 1.4rem !important; }
+  .modal-body   { padding: 1.4rem !important; }
+  .modal-footer { padding: 1rem 1.4rem !important; }
+
+  .modal-body .border-start-lg {
+    border-left: none !important;
+    border-top: 0.5px solid rgba(255,255,255,0.08) !important;
+    padding-left: 0 !important;
+    padding-top: 1.4rem;
+    margin-top: 0.5rem;
+  }
 }

@@ -20,7 +20,7 @@
 
 <body>
 
-  <!-- NAV (unchanged) -->
+  <!-- NAV -->
   <nav id="mainNav" class="navbar fixed-top navbar-expand-md navbar-light shadow-sm">
     <div class="container-fluid px-3 px-md-4">
       <a class="navbar-brand nav-link d-flex align-items-center gap-2" href="index.html">
@@ -71,12 +71,8 @@
   <!-- /NAV -->
 
 
-  <!-- ═══════════════════════════════════════════════════
-       GALLERY — full-bleed wave bg + glass cards
-       ═══════════════════════════════════════════════════ -->
+  <!-- GALLERY -->
   <section id="gallery">
-
-    <!-- Wave canvas: fills entire section background -->
     <canvas id="galleryWaveCanvas"></canvas>
 
     <div class="container">
@@ -88,23 +84,19 @@
           <p class="gallery-desc">
             Use the filter bar to browse by category, then click any card to view the full project.
           </p>
-          <!-- Filter bar injected here by portfolio.js -->
         </div>
       </div>
     </div>
 
-    <!-- Cards injected here by portfolio.js -->
     <div id="project-container" class="container my-1 p-3">
       <div class="row d-flex g-3 justify-content-center mb-5 pb-5"></div>
     </div>
-
-
   </section>
   <!-- /GALLERY -->
 
 
   <!-- ═══════════════════════════════════════════════════
-       MODALS (all unchanged from original)
+       MODALS
        ═══════════════════════════════════════════════════ -->
 
   <!-- Logic Lift -->
@@ -113,64 +105,60 @@
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
         <div class="modal-header">
-          <div class="row d-flex justify-content-center"><div class="col-12">
-            <h1 id="projectModal27Label" class="folio-title display-3 text-center text-sm-start">Logic Lift: <span class="text-light-purple">Legacy Mainframe to Modern Logic</span></h1>
-            <span class="award-text text-center text-sm-start"><a class="link-font" href="https://devpost.com/software/the-bunny-ear-adventure" target="_blank"> Honorable Mention - Gemini 3 DeepMind Hackathon, 04/2026 </a></span>
-          </div></div>
+          <h1 id="projectModal27Label" class="folio-title display-3">Logic Lift <span class="text-light-purple">— Legacy Mainframe to Modern Logic</span></h1>
+          <div class="award-text"><a href="https://devpost.com/software/the-bunny-ear-adventure" target="_blank">Honorable Mention — Gemini 3 DeepMind Hackathon, 04/2026</a></div>
         </div>
         <div class="modal-body">
           <div class="row">
             <div class="col-lg-7 mb-4 mb-lg-0">
-              <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
-                <div class="embed-responsive text-center align-items-center justify-content-center ratio ratio-16x9">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/YUrrsM74gu4?si=j8vOrIQXIS26t9XN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i> About</h2>
-                <p class="fs-lg mb-0">Logic Lift is an autonomous modernization platform that deconstructs monolithic COBOL systems and reconstructs them into future-proof, cloud-native Python.</p>
+              <div class="ratio ratio-16x9 mb-4">
+                <iframe src="https://www.youtube.com/embed/YUrrsM74gu4?si=j8vOrIQXIS26t9XN" title="Logic Lift demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
+              <div class="text-mark-projects"><i class="fas fa-circle-info"></i> About</div>
+              <p>Logic Lift is an autonomous modernization platform that deconstructs monolithic COBOL systems and reconstructs them into future-proof, cloud-native Python.</p>
             </div>
             <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
-              <h3 class="h5 d-flex align-items-center text-mark-projects"><i class="fas fa-circle-question mx-1"></i> Problem</h3>
-              <p class="my-3">While navigating the job market, I noticed a surprising surge in advertisements for COBOL—a language created in 1959. Over 95% of ATM swipes and 43% of banking systems still run on these legacy mainframes, yet the experts who maintain them are retiring.</p>
-              <h3 class="h5 d-flex align-items-center text-mark-projects my-2"><i class="fas fa-lightbulb me-2"></i> Solution</h3>
-              <p class="my-3">Logic Lift identifies buried business rules and PIC-clause data mappings, generates parity test suites (pytest) to prove new logic behaves identically, aggregates processed modules into a deployable queue file, and maps the legacy codebase topology into a modern distributed architecture.</p>
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="tech-stack">Google AI Studio, TypeScript, React, Gemini 3</p>
+              <div class="text-mark-projects"><i class="fas fa-circle-question"></i> Problem</div>
+              <p>While navigating the job market, I noticed a surprising surge in advertisements for COBOL—a language created in 1959. Over 95% of ATM swipes and 43% of banking systems still run on these legacy mainframes, yet the experts who maintain them are retiring.</p>
+              <div class="text-mark-projects"><i class="fas fa-lightbulb"></i> Solution</div>
+              <p>Logic Lift identifies buried business rules and PIC-clause data mappings, generates parity test suites (pytest) to prove new logic behaves identically, aggregates processed modules into a deployable queue file, and maps the legacy codebase topology into a modern distributed architecture.</p>
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">Google AI Studio · TypeScript · React · Gemini 3</p>
             </div>
           </div>
-          <div class="modal-footer">
-            <a class="project-button" href="https://aistudio.google.com/apps/drive/1tYrEbfBaEJ7zM5hmj-ZFEhYjZYbPj0DQ?fullscreenApplet=true" target="_blank" rel="noopener">Live Project</a>
-            <a class="project-button" href="https://github.com/alissatroiano/Legacy-Modernizer-2.0" target="_blank" rel="noopener">Source Code</a>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://aistudio.google.com/apps/drive/1tYrEbfBaEJ7zM5hmj-ZFEhYjZYbPj0DQ?fullscreenApplet=true" target="_blank" rel="noopener"><button class="project-button">Live Project</button></a>
+          <a href="https://github.com/alissatroiano/Legacy-Modernizer-2.0" target="_blank" rel="noopener"><button class="project-button">Source Code</button></a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Laundry Page -->
+  <!-- Laundry Service -->
   <div class="modal fade" id="projectModal26" role="dialog" tabindex="-1" aria-labelledby="projectModal26Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal26Label" class="folio-title display-3 text-center text-sm-start">Small Business: <span class="text-light-purple"> Website</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal26Label" class="folio-title display-3">Small Business <span class="text-light-purple">— Laundry Service Website</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row d-flex justify-content-center">
-            <div class="col-12 col-sm-8"><div class="p-sm-4 p-md-5 my-0 me-3">
-              <img src="assets/images/projects/laundry-demo.gif" class="img-wrapper--reverse img-fluid project-img img-small" alt="Laundry Landing Page" />
-            </div></div>
-            <div class="col-12 col-sm-4"><div class="pe-2 my-0 me-sm-3">
-              <h2 class="h5 my-4 pt-3 text-mark-projects"><i class="fas fa-circle-info"></i> About</h2>
-              <p class="fs-lg mb-3">Landing page for a local laundry pick-up, wash, fold, and delivery service</p>
-              <h3 class="h5 d-flex align-items-center text-mark-projects mt-3">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="tech-stack">Typescript, Tailwind CSS, HTML, JavaScript, CSS, Canva</p>
-            </div></div>
+            <div class="col-12 col-sm-8">
+              <img src="assets/images/projects/laundry-demo.gif" class="img-wrapper--reverse img-fluid project-img" alt="Laundry Landing Page" />
+            </div>
+            <div class="col-12 col-sm-4 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-circle-info"></i> About</div>
+              <p>Landing page for a local laundry pick-up, wash, fold, and delivery service.</p>
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">TypeScript · Tailwind CSS · HTML · JavaScript · Canva</p>
+            </div>
           </div>
-          <div class="modal-footer">
-            <a href="https://militarymama-laundryservice.netlify.app" target="_blank"><button class="project-button">Live Project</button></a>
-            <a href="https://github.com/alissatroiano/trend-tracker" target="_blank"><button class="project-button">Source Code</button></a>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://militarymama-laundryservice.netlify.app" target="_blank"><button class="project-button">Live Project</button></a>
+          <a href="https://github.com/alissatroiano/trend-tracker" target="_blank"><button class="project-button">Source Code</button></a>
         </div>
       </div>
     </div>
@@ -181,83 +169,83 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal25Label" class="folio-title display-3 text-center text-sm-start">Stationary Design:<span class="text-light-purple ms-1"> Bridal Shower</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal25Label" class="folio-title display-3">Stationery Design <span class="text-light-purple">— Bridal Shower</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row d-flex justify-content-center">
-            <div class="col-12 col-sm-8"><div class="p-sm-4 p-md-5 my-0 me-3">
-              <div class="embed-responsive text-center ratio ratio-16x9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0LeRC8VhD64?si=bnCQ7A3jxGK5Roc9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="col-12 col-sm-8">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/0LeRC8VhD64?si=bnCQ7A3jxGK5Roc9" title="Bridal Shower Stationery" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-            </div></div>
-            <div class="col-12 col-sm-4"><div class="pe-2 my-0 me-sm-3">
-              <h2 class="h5 my-4 pt-3 text-mark-projects"><i class="fas fa-circle-info"></i> About</h2>
-              <p class="fs-lg mb-3">Custom Bridal Shower print materials</p>
-              <h3 class="h5 d-flex align-items-center text-mark-projects mt-3">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
+            </div>
+            <div class="col-12 col-sm-4 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-circle-info"></i> About</div>
+              <p>Custom bridal shower stationery suite — invitations, menus, signage and coordinated print materials.</p>
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
               <p class="tech-stack">Canva Pro</p>
-            </div></div>
+            </div>
           </div>
-          <div class="modal-footer">
-            <a href="https://drive.google.com/file/d/1lkdi73zw0QDPbDd56x76BcNgJWT3FmZI/view?usp=sharing" target="_blank"><button class="project-button">View PDF</button></a>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://drive.google.com/file/d/1lkdi73zw0QDPbDd56x76BcNgJWT3FmZI/view?usp=sharing" target="_blank"><button class="project-button">View PDF</button></a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Dashboard App -->
+  <!-- Trend Tracker -->
   <div class="modal fade" id="projectModal24" role="dialog" tabindex="-1" aria-labelledby="projectModal24Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal24Label" class="folio-title display-3 text-center text-sm-start">The Trend Tracker: <span class="text-light-purple">Dashboard</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal24Label" class="folio-title display-3">Trend Tracker <span class="text-light-purple">— Social Analytics Dashboard</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row d-flex justify-content-center">
-            <div class="col-12 col-sm-8"><div class="p-sm-4 p-md-5 my-0 me-3">
-              <img src="assets/images/projects/trend-tracker.png" class="img-wrapper--reverse img-fluid project-img img-small" alt="TrendTracker" />
-            </div></div>
-            <div class="col-12 col-sm-4"><div class="pe-2 my-0 me-sm-3">
-              <h2 class="h5 my-4 pt-3 text-mark-projects"><i class="fas fa-circle-info"></i> About</h2>
-              <p class="fs-lg mb-3">Dashboard App where users can view realtime data about social media users gained and lost over the last 10 days</p>
-              <h3 class="h5 d-flex align-items-center text-mark-projects mt-3">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="tech-stack">Apex Charts, Node.js, Typescript, React, HTML, CSS, Tailwind CSS</p>
-            </div></div>
+            <div class="col-12 col-sm-8">
+              <img src="assets/images/projects/trend-tracker.png" class="img-wrapper--reverse img-fluid project-img" alt="TrendTracker" />
+            </div>
+            <div class="col-12 col-sm-4 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-circle-info"></i> About</div>
+              <p>Dashboard app where users can view realtime social media follower data gained and lost over the last 10 days.</p>
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">Apex Charts · Node.js · TypeScript · React · Tailwind CSS</p>
+            </div>
           </div>
-          <div class="modal-footer">
-            <a href="https://fluency-trend-tracker.netlify.app/" target="_blank"><button class="project-button">Live Project</button></a>
-            <a href="https://github.com/alissatroiano/trend-tracker" target="_blank"><button class="project-button">Source Code</button></a>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://fluency-trend-tracker.netlify.app/" target="_blank"><button class="project-button">Live Project</button></a>
+          <a href="https://github.com/alissatroiano/trend-tracker" target="_blank"><button class="project-button">Source Code</button></a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Odditie -->
+  <!-- The Odditie -->
   <div class="modal fade" id="projectModal23" role="dialog" tabindex="-1" aria-labelledby="projectModal23Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal23Label" class="folio-title display-3 text-center text-sm-start">The Odditie: <span class="text-light-purple">Wordpress Blog</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal23Label" class="folio-title display-3">The Odditie <span class="text-light-purple">— WordPress Arts Blog</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row d-flex justify-content-center">
-            <div class="col-12 col-sm-8"><div class="p-sm-4 p-md-5 my-0 me-3">
-              <img src="assets/images/projects/odditie-branding.jpg" class="img-wrapper--reverse img-fluid project-img img-small" alt="Odditie" />
-            </div></div>
-            <div class="col-12 col-sm-4"><div class="pe-2 my-0 me-sm-3">
-              <h2 class="h5 my-4 pt-3 text-mark-projects"><i class="fas fa-circle-info"></i> About</h2>
-              <p class="fs-lg mb-3">TheOdditie.com is an online arts & entertainment blog founded by Alissa Troiano.</p>
-              <h3 class="h5 d-flex align-items-center text-mark-projects mt-3">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="tech-stack">Adobe Creative Suite, Wordpress</p>
-            </div></div>
+            <div class="col-12 col-sm-8">
+              <img src="assets/images/projects/odditie-branding.jpg" class="img-wrapper--reverse img-fluid project-img" alt="Odditie" />
+            </div>
+            <div class="col-12 col-sm-4 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-circle-info"></i> About</div>
+              <p>TheOdditie.com is an online arts & entertainment blog spotlighting artists of every genre — Fine Art to Graffiti to digital.</p>
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">Adobe Creative Suite · WordPress</p>
+            </div>
           </div>
-          <div class="modal-footer">
-            <a href="https://theoddittie.wordpress.com/" target="_blank"><button class="project-button">Live Project</button></a>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://theoddittie.wordpress.com/" target="_blank"><button class="project-button">Live Project</button></a>
         </div>
       </div>
     </div>
@@ -268,29 +256,29 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal22Label" class="folio-title display-3 text-center text-sm-start">Coming Soon: <span class="text-light-purple">Dara Budabin Fashion</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal22Label" class="folio-title display-3">Coming Soon <span class="text-light-purple">— Dara Budabin Fashion</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-lg-7 mb-4 mb-lg-0"><div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
-              <div class="embed-responsive text-center ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/02HlKt3a7S8?si=5BFHP6IRC9wt5ZXe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <div class="ratio ratio-16x9 mb-4">
+                <iframe src="https://www.youtube.com/embed/02HlKt3a7S8?si=5BFHP6IRC9wt5ZXe" title="Coming Soon demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i> About</h2>
-              <p class="fs-lg mb-0">Coming Soon Page for independent fashion designer client's e-commerce launch</p>
-            </div></div>
+              <div class="text-mark-projects"><i class="fas fa-circle-info"></i> About</div>
+              <p>Coming soon page for an independent fashion designer client's e-commerce launch.</p>
+            </div>
             <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
-              <h3 class="h5 d-flex align-items-center text-mark-projects"><i class="fas fa-lightbulb me-2"></i> Solution</h3>
-              <p class="my-3">Created an exciting, fashionable, and visually pleasing coming soon page with HTML and CSS. Used JavaScript to create fluid-like user experience.</p>
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="tech-stack">JavaScript, HTML, CSS, Canvas</p>
+              <div class="text-mark-projects"><i class="fas fa-lightbulb"></i> Solution</div>
+              <p>Created an exciting, fashionable, and visually pleasing coming soon page with HTML and CSS. Used JavaScript to create a fluid-like user experience.</p>
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">JavaScript · HTML · CSS · Canvas</p>
             </div>
           </div>
-          <div class="modal-footer">
-            <a href="https://alissatroiano.github.io/fashion/" target="_blank"><button class="project-button">Live Project</button></a>
-            <a href="https://github.com/alissatroiano/fashion" target="_blank"><button class="project-button">Source Code</button></a>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://alissatroiano.github.io/fashion/" target="_blank"><button class="project-button">Live Project</button></a>
+          <a href="https://github.com/alissatroiano/fashion" target="_blank"><button class="project-button">Source Code</button></a>
         </div>
       </div>
     </div>
@@ -301,29 +289,29 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal21Label" class="folio-title display-3 text-center text-sm-start">Neomate: <span class="text-light-purple">Neonatal AI Assistant</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal21Label" class="folio-title display-3">Neomate <span class="text-light-purple">— Neonatal AI Assistant</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-lg-7 mb-4 mb-lg-0"><div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
-              <div class="embed-responsive text-center ratio ratio-16x9">
-                <iframe class="object-fit-cover" src="https://www.youtube.com/embed/F_01tPRzMG0?si=ZwdoednJV7Gz5kbK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <div class="ratio ratio-16x9 mb-4">
+                <iframe src="https://www.youtube.com/embed/F_01tPRzMG0?si=ZwdoednJV7Gz5kbK" title="Neomate demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i> About</h2>
-              <p class="fs-lg mb-0">Neomate is a compassionate AI-powered platform designed to provide therapeutic support and evidence-based information for families navigating neonatal hospitalization.</p>
-            </div></div>
+              <div class="text-mark-projects"><i class="fas fa-circle-info"></i> About</div>
+              <p>Neomate is a compassionate AI-powered platform designed to provide therapeutic support and evidence-based information for families navigating neonatal hospitalization.</p>
+            </div>
             <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
-              <h3 class="h5 d-flex align-items-center text-mark-projects"><i class="fas fa-lightbulb me-2"></i> Solution</h3>
-              <p class="my-3">Writing careful, well-thought out prompts, I used Bolt to build Neomate's landing page, authentication forms, and AI-powered dashboard. I integrated Supabase for data storage and ChatGPT as a text chat fallback. I added a specially trained conversational AI agent via Eleven Labs.</p>
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="tech-stack">React, JavaScript, HTML, CSS, Tailwind CSS, NPM, Node, Bolt.new, Eleven Labs, Open AI</p>
+              <div class="text-mark-projects"><i class="fas fa-lightbulb"></i> Solution</div>
+              <p>Writing careful, well-thought out prompts, I used Bolt to build Neomate's landing page, authentication forms, and AI-powered dashboard. I integrated Supabase for data storage and ChatGPT as a text chat fallback, and added a specially trained conversational AI agent via Eleven Labs.</p>
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">React · Eleven Labs · OpenAI · Supabase · Bolt.new · Tailwind CSS</p>
             </div>
           </div>
-          <div class="modal-footer">
-            <a href="https://neomate.app" target="_blank"><button class="project-button">Live Project</button></a>
-            <a href="https://github.com/alissatroiano/neomate" target="_blank"><button class="project-button">Source Code</button></a>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://neomate.app" target="_blank"><button class="project-button">Live Project</button></a>
+          <a href="https://github.com/alissatroiano/neomate" target="_blank"><button class="project-button">Source Code</button></a>
         </div>
       </div>
     </div>
@@ -334,25 +322,25 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal15Label" class="folio-title display-3 text-center text-sm-start">Cosmos: <span class="text-light-purple">Three.JS Game</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal15Label" class="folio-title display-3">Cosmos <span class="text-light-purple">— Three.JS Space Game</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-12 col-sm-5 mb-4 mb-lg-0"><div class="pe-lg-4 me-lg-3">
-              <img src="assets/images/cosmos.png" class="img-wrapper--reverse img-fluid project-img img-small" alt="cosmos" />
-              <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i> About</h2>
-              <p class="fs-lg mb-0">The main objective of Cosmos is to use the game's mechanics to move around your orbit as many times as possible without colliding into other planets.</p>
-            </div></div>
-            <div class="col-12 col-sm-7 border-start-lg mt-3">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="tech-stack">ThreeJS, JavaScript, HTML, CSS, Bootstrap 5, NPM, Node</p>
+            <div class="col-12 col-sm-5 mb-4 mb-sm-0">
+              <img src="assets/images/cosmos.png" class="img-wrapper--reverse img-fluid project-img" alt="Cosmos" />
+            </div>
+            <div class="col-12 col-sm-7 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-circle-info"></i> About</div>
+              <p>The main objective of Cosmos is to use the game's mechanics to move around your orbit as many times as possible without colliding into other planets.</p>
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">Three.JS · JavaScript · HTML · CSS · Bootstrap 5 · NPM · Node</p>
             </div>
           </div>
-          <div class="modal-footer">
-            <a href="https://update-branch.d2ahh6pk09q6qo.amplifyapp.com/" target="_blank"><button class="project-button">Live Project</button></a>
-            <a href="https://github.com/alissatroiano/cosmos" target="_blank"><button class="project-button">Source Code</button></a>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://update-branch.d2ahh6pk09q6qo.amplifyapp.com/" target="_blank"><button class="project-button">Live Project</button></a>
+          <a href="https://github.com/alissatroiano/cosmos" target="_blank"><button class="project-button">Source Code</button></a>
         </div>
       </div>
     </div>
@@ -363,22 +351,22 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="col-12">
-          <h1 id="projectModal1Label" class="folio-title display-3 text-center text-sm-start">Hue: <span class="text-light-purple">Create & Sell AI Art</span></h1>
-        </div></div>
+        <div class="modal-header">
+          <h1 id="projectModal1Label" class="folio-title display-3">Hue <span class="text-light-purple">— Create & Sell AI Art</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-lg-7 mb-4 mb-lg-0"><div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
-              <div class="embed-responsive text-center ratio ratio-16x9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/cvy4uK9LyjM?si=yOnu55d0hDdEi6SO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <div class="ratio ratio-16x9 mb-4">
+                <iframe src="https://www.youtube.com/embed/cvy4uK9LyjM?si=yOnu55d0hDdEi6SO" title="Hue demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i> About</h2>
-              <p class="fs-lg mb-0">Hue is a digital art store and image generation app with custom ML models powered by MindsDB and OpenAI's DALL-E 3 model.</p>
-            </div></div>
+              <div class="text-mark-projects"><i class="fas fa-circle-info"></i> About</div>
+              <p>Hue is a digital art store and image generation app with custom ML models powered by MindsDB and OpenAI's DALL-E 3 model.</p>
+            </div>
             <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="tech-stack">Python, Django, MindsDB, OpenAI, JavaScript, HTML, CSS, Bootstrap 5, AWS S3, Heroku, Stripe API, Git</p>
-              <div class="photo my-3"><img src="assets/images/hue.png" class="img-wrapper--reverse img-fluid project-img" alt="hue" /></div>
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">Python · Django · MindsDB · OpenAI · JavaScript · HTML · CSS · Bootstrap 5 · AWS S3 · Heroku · Stripe API · Git</p>
+              <img src="assets/images/hue.png" class="img-wrapper--reverse img-fluid project-img mt-3" alt="Hue" />
             </div>
           </div>
         </div>
@@ -395,27 +383,27 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal2Label" class="folio-title display-3 text-center text-sm-start">OLLA AI & OBBA: <span class="text-light-purple">Wait Queue Mgmt</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal2Label" class="folio-title display-3">OLLA × OBBA <span class="text-light-purple">— Wait Queue Management</span></h1>
+        </div>
         <div class="modal-body">
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 col-lg-7 mb-4 mb-lg-0"><div class="pe-sm-0 pe-lg-4 me-lg-3">
-              <div class="embed-responsive text-center ratio ratio-16x9">
-                <iframe class="object-fit-cover" src="https://www.youtube.com/embed/RPsIF0tr8KU?si=j-1L97_vEvEfTTS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="row">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <div class="ratio ratio-16x9 mb-4">
+                <iframe src="https://www.youtube.com/embed/RPsIF0tr8KU?si=j-1L97_vEvEfTTS4" title="OLLA OBBA demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i> About</h2>
-              <p>This onboarding page was built to support OLLA AI's integration with OBBA BQQ, a Korean Barbeque Restaurant in Singapore.</p>
-            </div></div>
-            <div class="col-12 col-lg-5 col-xl-4 offset-xl-1 border-start-lg"><div class="ps-lg-5 ms-lg-3">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">ReactJS, JavaScript, HTML, CSS</p>
-            </div></div>
+              <div class="text-mark-projects"><i class="fas fa-circle-info"></i> About</div>
+              <p>Customer onboarding React app for OLLA AI's integration with OBBA, a Korean BBQ restaurant in Singapore.</p>
+            </div>
+            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">React · JavaScript · HTML · CSS</p>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn project-button" data-bs-dismiss="modal">Live Project</button>
-          <button type="button" class="btn project-button">Source Code</button>
+          <button type="button" class="project-button" data-bs-dismiss="modal">Live Project</button>
+          <button type="button" class="project-button">Source Code</button>
         </div>
       </div>
     </div>
@@ -426,23 +414,23 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal4Label" class="title display-4 text-center text-sm-start fw-bold">Inklusion: <span class="text-light-purple">Pride Art Gallery</span></h1>
-          <span class="award-text"> 1st Place - Code Institute Hackathon, 06/17/22</span>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal4Label" class="folio-title display-3">Inklusion <span class="text-light-purple">— Pride Art Gallery</span></h1>
+          <div class="award-text">1st Place — Code Institute Hackathon, 06/17/22</div>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-lg-7 mb-4 mb-lg-0"><div class="pe-lg-4 me-lg-3">
-              <div class="embed-responsive text-center ratio ratio-16x9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NYvfJrVfI6E?si=pg49K7_xJWW5kCT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <div class="ratio ratio-16x9 mb-4">
+                <iframe src="https://www.youtube.com/embed/NYvfJrVfI6E?si=pg49K7_xJWW5kCT4" title="Inklusion demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <h2 class="h1 my-4 text-mark-projects"><i class="fas fa-circle-info"></i> About</h2>
-              <p>Inklusion is an online gallery of LGBTQIA+ art throughout history with artist profiles and a "Get Involved" section.</p>
-            </div></div>
-            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg"><div class="ps-lg-4 ms-lg-3">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="tech-stack">HTML, CSS, Bootstrap 5, JavaScript</p>
-            </div></div>
+              <div class="text-mark-projects"><i class="fas fa-circle-info"></i> About</div>
+              <p>Online gallery celebrating LGBTQIA+ art throughout history, with artist profiles and a community resource section.</p>
+            </div>
+            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">HTML · CSS · Bootstrap 5 · JavaScript</p>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
@@ -458,16 +446,18 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal5Label" class="folio-title display-3 text-center text-sm-start">Muzak: <span class="text-light-purple">YouTube Music Player</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal5Label" class="folio-title display-3">Muzak <span class="text-light-purple">— YouTube Music Player</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-lg-7 mb-4 mb-lg-0"><img src="assets/images/muzak.png" class="img-wrapper--reverse img-fluid project-img" alt="muzak" /></div>
-            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg"><div class="ps-lg-4 ms-lg-3">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">React, JavaScript, HTML, CSS, YouTube API</p>
-            </div></div>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <img src="assets/images/muzak.png" class="img-wrapper--reverse img-fluid project-img" alt="Muzak" />
+            </div>
+            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">React · JavaScript · HTML · CSS · YouTube API</p>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
@@ -483,17 +473,19 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal6Label" class="folio-title display-4 text-center text-sm-start">Electrillo: <span class="text-light-purple">EV-Fuel Calculator</span></h1>
-          <span class="award-text">1st Place - Code Institute Hackathon, 04/10/22</span>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal6Label" class="folio-title display-3">Electrillo <span class="text-light-purple">— EV Fuel Cost Calculator</span></h1>
+          <div class="award-text">1st Place — Code Institute Hackathon, 04/10/22</div>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-lg-7 mb-4 mb-lg-0"><img src="assets/images/electrillo.png" class="img-wrapper--reverse img-fluid project-img" alt="electrillo" /></div>
-            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg"><div class="ps-lg-4 ms-lg-3">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">JavaScript, HTML, CSS, Bootstrap 5, JSON</p>
-            </div></div>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <img src="assets/images/electrillo.png" class="img-wrapper--reverse img-fluid project-img" alt="Electrillo" />
+            </div>
+            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">JavaScript · HTML · CSS · Bootstrap 5 · JSON</p>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
@@ -509,16 +501,18 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="col-12">
-          <h1 id="projectModal7Label" class="folio-title display-4 text-center text-sm-start">Smitten: <span class="text-light-purple">JavaScript Wordle Game</span></h1>
-          <span class="award-text">1st Place - Code Institute Hackathon, 02/22</span>
-        </div></div>
+        <div class="modal-header">
+          <h1 id="projectModal7Label" class="folio-title display-3">Smitten <span class="text-light-purple">— Valentine's Wordle Game</span></h1>
+          <div class="award-text">1st Place — Code Institute Hackathon, 02/22</div>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-lg-7 mb-4 mb-lg-0"><img src="assets/images/smitten.png" class="img-wrapper--reverse img-fluid project-img" alt="smitten" /></div>
-            <div class="col-lg-5 col-xl-4 border-start-lg">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">JavaScript, HTML, CSS, Bootstrap, JSON</p>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <img src="assets/images/smitten.png" class="img-wrapper--reverse img-fluid project-img" alt="Smitten" />
+            </div>
+            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">JavaScript · HTML · CSS · Bootstrap · JSON</p>
             </div>
           </div>
         </div>
@@ -535,16 +529,18 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="col-12">
-          <h1 id="projectModal8Label" class="folio-title display-3 text-center text-sm-start">Game of Facts: <span class="text-light-purple">Trivia Game</span></h1>
-          <span class="award-text">Merit Award - Code Institute Milestone 2</span>
-        </div></div>
+        <div class="modal-header">
+          <h1 id="projectModal8Label" class="folio-title display-3">Game of Facts <span class="text-light-purple">— GoT Trivia Game</span></h1>
+          <div class="award-text">Merit Award — Code Institute</div>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-lg-7 mb-4 mb-lg-0"><img src="assets/images/gameoffacts-responsive.png" class="img-wrapper--reverse img-fluid project-img" alt="Game of Facts" /></div>
-            <div class="col-lg-5 col-xl-4">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">JavaScript, jQuery, HTML, CSS, Bootstrap 4, Git</p>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <img src="assets/images/gameoffacts-responsive.png" class="img-wrapper--reverse img-fluid project-img" alt="Game of Facts" />
+            </div>
+            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">JavaScript · jQuery · HTML · CSS · Bootstrap 4 · Git</p>
             </div>
           </div>
         </div>
@@ -561,16 +557,18 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="col-12">
-          <h1 id="projectModal9Label" class="folio-title display-3 text-center text-sm-start">Infinity: <span class="text-light-purple">Landing Page</span></h1>
-          <span class="award-text">Distinction Award - Code Institute Milestone 1</span>
-        </div></div>
+        <div class="modal-header">
+          <h1 id="projectModal9Label" class="folio-title display-3">Infinity <span class="text-light-purple">— Yoga Studio Landing Page</span></h1>
+          <div class="award-text">Distinction — Code Institute Milestone 1</div>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-lg-7 mb-4 mb-lg-0"><img src="assets/images/infinity-responsive.png" class="img-wrapper--reverse img-fluid project-img" alt="infinity" /></div>
-            <div class="col-lg-5 col-xl-4">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">JavaScript, HTML, CSS, Bootstrap 4, jQuery, Git</p>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <img src="assets/images/infinity-responsive.png" class="img-wrapper--reverse img-fluid project-img" alt="Infinity" />
+            </div>
+            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">HTML · CSS · Bootstrap 4 · JavaScript · jQuery · Git</p>
             </div>
           </div>
         </div>
@@ -587,16 +585,18 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="col-12">
-          <h1 id="projectModal10Label" class="folio-title display-3 text-center text-sm-start">Emojourney: <span class="text-light-purple">Emoji Travel Guide</span></h1>
-          <span class="award-text">1st Place - Code Institute World Emoji Day Hackathon</span>
-        </div></div>
+        <div class="modal-header">
+          <h1 id="projectModal10Label" class="folio-title display-3">Emojourney <span class="text-light-purple">— Emoji Travel Guide</span></h1>
+          <div class="award-text">1st Place — Code Institute World Emoji Day Hackathon</div>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-lg-7 mb-4 mb-lg-0"><img src="assets/images/emojourney.png" class="img-wrapper--reverse img-fluid project-img" alt="emojourney" /></div>
-            <div class="col-lg-5 col-xl-4">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">JavaScript, HTML, CSS, Bootstrap 5</p>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <img src="assets/images/emojourney.png" class="img-wrapper--reverse img-fluid project-img" alt="Emojourney" />
+            </div>
+            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">JavaScript · HTML · CSS · Bootstrap 5</p>
             </div>
           </div>
         </div>
@@ -613,16 +613,18 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="col-12">
-          <h1 id="projectModal11Label" class="folio-title display-3 text-center text-sm-start">DeathScape: <span class="text-light-purple">Escape Room</span></h1>
-          <span class="award-text">3rd Place - Code Institute May the Fourth Hackathon</span>
-        </div></div>
+        <div class="modal-header">
+          <h1 id="projectModal11Label" class="folio-title display-3">DeathScape <span class="text-light-purple">— Star Wars Escape Room</span></h1>
+          <div class="award-text">3rd Place — Code Institute May the Fourth Hackathon</div>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-lg-7 mb-4 mb-lg-0"><img src="assets/images/deathscape.png" class="img-wrapper--reverse img-fluid project-img" alt="deathscape" /></div>
-            <div class="col-lg-5 col-xl-4">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">JavaScript, HTML, CSS, Bootstrap 5</p>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <img src="assets/images/deathscape.png" class="img-wrapper--reverse img-fluid project-img" alt="DeathScape" />
+            </div>
+            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">JavaScript · HTML · CSS · Bootstrap 5</p>
             </div>
           </div>
         </div>
@@ -639,16 +641,18 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal13Label" class="title display-4 text-center text-sm-start fw-bold">Coast VA, <span class="text-light-purple">Girls Lacrosse Club</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal13Label" class="folio-title display-3">Coast VA <span class="text-light-purple">— Girls Lacrosse Club</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-12 col-sm-6 mb-4 mb-lg-0"><img src="assets/images/coast-responsive.png" class="img-wrapper--reverse img-fluid project-img" alt="COAST VA" /></div>
-            <div class="col-12 col-sm-5 mt-sm-3 border-start-lg"><div class="ps-lg-4 ms-lg-3">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">HTML, CSS, Bootstrap 5, JavaScript, Google Apps Script, GitHub Actions</p>
-            </div></div>
+            <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+              <img src="assets/images/coast-responsive.png" class="img-wrapper--reverse img-fluid project-img" alt="COAST VA" />
+            </div>
+            <div class="col-12 col-sm-6 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">HTML · CSS · Bootstrap 5 · JavaScript · Google Apps Script · GitHub Actions</p>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
@@ -664,16 +668,18 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal14Label" class="title display-4 text-center text-sm-start fw-bold">Dash, <span class="text-light-purple">Recipe Sharing</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal14Label" class="folio-title display-3">Dash <span class="text-light-purple">— Recipe Sharing App</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-12 col-sm-6 mb-4 mb-lg-0"><img src="assets/images/projects/project_10.png" class="img-wrapper--reverse img-fluid project-img" alt="Dash" /></div>
-            <div class="col-12 col-sm-5 mt-sm-3 border-start-lg"><div class="ps-lg-4 ms-lg-3">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">HTML, CSS, Bootstrap 5, JavaScript, Flask, MongoDB, AWS</p>
-            </div></div>
+            <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+              <img src="assets/images/projects/project_10.png" class="img-wrapper--reverse img-fluid project-img" alt="Dash" />
+            </div>
+            <div class="col-12 col-sm-6 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">HTML · CSS · Bootstrap 5 · JavaScript · Flask · MongoDB · AWS S3</p>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
@@ -689,20 +695,20 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal16Label" class="title display-4 text-center text-sm-start fw-bold">Snooscapes <span class="text-light-purple">Reddit Game</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal16Label" class="folio-title display-3">Snooscapes <span class="text-light-purple">— Reddit Community Game</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-12 col-sm-6 mb-4 mb-lg-0">
-              <div class="embed-responsive text-center ratio ratio-16x9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PF18mRuVLVE?si=jCzRfLp9H04I9WeC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/PF18mRuVLVE?si=jCzRfLp9H04I9WeC" title="Snooscapes demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
-            <div class="col-12 col-sm-6 mt-sm-3 border-start-lg"><div class="ps-lg-4">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">HTML, CSS, JavaScript, Devvit API, TypeScript, HTML Canvas, Devvit Webviews</p>
-            </div></div>
+            <div class="col-12 col-sm-6 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">JavaScript · TypeScript · Devvit API · HTML Canvas · Devvit Webviews</p>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
@@ -718,20 +724,20 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal17Label" class="title display-4 text-center text-sm-start fw-bold">Screensnaps, <span class="text-light-purple">Reddit Game</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal17Label" class="folio-title display-3">Screen Snaps <span class="text-light-purple">— Daily Movie Guessing Game</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-12 col-sm-6 mb-4 mb-lg-0">
-              <div class="embed-responsive text-center ratio ratio-16x9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/GUlk6-N0zJA?si=-rv5SRf2ZW6oda_G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/GUlk6-N0zJA?si=-rv5SRf2ZW6oda_G" title="Screen Snaps demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
-            <div class="col-12 col-sm-6 mt-sm-3 border-start-lg"><div class="ps-lg-4">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">HTML, CSS3, JavaScript, Devvit API, TypeScript, Devvit Webviews</p>
-            </div></div>
+            <div class="col-12 col-sm-6 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">HTML · CSS · JavaScript · TypeScript · Devvit API · Devvit Webviews</p>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
@@ -747,20 +753,20 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal18Label" class="title display-4 text-center text-sm-start fw-bold">Slangman, <span class="text-light-purple">Reddit Game</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal18Label" class="folio-title display-3">Slangman <span class="text-light-purple">— Gen-Z Hangman Game</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-12 col-sm-6 mb-4 mb-lg-0">
-              <div class="embed-responsive text-center ratio ratio-16x9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/BaBIOqti1iI?si=2rbX-O6ZIFur8jo_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/BaBIOqti1iI?si=2rbX-O6ZIFur8jo_" title="Slangman demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
-            <div class="col-12 col-sm-6 mt-sm-3 border-start-lg"><div class="ps-lg-4">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">HTML, CSS, JavaScript, Devvit API, TypeScript, JSON, Kaggle</p>
-            </div></div>
+            <div class="col-12 col-sm-6 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">HTML · CSS · JavaScript · TypeScript · Devvit API · JSON · Kaggle</p>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
@@ -776,16 +782,20 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal19Label" class="title display-4 text-center text-sm-start fw-bold">Cassie The Cat, <span class="text-light-purple">Children's Book</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal19Label" class="folio-title display-3">Cassie The Cat <span class="text-light-purple">— Children's Book</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-12 col-sm-6 mb-4 mb-lg-0"><img src="assets/images/projects/cassie.gif" class="img-wrapper--reverse img-fluid project-img book-sample" alt="Cassie The Cat" /></div>
-            <div class="col-12 col-sm-5 mt-sm-3 border-start-lg"><div class="ps-lg-4">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">Canva Pro, KDP, Amazon, Microsoft Word</p>
-            </div></div>
+            <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+              <img src="assets/images/projects/cassie.gif" class="img-wrapper--reverse img-fluid project-img" alt="Cassie The Cat" />
+            </div>
+            <div class="col-12 col-sm-6 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-circle-info"></i> About</div>
+              <p>Illustrated picture book about a timid cat learning bravery. Characters, scenes, and cover; self-published via KDP.</p>
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">Canva Pro · KDP · Amazon · Microsoft Word</p>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
@@ -800,16 +810,20 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
         <div class="text-end"><button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div class="modal-header"><div class="row d-flex justify-content-center"><div class="col-12">
-          <h1 id="projectModal20Label" class="title display-4 text-center text-sm-start fw-bold">The Magic of Love, <span class="text-light-purple">Book Illustration</span></h1>
-        </div></div></div>
+        <div class="modal-header">
+          <h1 id="projectModal20Label" class="folio-title display-3">Magic of Love <span class="text-light-purple">— Book Illustration</span></h1>
+        </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-12 col-sm-6 mb-4 mb-lg-0"><img src="assets/images/projects/front-back-cover.png" class="img-wrapper--reverse img-fluid project-img book-sample" alt="Magic of Love" /></div>
-            <div class="col-12 col-sm-5 mt-sm-3 border-start-lg"><div class="ps-lg-4">
-              <h3 class="h5 d-flex align-items-center text-mark-projects">Tech <i class="fas fa-wrench mx-1"></i> Stack</h3>
-              <p class="pb-3">Canva Pro, KDP, Amazon, Microsoft Word</p>
-            </div></div>
+            <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+              <img src="assets/images/projects/front-back-cover.png" class="img-wrapper--reverse img-fluid project-img" alt="Magic of Love" />
+            </div>
+            <div class="col-12 col-sm-6 border-start-lg">
+              <div class="text-mark-projects"><i class="fas fa-circle-info"></i> About</div>
+              <p>Illustrated a heartwarming story about a lonely duck and a young peacock forming an unlikely bond.</p>
+              <div class="text-mark-projects"><i class="fas fa-wrench"></i> Stack</div>
+              <p class="tech-stack">Canva Pro · KDP · Amazon · Microsoft Word</p>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
@@ -820,9 +834,7 @@
   </div>
 
 
-  <!-- ═══════════════════════════════════════════════════
-       SCRIPTS
-       ═══════════════════════════════════════════════════ -->
+  <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
@@ -830,7 +842,6 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
 
-  <!-- Wave gallery + card renderer (replaces old portfolio.js + masonry) -->
   <script src="assets/js/portfolio.js"></script>
   <script src="assets/js/top.js"></script>
 
