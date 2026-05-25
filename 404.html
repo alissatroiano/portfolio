@@ -29,6 +29,7 @@
 
 <body>
   <div id="notfound">
+    <canvas id="notfoundWaveCanvas"></canvas>
     <div class="notfound-bg"></div>
     <div class="notfound" id="wrapper">
       <h1 class="glitch display-1" data-text="404">404</h1>
@@ -47,6 +48,84 @@
       </div>
     </div>
   </div>
+
+  <script>
+    /* Wave canvas initialization */
+    function getWaveColor(alpha = 0.80) {
+      const isDark = document.body.classList.contains('dark-mode');
+      if (isDark) {
+        return `rgba(255, 255, 255, ${alpha})`;
+      } else {
+        return `rgba(10, 10, 10, ${alpha})`;
+      }
+    }
+
+    function initWaveCanvas(canvas, opts) {
+      if (!canvas) return;
+      const cfg = Object.assign({
+        lineColor: getWaveColor(0.82),
+        count: 26,
+        amplitude: 0.24,
+        frequency: 1.35,
+        speed: 0.004,
+        lineWidth: 1.1,
+        animated: true,
+      }, opts);
+
+      const ctx = canvas.getContext('2d');
+      let phase = 0, raf;
+
+      function size() {
+        const p = canvas.parentElement;
+        canvas.width  = p ? p.offsetWidth  : canvas.offsetWidth  || 800;
+        canvas.height = p ? p.offsetHeight : canvas.offsetHeight || 600;
+      }
+
+      function draw() {
+        const W = canvas.width, H = canvas.height;
+        ctx.clearRect(0, 0, W, H);
+        ctx.strokeStyle = cfg.lineColor;
+        ctx.lineWidth   = cfg.lineWidth;
+
+        for (let i = 0; i < cfg.count; i++) {
+          const t     = i / (cfg.count - 1);
+          const baseY = H * 0.04 + t * H * 0.92;
+          ctx.beginPath();
+          for (let x = 0; x <= W; x++) {
+            const p  = x / W;
+            const w1 = Math.sin(p * Math.PI * cfg.frequency + phase + t * 0.55) * H * cfg.amplitude;
+            const w2 = Math.sin(p * Math.PI * cfg.frequency * 2.1 + phase * 0.65 + t * 1.15) * H * cfg.amplitude * 0.3;
+            const y  = baseY + w1 + w2;
+            x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+          }
+          ctx.stroke();
+        }
+        if (cfg.animated) { phase += cfg.speed; raf = requestAnimationFrame(draw); }
+      }
+
+      size();
+      draw();
+
+      const ro = new ResizeObserver(() => { size(); if (!cfg.animated) draw(); });
+      ro.observe(canvas.parentElement || canvas);
+      return () => { cancelAnimationFrame(raf); ro.disconnect(); };
+    }
+
+    // Initialize wave canvas on page load
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        initWaveCanvas(document.getElementById('notfoundWaveCanvas'), {
+          lineColor: getWaveColor(0.82),
+          amplitude: 0.24,
+        });
+      });
+    } else {
+      initWaveCanvas(document.getElementById('notfoundWaveCanvas'), {
+        lineColor: getWaveColor(0.82),
+        amplitude: 0.24,
+      });
+    }
+  </script>
 </body>
 
 </html>
