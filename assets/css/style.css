@@ -1181,17 +1181,24 @@
   font-size: 0.42rem;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.68);
-  background: rgba(255,255,255,0.06);
-  border: 0.5px solid rgba(255,255,255,0.2);
+  color: var(--yellow-1);
+  background: #18181893;
+  border: 0.5px solid #18181893;
   padding: 0.22rem 0.6rem;
-  display: flex;
   align-items: center;
   gap: 0.35rem;
   backdrop-filter: blur(6px);
+  margin: 0 auto;
 }
 
-.project-card-award i { color: #c8a84b; font-size: 0.5rem; }
+.project-card-award p {
+  margin: 0 auto;
+}
+
+.project-card-award i { 
+  color: #c8a84b; font-size: 0.5rem; 
+  margin: 0 3px;
+}
 
 .project-card-monogram {
   position: absolute;

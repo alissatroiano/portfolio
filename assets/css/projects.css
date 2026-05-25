@@ -101,7 +101,6 @@ button.navbar-toggler {
     border: none;
 }
 
-
 .dark-mode span.navbar-toggler-icon {
     background-color: var(--accent-color);
     border-color: none;
@@ -205,7 +204,6 @@ p {
 .dark-mode .section-display {
   color: #fafafa !important;
 }
-
 
 .dark-mode .section-rule {
   background: rgba(255, 255, 255, 0.2);
@@ -372,7 +370,7 @@ a {
 }
 
 .text-mark-projects {
-  font-family: var(--font-display);
+  font-family: var(--font-);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .25px;
@@ -536,7 +534,6 @@ a.text-purple.folio-link:hover {
   color: var(--primary-color);
   font-weight: 400;
 }
-
 
 .devpost-item img {
   opacity: 0.55;
@@ -749,9 +746,7 @@ p.tech-stack {
 
 /* ═══════════════════════════════════════════════════
    MODAL REDESIGN
-   Dark glass panels · wave-card tokens · editorial type
-   Matches the site's black-on-black identity from
-   index.html hero, skills, and project cards.
+   Dark glass panels · wave canvas header · editorial type
    ═══════════════════════════════════════════════════ */
 
 /* ── Dialog sizing ───────────────────────────────── */
@@ -776,7 +771,6 @@ p.tech-stack {
 }
 
 /* ── Close button ────────────────────────────────── */
-button.btn-close.me-3.mt-3,
 .modal .btn-close {
   background-color: rgba(255,255,255,0.07) !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z' fill='rgba(255,255,255,0.55)'/%3E%3C/svg%3E") !important;
@@ -785,30 +779,63 @@ button.btn-close.me-3.mt-3,
   opacity: 1 !important;
   width: 32px;
   height: 32px;
+  flex-shrink: 0;
   transition: background 0.2s, border-color 0.2s;
 }
 
-button.btn-close.me-3.mt-3:hover,
 .modal .btn-close:hover {
   background-color: rgba(255,255,255,0.15) !important;
   border-color: rgba(255,255,255,0.3) !important;
 }
 
-/* ── Header ──────────────────────────────────────── */
+/* ── Header — wave canvas + glass overlay ────────── */
 .modal-header {
+  position: relative !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  border-bottom: 0.5px solid rgba(255,255,255,0.09) !important;
+  display: block !important;
+}
+
+
+.project-card-header {
+  position: relative;
+  max-width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Animated wave sits behind header copy */
+.modal-header-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+/* Glass overlay keeps text readable over waves */
+.modal-header-inner {
+  position: relative;
+  z-index: 2;
+  padding: 2.4rem 2.4rem 1.8rem;
   background: linear-gradient(
     to bottom,
-    rgba(255,255,255,0.045) 0%,
-    rgba(255,255,255,0.016) 100%
-  ) !important;
-  border-bottom: 0.5px solid rgba(255,255,255,0.09) !important;
-  padding: 2.4rem 2.4rem 1.8rem !important;
-  position: relative;
-  display: block;
+    rgba(0,0,0,0.45) 0%,
+    rgba(0,0,0,0.72) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  min-height: 140px;
 }
 
 /* Top-edge shine */
-.modal-header::before {
+.modal-header-inner::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
@@ -820,6 +847,22 @@ button.btn-close.me-3.mt-3:hover,
     rgba(255,255,255,0.07) 100%
   );
   pointer-events: none;
+}
+
+.modal-header-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Category eyebrow */
+.modal-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.5rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 0.55rem;
 }
 
 /* Folio display title */
@@ -834,22 +877,13 @@ button.btn-close.me-3.mt-3:hover,
   margin: 0 0 0.5rem !important;
 }
 
-.modal-header h1.title {
-  font-family: 'Bebas Neue', sans-serif !important;
-  font-size: clamp(1.8rem, 5vw, 3rem) !important;
-  font-weight: 400 !important;
-  letter-spacing: 0.03em !important;
-  color: #f4f2ee !important;
-  margin: 0 0 0.5rem !important;
-}
-
 /* Subtitle — muted */
 .modal-header .text-light-purple,
 .modal-header h1 .text-light-purple {
   color: rgba(244,242,238,0.35) !important;
 }
 
-/* Award badge — gold tone */
+/* Award badge */
 .modal-header .award-text {
   display: inline-flex;
   align-items: center;
@@ -859,7 +893,7 @@ button.btn-close.me-3.mt-3:hover,
   font-weight: 300 !important;
   letter-spacing: 0.22em !important;
   text-transform: uppercase !important;
-  color: rgba(200,168,75,0.82) !important;
+  color: rgba(200,168,75, 1) !important;
   background: transparent !important;
   padding: 0 !important;
   margin-top: 0.9rem;
@@ -872,8 +906,7 @@ button.btn-close.me-3.mt-3:hover,
   opacity: 0.65;
 }
 
-.modal-header .award-text a,
-.modal-header .award-text a.link-font {
+.modal-header .award-text a {
   color: rgba(200,168,75,0.82) !important;
   text-decoration: none !important;
   font-family: 'DM Sans', sans-serif !important;
@@ -903,11 +936,11 @@ button.btn-close.me-3.mt-3:hover,
 .modal-body h2.h5.text-mark-projects,
 .modal-body h3.h5.text-mark-projects {
   font-family: 'DM Sans', sans-serif !important;
-  font-size: 0.5rem !important;
+  font-size: 0.685rem !important;
   font-weight: 300 !important;
   letter-spacing: 0.32em !important;
   text-transform: uppercase !important;
-  color: rgba(244,242,238,0.28) !important;
+  color: var(--yellow-3) !important;
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -916,8 +949,8 @@ button.btn-close.me-3.mt-3:hover,
 }
 
 .modal-body .text-mark-projects i {
-  color: rgba(244,242,238,0.2) !important;
-  font-size: 0.48rem !important;
+  color: var(--yellow-3) !important;
+  font-size: 0.68rem !important;
 }
 
 /* Body text */
@@ -1012,7 +1045,11 @@ button.btn-close.me-3.mt-3:hover,
 
 /* ── Responsive ──────────────────────────────────── */
 @media (max-width: 768px) {
-  .modal-header { padding: 1.8rem 1.4rem 1.4rem !important; }
+  .modal-header-inner {
+    padding: 1.8rem 1.4rem 1.4rem;
+    min-height: 120px;
+  }
+
   .modal-body   { padding: 1.4rem !important; }
   .modal-footer { padding: 1rem 1.4rem !important; }
 

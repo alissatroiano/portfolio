@@ -1,146 +1,428 @@
 [
   {
-    "Project": "Logic Lift",
-    "Category": ["Hackathon", "AI"],
-    "ModalID": "projectModal27",
-    "ImageSrc": "assets/images/logiclift.jpg"
-  },
-    {
-    "Project": "Coming Soon",
-    "Category": "Frontend, UI Design",
-    "ModalID": "projectModal22",
-    "ImageSrc": "assets/images/coming-soon.png"
-  },
-  {
-    "Project": "Military Mama",
-    "Category": ["Frontend", "UI Design"],
-    "ModalID": "projectModal26",
-    "ImageSrc": "assets/images/projects/laundry-landing.png"
-  },
- {
-  "Project": "Trend Tracker",
-  "Category": ["Fullstack", "Frontend", "UI Design", "AI"],
-  "ModalID": "projectModal24",
-  "ImageSrc": "assets/images/projects/trend-tracker-thumb.png"
- },
-  {
-  "Project": "Bridal Shower Designs",
-  "Category": ["Illustrations"],
-  "ModalID": "projectModal25",
-  "ImageSrc": "assets/images/bridalshower.jpg"
- },
-  {
-    "Project": "COAST VA",
-    "Category": "Frontend, UI Design",
-    "ModalID": "projectModal13",
-    "ImageSrc": "assets/images/projects/coast-va-home.png"
-  },    {
-    "Project": "Neomate",
-    "Category": ["Hackathon", "Fullstack", "Frontend, UI Design", "AI"],
-    "ModalID": "projectModal21",
-    "ImageSrc": "assets/images/projects/neomate_app.jpg"
-  },
-
-    {
-    "Project": "Infinity",
-    "Category": ["Frontend", "UI Design"],
-    "ModalID": "projectModal9",
-    "ImageSrc": "assets/images/projects/project_7.png"
-  },
-    {
-    "Project": "Inklusion",
-    "Category": ["Hackathon", "Frontend", "UI Design"],
-    "ModalID": "projectModal4",
-    "ImageSrc": "assets/images/projects/project_5.png"
+    "id": 27,
+    "title": "Logic Lift",
+    "subtitle": "Legacy Mainframe to Modern Logic",
+    "desc": "A platform that modernizes legacy mainframe applications by deconstructing monolithic COBOL systems and reconstructing them into future-proof, cloud-native Python.",
+    "categories": ["Hackathon", "AI"],
+    "stack": ["TypeScript", "React", "Gemini 3", "Google AI Studio"],
+    "award": "Honorable Mention — Gemini 3 DeepMind Hackathon, 04/2026",
+    "award-link": "https://devpost.com/software/the-bunny-ear-adventure",
+    "project-card-header": "../assets/images/projects/logic-lift.jpg",
+    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/YUrrsM74gu4?si=j8vOrIQXIS26t9XN", "title": "Logic Lift demo" },
+    "about": "Logic Lift is an autonomous modernization platform that deconstructs monolithic COBOL systems and reconstructs them into future-proof, cloud-native Python.",
+    "problem": "While navigating the job market, I noticed a surprising surge in advertisements for COBOL—a language created in 1959. Over 95% of ATM swipes and 43% of banking systems still run on these legacy mainframes, yet the experts who maintain them are retiring.",
+    "solution": "Logic Lift identifies buried business rules and PIC-clause data mappings, generates parity test suites (pytest) to prove new logic behaves identically, aggregates processed modules into a deployable queue file, and maps the legacy codebase topology into a modern distributed architecture.",
+    "links": [
+      { "label": "Live Project", "url": "https://aistudio.google.com/apps/drive/1tYrEbfBaEJ7zM5hmj-ZFEhYjZYbPj0DQ?fullscreenApplet=true" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/Legacy-Modernizer-2.0" }
+    ]
   },
   {
-    "Project": "OBBA/OLLA Queue",
-    "Category": ["UI Design", "Frontend", "AI"],
-    "ModalID": "projectModal2",
-    "ImageSrc": "assets/images/OBBA.png"
+    "id": 21,
+    "title": "Neomate",
+    "subtitle": "Neonatal AI Assistant",
+    "desc": "A compassionate AI-powered platform designed to provide therapeutic support and evidence-based information for families navigating neonatal hospitalization.",
+    "project-card-header": "../assets/images/projects/neomate_app.jpg",
+    "about": "Neomate is a compassionate AI-powered platform designed to provide therapeutic support and evidence-based information for families navigating neonatal hospitalization.",
+    "problem": "Families facing neonatal hospitalization often feel overwhelmed and isolated, lacking access to personalized support and evidence-based information to help them navigate this challenging time.",
+    "solution": "Neomate provides a centralized platform where families can access personalized support, evidence-based information, and therapeutic resources to help them cope with the challenges of neonatal hospitalization.",
+    "categories": ["AI", "Hackathon", "Fullstack"],
+    "stack": ["React", "Eleven Labs", "OpenAI", "Supabase", "Bolt.new"],
+    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/F_01tPRzMG0?si=ZwdoednJV7Gz5kbK", "title": "Neomate demo" },
+    "links": [
+      { "label": "Live Project", "url": "https://neomate.app" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/neomate" }
+    ]
   },
   {
-    "Project": "Dash",
-    "Category": ["Fullstack", "UI Design", "Frontend"],
-    "ModalID": "projectModal14",
-    "ImageSrc": "assets/images/projects/project_10.png"
-  },
-    {
-    "Project": "The Odditie",
-    "Category": ["Frontend", "UI Design"],
-    "ModalID": "projectModal23",
-    "ImageSrc": "assets/images/projects/odditie-thumb.jpg"
-  },
-  {
-    "Project": "Muzak",
-    "Category": ["Fullstack","UI Design", "Frontend"],
-    "ModalID": "projectModal5",
-    "ImageSrc": "assets/images/projects/project_4.png"
-  },
-  {
-    "Project": "Electrillo",
-    "Category": ["Hackathon", "Frontend", "UI Design"],
-    "ModalID": "projectModal6",
-    "ImageSrc": "assets/images/projects/project_2.png"
+    "id": 26,
+    "title": "Laundry Service",
+    "subtitle": "Small Business Website",
+    "desc": "Landing page for a local laundry pick-up, wash, fold and delivery service.",
+    "project-card-header": "../assets/images/projects/laundry-landing.png",
+    "about": "Landing page for a local laundry pick-up, wash, fold and delivery service.",
+    "problem": "A local laundry service needed a modern, responsive website to display their services and allow customers to schedule pick-up and delivery.",
+    "solution": "I created a responsive website using modern web technologies that allows the laundry service to display their offerings, accept online reservations, and provide a seamless user experience for scheduling pick-up and delivery.",
+    "categories": ["Frontend", "UI Design"],
+    "stack": ["HTML", "CSS", "Bootstrap", "Canva Pro", "JavaScript"],
+    "media": { "type": "image", "src": "assets/images/projects/laundry-demo.gif", "alt": "Laundry Landing Page" },
+    "links": [
+      { "label": "Live Project", "url": "https://militarymamalaundry.com" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/militarymama" }
+    ]
   },
   {
-    "Project": "Smitten",
-    "Category": ["Game Dev", "Hackathon", "UI Design", "Fullstack"],
-    "ModalID": "projectModal7",
-    "ImageSrc": "assets/images/projects/project_6.png"
+    "id": 24,
+    "title": "Trend Tracker",
+    "subtitle": "Social Analytics Dashboard",
+    "desc": "A dashboard for tracking and analyzing social media metrics.",
+    "project-card-header": "../assets/images/projects/trend-tracker-thumb.png",
+    "about": "Dashboard app where users can view realtime social media follower data over the last 10 days.",
+    "problem": "Users needed a way to visualize their social media growth and decline over a 10-day period.",
+    "solution": "I built a dashboard that displays real-time data on social media followers, showing gains and losses over the last 10 days.",
+    "categories": ["Fullstack", "Frontend", "UI Design", "AI"],
+    "stack": ["Apex Charts", "Node.js", "TypeScript", "React", "Tailwind"],
+    "media": { "type": "image", "src": "assets/images/projects/trend-tracker.png", "alt": "TrendTracker" },
+    "links": [
+      { "label": "Live Project", "url": "https://fluency-trend-tracker.netlify.app/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/trend-tracker" }
+    ]
   },
   {
-    "Project": "Game of Facts",
-    "Category": ["Game Dev", "Frontend", "UI Design", "Fullstack"],
-    "ModalID": "projectModal8",
-    "ImageSrc": "assets/images/projects/project_1.png"
+    "id": 25,
+    "title": "Bridal Shower",
+    "subtitle": "Stationery Design",
+    "desc": "Custom bridal shower stationery suite — invitations, menus, signage and coordinated print materials.",
+    "project-card-header": "../assets/images/projects/front-back-cover.png",
+    "about": "Custom bridal shower stationery suite — invitations, menus, signage and coordinated print materials.",
+    "problem": "A client needed a set of custom stationery for their bridal shower that would be both beautiful and functional.",
+    "solution": "I designed a complete stationery suite including invitations, menus, signage, and other coordinated print materials using Canva Pro.",
+    "categories": ["Illustrations", "UI Design"],
+    "stack": ["Canva Pro"],
+    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/0LeRC8VhD64?si=bnCQ7A3jxGK5Roc9", "title": "Bridal Shower Stationery" },
+    "links": [
+      { "label": "View PDF", "url": "https://drive.google.com/file/d/1lkdi73zw0QDPbDd56x76BcNgJWT3FmZI/view?usp=sharing" }
+    ]
   },
   {
-    "Project": "DeathScape",
-    "Category": ["Game Dev", "Hackathon"],
-    "ModalID": "projectModal11",
-    "ImageSrc": "assets/images/projects/project_9.png"
+    "id": 13,
+    "title": "Coast VA",
+    "subtitle": "Girls Lacrosse Club",
+    "desc": "A website for a local girls lacrosse club to display team information, schedules, and results.",
+    "project-card-header": "../assets/images/projects/coast-va-home.png",
+    "categories": ["Frontend", "UI Design"],
+    "stack": ["HTML", "CSS", "JavaScript", "Google Apps Script", "GitHub Actions"],
+    "media": { "type": "image", "src": "assets/images/coast-responsive.png", "alt": "COAST VA" },
+    "about": "Client site with Google Sheets + GitHub Actions integration so the client can update content from a spreadsheet.",
+    "problem": "The client needed a way to update their website content without requiring technical expertise.",
+    "solution": "I integrated Google Sheets with GitHub Actions to allow the client to update content directly from a spreadsheet, which then automatically syncs to the website.",
+    "links": [
+      { "label": "Live Project", "url": "https://coastva.org" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/coast-va" }
+    ]
   },
   {
-    "Project": "Emojourney",
-    "Category": "Hackathon",
-    "ModalID": "projectModal10",
-    "ImageSrc": "assets/images/projects/project_8.png"
-  },
-  { 
-    "Project": "Snooscapes",
-    "Category": ["Game Dev", "Hackathon"],
-    "ModalID": "projectModal16",
-    "ImageSrc": "assets/images/projects/snooscapes.png"
-  },
-  {
-    "Project": "Screen Snaps",
-    "Category": ["Game Dev", "Hackathon", "UI Design", "Fullstack"],
-    "ModalID": "projectModal17",
-    "ImageSrc": "assets/images/projects/screensnaps.png"
-  },
-  {
-    "Project": "Slangman",
-    "Category": ["Game Dev", "Hackathon", "UI Design", "Fullstack"],
-    "ModalID": "projectModal18",
-    "ImageSrc": "assets/images/projects/slangman.png"
-  },
-    {
-    "Project": "Cosmos",
-    "Category": ["Game Dev", "Hackathon", "UI Design", "Fullstack", "AI"],
-    "ModalID": "projectModal15",
-    "ImageSrc": "assets/images/cosmos.png"
+    "id": 9,
+    "title": "Infinity",
+    "subtitle": "Yoga Studio Landing Page",
+    "desc": "A responsive landing page for a fictional NYC Yoga & Meditation studio.",
+    "project-card-header": "../assets/images/projects/project_7.png",
+    "categories": ["Frontend", "UI Design"],
+    "stack": ["HTML", "CSS", "Bootstrap 4", "JavaScript"],
+    "award": "Distinction — Code Institute Milestone 1",
+    "media": { "type": "image", "src": "assets/images/infinity-responsive.png", "alt": "Infinity" },
+    "about": "Responsive website for a fictional NYC Yoga & Meditation studio. Code Institute Milestone 1.",
+    "problem": "The client needed a responsive website for their yoga studio that could be easily maintained and updated.",
+    "solution": "I created a responsive landing page using HTML, CSS, and Bootstrap 4, ensuring it was easy to maintain and update.",
+    "links": [
+      { "label": "Live Project", "url": "https://alissatroiano.github.io/MS-1/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/MS-1" }
+    ]
   },
   {
-    "Project": "Cassie The Cat",
-    "Category": ["Illustrations", "UI Design"],
-    "ModalID": "projectModal19",
-    "ImageSrc": "assets/images/projects/cassie-cover.jpg"
+    "id": 4,
+    "title": "Inklusion",
+    "subtitle": "Pride Art Gallery",
+    "desc": "An online gallery celebrating LGBTQIA+ art throughout history, with artist profiles and a community resource section.",
+    "project-card-header": "../assets/images/projects/project_5.png",
+    "about": "Online gallery celebrating LGBTQIA+ art throughout history, with artist profiles and a community resource section.",
+    "problem": "The client needed a platform to showcase LGBTQIA+ art and provide resources for the community.",
+    "solution": "I developed an online gallery with artist profiles and a community resource section, allowing users to explore and engage with the content.",
+    "categories": ["Hackathon", "Frontend", "UI Design"],
+    "stack": ["HTML", "CSS", "Bootstrap 5", "JavaScript"],
+    "award": "1st Place — Code Institute Hackathon, 06/17/22",
+    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/NYvfJrVfI6E?si=pg49K7_xJWW5kCT4", "title": "Inklusion demo" },
+    "links": [
+      { "label": "Live Project", "url": "https://alissatroiano.github.io/team-6/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/team-6" }
+    ]
   },
   {
-    "Project": "The Magic of Love",
-    "Category": ["Illustrations", "UI Design"],
-    "ModalID": "projectModal20",
-    "ImageSrc": "assets/images/projects/magic-of-love.jpg"
+    "id": 2,
+    "title": "OLLA × OBBA",
+    "subtitle": "Wait Queue Management",
+    "desc": "A React app for managing and tracking wait times for customers in a Korean BBQ restaurant.",
+    "project-card-header": "../assets/images/obba.png",
+    "about": "Customer onboarding React app for OLLA AI's integration with OBBA, a Korean BBQ restaurant in Singapore.",
+    "problem": "The client needed a way to manage and track wait times for their customers in a Korean BBQ restaurant.",
+    "solution": "I developed a React app that allows customers to join a virtual queue and receive updates on their wait time.",
+    "categories": ["UI Design", "Frontend", "AI"],
+    "stack": ["React", "JavaScript", "HTML", "CSS"],
+    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/RPsIF0tr8KU?si=j-1L97_vEvEfTTS4", "title": "OLLA OBBA demo" },
+    "links": []
+  },
+  {
+    "id": 14,
+    "title": "Dash",
+    "subtitle": "Recipe Sharing App",
+    "desc": "A full-stack recipe sharing platform with CRUD operations, user authentication, and AWS S3 photo storage.",
+    "project-card-header": "../assets/images/projects/project_10.png",
+    "categories": ["Fullstack", "UI Design", "Frontend"],
+    "stack": ["Python", "Flask", "MongoDB", "AWS S3", "Bootstrap 5"],
+    "media": { "type": "image", "src": "assets/images/projects/project_10.png", "alt": "Dash" },
+    "about": "Full-stack recipe sharing platform with CRUD, user auth, and AWS S3 photo storage.",
+    "problem": "The client needed a platform to share recipes and manage user accounts.",
+    "solution": "I developed a full-stack recipe sharing platform with CRUD operations, user authentication, and AWS S3 photo storage.",
+    "links": [
+      { "label": "Live Project", "url": "https://dash-recipes-601cfd847768.herokuapp.com/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/dash" }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "The Odditie",
+    "subtitle": "WordPress Arts Blog",
+    "project-card-header": "../assets/images/projects/odditie-thumb.jpg",
+    "desc": "Online arts & entertainment blog spotlighting artists of every genre — Fine Art to Graffiti to digital.",
+    "categories": ["Frontend", "UI Design"],
+    "stack": ["Adobe Creative Suite", "WordPress"],
+    "media": { "type": "image", "src": "assets/images/projects/odditie-branding.jpg", "alt": "Odditie" },
+    "about": "TheOdditie.com is an online arts & entertainment blog spotlighting artists of every genre — Fine Art to Graffiti to digital.",
+    "problem": "The client needed a platform to showcase their arts and entertainment content.",
+    "solution": "I developed a WordPress blog that allows the client to publish and manage their content effectively.", 
+    "links": [
+      { "label": "Live Project", "url": "https://theoddittie.wordpress.com/" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Muzak",
+    "subtitle": "YouTube Music Player",
+    "desc": "A React app that allows users to search for and play YouTube videos directly in the browser.",
+    "project-card-header": "../assets/images/projects/project_5.png",
+    "categories": ["Fullstack", "UI Design", "Frontend"],
+    "stack": ["React", "JavaScript", "HTML", "CSS", "YouTube API"],
+    "media": { "type": "image", "src": "assets/images/muzak.png", "alt": "Muzak" },
+    "about": "React-powered app that fetches and streams YouTube videos by ID or title via the YouTube Data API.",
+    "problem": "The client needed a way to listen to and manage their music from YouTube.",
+    "solution": "I developed a React app that allows users to search for and play YouTube videos directly in the browser.",
+    "links": [
+      { "label": "Live Project", "url": "https://muzak.netlify.app/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/muzak" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Electrillo",
+    "subtitle": "EV Fuel Cost Calculator",
+    "desc": "A tool for calculating the cost of fuel versus electric vehicle charging.",
+    "project-card-header": "../assets/images/projects/project_6.png",
+    "categories": ["Hackathon", "Frontend", "UI Design"],
+    "stack": ["JavaScript", "HTML", "CSS", "Bootstrap 5", "JSON"],
+    "award": "1st Place — Code Institute Hackathon, 04/10/22",
+    "media": { "type": "image", "src": "assets/images/electrillo.png", "alt": "Electrillo" },
+    "about": "Calculate money saved by switching from fuel to electric vehicles, with a built-in EV search tool.",
+    "problem": "The client needed a way to calculate the cost of fuel versus electric vehicle charging.",
+    "solution": "I developed a calculator that allows users to input their vehicle details and compare the cost of fuel versus electric charging.",
+    "links": [
+      { "label": "Live Project", "url": "https://alissatroiano.github.io/team-4-april-2022/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/team-4-april-2022" }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Smitten",
+    "subtitle": "Valentine's Wordle Game",
+    "desc": "A Wordle-inspired game where players guess words related to love and romance.",
+    "project-card-header": "../assets/images/smitten.png",
+    "categories": ["Game Dev", "Hackathon", "UI Design", "Fullstack"],
+    "stack": ["JavaScript", "HTML", "CSS", "Bootstrap", "JSON"],
+    "award": "1st Place — Code Institute Hackathon, 02/22",
+    "media": { "type": "image", "src": "assets/images/smitten.png", "alt": "Smitten" },
+    "about": "Love-themed Wordle word game built for Code Institute's Valentine's Day hackathon.",
+    "problem": "The Hackathon called for a creative Valentine's Day proejct",
+    "solution": "My team and I came up with a Wordle-inspired game that allows users to guess words related to love and romance.",
+    "links": [
+      { "label": "Live Project", "url": "https://alissatroiano.github.io/8-your-heart-out/index.html" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/8-your-heart-out/blob/main/README.md" }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Game of Facts",
+    "subtitle": "GoT Trivia Game",
+    "project-card-header": "../assets/images/projects/project_8.png",
+    "desc": "Interactive trivia game about the real history behind Game of Thrones.",
+    "categories": ["Game Dev", "Frontend", "UI Design", "Fullstack"],
+    "stack": ["JavaScript", "jQuery", "HTML", "CSS", "Bootstrap 4"],
+    "award": "Merit Award — Code Institute",
+    "media": { "type": "image", "src": "assets/images/gameoffacts-responsive.png", "alt": "Game of Facts" },
+    "about": "Interactive trivia game about the real history behind Game of Thrones.",
+    "problem": "As the Milestone 2 Project for Code Institute's, 'Interactive Frontend Development' portion of the Full Stack Developer Program, I was tasked with creating an interactive web application that would engage users and provide a meaningful experience.",
+    "solution": "I developed an interactive trivia game that allows users to answer questions about the real history behind Game of Thrones.",
+    "links": [
+      { "label": "Live Project", "url": "https://alissatroiano.github.io/Milestone-2/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/Milestone-2" }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "DeathScape",
+    "subtitle": "Star Wars Escape Room",
+    "desc": "Escape the Death Star using Star Wars knowledge to unlock mini-games and lead everyone to safety.",
+    "project-card-header": "../assets/images/projects/project_9.png",
+    "categories": ["Game Dev", "Hackathon"],
+    "stack": ["JavaScript", "HTML", "CSS", "Bootstrap 5"],
+    "award": "2nd Place — Code Institute May the Fourth Hackathon",
+    "media": { "type": "image", "src": "assets/images/deathscape.png", "alt": "DeathScape" },
+    "about": "Escape the Death Star using Star Wars knowledge to unlock mini-games and lead everyone to safety.",
+    "problem": "The hackathon challenged us to create an engaging Star Wars-themed experience.",
+    "solution": "My team and I created a Star Wars-themed escape room game where players must use their knowledge of the Star Wars universe to solve puzzles and escape the Death Star.",
+    "links": [
+      { "label": "Live Project", "url": "https://alissatroiano.github.io/team-11/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/team-11" }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Emojourney",
+    "subtitle": "Emoji Travel Guide",
+    "desc": "A guide educating people about the different meanings of emojis across world cultures.",
+    "project-card-header": "../assets/images/emojourney.png",
+    "categories": ["Hackathon"],
+    "stack": ["JavaScript", "HTML", "CSS", "Bootstrap 5"],
+    "award": "1st Place — Code Institute World Emoji Day Hackathon",
+    "media": { "type": "image", "src": "assets/images/emojourney.png", "alt": "Emojourney" },
+    "about": "A guide educating people about the different meanings of emojis across world cultures.",
+    "problem": "The hackathon challenged us to create an engaging project for World Emoji Day.",
+    "solution": "My team and I created a tounge-in-cheek World Emoji Guide that educates people about the different meanings of emojis across world cultures.", 
+    "links": [
+      { "label": "Live Project", "url": "https://alissatroiano.github.io/team-8/index.html" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/team-8/blob/main/README.md" }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Snooscapes",
+    "subtitle": "Reddit Community Game",
+    "desc": "A game where players build bridges between platforms to keep Snoo alive.",
+    "project-card-header": "../assets/images/projects/snooscapes.png",
+    "categories": ["Game Dev", "Hackathon"],
+    "stack": ["JavaScript", "TypeScript", "Devvit API", "HTML Canvas"],
+    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/PF18mRuVLVE?si=jCzRfLp9H04I9WeC", "title": "Snooscapes demo" },
+    "about": "Keep Snoo alive by building stick bridges between platforms. Score increases as you progress.",
+    "problem": "The hackathon challenged us to create an engaging game for the Reddit community.",
+    "solution": "I created a game where players must build bridges between platforms to keep Snoo alive, with the score increasing as they progress.",
+    "links": [
+      { "label": "Live Project", "url": "https://www.reddit.com/r/SnooScapes/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/snooscape" }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Screen Snaps",
+    "subtitle": "Daily Movie Guessing Game",
+    "desc": "A daily movie guessing game where players must guess the film from a new movie scene revealed each day.",
+    "project-card-header": "../assets/images/projects/screensnaps.png",
+    "categories": ["Game Dev", "Hackathon", "UI Design", "Fullstack"],
+    "stack": ["JavaScript", "TypeScript", "Devvit API"],
+    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/GUlk6-N0zJA?si=-rv5SRf2ZW6oda_G", "title": "Screen Snaps demo" },
+    "about": "A new movie scene is revealed each day — guess the film in 3 tries.",
+    "problem": "The hackathon challenged us to create a daily game for Reddit.",
+    "solution": "I created a daily movie guessing game where a new movie scene is revealed each day and players must guess the film in 3 tries.",
+    "links": [
+      { "label": "Live Project", "url": "https://www.reddit.com/r/ScreenSnaps/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/screen-play" }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Slangman",
+    "subtitle": "Gen-Z Hangman Game",
+     "desc":"Interactive trivia game about the real history behind Game of Thrones.",
+    "project-card-header": "../assets/images/projects/slangman.png",
+    "categories": ["Game Dev", "Hackathon", "UI Design", "Fullstack"],
+    "stack": ["JavaScript", "TypeScript", "Devvit API", "Kaggle"],
+    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/BaBIOqti1iI?si=2rbX-O6ZIFur8jo_", "title": "Slangman demo" },
+    "about": "English slang word game inspired by Hangman. Guess Millennial & Gen Z internet slang before the man falls.",
+    "problem": "The hackathon challenged us to create an engaging Word or Puzzle game for the Reddit community.",
+    "solution": "I created a game where players must guess Millennial and Gen Z internet slang before the man falls.",
+    "links": [
+      { "label": "Live Project", "url": "https://www.reddit.com/r/slangman/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/Slangman" }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Cosmos",
+    "subtitle": "Three.JS Space Game",
+    "project-card-header": "../assets/images/projects/project_1.png",
+    "desc": "Space game where players control a planet's orbit and must avoid colliding with others. Built for AWS Game Builder.",
+    "categories": ["Game Dev", "Hackathon", "UI Design", "Fullstack", "AI"],
+    "stack": ["Three.js", "JavaScript", "HTML", "CSS", "Node"],
+    "media": { "type": "image", "src": "assets/images/cosmos.png", "alt": "Cosmos" },
+    "about": "The main objective of Cosmos is to use the game's mechanics to move around your orbit as many times as possible without colliding into other planets.",
+    "links": [
+      { "label": "Live Project", "url": "https://update-branch.d2ahh6pk09q6qo.amplifyapp.com/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/cosmos" }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Cassie The Cat",
+    "subtitle": "Children's Book",
+    "desc": "A heartwarming children's book about a timid cat learning bravery.",
+    "project-card-header": "../assets/images/projects/cassie-cover.jpg",
+    "categories": ["Illustrations", "UI Design"],
+    "stack": ["Canva Pro", "KDP", "Amazon"],
+    "media": { "type": "image", "src": "assets/images/projects/cassie.gif", "alt": "Cassie The Cat" },
+    "about": "Illustrated picture book about a timid cat learning bravery. Characters, scenes, and cover; self-published via KDP.",
+    "problem": "The client needed custom illustrations for a children's book about a timid cat learning bravery.",
+    "solution": "I used Canva Pro to create custom illustrations for the children's book, including the main character, scenes, and the cover.",
+    "links": [
+      { "label": "Amazon Link", "url": "https://www.amazon.com/dp/B0DYYPPDQS" }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Magic of Love",
+    "subtitle": "Book Illustration",
+    "desc": "A heartwarming story about a lonely duck and a young peacock forming an unlikely bond.",
+    "project-card-header": "../assets/images/projects/magic-of-love.jpg",
+    "categories": ["Illustrations", "UI Design"],
+    "stack": ["Canva Pro", "KDP", "Amazon"],
+    "media": { "type": "image", "src": "assets/images/projects/front-back-cover.png", "alt": "Magic of Love" },
+    "about": "Illustrated a heartwarming story about a lonely duck and a young peacock forming an unlikely bond.",
+    "problem": "The client needed custom illustrations for a children's book about a lonely duck and a young peacock forming an unlikely bond.",
+    "solution": "I used Canva Pro to create custom illustrations for the children's book, including the main character, scenes, and the cover.",
+    "links": [
+      { "label": "Amazon Link", "url": "https://a.co/d/isLCseI" }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Coming Soon",
+    "subtitle": "Dara Budabin Fashion",
+    "desc": "A coming soon page for an independent fashion designer's e-commerce launch.",
+    "project-card-header": "../assets/images/projects/project_1.png",
+    "categories": ["Frontend", "UI Design"],
+    "stack": ["JavaScript", "HTML", "CSS", "Canvas"],
+    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/02HlKt3a7S8?si=5BFHP6IRC9wt5ZXe", "title": "Coming Soon demo" },
+    "about": "Coming soon page for an independent fashion designer client's e-commerce launch.",
+    "problem": "The client needed a visually appealing and engaging coming soon page for their upcoming e-commerce launch.",
+    "solution": "Created an exciting, fashionable, and visually pleasing coming soon page with HTML and CSS. Used JavaScript to create a fluid-like user experience.",
+    "links": [
+      { "label": "Live Project", "url": "https://alissatroiano.github.io/fashion/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/fashion" }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Hue",
+    "subtitle": "Create & Sell AI Art",
+    "desc": "A platform for creating and selling AI-generated digital art.",
+    "project-card-header": "../assets/images/projects/thumb-hue.png",
+    "categories": ["AI", "Fullstack"],
+    "stack": ["Python", "Django", "MindsDB", "OpenAI", "AWS S3", "Stripe"],
+    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/cvy4uK9LyjM?si=yOnu55d0hDdEi6SO", "title": "Hue demo" },
+    "about": "Hue is a digital art store and image generation app with custom ML models powered by MindsDB and OpenAI's DALL-E 3 model.",
+    "problem": "The challenge was to build a fullstack application that allows users to generate and sell digital art using AI-powered image generation.",
+    "solution": "I developed a fullstack application using Python, Django, MindsDB, and OpenAI's DALL-E 3 model to allow users to generate and sell digital art.",
+    "extraImage": { "src": "assets/images/hue.png", "alt": "Hue" },
+    "links": [
+      { "label": "Live Project", "url": "https://hue-alissa.herokuapp.com" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/Hue" }
+    ]
   }
 ]
