@@ -795,16 +795,29 @@ button.btn-close.me-3.mt-3:hover,
 }
 
 /* ── Header ──────────────────────────────────────── */
+/* Add wave canvas support to header */
 .modal-header {
-  background: linear-gradient(
-    to bottom,
-    rgba(255,255,255,0.045) 0%,
-    rgba(255,255,255,0.016) 100%
-  ) !important;
-  border-bottom: 0.5px solid rgba(255,255,255,0.09) !important;
-  padding: 2.4rem 2.4rem 1.8rem !important;
   position: relative;
-  display: block;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+.modal-header-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.modal-header-inner {
+  position: relative;
+  z-index: 2;
+  padding: 2.4rem 2.4rem 1.8rem !important;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.42) 0%, rgba(0,0,0,0.72) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 /* Top-edge shine */
