@@ -8,7 +8,7 @@
     "stack": ["TypeScript", "React", "Gemini 3", "Google AI Studio"],
     "award": "Honorable Mention — Gemini 3 DeepMind Hackathon, 04/2026",
     "award-link": "https://devpost.com/software/the-bunny-ear-adventure",
-    "project-card-header": "../assets/images/projects/logic-lift.jpg",
+    "project-card-header": "../assets/images/logiclift.png",
     "media": { "type": "youtube", "src": "https://www.youtube.com/embed/YUrrsM74gu4?si=j8vOrIQXIS26t9XN", "title": "Logic Lift demo" },
     "about": "Logic Lift is an autonomous modernization platform that deconstructs monolithic COBOL systems and reconstructs them into future-proof, cloud-native Python.",
     "problem": "While navigating the job market, I noticed a surprising surge in advertisements for COBOL—a language created in 1959. Over 95% of ATM swipes and 43% of banking systems still run on these legacy mainframes, yet the experts who maintain them are retiring.",
