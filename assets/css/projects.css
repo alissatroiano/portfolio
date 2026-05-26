@@ -16,6 +16,7 @@
   --lighter: #f5f5f5;
   --dark: #2C2C2C;
   --grey: #979797;
+  --grey-2: #6c6c6c;
   --light-grey: #eeecec;
   --dark-grey: #4d4d4d;
   --darker: #080808;
@@ -89,7 +90,7 @@ button.navbar-toggler {
 }
 
 .fa-bars {
-    color: var(--purple);
+    color: var(--grey);
     font-size: 1.5rem;
     border: none;
     margin: 0 auto;
@@ -97,7 +98,7 @@ button.navbar-toggler {
 }
 
 .fa-bars:hover {
-    color: var(--violet) !important;
+    color: var(--grey-2) !important;
     border: none;
 }
 
@@ -456,8 +457,11 @@ p {
 }
 
 .text-gradient {
-  background: linear-gradient(to left, hsl(311, 91%, 73%) 50%, #7520de 100%);
-  font-weight: 600;
+  background: linear-gradient(to left, hsl(44, 66%, 52%) 50%, #daa907 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }

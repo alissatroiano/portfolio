@@ -100,6 +100,7 @@
        NAV — Bootstrap 5 structure preserved exactly,
        styled with card's black / off-white identity
        ═══════════════════════════════════════════════════ */
+    #galleryNav,
     #mainNav {
       font-family: var(--font-nav);
       background-color: var(--nav-bg) !important;
@@ -195,14 +196,43 @@
     i.fas.fa-sun  { color: #c8a84b; }
     i.fas.fa-moon { color: #6a8fa0; }
 
-    /* Hamburger */
-    button.navbar-toggler {
-      background: transparent;
-      border: none;
-      padding: 0;
-    }
+    .dark-mode span.navbar-toggler-icon {
+    background-color: var(--accent-color);
+    border-color: none;
+    border-radius: 20%;
+    padding: 0;
+    margin: 0;
+    font-size: 1.25rem;
+}
 
-    .fa-bars { color: var(--text-primary); font-size: 1.25rem; }
+.dark-mode span.navbar-toggler-icon:hover {
+    background-color: var(--violet-2);
+    border-color: none;
+    border: none;
+}
+
+.fa-bars {
+    font-size: 1.5rem;
+    border: none;
+    margin: 0 auto;
+    outline: none;
+}
+
+.fa-bars:hover {
+    color: var(--yellow-3) !important;
+    border: none;
+}
+
+.text-gradient {
+  background: linear-gradient(to left, hsl(44, 79%, 51%) 50%, #daa907 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
 
     /* Devpost img in nav */
     .devpost-item img { opacity: 0.55; transition: opacity 0.2s; }
