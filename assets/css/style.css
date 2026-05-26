@@ -13,9 +13,8 @@
       /* Type */
       --font-display: 'Bebas Neue', sans-serif;
       --font-serif:   'Cormorant Garamond', serif;
-      --font-body:    'DM Sans', sans-serif;
-      --text-primary: 'Bebas Neue', sans-serif;
-
+      --font-body:    "Montserrat", sans-serif;
+      --font-nav: "Elms Sans", sans-serif;
       /* Accent — pulled from business card white-on-black */
       --accent:       #0a0a0a;
       --accent-muted: rgba(10,10,10,0.45);
@@ -35,8 +34,13 @@
       --text-gray-muted: rgba(85, 85, 85, 0.6);
     }
 
-    h1, h2 {
-      font-family: var(--text-primary);
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-display);
+    }
+
+    p {
+      font-family: var(--font-body);
+       font-optical-sizing: auto;
     }
 
     h2.section-display {
@@ -97,7 +101,7 @@
        styled with card's black / off-white identity
        ═══════════════════════════════════════════════════ */
     #mainNav {
-      font-family: var(--font-body);
+      font-family: var(--font-nav);
       background-color: var(--nav-bg) !important;
       border-bottom: 0.5px solid var(--nav-border);
       backdrop-filter: blur(10px);
@@ -133,8 +137,8 @@
     /* Nav links */
     .navbar-light .navbar-nav a.nav-link,
     li.nav-item a.nav-link {
-      font-family: var(--font-body);
-      font-size: 0.7rem;
+      font-family: var(--font-nav);
+      font-size: 0.67rem;
       font-weight: 300;
       letter-spacing: 0.2em;
       text-transform: uppercase;
@@ -147,6 +151,7 @@
     li.nav-item a.nav-link:hover {
       color: var(--text-primary);
       text-decoration: none;
+      font-family: var(--font-nav);
     }
 
     .dark-mode .navbar-light .navbar-nav a.nav-link { color: rgba(244,242,238,0.45); }
@@ -215,16 +220,6 @@
     .dark-mode .dropdown-menu {
       background: #111;
       border-color: rgba(255,255,255,0.1);
-    }
-
-    a.dropdown-item.filter-btn {
-      font-family: var(--font-body);
-      font-size: 0.65rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      padding: 0.5rem 1.2rem;
-      transition: color 0.2s;
     }
 
     a.dropdown-item.filter-btn:hover {
