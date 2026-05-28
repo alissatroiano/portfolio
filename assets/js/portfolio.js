@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
     else    { icon.classList.replace('fa-sun',  'fa-moon'); localStorage.setItem('theme', 'light'); }
   }
 
-  setDark((localStorage.getItem('theme') || 'light') === 'dark');
+  setDark((localStorage.getItem('theme') || 'dark') === 'dark');
   toggles.forEach(t => t.addEventListener('click', () =>
     setDark(!document.body.classList.contains('dark-mode'))
   ));
