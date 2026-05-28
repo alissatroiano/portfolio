@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-    const currentTheme = localStorage.getItem('theme') || 'light';
+    const currentTheme = localStorage.getItem('theme') || 'dark';
     setDarkMode(currentTheme === 'dark');
 
     themeToggles.forEach((toggle) => {

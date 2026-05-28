@@ -226,9 +226,6 @@ function buildModal(p) {
   modal.innerHTML = `
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable w-100">
       <div class="modal-content">
-
-        <div class="modal-header">
-          // <canvas class="modal-header-canvas"></canvas>
           <div class="modal-header-inner">
             <div class="modal-header-copy">
               <div class="modal-eyebrow">${p.categories.join(' · ')}</div>
@@ -239,7 +236,6 @@ function buildModal(p) {
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-        </div>
 
         <div class="modal-body">
           ${bodyHtmlFinal}
@@ -431,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
     else    { icon.classList.replace('fa-sun',  'fa-moon'); localStorage.setItem('theme', 'light'); }
   }
 
-  setDark((localStorage.getItem('theme') || 'light') === 'dark');
+  setDark((localStorage.getItem('theme') || 'dark') === 'dark');
   toggles.forEach(t => t.addEventListener('click', () =>
     setDark(!document.body.classList.contains('dark-mode'))
   ));

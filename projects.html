@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/projects.css" />
@@ -21,49 +21,38 @@
 <body>
 
   <!-- NAV -->
-  <nav id="mainNav" class="navbar fixed-top navbar-expand-md navbar-light shadow-sm">
-    <div class="container-fluid px-3 px-md-4">
-      <a class="navbar-brand nav-link d-flex align-items-center gap-2" href="index.html">
+  <nav id="galleryNav" class="navbar fixed-top navbar-expand-md navbar-light shadow-sm">
+    <div class="container-fluid">
+      <!-- Brand: favicon + AT display type -->
+      <a class="navbar-brand nav-link d-flex align-items-center" href="index.html">
         <span class="nav-at-logo"><span class="star-deco">✦</span>AT</span>
       </a>
-      <div class="mx-auto order-md-last d-flex align-items-center">
+
+      <!-- Theme toggle (centred on mobile) -->
+      <div class="my-0 mx-auto order-md-last text-center justify-content-center d-flex align-items-center">
         <button id="theme-toggle" data-theme-toggle title="Toggle Dark Mode">
           <i class="fas fa-moon"></i>
         </button>
       </div>
+
+      <!-- Hamburger -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation" id="toggleNav">
         <i class="fas fa-bars"></i>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto">
+
+        <!-- Primary links -->
+        <ul class="navbar-nav my-0 mx-auto">
           <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-gradient fw-bold" href="#" id="projectDropdown"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-            <ul class="dropdown-menu" aria-labelledby="projectDropdown">
-              <li><a class="dropdown-item filter-btn" href="#" data-category="All">All</a></li>
-              <li><a class="dropdown-item filter-btn" href="#" data-category="Hackathon">Hackathon</a></li>
-              <li><a class="dropdown-item filter-btn" href="#" data-category="AI">AI</a></li>
-              <li><a class="dropdown-item filter-btn" href="#" data-category="Frontend">Frontend</a></li>
-              <li><a class="dropdown-item filter-btn" href="#" data-category="UI Design">UI Design</a></li>
-              <li><a class="dropdown-item filter-btn" href="#" data-category="Fullstack">Fullstack</a></li>
-              <li><a class="dropdown-item filter-btn" href="#" data-category="Game Dev">Game Dev</a></li>
-              <li><a class="dropdown-item filter-btn" href="#" data-category="Illustrations">Illustrations</a></li>
-            </ul>
+          <li class="nav-item"><a class="nav-link text-gradient fw-bold" href="projects.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html #contact">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="assets/resume.pdf" target="_blank">Resume</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="assets/resume.pdf" target="_blank">Resume</a></li>
-        </ul>
-        <ul class="navbar-nav d-flex ms-auto list-group list-group-horizontal my-0 mx-auto text-end">
-          <li class="nav-item"><a class="nav-link" href="https://linkedin.com/in/alissatroiano" target="_blank"><i class="fab fa-linkedin mx-1"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://github.com/alissatroiano" target="_blank"><i class="fab fa-github mx-1"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/@alissa_explainsitall" target="_blank"><i class="fab fa-youtube mx-1"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://www.etsy.com/shop/bohemiancraftscity" target="_blank"><i class="fab fa-etsy mx-1"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://www.upwork.com/freelancers/~01f7ce2ebe8b50b75f?s=1017484851352698959&p=1899850012916387840&mp_source=share" target="_blank"><i class="fab fa-upwork mx-1"></i></a></li>
-          <li class="nav-item devpost-item"><a class="nav-link" href="https://devpost.com/alissatroiano" target="_blank"><img src="assets/images/devpost.png" width="60" class="img-fluid" alt="Devpost" /></a></li>
         </ul>
       </div>
     </div>
@@ -97,7 +86,6 @@
 
   <!-- Dynamic modal container — populated by portfolio.js -->
   <div id="modal-container"></div>
-
 
   <!-- Back to top -->
   <button type="button" id="btn-back-to-top">

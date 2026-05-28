@@ -1,7 +1,7 @@
 :root {
   --font-display: 'Bebas Neue', sans-serif;
   --font-serif: 'Cormorant Garamond', serif;
-  --font-body:  'DM Sans', sans-serif;
+  --font-body:  "Elms Sans", sans-serif;
   --primary-color: #6234bc;
   --purple: #6234bc;
 	--purple2: #4d24a1;
@@ -16,6 +16,7 @@
   --lighter: #f5f5f5;
   --dark: #2C2C2C;
   --grey: #979797;
+  --grey-2: #6c6c6c;
   --light-grey: #eeecec;
   --dark-grey: #4d4d4d;
   --darker: #080808;
@@ -89,7 +90,7 @@ button.navbar-toggler {
 }
 
 .fa-bars {
-    color: var(--purple);
+    color: var(--grey);
     font-size: 1.5rem;
     border: none;
     margin: 0 auto;
@@ -97,7 +98,7 @@ button.navbar-toggler {
 }
 
 .fa-bars:hover {
-    color: var(--violet) !important;
+    color: var(--grey-2) !important;
     border: none;
 }
 
@@ -456,8 +457,11 @@ p {
 }
 
 .text-gradient {
-  background: linear-gradient(to left, hsl(311, 91%, 73%) 50%, #7520de 100%);
-  font-weight: 600;
+  background: linear-gradient(to left, hsl(44, 66%, 52%) 50%, #daa907 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
@@ -682,28 +686,6 @@ p.tech-stack {
   font-size: 14px;
 }
 
-#btn-back-to-top {
-  display: none;
-  position: fixed;
-  bottom: 60px;
-  right: 10px;
-  z-index: 1000;
-  color: #fafafa;
-  background-color: #6d62ff;
-  border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 1.5rem;
-  transition: all 0.3s ease;
-}
-
-#btn-back-to-top:hover {
-  position: fixed;
-  background-color: var(--dark-violet);
-  color: #fafafa;
-  animation: pulse 1s infinite;
-  transition: .3s;
-}
 
 @keyframes pulse {
   0%   { transform: scale(1); }

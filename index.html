@@ -10,9 +10,9 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Google Fonts: card-inspired typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -28,15 +28,14 @@
 
 <body>
   <nav id="mainNav" class="navbar fixed-top navbar-expand-md navbar-light shadow-sm">
-    <div class="container-fluid px-3 px-md-4">
-
+    <div class="container-fluid">
       <!-- Brand: favicon + AT display type -->
-      <a class="navbar-brand nav-link d-flex align-items-center gap-2" href="#">
+      <a class="navbar-brand nav-link d-flex align-items-center" href="#">
         <span class="nav-at-logo"><span class="star-deco">✦</span>AT</span>
       </a>
 
       <!-- Theme toggle (centred on mobile) -->
-      <div class="mx-auto order-md-last d-flex align-items-center">
+      <div class="my-0 mx-auto order-md-last text-center justify-content-center d-flex align-items-center">
         <button id="theme-toggle" data-theme-toggle title="Toggle Dark Mode">
           <i class="fas fa-moon"></i>
         </button>
@@ -52,7 +51,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
 
         <!-- Primary links -->
-        <ul class="navbar-nav me-auto">
+        <ul class="navbar-nav my-0 mx-auto">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link text-gradient fw-bold" href="projects.html">Portfolio</a></li>
@@ -62,45 +61,10 @@
           </li>
         </ul>
 
-        <!-- Social icons -->
-        <ul class="navbar-nav d-flex ms-auto list-group list-group-horizontal my-0 mx-auto text-end">
-          <li class="nav-item">
-            <a class="nav-link" href="https://linkedin.com/in/alissatroiano" target="_blank">
-              <i class="fab fa-linkedin mx-1"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/alissatroiano" target="_blank">
-              <i class="fab fa-github mx-1"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.youtube.com/@alissa_explainsitall" target="_blank">
-              <i class="fab fa-youtube mx-1"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.etsy.com/shop/bohemiancraftscity" target="_blank">
-              <i class="fab fa-etsy mx-1"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.upwork.com/freelancers/~01f7ce2ebe8b50b75f?s=1017484851352698959&p=1899850012916387840&mp_source=share" target="_blank">
-              <i class="fab fa-upwork mx-1"></i>
-            </a>
-          </li>
-          <li class="nav-item devpost-item">
-            <a class="nav-link" href="https://devpost.com/alissatroiano" target="_blank">
-              <img src="assets/images/devpost.png" width="60" class="img-fluid" alt="Devpost" />
-            </a>
-          </li>
-        </ul>
-
       </div>
     </div>
   </nav>
   <!-- /NAV -->
-
 
   <!-- ═══════════════════════════════════════════════════
        HERO
@@ -122,13 +86,13 @@
           </p>
 
           <h1 class="hero-heading" data-aos-delay="160" data-aos-duration="800">
-            Creative developer &amp;<br/><em>UI/UX designer</em>
+            Full Stack Software Developer
           </h1>
 
           <div class="hero-rule" data-aos-delay="240"></div>
 
           <p class="hero-bio" data-aos-delay="300" data-aos-duration="800">
-            I'm a creative software developer with a passion for UI/UX design and brand development.
+            I create high-quality, maintainable software and user-friendly websites that represent a brand's identity, leveraging AI prompt engineering to enhance my development process and deliver innovative solutions.
           </p>
 
           <div class="hero-ctas" data-aos-delay="380" data-aos-duration="800">
@@ -330,6 +294,93 @@
   </section>
   <!-- /SKILLS -->
 
+<!-- ═══════════════════════════════════════════════════
+     FEATURED PROJECTS — 3D fan carousel
+     ═══════════════════════════════════════════════════ -->
+<!-- <section id="featured-projects">
+  <div class="featured-projects-header">
+    <p class="section-eyebrow" data-aos="fade-up">02 — Work</p>
+    <h2 class="section-display display-4" data-aos="fade-up" data-aos-delay="60">Featured Projects</h2>
+    <div class="section-rule"></div>
+    <p class="featured-projects-desc" data-aos="fade-up" data-aos-delay="100">
+      A selection of recent work — hover to explore, click to expand.
+    </p>
+  </div>
+
+  <div class="fp-stage" data-aos="fade-up" data-aos-delay="160">
+    <div class="fp-items">
+
+      <div class="fp-item fp-first" tabindex="0"
+        style="background-image: url('assets/images/logiclift.png');"
+        data-title="Project One"
+        data-subtitle="Web App · React">
+        <div class="fp-item-label">
+          <span class="fp-item-title">Logic Lift</span>
+          <span class="fp-item-sub">Web App · React</span>
+        </div>
+      </div>
+
+      <div class="fp-item" tabindex="0"
+        style="background-image: url('assets/images/project2.png');"
+        data-title="Project Two"
+        data-subtitle="UI/UX · Figma">
+        <div class="fp-item-label">
+          <span class="fp-item-title">Project Two</span>
+          <span class="fp-item-sub">UI/UX · Figma</span>
+        </div>
+      </div>
+
+      <div class="fp-item" tabindex="0"
+        style="background-image: url('assets/images/project3.png');"
+        data-title="Project Three"
+        data-subtitle="Full Stack · Django">
+        <div class="fp-item-label">
+          <span class="fp-item-title">Project Three</span>
+          <span class="fp-item-sub">Full Stack · Django</span>
+        </div>
+      </div>
+
+      <div class="fp-item" tabindex="0"
+        style="background-image: url('assets/images/project4.png');"
+        data-title="Project Four"
+        data-subtitle="Hackathon · First Place">
+        <div class="fp-item-label">
+          <span class="fp-item-title">Project Four</span>
+          <span class="fp-item-sub">Hackathon · First Place</span>
+        </div>
+      </div>
+
+      <div class="fp-item" tabindex="0"
+        style="background-image: url('assets/images/project5.png');"
+        data-title="Project Five"
+        data-subtitle="Brand · Python">
+        <div class="fp-item-label">
+          <span class="fp-item-title">Project Five</span>
+          <span class="fp-item-sub">Brand · Python</span>
+        </div>
+      </div>
+
+      <div class="fp-item fp-last" tabindex="0"
+        style="background-image: url('assets/images/project6.png');"
+        data-title="Project Six"
+        data-subtitle="Mobile · Node.js">
+        <div class="fp-item-label">
+          <span class="fp-item-title">Project Six</span>
+          <span class="fp-item-sub">Mobile · Node.js</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="featured-projects-cta" data-aos="fade-up" data-aos-delay="200">
+    <a href="projects.html" class="btn-hero-primary">
+      View All Projects <i class="fas fa-arrow-right" style="font-size:0.6rem;"></i>
+    </a>
+  </div>
+</section> -->
+<!-- /FEATURED PROJECTS -->
+
 
   <!-- ═══════════════════════════════════════════════════
        CONTACT
@@ -392,23 +443,22 @@
   <!-- ═══════════════════════════════════════════════════
        FOOTER
        ═══════════════════════════════════════════════════ -->
-  <footer>
+<div class="container-fluid"> 
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">  
     <span class="footer-at">✦ AT</span>
-    <p id="footer-text">
-      &copy; 2025
-      <a href="https://alissatroiano.com" id="footer-link">Alissa Troiano</a>
-    </p>
-    <div class="footer-socials">
-      <a href="https://linkedin.com/in/alissatroiano" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/alissatroiano" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://devpost.com/alissatroiano" target="_blank"><i class="fas fa-code"></i></a>
-    </div>
-  </footer>
-
-  <!-- Back to top -->
-  <button type="button" id="btn-back-to-top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
+  
+  <div class="footer-socials">
+    <a href="https://linkedin.com/in/alissatroiano" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/alissatroiano" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.youtube.com/@alissa_explainsitall" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.etsy.com/shop/bohemiancraftscity" target="_blank" aria-label="Etsy"><i class="fab fa-etsy"></i></a>
+    <a href="https://www.upwork.com/freelancers/~01f7ce2ebe8b50b75f?s=1017484851352698959&p=1899850012916387840&mp_source=share" target="_blank" aria-label="Upwork"><i class="fab fa-upwork"></i></a>
+    <a href="https://devpost.com/alissatroiano" target="_blank" aria-label="Devpost" class="footer-devpost">
+      <img src="assets/images/devpost.png" width="44" class="img-fluid" alt="Devpost" />
+    </a>
+  </div>
+</footer>
+</div>
 
 
   <!-- ═══════════════════════════════════════════════════
@@ -530,7 +580,7 @@
       else    { icon.classList.replace('fa-sun','fa-moon');  localStorage.setItem('theme','light'); }
     }
 
-    setDark((localStorage.getItem('theme') || 'light') === 'dark');
+    setDark((localStorage.getItem('theme') || 'dark') === 'dark');
 
     toggles.forEach(t => t.addEventListener('click', () => {
       setDark(!document.body.classList.contains('dark-mode'));
