@@ -55,6 +55,21 @@ function initWaveCanvas(canvas, opts) {
   return () => { cancelAnimationFrame(raf); ro.disconnect(); };
 }
 
+let galleryWaveCleanup = null;
+function initGalleryWave() {
+  if (galleryWaveCleanup) galleryWaveCleanup();
+  galleryWaveCleanup = initWaveCanvas(document.getElementById('galleryWaveCanvas'), {
+    lineColor: document.body.classList.contains('dark-mode')
+      ? 'rgba(255,255,255,0.80)'
+      : 'rgba(15, 23, 42, 0.95)',
+    count:     32,
+    amplitude: 0.26,
+    frequency: 1.3,
+    speed:     0.0033,
+    lineWidth: 1.05,
+  });
+}
+
 const CATEGORIES = ['All', 'Hackathon', 'AI', 'Frontend', 'UI Design', 'Fullstack', 'Game Dev', 'Illustrations'];
 
 /* ── Build filter bar ────────────────────────────── */
@@ -363,14 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(projects => {
 
       // 2. Full-section wave canvas
-      initWaveCanvas(document.getElementById('galleryWaveCanvas'), {
-        lineColor: 'rgba(255,255,255,0.80)',
-        count:     32,
-        amplitude: 0.26,
-        frequency: 1.3,
-        speed:     0.0033,
-        lineWidth: 1.05,
-      });
+      initGalleryWave();
 
       // 3. Filter bar + initial card render
       buildFilterBar(projects);
@@ -422,6 +430,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function setDark(on) {
     document.body.classList.toggle('dark-mode', on);
     document.querySelectorAll('#mainNav').forEach(el => el.classList.toggle('dark-mode', on));
+    initGalleryWave();
     if (!icon) return;
     if (on) { icon.classList.replace('fa-moon', 'fa-sun');  localStorage.setItem('theme', 'dark');  }
     else    { icon.classList.replace('fa-sun',  'fa-moon'); localStorage.setItem('theme', 'light'); }

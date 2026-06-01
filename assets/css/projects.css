@@ -752,6 +752,119 @@ p.tech-stack {
   color: rgba(244,242,238,0.82);
 }
 
+body:not(.dark-mode) .modal-content {
+  background: #ffffff !important;
+  border: 0.5px solid rgba(15, 23, 42, 0.12) !important;
+  box-shadow:
+    0 40px 100px rgba(15, 23, 42, 0.12),
+    0 0 0 0.5px rgba(15, 23, 42, 0.06) inset;
+  color: rgba(15, 23, 42, 0.88);
+}
+
+body:not(.dark-mode) .modal .btn-close {
+  background-color: rgba(15, 23, 42, 0.06) !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z' fill='rgba(15,23,42,0.75)'/%3E%3C/svg%3E") !important;
+  border: 0.5px solid rgba(15, 23, 42, 0.12) !important;
+}
+
+body:not(.dark-mode) .modal .btn-close:hover {
+  background-color: rgba(15, 23, 42, 0.12) !important;
+  border-color: rgba(15, 23, 42, 0.2) !important;
+}
+
+body:not(.dark-mode) .modal-header-inner {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.88) 100%
+  );
+}
+
+body:not(.dark-mode) .modal-header-inner::before {
+  background: linear-gradient(
+    to right,
+    rgba(15, 23, 42, 0),
+    rgba(15, 23, 42, 0.18) 40%,
+    rgba(15, 23, 42, 0.06) 100%
+  );
+}
+
+body:not(.dark-mode) .modal-header {
+  border-bottom: 0.5px solid rgba(15, 23, 42, 0.12) !important;
+}
+
+body:not(.dark-mode) .modal-eyebrow {
+  color: rgba(15, 23, 42, 0.65) !important;
+}
+
+body:not(.dark-mode) .modal-header .folio-title,
+body:not(.dark-mode) .modal-header h1.folio-title {
+  color: #0f172a !important;
+}
+
+body:not(.dark-mode) .modal-header .text-light-purple,
+body:not(.dark-mode) .modal-header h1 .text-light-purple {
+  color: rgba(15, 23, 42, 0.55) !important;
+}
+
+body:not(.dark-mode) .modal-body {
+  color: rgba(15, 23, 42, 0.88) !important;
+}
+
+body:not(.dark-mode) .modal-body .text-mark-projects,
+body:not(.dark-mode) .modal-body h2.h1.text-mark-projects,
+body:not(.dark-mode) .modal-body h2.h5.text-mark-projects,
+body:not(.dark-mode) .modal-body h3.h5.text-mark-projects {
+  color: rgba(71, 85, 105, 1) !important;
+}
+
+body:not(.dark-mode) .modal-body p,
+body:not(.dark-mode) .modal-body p.fs-lg,
+body:not(.dark-mode) .modal-body p.mb-0 {
+  color: rgba(15, 23, 42, 0.75) !important;
+}
+
+body:not(.dark-mode) .modal-body p.tech-stack {
+  color: rgba(15, 23, 42, 0.58) !important;
+}
+
+body:not(.dark-mode) .modal-body .border-start-lg {
+  border-left: 0.5px solid rgba(15, 23, 42, 0.12) !important;
+}
+
+body:not(.dark-mode) .modal-body .embed-responsive,
+body:not(.dark-mode) .modal-body .ratio {
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+body:not(.dark-mode) .modal-body img.project-img,
+body:not(.dark-mode) .modal-body .img-wrapper--reverse.img-fluid {
+  border-color: rgba(15, 23, 42, 0.1) !important;
+}
+
+body:not(.dark-mode) .modal-footer {
+  background: rgba(15, 23, 42, 0.04) !important;
+  border-top: 0.5px solid rgba(15, 23, 42, 0.12) !important;
+}
+
+body:not(.dark-mode) .modal-footer a,
+body:not(.dark-mode) .modal-footer a > button.project-button,
+body:not(.dark-mode) .modal-footer button.project-button,
+body:not(.dark-mode) .modal-footer .project-button {
+  background: rgba(15, 23, 42, 0.04) !important;
+  color: rgba(15, 23, 42, 0.88) !important;
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+body:not(.dark-mode) .modal-footer a:hover,
+body:not(.dark-mode) .modal-footer a > button.project-button:hover,
+body:not(.dark-mode) .modal-footer button.project-button:hover,
+body:not(.dark-mode) .modal-footer .project-button:hover {
+  background: rgba(15, 23, 42, 0.92) !important;
+  color: #fff !important;
+  border-color: rgba(15, 23, 42, 0.92) !important;
+}
+
 /* ── Close button ────────────────────────────────── */
 .modal .btn-close {
   background-color: rgba(255,255,255,0.07) !important;
