@@ -14,7 +14,7 @@
     "problem": "While navigating the job market, I noticed a surprising surge in advertisements for COBOL—a language created in 1959. Over 95% of ATM swipes and 43% of banking systems still run on these legacy mainframes, yet the experts who maintain them are retiring.",
     "solution": "Logic Lift identifies buried business rules and PIC-clause data mappings, generates parity test suites (pytest) to prove new logic behaves identically, aggregates processed modules into a deployable queue file, and maps the legacy codebase topology into a modern distributed architecture.",
     "links": [
-      { "label": "Live Project", "url": "https://aistudio.google.com/apps/drive/1tYrEbfBaEJ7zM5hmj-ZFEhYjZYbPj0DQ?fullscreenApplet=true" },
+      { "label": "Live Project", "url": "https://my-google-ai-studio-applet-696721973774.us-east1.run.app/" },
       { "label": "Source Code", "url": "https://github.com/alissatroiano/Legacy-Modernizer-2.0" }
     ]
   },
