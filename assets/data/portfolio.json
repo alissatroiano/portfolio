@@ -31,7 +31,7 @@
     "stack": ["React", "Eleven Labs", "OpenAI", "Supabase", "Bolt.new"],
     "media": { "type": "youtube", "src": "https://www.youtube.com/embed/F_01tPRzMG0?si=ZwdoednJV7Gz5kbK", "title": "Neomate demo" },
     "links": [
-      { "label": "Live Project", "url": "https://neomate.app" },
+      { "label": "Live Project", "url": "https://neomate.netlify.app" },
       { "label": "Source Code", "url": "https://github.com/alissatroiano/neomate" }
     ]
   },
