@@ -1,5 +1,22 @@
 [
   {
+    "id": 28,
+    "title": "Lyrah",
+    "subtitle": "AI STEM Lesson Planner",
+    "desc": "Lyrah  reads your lesson plan, budgets against the real class clock, and cuts what won't fit, showing you what it cut and why",
+    "categories": ["AI", "Hackathon"],
+    "stack": ["TypeScript", "React", "Gemini 3", "Google AI Studio"],
+    "about": "Lyrah is an AI-powered lesson planner that reads your lesson plan, budgets against the real class clock, and cuts what won't fit, showing you what it cut and why.",
+    "problem": "STEM Instructors often struggle to fit their lesson plans into the limited time available in the classroom, leading to rushed or incomplete lessons.",
+    "solution": "Lyrah uses AI to analyze your lesson plan, budget the time against the real class clock, and cut what won't fit, providing you with a clear understanding of what was cut and why.",
+    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/N1h_T4km2tw?si=1GuEJ2xs1r8dHmZk", "title": "Lyrah demo" }, 
+    "project-card-header": "../assets/images/lyrah.io.png",
+    "links": [
+      { "label": "Live Project", "url": "https://lyrah.io/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/lyra-demo/" }
+    ]
+  },
+  {
     "id": 27,
     "title": "Logic Lift",
     "subtitle": "Legacy Mainframe to Modern Logic",

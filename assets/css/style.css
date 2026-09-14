@@ -1220,6 +1220,14 @@ body:not(.dark-mode) .footer-socials a:hover {
 }
 .footer-socials a:hover { color: rgba(255,255,255,0.65); }
 
+.dark-mode .footer-socials a {
+  color: rgba(255,255,255,0.78);
+}
+
+.dark-mode .footer-socials a:hover {
+  color: #ffffff;
+}
+
 /* Responsive: stack on small screens */
 @media (max-width: 480px) {
   footer {
