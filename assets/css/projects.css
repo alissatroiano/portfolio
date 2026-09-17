@@ -67,27 +67,6 @@ button.navbar-toggler {
     margin: 0;
 }
 
-#theme-toggle {
-    border: none;
-    background: none;
-    color: var(--darker);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    line-height: 1;
-    width: 2.8rem;
-    min-width: 2.8rem;
-    height: 2.8rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-}
-
-#theme-toggle i {
-    width: 100%;
-    text-align: center;
-}
 
 .fa-bars {
     color: var(--grey);
@@ -299,27 +278,6 @@ a {
   color: var(--violet);
 }
 
-#theme-toggle {
-  border: none;
-  background: none;
-  color: var(--darker);
-  font-size: 1rem;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.dark-mode #theme-toggle {
-  color: var(--lighter);
-}
-
-#theme-toggle:hover {
-  color: var(--violet) !important;
-}
-
-.dark-mode #theme-toggle:hover {
-  color: var(--purple) !important;
-}
-
 .dark-mode .bg-gray,
 .dark-mode.bg-gray {
   background-color: var(--light-grey);
@@ -454,16 +412,6 @@ p {
   font-weight: 660;
   text-transform: uppercase;
   font-size: 1rem;
-}
-
-.text-gradient {
-  background: linear-gradient(to left, hsl(44, 66%, 52%) 50%, #daa907 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
 }
 
 hr {

@@ -277,7 +277,7 @@
       }
 
     i.fas.fa-sun  { color: #c8a84b; }
-    i.fas.fa-moon { color: #6a8fa0; }
+    i.fas.fa-moon { color: var(--blue); }
 
     .dark-mode span.navbar-toggler-icon {
     background-color: var(--accent-color);
@@ -1386,8 +1386,8 @@ button#toggleNav {
 .nav-theme-toggle {
         position: fixed;
         top: 1rem;
-        right: 15rem;
-        left: auto;
+        right: 12rem;
+        left: 12rem;
         width: auto;
         z-index: 1031;
     }
