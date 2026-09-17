@@ -10,12 +10,15 @@
       --wave-color:   rgba(10,10,10,0.82);
       --wave-bg:      #0a0a0a;
       --blue: #2392a8;
+      --salmon: #f5b935;
+      --violet: #7520de;
+      --violet-2: #5e14b9;
+      --violet-3: #450c8a;
       --light-blue: #B3E5F1;
       --yellow-1: #FDD935;
       --yellow-2: #E9BD43;
       --yellow-3: #F5B935;
       --red: #E83939;
-
       /* Type */
       --font-display: 'Bebas Neue', sans-serif;
       --font-serif:   'Cormorant Garamond', serif;
@@ -118,20 +121,6 @@
       padding-bottom: 0.65rem;
     }
 
-    .nav-layout {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .nav-left,
-    .nav-right {
-      display: flex;
-      align-items: center;
-      min-width: 0;
-    }
-
     .nav-left .navbar-collapse {
       flex: 0 1 auto;
     }
@@ -149,7 +138,6 @@
     .nav-socials {
       display: flex;
       align-items: center;
-      gap: 0.9rem;
     }
 
     .nav-socials-mobile {
@@ -202,13 +190,12 @@
     .navbar-light .navbar-nav a.nav-link,
     li.nav-item a.nav-link {
       font-family: var(--font-nav);
-      font-size: 0.67rem;
-      font-weight: 300;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: rgba(10,10,10,0.72);
+      color: rgba(10,10,10,0.782);
       transition: color 0.2s;
-      padding: 0.4rem 0.75rem;
+      font-weight: 500;
+      font-size: 11.5px;
     }
 
     .navbar-light .navbar-nav a.nav-link:hover,
@@ -218,7 +205,11 @@
       font-family: var(--font-nav);
     }
 
-    .dark-mode .navbar-light .navbar-nav a.nav-link { color: rgba(244,242,238,0.45); }
+    .dark-mode .navbar-light .navbar-nav a.nav-link {color: rgb(244 242 238 / 96%);
+      font-weight: 500;
+      font-size: 11.5px;
+    }
+
     .dark-mode .navbar-light .navbar-nav a.nav-link:hover { color: #f4f2ee; }
 
     /* Portfolio gradient link — kept from original */
@@ -287,7 +278,7 @@
 }
 
 .text-gradient {
-  background: linear-gradient(to left, hsl(44, 79%, 51%) 50%, #daa907 100%);
+  background: linear-gradient(to left, hsl(44, 94%, 46%) 50%, #d7a911 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
