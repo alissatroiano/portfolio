@@ -823,13 +823,22 @@
     }
 
     .slider svg,
-    .slider figure {
+    .slider figure,
+    .slider img {
       background: rgba(255,255,255,0.06);
       border: 0.5px solid rgba(255,255,255,0.08);
       fill: rgba(255,255,255,0.75);
       width: clamp(5rem, 10rem + 10vmin, 40rem);
       padding: 15px 10px;
       height: 120px;
+      box-sizing: border-box;
+      display: block;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .slider img {
+      filter: grayscale(1) brightness(1.35);
     }
 
     /* ═══════════════════════════════════════════════════
