@@ -4,13 +4,14 @@
        ═══════════════════════════════════════════════════ */
     :root {
       /* Light mode */
-      --ink:          #0a0a0a;
+      --ink:          #27789d;
       --paper:        #f4f2ee;
       --paper-alt:    #eeece8;
       --wave-color:   rgba(10,10,10,0.82);
       --wave-bg:      #0a0a0a;
-      --blue: #2392a8;
+      --blue: #448e9d;
       --salmon: #f5b935;
+      --violet-light: #b481f1;
       --violet: #7520de;
       --violet-2: #5e14b9;
       --violet-3: #450c8a;
@@ -121,6 +122,20 @@
       padding-bottom: 0.65rem;
     }
 
+    .nav-layout {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-left,
+    .nav-right {
+      display: flex;
+      align-items: center;
+      min-width: 0;
+    }
+
     .nav-left .navbar-collapse {
       flex: 0 1 auto;
     }
@@ -140,15 +155,17 @@
       align-items: center;
     }
 
-    .nav-socials-mobile {
-      display: none;
+    a.social-link {
+      margin: 0px 5px;
     }
 
     .nav-socials a {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      line-height: 1;
-      transition: color 0.2s;
+            margin: 0 8px;
+
+    }
+
+    .nav-socials-mobile {
+      display: none;
     }
 
     .nav-socials a:hover {
@@ -156,7 +173,7 @@
     }
 
     .dark-mode .nav-socials a {
-      color: rgba(244,242,238,0.78);
+      color: var(--violet);
     }
 
     .dark-mode .nav-socials a:hover {
@@ -173,9 +190,7 @@
     .navbar-brand .nav-at-logo {
       font-family: var(--font-display);
       font-size: 1.4rem;
-      letter-spacing: 0.1em;
       color: var(--text-primary);
-      margin-left: 0.4rem;
       vertical-align: middle;
     }
 
@@ -200,9 +215,10 @@
 
     .navbar-light .navbar-nav a.nav-link:hover,
     li.nav-item a.nav-link:hover {
-      color: var(--text-primary);
+      color: var(--violet);
       text-decoration: none;
       font-family: var(--font-nav);
+      font-size: 12px;
     }
 
     .dark-mode .navbar-light .navbar-nav a.nav-link {color: rgb(244 242 238 / 96%);
@@ -210,7 +226,7 @@
       font-size: 11.5px;
     }
 
-    .dark-mode .navbar-light .navbar-nav a.nav-link:hover { color: #f4f2ee; }
+    .dark-mode .navbar-light .navbar-nav a.nav-link:hover { color: var(--violet-light); }
 
     /* Portfolio gradient link — kept from original */
     li.nav-item.dropdown > a.nav-link {
@@ -225,9 +241,19 @@
     .navbar-nav .nav-link i.fab,
     .navbar-nav .nav-link i.fas {
       font-size: 0.85rem;
-      color: var(--text-muted);
       transition: color 0.2s;
     }
+
+    .nav-socials a i.fab {
+      color: var(--violet);
+    }
+
+  
+      a.social-link:hover,
+    .nav-socials a:hover,
+     .nav-socials a i.fab:hover {
+        font-size: 1.2rem;
+     }
 
     .navbar-nav .nav-link:hover i { color: var(--text-primary); }
     .dark-mode .navbar-nav .nav-link i { color: rgba(244,242,238,0.35); }
@@ -245,7 +271,10 @@
       line-height: 1;
     }
 
-    #theme-toggle:hover { color: var(--text-primary); }
+    #theme-toggle:hover {
+       color: var(--text-primary);
+       font-size: 1.1rem; 
+      }
 
     i.fas.fa-sun  { color: #c8a84b; }
     i.fas.fa-moon { color: #6a8fa0; }
@@ -278,7 +307,7 @@
 }
 
 .text-gradient {
-  background: linear-gradient(to left, hsl(44, 94%, 46%) 50%, #d7a911 100%);
+    background-image: linear-gradient(90deg, var(--violet-light), var(--violet));
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -1345,6 +1374,8 @@ body:not(.dark-mode) .footer-nav a:hover {
 button#toggleNav {
   position: fixed;
   top: 0.85rem; 
+  right: 0.75rem;
+  left: auto;
 }
 
   .nav-page-links {
@@ -1354,21 +1385,24 @@ button#toggleNav {
 
 .nav-theme-toggle {
         position: fixed;
-        top: 0.85rem;
-        right: 0rem;
+        top: 1rem;
+        right: 15rem;
+        left: auto;
+        width: auto;
         z-index: 1031;
-        left: 3rem;
     }
 
   .nav-socials {
     display: none;
   }
 
-  .nav-socials-mobile {
-    display: flex;
-    flex-basis: 100%;
-    padding: 0.5rem 0.75rem 0.25rem;
-  }
+.nav-socials-mobile {
+        display: flex;
+        flex-basis: 100%;
+        /* padding: 0.5rem 0.75rem 0.25rem; */
+        align-items: flex-start;
+        padding-top: 0.75rem;
+    }
 
   .nav-right {
     margin-left: auto;
