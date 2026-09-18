@@ -841,6 +841,14 @@
       filter: grayscale(1) brightness(1.35);
     }
 
+    .slider svg.skill-logo--soft {
+      filter: grayscale(1) brightness(0.78);
+    }
+
+    .slider svg.skill-logo--postgresql {
+      padding: 20px 15px;
+    }
+
     /* ═══════════════════════════════════════════════════
        CONTACT
        ═══════════════════════════════════════════════════ */
