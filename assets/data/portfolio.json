@@ -1,4 +1,21 @@
 [
+   {
+    "id": 28,
+    "title": "Cinefiles",
+    "subtitle": "AI Audio Clearance Tool",
+    "desc": "Cinefiles is an AI-powered audio clearance tool that streamlines the process of obtaining rights and permissions for audio content.",
+    "categories": ["AI", "Hackathon"],
+    "stack": ["TypeScript", "React", "Gemini 3", "Google AI Studio"],
+    "about": "Cinefiles is an AI-powered open-source media perception agent that automates music copyright clearance, instantly calculating sync and master licensing fees for Indie filmmakers.",
+    "problem": "The process of obtaining audio clearance is often time-consuming and complex, requiring extensive manual research and coordination.",
+    "solution": "Cinefiles uses AI to automate the audio clearance process, identifying potential issues and providing recommendations to ensure compliance with copyright laws.",
+    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/TtfFSEhjKcI?si=6aNQy-87vcrZxegP", "title": "Cinefiles Demo" }, 
+    "project-card-header": "../assets/images/cinefiles-logo.png",
+    "links": [
+      { "label": "Live Project", "url": "https://cinefiles-frontend-543072204876.us-east1.run.app/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/cinefiles/" }
+    ]
+  },
   {
     "id": 28,
     "title": "Lyrah",
