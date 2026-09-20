@@ -147,16 +147,6 @@ button.navbar-toggler {
   font-size: 14px;
 }
 
-.section-eyebrow {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.62rem;
-  font-weight: 300;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.55);
-  margin-bottom: 0.5rem;
-}
-
 .section-display {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(3.2rem, 7vw, 6.5rem);
