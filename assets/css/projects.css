@@ -699,6 +699,79 @@ body:not(.dark-mode) .modal-content {
   color: rgba(15, 23, 42, 0.88);
 }
 
+.logo-modal .modal-header-inner {
+  justify-content: center;
+  text-align: center;
+}
+
+.logo-modal .modal-dialog {
+  width: calc(100% - 2rem);
+  max-width: 720px;
+  margin: 1rem auto;
+}
+
+.logo-modal .modal-dialog-scrollable .modal-content {
+  min-width: 0 !important;
+  width: 100%;
+  max-width: 100%;
+}
+
+.logo-modal .modal-header-copy {
+  flex: 0 1 auto;
+}
+
+.logo-modal .modal-body {
+  text-align: center;
+}
+
+.logo-modal .text-mark-projects {
+  justify-content: center;
+}
+
+.logo-modal .btn-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.brand-assets-carousel {
+  margin: 0 auto 2rem;
+  max-width: 560px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.brand-asset-image {
+  display: block;
+  width: 100%;
+  height: clamp(180px, 35vw, 320px);
+  object-fit: contain;
+  padding: 1.5rem 3.5rem;
+}
+
+.brand-asset-caption {
+  padding: 0.55rem 1rem 0.85rem;
+  font-family: var(--font-body);
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(244,242,238,0.6);
+}
+
+.logo-modal .carousel-control-prev,
+.logo-modal .carousel-control-next {
+  width: 3.5rem;
+}
+
+body:not(.dark-mode) .brand-assets-carousel {
+  background: rgba(15,23,42,0.04);
+  border-color: rgba(15,23,42,0.12);
+}
+
+body:not(.dark-mode) .brand-asset-caption {
+  color: rgba(15,23,42,0.62);
+}
+
 
 body:not(.dark-mode) .modal .btn-close {
   background-color: rgba(15, 23, 42, 0.06) !important;

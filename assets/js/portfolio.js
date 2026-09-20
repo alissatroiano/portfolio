@@ -126,7 +126,7 @@ function renderCards(projects, activeCategory = 'All') {
       : '';
 
     const logoActionHtml = p.logo?.enabled
-      ? `<button type="button" class="project-card-logo-cta" aria-label="View how the ${p.title} logo was created">Logo details</button>`
+      ? `<button type="button" class="project-card-logo-cta" aria-label="View the brand assets for ${p.title}">Brand assets</button>`
       : '';
 
     card.innerHTML = `
@@ -281,12 +281,34 @@ function buildModal(p) {
   return modal;
 }
 
-/* ── Build an optional logo story modal ──────────── */
+/* ── Build an optional brand assets modal ────────── */
 function buildLogoModal(p) {
   const modalId = `logoModal${p.id}`;
   const logo = p.logo;
+  const assets = logo.assets || [];
+  const carouselId = `brandAssetsCarousel${p.id}`;
+  const slidesHtml = assets.map((asset, index) => `
+    <div class="carousel-item${index === 0 ? ' active' : ''}">
+      <img src="${asset.src}" class="brand-asset-image" alt="${asset.alt || `${p.title} brand asset ${index + 1}`}" />
+      ${asset.label ? `<div class="brand-asset-caption">${asset.label}</div>` : ''}
+    </div>`).join('');
+  const carouselHtml = assets.length
+    ? `<div id="${carouselId}" class="carousel slide brand-assets-carousel" data-bs-ride="false">
+        <div class="carousel-inner">${slidesHtml}</div>
+        ${assets.length > 1 ? `
+          <button class="carousel-control-prev" type="button" data-bs-target="#${carouselId}" data-bs-slide="prev" aria-label="Previous brand asset">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#${carouselId}" data-bs-slide="next" aria-label="Next brand asset">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>` : ''}
+      </div>`
+    : '';
   const processHtml = logo.process
     ? `<div class="text-mark-projects"><i class="fas fa-route"></i> Process</div><p>${logo.process}</p>`
+    : '';
+  const strategyHtml = logo.strategy
+    ? `<div class="text-mark-projects"><i class="fas fa-bullseye"></i> Branding strategy</div><p>${logo.strategy}</p>`
     : '';
   const toolsHtml = logo.tools?.length
     ? `<div class="text-mark-projects"><i class="fas fa-wand-magic-sparkles"></i> Tools</div><p class="tech-stack">${logo.tools.join(' · ')}</p>`
@@ -304,13 +326,15 @@ function buildLogoModal(p) {
       <div class="modal-content">
         <div class="modal-header-inner">
           <div class="modal-header-copy">
-            <div class="modal-eyebrow">Logo process</div>
-            <h1 id="${modalId}Label" class="folio-title">${p.title} logo</h1>
+            <div class="modal-eyebrow">Brand assets</div>
+            <h1 id="${modalId}Label" class="folio-title">${p.title} brand assets</h1>
           </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
+          ${carouselHtml}
           ${logo.description ? `<p>${logo.description}</p>` : ''}
+          ${strategyHtml}
           ${processHtml}
           ${toolsHtml}
         </div>

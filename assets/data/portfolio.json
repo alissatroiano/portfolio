@@ -13,8 +13,6 @@
     "project-card-header": "../assets/images/cinefiles-logo.png",
     "logo": {
   "enabled": true,
-  "description": "Describe the logo concept.",
-  "process": "Explain how the logo was created.",
   "tools": ["Canva Pro"]
 },
     "links": [
@@ -34,6 +32,22 @@
     "solution": "Lyrah uses AI to analyze your lesson plan, budget the time against the real class clock, and cut what won't fit, providing you with a clear understanding of what was cut and why.",
     "media": { "type": "youtube", "src": "https://www.youtube.com/embed/N1h_T4km2tw?si=1GuEJ2xs1r8dHmZk", "title": "Lyrah demo" }, 
     "project-card-header": "../assets/images/lyrah.io.png",
+     "logo": {
+  "enabled": true,
+  "tools": ["Canva Pro"], 
+  "assets": [
+    {
+      "src": "../assets/images/lyrahlogo.png",
+      "alt": "Logo exploration board",
+      "label": "Lyrah Logo"
+    },
+    {
+      "src": "../assets/images/lyrah.io.png",
+      "alt": "Lyrah Robot",
+      "label": "Lyrah Mascot"
+    }
+  ]
+},
     "links": [
       { "label": "Live Project", "url": "https://lyrah.io/" },
       { "label": "Source Code", "url": "https://github.com/alissatroiano/lyra-demo/" }
@@ -53,6 +67,28 @@
     "about": "Logic Lift is an autonomous modernization platform that deconstructs monolithic COBOL systems and reconstructs them into future-proof, cloud-native Python.",
     "problem": "While navigating the job market, I noticed a surprising surge in advertisements for COBOL—a language created in 1959. Over 95% of ATM swipes and 43% of banking systems still run on these legacy mainframes, yet the experts who maintain them are retiring.",
     "solution": "Logic Lift identifies buried business rules and PIC-clause data mappings, generates parity test suites (pytest) to prove new logic behaves identically, aggregates processed modules into a deployable queue file, and maps the legacy codebase topology into a modern distributed architecture.",
+       "logo": {
+  "enabled": true,
+  "tools": ["Canva Pro"], 
+  "strategy": "The logo is The ancient Ouroboros symbol, which acts as a visual representation of the transformation from legacy to modern systems. The Ouroboros is a serpent eating its own tail, symbolizing the cyclical nature of life, death, and rebirth. In the context of Logic Lift, it represents the process of taking old, outdated systems (the legacy) and transforming them into new, efficient, and modern systems (the modern). The logo's design incorporates elements that evoke both the past and the future, creating a sense of continuity and evolution.",
+  "assets": [
+    {
+      "src": "../assets/images/logiclift.png",
+      "alt": "Logo exploration board",
+      "label": "Logic Lift Logo"
+    },
+    {
+      "src": "../assets/images/logicliftlogo.gif",
+      "alt": "Logic Lift Logo",
+      "label": "Logic Lift Logo Animation"
+    },
+    {
+      "src": "../assets/images/ouroboros.png",
+      "alt": "Ouroboros Symbol ",
+      "label": "Ouroboros Symbol"
+    }
+  ]
+},
     "links": [
       { "label": "Live Project", "url": "https://logic-lift-ai-696721973774.us-east1.run.app/" },
       { "label": "Source Code", "url": "https://github.com/alissatroiano/Legacy-Modernizer-2.0" }
@@ -220,6 +256,10 @@
     "about": "React-powered app that fetches and streams YouTube videos by ID or title via the YouTube Data API.",
     "problem": "The client needed a way to listen to and manage their music from YouTube.",
     "solution": "I developed a React app that allows users to search for and play YouTube videos directly in the browser.",
+     "logo": {
+  "enabled": true,
+  "tools": ["Canva Pro"]
+},
     "links": [
       { "label": "Live Project", "url": "https://muzak.netlify.app/" },
       { "label": "Source Code", "url": "https://github.com/alissatroiano/muzak" }
@@ -274,6 +314,10 @@
     "about": "Interactive trivia game about the real history behind Game of Thrones.",
     "problem": "As the Milestone 2 Project for Code Institute's, 'Interactive Frontend Development' portion of the Full Stack Developer Program, I was tasked with creating an interactive web application that would engage users and provide a meaningful experience.",
     "solution": "I developed an interactive trivia game that allows users to answer questions about the real history behind Game of Thrones.",
+     "logo": {
+  "enabled": true,
+  "tools": ["Canva Pro"]
+},
     "links": [
       { "label": "Live Project", "url": "https://alissatroiano.github.io/Milestone-2/" },
       { "label": "Source Code", "url": "https://github.com/alissatroiano/Milestone-2" }
@@ -344,6 +388,10 @@
     "about": "A new movie scene is revealed each day — guess the film in 3 tries.",
     "problem": "The hackathon challenged us to create a daily game for Reddit.",
     "solution": "I created a daily movie guessing game where a new movie scene is revealed each day and players must guess the film in 3 tries.",
+     "logo": {
+  "enabled": true,
+  "tools": ["Canva Pro"]
+},
     "links": [
       { "label": "Live Project", "url": "https://www.reddit.com/r/ScreenSnaps/" },
       { "label": "Source Code", "url": "https://github.com/alissatroiano/screen-play" }
@@ -361,6 +409,10 @@
     "about": "English slang word game inspired by Hangman. Guess Millennial & Gen Z internet slang before the man falls.",
     "problem": "The hackathon challenged us to create an engaging Word or Puzzle game for the Reddit community.",
     "solution": "I created a game where players must guess Millennial and Gen Z internet slang before the man falls.",
+     "logo": {
+  "enabled": true,
+  "tools": ["Canva Pro"]
+},
     "links": [
       { "label": "Live Project", "url": "https://www.reddit.com/r/slangman/" },
       { "label": "Source Code", "url": "https://github.com/alissatroiano/Slangman" }
