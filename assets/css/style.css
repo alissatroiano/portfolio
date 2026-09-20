@@ -1855,6 +1855,43 @@ body:not(.dark-mode) .project-card-category {
   border-color: rgba(15,23,42,0.34);
 }
 
+.project-card-logo-cta {
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.7rem;
+  z-index: 2;
+  color: rgba(255,255,255,0.9);
+  background: rgba(10,10,10,0.76);
+  border: 1px solid rgba(255,255,255,0.38);
+  padding: 0.28rem 0.58rem;
+  font-family: var(--font-body);
+  font-size: 0.46rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.22s, color 0.22s, border-color 0.22s;
+}
+
+.project-card-logo-cta:hover,
+.project-card-logo-cta:focus-visible {
+  color: #0f172a;
+  background: #fff;
+  border-color: #fff;
+}
+
+body:not(.dark-mode) .project-card-logo-cta {
+  color: #0f172a;
+  background: rgba(255,255,255,0.9);
+  border-color: rgba(15,23,42,0.34);
+}
+
+body:not(.dark-mode) .project-card-logo-cta:hover,
+body:not(.dark-mode) .project-card-logo-cta:focus-visible {
+  color: #fff;
+  background: #0f172a;
+  border-color: #0f172a;
+}
+
 .project-card-award {
   position: absolute;
   bottom: 0.7rem;

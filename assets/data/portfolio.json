@@ -11,6 +11,12 @@
     "solution": "Cinefiles uses AI to automate the audio clearance process, identifying potential issues and providing recommendations to ensure compliance with copyright laws.",
     "media": { "type": "youtube", "src": "https://www.youtube.com/embed/TtfFSEhjKcI?si=6aNQy-87vcrZxegP", "title": "Cinefiles Demo" }, 
     "project-card-header": "../assets/images/cinefiles-logo.png",
+    "logo": {
+  "enabled": true,
+  "description": "Describe the logo concept.",
+  "process": "Explain how the logo was created.",
+  "tools": ["Canva Pro"]
+},
     "links": [
       { "label": "Live Project", "url": "https://cinefiles-frontend-543072204876.us-east1.run.app/" },
       { "label": "Source Code", "url": "https://github.com/alissatroiano/cinefiles/" }

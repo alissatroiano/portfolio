@@ -103,7 +103,10 @@ function renderCards(projects, activeCategory = 'All') {
 
   const filtered = activeCategory === 'All'
     ? projects
-    : projects.filter(p => p.categories.includes(activeCategory));
+    : projects.filter(p =>
+        p.categories.includes(activeCategory) ||
+        (activeCategory === 'Illustrations' && p['project-card-header'] && p.logo?.enabled !== false)
+      );
 
   filtered.forEach((p, idx) => {
     const card = document.createElement('div');
@@ -122,11 +125,16 @@ function renderCards(projects, activeCategory = 'All') {
       ? `style="background-image: url('${p['project-card-header']}')"`
       : '';
 
+    const logoActionHtml = p.logo?.enabled
+      ? `<button type="button" class="project-card-logo-cta" aria-label="View how the ${p.title} logo was created">Logo details</button>`
+      : '';
+
     card.innerHTML = `
       <div class="project-card-header" ${headerBg}>
         <div class="project-card-category">${p.categories[0] || ''}</div>
         <div class="project-card-monogram">✦ AT</div>
         ${awardHtml}
+        ${logoActionHtml}
       </div>
       <div class="project-card-body">
         <div class="project-card-title">${p.title}</div>
@@ -147,6 +155,15 @@ function renderCards(projects, activeCategory = 'All') {
       const modalEl = document.getElementById(`projectModal${p.id}`);
       if (modalEl) new bootstrap.Modal(modalEl).show();
     });
+
+    const logoAction = card.querySelector('.project-card-logo-cta');
+    if (logoAction) {
+      logoAction.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const modalEl = document.getElementById(`logoModal${p.id}`);
+        if (modalEl) new bootstrap.Modal(modalEl).show();
+      });
+    }
 
     grid.appendChild(card);
   });
@@ -264,6 +281,45 @@ function buildModal(p) {
   return modal;
 }
 
+/* ── Build an optional logo story modal ──────────── */
+function buildLogoModal(p) {
+  const modalId = `logoModal${p.id}`;
+  const logo = p.logo;
+  const processHtml = logo.process
+    ? `<div class="text-mark-projects"><i class="fas fa-route"></i> Process</div><p>${logo.process}</p>`
+    : '';
+  const toolsHtml = logo.tools?.length
+    ? `<div class="text-mark-projects"><i class="fas fa-wand-magic-sparkles"></i> Tools</div><p class="tech-stack">${logo.tools.join(' · ')}</p>`
+    : '';
+
+  const modal = document.createElement('div');
+  modal.className = 'modal fade logo-modal';
+  modal.id = modalId;
+  modal.setAttribute('role', 'dialog');
+  modal.setAttribute('tabindex', '-1');
+  modal.setAttribute('aria-labelledby', `${modalId}Label`);
+  modal.setAttribute('aria-hidden', 'true');
+  modal.innerHTML = `
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header-inner">
+          <div class="modal-header-copy">
+            <div class="modal-eyebrow">Logo process</div>
+            <h1 id="${modalId}Label" class="folio-title">${p.title} logo</h1>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ${logo.description ? `<p>${logo.description}</p>` : ''}
+          ${processHtml}
+          ${toolsHtml}
+        </div>
+      </div>
+    </div>`;
+
+  return modal;
+}
+
 /* ── Modal body layout helper ────────────────────── */
 function buildModalBody(p, mediaHtml, rightSections) {
   // Projects that have media in left + additional about/problem/solution
@@ -347,6 +403,10 @@ function renderModals(projects) {
   projects.forEach(p => {
     const modal = buildModal(p);
     container.appendChild(modal);
+
+    if (p.logo?.enabled) {
+      container.appendChild(buildLogoModal(p));
+    }
 
     // Init wave canvas lazily when modal opens
     const canvas = modal.querySelector('.modal-header-canvas');
