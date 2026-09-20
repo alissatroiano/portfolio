@@ -1835,16 +1835,24 @@ body:not(.dark-mode) .project-card {
   position: absolute;
   top: 0.75rem;
   left: 0.85rem;
+  z-index: 2;
   font-family: var(--font-body);
   font-size: 0.48rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.55);
-  background: rgba(0,0,0,0.22);
-  border: 0.5px solid rgba(255,255,255,0.16);
+  color: #fff;
+  background: rgba(10,10,10,0.72);
+  border: 1px solid rgba(255,255,255,0.38);
   padding: 0.22rem 0.6rem;
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+body:not(.dark-mode) .project-card-category {
+  color: #0f172a;
+  background: rgba(255,255,255,0.88);
+  border-color: rgba(15,23,42,0.34);
 }
 
 .project-card-award {
@@ -1898,7 +1906,10 @@ body:not(.dark-mode) .project-card {
   padding: 1.15rem 1.3rem 0.9rem;
   display: flex;
   flex-direction: column;
-  opacity: .8;
+  opacity: 1;
+  background: rgba(10,10,10,0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   pointer-events: none;
   transform: translateY(18px);
   transition: opacity 0.35s ease, transform 0.35s ease;
@@ -1909,6 +1920,10 @@ body:not(.dark-mode) .project-card {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
+}
+
+body:not(.dark-mode) .project-card-body {
+  background: rgba(247,248,251,0.9);
 }
 
 .project-card-title {
