@@ -1562,6 +1562,10 @@ body:not(.dark-mode) .gallery-filter-btn.active {
   border-color: rgba(15,23,42,0.92);
 }
 
+body:not(.dark-mode) .project-card {
+  box-shadow: 0 1px 15px rgba(15, 23, 42, 0.22);
+}
+
 #gallery > *:not(#galleryWaveCanvas) { position: relative; z-index: 2; }
 
 /* ── Section header ──────────────────────────────── */
@@ -1620,11 +1624,13 @@ body:not(.dark-mode) .gallery-filter-btn.active {
 
 /* ── Project card — glass body ────────────────────── */
 .project-card {
+  position: relative;
+  isolation: isolate;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.32s ease, box-shadow 0.32s ease;
+  transition: transform 0.32s ease, box-shadow 0.32s ease, background 0.32s ease, border-color 0.32s ease;
   animation: cardReveal 0.6s ease both;
   background: rgba(255,255,255,0.04);
   border: 0.5px solid rgba(255,255,255,0.12);
@@ -1632,12 +1638,92 @@ body:not(.dark-mode) .gallery-filter-btn.active {
   -webkit-backdrop-filter: blur(18px);
 }
 
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: -30% -12%;
+  z-index: -1;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    rgba(35, 146, 168, 0.16) 50%,
+    transparent 65%
+  );
+  transform: translateX(-75%);
+  transition: transform 0.55s ease;
+  pointer-events: none;
+}
+
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.01);
   box-shadow:
     0 28px 60px rgba(0,0,0,0.55),
     0 4px 16px rgba(0,0,0,0.3),
     inset 0 0 0 0.5px rgba(255,255,255,0.2);
+}
+
+.project-card:hover::before {
+  transform: translateX(75%);
+}
+
+.project-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.project-card-header img {
+  transition: transform 0.45s ease;
+}
+
+.project-card:hover .project-card-header img {
+  transform: scale(1.04);
+}
+
+.project-card-rule {
+  transition: width 0.35s ease, background-color 0.35s ease;
+}
+
+.project-card:hover .project-card-rule {
+  width: 48px;
+  background-color: var(--blue);
+}
+
+.project-card-arrow i {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-card-arrow i {
+  transform: rotate(45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .project-card::before,
+  .project-card-header img,
+  .project-card-rule,
+  .project-card-arrow i {
+    transition: none;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+
+  .project-card:hover .project-card-header img {
+    transform: none;
+  }
+
+  .project-card:hover::before {
+    transform: none;
+  }
+
+  .project-card:hover .project-card-rule {
+    width: 26px;
+  }
+
+  .project-card:hover .project-card-arrow i {
+    transform: none;
+  }
 }
 
 /* ── Card header — heavy glass so waves show through */

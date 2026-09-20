@@ -53,23 +53,6 @@
     ]
   },
   {
-    "id": 21,
-    "title": "Neomate",
-    "subtitle": "Neonatal AI Assistant",
-    "desc": "A compassionate AI-powered platform designed to provide therapeutic support and evidence-based information for families navigating neonatal hospitalization.",
-    "project-card-header": "../assets/images/projects/neomate_app.jpg",
-    "about": "Neomate is a compassionate AI-powered platform designed to provide therapeutic support and evidence-based information for families navigating neonatal hospitalization.",
-    "problem": "Families facing neonatal hospitalization often feel overwhelmed and isolated, lacking access to personalized support and evidence-based information to help them navigate this challenging time.",
-    "solution": "Neomate provides a centralized platform where families can access personalized support, evidence-based information, and therapeutic resources to help them cope with the challenges of neonatal hospitalization.",
-    "categories": ["AI", "Hackathon", "Fullstack"],
-    "stack": ["React", "Eleven Labs", "OpenAI", "Supabase", "Bolt.new"],
-    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/F_01tPRzMG0?si=ZwdoednJV7Gz5kbK", "title": "Neomate demo" },
-    "links": [
-      { "label": "Live Project", "url": "https://neomate.netlify.app" },
-      { "label": "Source Code", "url": "https://github.com/alissatroiano/neomate" }
-    ]
-  },
-  {
     "id": 26,
     "title": "Laundry Service",
     "subtitle": "Small Business Website",
