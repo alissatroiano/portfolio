@@ -313,6 +313,11 @@ function buildLogoModal(p) {
   const toolsHtml = logo.tools?.length
     ? `<div class="text-mark-projects"><i class="fas fa-wand-magic-sparkles"></i> Tools</div><p class="tech-stack">${logo.tools.join(' · ')}</p>`
     : '';
+  const brandInfoHtml = `
+    ${logo.description ? `<p>${logo.description}</p>` : ''}
+    ${strategyHtml}
+    ${processHtml}
+    ${toolsHtml}`;
 
   const modal = document.createElement('div');
   modal.className = 'modal fade logo-modal';
@@ -332,11 +337,14 @@ function buildLogoModal(p) {
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ${carouselHtml}
-          ${logo.description ? `<p>${logo.description}</p>` : ''}
-          ${strategyHtml}
-          ${processHtml}
-          ${toolsHtml}
+          <div class="brand-assets-layout">
+            <div class="brand-assets-visual">
+              ${carouselHtml || '<div class="brand-assets-empty">No visual assets added yet.</div>'}
+            </div>
+            <div class="brand-assets-info">
+              ${brandInfoHtml}
+            </div>
+          </div>
         </div>
       </div>
     </div>`;
