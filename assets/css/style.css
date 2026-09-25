@@ -837,11 +837,31 @@
 
     #skillsWaveBg { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.12; }
 
+    body:not(.dark-mode) #skillsWaveBg {
+      opacity: 0.24;
+    }
+
     #skills .section-eyebrow  { color: rgba(255,255,255,0.3); }
     #skills .section-display  { color: #fff; }
     #skills .section-rule     { background: rgba(255,255,255,0.15); }
 
     #skills .relative-z { position: relative; z-index: 2; }
+
+    body:not(.dark-mode) #skills {
+      background: #f7f8fb;
+    }
+
+    body:not(.dark-mode) #skills .section-eyebrow {
+      color: rgba(15,23,42,0.55);
+    }
+
+    body:not(.dark-mode) #skills .section-display {
+      color: #0f172a;
+    }
+
+    body:not(.dark-mode) #skills .section-rule {
+      background: rgba(15,23,42,0.16);
+    }
 
     /* Preserve original slider */
     .wrapper {
@@ -906,12 +926,33 @@
       filter: grayscale(1) brightness(1.35);
     }
 
+    body:not(.dark-mode) .slider svg,
+    body:not(.dark-mode) .slider figure,
+    body:not(.dark-mode) .slider img {
+      background: rgba(15,23,42,0.04);
+      border-color: rgba(15,23,42,0.12);
+    }
+
+    body:not(.dark-mode) .slider svg {
+      filter: grayscale(1) brightness(0.25) opacity(0.9);
+    }
+
+    body:not(.dark-mode) .slider img {
+      filter: grayscale(1) brightness(0.45);
+    }
+
     .slider svg.skill-logo--soft {
       filter: grayscale(1) brightness(0.78);
     }
 
     .slider svg.skill-logo--postgresql {
       padding: 20px 15px;
+    }
+
+    body:not(.dark-mode) .slider svg.skill-logo--soft,
+    body:not(.dark-mode) .slider svg.skill-logo--postgresql,
+    body:not(.dark-mode) .slider svg.skill-logo--vscode {
+      filter: grayscale(1) brightness(0.55) opacity(0.9);
     }
 
     /* ═══════════════════════════════════════════════════

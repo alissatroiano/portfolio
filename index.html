@@ -592,7 +592,10 @@
 
     // Skills section — ghost waves
     initWaveCanvas(document.getElementById('skillsWaveBg'), {
-      lineColor: 'rgba(255,255,255,0.65)', count: 20, amplitude: 0.28,
+      lineColor: () => document.body.classList.contains('dark-mode')
+        ? 'rgba(255,255,255,0.65)'
+        : 'rgba(15,23,42,0.42)',
+      count: 20, amplitude: 0.28,
       frequency: 1.2, speed: 0.0025, lineWidth: 0.9,
     });
 
