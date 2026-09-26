@@ -310,74 +310,6 @@
     ]
   },
   {
-    "id": 16,
-    "title": "Snooscapes",
-    "subtitle": "Reddit Community Game",
-    "desc": "A game where players build bridges between platforms to keep Snoo alive.",
-    "project-card-header": "../assets/images/projects/snooscapes.png",
-    "categories": ["Game Dev", "Hackathon"],
-    "stack": ["JavaScript", "TypeScript", "Devvit API", "HTML Canvas"],
-    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/PF18mRuVLVE?si=jCzRfLp9H04I9WeC", "title": "Snooscapes demo" },
-    "about": "Keep Snoo alive by building stick bridges between platforms. Score increases as you progress.",
-    "problem": "The hackathon challenged us to create an engaging game for the Reddit community.",
-    "solution": "I created a game where players must build bridges between platforms to keep Snoo alive, with the score increasing as they progress.",
-    "links": [
-      { "label": "Live Project", "url": "https://www.reddit.com/r/SnooScapes/" },
-      { "label": "Source Code", "url": "https://github.com/alissatroiano/snooscape" }
-    ]
-  },
-  {
-    "id": 17,
-    "title": "Screen Snaps",
-    "subtitle": "Daily Movie Guessing Game",
-    "desc": "A daily movie guessing game where players must guess the film from a new movie scene revealed each day.",
-    "project-card-header": "../assets/images/projects/screensnaps.png",
-    "categories": ["Game Dev", "Hackathon", "UI Design", "Fullstack"],
-    "stack": ["JavaScript", "TypeScript", "Devvit API"],
-    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/GUlk6-N0zJA?si=-rv5SRf2ZW6oda_G", "title": "Screen Snaps demo" },
-    "about": "A new movie scene is revealed each day — guess the film in 3 tries.",
-    "problem": "The hackathon challenged us to create a daily game for Reddit.",
-    "solution": "I created a daily movie guessing game where a new movie scene is revealed each day and players must guess the film in 3 tries.",
-    "links": [
-      { "label": "Live Project", "url": "https://www.reddit.com/r/ScreenSnaps/" },
-      { "label": "Source Code", "url": "https://github.com/alissatroiano/screen-play" }
-    ]
-  },
-  {
-    "id": 18,
-    "title": "Slangman",
-    "subtitle": "Gen-Z Hangman Game",
-     "desc":"Interactive trivia game about the real history behind Game of Thrones.",
-    "project-card-header": "../assets/images/projects/slangman.png",
-    "categories": ["Game Dev", "Hackathon", "UI Design", "Fullstack"],
-    "stack": ["JavaScript", "TypeScript", "Devvit API", "Kaggle"],
-    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/BaBIOqti1iI?si=2rbX-O6ZIFur8jo_", "title": "Slangman demo" },
-    "about": "English slang word game inspired by Hangman. Guess Millennial & Gen Z internet slang before the man falls.",
-    "problem": "The hackathon challenged us to create an engaging Word or Puzzle game for the Reddit community.",
-    "solution": "I created a game where players must guess Millennial and Gen Z internet slang before the man falls.",
-    "links": [
-      { "label": "Live Project", "url": "https://www.reddit.com/r/slangman/" },
-      { "label": "Source Code", "url": "https://github.com/alissatroiano/Slangman" }
-    ]
-  },
-  {
-    "id": 15,
-    "title": "Cosmos",
-    "subtitle": "Three.JS Space Game",
-    "project-card-header": "../assets/images/cosmos.png",
-    "desc": "Space game where players control a planet's orbit and must avoid colliding with others. Built for AWS Game Builder.",
-    "categories": ["Game Dev", "Hackathon", "UI Design", "Fullstack", "AI"],
-    "problem": "The hackathon challenged us to create an engaging game using Amazon Q AI Integration for AWS Game Builder.",
-    "solution": "I developed a space game where players control a planet's orbit and must avoid colliding with others, using Three.js for the game mechanics and Amazon Q for AI integration.",
-    "stack": ["Three.js", "JavaScript", "HTML", "CSS", "Node"],
-    "media": { "type": "image", "src": "assets/images/cosmos.png", "alt": "Cosmos" },
-    "about": "The main objective of Cosmos is to use the game's mechanics to move around your orbit as many times as possible without colliding into other planets.",
-    "links": [
-      { "label": "Live Project", "url": "https://update-branch.d2ahh6pk09q6qo.amplifyapp.com/" },
-      { "label": "Source Code", "url": "https://github.com/alissatroiano/cosmos" }
-    ]
-  },
-  {
     "id": 19,
     "title": "Cassie The Cat",
     "subtitle": "Children's Book",
@@ -424,24 +356,6 @@
     "links": [
       { "label": "Live Project", "url": "https://alissatroiano.github.io/fashion/" },
       { "label": "Source Code", "url": "https://github.com/alissatroiano/fashion" }
-    ]
-  },
-  {
-    "id": 1,
-    "title": "Hue",
-    "subtitle": "Create & Sell AI Art",
-    "desc": "A platform for creating and selling AI-generated digital art.",
-    "project-card-header": "../assets/images/projects/thumb-hue.png",
-    "categories": ["AI", "Fullstack"],
-    "stack": ["Python", "Django", "MindsDB", "OpenAI", "AWS S3", "Stripe"],
-    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/cvy4uK9LyjM?si=yOnu55d0hDdEi6SO", "title": "Hue demo" },
-    "about": "Hue is a digital art store and image generation app with custom ML models powered by MindsDB and OpenAI's DALL-E 3 model.",
-    "problem": "The challenge was to build a fullstack application that allows users to generate and sell digital art using AI-powered image generation.",
-    "solution": "I developed a fullstack application using Python, Django, MindsDB, and OpenAI's DALL-E 3 model to allow users to generate and sell digital art.",
-    "extraImage": { "src": "assets/images/hue.png", "alt": "Hue" },
-    "links": [
-      { "label": "Live Project", "url": "https://hue-alissa.herokuapp.com" },
-      { "label": "Source Code", "url": "https://github.com/alissatroiano/Hue" }
     ]
   }
 ]

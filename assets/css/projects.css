@@ -77,18 +77,10 @@ button.navbar-toggler {
 }
 
 .fa-bars:hover {
-    color: var(--grey-2) !important;
+    color: var(--violet) !important;
     border: none;
 }
 
-.dark-mode span.navbar-toggler-icon {
-    background-color: var(--accent-color);
-    border-color: none;
-    border-radius: 20%;
-    padding: 0;
-    margin: 0;
-    font-size: 1.25rem;
-}
 
 .dark-mode span.navbar-toggler-icon:hover {
     background-color: var(--violet-2);

@@ -5,9 +5,9 @@
     :root {
       /* Light mode */
       --ink:          #27789d;
-      --paper:        #f4f2ee;
-      --paper-alt:    #eeece8;
-      --wave-color:   rgba(10,10,10,0.82);
+      --paper:        #dccff57f;
+      --paper-alt:    #dbccf689;
+      --wave-color:   rgba(17, 14, 14, 0.82);
       --wave-bg:      #0a0a0a;
       --blue: #448e9d;
       --salmon: #f5b935;
@@ -30,7 +30,7 @@
       --accent-muted: rgba(10,10,10,0.45);
 
       /* Surfaces */
-      --nav-bg:       rgba(244,242,238,0.93);
+      --nav-bg:       #fafafaba;
       --nav-border:   rgba(10,10,10,0.10);
       --section-alt:  #0a0a0a;
 
@@ -302,7 +302,7 @@
 }
 
 .fa-bars:hover {
-    color: var(--yellow-3) !important;
+    color: var(--violet) !important;
     border: none;
 }
 
@@ -1138,41 +1138,43 @@
        FOOTER
        ═══════════════════════════════════════════════════ */
      footer {
-  background: #0a0a0a;
   border-top: 0.5px solid rgba(255,255,255,0.07);
   padding: 1.8rem 5vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
   transition: background 0.35s, border-color 0.35s;
 }
 
 /* Light mode footer */
 body:not(.dark-mode) footer {
-  background: var(--paper-alt);
+  background: var(--paper);
   border-top: 0.5px solid var(--rule);
 }
 
 body:not(.dark-mode) .footer-at {
-  color: rgba(10,10,10,0.28);
+  color: rgba(10, 10, 10, 0.637);
 }
 
 body:not(.dark-mode) #footer-text {
-  color: rgba(10,10,10,0.4);
-}
+color: rgba(10, 10, 10, 0.747);
+  font-weight: 600}
 
 body:not(.dark-mode) #footer-link {
   color: inherit;
 }
 
 body:not(.dark-mode) .footer-socials a {
-  color: rgba(10, 10, 10, 0.547);
+  color: rgba(38, 12, 117, 0.808);
+  font-weight: 600;
+  gap: .25rem;
+
 }
 
 body:not(.dark-mode) .footer-socials a:hover {
-  color: rgba(10,10,10,0.75);
+  color: rgba(38, 12, 117, 0.603);
+  font-size: 14px;
 }
 
 /* ═══════════════════════════════════════════════════
@@ -1441,11 +1443,14 @@ body:not(.dark-mode) .footer-socials a:hover {
 }
 
 body:not(.dark-mode) .footer-nav a {
-  color: rgba(10,10,10,0.58);
+  color: rgba(18, 3, 59, 0.85);
+  font-weight: 600;
+  font-size: 0.658rem;
 }
 
 body:not(.dark-mode) .footer-nav a:hover {
-  color: rgba(10,10,10,0.9);
+  color: rgba(35, 4, 64, 0.581);
+  font-size: .725rem;
 }
 
 .dark-mode .footer-socials a {
@@ -1467,7 +1472,7 @@ body:not(.dark-mode) .footer-nav a:hover {
   }
 
   .footer-socials {
-    gap: 1rem;
+    gap: 0.25rem;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -2147,7 +2152,7 @@ body:not(.dark-mode) .project-card-subtitle {
   }
 
   .footer-socials {
-    gap: 1rem;
+    gap: .25rem;
     flex-wrap: wrap;
     justify-content: center;
   }
