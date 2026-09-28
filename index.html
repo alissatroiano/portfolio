@@ -322,108 +322,41 @@
   </section>
   <!-- /SKILLS -->
 
-<!-- ═══════════════════════════════════════════════════
-     FEATURED PROJECTS — 3D fan carousel
-     ═══════════════════════════════════════════════════ -->
-<!-- <section id="featured-projects">
-  <div class="featured-projects-header">
-    <p class="section-eyebrow" data-aos="fade-up">02 — Work</p>
-    <h2 class="section-display display-4" data-aos="fade-up" data-aos-delay="60">Featured Projects</h2>
-    <div class="section-rule"></div>
-    <p class="featured-projects-desc" data-aos="fade-up" data-aos-delay="100">
-      A selection of recent work — hover to explore, click to expand.
-    </p>
-  </div>
-
-  <div class="fp-stage" data-aos="fade-up" data-aos-delay="160">
-    <div class="fp-items">
-
-      <div class="fp-item fp-first" tabindex="0"
-        style="background-image: url('assets/images/logiclift.png');"
-        data-title="Project One"
-        data-subtitle="Web App · React">
-        <div class="fp-item-label">
-          <span class="fp-item-title">Logic Lift</span>
-          <span class="fp-item-sub">Web App · React</span>
-        </div>
-      </div>
-
-      <div class="fp-item" tabindex="0"
-        style="background-image: url('assets/images/project2.png');"
-        data-title="Project Two"
-        data-subtitle="UI/UX · Figma">
-        <div class="fp-item-label">
-          <span class="fp-item-title">Project Two</span>
-          <span class="fp-item-sub">UI/UX · Figma</span>
-        </div>
-      </div>
-
-      <div class="fp-item" tabindex="0"
-        style="background-image: url('assets/images/project3.png');"
-        data-title="Project Three"
-        data-subtitle="Full Stack · Django">
-        <div class="fp-item-label">
-          <span class="fp-item-title">Project Three</span>
-          <span class="fp-item-sub">Full Stack · Django</span>
-        </div>
-      </div>
-
-      <div class="fp-item" tabindex="0"
-        style="background-image: url('assets/images/project4.png');"
-        data-title="Project Four"
-        data-subtitle="Hackathon · First Place">
-        <div class="fp-item-label">
-          <span class="fp-item-title">Project Four</span>
-          <span class="fp-item-sub">Hackathon · First Place</span>
-        </div>
-      </div>
-
-      <div class="fp-item" tabindex="0"
-        style="background-image: url('assets/images/project5.png');"
-        data-title="Project Five"
-        data-subtitle="Brand · Python">
-        <div class="fp-item-label">
-          <span class="fp-item-title">Project Five</span>
-          <span class="fp-item-sub">Brand · Python</span>
-        </div>
-      </div>
-
-      <div class="fp-item fp-last" tabindex="0"
-        style="background-image: url('assets/images/project6.png');"
-        data-title="Project Six"
-        data-subtitle="Mobile · Node.js">
-        <div class="fp-item-label">
-          <span class="fp-item-title">Project Six</span>
-          <span class="fp-item-sub">Mobile · Node.js</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="featured-projects-cta" data-aos="fade-up" data-aos-delay="200">
-    <a href="projects.html" class="btn-hero-primary">
-      View All Projects <i class="fas fa-arrow-right" style="font-size:0.6rem;"></i>
-    </a>
-  </div>
-</section> -->
-<!-- /FEATURED PROJECTS -->
-
-
   <!-- ═══════════════════════════════════════════════════
        CONTACT
        ═══════════════════════════════════════════════════ -->
-  <section class="contact">
+  <section class="contact container-fluid"  id="contact">
     <canvas id="contactWaveBg"></canvas>
-    <div class="contact-inner" id="contact">
-
-      <!-- Left: heading + card-style contact details -->
-      <div>
+      <div class="row">
+        <div class="col-12 pb-3">
         <p class="section-eyebrow">03 — Contact</p>
         <h2 class="section-display display-4">Contact</h2>
         <div class="section-rule"></div>
+        </div>
+        </div>
+    <div class="row d-flex justify-content-between mt-3">
 
-        <div style="margin-top:1rem;">
+      <div class="col-12 col-sm-6 justify-content-start text-start px-3">
+        <h4 id="contactMe">Fill out the form to get in touch!</h4>
+        <form method="POST" id="contact-form" action="submit">
+          <div class="form-floating mb-3">
+            <input class="form-control" type="text" name="from_name" id="from_name" placeholder="Your Name" />
+            <label for="from_name">Your Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="from_email" placeholder="Email" />
+            <label for="from_email">Email</label>
+          </div>
+          <div class="form-floating my-3">
+            <textarea name="message" class="form-control" id="message" placeholder="Your Message"
+              style="height:110px;"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <input class="contact-button mb-3" type="submit" id="button" value="Send Message" />
+        </form>
+      </div>
+
+        <div class="col-12 col-sm-5 mt-3">
           <a href="tel:9145620119" class="contact-detail-line">
             <i class="fas fa-phone"></i> 914 562 0119
           </a>
@@ -441,29 +374,6 @@
           </a>
         </div>
       </div>
-
-      <!-- Right: form — original EmailJS logic preserved -->
-      <div class="contact-form-wrapper">
-        <h4 id="contactMe">Fill out the form to get in touch!</h4>
-        <form method="POST" id="contact-form" action="submit">
-          <div class="form-floating mb-3">
-            <input class="form-control" type="text" name="from_name" id="from_name" placeholder="Your Name" />
-            <label for="from_name">Your Name</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="from_email" placeholder="Email" />
-            <label for="from_email">Email</label>
-          </div>
-          <div class="form-floating mb-3">
-            <textarea name="message" class="form-control" id="message" placeholder="Your Message"
-              style="height:110px;"></textarea>
-            <label for="message">Your Message</label>
-          </div>
-          <input class="contact-button" type="submit" id="button" value="Send Message" />
-        </form>
-      </div>
-
-    </div>
   </section>
   <!-- /CONTACT -->
 

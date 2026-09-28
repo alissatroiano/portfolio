@@ -38,8 +38,12 @@
 }
 
 body {
-  visibility: hidden
+  visibility: hidden;
+  min-height: 100vh;
+  overflow: hidden;
 }
+
+
 
 *,
 ::after,

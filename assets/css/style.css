@@ -276,8 +276,12 @@
        font-size: 1.1rem; 
       }
 
-    i.fas.fa-sun  { color: #c8a84b; }
-    i.fas.fa-moon { color: var(--blue); }
+    i.fas.fa-sun  {
+       color: #b477ff;
+       }
+    i.fas.fa-moon { 
+      color:var(--violet-2);
+     }
 
     .dark-mode span.navbar-toggler-icon {
     background-color: var(--accent-color);
@@ -305,6 +309,7 @@
     color: var(--violet) !important;
     border: none;
 }
+
 
 .text-gradient {
     background-image: linear-gradient(90deg, var(--violet-light), var(--violet));
@@ -680,7 +685,9 @@
       transition: background 0.35s;
     }
 
-    .dark-mode #about { background: #0a0a0a !important; }
+    .dark-mode #about {
+       background: #320e5f !important;
+       }
 
     .about-layout {
       max-width: 1100px;
@@ -966,7 +973,7 @@
     }
 
     .dark-mode #contact {
-      background: #0a0a0a;
+      background: #320e5f !important;
     }
 
     #contactWaveBg {
@@ -1008,9 +1015,10 @@
     /* Contact info lines — card back details  */
     .contact-detail-line {
       display: flex;
-      align-items: center;
+      align-items: end;
       gap: 1rem;
-      padding: 1.1rem 0;
+      padding-top: 1.1rem;
+      padding-bottom:  2rem;
       border-bottom: 0.5px solid var(--rule);
       font-family: var(--font-body);
       font-size: 0.78rem;
@@ -1019,6 +1027,7 @@
       color: var(--text-muted);
       text-decoration: none;
       transition: color 0.2s;
+      padding-left: 10px;
     }
 
     .contact-detail-line i {
@@ -1608,7 +1617,7 @@ button#toggleNav {
   background: #0a0a0a;
   padding: 2rem 5vw 7rem;
   min-height: 100vh;
-  overflow: hidden;
+  overflow: clip;
 }
 
 #galleryWaveCanvas {
@@ -1723,6 +1732,51 @@ body:not(.dark-mode) .project-card {
   background: rgba(255,255,255,0.92);
   color: #0a0a0a;
   border-color: rgba(255,255,255,0.92);
+}
+
+@media (max-width: 767px) {
+  #gallery {
+    padding-top: 7rem;
+  }
+
+  #gallery .gallery-filter-bar {
+    position: sticky;
+    top: 65px;
+    z-index: 1029;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0.45rem 0.75rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    background: rgba(244,242,238,0.97);
+    border-bottom: 1px solid rgba(15,23,42,0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  #gallery > *:not(#galleryWaveCanvas).gallery-filter-bar {
+    position: sticky;
+  }
+
+  #gallery .gallery-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .dark-mode #gallery .gallery-filter-bar {
+    background: rgba(8,8,8,0.97);
+    border-bottom-color: rgba(255,255,255,0.12);
+  }
+
+  .gallery-filter-btn {
+    display: block;
+    flex: 0 0 auto;
+    padding: 0.42rem 0.72rem;
+    font-size: 0.52rem;
+    letter-spacing: 0.12em;
+  }
 }
 
 /* ── Grid ─────────────────────────────────────────── */

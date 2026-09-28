@@ -1,4 +1,21 @@
 [
+  {
+    "id": 30,
+    "title": "Leapus",
+    "subtitle": "Dyslexia & Color Blind Friendly Digital Planner",
+    "desc": "Leapus is a dyslexia and color blindness friendly digital planner that uses AI to make organization accessible to everyone.",
+    "categories": ["AI", "Fullstack"],
+    "stack": ["TypeScript", "React", "Gemini 3", "Google AI Studio"],
+    "about": "Leapus is a dyslexia and color blindness friendly digital planner designed to make organization accessible to everyone.",
+    "problem": "Individuals with dyslexia and color blindness often struggle with traditional digital planners, making organization challenging.",
+    "solution": "Leapus addresses these challenges by providing a user-friendly interface with high contrast and customizable text options.",
+    "media": { "type": "image", "src": "assets/images/leapus-demo.png", "alt": "Leapus" },
+    "project-card-header": "../assets/images/leapus.png",
+    "links": [
+      { "label": "Live Project", "url": "https://leapus.ai.studio/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/leapus/" }
+    ]
+  },
    {
     "id": 29,
     "title": "Cinefiles",
@@ -317,7 +334,7 @@
     "project-card-header": "../assets/images/projects/cassie-cover.jpg",
     "categories": ["Illustrations", "UI Design"],
     "stack": ["Canva Pro", "KDP", "Amazon"],
-    "media": { "type": "image", "src": "assets/images/projects/cassie.gif", "alt": "Cassie The Cat" },
+    "media": { "type": "image", "src": "assets/images/projects/cassie-sample.png", "alt": "Cassie The Cat" },
     "about": "Illustrated picture book about a timid cat learning bravery. Characters, scenes, and cover; self-published via KDP.",
     "problem": "The client needed custom illustrations for a children's book about a timid cat learning bravery.",
     "solution": "I used Canva Pro to create custom illustrations for the children's book, including the main character, scenes, and the cover.",
@@ -330,7 +347,7 @@
     "title": "Magic of Love",
     "subtitle": "Book Illustration",
     "desc": "A heartwarming story about a lonely duck and a young peacock forming an unlikely bond.",
-    "project-card-header": "../assets/images/projects/magic-of-love.jpg",
+    "project-card-header": "../assets/images/projects/magic-of-love-characters.png",
     "categories": ["Illustrations", "UI Design"],
     "stack": ["Canva Pro", "KDP", "Amazon"],
     "media": { "type": "image", "src": "assets/images/projects/front-back-cover.png", "alt": "Magic of Love" },

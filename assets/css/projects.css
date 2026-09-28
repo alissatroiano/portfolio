@@ -44,22 +44,6 @@
   margin: 0 !important;
 }
 
-i.fas.fa-sun {
-  color: var(--yellow-1);
-}
-
-i.fas.fa-sun:hover {
-  color: var(--yellow-3) !important;
-}
-
-i.fas.fa-moon {
-  color: var(--blue);
-}
-
-i.fas.fa-moon:hover {
-  color: var(--light-blue) !important;
-}
-
 button.navbar-toggler {
     background-color: transparent;
     border: none;
@@ -311,7 +295,6 @@ a {
 }
 
 .text-mark-projects {
-  font-family: var(--font-);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .25px;
@@ -965,7 +948,7 @@ body:not(.dark-mode) .modal-footer .project-button:hover {
   font-weight: 300 !important;
   letter-spacing: 0.32em !important;
   text-transform: uppercase !important;
-  color: var(--yellow-3) !important;
+  color: var(--violet) !important;
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -974,7 +957,7 @@ body:not(.dark-mode) .modal-footer .project-button:hover {
 }
 
 .modal-body .text-mark-projects i {
-  color: var(--yellow-3) !important;
+  color: var(--violet) !important;
   font-size: 0.68rem !important;
 }
 

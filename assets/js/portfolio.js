@@ -92,7 +92,14 @@ function buildFilterBar(projects) {
     bar.appendChild(btn);
   });
 
-  header.appendChild(bar);
+  const gallery = document.getElementById('gallery');
+  const intro = gallery && gallery.querySelector(':scope > .container');
+  if (intro) {
+    bar.classList.add('container');
+    intro.after(bar);
+  } else {
+    header.appendChild(bar);
+  }
 }
 
 /* ── Render project cards ────────────────────────── */
