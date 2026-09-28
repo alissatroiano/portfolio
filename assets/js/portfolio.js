@@ -94,12 +94,22 @@ function buildFilterBar(projects) {
 
   const gallery = document.getElementById('gallery');
   const intro = gallery && gallery.querySelector(':scope > .container');
-  if (intro) {
-    bar.classList.add('container');
-    intro.after(bar);
-  } else {
-    header.appendChild(bar);
+  const mobileLayout = window.matchMedia('(max-width: 767px)');
+
+  function placeFilterBar(isMobile) {
+    if (isMobile) {
+      bar.classList.remove('container');
+      document.body.appendChild(bar);
+    } else if (intro) {
+      bar.classList.add('container');
+      intro.after(bar);
+    } else {
+      header.appendChild(bar);
+    }
   }
+
+  placeFilterBar(mobileLayout.matches);
+  mobileLayout.addEventListener('change', event => placeFilterBar(event.matches));
 }
 
 /* ── Render project cards ────────────────────────── */
@@ -424,10 +434,24 @@ document.addEventListener('DOMContentLoaded', () => {
   // 6. Back to top
   const topBtn = document.getElementById('btn-back-to-top');
   if (topBtn) {
-    window.addEventListener('scroll', () => {
-      topBtn.classList.toggle('visible', window.scrollY > 300);
+    const gallery = document.getElementById('gallery');
+    const updateTopButton = () => {
+      const scrollPosition = window.matchMedia('(max-width: 767px)').matches && gallery
+        ? gallery.scrollTop
+        : window.scrollY;
+      topBtn.classList.toggle('visible', scrollPosition > 300);
+    };
+
+    window.addEventListener('scroll', updateTopButton);
+    window.addEventListener('resize', updateTopButton);
+    if (gallery) gallery.addEventListener('scroll', updateTopButton);
+    topBtn.addEventListener('click', () => {
+      if (window.matchMedia('(max-width: 767px)').matches && gallery) {
+        gallery.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     });
-    topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
 
   // 7. Theme toggle
