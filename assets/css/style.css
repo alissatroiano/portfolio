@@ -1699,11 +1699,35 @@ body:not(.dark-mode) .project-card {
 
 /* ── Filter bar ──────────────────────────────────── */
 .gallery-filter-bar {
+  position: fixed;
+  top: 65px;
+  right: 0;
+  left: 0;
+  z-index: 1029;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1.6rem;
-  margin-bottom: 0.4rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.35rem;
+  height: 43px;
+  margin: 0;
+  padding: 0.45rem 0.75rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  background: #f7f8fb;
+  border-bottom: 1px solid rgba(15,23,42,0.12);
+  box-shadow: 0 5px 12px rgba(15,23,42,0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.gallery-filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.dark-mode .gallery-filter-bar {
+  background: #0a0a0a;
+  border-bottom-color: rgba(255,255,255,0.12);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.3);
 }
 
 .gallery-filter-btn {
@@ -1734,61 +1758,34 @@ body:not(.dark-mode) .project-card {
   border-color: rgba(255,255,255,0.92);
 }
 
+html.projects-page,
+html.projects-page body {
+  height: 100%;
+  overflow: hidden;
+}
+
+html.projects-page #gallery {
+  position: fixed;
+  inset: 108px 0 0;
+  height: auto;
+  min-height: 0;
+  padding: 2rem 5vw 4rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
 @media (max-width: 767px) {
-  html,
-  body {
-    height: 100%;
-    overflow: hidden;
-  }
-
-  #gallery {
-    position: fixed;
-    inset: 108px 0 0;
-    height: auto;
-    min-height: 0;
-    padding: 1rem 5vw 4rem;
-    overflow-x: hidden;
-    overflow-y: auto;
-    overscroll-behavior: contain;
-  }
-
-  .gallery-filter-bar {
-    position: fixed;
-    top: 65px;
-    right: 0;
-    left: 0;
-    z-index: 1029;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.35rem;
-    margin: 0;
-    padding: 0.45rem 0.75rem;
-    overflow-x: auto;
-    scrollbar-width: none;
-    background: #f7f8fb;
-    border-bottom: 1px solid rgba(15,23,42,0.12);
-    box-shadow: 0 5px 12px rgba(15,23,42,0.08);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-  }
-
-  .gallery-filter-bar::-webkit-scrollbar {
-    display: none;
-  }
-
-  .dark-mode .gallery-filter-bar {
-    background: #0a0a0a;
-    border-bottom-color: rgba(255,255,255,0.12);
-    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
-  }
-
   .gallery-filter-btn {
     display: block;
     flex: 0 0 auto;
     padding: 0.42rem 0.72rem;
     font-size: 0.52rem;
     letter-spacing: 0.12em;
+  }
+
+  html.projects-page #gallery {
+    padding: 1rem 5vw 4rem;
   }
 }
 

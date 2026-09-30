@@ -1,39 +1,5 @@
 [
-  {
-    "id": 30,
-    "title": "Leapus",
-    "subtitle": "Dyslexia & Color Blind Friendly Digital Planner",
-    "desc": "Leapus is a dyslexia and color blindness friendly digital planner that uses AI to make organization accessible to everyone.",
-    "categories": ["AI", "Fullstack"],
-    "stack": ["TypeScript", "React", "Gemini 3", "Google AI Studio"],
-    "about": "Leapus is a dyslexia and color blindness friendly digital planner designed to make organization accessible to everyone.",
-    "problem": "Individuals with dyslexia and color blindness often struggle with traditional digital planners, making organization challenging.",
-    "solution": "Leapus addresses these challenges by providing a user-friendly interface with high contrast and customizable text options.",
-    "media": { "type": "image", "src": "assets/images/leapus-demo.png", "alt": "Leapus" },
-    "project-card-header": "../assets/images/leapus.png",
-    "links": [
-      { "label": "Live Project", "url": "https://leapus.ai.studio/" },
-      { "label": "Source Code", "url": "https://github.com/alissatroiano/leapus/" }
-    ]
-  },
-   {
-    "id": 29,
-    "title": "Cinefiles",
-    "subtitle": "AI Audio Clearance Tool",
-    "desc": "Cinefiles is an AI-powered audio clearance tool that streamlines the process of obtaining rights and permissions for audio content.",
-    "categories": ["AI", "Hackathon"],
-    "stack": ["TypeScript", "React", "Gemini 3", "Google AI Studio"],
-    "about": "Cinefiles is an AI-powered open-source media perception agent that automates music copyright clearance, instantly calculating sync and master licensing fees for Indie filmmakers.",
-    "problem": "The process of obtaining audio clearance is often time-consuming and complex, requiring extensive manual research and coordination.",
-    "solution": "Cinefiles uses AI to automate the audio clearance process, identifying potential issues and providing recommendations to ensure compliance with copyright laws.",
-    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/TtfFSEhjKcI?si=6aNQy-87vcrZxegP", "title": "Cinefiles Demo" }, 
-    "project-card-header": "../assets/images/cinefiles-logo.png",
-    "links": [
-      { "label": "Live Project", "url": "https://cinefiles-frontend-543072204876.us-east1.run.app/" },
-      { "label": "Source Code", "url": "https://github.com/alissatroiano/cinefiles/" }
-    ]
-  },
-  {
+    {
     "id": 28,
     "title": "Lyrah",
     "subtitle": "AI STEM Lesson Planner",
@@ -67,6 +33,56 @@
     "links": [
       { "label": "Live Project", "url": "https://logic-lift-ai-696721973774.us-east1.run.app/" },
       { "label": "Source Code", "url": "https://github.com/alissatroiano/Legacy-Modernizer-2.0" }
+    ]
+  },
+   {
+    "id": 29,
+    "title": "Cinefiles",
+    "subtitle": "AI Audio Clearance Tool",
+    "desc": "Cinefiles is an AI-powered audio clearance tool that streamlines the process of obtaining rights and permissions for audio content.",
+    "categories": ["AI", "Hackathon"],
+    "stack": ["TypeScript", "React", "Gemini 3", "Google AI Studio"],
+    "about": "Cinefiles is an AI-powered open-source media perception agent that automates music copyright clearance, instantly calculating sync and master licensing fees for Indie filmmakers.",
+    "problem": "The process of obtaining audio clearance is often time-consuming and complex, requiring extensive manual research and coordination.",
+    "solution": "Cinefiles uses AI to automate the audio clearance process, identifying potential issues and providing recommendations to ensure compliance with copyright laws.",
+    "media": { "type": "youtube", "src": "https://www.youtube.com/embed/TtfFSEhjKcI?si=6aNQy-87vcrZxegP", "title": "Cinefiles Demo" }, 
+    "project-card-header": "../assets/images/cinefiles-logo.png",
+    "links": [
+      { "label": "Live Project", "url": "https://cinefiles-frontend-543072204876.us-east1.run.app/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/cinefiles/" }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Cassie The Cat",
+    "subtitle": "Children's Book",
+    "desc": "A heartwarming children's book about a timid cat learning bravery.",
+    "project-card-header": "../assets/images/cassie.gif",
+    "categories": ["Illustrations", "UI Design"],
+    "stack": ["Canva Pro", "KDP", "Amazon"],
+    "media": { "type": "image", "src": "assets/images/projects/cassie-cover.jpg", "alt": "Cassie The Cat" },
+    "about": "Illustrated picture book about a timid cat learning bravery. Characters, scenes, and cover; self-published via KDP.",
+    "problem": "The client needed custom illustrations for a children's book about a timid cat learning bravery.",
+    "solution": "I used Canva Pro to create custom illustrations for the children's book, including the main character, scenes, and the cover.",
+    "links": [
+      { "label": "Amazon Link", "url": "https://www.amazon.com/dp/B0DYYPPDQS" }
+    ]
+  },
+   {
+    "id": 30,
+    "title": "Leapus",
+    "subtitle": "Dyslexia & Color Blind Friendly Digital Planner",
+    "desc": "Leapus is a dyslexia and color blindness friendly digital planner that uses AI and Google AI Studio to make organization accessible to everyone.",
+    "categories": ["AI", "Fullstack"],
+    "stack": ["TypeScript", "React", "Gemini 3", "Google AI Studio"],
+    "about": "Leapus is a dyslexia and color blindness friendly digital planner designed to make organization accessible to everyone.",
+    "problem": "Individuals with dyslexia and color blindness often struggle with traditional digital planners, making organization challenging.",
+    "solution": "Leapus addresses these challenges by providing a user-friendly interface with high contrast and customizable text options.",
+    "media": { "type": "image", "src": "assets/images/leapus-demo.png", "alt": "Leapus" },
+    "project-card-header": "../assets/images/leapus.png",
+    "links": [
+      { "label": "Live Project", "url": "https://leapus.ai.studio/" },
+      { "label": "Source Code", "url": "https://github.com/alissatroiano/leapus/" }
     ]
   },
   {
@@ -159,7 +175,7 @@
     "title": "Inklusion",
     "subtitle": "Pride Art Gallery",
     "desc": "An online gallery celebrating LGBTQIA+ art throughout history, with artist profiles and a community resource section.",
-    "project-card-header": "../assets/images/projects/project_5.png",
+    "project-card-header": "../assets/images/inklusionlogo.png",
     "about": "Online gallery celebrating LGBTQIA+ art throughout history, with artist profiles and a community resource section.",
     "problem": "The client needed a platform to showcase LGBTQIA+ art and provide resources for the community.",
     "solution": "I developed an online gallery with artist profiles and a community resource section, allowing users to explore and engage with the content.",
@@ -224,7 +240,7 @@
     "title": "Muzak",
     "subtitle": "YouTube Music Player",
     "desc": "A React app that allows users to search for and play YouTube videos directly in the browser.",
-    "project-card-header": "../assets/images/muzak.png",
+    "project-card-header": "../assets/images/muzaklogo.png",
     "categories": ["Fullstack", "UI Design", "Frontend"],
     "stack": ["React", "JavaScript", "HTML", "CSS", "YouTube API"],
     "media": { "type": "image", "src": "assets/images/muzak.png", "alt": "Muzak" },
@@ -276,7 +292,7 @@
     "id": 8,
     "title": "Game of Facts",
     "subtitle": "GoT Trivia Game",
-    "project-card-header": "../assets/images/projects/project_1.png",
+    "project-card-header": "../assets/images/gameoffacts.png",
     "desc": "Interactive trivia game about the real history behind Game of Thrones.",
     "categories": ["Game Dev", "Frontend", "UI Design", "Fullstack"],
     "stack": ["JavaScript", "jQuery", "HTML", "CSS", "Bootstrap 4"],
@@ -295,7 +311,7 @@
     "title": "DeathScape",
     "subtitle": "Star Wars Escape Room",
     "desc": "Escape the Death Star using Star Wars knowledge to unlock mini-games and lead everyone to safety.",
-    "project-card-header": "../assets/images/projects/project_9.png",
+    "project-card-header": "../assets/images/deathscapelogo.png",
     "categories": ["Game Dev", "Hackathon"],
     "stack": ["JavaScript", "HTML", "CSS", "Bootstrap 5"],
     "award": "2nd Place — Code Institute May the Fourth Hackathon",
@@ -324,22 +340,6 @@
     "links": [
       { "label": "Live Project", "url": "https://alissatroiano.github.io/team-8/index.html" },
       { "label": "Source Code", "url": "https://github.com/alissatroiano/team-8/blob/main/README.md" }
-    ]
-  },
-  {
-    "id": 19,
-    "title": "Cassie The Cat",
-    "subtitle": "Children's Book",
-    "desc": "A heartwarming children's book about a timid cat learning bravery.",
-    "project-card-header": "../assets/images/projects/cassie-cover.jpg",
-    "categories": ["Illustrations", "UI Design"],
-    "stack": ["Canva Pro", "KDP", "Amazon"],
-    "media": { "type": "image", "src": "assets/images/projects/cassie-sample.png", "alt": "Cassie The Cat" },
-    "about": "Illustrated picture book about a timid cat learning bravery. Characters, scenes, and cover; self-published via KDP.",
-    "problem": "The client needed custom illustrations for a children's book about a timid cat learning bravery.",
-    "solution": "I used Canva Pro to create custom illustrations for the children's book, including the main character, scenes, and the cover.",
-    "links": [
-      { "label": "Amazon Link", "url": "https://www.amazon.com/dp/B0DYYPPDQS" }
     ]
   },
   {
