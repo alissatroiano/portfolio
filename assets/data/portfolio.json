@@ -257,7 +257,7 @@
     "title": "Electrillo",
     "subtitle": "EV Fuel Cost Calculator",
     "desc": "A tool for calculating the cost of fuel versus electric vehicle charging.",
-    "project-card-header": "../assets/images/projects/project_2.png",
+    "project-card-header": "../assets/images/electrillo-img.png",
     "categories": ["Hackathon", "Frontend", "UI Design"],
     "stack": ["JavaScript", "HTML", "CSS", "Bootstrap 5", "JSON"],
     "award": "1st Place — Code Institute Hackathon, 04/10/22",
