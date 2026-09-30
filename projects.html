@@ -25,14 +25,14 @@
 
   <!-- NAV -->
   <nav id="galleryNav" class="navbar fixed-top navbar-expand-md navbar-light shadow-sm">
-    <div class="container-fluid nav-layout">
+       <div class="container-fluid nav-layout">
       <div class="nav-left">
         <!-- Brand: favicon + AT display type -->
-        <a class="navbar-brand nav-link d-flex align-items-center" href="index.html">
+        <a class="navbar-brand nav-link d-flex align-items-center" href="#">
           <span class="nav-at-logo"><span class="star-deco">✦</span>AT</span>
         </a>
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse my-1 mx-auto" id="navbarCollapse">
           <ul class="navbar-nav nav-page-links">
             <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
@@ -42,30 +42,40 @@
               <a class="nav-link" href="assets/resume.pdf" target="_blank">Resume</a>
             </li>
           </ul>
-          <div class="nav-socials nav-socials-mobile" aria-label="Social links">
-            <a href="https://linkedin.com/in/alissatroiano" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/alissatroiano" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.youtube.com/@alissa_explainsitall" target="_blank" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.etsy.com/shop/bohemiancraftscity" target="_blank" aria-label="Etsy" title="Etsy"><i class="fab fa-etsy"></i></a>
+          <div class="nav-socials nav-socials-mobile my-0 mx-auto" aria-label="Social links">
+            <a href="https://linkedin.com/in/alissatroiano" target="_blank" aria-label="LinkedIn" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/alissatroiano" target="_blank" aria-label="GitHub" title="GitHub" class="social-link" ><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/@alissa_explainsitall" target="_blank" aria-label="YouTube" title="YouTube" class="social-link" >
+              <i class="fab fa-youtube"></i></a>
+              <!--Devpost-->
+                <a href="https://devpost.com/alissatroiano" target="_blank" aria-label="Devpost" class="social-link">
+                <img src="assets/images/devpost-icon.png" width="18" class="img-fluid mb-1 devpost-icon" alt="Devpost" />
+              </a>
+            <a href="https://www.etsy.com/shop/bohemiancraftscity" target="_blank" aria-label="Etsy" title="Etsy" class="social-link" ><i class="fab fa-etsy"></i></a>
             <a href="https://www.upwork.com/freelancers/~01f7ce2ebe8b50b75f?s=1017484851352698959&p=1899850012916387840&mp_source=share" target="_blank" aria-label="Upwork" title="Upwork"><i class="fab fa-upwork"></i></a>
           </div>
         </div>
       </div>
 
       <!-- Theme toggle -->
-      <div class="nav-theme-toggle text-center justify-content-center d-flex align-items-center">
-        <button id="theme-toggle" data-theme-toggle title="Toggle Dark Mode">
-          <i class="fas fa-moon"></i>
-        </button>
-      </div>
+      <div class="nav-theme-toggle text-center">
+          <button id="theme-toggle" data-theme-toggle title="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+          </button>
+
+</div>
 
       <div class="nav-right">
-        <div class="nav-socials" aria-label="Social links">
-          <a href="https://linkedin.com/in/alissatroiano" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <div class="nav-socials my-0 mx-auto" aria-label="Social links">
+          <a href="https://linkedin.com/in/alissatroiano" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+            <i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/alissatroiano" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
           <a href="https://www.youtube.com/@alissa_explainsitall" target="_blank" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.etsy.com/shop/bohemiancraftscity" target="_blank" aria-label="Etsy" title="Etsy"><i class="fab fa-etsy"></i></a>
-          <a href="https://www.upwork.com/freelancers/~01f7ce2ebe8b50b75f?s=1017484851352698959&p=1899850012916387840&mp_source=share" target="_blank" aria-label="Upwork" title="Upwork"><i class="fab fa-upwork"></i></a>
+          <a href="https://devpost.com/alissatroiano" target="_blank" aria-label="Devpost" title="Devpost" class="social-link">
+            <img src="assets/images/devpost-icon.png" width="18" class="img-fluid mb-1" alt="Devpost" />
+          </a>
+          <a href="https://www.etsy.com/shop/bohemiancraftscity" target="_blank" aria-label="Etsy" title="Etsy">
+            <i class="fab fa-etsy"></i></a>
         </div>
 
         <!-- Hamburger -->
@@ -75,7 +85,7 @@
           <i class="fas fa-bars"></i>
         </button>
       </div>
-  
+    </div>
     </div>
   </nav>
   <!-- /NAV -->
@@ -125,7 +135,6 @@
   <script>AOS.init({ once: true, duration: 800, easing: 'ease-out-quart' });</script>
 
   <script src="assets/js/portfolio.js"></script>
-  <script src="assets/js/top.js"></script>
 
   <!-- ── WAVE RENDERER ──────────────────────────────────
        Replicates the flowing white stripes from card back

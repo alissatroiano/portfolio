@@ -1706,6 +1706,7 @@ body:not(.dark-mode) .project-card {
   z-index: 1029;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: nowrap;
   gap: 0.35rem;
   height: 43px;
@@ -1776,6 +1777,10 @@ html.projects-page #gallery {
 }
 
 @media (max-width: 767px) {
+  .gallery-filter-bar {
+    justify-content: flex-start;
+  }
+
   .gallery-filter-btn {
     display: block;
     flex: 0 0 auto;
